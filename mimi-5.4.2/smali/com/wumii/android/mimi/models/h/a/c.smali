@@ -60,7 +60,7 @@
     .end annotation
 .end field
 
-.field private h:Lcom/wumii/android/mimi/models/a/a/b;
+.field private h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
 
 # direct methods
@@ -109,11 +109,11 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->f:Ljava/util/HashMap;
 
     .line 46
-    new-instance v0, Lcom/wumii/android/mimi/models/a/a/b;
+    new-instance v0, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
-    invoke-direct {v0, p1}, Lcom/wumii/android/mimi/models/a/a/b;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {v0, p1}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/b;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
     .line 47
     invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
@@ -257,14 +257,14 @@
     invoke-interface {v2, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     .line 336
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/b;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/a/a/b;->a(Ljava/lang/String;)I
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a(Ljava/lang/String;)I
 
     .line 337
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/b;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
-    invoke-virtual {v0, p1, v2}, Lcom/wumii/android/mimi/models/a/a/b;->a(Ljava/lang/String;Ljava/util/List;)V
+    invoke-virtual {v0, p1, v2}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a(Ljava/lang/String;Ljava/util/List;)V
 
     .line 339
     sget-object v0, Lcom/wumii/android/mimi/models/h/c;->a:Lcom/wumii/android/mimi/models/h/c;
@@ -662,9 +662,9 @@
     invoke-interface {v9, v5}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     .line 422
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/b;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
-    invoke-virtual {v0, p1, v9}, Lcom/wumii/android/mimi/models/a/a/b;->a(Ljava/lang/String;Ljava/util/List;)V
+    invoke-virtual {v0, p1, v9}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a(Ljava/lang/String;Ljava/util/List;)V
 
     .line 424
     sget-object v0, Lcom/wumii/android/mimi/models/h/c;->a:Lcom/wumii/android/mimi/models/h/c;
@@ -804,7 +804,7 @@
     return-object v0
 
     :cond_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/b;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
     const/16 v3, 0x64
 
@@ -814,7 +814,7 @@
 
     move-object v2, p1
 
-    invoke-virtual/range {v1 .. v6}, Lcom/wumii/android/mimi/models/a/a/b;->a(Ljava/lang/String;IJI)Ljava/util/List;
+    invoke-virtual/range {v1 .. v6}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a(Ljava/lang/String;IJI)Ljava/util/List;
 
     move-result-object v0
 
@@ -857,9 +857,9 @@
     invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 187
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/b;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
-    invoke-virtual {v1, v0, p1}, Lcom/wumii/android/mimi/models/a/a/b;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
+    invoke-virtual {v1, v0, p1}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
 
     .line 189
     sget-object v1, Lcom/wumii/android/mimi/models/h/c;->a:Lcom/wumii/android/mimi/models/h/c;
@@ -1050,9 +1050,9 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgTransientImg;->setRead(Z)V
 
     .line 263
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/b;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
-    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/a/a/b;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
+    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
 
     .line 265
     sget-object v0, Lcom/wumii/android/mimi/models/h/c;->a:Lcom/wumii/android/mimi/models/h/c;
@@ -1168,7 +1168,7 @@
     if-eqz p3, :cond_3
 
     .line 359
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/b;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
     invoke-interface {p2, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1180,12 +1180,12 @@
 
     move-result-wide v2
 
-    invoke-virtual {v1, p1, v2, v3}, Lcom/wumii/android/mimi/models/a/a/b;->a(Ljava/lang/String;J)I
+    invoke-virtual {v1, p1, v2, v3}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a(Ljava/lang/String;J)I
 
     .line 360
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/b;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
-    invoke-virtual {v0, p1, p2}, Lcom/wumii/android/mimi/models/a/a/b;->a(Ljava/lang/String;Ljava/util/List;)V
+    invoke-virtual {v0, p1, p2}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a(Ljava/lang/String;Ljava/util/List;)V
 
     .line 363
     :cond_3
@@ -1343,14 +1343,14 @@
     invoke-interface {v5, v4, v2}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
     .line 244
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/b;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/a/a/b;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)I
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)I
 
     .line 245
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/b;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
-    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/a/a/b;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
+    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
 
     .line 246
     const/4 v0, 0x1
@@ -1400,9 +1400,9 @@
 
     .prologue
     .line 210
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/b;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/a/a/b;->a(Ljava/util/List;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a(Ljava/util/List;)V
 
     .line 212
     invoke-static {p1}, Lcom/wumii/android/mimi/c/av;->a(Ljava/util/Collection;)Z
@@ -1548,9 +1548,9 @@
 
     .prologue
     .line 205
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/b;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/a/a/b;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
 
     .line 206
     sget-object v0, Lcom/wumii/android/mimi/models/h/c;->a:Lcom/wumii/android/mimi/models/h/c;
@@ -1617,9 +1617,9 @@
 
     .line 447
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/b;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
-    invoke-virtual {v0, p1, p2, p3}, Lcom/wumii/android/mimi/models/a/a/b;->a(Ljava/lang/String;J)I
+    invoke-virtual {v0, p1, p2, p3}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a(Ljava/lang/String;J)I
 
     .line 449
     sget-object v0, Lcom/wumii/android/mimi/models/h/c;->b:Lcom/wumii/android/mimi/models/h/c;
@@ -1722,9 +1722,9 @@
     if-eqz v0, :cond_0
 
     .line 278
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/b;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/a/a/b;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)I
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)I
 
     .line 280
     sget-object v0, Lcom/wumii/android/mimi/models/h/c;->b:Lcom/wumii/android/mimi/models/h/c;
@@ -1782,7 +1782,7 @@
     if-nez v0, :cond_0
 
     .line 142
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/b;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
     const/16 v3, 0x64
 
@@ -1790,7 +1790,7 @@
 
     move-object v2, p1
 
-    invoke-virtual/range {v1 .. v6}, Lcom/wumii/android/mimi/models/a/a/b;->a(Ljava/lang/String;IJI)Ljava/util/List;
+    invoke-virtual/range {v1 .. v6}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a(Ljava/lang/String;IJI)Ljava/util/List;
 
     move-result-object v1
 
@@ -1881,7 +1881,7 @@
     if-nez v1, :cond_0
 
     .line 165
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/b;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
     const/16 v3, 0x64
 
@@ -1897,7 +1897,7 @@
 
     move-object v2, p1
 
-    invoke-virtual/range {v1 .. v6}, Lcom/wumii/android/mimi/models/a/a/b;->a(Ljava/lang/String;IJI)Ljava/util/List;
+    invoke-virtual/range {v1 .. v6}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a(Ljava/lang/String;IJI)Ljava/util/List;
 
     move-result-object v0
 
@@ -1967,9 +1967,9 @@
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 430
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/b;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/c;->h:Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/a/a/b;->a(Ljava/lang/String;)I
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a(Ljava/lang/String;)I
 
     .line 432
     invoke-direct {p0, p1, v1}, Lcom/wumii/android/mimi/models/h/a/c;->c(Ljava/lang/String;Ljava/lang/String;)V

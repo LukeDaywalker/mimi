@@ -13,7 +13,7 @@
 
     .prologue
     .line 15
-    const-class v0, Lcom/wumii/android/mimi/models/a/a/b;
+    const-class v0, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
 
     invoke-static {v0}, Lorg/slf4j/LoggerFactory;->getLogger(Ljava/lang/Class;)Lorg/slf4j/Logger;
 
