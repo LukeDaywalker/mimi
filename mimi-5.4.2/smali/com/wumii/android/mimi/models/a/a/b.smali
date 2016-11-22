@@ -1,4 +1,4 @@
-.class public Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
+.class public Lcom/wumii/android/mimi/models/a/a/b;
 .super Lcom/wumii/android/mimi/models/a/a;
 .source "ChatMessageDao.java"
 
@@ -13,18 +13,18 @@
 
     .prologue
     .line 19
-    const-class v0, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;
+    const-class v0, Lcom/wumii/android/mimi/models/a/a/b;
 
     invoke-static {v0}, Lorg/slf4j/LoggerFactory;->getLogger(Ljava/lang/Class;)Lorg/slf4j/Logger;
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/a/a/b;->a:Lorg/slf4j/Logger;
 
     return-void
 .end method
 
-.method public constructor ChatMessageDao(Landroid/database/sqlite/SQLiteDatabase;)V
+.method public constructor <init>(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
 
     .prologue
@@ -194,7 +194,7 @@
 
     const-class v4, Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
-    invoke-static {v0, v4}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->fromJson(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-static {v0, v4}, Lcom/wumii/android/mimi/models/a/a/b;->fromJson(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -284,7 +284,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->c(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)Landroid/content/ContentValues;
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/models/a/a/b;->c(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)Landroid/content/ContentValues;
 
     move-result-object v2
 
@@ -452,7 +452,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->toJson(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/wumii/android/mimi/models/a/a/b;->toJson(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -478,7 +478,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->toJson(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/wumii/android/mimi/models/a/a/b;->toJson(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -594,7 +594,7 @@
     .line 183
     const-string/jumbo v1, "chat_message"
 
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->c(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)Landroid/content/ContentValues;
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/models/a/a/b;->c(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)Landroid/content/ContentValues;
 
     move-result-object v2
 
@@ -620,7 +620,7 @@
 
     .line 56
     :try_start_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/a/a/b;->db:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v2, "chat_message"
 
@@ -657,7 +657,7 @@
     move-exception v1
 
     .line 58
-    sget-object v2, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/models/a/a/b;->a:Lorg/slf4j/Logger;
 
     invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -676,7 +676,7 @@
 
     .line 79
     :try_start_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/a/a/b;->db:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v2, "chat_message"
 
@@ -715,7 +715,7 @@
     move-exception v1
 
     .line 81
-    sget-object v2, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/models/a/a/b;->a:Lorg/slf4j/Logger;
 
     invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -745,7 +745,7 @@
     const-string/jumbo v1, "chat_id = ? AND msg_time < ? AND status <> ?"
 
     .line 70
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/a/a/b;->db:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string/jumbo v3, "chat_message"
 
@@ -788,7 +788,7 @@
     move-exception v1
 
     .line 72
-    sget-object v2, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/models/a/a/b;->a:Lorg/slf4j/Logger;
 
     invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
@@ -943,7 +943,7 @@
     invoke-virtual {v2, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     .line 207
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/a/a/b;->db:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v1}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
@@ -965,7 +965,7 @@
     if-eqz v2, :cond_2
 
     .line 209
-    invoke-direct {p0, v1}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a(Landroid/database/Cursor;)Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+    invoke-direct {p0, v1}, Lcom/wumii/android/mimi/models/a/a/b;->a(Landroid/database/Cursor;)Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     move-result-object v2
 
@@ -995,7 +995,7 @@
     invoke-virtual {p2, p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->setChatId(Ljava/lang/String;)V
 
     .line 51
-    invoke-virtual {p0, p2}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
+    invoke-virtual {p0, p2}, Lcom/wumii/android/mimi/models/a/a/b;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
 
     .line 52
     return-void
@@ -1040,7 +1040,7 @@
 
     .line 46
     :cond_0
-    invoke-virtual {p0, p2}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a(Ljava/util/List;)V
+    invoke-virtual {p0, p2}, Lcom/wumii/android/mimi/models/a/a/b;->a(Ljava/util/List;)V
 
     .line 47
     return-void
@@ -1060,7 +1060,7 @@
 
     .prologue
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/a/a/b;->db:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
@@ -1090,9 +1090,9 @@
 
     .line 92
     :try_start_1
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/a/a/b;->db:Landroid/database/sqlite/SQLiteDatabase;
 
-    invoke-direct {p0, v3, v0}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->b(Landroid/database/sqlite/SQLiteDatabase;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)Landroid/database/Cursor;
+    invoke-direct {p0, v3, v0}, Lcom/wumii/android/mimi/models/a/a/b;->b(Landroid/database/sqlite/SQLiteDatabase;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)Landroid/database/Cursor;
 
     move-result-object v1
 
@@ -1104,9 +1104,9 @@
     if-nez v3, :cond_0
 
     .line 94
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/a/a/b;->db:Landroid/database/sqlite/SQLiteDatabase;
 
-    invoke-direct {p0, v3, v0}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a(Landroid/database/sqlite/SQLiteDatabase;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
+    invoke-direct {p0, v3, v0}, Lcom/wumii/android/mimi/models/a/a/b;->a(Landroid/database/sqlite/SQLiteDatabase;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
@@ -1123,7 +1123,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/a/a/b;->db:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -1137,9 +1137,9 @@
     invoke-interface {v1, v3}, Landroid/database/Cursor;->moveToPosition(I)Z
 
     .line 97
-    iget-object v3, p0, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v3, p0, Lcom/wumii/android/mimi/models/a/a/b;->db:Landroid/database/sqlite/SQLiteDatabase;
 
-    invoke-direct {p0, v3, v0}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->c(Landroid/database/sqlite/SQLiteDatabase;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
+    invoke-direct {p0, v3, v0}, Lcom/wumii/android/mimi/models/a/a/b;->c(Landroid/database/sqlite/SQLiteDatabase;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
@@ -1156,14 +1156,14 @@
 
     .line 103
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/a/a/b;->db:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/a/a/b;->db:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -1180,9 +1180,9 @@
 
     .line 112
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/a/a/b;->db:Landroid/database/sqlite/SQLiteDatabase;
 
-    invoke-direct {p0, v0, p1}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->b(Landroid/database/sqlite/SQLiteDatabase;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)Landroid/database/Cursor;
+    invoke-direct {p0, v0, p1}, Lcom/wumii/android/mimi/models/a/a/b;->b(Landroid/database/sqlite/SQLiteDatabase;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)Landroid/database/Cursor;
 
     move-result-object v1
 
@@ -1194,9 +1194,9 @@
     if-nez v0, :cond_0
 
     .line 114
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/a/a/b;->db:Landroid/database/sqlite/SQLiteDatabase;
 
-    invoke-direct {p0, v0, p1}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a(Landroid/database/sqlite/SQLiteDatabase;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
+    invoke-direct {p0, v0, p1}, Lcom/wumii/android/mimi/models/a/a/b;->a(Landroid/database/sqlite/SQLiteDatabase;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1217,9 +1217,9 @@
     invoke-interface {v1, v0}, Landroid/database/Cursor;->moveToPosition(I)Z
 
     .line 117
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/a/a/b;->db:Landroid/database/sqlite/SQLiteDatabase;
 
-    invoke-direct {p0, v0, p1}, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->c(Landroid/database/sqlite/SQLiteDatabase;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
+    invoke-direct {p0, v0, p1}, Lcom/wumii/android/mimi/models/a/a/b;->c(Landroid/database/sqlite/SQLiteDatabase;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -1232,7 +1232,7 @@
 
     .line 120
     :try_start_2
-    sget-object v2, Lcom/wumii/android/mimi/models/a/a/ChatMessageDao;->a:Lorg/slf4j/Logger;
+    sget-object v2, Lcom/wumii/android/mimi/models/a/a/b;->a:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
