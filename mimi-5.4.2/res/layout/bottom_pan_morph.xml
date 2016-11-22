@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_pan_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/horizontal_line_px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@id/owner_avatar_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/owner_avatar" android:layout_width="@dimen/chat_morph_avatar_size" android:layout_height="@dimen/chat_morph_avatar_size" android:src="@drawable/ic_default_avatar" android:layout_centerInParent="true" android:contentDescription="@null" />
+            <ImageView android:id="@id/owner_avatar_selected" android:visibility="gone" android:layout_width="@dimen/chat_morph_selected_size" android:layout_height="@dimen/chat_morph_selected_size" android:layout_marginLeft="-25.0dip" android:src="@drawable/ic_selected" android:layout_toRightOf="@id/owner_avatar" android:layout_alignTop="@id/owner_avatar" android:contentDescription="@null" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/light_gray" android:id="@id/owner_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/owner_avatar" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/anonymous_member_avatar_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/anonymous_member_avatar" android:background="@drawable/ic_default_avatar" android:layout_width="@dimen/chat_morph_avatar_size" android:layout_height="@dimen/chat_morph_avatar_size" android:layout_centerInParent="true" android:contentDescription="@null" />
+            <ImageView android:id="@id/anonymous_member_avatar_selected" android:visibility="invisible" android:layout_width="@dimen/chat_morph_selected_size" android:layout_height="@dimen/chat_morph_selected_size" android:layout_marginLeft="-25.0dip" android:src="@drawable/ic_selected" android:layout_toRightOf="@id/anonymous_member_avatar" android:layout_alignTop="@id/anonymous_member_avatar" android:contentDescription="@null" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/light_gray" android:id="@id/anonymous_member_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/anonymous_member_avatar" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/name_user_avatar" android:background="@drawable/ic_user_avatar_default" android:layout_width="@dimen/chat_morph_avatar_size" android:layout_height="@dimen/chat_morph_avatar_size" android:layout_centerInParent="true" android:contentDescription="@null" />
+            <ImageView android:id="@id/name_user_avatar_selected" android:visibility="invisible" android:layout_width="@dimen/chat_morph_selected_size" android:layout_height="@dimen/chat_morph_selected_size" android:layout_marginLeft="-25.0dip" android:src="@drawable/ic_selected" android:layout_toRightOf="@id/name_user_avatar" android:layout_alignTop="@id/name_user_avatar" android:contentDescription="@null" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/light_gray" android:id="@id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/add_user_info" android:layout_below="@id/name_user_avatar" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

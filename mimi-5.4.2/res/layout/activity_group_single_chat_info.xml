@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wumii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/chat_list_item_secret_size">
+            <TextView android:textSize="16.0dip" android:id="@id/from" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/chat_info_item_padding" android:layout_marginRight="24.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageView android:id="@id/group_chat_icon" android:layout_width="@dimen/single_chat_info_group_chat_icon_size" android:layout_height="@dimen/single_chat_info_group_chat_icon_size" android:layout_marginRight="14.0dip" android:onClick="clickOnGroupChatIcon" android:contentDescription="@null" />
+        </LinearLayout>
+        <include layout="@layout/chat_info_divider" />
+        <include layout="@layout/common_single_chat_info_snippet" />
+        <com.wumii.android.mimi.ui.widgets.chat.ChatInfoItemCheckBox android:id="@id/block_all" android:layout_width="fill_parent" android:layout_height="wrap_content" wumii:onClick="clickOnBlockAll" wumii:ciiMatchBottomLine="true" />
+        <TextView android:textColor="@android:color/darker_gray" android:padding="@dimen/chat_info_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/single_chat_info_tip_for_group_chat" />
+    </LinearLayout>
+</ScrollView>

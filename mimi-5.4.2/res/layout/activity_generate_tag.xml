@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/container" android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:background="@android:color/white" android:paddingTop="@dimen/default_space" android:paddingBottom="@dimen/default_space" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/generate_tag_edit_text" android:background="@null" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="@dimen/default_space" android:layout_marginRight="@dimen/default_space" android:hint="@string/generate_tag_edit_text_hint" android:singleLine="true" android:layout_weight="1.0" />
+            <include layout="@layout/vertical_line" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/light_gray" android:gravity="center" android:id="@id/generate_tag_btn" android:paddingLeft="@dimen/default_space" android:paddingRight="@dimen/default_space" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/generate_tag_add_btn" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

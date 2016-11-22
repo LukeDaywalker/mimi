@@ -1,0 +1,5 @@
+解包
+apktool d -f mimi-5.4.2.apk -o ..\..\mimi-5.4.2
+
+打包
+apktool b ..\..\mimi-5.4.2 -o mimi-5.4.2.new.apk

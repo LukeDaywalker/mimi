@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/item_background_holo_light_white_bg" android:paddingLeft="@dimen/create_group_text_padding_left_right" android:paddingTop="@dimen/create_group_text_padding_top_buttom" android:paddingRight="@dimen/create_group_text_padding_left_right" android:paddingBottom="@dimen/create_group_text_padding_top_buttom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/create_group_text_size" android:textColor="#ff7a7a7a" android:id="@id/item" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+    <TextView android:textSize="@dimen/create_group_text_size" android:textColor="#ff787878" android:id="@id/value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="5.0" />
+    <ImageView android:id="@id/image" android:visibility="invisible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_action_info" />
+</LinearLayout>

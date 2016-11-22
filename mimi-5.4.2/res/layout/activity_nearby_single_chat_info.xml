@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wumii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.wumii.android.mimi.ui.widgets.chat.ChatInfoItemSummaryView android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="clickOnMoreNearby" wumii:ciiBackground="@drawable/item_background_holo_light" wumii:ciiTitle="@string/single_chat_info_item_from_nearby" />
+        <include layout="@layout/chat_info_divider" />
+        <RelativeLayout android:gravity="center_vertical" android:background="@android:color/white" android:paddingLeft="@dimen/chat_info_item_padding" android:layout_width="fill_parent" android:layout_height="@dimen/nearby_user_list_item_height">
+            <ImageView android:id="@id/icon" android:layout_width="@dimen/nearby_user_list_item_avatar_size" android:layout_height="@dimen/nearby_user_list_item_avatar_size" android:layout_centerVertical="true" android:contentDescription="@null" />
+            <TextView android:textSize="17.0dip" android:textColor="@color/nearby_user_list_item_intro_text" android:id="@id/intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="112.0dip" android:maxLines="2" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" />
+            <TextView android:textColor="@android:color/darker_gray" android:id="@id/distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/chat_info_item_padding" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <include layout="@layout/chat_info_divider" />
+        <com.wumii.android.mimi.ui.widgets.chat.ChatInfoItemCheckBox android:id="@id/accept_nearby" android:layout_width="fill_parent" android:layout_height="wrap_content" wumii:onClick="clickOnAcceptNearby" wumii:ciiTitle="@string/single_chat_info_item_accept_nearby" wumii:ciiMatchBottomLine="true" />
+        <include layout="@layout/common_single_chat_info_snippet" />
+        <TextView android:textColor="@android:color/darker_gray" android:padding="@dimen/chat_info_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/single_chat_info_tip_for_nearby_chat" />
+    </LinearLayout>
+</ScrollView>

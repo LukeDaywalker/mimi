@@ -1,0 +1,297 @@
+.class public final Lcom/google/analytics/a/b/d;
+.super Lcom/google/tagmanager/a/a/a;
+.source "Serving.java"
+
+
+# static fields
+.field public static final a:[Lcom/google/analytics/a/b/d;
+
+
+# instance fields
+.field public b:Ljava/lang/String;
+
+.field public c:J
+
+.field public d:J
+
+.field public e:Z
+
+.field public f:J
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .prologue
+    .line 1919
+    const/4 v0, 0x0
+
+    new-array v0, v0, [Lcom/google/analytics/a/b/d;
+
+    sput-object v0, Lcom/google/analytics/a/b/d;->a:[Lcom/google/analytics/a/b/d;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 4
+
+    .prologue
+    const-wide/16 v2, 0x0
+
+    .line 1920
+    invoke-direct {p0}, Lcom/google/tagmanager/a/a/a;-><init>()V
+
+    .line 1923
+    const-string/jumbo v0, ""
+
+    iput-object v0, p0, Lcom/google/analytics/a/b/d;->b:Ljava/lang/String;
+
+    .line 1926
+    iput-wide v2, p0, Lcom/google/analytics/a/b/d;->c:J
+
+    .line 1929
+    const-wide/32 v0, 0x7fffffff
+
+    iput-wide v0, p0, Lcom/google/analytics/a/b/d;->d:J
+
+    .line 1932
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/google/analytics/a/b/d;->e:Z
+
+    .line 1935
+    iput-wide v2, p0, Lcom/google/analytics/a/b/d;->f:J
+
+    .line 1920
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 6
+
+    .prologue
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    .line 1950
+    if-ne p1, p0, :cond_1
+
+    .line 1953
+    :cond_0
+    :goto_0
+    return v0
+
+    .line 1951
+    :cond_1
+    instance-of v2, p1, Lcom/google/analytics/a/b/d;
+
+    if-nez v2, :cond_2
+
+    move v0, v1
+
+    goto :goto_0
+
+    .line 1952
+    :cond_2
+    check-cast p1, Lcom/google/analytics/a/b/d;
+
+    .line 1953
+    iget-object v2, p0, Lcom/google/analytics/a/b/d;->b:Ljava/lang/String;
+
+    if-nez v2, :cond_4
+
+    iget-object v2, p1, Lcom/google/analytics/a/b/d;->b:Ljava/lang/String;
+
+    if-nez v2, :cond_3
+
+    :goto_1
+    iget-wide v2, p0, Lcom/google/analytics/a/b/d;->c:J
+
+    iget-wide v4, p1, Lcom/google/analytics/a/b/d;->c:J
+
+    cmp-long v2, v2, v4
+
+    if-nez v2, :cond_3
+
+    iget-wide v2, p0, Lcom/google/analytics/a/b/d;->d:J
+
+    iget-wide v4, p1, Lcom/google/analytics/a/b/d;->d:J
+
+    cmp-long v2, v2, v4
+
+    if-nez v2, :cond_3
+
+    iget-boolean v2, p0, Lcom/google/analytics/a/b/d;->e:Z
+
+    iget-boolean v3, p1, Lcom/google/analytics/a/b/d;->e:Z
+
+    if-ne v2, v3, :cond_3
+
+    iget-wide v2, p0, Lcom/google/analytics/a/b/d;->f:J
+
+    iget-wide v4, p1, Lcom/google/analytics/a/b/d;->f:J
+
+    cmp-long v2, v2, v4
+
+    if-nez v2, :cond_3
+
+    iget-object v2, p0, Lcom/google/analytics/a/b/d;->s:Ljava/util/List;
+
+    if-nez v2, :cond_5
+
+    iget-object v2, p1, Lcom/google/analytics/a/b/d;->s:Ljava/util/List;
+
+    if-eqz v2, :cond_0
+
+    :cond_3
+    move v0, v1
+
+    goto :goto_0
+
+    :cond_4
+    iget-object v2, p0, Lcom/google/analytics/a/b/d;->b:Ljava/lang/String;
+
+    iget-object v3, p1, Lcom/google/analytics/a/b/d;->b:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    goto :goto_1
+
+    :cond_5
+    iget-object v2, p0, Lcom/google/analytics/a/b/d;->s:Ljava/util/List;
+
+    iget-object v3, p1, Lcom/google/analytics/a/b/d;->s:Ljava/util/List;
+
+    invoke-interface {v2, v3}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    goto :goto_0
+.end method
+
+.method public hashCode()I
+    .locals 7
+
+    .prologue
+    const/4 v1, 0x0
+
+    const/16 v6, 0x20
+
+    .line 1962
+    .line 1963
+    iget-object v0, p0, Lcom/google/analytics/a/b/d;->b:Ljava/lang/String;
+
+    if-nez v0, :cond_0
+
+    move v0, v1
+
+    :goto_0
+    add-int/lit16 v0, v0, 0x20f
+
+    .line 1964
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-wide v2, p0, Lcom/google/analytics/a/b/d;->c:J
+
+    iget-wide v4, p0, Lcom/google/analytics/a/b/d;->c:J
+
+    ushr-long/2addr v4, v6
+
+    xor-long/2addr v2, v4
+
+    long-to-int v2, v2
+
+    add-int/2addr v0, v2
+
+    .line 1965
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-wide v2, p0, Lcom/google/analytics/a/b/d;->d:J
+
+    iget-wide v4, p0, Lcom/google/analytics/a/b/d;->d:J
+
+    ushr-long/2addr v4, v6
+
+    xor-long/2addr v2, v4
+
+    long-to-int v2, v2
+
+    add-int/2addr v0, v2
+
+    .line 1966
+    mul-int/lit8 v2, v0, 0x1f
+
+    iget-boolean v0, p0, Lcom/google/analytics/a/b/d;->e:Z
+
+    if-eqz v0, :cond_1
+
+    const/4 v0, 0x1
+
+    :goto_1
+    add-int/2addr v0, v2
+
+    .line 1967
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-wide v2, p0, Lcom/google/analytics/a/b/d;->f:J
+
+    iget-wide v4, p0, Lcom/google/analytics/a/b/d;->f:J
+
+    ushr-long/2addr v4, v6
+
+    xor-long/2addr v2, v4
+
+    long-to-int v2, v2
+
+    add-int/2addr v0, v2
+
+    .line 1968
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Lcom/google/analytics/a/b/d;->s:Ljava/util/List;
+
+    if-nez v2, :cond_2
+
+    :goto_2
+    add-int/2addr v0, v1
+
+    .line 1969
+    return v0
+
+    .line 1963
+    :cond_0
+    iget-object v0, p0, Lcom/google/analytics/a/b/d;->b:Ljava/lang/String;
+
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    move-result v0
+
+    goto :goto_0
+
+    .line 1966
+    :cond_1
+    const/4 v0, 0x2
+
+    goto :goto_1
+
+    .line 1968
+    :cond_2
+    iget-object v1, p0, Lcom/google/analytics/a/b/d;->s:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->hashCode()I
+
+    move-result v1
+
+    goto :goto_2
+.end method

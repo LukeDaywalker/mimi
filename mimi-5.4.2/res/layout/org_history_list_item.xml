@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/org_item" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="52.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0dip" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="40.0dip" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_recent_search_clean" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/line1" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignLeft="@id/title" android:layout_alignParentBottom="true" />
+    <View android:id="@id/line2" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

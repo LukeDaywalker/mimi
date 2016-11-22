@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/voice_audition_image" android:padding="7.0dip" android:layout_width="@dimen/voice_audition_item_size" android:layout_height="@dimen/voice_audition_item_size" android:onClick="clickOnAuditionItem">
+        <ImageView android:id="@id/voice_audition_bg" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="13.0dip" android:textColor="@android:color/white" android:id="@id/voice_audition_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/voice_audition_playing_cover" android:background="@drawable/voice_audition_item_playing_cover" android:padding="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/record_voice_speaking" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/survey_option_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <TextView android:textSize="16.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/survey_option_vote_btn" android:background="#55000000" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/survey_card_vote" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/survey_option_voted_wrapper" android:background="#aa000000" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/survey_option_voted_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:src="@drawable/ic_survey_voted" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/survey_option_progress_bar" android:background="@color/survey_card_view_progress_normal" android:layout_width="44.0dip" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/survey_option_data" android:layout_width="44.0dip" android:layout_height="40.0dip" android:layout_above="@id/survey_option_progress_bar" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

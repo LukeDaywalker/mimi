@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="17.0dip" android:textColor="@color/invite_friend_text" android:id="@id/friends_count" android:background="@color/gray_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_loading" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.wumii.android.mimi.ui.widgets.share.InviteList android:id="@id/invite_list" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/notice_message" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_invite_by_socials" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="clickOnReceiver"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="@color/contact_selection_text" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@android:color/darker_gray" android:id="@id/pno" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="5.0dip" />
+</LinearLayout>

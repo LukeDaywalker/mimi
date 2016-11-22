@@ -1,0 +1,18 @@
+keyAlias 'wumi'
+keyPassword 'LukeMimi'
+storeFile file('mimi.jks')
+storePassword 'LukeWumi'
+
+运行下面的命令
+jarsigner -verbose -keystore debug.keystore -storepass android -signedjar PhoneBook_signed.apk -digestalg SHA1 -sigalg MD5withRSA PhoneBook.apk androiddebugkey
+/*解释：
+-jarsigner是Java的签名工具
+-verbose参数表示：显示出签名详细信息
+-keystore表示使用当前目录中的debug.keystore签名证书文件
+-storepass android表示Keystore密码：“android”
+-keypass   别名私有密码
+-signedjar PhoneBook_signed.apk表示签名后生成的APK名称
+PhoneBook.apk表示未签名的APK Android软件
+-digestalg SHA1 -sigalg MD5withRSA：这就是必须加上的参数，如果你是jdk 1.6也不受影响-androiddebugkey表示Key别名
+
+jarsigner -verbose -keystore mimi.jks -storepass LukeWumi -keypass LukeMimi -signedjar mimi-5.4.2.signed.apk -digestalg SHA1 -sigalg MD5withRSA mimi-5.4.2.new.apk wumi

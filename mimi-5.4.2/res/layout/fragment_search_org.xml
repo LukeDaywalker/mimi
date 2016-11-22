@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mimi="http://schemas.android.com/apk/res-auto">
+    <com.wumii.android.mimi.ui.widgets.MimiSearchView android:id="@id/search_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="48.0dip" android:imeOptions="actionSearch" mimi:hintText="" />
+    <include layout="@layout/horizontal_line_px" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <za.co.immedia.pinnedheaderlistview.PinnedHeaderListView android:id="@id/search_result_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:overScrollMode="never" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty" android:background="@color/gray_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="400.0dip">
+            <ImageView android:id="@id/hint_set_org_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_set_org_guidance" />
+            <TextView android:textSize="16.0dip" android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@id/hint_set_org_text" android:paddingLeft="@dimen/default_horizontal_margin" android:paddingRight="@dimen/default_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hint_set_org" />
+            <Button android:id="@id/btn_set_immediately" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="立即设置" style="@style/Mimi.Button.Primary" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_container" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_linear_layout_divider" android:showDividers="end|middle|beginning">
+        <include layout="@layout/horizontal_line_px" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/green" android:gravity="center" android:id="@id/search_nearby_org" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/search_nearby_org" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/green" android:gravity="center" android:id="@id/supplement_org" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/org_not_found_my_org" />
+    </LinearLayout>
+</LinearLayout>

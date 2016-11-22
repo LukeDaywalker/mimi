@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wumii.android.mimi.ui.widgets.CircleListItemView android:background="@drawable/item_background_holo_light_white_bg" android:layout_width="fill_parent" android:layout_height="54.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="@android:color/black" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/red_dot" android:background="@drawable/ic_red_dot_small" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="20.0dip" android:layout_toRightOf="@id/title" android:layout_centerVertical="true" />
+    <View android:id="@id/line" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentBottom="true" />
+</com.wumii.android.mimi.ui.widgets.CircleListItemView>

@@ -1,0 +1,15 @@
+.class Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatLollipopImpl;
+.super Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatJellybeanMR2Impl;
+.source "ViewGroupCompat.java"
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 122
+    invoke-direct {p0}, Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatJellybeanMR2Impl;-><init>()V
+
+    return-void
+.end method

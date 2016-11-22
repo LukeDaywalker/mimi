@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="122.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@id/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_list_item_empty_author_comments" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/reload_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@android:color/darker_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_list_item_error_load_author_comments" android:singleLine="true" />
+            <TextView android:textSize="14.0dip" android:textColor="@android:color/white" android:id="@id/reload" android:background="@drawable/green_btn_bg" android:paddingLeft="22.0dip" android:paddingTop="6.0dip" android:paddingRight="22.0dip" android:paddingBottom="6.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/comment_list_item_reload_author_comments" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" layout="@layout/horizontal_line_px" />
+    </RelativeLayout>
+</LinearLayout>

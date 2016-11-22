@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:layout_width="@dimen/chat_detail_item_image_message_min_width" android:layout_height="@dimen/chat_detail_item_image_message_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:padding="@dimen/image_message_padding_default" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+    <ImageView android:id="@id/curtain" android:padding="@dimen/image_message_padding_default" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/chat_transient_image_curtain_bg" android:contentDescription="@null" />
+    <TextView android:textColor="@color/image_removed_tips" android:gravity="center" android:id="@id/read_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/image_message_padding_default" android:text="@string/image_already_removed" />
+</RelativeLayout>

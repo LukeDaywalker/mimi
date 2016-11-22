@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/chat_bubble_center_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="@color/chat_extra_message_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_message_sys_retracted_text1" />
+        <ImageView android:id="@id/avatar" android:layout_width="@dimen/chat_system_message_item_avatar_size" android:layout_height="@dimen/chat_system_message_item_avatar_size" android:layout_marginRight="3.0dip" android:contentDescription="@null" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/chat_extra_message_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_message_sys_retracted_text2" />
+    </LinearLayout>
+</LinearLayout>

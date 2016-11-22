@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_action_more" android:id="@id/action_more" android:title="@string/action_more" android:showAsAction="always">
+        <menu>
+            <item android:id="@id/action_female" android:title="@string/action_female" />
+            <item android:id="@id/action_male" android:title="@string/action_male" />
+            <item android:id="@id/action_all" android:title="@string/action_all" />
+            <item android:id="@id/action_block_message" android:title="@string/action_block_message" />
+        </menu>
+    </item>
+</menu>

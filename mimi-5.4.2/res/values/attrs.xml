@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="onClick" format="string" />
+    <attr name="ciisTextColor" format="color" />
+    <attr name="ciisText" format="reference|string" />
+    <attr name="ciisPosition">
+        <enum name="bottom" value="2" />
+        <enum name="center" value="0" />
+        <enum name="right" value="1" />
+    </attr>
+    <attr name="ciiBackground" format="reference" />
+    <attr name="ciiTitle" format="reference|string" />
+    <attr name="ciiTitleTextColor" format="color" />
+    <attr name="ciiMatchBottomLine" format="boolean" />
+    <attr name="dividerWidth" format="dimension" />
+    <attr name="hintText" format="string" />
+    <attr name="overlay_size" format="dimension" />
+    <attr name="layoutManager" format="string" />
+    <attr name="spanCount" format="integer" />
+    <attr name="reverseLayout" format="boolean" />
+    <attr name="stackFromEnd" format="boolean" />
+    <attr name="max" format="integer" />
+    <attr name="progress" format="integer" />
+    <attr name="size" format="dimension" />
+    <attr name="siName" format="reference|string" />
+    <attr name="siIcon" format="reference" />
+    <attr name="headerText" format="string" />
+    <attr name="footerText" format="string" />
+    <attr name="sectionSpace" format="dimension" />
+    <attr name="column_count" format="integer" />
+    <attr name="column_count_portrait" format="integer" />
+    <attr name="column_count_landscape" format="integer" />
+    <attr name="item_margin" format="dimension" />
+    <attr name="grid_paddingLeft" format="dimension" />
+    <attr name="grid_paddingRight" format="dimension" />
+    <attr name="grid_paddingTop" format="dimension" />
+    <attr name="grid_paddingBottom" format="dimension" />
+    <attr name="tiTitle" format="reference|string" />
+    <attr name="tiValue" format="reference|string" />
+    <attr name="toggleTitle" format="reference|string" />
+    <attr name="vpiIconPageIndicatorStyle" format="reference" />
+    <attr name="vpiTabPageIndicatorStyle" format="reference" />
+    <attr name="vpiIconPageIndicatorIconPadding" format="dimension" />
+    <attr name="headerOffset" format="dimension" />
+    <attr name="footerOffset" format="integer" />
+    <attr name="hintTextColor" format="color" />
+    <attr name="displayUpdateTime" format="boolean" />
+    <attr name="showFooterArrow" format="boolean" />
+    <attr name="headerHintNormal" format="reference|string" />
+    <attr name="headerHintReady" format="reference|string" />
+    <attr name="headerHintLoading" format="reference|string" />
+    <attr name="footerHintNormal" format="reference|string" />
+    <attr name="footerHintReady" format="reference|string" />
+    <attr name="footerHintLoading" format="reference|string" />
+</resources>

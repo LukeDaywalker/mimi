@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wumii.android.mimi.ui.widgets.CircleItemsView android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line_vertical" android:background="@color/divider" android:layout_width="0.5dip" android:layout_height="28.0dip" android:layout_centerInParent="true" />
+    <TextView android:textSize="17.0dip" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@id/title_left" android:background="@drawable/item_background_holo_light_white_bg" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:drawablePadding="12.0dip" android:layout_toLeftOf="@id/line_vertical" />
+    <TextView android:textSize="17.0dip" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@id/title_right" android:background="@drawable/item_background_holo_light_white_bg" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:drawablePadding="12.0dip" android:layout_toRightOf="@id/line_vertical" />
+    <View android:id="@id/line_horizontal" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignBottom="@id/title_left" />
+</com.wumii.android.mimi.ui.widgets.CircleItemsView>

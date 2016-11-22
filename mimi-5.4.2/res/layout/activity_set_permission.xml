@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/create_group_permission_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wumii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:background="@drawable/section_list_bg" android:paddingLeft="@dimen/section_space" android:paddingRight="@dimen/section_space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/section_space" android:minHeight="48.0dip">
+            <TextView android:textSize="17.0dip" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/permission" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:gravity="center_vertical" android:paddingLeft="@dimen/section_space" android:paddingTop="8.0dip" android:paddingRight="@dimen/section_space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/create_group_chat_permission_hint" />
+        <com.wumii.android.mimi.ui.widgets.SectionView android:layout_width="fill_parent" android:layout_height="wrap_content" wumii:footerText="@string/create_group_chat_validation_hint">
+            <com.wumii.android.mimi.ui.widgets.SectionListView android:id="@id/create_group_chat_validation_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.wumii.android.mimi.ui.widgets.SectionCheckBoxItemView android:id="@id/create_group_chat_validation" android:layout_width="wrap_content" android:layout_height="wrap_content" wumii:siName="@string/create_group_chat_validation" />
+                <com.wumii.android.mimi.ui.widgets.SectionCustomView android:id="@id/create_group_chat_validation_question" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </com.wumii.android.mimi.ui.widgets.SectionListView>
+        </com.wumii.android.mimi.ui.widgets.SectionView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wumii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/section_list_bg" android:paddingLeft="@dimen/section_space" android:paddingTop="10.0dip" android:paddingRight="@dimen/section_space" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/section_space" android:onClick="clickOnPasswordLock">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_title_password_lock" android:singleLine="true" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_title_password_lock_desc" />
+        </LinearLayout>
+        <TextView android:textSize="17.0dip" android:textColor="#ff999999" android:id="@id/password_lock_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" />
+    </LinearLayout>
+    <com.wumii.android.mimi.ui.widgets.SectionView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.wumii.android.mimi.ui.widgets.SectionListView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.wumii.android.mimi.ui.widgets.SectionTextItemView android:id="@id/unlink_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" wumii:siName="@string/settings_title_unlink" />
+        </com.wumii.android.mimi.ui.widgets.SectionListView>
+    </com.wumii.android.mimi.ui.widgets.SectionView>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wumii.android.mimi.ui.widgets.XListView android:id="@id/list_view" android:background="@android:color/transparent" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" />
+    <TextView android:textSize="18.0dip" android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@id/empty_view" android:background="@color/gray_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/empty_secret" />
+    <ViewStub android:id="@id/stub_feeds_empty_view" android:layout="@layout/feeds_empty_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="15.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/action_bar_toast" android:background="@color/action_bar_toast_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+</RelativeLayout>

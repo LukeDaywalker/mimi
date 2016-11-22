@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wumii.android.mimi.ui.widgets.chat.WaveRelativeLayout android:id="@id/wave_view" android:background="@drawable/ic_call_default" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dip">
+            <ImageView android:id="@id/icon" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/ic_call_icon_default" />
+            <TextView android:textSize="18.0dip" android:textColor="@android:color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+            <TextView android:textSize="16.0dip" android:textColor="#ffc4dbd3" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_member_prompt_desc" />
+        </LinearLayout>
+        <TextView android:textSize="18.0dip" android:gravity="center" android:id="@id/content" android:background="@drawable/white_corner_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="-17.0dip" android:minHeight="100.0dip" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="42.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="60.0dip">
+            <Button android:textSize="18.0dip" android:textColor="@android:color/white" android:id="@id/reject" android:background="@drawable/call_member_red_button_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="@string/call_member_prompt_reject" android:layout_weight="1.0" android:onClick="clickOnReject" />
+            <Button android:textSize="18.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/accept" android:background="@drawable/call_member_black_button_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/call_member_prompt_enter_group_chat" android:layout_weight="1.0" android:onClick="clickOnAccept" />
+        </LinearLayout>
+    </LinearLayout>
+</com.wumii.android.mimi.ui.widgets.chat.WaveRelativeLayout>

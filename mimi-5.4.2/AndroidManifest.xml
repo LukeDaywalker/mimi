@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.wumii.android.mimi" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-feature android:name="android.hardware.wifi"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:logo="@drawable/ic_logo" android:name="com.wumii.android.mimi.app.MainApplication" android:theme="@style/BaseTheme">
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.wumii.android.mimi.ui.activities.NavigationActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.CustomTabPageIndicatorTheme" android:uiOptions="splitActionBarWhenNarrow" android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.wumii.android.mimi.ui.activities.DataUpgradeActivity" android:screenOrientation="portrait" android:theme="@style/Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_enable_friend_circle" android:name="com.wumii.android.mimi.ui.activities.EnableFriendCircleActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_enable_friend_circle_1" android:name="com.wumii.android.mimi.ui.activities.EnableFriendCircleActivity1" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_enable_friend_circle_2" android:name="com.wumii.android.mimi.ui.activities.EnableFriendCircleActivity2" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.circle.SetOrgGuideActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_follow_circle" android:name="com.wumii.android.mimi.ui.activities.FollowCircleActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_discover_circle" android:name="com.wumii.android.mimi.ui.activities.discover.DiscoverCircleActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.CustomTabPageIndicatorTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:hardwareAccelerated="true" android:name="com.wumii.android.mimi.ui.activities.chat.CallMemberPromptActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.authenticator.AuthenticatorActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_verification_title" android:name="com.wumii.android.mimi.ui.activities.authenticator.VerificationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_forgot_password" android:name="com.wumii.android.mimi.ui.activities.authenticator.ForgotPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_change_password" android:name="com.wumii.android.mimi.ui.activities.authenticator.ChangePasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_change_phone_number" android:name="com.wumii.android.mimi.ui.activities.authenticator.ChangePhoneNumberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:icon="@drawable/ic_action_back" android:label="@string/label_select_region" android:name="com.wumii.android.mimi.ui.activities.authenticator.RegionSelectionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.wumii.android.mimi.ui.activities.authenticator.AccountGuidanceActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_guess_org_info" android:launchMode="singleTop" android:name="com.wumii.android.mimi.ui.apdaters.circle.GuessOrgInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_org_validation" android:name="com.wumii.android.mimi.ui.activities.circle.OrgValidationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_location_validation" android:name="com.wumii.android.mimi.ui.activities.circle.LocationValidationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_email_validation" android:name="com.wumii.android.mimi.ui.activities.circle.EmailValidationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_suplement_email" android:name="com.wumii.android.mimi.ui.activities.circle.SupplementEmailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_email_validation_code" android:name="com.wumii.android.mimi.ui.activities.circle.EmailValidationCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.secret.SecretActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="secret" android:scheme="wmmimi"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_comment_detail" android:name="com.wumii.android.mimi.ui.activities.secret.CommentDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_survey_detail" android:name="com.wumii.android.mimi.ui.activities.SurveyDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_publish_secret" android:name="com.wumii.android.mimi.ui.activities.publish.PublishSecretActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_generate_tag" android:name="com.wumii.android.mimi.ui.activities.publish.GenerateTagActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_publish_survey" android:name="com.wumii.android.mimi.ui.activities.publish.PublishSurveyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.share.SystemShareJumpActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter android:label="@string/share_to_mimi">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.CropImageActivity" android:screenOrientation="portrait" android:theme="@style/Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_feedback" android:name="com.wumii.android.mimi.ui.activities.setting.FeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_set_user_info" android:name="com.wumii.android.mimi.ui.activities.setting.SetUserInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_reset_user_info" android:name="com.wumii.android.mimi.ui.activities.setting.ResetUserInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_modify_avatar" android:name="com.wumii.android.mimi.ui.activities.setting.ModifyAvatarActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_modify_nickname" android:name="com.wumii.android.mimi.ui.activities.setting.ModifyNicknameActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_anonymous_letter" android:name="com.wumii.android.mimi.ui.activities.lab.SendAnonymousLetterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.webview.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.webview.WeixinPromotionWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.webview.PromotionWebViewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="promotion" android:scheme="wmmimi"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_notification" android:name="com.wumii.android.mimi.ui.activities.NotificationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_settings" android:name="com.wumii.android.mimi.ui.activities.setting.SettingsActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.PreferenceActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_push_notification" android:name="com.wumii.android.mimi.ui.activities.setting.PushNotificationActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.PreferenceActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_privacy_settings" android:name="com.wumii.android.mimi.ui.activities.setting.PrivacySettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_password_lock_settings" android:name="com.wumii.android.mimi.ui.activities.setting.PasswordLockSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_blocked_user" android:name="com.wumii.android.mimi.ui.activities.setting.BlockedUserSecretActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:icon="@drawable/ic_action_back" android:label="@string/label_contact_selection" android:name="com.wumii.android.mimi.ui.activities.share.ShareSecretContactListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:icon="@drawable/ic_action_back" android:label="@string/label_anonymous_letter_receivers" android:name="com.wumii.android.mimi.ui.activities.lab.AnonymousLetterReceiversActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_search_image" android:name="com.wumii.android.mimi.ui.activities.SearchImageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_invite" android:launchMode="singleTop" android:logo="@drawable/ic_logo" android:name="com.wumii.android.mimi.ui.activities.share.InviteActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="friend" android:path="/add" android:scheme="wmmimi"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_sys_notification" android:name="com.wumii.android.mimi.ui.activities.sysnotify.SysNotificationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_sys_notification_detail" android:name="com.wumii.android.mimi.ui.activities.sysnotify.SysNotificationDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.DialogActivity" android:screenOrientation="portrait" android:theme="@style/DialogActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_share_to_chat" android:name="com.wumii.android.mimi.ui.activities.share.ShareToChatActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.chat.SingleChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.chat.GroupApplicationChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.chat.SecretSingleChatInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_single_chat_info" android:name="com.wumii.android.mimi.ui.activities.chat.GroupSingleChatInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_single_chat_info" android:name="com.wumii.android.mimi.ui.activities.lab.NearbySingleChatInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_single_chat_info" android:name="com.wumii.android.mimi.ui.activities.lab.AnonymousLetterSingleChatInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_single_chat_info" android:name="com.wumii.android.mimi.ui.activities.chat.SecretInvitationSingleChatInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_single_chat_info" android:name="com.wumii.android.mimi.ui.activities.lab.FriendImpressionSingleChatInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_single_chat_info" android:name="com.wumii.android.mimi.ui.activities.chat.NewFriendSingleChatInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.chat.CreateGroupChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.chat.CreateGroupChatForPermissionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_chat_select_image" android:name="com.wumii.android.mimi.ui.activities.chat.ChatSelectImageActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.wumii.android.mimi.ui.activities.chat.GroupChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_group_chat_info" android:name="com.wumii.android.mimi.ui.activities.chat.GroupChatInfoOwnerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_group_chat_info" android:name="com.wumii.android.mimi.ui.activities.chat.GroupChatInfoMemberActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_group_banned" android:name="com.wumii.android.mimi.ui.activities.chat.GroupBannedActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_group_chat_info" android:name="com.wumii.android.mimi.ui.activities.chat.GroupChatInfoGuestActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="group" android:path="/join" android:scheme="wmmimi"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_group_chat_member_manager" android:name="com.wumii.android.mimi.ui.activities.chat.GroupChatMemberManagerActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.CustomTabPageIndicatorTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_group_chat_square" android:name="com.wumii.android.mimi.ui.activities.chat.GroupChatSquareActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.CustomTabPageIndicatorTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_owner_group_chat_list" android:name="com.wumii.android.mimi.ui.activities.chat.OwnerGroupChatListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.circle.SetOrgActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.circle.SelectOrgActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_group_chat_info" android:name="com.wumii.android.mimi.ui.activities.chat.ChatInfoTextEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_group_chat_info_invite" android:name="com.wumii.android.mimi.ui.activities.chat.GroupChatInfoInviteActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.ImageActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme.TranslucentNoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.DeletableImageActivity" android:screenOrientation="portrait" android:theme="@style/BaseTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.TransientImageActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_friend_impression_title" android:name="com.wumii.android.mimi.ui.activities.lab.FriendImpressionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_associated_weixin_title" android:launchMode="singleTop" android:name="com.wumii.android.mimi.ui.activities.lab.AssociatedWithWeixinActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_nearby_info_setting" android:name="com.wumii.android.mimi.ui.activities.lab.NearbyInfoSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_set_knock_question" android:name="com.wumii.android.mimi.ui.activities.chat.SetKnockQuestionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_nearby_user_list" android:name="com.wumii.android.mimi.ui.activities.lab.NearbyUserListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_knock_chat_list" android:name="com.wumii.android.mimi.ui.activities.chat.KnockChatListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_validation_chat_list" android:name="com.wumii.android.mimi.ui.activities.chat.GroupApplicationChatListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_nearby_user_intro_edit" android:name="com.wumii.android.mimi.ui.activities.lab.NearbyUserIntroEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.wumii.android.mimi.ui.activities.setting.PasswordLockActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_remarked_chat_list" android:name="com.wumii.android.mimi.ui.activities.chat.RemarkedChatListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_voice_audition" android:name="com.wumii.android.mimi.ui.activities.chat.VoiceAuditionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_user_profile" android:name="com.wumii.android.mimi.ui.activities.setting.UserProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_set_permission" android:name="com.wumii.android.mimi.ui.activities.chat.SetGroupChatPermissionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_org_secrets_square" android:name="com.wumii.android.mimi.ui.activities.circle.SearchCircleActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_supplement_circle" android:name="com.wumii.android.mimi.ui.activities.circle.SupplementCircleActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_my_circle" android:name="com.wumii.android.mimi.ui.activities.circle.MyCircleActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_appeal_change" android:name="com.wumii.android.mimi.ui.activities.circle.AppealOrganizationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_appeal_change" android:name="com.wumii.android.mimi.ui.activities.circle.AppealGenderActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_reselect_org" android:name="com.wumii.android.mimi.ui.activities.circle.ReselectOrgActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.discover.SubjectSecretListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_add_new_crowd" android:name="com.wumii.android.mimi.ui.activities.circle.AddNewCrowdActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.secret.CircleFeedsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="circle" android:scheme="wmmimi"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_crowd_splits" android:name="com.wumii.android.mimi.ui.activities.circle.CircleSplitsActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_org_detail" android:launchMode="singleTask" android:name="com.wumii.android.mimi.ui.activities.circle.OrgDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_circle_feed_back" android:name="com.wumii.android.mimi.ui.activities.circle.CircleFeedbackActivity"/>
+        <activity android:name="com.wumii.android.mimi.ui.activities.circle.OrganizationsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wumii.android.mimi.ui.activities.circle.CircleCategoryDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/label_activity_categories" android:name="com.wumii.android.mimi.ui.activities.circle.CategoriesActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.wumii.android.mimi.ui.activities.TagSecretListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/label_circle_tags" android:name="com.wumii.android.mimi.ui.activities.CircleTagsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/discover_item_title_debug" android:launchMode="singleTop" android:name="com.wumii.android.mimi.debug.DebugActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/debug_traffic_monitor" android:launchMode="singleTop" android:name="com.wumii.android.mimi.debug.DebugTrafficActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/debug_memory_monitor" android:launchMode="singleTop" android:name="com.wumii.android.mimi.debug.DebugMemoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent101041381"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.wumii.android.mimi.wxapi.WXEntryActivity" android:theme="@style/WXEntryActivity"/>
+        <receiver android:name="com.wumii.android.mimi.network.ConnectionReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.wumii.android.mimi.push.MessageReceiver">
+            <intent-filter>
+                <action android:name="com.wumii.android.mimi.action.PUSH_MSG_RECVD"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.wumii.android.mimi.push.PushService"/>
+        <service android:name="com.wumii.android.mimi.push.PushTransferService"/>
+        <receiver android:name="com.wumii.android.mimi.push.MqttSignalReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.wumii.android.mimi.push.PushServiceKeeper">
+            <intent-filter>
+                <action android:name="com.wumii.android.SERVICE_KEEPER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.wumii.android.mimi.services.AppDownloadService"/>
+        <service android:enabled="true" android:name="com.baidu.location.f" android:process=":remote"/>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="jXDleWGaQ8lydAoS7YoSlCWm"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="5211cad756240b667206de80"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="mimiorg"/>
+        <meta-data android:name="WUMII_CODE_VERSION" android:value="24e188785625+"/>
+        <meta-data android:name="WUMII_DEV" android:value="false"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="d38e74168c0a586650954eb20675032c302ab813"/>
+    </application>
+</manifest>

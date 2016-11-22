@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/card_invite_feed_bg" android:paddingBottom="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/close" android:padding="15.0dip" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ic_close" android:layout_alignParentRight="true" android:contentDescription="@null" />
+    <TextView android:textSize="@dimen/feed_card_content_text_size" android:textColor="@android:color/white" android:id="@id/content" android:paddingLeft="@dimen/default_horizontal_margin" android:paddingRight="@dimen/default_horizontal_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

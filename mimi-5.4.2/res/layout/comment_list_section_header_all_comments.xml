@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/comment_section_header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <include layout="@layout/horizontal_line_px" />
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="13.0dip" android:textColor="@color/comments_section_header_text_color" android:gravity="center" android:id="@id/header" android:tag="ALL_COMMENTS" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:clickable="true" android:layout_width="@dimen/section_header_title_width" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+        <View android:id="@id/v_line" android:background="#ffcccccc" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/header" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/comments_section_header_text_color" android:gravity="center" android:id="@id/author" android:tag="AUTHOR_COMMENTS" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:clickable="true" android:layout_width="@dimen/section_header_title_width" android:layout_height="fill_parent" android:text="@string/comment_list_section_title_author_comments" android:layout_toRightOf="@id/v_line" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/sort_container" android:paddingLeft="10.0dip" android:paddingRight="@dimen/default_horizontal_margin" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/sort_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_comment_sort_asc" />
+            <TextView android:textSize="13.0dip" android:textColor="@android:color/darker_gray" android:id="@id/sort_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+        </LinearLayout>
+        <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/comments_header_arrow" android:layout_width="@dimen/section_header_arrow_width" android:layout_height="wrap_content" android:src="@drawable/ic_comments_pinned_header_arrow" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

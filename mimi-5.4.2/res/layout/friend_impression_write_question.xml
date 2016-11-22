@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText android:textSize="20.0dip" android:textColor="@color/friend_impression_question" android:gravity="center" android:id="@id/question" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="210.0dip" android:hint="@string/friend_impression_edit_question_hint"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

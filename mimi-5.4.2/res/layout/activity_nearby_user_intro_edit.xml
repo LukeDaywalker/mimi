@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wumii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/section_space">
+        <include layout="@layout/horizontal_line_px" />
+        <com.wumii.android.mimi.ui.widgets.TitleItemView android:id="@id/gender" android:layout_width="fill_parent" android:layout_height="wrap_content" wumii:tiTitle="@string/gender" wumii:tiValue="@string/unsetted" />
+        <include layout="@layout/horizontal_line_px" />
+        <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="16.0dip" layout="@layout/horizontal_line_px" />
+        <LinearLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="45.0dip">
+            <TextView android:textSize="17.0sp" android:textColor="@color/nearby_info_setting_text" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="50.0dip" android:text="@string/nearby_info_setting_intro" />
+            <EditText android:textSize="17.0sp" android:textColor="@color/edit_box_content" android:textColorHint="@color/edit_box_content_hint" android:id="@id/edit_box" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="10.0dip" android:hint="@string/nearby_info_setting_intro_hint" android:singleLine="true" android:includeFontPadding="false" android:inputType="textMultiLine" />
+        </LinearLayout>
+        <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="16.0dip" layout="@layout/horizontal_line_px" />
+        <ViewStub android:id="@id/female_right_view_stub" android:layout="@layout/female_right" android:inflatedId="@id/female_right_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

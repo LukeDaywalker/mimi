@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wumii="http://schemas.android.com/apk/res-auto">
+    <com.wumii.android.mimi.ui.widgets.chat.ChatInfoItemSummaryView android:id="@id/remark" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="clickOnRemark" wumii:ciisTextColor="@color/group_chat_info_item_editable" wumii:ciisPosition="right" wumii:ciiBackground="@drawable/item_background_holo_light" wumii:ciiTitle="@string/single_chat_info_item_remark" />
+    <com.wumii.android.mimi.ui.widgets.chat.ChatInfoItemSummaryView android:id="@id/report" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="clickOnReport" wumii:ciiBackground="@drawable/item_background_holo_light" wumii:ciiTitle="@string/single_chat_info_item_report" />
+    <com.wumii.android.mimi.ui.widgets.chat.ChatInfoItemCheckBox android:id="@id/block_other" android:layout_width="fill_parent" android:layout_height="wrap_content" wumii:onClick="clickOnBlockOther" wumii:ciiTitle="@string/single_chat_info_item_block_other" />
+</merge>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/user_poll_card" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="@color/secret_card_view_linkify_text_1" android:gravity="center_vertical" android:id="@id/author_org_info" android:paddingLeft="@dimen/default_horizontal_margin" android:paddingRight="@dimen/default_horizontal_margin" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <TextView android:textSize="15.0dip" android:gravity="center_vertical" android:id="@id/dest_circle_info" android:paddingLeft="@dimen/default_horizontal_margin" android:paddingRight="@dimen/default_horizontal_margin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.wumii.android.mimi.ui.widgets.MimiTextView android:textSize="@dimen/feed_card_content_text_size" android:id="@id/survey_content" android:paddingLeft="@dimen/default_horizontal_margin" android:paddingRight="@dimen/default_horizontal_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="6.0dip" />
+    <LinearLayout android:id="@id/survey_options" android:layout_width="fill_parent" android:layout_height="@dimen/survey_option_height" android:layout_marginLeft="@dimen/default_horizontal_margin" android:layout_marginTop="@dimen/default_horizontal_margin" android:layout_marginRight="@dimen/default_horizontal_margin">
+        <com.wumii.android.mimi.ui.widgets.SurveyOptionView android:id="@id/survey_option_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="2.0dip" android:layout_weight="1.0" />
+        <com.wumii.android.mimi.ui.widgets.SurveyOptionView android:id="@id/survey_option_2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="@android:color/darker_gray" android:gravity="center_vertical" android:id="@id/survey_vote_result" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/default_horizontal_margin" />
+        <ImageView android:id="@id/survey_report" android:paddingLeft="@dimen/default_horizontal_margin" android:paddingRight="@dimen/default_horizontal_margin" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_survey_report_1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

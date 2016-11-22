@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/search_view_layout" android:background="@android:color/white" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/top_bar_height">
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/darker_gray" android:gravity="center_vertical" android:id="@id/search_view" android:background="@drawable/search_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawableLeft="@drawable/ic_searchview_search" />
+    </LinearLayout>
+    <com.wumii.android.mimi.ui.widgets.CustomTabPageIndicator android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="@dimen/tab_indicator_height" android:layout_below="@id/search_view_layout" />
+    <android.support.v4.view.ViewPager android:id="@id/viewpager" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/indicator" />
+    <View android:id="@id/line" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/search_view_layout" />
+</RelativeLayout>

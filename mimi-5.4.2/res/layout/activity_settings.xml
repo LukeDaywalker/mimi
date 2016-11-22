@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wumii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/section_space" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.wumii.android.mimi.ui.widgets.SectionView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.wumii.android.mimi.ui.widgets.SectionListView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.wumii.android.mimi.ui.widgets.SectionTextItemView android:id="@id/privacy_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" wumii:siName="@string/settings_title_privacy" />
+            </com.wumii.android.mimi.ui.widgets.SectionListView>
+        </com.wumii.android.mimi.ui.widgets.SectionView>
+        <com.wumii.android.mimi.ui.widgets.SectionView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.wumii.android.mimi.ui.widgets.SectionListView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.wumii.android.mimi.ui.widgets.SectionTextItemView android:id="@id/blocked_user_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" wumii:siName="@string/settings_title_blocked_user" />
+            </com.wumii.android.mimi.ui.widgets.SectionListView>
+        </com.wumii.android.mimi.ui.widgets.SectionView>
+        <com.wumii.android.mimi.ui.widgets.SectionView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.wumii.android.mimi.ui.widgets.SectionListView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.wumii.android.mimi.ui.widgets.SectionTextItemView android:id="@id/feedback_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" wumii:siName="@string/settings_title_feedback" />
+                <com.wumii.android.mimi.ui.widgets.SectionTextItemView android:id="@id/check_update_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" wumii:siName="@string/settings_title_check_update" />
+            </com.wumii.android.mimi.ui.widgets.SectionListView>
+        </com.wumii.android.mimi.ui.widgets.SectionView>
+        <com.wumii.android.mimi.ui.widgets.SectionView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.wumii.android.mimi.ui.widgets.SectionListView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.wumii.android.mimi.ui.widgets.SectionTextItemView android:id="@id/change_phone_number_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" wumii:siName="@string/settings_title_change_phone_number" />
+                <com.wumii.android.mimi.ui.widgets.SectionTextItemView android:id="@id/change_password_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" wumii:siName="@string/settings_title_change_password" />
+                <com.wumii.android.mimi.ui.widgets.SectionTextItemView android:id="@id/logout_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" wumii:siName="@string/settings_title_logout" />
+            </com.wumii.android.mimi.ui.widgets.SectionListView>
+        </com.wumii.android.mimi.ui.widgets.SectionView>
+    </LinearLayout>
+</ScrollView>

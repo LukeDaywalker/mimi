@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/secret_vertical_item_image_container" android:layout_width="@dimen/secret_vertical_item_image_size" android:layout_height="@dimen/secret_vertical_item_image_size" android:layout_alignParentRight="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/secret_vertical_item_image" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_weight="1.0" android:contentDescription="@null" />
+            <View android:id="@id/image_divider" android:background="@android:color/white" android:visibility="gone" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/image_2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_weight="1.0" android:contentDescription="@null" />
+        </LinearLayout>
+        <View android:id="@id/secret_vertical_item_image_cover" android:background="#66ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center|left" android:orientation="vertical" android:id="@id/secret_vertical_item_content_layout" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_space" android:layout_marginRight="@dimen/default_space" android:minHeight="@dimen/secret_vertical_item_image_size" android:layout_toLeftOf="@id/secret_vertical_item_image_container" android:layout_alignParentLeft="true">
+        <TextView android:textSize="15.0dip" android:id="@id/secret_vertical_item_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="2.0dip" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/secret_vertical_item_info" android:id="@id/secret_vertical_item_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lineSpacingMultiplier="1.2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/notification_comment_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/notification_comment_vertical_space_negative" android:layout_marginRight="@dimen/secret_vertical_item_image_size" android:layout_below="@id/secret_vertical_item_content_layout" android:layout_alignLeft="@id/secret_vertical_item_content_layout" />
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/notification_comment_list" />
+</RelativeLayout>

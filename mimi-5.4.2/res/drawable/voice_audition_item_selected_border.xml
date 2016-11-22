@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:exitFadeDuration="@android:integer/config_shortAnimTime"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/voice_audition_item_border_radius" />
+    <solid android:color="#ffffffff" />
+    <stroke android:width="@dimen/voice_audition_selected_item_border_size" android:color="@color/green" />
+</shape>

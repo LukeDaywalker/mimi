@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wumii="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.wumii.android.mimi.ui.widgets.chat.ChatInfoItemSummaryView android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" wumii:ciisText="@string/single_chat_info_item_from_new_friend_summary" wumii:ciisPosition="bottom" wumii:ciiBackground="@drawable/item_background_holo_light" wumii:ciiTitle="@string/single_chat_info_item_from_new_friend" />
+        <com.wumii.android.mimi.ui.widgets.chat.ChatInfoItemSummaryView android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="clickOnAddFriend" wumii:ciiBackground="@drawable/item_background_holo_light" wumii:ciiTitle="@string/single_chat_info_item_add_friend" />
+        <include layout="@layout/common_single_chat_info_snippet" />
+        <TextView android:textColor="@android:color/darker_gray" android:padding="@dimen/chat_info_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/single_chat_info_tip_for_nearby_chat" />
+    </LinearLayout>
+</ScrollView>

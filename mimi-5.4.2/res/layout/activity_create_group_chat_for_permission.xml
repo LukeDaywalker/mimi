@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/create_group_permission_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/discover_list_header" />
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/horizontal_line_px" />
+</LinearLayout>

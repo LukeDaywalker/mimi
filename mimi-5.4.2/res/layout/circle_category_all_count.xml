@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray_bg" android:paddingLeft="@dimen/default_horizontal_margin" android:paddingRight="@dimen/default_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_centerInParent="true" />
+    <TextView android:textColor="@color/green" android:id="@id/count" android:background="@color/gray_bg" android:padding="@dimen/default_horizontal_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

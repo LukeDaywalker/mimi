@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/realtabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <View android:id="@id/line" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <com.wumii.android.mimi.ui.widgets.FragmentTabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="54.0dip" />
+    </LinearLayout>
+    <ViewStub android:id="@id/beginner_guidance_stub" android:layout="@layout/beginner_post_secret_guidance" android:inflatedId="@id/beginner_post_secret_guidance" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/set_org_guidance_stub" android:layout="@layout/set_org_guidance" android:inflatedId="@id/set_org_guidance" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

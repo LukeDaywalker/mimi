@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_bg" android:padding="@dimen/default_horizontal_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="5.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_feeds_empty" />
+        <TextView android:textSize="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/hint_empty_feeds_title" />
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/darker_gray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/hint_empty_feeds_tips" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <Button android:textSize="16.0dip" android:id="@id/manage_my_circle_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/btn_manage_my_circle" style="@style/Mimi.Button.Primary" />
+    </LinearLayout>
+</LinearLayout>

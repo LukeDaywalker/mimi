@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/horizontal_line_px" />
+    <LinearLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="17.0dip" android:textColor="@color/nearby_info_setting_text" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:text="@string/nearby_info_edit_female_right" android:layout_weight="1.0" />
+        <CheckBox android:id="@id/female_right_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:button="@drawable/slide_check_box" />
+    </LinearLayout>
+    <include layout="@layout/horizontal_line_px" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/nearby_info_setting_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/nearby_info_edit_female_right_info" />
+    <include layout="@layout/set_knock_question_edit_box" />
+</LinearLayout>

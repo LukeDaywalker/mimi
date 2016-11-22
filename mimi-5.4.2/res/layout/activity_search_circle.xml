@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/title_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@android:color/darker_gray" android:background="@color/gray_bg" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/org_view_history" />
+            <include layout="@layout/horizontal_line_px" />
+        </LinearLayout>
+        <ListView android:id="@id/org_history_list" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null" android:overScrollMode="never" />
+        <TextView android:textColor="@android:color/darker_gray" android:id="@id/search_result_header" android:background="@color/gray_bg" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_result" />
+        <ListView android:id="@id/list_view" android:background="@android:color/white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:overScrollMode="never" />
+        <TextView android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@id/search_empty" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="45.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_bar" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_linear_layout_divider" android:showDividers="end|middle|beginning">
+        <TextView android:textSize="16.0dip" android:textColor="@color/green" android:gravity="center" android:id="@id/bottom_bar_supplement_org" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/org_not_found_my_org" />
+    </LinearLayout>
+</LinearLayout>

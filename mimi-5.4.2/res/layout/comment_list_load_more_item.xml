@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/load_more" android:background="@android:color/white" android:paddingLeft="54.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line_top" android:background="@color/divider" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="@color/green" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ProgressBar android:id="@id/loading_comments" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?android:attr/progressBarStyle" />
+        <ImageView android:id="@id/reload_comments" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_reload" android:contentDescription="@null" />
+    </LinearLayout>
+    <View android:id="@id/line_bottom" android:background="@color/divider" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wumii="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/default_space" layout="@layout/horizontal_line_px" />
+    <TextView android:textSize="16.0dip" android:textColor="@android:color/darker_gray" android:background="@android:color/white" android:paddingLeft="@dimen/default_horizontal_margin" android:paddingTop="5.0dip" android:paddingRight="@dimen/default_horizontal_margin" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/my_circle_my_profile" />
+    <com.wumii.android.mimi.ui.widgets.SectionListView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/section_space">
+        <com.wumii.android.mimi.ui.widgets.SectionTextItemView android:id="@id/friend" android:layout_width="wrap_content" android:layout_height="wrap_content" wumii:siName="@string/my_circle_setting_friend" />
+        <com.wumii.android.mimi.ui.widgets.SectionTextItemView android:id="@id/org" android:layout_width="wrap_content" android:layout_height="wrap_content" wumii:siName="@string/my_circle_setting_org" />
+    </com.wumii.android.mimi.ui.widgets.SectionListView>
+</LinearLayout>

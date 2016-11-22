@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/header_divider" android:layout_width="fill_parent" android:layout_height="@dimen/section_space" />
+    <RelativeLayout android:background="@android:color/white" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/header_divider">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/content_container" android:background="@drawable/chat_bubble_left_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" />
+        <View android:id="@id/divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="12.0dip" android:layout_below="@id/content_container" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/light_black" android:id="@id/report_reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/divider" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/light_black" android:id="@id/report_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/divider" android:layout_alignParentRight="true" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/light_black" android:id="@id/report_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/report_user" android:layout_below="@id/report_reason" />
+        <ImageView android:id="@id/report_user_avatar" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="8.0dip" android:layout_toRightOf="@id/report_user" android:layout_below="@id/report_reason" />
+    </RelativeLayout>
+</RelativeLayout>

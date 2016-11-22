@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_bg" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/horizontal_line_px" />
+    <EditText android:id="@id/crowd" android:background="@android:color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/add_crowd_hint" />
+    <include layout="@layout/horizontal_line_px" />
+    <include android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="20.0dip" layout="@layout/horizontal_line_px" />
+    <EditText android:gravity="center|left|top" android:id="@id/reason" android:background="@android:color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="100.0dip" android:hint="@string/add_crowd_reason_hint" />
+    <include layout="@layout/horizontal_line_px" />
+    <TextView android:textColor="@color/dark_gray" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add_crowd_notice" />
+</LinearLayout>

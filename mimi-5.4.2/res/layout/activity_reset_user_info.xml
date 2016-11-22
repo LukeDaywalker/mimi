@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wumii="http://schemas.android.com/apk/res-auto">
+    <com.wumii.android.mimi.ui.widgets.SectionView android:layout_width="fill_parent" android:layout_height="wrap_content" wumii:sectionSpace="20.0dip">
+        <com.wumii.android.mimi.ui.widgets.SectionListView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.wumii.android.mimi.ui.widgets.SectionImageItemView android:id="@id/avatar" android:layout_width="wrap_content" android:layout_height="80.0dip" wumii:siName="@string/avatar" />
+            <com.wumii.android.mimi.ui.widgets.SectionTextItemView android:id="@id/nick_name" android:layout_width="wrap_content" android:layout_height="48.0dip" wumii:siName="@string/nick_name" />
+        </com.wumii.android.mimi.ui.widgets.SectionListView>
+    </com.wumii.android.mimi.ui.widgets.SectionView>
+    <TextView android:textSize="16.0sp" android:textColor="@color/hint_text" android:orientation="vertical" android:padding="@dimen/default_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nick_name_avatar_notice" />
+</LinearLayout>

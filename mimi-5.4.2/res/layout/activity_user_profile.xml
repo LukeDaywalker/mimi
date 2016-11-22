@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/create_group_permission_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wumii="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/discover_list_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/main" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.wumii.android.mimi.ui.widgets.TitleItemView android:id="@id/item_gender" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onItemClick" wumii:tiTitle="@string/gender" wumii:tiValue="@string/unsetted" />
+        <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/create_group_text_padding_left_right" />
+        <com.wumii.android.mimi.ui.widgets.TitleItemView android:id="@id/item_org" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onItemClick" wumii:tiTitle="@string/company_and_school" wumii:tiValue="@string/unsetted" />
+        <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/create_group_text_padding_left_right" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

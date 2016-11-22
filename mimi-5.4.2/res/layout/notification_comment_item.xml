@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/notification_comment_avatar" android:layout_width="@dimen/comment_item_avatar_size" android:layout_height="@dimen/comment_item_avatar_size" android:layout_marginTop="@dimen/notification_comment_vertical_space" android:layout_marginBottom="@dimen/notification_comment_vertical_space" android:contentDescription="@null" />
+    <TextView android:textSize="14.0dip" android:id="@id/notification_comment_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/notification_comment_horizontal_space" android:layout_marginTop="8.0dip" android:layout_marginBottom="20.0dip" android:layout_toRightOf="@id/notification_comment_avatar" android:layout_alignTop="@id/notification_comment_avatar" />
+    <View android:id="@id/notification_comment_bottom_line" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/notification_comment_content" android:layout_alignLeft="@id/notification_comment_content" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_horizontal_margin">
+        <EditText android:textSize="@dimen/feed_card_content_text_size" android:gravity="center|left|top" android:id="@id/poll_desc_input" android:background="@null" android:layout_width="fill_parent" android:layout_height="130.0dip" android:hint="@string/publish_survey_desc_hint" android:lineSpacingExtra="6.0dip" android:inputType="textMultiLine" />
+        <ViewStub android:id="@id/notice_message" android:layout="@layout/publish_secret_notice_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/survey_option_height" android:layout_marginTop="20.0dip" android:layout_below="@id/poll_desc_input">
+            <FrameLayout android:id="@id/poll_image_wrapper_1" android:background="@drawable/dashed_border_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="2.0dip" android:layout_weight="1.0">
+                <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publish_survey_image_text_1" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/poll_image_wrapper_2" android:background="@drawable/dashed_border_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_weight="1.0">
+                <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publish_survey_image_text_2" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

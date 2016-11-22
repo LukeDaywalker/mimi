@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/chat_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:animateLayoutChanges="true">
+            <FrameLayout android:id="@id/fixed_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ListView android:id="@id/list_view" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:layout_below="@id/fixed_header" />
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/chat_layer" android:background="@drawable/call_member_green_tips_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="20.0dip" android:layout_alignParentRight="true" />
+            <TextView android:textSize="14.0dip" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/play_voice_mode" android:background="#99000000" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/record_voice_tips_stub" android:layout="@layout/record_voice_tips" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_centerInParent="true" />
+            <ViewStub android:id="@id/record_voice_guidance_stub" android:layout="@layout/record_voice_guidance" android:layout_width="180.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" />
+            <com.wumii.android.mimi.ui.widgets.chat.ChatMoreUnreadMessageBar android:id="@id/unread_messages_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/chat_more_message_bar_height" android:onClick="clickOnMoreUnreadMessageBar" />
+            <com.wumii.android.mimi.ui.widgets.chat.ChatMoreNewMessageBar android:id="@id/new_messages_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/chat_more_message_bar_height" android:layout_alignParentBottom="true" android:onClick="clickOnMoreNewMessageBar" />
+        </RelativeLayout>
+        <include layout="@layout/horizontal_line_px" />
+        <LinearLayout android:gravity="bottom" android:paddingBottom="4.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/bottom_bar_max_height" android:minHeight="@dimen/bottom_bar_min_height">
+            <ImageButton android:id="@id/add_emoticon" android:background="@null" android:padding="@dimen/bottom_bar_icon_padding" android:layout_width="@dimen/bottom_bar_icon_size" android:layout_height="@dimen/bottom_bar_icon_size" android:layout_marginLeft="4.0dip" android:src="@drawable/ic_emoticon_add_btn" android:scaleType="fitXY" android:onClick="clickOnEmoticonBottomPan" android:contentDescription="@null" />
+            <ImageView android:id="@id/add" android:background="@null" android:padding="@dimen/bottom_bar_icon_padding" android:layout_width="@dimen/bottom_bar_icon_size" android:layout_height="@dimen/bottom_bar_icon_size" android:src="@drawable/ic_add" android:scaleType="fitXY" android:onClick="clickOnMainBottomPan" android:contentDescription="@null" />
+            <RelativeLayout android:id="@id/morph" android:background="@drawable/edit_text_subfield_holo_light" android:padding="2.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="4.0dip" android:onClick="clickOnMorphPan">
+                <ImageView android:id="@id/avatar" android:padding="2.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/ic_default_avatar" android:scaleType="fitXY" android:contentDescription="@null" />
+                <ImageView android:id="@id/triangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_triangle_right_bottom" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@null" />
+            </RelativeLayout>
+            <EditText android:textSize="16.5dip" android:textColor="@color/edit_box_content" android:textColorHint="@color/edit_box_content_hint" android:id="@id/edit_box" android:background="@drawable/edit_text_holo_light" android:padding="9.0dip" android:scrollbars="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/hint_send_chat_message" android:maxLines="5" android:layout_weight="1.0" android:inputType="textMultiLine" />
+            <FrameLayout android:layout_width="@dimen/bottom_bar_icon_size" android:layout_height="@dimen/bottom_bar_icon_size" android:layout_marginLeft="8.0dip" android:layout_marginRight="4.0dip">
+                <ImageButton android:id="@id/send" android:background="@null" android:padding="@dimen/bottom_bar_icon_padding" android:visibility="invisible" android:layout_width="@dimen/bottom_bar_icon_size" android:layout_height="@dimen/bottom_bar_icon_size" android:src="@drawable/ic_send_btn" android:scaleType="fitXY" android:onClick="clickOnSend" android:contentDescription="@null" />
+                <ImageButton android:id="@id/add_voice" android:background="@null" android:padding="@dimen/bottom_bar_icon_padding" android:layout_width="@dimen/bottom_bar_icon_size" android:layout_height="@dimen/bottom_bar_icon_size" android:src="@drawable/ic_voice_add" android:scaleType="fitXY" android:onClick="clickOnVoicePan" android:contentDescription="@null" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ViewStub android:id="@id/chat_unsupported_stub" android:layout="@layout/chat_unsupported" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/count_down_progress_stub" android:layout="@layout/count_down_progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/remark_guidance_stub" android:layout="@layout/up_indicator_mask_guidance" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

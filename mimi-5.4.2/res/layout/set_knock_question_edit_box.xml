@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/set_knock_question_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/horizontal_line_px" />
+    <LinearLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <EditText android:textSize="17.0dip" android:textColor="@color/edit_box_content" android:textColorHint="@color/nearby_info_setting_text" android:id="@id/edit_question" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:hint="@string/nearby_info_edit_female_right_question_hint" android:includeFontPadding="false" android:layout_weight="1.0" android:inputType="textMultiLine" />
+        <View android:background="@color/divider" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <TextView android:textColor="@color/green" android:gravity="center" android:id="@id/change_question" android:clickable="true" android:layout_width="60.0dip" android:layout_height="fill_parent" android:text="@string/change_question" android:onClick="onClickChangeQuestion" />
+    </LinearLayout>
+    <include layout="@layout/horizontal_line_px" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/nearby_info_setting_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="@string/nearby_info_setting_female_right_question_info" />
+</LinearLayout>

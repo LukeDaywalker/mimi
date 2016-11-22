@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/circle_info_layout" android:background="@android:color/white" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/black" android:id="@id/circle_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/circle_image" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/circle_name" android:contentDescription="@null" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/light_gray" android:ellipsize="end" android:id="@id/expandable_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="3" android:layout_toRightOf="@id/circle_image" android:layout_below="@id/circle_name" />
+    </RelativeLayout>
+    <View android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TableLayout android:id="@id/table" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/feeds_header_height">
+        <TableRow android:id="@id/table_row">
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/hot" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/blue" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/feed_header_hot" android:layout_centerInParent="true" />
+                <View android:background="@color/gray_bg" android:layout_width="1.0px" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/outter" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/blue" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/feed_header_outter" android:layout_centerInParent="true" />
+                <View android:background="@color/gray_bg" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/group_chat" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/blue" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/feed_header_group_chat" android:layout_centerInParent="true" />
+                <View android:background="@color/gray_bg" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/other_circle" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/blue" android:gravity="center_horizontal" android:id="@id/other_circle_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+    <View android:id="@id/line" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

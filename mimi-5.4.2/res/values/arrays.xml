@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="choose_image_from">
+        <item>拍照</item>
+        <item>手机相册</item>
+    </string-array>
+    <string-array name="create_group_permission_gender">
+        <item>不限</item>
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="hot_search_keys">
+        <item>拥抱</item>
+        <item>旅行</item>
+        <item>爱情</item>
+        <item>开心</item>
+        <item>猥琐</item>
+        <item>孤独</item>
+        <item>奋斗</item>
+        <item>美女</item>
+        <item>帅哥</item>
+        <item>喵星人</item>
+        <item>汪星人</item>
+        <item>天空</item>
+        <item>大海</item>
+        <item>街道</item>
+        <item>校园</item>
+    </string-array>
+    <string-array name="hot_search_keys_for_group_icon">
+        <item>拥抱</item>
+        <item>旅行</item>
+        <item>爱情</item>
+        <item>开心</item>
+        <item>猥琐</item>
+        <item>孤独</item>
+        <item>奋斗</item>
+        <item>美女</item>
+        <item>帅哥</item>
+        <item>喵星人</item>
+        <item>汪星人</item>
+        <item>天空</item>
+        <item>大海</item>
+        <item>街道</item>
+        <item>校园</item>
+    </string-array>
+    <string-array name="image_operation">
+        <item>拍照</item>
+        <item>手机相册</item>
+        <item>网络图库</item>
+    </string-array>
+    <array name="secret_card_colorful_bg">
+        <item>#ff699bcd</item>
+        <item>#ff5ab4c8</item>
+        <item>#ff82c369</item>
+        <item>#ff64c896</item>
+        <item>#fff5be78</item>
+        <item>#ffff966e</item>
+        <item>#ffeb96be</item>
+        <item>@color/secret_card_view_bg_special</item>
+    </array>
+    <string-array name="select_image_items">
+        <item>拍照</item>
+        <item>手机相册</item>
+        <item>网络图库</item>
+    </string-array>
+    <string-array name="share_template_circle_title">
+        <item>真看不出来，%1$s的伙伴们竟然在讨论这些！</item>
+        <item>%1$s的火秘，这里面哪一个是你？</item>
+        <item>鸡汤喝腻没？看下%1$s的这些秘密来清爽一下！</item>
+        <item>你真的了解%1$s吗，看看这些！</item>
+        <item>给跪了，%1$s V5！</item>
+        <item>看完%1$s的最火秘密，三观被刷新了！</item>
+        <item>了解%1$s最真实的一面，别点我，我已经火了！</item>
+        <item>看完%1$s的这些秘密，我想静静！</item>
+    </string-array>
+    <string-array name="share_template_invitation_title">
+        <item>我和%1$s个朋友在玩这个匿名版的朋友圈，快玩疯啦！</item>
+        <item>我和%1$s个朋友在玩这个匿名版的朋友圈，根本停不下来！</item>
+        <item>我和%1$s个朋友在玩这个匿名版的朋友圈，已经跪在手机上了！</item>
+        <item>我和%1$s个朋友在玩这个匿名版的朋友圈，太魔性了！</item>
+        <item>我和%1$s个朋友在玩这个匿名版的朋友圈，快控制不住啦！</item>
+        <item>我和%1$s个朋友在玩这个匿名版的朋友圈，欲罢不能啊！</item>
+        <item>我和%1$s个朋友在玩这个匿名版的朋友圈，醉的不要不要的！</item>
+    </string-array>
+</resources>

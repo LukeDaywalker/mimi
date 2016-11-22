@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/new_secret" android:clickable="true" android:layout_width="@dimen/top_bar_height" android:layout_height="@dimen/top_bar_height" android:layout_alignParentRight="true" style="@style/ActionButton">
+        <ImageView android:background="@drawable/ic_action_new_secret" android:layout_width="@dimen/top_bar_icon_height" android:layout_height="@dimen/top_bar_icon_height" android:contentDescription="@null" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="@dimen/top_bar_height" android:layout_height="@dimen/top_bar_height" android:layout_toLeftOf="@id/new_secret" style="@style/ActionButton">
+        <TextView android:textSize="11.0dip" android:textColor="@color/light_gray" android:gravity="center" android:id="@id/notification_count" android:background="@drawable/notification_bg" android:layout_width="24.0dip" android:layout_height="24.0dip" android:text="@string/notification_default_zero" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/top_bar_title_text_size" android:textColor="@color/top_bar_text" android:gravity="center_vertical" android:id="@id/title_feed" android:background="@android:color/white" android:paddingLeft="@dimen/top_bar_title_left_margin" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/top_bar_height" android:text="@string/main_navi_feed" android:drawableRight="@drawable/ic_dropdown_down" />
+    <ImageView android:id="@id/red_dot" android:background="@drawable/ic_red_dot_small" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="-25.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/title_feed" />
+    <View android:id="@id/divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/top_bar_height" />
+    <FrameLayout android:id="@id/feeds_secrets" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/divider" />
+</RelativeLayout>

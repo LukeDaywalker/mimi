@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/icon" android:background="@drawable/ic_nearby_people" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="20.0dip" android:contentDescription="@null" />
+        <TextView android:textSize="17.0dip" android:textColor="@color/nearby_info_setting_text" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/nearby_info_setting_hint" />
+        <include layout="@layout/horizontal_line_px" />
+        <RelativeLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0dip" android:textColor="@color/nearby_info_setting_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nearby_info_setting_me" android:layout_centerVertical="true" />
+            <Button android:textColor="@color/nearby_info_setting_gray" android:id="@id/male" android:background="@drawable/nearby_setting_sex_button_unselected_bg" android:layout_width="@dimen/nearby_info_setting_sex_button_width" android:layout_height="@dimen/nearby_info_setting_sex_button_height" android:layout_marginLeft="75.0dip" android:text="@string/nearby_info_setting_male" android:layout_centerVertical="true" android:onClick="clickOnMale" />
+            <Button android:textColor="@color/nearby_info_setting_gray" android:id="@id/female" android:background="@drawable/nearby_setting_sex_button_unselected_bg" android:layout_width="@dimen/nearby_info_setting_sex_button_width" android:layout_height="@dimen/nearby_info_setting_sex_button_height" android:layout_marginLeft="10.0dip" android:text="@string/nearby_info_setting_female" android:layout_toRightOf="@id/male" android:layout_centerVertical="true" android:onClick="clickOnFemale" />
+        </RelativeLayout>
+        <include layout="@layout/horizontal_line_px" />
+        <RelativeLayout android:paddingTop="30.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0dip" android:textColor="@color/nearby_info_setting_text" android:id="@id/intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nearby_info_setting_intro" />
+            <EditText android:textSize="17.0dip" android:textColor="@color/edit_box_content" android:textColorHint="@color/edit_box_content_hint" android:id="@id/edit_box" android:background="@drawable/edit_text_holo_light" android:paddingLeft="80.0dip" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/nearby_info_setting_intro_hint" android:singleLine="true" android:includeFontPadding="false" android:inputType="textMultiLine" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
