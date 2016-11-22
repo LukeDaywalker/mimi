@@ -1,0 +1,73 @@
+done，won‘t fix，explain
+
+android.R.id.content
+
+
+git checkout -b upload origin/develop
+新建名为upload的本地分支并跳转到新建分支，新分支与名为origin/develop的远程分支关联
+
+git cherry-pick 230fe424ea973bd5088e193677534377ce861340
+pick commit(230fe424ea973bd5088e193677534377ce861340)到当前分支的栈顶
+
+scp -p -P 10418 user@15.23.14.52:hooks/commit-msg .git/hooks/
+此操作会补充Change—Id
+
+git commit --amend -s
+将待提交区域的代码补充到本地分支的栈顶commit。
+
+git checkout develop
+切换到develop分支
+
+git branch letian 9802874a6541b290f55d719a510f1c88a61dcd2b
+切换到历史版本
+
+git branch
+查看本地分支
+
+git branch -D upload
+删除upload分支，大小写均可，大写强制删除
+
+git reset HEAD^         撤销栈顶的一个提交（亦称为change，commit），默认为soft reset，即栈顶change修改的代码还在。git reset --hard HEAD^：撤销栈顶commit，修改的代码全部清除
+
+git reset HEAD~6
+撤销最近6次提交，默认--soft，注释丢失，代码修改还在
+--hard 代码修改会被还原
+
+===============================================================
+git fetch origin
+更新远程库到本地
+
+git rebase origin/develop
+fast forward本地分支的HEAD指针，指向远程分支最新的commit
+
+git status
+查看已修改代码状态（红色：不可提交（需要执行 git add .）；绿色：可以提交）
+
+git add .
+将当前文件夹下的修改，加入待提交区域（操作完成须git status检查），git add --all：全部修改加入待提交区域
+
+git commit -s -m "tmp"
+提交代码到本地分支
+-s 邮箱等
+-m 所要填写的注释
+
+git log
+查看当前分支的提交记录
+
+git push origin develop:refs/for/develop
+将本地的develop分支提交到远程origin代码仓库中的efs/for/develop（gerrit下进行review，没有gerrit的话可以只需要填/develop）分支下
+==========================================================================
+zzzzcxc^Z^X
+强制退出
+
+git branch -r
+查看服务器端分支情况
+
+git fetch -p 
+如果远程主机删除了某个分支，默认情况下，git fetch 不会在拉取远程分支的时候，删除对应的本地分支。这是为了防止，由于其他人操作了远程主机，导致git fetch不知不觉删除了本地分支。
+但是，你可以改变这个行为，加上参数 -p 就会在本地删除远程已经删除的分支。
+=================================================================================
+git remote rm origin
+git remote add origin ssh://user@15.23.14.52:8888/app
+切换远程服务器
+
