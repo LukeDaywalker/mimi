@@ -1,5 +1,5 @@
 .class public Lcom/wumii/android/mimi/models/a/b/e;
-.super Lcom/wumii/android/mimi/models/a/a;
+.super Lcom/wumii/android/mimi/models/a/AbsDao;
 .source "SurveyNotificationDao.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 24
-    invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/a/a;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/a/AbsDao;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 25
     return-void

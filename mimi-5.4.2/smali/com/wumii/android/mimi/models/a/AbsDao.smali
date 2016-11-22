@@ -1,4 +1,4 @@
-.class public abstract Lcom/wumii/android/mimi/models/a/a;
+.class public abstract Lcom/wumii/android/mimi/models/a/AbsDao;
 .super Ljava/lang/Object;
 .source "AbsDao.java"
 
@@ -19,13 +19,13 @@
 
     .prologue
     .line 14
-    const-class v0, Lcom/wumii/android/mimi/models/a/a;
+    const-class v0, Lcom/wumii/android/mimi/models/a/AbsDao;
 
     invoke-static {v0}, Lorg/slf4j/LoggerFactory;->getLogger(Ljava/lang/Class;)Lorg/slf4j/Logger;
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/a/a;->logger:Lorg/slf4j/Logger;
+    sput-object v0, Lcom/wumii/android/mimi/models/a/AbsDao;->logger:Lorg/slf4j/Logger;
 
     return-void
 .end method
@@ -38,7 +38,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 20
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/a/a;->db:Landroid/database/sqlite/SQLiteDatabase;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/a/AbsDao;->db:Landroid/database/sqlite/SQLiteDatabase;
 
     .line 21
     invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
@@ -49,7 +49,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/a/a;->jacksonMapper:Lcom/wumii/a/a/a;
+    sput-object v0, Lcom/wumii/android/mimi/models/a/AbsDao;->jacksonMapper:Lcom/wumii/a/a/a;
 
     .line 22
     return-void
@@ -71,7 +71,7 @@
     .prologue
     .line 44
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/models/a/a;->jacksonMapper:Lcom/wumii/a/a/a;
+    sget-object v0, Lcom/wumii/android/mimi/models/a/AbsDao;->jacksonMapper:Lcom/wumii/a/a/a;
 
     invoke-virtual {v0, p0, p1}, Lcom/wumii/a/a/a;->a(Ljava/lang/String;Lcom/fasterxml/jackson/core/type/TypeReference;)Ljava/lang/Object;
     :try_end_0
@@ -88,7 +88,7 @@
     move-exception v0
 
     .line 46
-    sget-object v1, Lcom/wumii/android/mimi/models/a/a;->logger:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/models/a/AbsDao;->logger:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Lcom/wumii/a/a/g;->toString()Ljava/lang/String;
 
@@ -118,7 +118,7 @@
     .prologue
     .line 26
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/models/a/a;->jacksonMapper:Lcom/wumii/a/a/a;
+    sget-object v0, Lcom/wumii/android/mimi/models/a/AbsDao;->jacksonMapper:Lcom/wumii/a/a/a;
 
     invoke-virtual {v0, p0, p1}, Lcom/wumii/a/a/a;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
     :try_end_0
@@ -135,7 +135,7 @@
     move-exception v0
 
     .line 28
-    sget-object v1, Lcom/wumii/android/mimi/models/a/a;->logger:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/models/a/AbsDao;->logger:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Lcom/wumii/a/a/g;->toString()Ljava/lang/String;
 
@@ -163,7 +163,7 @@
     .prologue
     .line 35
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/models/a/a;->jacksonMapper:Lcom/wumii/a/a/a;
+    sget-object v0, Lcom/wumii/android/mimi/models/a/AbsDao;->jacksonMapper:Lcom/wumii/a/a/a;
 
     invoke-virtual {v0, p0}, Lcom/wumii/a/a/a;->a(Ljava/lang/Object;)Ljava/lang/String;
     :try_end_0
@@ -180,7 +180,7 @@
     move-exception v0
 
     .line 37
-    sget-object v1, Lcom/wumii/android/mimi/models/a/a;->logger:Lorg/slf4j/Logger;
+    sget-object v1, Lcom/wumii/android/mimi/models/a/AbsDao;->logger:Lorg/slf4j/Logger;
 
     invoke-virtual {v0}, Lcom/wumii/a/a/g;->toString()Ljava/lang/String;
 

@@ -1,5 +1,5 @@
 .class public Lcom/wumii/android/mimi/models/a/b/c;
-.super Lcom/wumii/android/mimi/models/a/a;
+.super Lcom/wumii/android/mimi/models/a/AbsDao;
 .source "NotificationDao.java"
 
 
@@ -37,7 +37,7 @@
 
     .prologue
     .line 36
-    invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/a/a;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/a/AbsDao;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 38
     new-instance v0, Lcom/wumii/android/mimi/models/a/b/d;
