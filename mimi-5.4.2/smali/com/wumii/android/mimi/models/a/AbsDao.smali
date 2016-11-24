@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static jacksonMapper:Lcom/wumii/a/a/a;
+.field private static jacksonMapper:Lcom/wumii/a/a/JacksonMapper;
 
 .field protected static final logger:Lorg/slf4j/Logger;
 
@@ -41,15 +41,15 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/models/a/AbsDao;->db:Landroid/database/sqlite/SQLiteDatabase;
 
     .line 21
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->i()Lcom/wumii/a/a/a;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/a/a/JacksonMapper;
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/models/a/AbsDao;->jacksonMapper:Lcom/wumii/a/a/a;
+    sput-object v0, Lcom/wumii/android/mimi/models/a/AbsDao;->jacksonMapper:Lcom/wumii/a/a/JacksonMapper;
 
     .line 22
     return-void
@@ -71,11 +71,11 @@
     .prologue
     .line 44
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/models/a/AbsDao;->jacksonMapper:Lcom/wumii/a/a/a;
+    sget-object v0, Lcom/wumii/android/mimi/models/a/AbsDao;->jacksonMapper:Lcom/wumii/a/a/JacksonMapper;
 
-    invoke-virtual {v0, p0, p1}, Lcom/wumii/a/a/a;->a(Ljava/lang/String;Lcom/fasterxml/jackson/core/type/TypeReference;)Ljava/lang/Object;
+    invoke-virtual {v0, p0, p1}, Lcom/wumii/a/a/JacksonMapper;->a(Ljava/lang/String;Lcom/fasterxml/jackson/core/type/TypeReference;)Ljava/lang/Object;
     :try_end_0
-    .catch Lcom/wumii/a/a/g; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/a/a/JacksonMapper$g; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v0
 
@@ -90,7 +90,7 @@
     .line 46
     sget-object v1, Lcom/wumii/android/mimi/models/a/AbsDao;->logger:Lorg/slf4j/Logger;
 
-    invoke-virtual {v0}, Lcom/wumii/a/a/g;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/a/a/JacksonMapper$g;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -118,11 +118,11 @@
     .prologue
     .line 26
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/models/a/AbsDao;->jacksonMapper:Lcom/wumii/a/a/a;
+    sget-object v0, Lcom/wumii/android/mimi/models/a/AbsDao;->jacksonMapper:Lcom/wumii/a/a/JacksonMapper;
 
-    invoke-virtual {v0, p0, p1}, Lcom/wumii/a/a/a;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, p0, p1}, Lcom/wumii/a/a/JacksonMapper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
     :try_end_0
-    .catch Lcom/wumii/a/a/g; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/a/a/JacksonMapper$g; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v0
 
@@ -137,7 +137,7 @@
     .line 28
     sget-object v1, Lcom/wumii/android/mimi/models/a/AbsDao;->logger:Lorg/slf4j/Logger;
 
-    invoke-virtual {v0}, Lcom/wumii/a/a/g;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/a/a/JacksonMapper$g;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -163,11 +163,11 @@
     .prologue
     .line 35
     :try_start_0
-    sget-object v0, Lcom/wumii/android/mimi/models/a/AbsDao;->jacksonMapper:Lcom/wumii/a/a/a;
+    sget-object v0, Lcom/wumii/android/mimi/models/a/AbsDao;->jacksonMapper:Lcom/wumii/a/a/JacksonMapper;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/a/a/a;->a(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v0, p0}, Lcom/wumii/a/a/JacksonMapper;->a(Ljava/lang/Object;)Ljava/lang/String;
     :try_end_0
-    .catch Lcom/wumii/a/a/g; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/a/a/JacksonMapper$g; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v0
 
@@ -182,7 +182,7 @@
     .line 37
     sget-object v1, Lcom/wumii/android/mimi/models/a/AbsDao;->logger:Lorg/slf4j/Logger;
 
-    invoke-virtual {v0}, Lcom/wumii/a/a/g;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/a/a/JacksonMapper$g;->toString()Ljava/lang/String;
 
     move-result-object v2
 

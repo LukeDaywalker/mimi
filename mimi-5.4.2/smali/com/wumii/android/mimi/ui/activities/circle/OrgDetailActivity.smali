@@ -88,7 +88,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-static {v1, v0}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v1, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 98
     return-void
@@ -179,7 +179,7 @@
     invoke-virtual {v0, v2, v1, v2, v2}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -187,7 +187,7 @@
 
     const-string/jumbo v2, "first_organization_need_validation_reddot"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/aa;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 91
     return-void
@@ -230,7 +230,7 @@
     .line 104
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->r:Landroid/widget/TextView;
 
-    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 105
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->o:Landroid/widget/TextView;
@@ -256,7 +256,7 @@
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/wumii/android/mimi/c/m;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/wumii/android/mimi/c/CircleUtils;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -338,7 +338,7 @@
     if-nez v3, :cond_3
 
     :goto_1
-    invoke-static {v4, v0}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v4, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 131
     if-eqz v3, :cond_4
@@ -352,7 +352,7 @@
 
     const-string/jumbo v6, "yyyy\u5e74M\u6708d\u65e5"
 
-    invoke-static {v6, v3}, Lcom/wumii/android/mimi/c/av;->a(Ljava/lang/String;Ljava/util/Date;)Ljava/lang/String;
+    invoke-static {v6, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -440,7 +440,7 @@
 
     int-to-float v0, v0
 
-    invoke-static {v2, v0}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v2, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -466,7 +466,7 @@
     .line 108
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->r:Landroid/widget/TextView;
 
-    invoke-static {v3, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v3, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 109
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->o:Landroid/widget/TextView;
@@ -519,13 +519,13 @@
 
     .prologue
     .line 169
-    new-instance v0, Lcom/wumii/android/mimi/b/ah;
+    new-instance v0, Lcom/wumii/android/mimi/b/GetValidationTypesTask;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/b/ah;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/b/GetValidationTypesTask;-><init>(Landroid/app/Activity;)V
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/b/ah;->a(Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/b/GetValidationTypesTask;->a(Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;)V
 
     .line 170
     return-void
@@ -536,7 +536,7 @@
 
     .prologue
     .line 173
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->getResources()Landroid/content/res/Resources;
 
@@ -546,11 +546,11 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/h;
+    new-instance v2, Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v2}, Lcom/wumii/android/mimi/ui/h;-><init>()V
+    invoke-direct {v2}, Lcom/wumii/android/mimi/ui/ActivityEventManager;-><init>()V
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 174
     const v1, 0x7f060101
@@ -577,26 +577,26 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     .line 175
     const v1, 0x7f060164
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/am;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$am;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/am;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$am;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 192
     const v1, 0x7f060051
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 193
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a;->show()Landroid/app/AlertDialog;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->show()Landroid/app/AlertDialog;
 
     .line 194
     return-void
@@ -607,7 +607,7 @@
 
     .prologue
     .line 197
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->getResources()Landroid/content/res/Resources;
 
@@ -617,11 +617,11 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/h;
+    new-instance v2, Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v2}, Lcom/wumii/android/mimi/ui/h;-><init>()V
+    invoke-direct {v2}, Lcom/wumii/android/mimi/ui/ActivityEventManager;-><init>()V
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 198
     const v1, 0x7f060103
@@ -648,26 +648,26 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     .line 199
     const v1, 0x7f060164
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/ap;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ap;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/ap;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ap;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 206
     const v1, 0x7f060051
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 207
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a;->show()Landroid/app/AlertDialog;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->show()Landroid/app/AlertDialog;
 
     .line 208
     return-void
@@ -823,24 +823,24 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->k()V
 
     .line 72
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/al;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$al;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/al;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$al;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->C:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     .line 80
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->p()Lcom/wumii/android/mimi/models/d/aa;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->C:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/aa;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
     .line 81
     return-void
@@ -854,17 +854,17 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onDestroy()V
 
     .line 150
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->p()Lcom/wumii/android/mimi/models/d/aa;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->C:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/aa;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
     .line 151
     return-void

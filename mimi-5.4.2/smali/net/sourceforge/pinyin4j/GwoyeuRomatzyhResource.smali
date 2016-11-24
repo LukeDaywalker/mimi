@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/c/a/a/d;
+.field private a:Lcom/c/a/a/Document;
 
 
 # direct methods
@@ -52,15 +52,15 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/c/a/a/q;->a(Ljava/lang/String;Ljava/io/InputStream;)Lcom/c/a/a/d;
+    invoke-static {v0, v1}, Lcom/c/a/a/Parser;->a(Ljava/lang/String;Ljava/io/InputStream;)Lcom/c/a/a/Document;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lnet/sourceforge/pinyin4j/GwoyeuRomatzyhResource;->a(Lcom/c/a/a/d;)V
+    invoke-direct {p0, v0}, Lnet/sourceforge/pinyin4j/GwoyeuRomatzyhResource;->a(Lcom/c/a/a/Document;)V
     :try_end_0
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Lcom/c/a/a/m; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Lcom/c/a/a/ParseException; {:try_start_0 .. :try_end_0} :catch_2
 
     .line 82
     :goto_0
@@ -89,17 +89,17 @@
     move-exception v0
 
     .line 80
-    invoke-virtual {v0}, Lcom/c/a/a/m;->printStackTrace()V
+    invoke-virtual {v0}, Lcom/c/a/a/ParseException;->printStackTrace()V
 
     goto :goto_0
 .end method
 
-.method private a(Lcom/c/a/a/d;)V
+.method private a(Lcom/c/a/a/Document;)V
     .locals 0
 
     .prologue
     .line 46
-    iput-object p1, p0, Lnet/sourceforge/pinyin4j/GwoyeuRomatzyhResource;->a:Lcom/c/a/a/d;
+    iput-object p1, p0, Lnet/sourceforge/pinyin4j/GwoyeuRomatzyhResource;->a:Lcom/c/a/a/Document;
 
     .line 47
     return-void

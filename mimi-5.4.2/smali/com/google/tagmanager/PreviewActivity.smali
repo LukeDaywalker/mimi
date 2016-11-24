@@ -36,9 +36,9 @@
     .line 74
     const/4 v1, -0x1
 
-    new-instance v2, Lcom/google/tagmanager/al;
+    new-instance v2, Lcom/google/tagmanager/PreviewActivity$al;
 
-    invoke-direct {v2, p0}, Lcom/google/tagmanager/al;-><init>(Lcom/google/tagmanager/PreviewActivity;)V
+    invoke-direct {v2, p0}, Lcom/google/tagmanager/PreviewActivity$al;-><init>(Lcom/google/tagmanager/PreviewActivity;)V
 
     invoke-virtual {v0, v1, p3, v2}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
@@ -62,7 +62,7 @@
     .line 41
     const-string/jumbo v0, "Preview activity"
 
-    invoke-static {v0}, Lcom/google/tagmanager/z;->c(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/google/tagmanager/Log;->c(Ljava/lang/String;)V
 
     .line 43
     invoke-virtual {p0}, Lcom/google/tagmanager/PreviewActivity;->getIntent()Landroid/content/Intent;
@@ -74,11 +74,11 @@
     move-result-object v0
 
     .line 44
-    invoke-static {p0}, Lcom/google/tagmanager/be;->a(Landroid/content/Context;)Lcom/google/tagmanager/be;
+    invoke-static {p0}, Lcom/google/tagmanager/TagManager;->a(Landroid/content/Context;)Lcom/google/tagmanager/TagManager;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lcom/google/tagmanager/be;->a(Landroid/net/Uri;)Z
+    invoke-virtual {v1, v0}, Lcom/google/tagmanager/TagManager;->a(Landroid/net/Uri;)Z
 
     move-result v1
 
@@ -110,7 +110,7 @@
     move-result-object v0
 
     .line 47
-    invoke-static {v0}, Lcom/google/tagmanager/z;->b(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/google/tagmanager/Log;->b(Ljava/lang/String;)V
 
     .line 48
     const-string/jumbo v1, "Preview failure"
@@ -159,7 +159,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/google/tagmanager/z;->c(Ljava/lang/String;)V
+    invoke-static {v1}, Lcom/google/tagmanager/Log;->c(Ljava/lang/String;)V
 
     .line 55
     invoke-virtual {p0, v0}, Lcom/google/tagmanager/PreviewActivity;->startActivity(Landroid/content/Intent;)V
@@ -192,7 +192,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/google/tagmanager/z;->c(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/google/tagmanager/Log;->c(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -225,7 +225,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/google/tagmanager/z;->a(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/google/tagmanager/Log;->a(Ljava/lang/String;)V
 
     goto :goto_0
 .end method

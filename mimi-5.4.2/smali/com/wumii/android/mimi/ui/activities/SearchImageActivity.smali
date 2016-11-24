@@ -8,7 +8,7 @@
 
 .field private o:Landroid/widget/GridView;
 
-.field private p:Lcom/wumii/android/mimi/ui/activities/bg;
+.field private p:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$bg;
 
 .field private q:Z
 
@@ -75,12 +75,12 @@
     return-void
 .end method
 
-.method static synthetic b(Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;)Lcom/wumii/android/mimi/ui/activities/bg;
+.method static synthetic b(Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;)Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$bg;
     .locals 1
 
     .prologue
     .line 44
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->i()Lcom/wumii/android/mimi/ui/activities/bg;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->i()Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$bg;
 
     move-result-object v0
 
@@ -153,25 +153,25 @@
     return-void
 .end method
 
-.method private i()Lcom/wumii/android/mimi/ui/activities/bg;
+.method private i()Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$bg;
     .locals 1
 
     .prologue
     .line 124
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->p:Lcom/wumii/android/mimi/ui/activities/bg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->p:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$bg;
 
     if-nez v0, :cond_0
 
     .line 125
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/bg;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$bg;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/bg;-><init>(Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$bg;-><init>(Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->p:Lcom/wumii/android/mimi/ui/activities/bg;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->p:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$bg;
 
     .line 127
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->p:Lcom/wumii/android/mimi/ui/activities/bg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->p:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$bg;
 
     return-object v0
 .end method
@@ -191,7 +191,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
 
     .line 115
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->n:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
@@ -222,7 +222,7 @@
 
     .prologue
     .line 120
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->i()Lcom/wumii/android/mimi/ui/activities/bg;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->i()Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$bg;
 
     move-result-object v0
 
@@ -236,7 +236,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/bg;->a(Lcom/wumii/android/mimi/ui/activities/bg;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$bg;->a(Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$bg;Ljava/lang/String;)V
 
     .line 121
     return-void
@@ -256,11 +256,11 @@
 
     .prologue
     .line 103
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/a;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/c/a;
+    invoke-static {p0}, Lcom/wumii/android/mimi/c/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/c/AppConfigManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/a;->a()Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/AppConfigManager;->a()Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     move-result-object v1
 
@@ -368,11 +368,11 @@
     .line 69
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->n:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/bd;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$bd;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/bd;-><init>(Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$bd;-><init>(Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->setListener(Lcom/wumii/android/mimi/ui/widgets/al;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->setListener(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$al;)V
 
     .line 94
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;->o:Landroid/widget/GridView;

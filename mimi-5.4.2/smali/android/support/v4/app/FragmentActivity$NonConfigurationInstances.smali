@@ -37,7 +37,7 @@
             "Landroid/support/v4/util/SimpleArrayMap",
             "<",
             "Ljava/lang/String;",
-            "Landroid/support/v4/app/LoaderManagerImpl;",
+            "Landroid/support/v4/app/LoaderManager$LoaderManagerImpl;",
             ">;"
         }
     .end annotation

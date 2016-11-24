@@ -142,25 +142,25 @@
 
     .prologue
     .line 100
-    invoke-static {}, Lcom/e/a/b/g;->a()Lcom/e/a/b/g;
+    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
 
     move-result-object v0
 
     const/4 v3, 0x0
 
-    new-instance v4, Lcom/wumii/android/mimi/ui/widgets/secret/p;
+    new-instance v4, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$p;
 
-    invoke-direct {v4, p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/secret/p;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;Ljava/lang/String;Landroid/widget/ImageView;)V
+    invoke-direct {v4, p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$p;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;Ljava/lang/String;Landroid/widget/ImageView;)V
 
-    new-instance v5, Lcom/wumii/android/mimi/ui/widgets/secret/r;
+    new-instance v5, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$r;
 
-    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/r;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;)V
+    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$r;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;)V
 
     move-object v1, p1
 
     move-object v2, p2
 
-    invoke-virtual/range {v0 .. v5}, Lcom/e/a/b/g;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/d;Lcom/e/a/b/f/a;Lcom/e/a/b/f/b;)V
+    invoke-virtual/range {v0 .. v5}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;Lcom/e/a/b/f/ImageLoadingListener;Lcom/e/a/b/f/ImageLoadingProgressListener;)V
 
     .line 137
     return-void
@@ -285,9 +285,9 @@
     .line 80
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->c:Landroid/view/View;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/o;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$o;
 
-    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/o;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;Lcom/wumii/android/mimi/models/entities/secret/Promotion;)V
+    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$o;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;Lcom/wumii/android/mimi/models/entities/secret/Promotion;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

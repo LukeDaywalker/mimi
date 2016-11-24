@@ -38,7 +38,7 @@
     if-lt v0, v1, :cond_0
 
     .line 37
-    invoke-static {p0}, Landroid/support/v4/os/ParcelableCompatCreatorHoneycombMR2Stub;->a(Landroid/support/v4/os/ParcelableCompatCreatorCallbacks;)Landroid/os/Parcelable$Creator;
+    invoke-static {p0}, Landroid/support/v4/os/ParcelableCompatHoneycombMR2$ParcelableCompatCreatorHoneycombMR2Stub;->a(Landroid/support/v4/os/ParcelableCompatCreatorCallbacks;)Landroid/os/Parcelable$Creator;
 
     move-result-object v0
 

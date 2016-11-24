@@ -17,7 +17,7 @@
 
 .field private r:Landroid/widget/TextView;
 
-.field private s:Lcom/wumii/android/mimi/models/d/d;
+.field private s:Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
 .field private t:Ljava/lang/String;
 
@@ -43,7 +43,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 136
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->q:Landroid/widget/TextView;
@@ -55,24 +55,24 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 137
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->s:Lcom/wumii/android/mimi/models/d/d;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->s:Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
     if-nez v0, :cond_0
 
     .line 138
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/br;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$br;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/br;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$br;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->s:Lcom/wumii/android/mimi/models/d/d;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->s:Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
     .line 150
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->s:Lcom/wumii/android/mimi/models/d/d;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->s:Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
     const-wide/16 v2, 0x3e8
 
-    invoke-virtual {v0, p1, p2, v2, v3}, Lcom/wumii/android/mimi/models/d/d;->a(JJ)Lcom/wumii/android/mimi/models/d/d;
+    invoke-virtual {v0, p1, p2, v2, v3}, Lcom/wumii/android/mimi/models/d/CountDownTimer;->a(JJ)Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
     .line 151
     return-void
@@ -234,37 +234,37 @@
 
     .line 82
     :cond_0
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->y:Landroid/util/DisplayMetrics;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 83
     const v1, 0x7f0602e4
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a;->setMessage(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     .line 84
     const v1, 0x7f0602e2
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 85
     const v1, 0x7f0602e3
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/bp;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$bp;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/bp;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$bp;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 97
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a;->show()Landroid/app/AlertDialog;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->show()Landroid/app/AlertDialog;
 
     goto :goto_0
 .end method
@@ -281,16 +281,16 @@
     if-eqz v0, :cond_0
 
     .line 103
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/bt;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$bt;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/bt;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$bt;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;Landroid/content/Context;)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/bt;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$bt;->j()V
 
     .line 104
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->s()Lcom/wumii/android/mimi/models/h/a/b;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->s()Lcom/wumii/android/mimi/models/h/a/ChatMessageReportStorage;
 
     move-result-object v0
 
@@ -298,7 +298,7 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->C:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/h/a/b;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/h/a/ChatMessageReportStorage;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 110
     :goto_0
@@ -311,14 +311,14 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 113
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->r:Landroid/widget/TextView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/bq;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$bq;
 
-    invoke-direct {v1, p0, p3}, Lcom/wumii/android/mimi/ui/activities/bq;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;Landroid/graphics/Bitmap;)V
+    invoke-direct {v1, p0, p3}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$bq;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;Landroid/graphics/Bitmap;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
@@ -327,16 +327,16 @@
 
     .line 106
     :cond_0
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/bs;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$bs;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/bs;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$bs;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;Landroid/content/Context;)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/bs;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$bs;->j()V
 
     .line 107
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->r()Lcom/wumii/android/mimi/models/h/a/c;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->r()Lcom/wumii/android/mimi/models/h/a/ChatMessageStorage;
 
     move-result-object v0
 
@@ -344,7 +344,7 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->C:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/h/a/c;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/h/a/ChatMessageStorage;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

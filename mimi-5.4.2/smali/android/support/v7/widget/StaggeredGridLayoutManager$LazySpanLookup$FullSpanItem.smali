@@ -35,9 +35,9 @@
 
     .prologue
     .line 2656
-    new-instance v0, Landroid/support/v7/widget/bm;
+    new-instance v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$bm;
 
-    invoke-direct {v0}, Landroid/support/v7/widget/bm;-><init>()V
+    invoke-direct {v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager$bm;-><init>()V
 
     sput-object v0, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->CREATOR:Landroid/os/Parcelable$Creator;
 

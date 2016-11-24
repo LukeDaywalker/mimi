@@ -1,5 +1,5 @@
 .class public Lcom/wumii/android/mimi/models/entities/chat/GroupChatListResult;
-.super Lcom/wumii/android/mimi/network/m;
+.super Lcom/wumii/android/mimi/network/Result;
 .source "GroupChatListResult.java"
 
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 11
-    invoke-direct {p0, p1, p2, p3}, Lcom/wumii/android/mimi/network/m;-><init>(ILjava/lang/String;Ljava/lang/Object;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/wumii/android/mimi/network/Result;-><init>(ILjava/lang/String;Ljava/lang/Object;)V
 
     .line 12
     iput-object p4, p0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatListResult;->type:Lcom/wumii/android/mimi/models/entities/chat/GroupChatType;

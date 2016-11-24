@@ -1,5 +1,5 @@
 .class public Lcom/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer;
-.super Lcom/fasterxml/jackson/databind/deser/std/BaseNodeDeserializer;
+.super Lcom/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer$BaseNodeDeserializer;
 .source "JsonNodeDeserializer.java"
 
 
@@ -40,7 +40,7 @@
     .line 25
     const-class v0, Lcom/fasterxml/jackson/databind/JsonNode;
 
-    invoke-direct {p0, v0}, Lcom/fasterxml/jackson/databind/deser/std/BaseNodeDeserializer;-><init>(Ljava/lang/Class;)V
+    invoke-direct {p0, v0}, Lcom/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer$BaseNodeDeserializer;-><init>(Ljava/lang/Class;)V
 
     return-void
 .end method
@@ -170,7 +170,7 @@
 
     .prologue
     .line 15
-    invoke-super {p0, p1, p2, p3}, Lcom/fasterxml/jackson/databind/deser/std/BaseNodeDeserializer;->deserializeWithType(Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object;
+    invoke-super {p0, p1, p2, p3}, Lcom/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer$BaseNodeDeserializer;->deserializeWithType(Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -232,7 +232,7 @@
 
     .prologue
     .line 15
-    invoke-super {p0}, Lcom/fasterxml/jackson/databind/deser/std/BaseNodeDeserializer;->isCachable()Z
+    invoke-super {p0}, Lcom/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer$BaseNodeDeserializer;->isCachable()Z
 
     move-result v0
 

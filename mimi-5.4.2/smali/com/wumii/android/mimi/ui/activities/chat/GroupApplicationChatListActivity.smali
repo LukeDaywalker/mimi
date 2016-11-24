@@ -6,23 +6,23 @@
 # instance fields
 .field private C:Z
 
-.field private D:Lcom/wumii/android/mimi/ui/activities/chat/an;
+.field private D:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$an;
 
-.field private E:Lcom/wumii/android/mimi/models/h/d;
+.field private E:Lcom/wumii/android/mimi/models/h/BaseStorage$d;
 
 .field private n:Landroid/widget/ListView;
 
 .field private o:Landroid/view/MenuItem;
 
-.field private p:Lcom/wumii/android/mimi/a/o;
+.field private p:Lcom/wumii/android/mimi/a/ChatManager;
 
-.field private q:Lcom/wumii/android/mimi/ui/apdaters/b/k;
+.field private q:Lcom/wumii/android/mimi/ui/apdaters/b/GroupApplicationChatListAdapter;
 
-.field private r:Lcom/wumii/android/mimi/ui/activities/chat/aw;
+.field private r:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$aw;
 
-.field private s:Lcom/wumii/android/mimi/ui/activities/chat/ax;
+.field private s:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ax;
 
-.field private t:Lcom/wumii/android/mimi/ui/activities/chat/av;
+.field private t:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$av;
 
 
 # direct methods
@@ -34,31 +34,31 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;-><init>()V
 
     .line 318
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/au;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$au;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/au;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$au;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->E:Lcom/wumii/android/mimi/models/h/d;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->E:Lcom/wumii/android/mimi/models/h/BaseStorage$d;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)Lcom/wumii/android/mimi/models/f;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)Lcom/wumii/android/mimi/models/AppFacade;
     .locals 1
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;Lcom/wumii/android/mimi/ui/activities/chat/an;)Lcom/wumii/android/mimi/ui/activities/chat/an;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$an;)Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$an;
     .locals 0
 
     .prologue
     .line 43
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->D:Lcom/wumii/android/mimi/ui/activities/chat/an;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->D:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$an;
 
     return-object p1
 .end method
@@ -85,42 +85,42 @@
 
     .prologue
     .line 129
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->y:Landroid/util/DisplayMetrics;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 130
     const v1, 0x7f0600e7
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a;->setMessage(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     .line 131
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->a(I)V
 
     .line 132
     const v1, 0x7f060051
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 133
     const v1, 0x7f0600d6
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/ar;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ar;
 
-    invoke-direct {v2, p0, p1}, Lcom/wumii/android/mimi/ui/activities/chat/ar;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;Lcom/wumii/android/mimi/models/entities/chat/GroupApplicationChat;)V
+    invoke-direct {v2, p0, p1}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ar;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;Lcom/wumii/android/mimi/models/entities/chat/GroupApplicationChat;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 140
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a;->show()Landroid/app/AlertDialog;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->show()Landroid/app/AlertDialog;
 
     .line 141
     return-void
@@ -146,12 +146,12 @@
     return p1
 .end method
 
-.method static synthetic b(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)Lcom/wumii/android/mimi/ui/activities/chat/an;
+.method static synthetic b(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$an;
     .locals 1
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->D:Lcom/wumii/android/mimi/ui/activities/chat/an;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->D:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$an;
 
     return-object v0
 .end method
@@ -161,42 +161,42 @@
 
     .prologue
     .line 144
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->y:Landroid/util/DisplayMetrics;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 145
     const v1, 0x7f0600e8
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a;->setMessage(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     .line 146
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->a(I)V
 
     .line 147
     const v1, 0x7f060051
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 148
     const v1, 0x7f0600d5
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/as;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$as;
 
-    invoke-direct {v2, p0, p1}, Lcom/wumii/android/mimi/ui/activities/chat/as;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;Lcom/wumii/android/mimi/models/entities/chat/GroupApplicationChat;)V
+    invoke-direct {v2, p0, p1}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$as;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;Lcom/wumii/android/mimi/models/entities/chat/GroupApplicationChat;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 159
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a;->show()Landroid/app/AlertDialog;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->show()Landroid/app/AlertDialog;
 
     .line 160
     return-void
@@ -212,42 +212,42 @@
     return-void
 .end method
 
-.method static synthetic c(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)Lcom/wumii/android/mimi/ui/apdaters/b/k;
+.method static synthetic c(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)Lcom/wumii/android/mimi/ui/apdaters/b/GroupApplicationChatListAdapter;
     .locals 1
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/b/k;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/b/GroupApplicationChatListAdapter;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)Lcom/wumii/android/mimi/a/o;
+.method static synthetic d(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)Lcom/wumii/android/mimi/a/ChatManager;
     .locals 1
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->p:Lcom/wumii/android/mimi/a/o;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->p:Lcom/wumii/android/mimi/a/ChatManager;
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)Lcom/wumii/android/mimi/models/f;
+.method static synthetic e(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)Lcom/wumii/android/mimi/models/AppFacade;
     .locals 1
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
     return-object v0
 .end method
 
-.method static synthetic f(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)Lcom/wumii/android/mimi/ui/activities/chat/av;
+.method static synthetic f(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$av;
     .locals 1
 
     .prologue
     .line 43
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->k()Lcom/wumii/android/mimi/ui/activities/chat/av;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->k()Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$av;
 
     move-result-object v0
 
@@ -295,42 +295,42 @@
 
     .prologue
     .line 204
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->y:Landroid/util/DisplayMetrics;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 205
     const v1, 0x7f0600e0
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a;->setMessage(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     .line 206
     const/16 v1, 0x11
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->a(I)V
 
     .line 207
     const v1, 0x7f060051
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 208
     const v1, 0x7f0600a8
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/at;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$at;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/chat/at;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$at;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 215
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a;->show()Landroid/app/AlertDialog;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->show()Landroid/app/AlertDialog;
 
     .line 216
     return-void
@@ -346,81 +346,81 @@
     return v0
 .end method
 
-.method static synthetic i(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)Lcom/wumii/android/mimi/models/f;
+.method static synthetic i(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)Lcom/wumii/android/mimi/models/AppFacade;
     .locals 1
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
     return-object v0
 .end method
 
-.method private i()Lcom/wumii/android/mimi/ui/activities/chat/aw;
+.method private i()Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$aw;
     .locals 1
 
     .prologue
     .line 219
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->r:Lcom/wumii/android/mimi/ui/activities/chat/aw;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->r:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$aw;
 
     if-nez v0, :cond_0
 
     .line 220
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/aw;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$aw;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/aw;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$aw;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->r:Lcom/wumii/android/mimi/ui/activities/chat/aw;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->r:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$aw;
 
     .line 222
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->r:Lcom/wumii/android/mimi/ui/activities/chat/aw;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->r:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$aw;
 
     return-object v0
 .end method
 
-.method private j()Lcom/wumii/android/mimi/ui/activities/chat/ax;
+.method private j()Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ax;
     .locals 1
 
     .prologue
     .line 226
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->s:Lcom/wumii/android/mimi/ui/activities/chat/ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->s:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ax;
 
     if-nez v0, :cond_0
 
     .line 227
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/ax;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ax;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/ax;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ax;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->s:Lcom/wumii/android/mimi/ui/activities/chat/ax;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->s:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ax;
 
     .line 229
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->s:Lcom/wumii/android/mimi/ui/activities/chat/ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->s:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ax;
 
     return-object v0
 .end method
 
-.method private k()Lcom/wumii/android/mimi/ui/activities/chat/av;
+.method private k()Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$av;
     .locals 1
 
     .prologue
     .line 233
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->t:Lcom/wumii/android/mimi/ui/activities/chat/av;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->t:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$av;
 
     if-nez v0, :cond_0
 
     .line 234
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/av;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$av;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/av;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$av;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->t:Lcom/wumii/android/mimi/ui/activities/chat/av;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->t:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$av;
 
     .line 236
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->t:Lcom/wumii/android/mimi/ui/activities/chat/av;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->t:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$av;
 
     return-object v0
 .end method
@@ -440,15 +440,15 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->setContentView(I)V
 
     .line 70
-    invoke-static {}, Lcom/wumii/android/mimi/a/at;->a()Lcom/wumii/android/mimi/a/at;
+    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/at;->e()Lcom/wumii/android/mimi/a/o;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->e()Lcom/wumii/android/mimi/a/ChatManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->p:Lcom/wumii/android/mimi/a/o;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->p:Lcom/wumii/android/mimi/a/ChatManager;
 
     .line 72
     const v0, 0x7f0b0097
@@ -488,62 +488,62 @@
     invoke-virtual {v1, v0}, Landroid/widget/ListView;->setEmptyView(Landroid/view/View;)V
 
     .line 79
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/b/k;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/b/GroupApplicationChatListAdapter;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/f;->v()Lcom/wumii/android/mimi/models/h/a/f;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;
 
     move-result-object v1
 
     const/4 v2, 0x4
 
-    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/h/a/f;->a(I)Ljava/util/List;
+    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(I)Ljava/util/List;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/apdaters/b/k;-><init>(Landroid/content/Context;Ljava/util/List;)V
+    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/apdaters/b/GroupApplicationChatListAdapter;-><init>(Landroid/content/Context;Ljava/util/List;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/b/k;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/b/GroupApplicationChatListAdapter;
 
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/b/k;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/b/GroupApplicationChatListAdapter;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/ap;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ap;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/ap;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ap;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/b/k;->a(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/b/GroupApplicationChatListAdapter;->a(Landroid/view/View$OnClickListener;)V
 
     .line 120
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->n:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/b/k;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/b/GroupApplicationChatListAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 122
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->i()Lcom/wumii/android/mimi/ui/activities/chat/aw;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->i()Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$aw;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/aw;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$aw;->j()V
 
     .line 124
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->v()Lcom/wumii/android/mimi/models/h/a/f;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->E:Lcom/wumii/android/mimi/models/h/d;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->E:Lcom/wumii/android/mimi/models/h/BaseStorage$d;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/f;->a(Lcom/wumii/android/mimi/models/h/d;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$d;)V
 
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->p:Lcom/wumii/android/mimi/a/o;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->p:Lcom/wumii/android/mimi/a/ChatManager;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/o;->h()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ChatManager;->h()V
 
     .line 126
     return-void
@@ -588,15 +588,15 @@
 
     .prologue
     .line 194
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->v()Lcom/wumii/android/mimi/models/h/a/f;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->E:Lcom/wumii/android/mimi/models/h/d;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->E:Lcom/wumii/android/mimi/models/h/BaseStorage$d;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/f;->b(Lcom/wumii/android/mimi/models/h/d;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->b(Lcom/wumii/android/mimi/models/h/BaseStorage$d;)V
 
     .line 196
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onDestroy()V
@@ -634,11 +634,11 @@
 
     .line 178
     :pswitch_1
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->j()Lcom/wumii/android/mimi/ui/activities/chat/ax;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->j()Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ax;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/activities/chat/ax;->j()V
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ax;->j()V
 
     goto :goto_0
 
@@ -660,9 +660,9 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onResume()V
 
     .line 189
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/b/k;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/b/GroupApplicationChatListAdapter;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/b/k;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/b/GroupApplicationChatListAdapter;->notifyDataSetChanged()V
 
     .line 190
     return-void

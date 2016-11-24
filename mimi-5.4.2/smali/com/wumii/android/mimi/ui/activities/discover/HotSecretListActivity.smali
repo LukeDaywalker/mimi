@@ -21,13 +21,13 @@
 
     .prologue
     .line 14
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->p:Lcom/wumii/android/mimi/a/af;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->p:Lcom/wumii/android/mimi/a/DiscoverManager;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->k()Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/af;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/DiscoverManager;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
 
     .line 15
     return-void
@@ -38,13 +38,13 @@
 
     .prologue
     .line 19
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->p:Lcom/wumii/android/mimi/a/af;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->p:Lcom/wumii/android/mimi/a/DiscoverManager;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->k()Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/af;->b(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/DiscoverManager;->b(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
 
     .line 20
     return-void
@@ -55,13 +55,13 @@
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->p:Lcom/wumii/android/mimi/a/af;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->p:Lcom/wumii/android/mimi/a/DiscoverManager;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->k()Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/af;->c(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/DiscoverManager;->c(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
 
     .line 25
     return-void
@@ -82,9 +82,9 @@
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/HotSecretListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->A()Lcom/wumii/android/mimi/models/h/c/e;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/h/c/FeedModuleStorage;
 
     move-result-object v0
 
@@ -92,7 +92,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/h/c/e;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/h/c/FeedModuleStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
     move-result-object v0
 

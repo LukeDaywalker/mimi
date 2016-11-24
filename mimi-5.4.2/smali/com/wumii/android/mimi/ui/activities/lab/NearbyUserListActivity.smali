@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private C:Lcom/wumii/android/mimi/ui/activities/lab/v;
+.field private C:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$v;
 
-.field private D:Lcom/wumii/android/mimi/ui/apdaters/p;
+.field private D:Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;
 
 .field private n:Landroid/widget/ListView;
 
@@ -18,9 +18,9 @@
 
 .field private r:Landroid/widget/TextView;
 
-.field private s:Lcom/wumii/android/mimi/models/d/s;
+.field private s:Lcom/wumii/android/mimi/models/d/LocationHelper;
 
-.field private t:Lcom/wumii/android/mimi/ui/activities/lab/w;
+.field private t:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$w;
 
 
 # direct methods
@@ -35,12 +35,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;)Lcom/wumii/android/mimi/ui/activities/lab/w;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;)Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$w;
     .locals 1
 
     .prologue
     .line 53
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->h()Lcom/wumii/android/mimi/ui/activities/lab/w;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->h()Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$w;
 
     move-result-object v0
 
@@ -84,7 +84,7 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->p:Landroid/view/View;
 
-    invoke-static {v0, v4}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v0, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 202
     const v0, 0x7f060289
@@ -106,7 +106,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/d;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -192,13 +192,13 @@
     .line 96
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->y:Landroid/util/DisplayMetrics;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/lab/q;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$q;
 
-    invoke-direct {v2, p0, p1}, Lcom/wumii/android/mimi/ui/activities/lab/q;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;Lcom/wumii/android/mimi/models/entities/circle/GenderType;)V
+    invoke-direct {v2, p0, p1}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$q;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;Lcom/wumii/android/mimi/models/entities/circle/GenderType;)V
 
-    invoke-static {p0, v0, v1, v2}, Lcom/wumii/android/mimi/ui/as;->a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;Lcom/wumii/android/mimi/ui/aq;)V
+    invoke-static {p0, v0, v1, v2}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$aq;)V
 
     .line 133
     return-void
@@ -221,19 +221,19 @@
 
     .prologue
     .line 215
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     const-string/jumbo v1, "nearby_login_user"
 
-    invoke-virtual {v0, p3, v1}, Lcom/wumii/android/mimi/models/d/aa;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, p3, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 216
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->D:Lcom/wumii/android/mimi/ui/apdaters/p;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->D:Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;
 
-    invoke-virtual {v0, p2}, Lcom/wumii/android/mimi/ui/apdaters/p;->a(Ljava/util/List;)V
+    invoke-virtual {v0, p2}, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;->a(Ljava/util/List;)V
 
     .line 218
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/lab/u;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$u;->a:[I
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/circle/GenderType;->ordinal()I
 
@@ -317,22 +317,22 @@
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;)Lcom/wumii/android/mimi/ui/h;
+.method static synthetic c(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;)Lcom/wumii/android/mimi/ui/ActivityEventManager;
     .locals 1
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;)Lcom/wumii/android/mimi/models/d/s;
+.method static synthetic d(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;)Lcom/wumii/android/mimi/models/d/LocationHelper;
     .locals 1
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->s:Lcom/wumii/android/mimi/models/d/s;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->s:Lcom/wumii/android/mimi/models/d/LocationHelper;
 
     return-object v0
 .end method
@@ -347,12 +347,12 @@
     return-object v0
 .end method
 
-.method static synthetic f(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;)Lcom/wumii/android/mimi/ui/apdaters/p;
+.method static synthetic f(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;)Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;
     .locals 1
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->D:Lcom/wumii/android/mimi/ui/apdaters/p;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->D:Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;
 
     return-object v0
 .end method
@@ -418,48 +418,48 @@
     return-void
 .end method
 
-.method private h()Lcom/wumii/android/mimi/ui/activities/lab/w;
+.method private h()Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$w;
     .locals 1
 
     .prologue
     .line 239
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->t:Lcom/wumii/android/mimi/ui/activities/lab/w;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->t:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$w;
 
     if-nez v0, :cond_0
 
     .line 240
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/lab/w;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$w;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/w;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$w;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->t:Lcom/wumii/android/mimi/ui/activities/lab/w;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->t:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$w;
 
     .line 242
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->t:Lcom/wumii/android/mimi/ui/activities/lab/w;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->t:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$w;
 
     return-object v0
 .end method
 
-.method private i()Lcom/wumii/android/mimi/ui/activities/lab/v;
+.method private i()Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$v;
     .locals 1
 
     .prologue
     .line 246
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->C:Lcom/wumii/android/mimi/ui/activities/lab/v;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->C:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$v;
 
     if-nez v0, :cond_0
 
     .line 247
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/lab/v;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$v;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/v;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$v;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->C:Lcom/wumii/android/mimi/ui/activities/lab/v;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->C:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$v;
 
     .line 249
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->C:Lcom/wumii/android/mimi/ui/activities/lab/v;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->C:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$v;
 
     return-object v0
 .end method
@@ -557,7 +557,7 @@
     if-ne p1, v0, :cond_0
 
     .line 176
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     const-class v1, Lcom/wumii/android/mimi/models/entities/NearbyUser;
 
@@ -565,7 +565,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/aa;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -593,29 +593,29 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->g()V
 
     .line 80
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/p;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/p;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->D:Lcom/wumii/android/mimi/ui/apdaters/p;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->D:Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;
 
     .line 81
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->n:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->D:Lcom/wumii/android/mimi/ui/apdaters/p;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->D:Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 83
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->m()Lcom/wumii/android/mimi/models/d/s;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->m()Lcom/wumii/android/mimi/models/d/LocationHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->s:Lcom/wumii/android/mimi/models/d/s;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->s:Lcom/wumii/android/mimi/models/d/LocationHelper;
 
     .line 84
     sget-object v0, Lcom/wumii/android/mimi/models/entities/circle/GenderType;->UNKNOW:Lcom/wumii/android/mimi/models/entities/circle/GenderType;
@@ -695,13 +695,13 @@
 
     .line 161
     :pswitch_3
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->i()Lcom/wumii/android/mimi/ui/activities/lab/v;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->i()Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$v;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/ui/activities/lab/v;->b(Z)V
+    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$v;->b(Z)V
 
     goto :goto_0
 

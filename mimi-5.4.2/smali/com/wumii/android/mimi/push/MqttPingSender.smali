@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private b:Lcom/wumii/android/mimi/models/d/v;
+.field private b:Lcom/wumii/android/mimi/models/d/NetworkHelper;
 
 .field private c:Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;
 
@@ -38,15 +38,15 @@
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     .line 28
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->n()Lcom/wumii/android/mimi/models/d/v;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->n()Lcom/wumii/android/mimi/models/d/NetworkHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/MqttPingSender;->b:Lcom/wumii/android/mimi/models/d/v;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/MqttPingSender;->b:Lcom/wumii/android/mimi/models/d/NetworkHelper;
 
     .line 29
     return-void
@@ -87,9 +87,9 @@
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttPingSender;->b:Lcom/wumii/android/mimi/models/d/v;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttPingSender;->b:Lcom/wumii/android/mimi/models/d/NetworkHelper;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/v;->a()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/NetworkHelper;->a()Z
 
     move-result v0
 
@@ -119,9 +119,9 @@
 
     .line 44
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttPingSender;->b:Lcom/wumii/android/mimi/models/d/v;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MqttPingSender;->b:Lcom/wumii/android/mimi/models/d/NetworkHelper;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/v;->a()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/NetworkHelper;->a()Z
 
     move-result v0
 
@@ -138,7 +138,7 @@
 
     .line 47
     :cond_1
-    sget-object v0, Lcom/wumii/android/mimi/c/r;->b:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/c/Constants$r;->b:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/push/PushService;->a(Ljava/lang/String;)V
 

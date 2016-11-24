@@ -11,11 +11,11 @@
 
 .field private o:Landroid/widget/EditText;
 
-.field private p:Lcom/wumii/android/mimi/a/s;
+.field private p:Lcom/wumii/android/mimi/a/CircleManager;
 
 .field private q:Landroid/view/MenuItem;
 
-.field private r:Lcom/wumii/android/mimi/ui/activities/circle/a;
+.field private r:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$a;
 
 
 # direct methods
@@ -135,29 +135,29 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->setContentView(I)V
 
     .line 42
-    invoke-static {}, Lcom/wumii/android/mimi/a/at;->a()Lcom/wumii/android/mimi/a/at;
+    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/at;->i()Lcom/wumii/android/mimi/a/s;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->i()Lcom/wumii/android/mimi/a/CircleManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->p:Lcom/wumii/android/mimi/a/s;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->p:Lcom/wumii/android/mimi/a/CircleManager;
 
     .line 43
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$a;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/a;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$a;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->r:Lcom/wumii/android/mimi/ui/activities/circle/a;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->r:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$a;
 
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->p:Lcom/wumii/android/mimi/a/s;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->p:Lcom/wumii/android/mimi/a/CircleManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->r:Lcom/wumii/android/mimi/ui/activities/circle/a;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->r:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$a;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/s;->addObserver(Ljava/util/Observer;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/CircleManager;->addObserver(Ljava/util/Observer;)V
 
     .line 46
     const v0, 0x7f0b0058
@@ -266,22 +266,22 @@
     move-result-object v1
 
     .line 66
-    invoke-static {v0}, Lorg/a/a/c/d;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/a/a/c/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    invoke-static {v1}, Lorg/a/a/c/d;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/a/a/c/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
     .line 67
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->p:Lcom/wumii/android/mimi/a/s;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->p:Lcom/wumii/android/mimi/a/CircleManager;
 
-    invoke-virtual {v2, v0, v1}, Lcom/wumii/android/mimi/a/s;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v0, v1}, Lcom/wumii/android/mimi/a/CircleManager;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 69
     :cond_0
@@ -314,7 +314,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/d;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -330,7 +330,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/d;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 

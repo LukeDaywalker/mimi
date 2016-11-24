@@ -248,7 +248,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/a/a/c/a;->a(Ljava/lang/Boolean;)Z
+    invoke-static {v1}, Lorg/a/a/c/BooleanUtils;->a(Ljava/lang/Boolean;)Z
 
     move-result v1
 

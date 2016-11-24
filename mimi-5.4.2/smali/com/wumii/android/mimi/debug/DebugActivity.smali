@@ -3,7 +3,7 @@
 .source "DebugActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/br;
+.implements Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;
 
 
 # instance fields
@@ -57,7 +57,7 @@
     .line 48
     const/4 v0, 0x0
 
-    invoke-static {}, Lcom/wumii/android/mimi/debug/b;->values()[Lcom/wumii/android/mimi/debug/b;
+    invoke-static {}, Lcom/wumii/android/mimi/debug/DebugActivity$b;->values()[Lcom/wumii/android/mimi/debug/DebugActivity$b;
 
     move-result-object v1
 
@@ -72,20 +72,20 @@
     invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;-><init>(Landroid/content/Context;)V
 
     .line 50
-    invoke-static {}, Lcom/wumii/android/mimi/debug/b;->values()[Lcom/wumii/android/mimi/debug/b;
+    invoke-static {}, Lcom/wumii/android/mimi/debug/DebugActivity$b;->values()[Lcom/wumii/android/mimi/debug/DebugActivity$b;
 
     move-result-object v3
 
     aget-object v3, v3, v0
 
-    invoke-virtual {v3}, Lcom/wumii/android/mimi/debug/b;->a()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/wumii/android/mimi/debug/DebugActivity$b;->a()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setName(Ljava/lang/String;)V
 
     .line 51
-    invoke-static {}, Lcom/wumii/android/mimi/debug/b;->values()[Lcom/wumii/android/mimi/debug/b;
+    invoke-static {}, Lcom/wumii/android/mimi/debug/DebugActivity$b;->values()[Lcom/wumii/android/mimi/debug/DebugActivity$b;
 
     move-result-object v3
 
@@ -94,7 +94,7 @@
     invoke-virtual {v2, v3}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setTag(Ljava/lang/Object;)V
 
     .line 52
-    invoke-virtual {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/br;)V
+    invoke-virtual {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;)V
 
     .line 53
     iget-object v3, p0, Lcom/wumii/android/mimi/debug/DebugActivity;->n:Landroid/widget/LinearLayout;
@@ -122,12 +122,12 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/debug/b;
+    check-cast v0, Lcom/wumii/android/mimi/debug/DebugActivity$b;
 
     .line 62
-    sget-object v1, Lcom/wumii/android/mimi/debug/a;->a:[I
+    sget-object v1, Lcom/wumii/android/mimi/debug/DebugActivity$a;->a:[I
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/debug/b;->ordinal()I
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/debug/DebugActivity$b;->ordinal()I
 
     move-result v0
 

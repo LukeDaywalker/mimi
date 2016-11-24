@@ -55,9 +55,9 @@
 
     .line 54
     :cond_0
-    sget-object v0, Lcom/sina/weibo/sdk/net/f;->a:Lcom/sina/weibo/sdk/net/f;
+    sget-object v0, Lcom/sina/weibo/sdk/net/NetStateManager$f;->a:Lcom/sina/weibo/sdk/net/NetStateManager$f;
 
-    sput-object v0, Lcom/sina/weibo/sdk/net/NetStateManager;->a:Lcom/sina/weibo/sdk/net/f;
+    sput-object v0, Lcom/sina/weibo/sdk/net/NetStateManager;->a:Lcom/sina/weibo/sdk/net/NetStateManager$f;
 
     .line 57
     :cond_1

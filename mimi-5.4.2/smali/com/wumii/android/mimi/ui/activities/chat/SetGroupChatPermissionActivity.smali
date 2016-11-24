@@ -3,11 +3,11 @@
 .source "SetGroupChatPermissionActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/bk;
+.implements Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$bk;
 
 
 # instance fields
-.field private C:Lcom/wumii/android/mimi/ui/widgets/a;
+.field private C:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
 .field private D:Z
 
@@ -23,7 +23,7 @@
 
 .field private s:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
-.field private t:Lcom/wumii/android/mimi/b/ci;
+.field private t:Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;
 
 
 # direct methods
@@ -102,12 +102,12 @@
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;)Lcom/wumii/android/mimi/models/f;
+.method static synthetic c(Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;)Lcom/wumii/android/mimi/models/AppFacade;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
     return-object v0
 .end method
@@ -134,7 +134,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-static {v1, v0}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v1, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 183
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->o:Lcom/wumii/android/mimi/ui/widgets/SectionListView;
@@ -151,25 +151,25 @@
     goto :goto_0
 .end method
 
-.method private i()Lcom/wumii/android/mimi/b/ci;
+.method private i()Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;
     .locals 1
 
     .prologue
     .line 138
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->t:Lcom/wumii/android/mimi/b/ci;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->t:Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;
 
     if-nez v0, :cond_0
 
     .line 139
-    new-instance v0, Lcom/wumii/android/mimi/b/ci;
+    new-instance v0, Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/b/ci;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;-><init>(Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->t:Lcom/wumii/android/mimi/b/ci;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->t:Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;
 
     .line 141
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->t:Lcom/wumii/android/mimi/b/ci;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->t:Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;
 
     return-object v0
 .end method
@@ -179,20 +179,20 @@
 
     .prologue
     .line 145
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/a;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     if-nez v0, :cond_3
 
     .line 146
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->y:Landroid/util/DisplayMetrics;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/a;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     .line 148
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->getResources()Landroid/content/res/Resources;
@@ -258,7 +258,7 @@
 
     .line 160
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/a;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->getResources()Landroid/content/res/Resources;
 
@@ -282,35 +282,35 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     .line 161
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/a;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     const v1, 0x7f060051
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/ds;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity$ds;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/chat/ds;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity$ds;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 169
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/a;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     const v1, 0x7f0600a8
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/dt;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity$dt;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/chat/dt;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity$dt;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 178
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/a;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a;->show()Landroid/app/AlertDialog;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->show()Landroid/app/AlertDialog;
 
     .line 179
     return-void
@@ -368,7 +368,7 @@
 
     .prologue
     .line 113
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->i()Lcom/wumii/android/mimi/b/ci;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->i()Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;
 
     move-result-object v0
 
@@ -390,11 +390,11 @@
 
     move-result-object v3
 
-    new-instance v4, Lcom/wumii/android/mimi/ui/activities/chat/dr;
+    new-instance v4, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity$dr;
 
-    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/ui/activities/chat/dr;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;)V
+    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity$dr;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;)V
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/b/ci;->a(Lcom/wumii/android/mimi/models/entities/chat/GroupChat;ZLjava/lang/String;Lcom/wumii/android/mimi/b/cj;)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;->a(Lcom/wumii/android/mimi/models/entities/chat/GroupChat;ZLjava/lang/String;Lcom/wumii/android/mimi/b/UpdateGroupInfoTask$cj;)V
 
     .line 124
     return-void
@@ -460,7 +460,7 @@
     .line 72
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->p:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/bk;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$bk;)V
 
     .line 74
     const v0, 0x7f0b0132
@@ -487,7 +487,7 @@
 
     const/high16 v2, 0x42b00000    # 88.0f
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
@@ -537,9 +537,9 @@
     .line 83
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->r:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/dq;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity$dq;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/dq;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity$dq;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -560,9 +560,9 @@
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/SectionListView;->a()V
 
     .line 101
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->w()Lcom/wumii/android/mimi/models/h/a/h;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/h/a/ChatStorage;
 
     move-result-object v0
 
@@ -576,7 +576,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/h;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
 
     move-result-object v0
 
@@ -624,7 +624,7 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->s:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/l;->a(Landroid/content/res/Resources;Lcom/wumii/android/mimi/models/entities/chat/GroupChat;)Ljava/lang/String;
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/ChatInfoUtils;->a(Landroid/content/res/Resources;Lcom/wumii/android/mimi/models/entities/chat/GroupChat;)Ljava/lang/String;
 
     move-result-object v1
 

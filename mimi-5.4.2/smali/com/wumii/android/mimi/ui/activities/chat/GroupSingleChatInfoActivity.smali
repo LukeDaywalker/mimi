@@ -109,7 +109,7 @@
 
     .prologue
     .line 63
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupSingleChatInfoActivity;->j()Lcom/wumii/android/mimi/b/n;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupSingleChatInfoActivity;->j()Lcom/wumii/android/mimi/b/BlockTask;
 
     move-result-object v0
 
@@ -127,7 +127,7 @@
 
     move-result v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/b/n;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/chat/BlockType;Z)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/b/BlockTask;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/chat/BlockType;Z)V
 
     .line 64
     return-void
@@ -191,9 +191,9 @@
     div-int/lit8 v2, v1, 0x2
 
     .line 40
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupSingleChatInfoActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupSingleChatInfoActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/f;->w()Lcom/wumii/android/mimi/models/h/a/h;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/h/a/ChatStorage;
 
     move-result-object v1
 
@@ -201,7 +201,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v1, v3}, Lcom/wumii/android/mimi/models/h/a/h;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
+    invoke-virtual {v1, v3}, Lcom/wumii/android/mimi/models/h/a/ChatStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
 
     move-result-object v1
 
@@ -234,7 +234,7 @@
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 43
-    invoke-static {}, Lcom/e/a/b/g;->a()Lcom/e/a/b/g;
+    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
 
     move-result-object v3
 
@@ -244,11 +244,11 @@
 
     iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupSingleChatInfoActivity;->p:Landroid/widget/ImageView;
 
-    invoke-static {v2}, Lcom/wumii/android/mimi/c/av;->a(I)Lcom/e/a/b/d;
+    invoke-static {v2}, Lcom/wumii/android/mimi/c/Utils;->a(I)Lcom/e/a/b/DisplayImageOptions;
 
     move-result-object v2
 
-    invoke-virtual {v3, v1, v4, v2}, Lcom/e/a/b/g;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/d;)V
+    invoke-virtual {v3, v1, v4, v2}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
 
     .line 46
     :cond_0

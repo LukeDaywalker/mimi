@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private n:Lcom/wumii/android/mimi/models/d/s;
+.field private n:Lcom/wumii/android/mimi/models/d/LocationHelper;
 
 .field private o:Landroid/widget/TextView;
 
 .field private p:Landroid/view/View;
 
-.field private q:Lcom/wumii/android/mimi/a/s;
+.field private q:Lcom/wumii/android/mimi/a/CircleManager;
 
 
 # direct methods
@@ -51,22 +51,22 @@
     return-void
 .end method
 
-.method static synthetic b(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;)Lcom/wumii/android/mimi/a/s;
+.method static synthetic b(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;)Lcom/wumii/android/mimi/a/CircleManager;
     .locals 1
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->q:Lcom/wumii/android/mimi/a/s;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->q:Lcom/wumii/android/mimi/a/CircleManager;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;)Lcom/wumii/android/mimi/models/d/s;
+.method static synthetic c(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;)Lcom/wumii/android/mimi/models/d/LocationHelper;
     .locals 1
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->n:Lcom/wumii/android/mimi/models/d/s;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->n:Lcom/wumii/android/mimi/models/d/LocationHelper;
 
     return-object v0
 .end method
@@ -93,9 +93,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/circle/h;
+    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity$h;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/apdaters/circle/h;-><init>(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity$h;-><init>(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -106,9 +106,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/circle/i;
+    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity$i;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/apdaters/circle/i;-><init>(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity$i;-><init>(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -126,7 +126,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 80
     return-void
@@ -144,13 +144,13 @@
     .line 85
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->y:Landroid/util/DisplayMetrics;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/apdaters/circle/j;
+    new-instance v2, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity$j;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/apdaters/circle/j;-><init>(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity$j;-><init>(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;)V
 
-    invoke-static {p0, v0, v1, v2}, Lcom/wumii/android/mimi/ui/as;->a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;Lcom/wumii/android/mimi/ui/aq;)V
+    invoke-static {p0, v0, v1, v2}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$aq;)V
 
     .line 107
     return-void
@@ -171,10 +171,10 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->setContentView(I)V
 
     .line 49
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/ac;->a(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->a(Ljava/lang/Object;)V
 
     .line 51
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     const/4 v1, 0x1
 
@@ -184,29 +184,29 @@
 
     const-string/jumbo v2, "show_set_org_guidance"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/aa;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 52
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->m()Lcom/wumii/android/mimi/models/d/s;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->m()Lcom/wumii/android/mimi/models/d/LocationHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->n:Lcom/wumii/android/mimi/models/d/s;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->n:Lcom/wumii/android/mimi/models/d/LocationHelper;
 
     .line 54
-    invoke-static {}, Lcom/wumii/android/mimi/a/at;->a()Lcom/wumii/android/mimi/a/at;
+    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/at;->i()Lcom/wumii/android/mimi/a/s;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->i()Lcom/wumii/android/mimi/a/CircleManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->q:Lcom/wumii/android/mimi/a/s;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->q:Lcom/wumii/android/mimi/a/CircleManager;
 
     .line 56
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->g()V
@@ -226,13 +226,13 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onDestroy()V
 
     .line 117
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/ac;->b(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->b(Ljava/lang/Object;)V
 
     .line 118
     return-void
 .end method
 
-.method public onEvent(Lcom/wumii/android/mimi/models/c/a/c;)V
+.method public onEvent(Lcom/wumii/android/mimi/models/c/a/RespEventCircleSuggestions;)V
     .locals 7
 
     .prologue
@@ -244,14 +244,14 @@
     invoke-virtual {p0, v5}, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->setProgressBarIndeterminateVisibility(Z)V
 
     .line 138
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/c;->c()Z
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventCircleSuggestions;->c()Z
 
     move-result v0
 
     .line 139
     if-eqz v0, :cond_1
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/c;->e()Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventCircleSuggestions;->e()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     move-result-object v0
 
@@ -260,7 +260,7 @@
     if-eqz v0, :cond_1
 
     .line 140
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/c;->e()Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventCircleSuggestions;->e()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     move-result-object v0
 
@@ -269,7 +269,7 @@
     .line 141
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->p:Landroid/view/View;
 
-    invoke-static {v1, v5}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v1, v5}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 142
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->o:Landroid/widget/TextView;
@@ -330,21 +330,21 @@
     goto :goto_1
 .end method
 
-.method public onEvent(Lcom/wumii/android/mimi/models/c/a/v;)V
+.method public onEvent(Lcom/wumii/android/mimi/models/c/a/RespEventUserProfile;)V
     .locals 3
 
     .prologue
     const/4 v2, 0x1
 
     .line 122
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/v;->c()Z
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventUserProfile;->c()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
     .line 123
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/v;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventUserProfile;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -355,7 +355,7 @@
     if-eqz v0, :cond_0
 
     .line 124
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->B:Lcom/wumii/android/mimi/c/v;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
 
     const v1, 0x7f0602a9
 
@@ -363,7 +363,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/v;->a(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Ljava/lang/String;I)V
 
     .line 133
     :goto_0
@@ -371,13 +371,13 @@
 
     .line 126
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->B:Lcom/wumii/android/mimi/c/v;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/v;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventUserProfile;->a()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/v;->a(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Ljava/lang/String;I)V
 
     goto :goto_0
 

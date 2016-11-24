@@ -16,7 +16,7 @@
 
 .field private r:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
-.field private s:Lcom/wumii/android/mimi/b/aq;
+.field private s:Lcom/wumii/android/mimi/b/LoadInvitationTask;
 
 .field private t:Ljava/lang/String;
 
@@ -114,7 +114,7 @@
     const/4 v0, 0x0
 
     .line 143
-    sget-object v1, Lcom/wumii/android/mimi/ui/activities/share/f;->a:[I
+    sget-object v1, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$f;->a:[I
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/share/InviteMenuItem;->ordinal()I
 
@@ -153,7 +153,7 @@
     if-eqz v0, :cond_0
 
     .line 164
-    new-instance v1, Lcom/wumii/android/mimi/models/g/l;
+    new-instance v1, Lcom/wumii/android/mimi/models/g/AddFriendShareController;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/share/InviteMenuItem;->name()Ljava/lang/String;
 
@@ -161,10 +161,10 @@
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->t:Ljava/lang/String;
 
-    invoke-direct {v1, p0, v2, v3}, Lcom/wumii/android/mimi/models/g/l;-><init>(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, p0, v2, v3}, Lcom/wumii/android/mimi/models/g/AddFriendShareController;-><init>(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 165
-    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/g/l;->a(Lcom/wumii/android/mimi/models/entities/share/ShareAction;)V
+    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/g/AddFriendShareController;->a(Lcom/wumii/android/mimi/models/entities/share/ShareAction;)V
 
     .line 167
     :cond_0
@@ -255,22 +255,22 @@
     return-void
 .end method
 
-.method static synthetic e(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;)Lcom/wumii/android/mimi/models/d/aa;
+.method static synthetic e(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
     .locals 1
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     return-object v0
 .end method
 
-.method static synthetic f(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;)Lcom/wumii/android/mimi/b/aq;
+.method static synthetic f(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;)Lcom/wumii/android/mimi/b/LoadInvitationTask;
     .locals 1
 
     .prologue
     .line 35
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->j()Lcom/wumii/android/mimi/b/aq;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->j()Lcom/wumii/android/mimi/b/LoadInvitationTask;
 
     move-result-object v0
 
@@ -327,11 +327,11 @@
     .line 109
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->p:Lcom/wumii/android/mimi/ui/widgets/share/InviteList;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/share/c;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$c;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/share/c;-><init>(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$c;-><init>(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/share/f;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/share/InviteList$f;)V
 
     .line 126
     return-void
@@ -361,7 +361,7 @@
 
     int-to-long v2, v0
 
-    invoke-static {p0, v2, v3}, Lcom/wumii/android/mimi/c/av;->a(Landroid/content/Context;J)Ljava/lang/String;
+    invoke-static {p0, v2, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/content/Context;J)Ljava/lang/String;
 
     move-result-object v0
 
@@ -371,27 +371,27 @@
     return-void
 .end method
 
-.method private j()Lcom/wumii/android/mimi/b/aq;
+.method private j()Lcom/wumii/android/mimi/b/LoadInvitationTask;
     .locals 2
 
     .prologue
     .line 175
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->s:Lcom/wumii/android/mimi/b/aq;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->s:Lcom/wumii/android/mimi/b/LoadInvitationTask;
 
     if-nez v0, :cond_0
 
     .line 176
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/share/e;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$e;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, p0, v1}, Lcom/wumii/android/mimi/ui/activities/share/e;-><init>(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;Landroid/content/Context;Z)V
+    invoke-direct {v0, p0, p0, v1}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$e;-><init>(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;Landroid/content/Context;Z)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->s:Lcom/wumii/android/mimi/b/aq;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->s:Lcom/wumii/android/mimi/b/LoadInvitationTask;
 
     .line 190
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->s:Lcom/wumii/android/mimi/b/aq;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->s:Lcom/wumii/android/mimi/b/LoadInvitationTask;
 
     return-object v0
 .end method
@@ -419,11 +419,11 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->g()V
 
     .line 70
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/a;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/c/a;
+    invoke-static {p0}, Lcom/wumii/android/mimi/c/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/c/AppConfigManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/a;->a()Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/AppConfigManager;->a()Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     move-result-object v0
 
@@ -498,50 +498,50 @@
     move-result-object v2
 
     .line 81
-    invoke-static {v0}, Lorg/a/a/c/d;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/a/a/c/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    invoke-static {v1}, Lorg/a/a/c/d;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/a/a/c/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
     .line 82
-    new-instance v3, Lcom/wumii/android/mimi/ui/activities/share/g;
+    new-instance v3, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$g;
 
-    invoke-direct {v3, p0, p0}, Lcom/wumii/android/mimi/ui/activities/share/g;-><init>(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;Landroid/content/Context;)V
+    invoke-direct {v3, p0, p0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$g;-><init>(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;Landroid/content/Context;)V
 
-    invoke-virtual {v3, v0, v1, v2}, Lcom/wumii/android/mimi/ui/activities/share/g;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v3, v0, v1, v2}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$g;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 86
     :cond_0
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->i()V
 
     .line 88
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->j()Lcom/wumii/android/mimi/b/aq;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->j()Lcom/wumii/android/mimi/b/LoadInvitationTask;
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/share/a;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$a;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/share/a;-><init>(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$a;-><init>(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/b/aq;->a(Lcom/wumii/android/mimi/b/as;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/b/LoadInvitationTask;->a(Lcom/wumii/android/mimi/b/LoadInvitationTask$as;)V
 
     .line 95
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/a;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/c/a;
+    invoke-static {p0}, Lcom/wumii/android/mimi/c/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/c/AppConfigManager;
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/share/b;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$b;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/share/b;-><init>(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$b;-><init>(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/c/a;->a(Lcom/wumii/android/mimi/c/b;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/c/AppConfigManager;->a(Lcom/wumii/android/mimi/c/AppConfigManager$b;)V
 
     .line 105
     return-void
@@ -555,13 +555,13 @@
     invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onNewIntent(Landroid/content/Intent;)V
 
     .line 131
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->j()Lcom/wumii/android/mimi/b/aq;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->j()Lcom/wumii/android/mimi/b/LoadInvitationTask;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/b/aq;->a(Lcom/wumii/android/mimi/b/as;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/b/LoadInvitationTask;->a(Lcom/wumii/android/mimi/b/LoadInvitationTask$as;)V
 
     .line 132
     return-void

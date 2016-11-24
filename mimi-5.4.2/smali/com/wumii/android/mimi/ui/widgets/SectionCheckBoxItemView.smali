@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private d:Lcom/wumii/android/mimi/ui/widgets/bk;
+.field private d:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$bk;
 
 .field private e:Landroid/widget/CheckBox;
 
@@ -43,12 +43,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;)Lcom/wumii/android/mimi/ui/widgets/bk;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;)Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$bk;
     .locals 1
 
     .prologue
     .line 14
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->d:Lcom/wumii/android/mimi/ui/widgets/bk;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->d:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$bk;
 
     return-object v0
 .end method
@@ -93,7 +93,7 @@
 
     const/high16 v2, 0x41600000    # 14.0f
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
@@ -130,16 +130,16 @@
     .line 44
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->e:Landroid/widget/CheckBox;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/bj;
+    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$bj;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/bj;-><init>(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$bj;-><init>(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 54
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->c:Lcom/wumii/android/mimi/ui/widgets/bn;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->c:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$bn;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/bn;->b:Landroid/widget/RelativeLayout;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$bn;->b:Landroid/widget/RelativeLayout;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->e:Landroid/widget/CheckBox;
 
@@ -186,12 +186,12 @@
     return-void
 .end method
 
-.method public setListener(Lcom/wumii/android/mimi/ui/widgets/bk;)V
+.method public setListener(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$bk;)V
     .locals 0
 
     .prologue
     .line 58
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->d:Lcom/wumii/android/mimi/ui/widgets/bk;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->d:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$bk;
 
     .line 59
     return-void

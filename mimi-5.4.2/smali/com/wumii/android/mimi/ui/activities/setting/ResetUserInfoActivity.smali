@@ -67,17 +67,17 @@
 
     .prologue
     .line 69
-    invoke-static {}, Lcom/wumii/android/mimi/c/as;->a()Lcom/wumii/android/mimi/c/as;
+    invoke-static {}, Lcom/wumii/android/mimi/c/UserProfileManager;->a()Lcom/wumii/android/mimi/c/UserProfileManager;
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/aa;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$aa;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/aa;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$aa;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;)V
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/c/as;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/au;Z)V
+    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$au;Z)V
 
     .line 86
     return-void
@@ -111,11 +111,11 @@
     .line 42
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;->n:Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/x;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$x;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/x;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$x;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/bm;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionImageItemView$bm;)V
 
     .line 48
     const v0, 0x7f0b00dd
@@ -131,31 +131,31 @@
     .line 49
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;->o:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/y;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$y;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/y;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$y;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/br;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;)V
 
     .line 56
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/setting/z;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$z;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/setting/z;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity$z;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;->p:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     .line 64
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->p()Lcom/wumii/android/mimi/models/d/aa;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;->p:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/aa;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
     .line 65
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;->g()V
@@ -172,17 +172,17 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onDestroy()V
 
     .line 91
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->p()Lcom/wumii/android/mimi/models/d/aa;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;->p:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/aa;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
     .line 92
     return-void

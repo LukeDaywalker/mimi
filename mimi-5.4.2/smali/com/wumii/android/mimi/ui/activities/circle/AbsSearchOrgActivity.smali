@@ -3,14 +3,14 @@
 .source "AbsSearchOrgActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/a/c/z;
-.implements Lcom/wumii/android/mimi/ui/e;
+.implements Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$z;
+.implements Lcom/wumii/android/mimi/ui/ActionBarUpdateCallback;
 
 
 # instance fields
 .field protected n:Landroid/support/v4/app/FragmentManager;
 
-.field private o:Lcom/wumii/android/mimi/ui/a/c/i;
+.field private o:Lcom/wumii/android/mimi/ui/a/c/OrgInfoBaseFragment;
 
 .field private p:Ljava/lang/String;
 
@@ -30,14 +30,14 @@
     return-void
 .end method
 
-.method private a(Lcom/wumii/android/mimi/ui/a/c/i;Z)V
+.method private a(Lcom/wumii/android/mimi/ui/a/c/OrgInfoBaseFragment;Z)V
     .locals 4
 
     .prologue
     const/4 v3, 0x0
 
     .line 55
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->o:Lcom/wumii/android/mimi/ui/a/c/i;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->o:Lcom/wumii/android/mimi/ui/a/c/OrgInfoBaseFragment;
 
     .line 56
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->n:Landroid/support/v4/app/FragmentManager;
@@ -112,14 +112,14 @@
     .line 117
     iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->r:Z
 
-    invoke-static {p1, v0}, Lcom/wumii/android/mimi/ui/a/c/a;->a(Ljava/lang/String;Z)Lcom/wumii/android/mimi/ui/a/c/a;
+    invoke-static {p1, v0}, Lcom/wumii/android/mimi/ui/a/c/AddOrgFragment;->a(Ljava/lang/String;Z)Lcom/wumii/android/mimi/ui/a/c/AddOrgFragment;
 
     move-result-object v0
 
     .line 118
     const/4 v1, 0x0
 
-    invoke-direct {p0, v0, v1}, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->a(Lcom/wumii/android/mimi/ui/a/c/i;Z)V
+    invoke-direct {p0, v0, v1}, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->a(Lcom/wumii/android/mimi/ui/a/c/OrgInfoBaseFragment;Z)V
 
     .line 119
     return-void
@@ -182,9 +182,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/a/c/i;
+    check-cast v0, Lcom/wumii/android/mimi/ui/a/c/OrgInfoBaseFragment;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->o:Lcom/wumii/android/mimi/ui/a/c/i;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->o:Lcom/wumii/android/mimi/ui/a/c/OrgInfoBaseFragment;
 
     goto :goto_0
 .end method
@@ -235,30 +235,30 @@
     .line 44
     iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->r:Z
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/a/c/j;->a(Z)Lcom/wumii/android/mimi/ui/a/c/j;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->a(Z)Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;
 
     move-result-object v0
 
     .line 45
-    invoke-direct {p0, v0, v2}, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->a(Lcom/wumii/android/mimi/ui/a/c/i;Z)V
+    invoke-direct {p0, v0, v2}, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->a(Lcom/wumii/android/mimi/ui/a/c/OrgInfoBaseFragment;Z)V
 
     .line 47
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->H()Lcom/wumii/android/mimi/models/h/g;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/h/CommonStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/g;->m()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/CommonStorage;->m()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 48
-    sget-object v0, Lcom/wumii/android/mimi/c/af;->ar:Lcom/wumii/android/mimi/c/af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->ar:Lcom/wumii/android/mimi/c/EventUtils$af;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/ae;->onEvent(Lcom/wumii/android/mimi/c/af;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$af;)V
 
     .line 52
     :goto_0
@@ -266,9 +266,9 @@
 
     .line 50
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/c/af;->aM:Lcom/wumii/android/mimi/c/af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->aM:Lcom/wumii/android/mimi/c/EventUtils$af;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/ae;->onEvent(Lcom/wumii/android/mimi/c/af;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$af;)V
 
     goto :goto_0
 .end method
@@ -317,7 +317,7 @@
     .line 73
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->p:Ljava/lang/String;
 
-    invoke-static {v2, v0}, Lcom/wumii/android/mimi/c/av;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
+    invoke-static {v2, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -370,9 +370,9 @@
     if-ne v0, v1, :cond_0
 
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->o:Lcom/wumii/android/mimi/ui/a/c/i;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AbsSearchOrgActivity;->o:Lcom/wumii/android/mimi/ui/a/c/OrgInfoBaseFragment;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/a/c/i;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/a/c/OrgInfoBaseFragment;->a()V
 
     .line 87
     const/4 v0, 0x1

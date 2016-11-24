@@ -146,20 +146,20 @@
     move-result-object v0
 
     .line 112
-    invoke-static {v0}, Lorg/a/a/c/d;->c(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/a/a/c/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 113
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->B:Lcom/wumii/android/mimi/c/v;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
 
     const v1, 0x7f060386
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/v;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
 
     .line 117
     :goto_0
@@ -167,11 +167,11 @@
 
     .line 115
     :cond_0
-    invoke-static {}, Lcom/wumii/android/mimi/a/at;->a()Lcom/wumii/android/mimi/a/at;
+    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/a/at;->b()Lcom/wumii/android/mimi/a/e;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/a/ManagerCenter;->b()Lcom/wumii/android/mimi/a/AuthenticatorManager;
 
     move-result-object v1
 
@@ -179,7 +179,7 @@
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->s:Ljava/lang/String;
 
-    invoke-virtual {v1, p0, v2, v3, v0}, Lcom/wumii/android/mimi/a/e;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, p0, v2, v3, v0}, Lcom/wumii/android/mimi/a/AuthenticatorManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -189,22 +189,22 @@
 
     .prologue
     .line 120
-    sget-object v0, Lcom/wumii/android/mimi/c/af;->p:Lcom/wumii/android/mimi/c/af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->p:Lcom/wumii/android/mimi/c/EventUtils$af;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/ae;->onEvent(Lcom/wumii/android/mimi/c/af;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$af;)V
 
     .line 121
-    invoke-static {}, Lcom/wumii/android/mimi/a/at;->a()Lcom/wumii/android/mimi/a/at;
+    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/at;->b()Lcom/wumii/android/mimi/a/e;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->b()Lcom/wumii/android/mimi/a/AuthenticatorManager;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->r:Ljava/lang/String;
 
-    invoke-virtual {v0, p0, v1}, Lcom/wumii/android/mimi/a/e;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;)V
+    invoke-virtual {v0, p0, v1}, Lcom/wumii/android/mimi/a/AuthenticatorManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;)V
 
     .line 122
     return-void
@@ -226,7 +226,7 @@
 
     .prologue
     .line 96
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->getResources()Landroid/content/res/Resources;
 
@@ -236,33 +236,33 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 97
     const v1, 0x7f0603f4
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a;->setMessage(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     .line 98
     const v1, 0x7f0603f2
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 99
     const v1, 0x7f0603f3
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/authenticator/t;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$t;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/t;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$t;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 107
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a;->show()Landroid/app/AlertDialog;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->show()Landroid/app/AlertDialog;
 
     .line 108
     return-void
@@ -320,20 +320,20 @@
     .line 52
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->q:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/r;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$r;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/r;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$r;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     .line 59
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->p:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/s;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$s;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/s;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$s;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;->setOnCountDownListener(Lcom/wumii/android/mimi/ui/widgets/chat/x;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;->setOnCountDownListener(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$x;)V
 
     .line 67
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->p:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
@@ -346,25 +346,25 @@
     return-void
 .end method
 
-.method public onEvent(Lcom/wumii/android/mimi/models/c/a/n;)V
+.method public onEvent(Lcom/wumii/android/mimi/models/c/a/RespEventRequestVerificationCode;)V
     .locals 4
 
     .prologue
     const/4 v2, 0x0
 
     .line 126
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/n;->c()Z
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventRequestVerificationCode;->c()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 127
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->B:Lcom/wumii/android/mimi/c/v;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
 
     const v1, 0x7f0603a6
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/v;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
 
     .line 128
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->p:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
@@ -379,11 +379,11 @@
 
     .line 130
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->B:Lcom/wumii/android/mimi/c/v;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
 
     const v1, 0x7f0603a5
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/v;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
 
     goto :goto_0
 .end method
@@ -396,7 +396,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onStart()V
 
     .line 73
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/ac;->a(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->a(Ljava/lang/Object;)V
 
     .line 74
     return-void
@@ -410,7 +410,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onStop()V
 
     .line 79
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/ac;->b(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->b(Ljava/lang/Object;)V
 
     .line 80
     return-void

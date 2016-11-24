@@ -52,15 +52,15 @@
     if-eqz v0, :cond_0
 
     .line 18
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->c()Lcom/wumii/android/mimi/push/d;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->c()Lcom/wumii/android/mimi/push/PushReportService;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/push/d;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/push/PushReportService;->a()V
 
     .line 21
     :cond_0

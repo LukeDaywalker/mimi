@@ -1,5 +1,5 @@
 .class final Lcom/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer$ArrayDeserializer;
-.super Lcom/fasterxml/jackson/databind/deser/std/BaseNodeDeserializer;
+.super Lcom/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer$BaseNodeDeserializer;
 .source "JsonNodeDeserializer.java"
 
 
@@ -42,7 +42,7 @@
     .line 116
     const-class v0, Lcom/fasterxml/jackson/databind/node/ArrayNode;
 
-    invoke-direct {p0, v0}, Lcom/fasterxml/jackson/databind/deser/std/BaseNodeDeserializer;-><init>(Ljava/lang/Class;)V
+    invoke-direct {p0, v0}, Lcom/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer$BaseNodeDeserializer;-><init>(Ljava/lang/Class;)V
 
     return-void
 .end method

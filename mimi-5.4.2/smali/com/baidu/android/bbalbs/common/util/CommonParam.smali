@@ -44,7 +44,7 @@
     move-result-object v1
 
     .line 46
-    invoke-static {p0}, Lcom/baidu/android/bbalbs/common/util/a;->b(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/baidu/android/bbalbs/common/util/DeviceId;->b(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -105,7 +105,7 @@
 
     .prologue
     .line 72
-    invoke-static {p0}, Lcom/baidu/android/bbalbs/common/util/a;->a(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/baidu/android/bbalbs/common/util/DeviceId;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 

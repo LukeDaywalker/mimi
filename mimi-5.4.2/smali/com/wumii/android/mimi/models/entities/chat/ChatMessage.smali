@@ -158,7 +158,7 @@
 
     shl-long/2addr v0, v2
 
-    invoke-static {}, Lorg/a/a/c/a/b;->a()I
+    invoke-static {}, Lorg/a/a/c/a/RandomUtils;->a()I
 
     move-result v2
 

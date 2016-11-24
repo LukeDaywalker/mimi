@@ -83,7 +83,7 @@
     .line 40
     const/high16 v2, 0x42400000    # 48.0f
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v2
 
@@ -199,7 +199,7 @@
     .line 63
     const/high16 v3, 0x41600000    # 14.0f
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 

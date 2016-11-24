@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field private f:Lcom/wumii/android/mimi/ui/aa;
+.field private f:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
 
 .field private g:Landroid/widget/LinearLayout$LayoutParams;
 
@@ -139,7 +139,7 @@
 
     int-to-float v2, v2
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -212,7 +212,7 @@
 
     int-to-float v1, v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -239,7 +239,7 @@
 
     int-to-float v1, v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -283,7 +283,7 @@
 
     int-to-float v2, v2
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
@@ -312,7 +312,7 @@
 
     int-to-float v2, v2
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
@@ -401,7 +401,7 @@
 
     const/high16 v2, 0x40800000    # 4.0f
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
@@ -441,7 +441,7 @@
 
     int-to-float v2, v2
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
@@ -464,7 +464,7 @@
 
     int-to-float v1, v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -487,7 +487,7 @@
 
     .prologue
     .line 142
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->f:Lcom/wumii/android/mimi/ui/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->f:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
 
     if-eqz v0, :cond_0
 
@@ -498,7 +498,7 @@
     if-eqz v0, :cond_0
 
     .line 143
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->f:Lcom/wumii/android/mimi/ui/aa;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->f:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -506,14 +506,14 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/aa;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
+    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/OnCircleClickListener;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     .line 145
     :cond_0
     return-void
 .end method
 
-.method public setCircles(Ljava/util/List;Ljava/util/List;Lcom/wumii/android/mimi/ui/aa;)V
+.method public setCircles(Ljava/util/List;Ljava/util/List;Lcom/wumii/android/mimi/ui/OnCircleClickListener;)V
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -526,7 +526,7 @@
             "<",
             "Ljava/lang/String;",
             ">;",
-            "Lcom/wumii/android/mimi/ui/aa;",
+            "Lcom/wumii/android/mimi/ui/OnCircleClickListener;",
             ")V"
         }
     .end annotation
@@ -546,7 +546,7 @@
 
     .line 63
     :cond_1
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->f:Lcom/wumii/android/mimi/ui/aa;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/CircleListItemView;->f:Lcom/wumii/android/mimi/ui/OnCircleClickListener;
 
     .line 65
     const/4 v0, 0x0

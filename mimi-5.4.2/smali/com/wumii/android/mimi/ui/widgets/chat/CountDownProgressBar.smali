@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/d/d;
+.field private a:Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/chat/v;
+.field private b:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$v;
 
 .field private c:Landroid/graphics/drawable/Drawable;
 
@@ -52,11 +52,11 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/ProgressBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 33
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/u;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$u;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/u;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$u;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/d;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
     .line 52
     return-void
@@ -96,12 +96,12 @@
     return-void
 .end method
 
-.method static synthetic c(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;)Lcom/wumii/android/mimi/ui/widgets/chat/v;
+.method static synthetic c(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;)Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$v;
     .locals 1
 
     .prologue
     .line 13
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->b:Lcom/wumii/android/mimi/ui/widgets/chat/v;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->b:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$v;
 
     return-object v0
 .end method
@@ -249,18 +249,18 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->c()V
 
     .line 110
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/d;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/d;->c()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/CountDownTimer;->c()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/d;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
-    invoke-virtual {v0, p3, p4}, Lcom/wumii/android/mimi/models/d/d;->b(J)V
+    invoke-virtual {v0, p3, p4}, Lcom/wumii/android/mimi/models/d/CountDownTimer;->b(J)V
 
     .line 115
     :goto_0
@@ -268,11 +268,11 @@
 
     .line 113
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/d;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
     const-wide/16 v2, 0x3e8
 
-    invoke-virtual {v0, p3, p4, v2, v3}, Lcom/wumii/android/mimi/models/d/d;->a(JJ)Lcom/wumii/android/mimi/models/d/d;
+    invoke-virtual {v0, p3, p4, v2, v3}, Lcom/wumii/android/mimi/models/d/CountDownTimer;->a(JJ)Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
     goto :goto_0
 .end method
@@ -282,18 +282,18 @@
 
     .prologue
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/d;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/d;->c()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/CountDownTimer;->c()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 119
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/d;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/d;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/CountDownTimer;->a()V
 
     .line 121
     :cond_0
@@ -308,18 +308,18 @@
     invoke-super {p0}, Landroid/widget/ProgressBar;->onDetachedFromWindow()V
 
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/d;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/d;->c()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/CountDownTimer;->c()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/d;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/d;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/CountDownTimer;->a()V
 
     .line 90
     :cond_0
@@ -340,30 +340,30 @@
 
     if-nez p1, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/d;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/d;->c()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/CountDownTimer;->c()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/d;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/d;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/CountDownTimer;->a()V
 
     .line 98
     :cond_0
     return-void
 .end method
 
-.method public setCountdownCallback(Lcom/wumii/android/mimi/ui/widgets/chat/v;)V
+.method public setCountdownCallback(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$v;)V
     .locals 0
 
     .prologue
     .line 81
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->b:Lcom/wumii/android/mimi/ui/widgets/chat/v;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->b:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$v;
 
     .line 82
     return-void

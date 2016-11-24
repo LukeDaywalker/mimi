@@ -80,7 +80,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 50
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/l;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/EmoticonUtils;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

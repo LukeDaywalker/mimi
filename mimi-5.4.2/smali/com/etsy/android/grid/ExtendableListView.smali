@@ -8,22 +8,22 @@
 
 .field private B:I
 
-.field private C:Lcom/etsy/android/grid/i;
+.field private C:Lcom/etsy/android/grid/ExtendableListView$i;
 
-.field private D:Lcom/etsy/android/grid/c;
+.field private D:Lcom/etsy/android/grid/ExtendableListView$c;
 
 .field private E:I
 
-.field private F:Lcom/etsy/android/grid/e;
+.field private F:Lcom/etsy/android/grid/ExtendableListView$e;
 
-.field private G:Lcom/etsy/android/grid/h;
+.field private G:Lcom/etsy/android/grid/ExtendableListView$h;
 
 .field private H:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/etsy/android/grid/d;",
+            "Lcom/etsy/android/grid/ExtendableListView$d;",
             ">;"
         }
     .end annotation
@@ -34,7 +34,7 @@
         value = {
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/etsy/android/grid/d;",
+            "Lcom/etsy/android/grid/ExtendableListView$d;",
             ">;"
         }
     .end annotation
@@ -174,18 +174,18 @@
     iput v0, p0, Lcom/etsy/android/grid/ExtendableListView;->p:I
 
     .line 183
-    new-instance v0, Lcom/etsy/android/grid/i;
+    new-instance v0, Lcom/etsy/android/grid/ExtendableListView$i;
 
-    invoke-direct {v0, p0}, Lcom/etsy/android/grid/i;-><init>(Lcom/etsy/android/grid/ExtendableListView;)V
+    invoke-direct {v0, p0}, Lcom/etsy/android/grid/ExtendableListView$i;-><init>(Lcom/etsy/android/grid/ExtendableListView;)V
 
-    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/i;
+    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/ExtendableListView$i;
 
     .line 184
-    new-instance v0, Lcom/etsy/android/grid/c;
+    new-instance v0, Lcom/etsy/android/grid/ExtendableListView$c;
 
-    invoke-direct {v0, p0}, Lcom/etsy/android/grid/c;-><init>(Lcom/etsy/android/grid/ExtendableListView;)V
+    invoke-direct {v0, p0}, Lcom/etsy/android/grid/ExtendableListView$c;-><init>(Lcom/etsy/android/grid/ExtendableListView;)V
 
-    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->D:Lcom/etsy/android/grid/c;
+    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->D:Lcom/etsy/android/grid/ExtendableListView$c;
 
     .line 186
     new-instance v0, Ljava/util/ArrayList;
@@ -241,9 +241,9 @@
     if-nez v0, :cond_0
 
     .line 1396
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/i;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/ExtendableListView$i;
 
-    invoke-virtual {v0, p1}, Lcom/etsy/android/grid/i;->c(I)Landroid/view/View;
+    invoke-virtual {v0, p1}, Lcom/etsy/android/grid/ExtendableListView$i;->c(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -309,9 +309,9 @@
     aput-boolean v2, p2, v2
 
     .line 1568
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/i;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/ExtendableListView$i;
 
-    invoke-virtual {v0, p1}, Lcom/etsy/android/grid/i;->d(I)Landroid/view/View;
+    invoke-virtual {v0, p1}, Lcom/etsy/android/grid/ExtendableListView$i;->d(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -329,9 +329,9 @@
     if-eq v0, v1, :cond_0
 
     .line 1576
-    iget-object v2, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/i;
+    iget-object v2, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/ExtendableListView$i;
 
-    invoke-virtual {v2, v1, p1}, Lcom/etsy/android/grid/i;->a(Landroid/view/View;I)V
+    invoke-virtual {v2, v1, p1}, Lcom/etsy/android/grid/ExtendableListView$i;->a(Landroid/view/View;I)V
 
     .line 1587
     :goto_0
@@ -400,9 +400,9 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/etsy/android/grid/f;
+    check-cast v1, Lcom/etsy/android/grid/ExtendableListView$f;
 
-    iget v1, v1, Lcom/etsy/android/grid/f;->b:I
+    iget v1, v1, Lcom/etsy/android/grid/ExtendableListView$f;->b:I
 
     if-ne v1, p1, :cond_0
 
@@ -445,26 +445,26 @@
 
     .prologue
     .line 1860
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->F:Lcom/etsy/android/grid/e;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->F:Lcom/etsy/android/grid/ExtendableListView$e;
 
     if-nez v0, :cond_0
 
     .line 1861
-    new-instance v0, Lcom/etsy/android/grid/e;
+    new-instance v0, Lcom/etsy/android/grid/ExtendableListView$e;
 
-    invoke-direct {v0, p0}, Lcom/etsy/android/grid/e;-><init>(Lcom/etsy/android/grid/ExtendableListView;)V
+    invoke-direct {v0, p0}, Lcom/etsy/android/grid/ExtendableListView$e;-><init>(Lcom/etsy/android/grid/ExtendableListView;)V
 
-    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->F:Lcom/etsy/android/grid/e;
+    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->F:Lcom/etsy/android/grid/ExtendableListView$e;
 
     .line 1863
     :cond_0
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->F:Lcom/etsy/android/grid/e;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->F:Lcom/etsy/android/grid/ExtendableListView$e;
 
     neg-float v1, p1
 
     float-to-int v1, v1
 
-    invoke-virtual {v0, v1}, Lcom/etsy/android/grid/e;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/etsy/android/grid/ExtendableListView$e;->a(I)V
 
     .line 1864
     return-void
@@ -544,25 +544,25 @@
     if-ne v4, v3, :cond_8
 
     .line 1441
-    invoke-virtual {p0, p1}, Lcom/etsy/android/grid/ExtendableListView;->c(Landroid/view/View;)Lcom/etsy/android/grid/f;
+    invoke-virtual {p0, p1}, Lcom/etsy/android/grid/ExtendableListView;->c(Landroid/view/View;)Lcom/etsy/android/grid/ExtendableListView$f;
 
     move-result-object v3
 
     .line 1447
     :goto_4
-    iput v4, v3, Lcom/etsy/android/grid/f;->d:I
+    iput v4, v3, Lcom/etsy/android/grid/ExtendableListView$f;->d:I
 
     .line 1448
-    iput p2, v3, Lcom/etsy/android/grid/f;->b:I
+    iput p2, v3, Lcom/etsy/android/grid/ExtendableListView$f;->b:I
 
     .line 1450
     if-nez p6, :cond_1
 
-    iget-boolean v4, v3, Lcom/etsy/android/grid/f;->a:Z
+    iget-boolean v4, v3, Lcom/etsy/android/grid/ExtendableListView$f;->a:Z
 
     if-eqz v4, :cond_a
 
-    iget v4, v3, Lcom/etsy/android/grid/f;->d:I
+    iget v4, v3, Lcom/etsy/android/grid/ExtendableListView$f;->d:I
 
     const/4 v6, -0x2
 
@@ -598,7 +598,7 @@
     if-eqz v2, :cond_d
 
     .line 1473
-    invoke-virtual {p0, p1, v3}, Lcom/etsy/android/grid/ExtendableListView;->a(Landroid/view/View;Lcom/etsy/android/grid/f;)V
+    invoke-virtual {p0, p1, v3}, Lcom/etsy/android/grid/ExtendableListView;->a(Landroid/view/View;Lcom/etsy/android/grid/ExtendableListView$f;)V
 
     .line 1480
     :goto_7
@@ -674,7 +674,7 @@
 
     .line 1444
     :cond_8
-    invoke-virtual {p0, p1}, Lcom/etsy/android/grid/ExtendableListView;->b(Landroid/view/View;)Lcom/etsy/android/grid/f;
+    invoke-virtual {p0, p1}, Lcom/etsy/android/grid/ExtendableListView;->b(Landroid/view/View;)Lcom/etsy/android/grid/ExtendableListView$f;
 
     move-result-object v3
 
@@ -688,7 +688,7 @@
 
     .line 1457
     :cond_a
-    iget v4, v3, Lcom/etsy/android/grid/f;->d:I
+    iget v4, v3, Lcom/etsy/android/grid/ExtendableListView$f;->d:I
 
     const/4 v6, -0x2
 
@@ -697,7 +697,7 @@
     .line 1458
     const/4 v4, 0x1
 
-    iput-boolean v4, v3, Lcom/etsy/android/grid/f;->a:Z
+    iput-boolean v4, v3, Lcom/etsy/android/grid/ExtendableListView$f;->a:Z
 
     .line 1460
     :cond_b
@@ -782,7 +782,7 @@
             "(",
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/etsy/android/grid/d;",
+            "Lcom/etsy/android/grid/ExtendableListView$d;",
             ">;)V"
         }
     .end annotation
@@ -813,17 +813,17 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/etsy/android/grid/d;
+    check-cast v0, Lcom/etsy/android/grid/ExtendableListView$d;
 
     .line 2603
-    iget-object v0, v0, Lcom/etsy/android/grid/d;->a:Landroid/view/View;
+    iget-object v0, v0, Lcom/etsy/android/grid/ExtendableListView$d;->a:Landroid/view/View;
 
     .line 2604
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
-    check-cast v0, Lcom/etsy/android/grid/f;
+    check-cast v0, Lcom/etsy/android/grid/ExtendableListView$f;
 
     .line 2605
     if-eqz v0, :cond_2
@@ -831,7 +831,7 @@
     .line 2606
     const/4 v2, 0x0
 
-    iput-boolean v2, v0, Lcom/etsy/android/grid/f;->a:Z
+    iput-boolean v2, v0, Lcom/etsy/android/grid/ExtendableListView$f;->a:Z
 
     goto :goto_0
 .end method
@@ -1130,12 +1130,12 @@
     return p1
 .end method
 
-.method static synthetic c(Lcom/etsy/android/grid/ExtendableListView;)Lcom/etsy/android/grid/i;
+.method static synthetic c(Lcom/etsy/android/grid/ExtendableListView;)Lcom/etsy/android/grid/ExtendableListView$i;
     .locals 1
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/i;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/ExtendableListView$i;
 
     return-object v0
 .end method
@@ -1456,9 +1456,9 @@
     .line 1216
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/i;
+    iget-object v5, v0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/ExtendableListView$i;
 
-    invoke-virtual {v5}, Lcom/etsy/android/grid/i;->d()V
+    invoke-virtual {v5}, Lcom/etsy/android/grid/ExtendableListView$i;->d()V
 
     .line 1217
     move-object/from16 v0, p0
@@ -1550,9 +1550,9 @@
     .line 1185
     move-object/from16 v0, p0
 
-    iget-object v15, v0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/i;
+    iget-object v15, v0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/ExtendableListView$i;
 
-    invoke-virtual {v15, v14, v4}, Lcom/etsy/android/grid/i;->a(Landroid/view/View;I)V
+    invoke-virtual {v15, v14, v4}, Lcom/etsy/android/grid/ExtendableListView$i;->a(Landroid/view/View;I)V
 
     .line 1176
     :cond_12
@@ -1631,9 +1631,9 @@
     .line 1205
     move-object/from16 v0, p0
 
-    iget-object v11, v0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/i;
+    iget-object v11, v0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/ExtendableListView$i;
 
-    invoke-virtual {v11, v7, v4}, Lcom/etsy/android/grid/i;->a(Landroid/view/View;I)V
+    invoke-virtual {v11, v7, v4}, Lcom/etsy/android/grid/ExtendableListView$i;->a(Landroid/view/View;I)V
 
     .line 1195
     :cond_16
@@ -2131,7 +2131,7 @@
 
     .prologue
     .line 947
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->G:Lcom/etsy/android/grid/h;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->G:Lcom/etsy/android/grid/ExtendableListView$h;
 
     if-nez v0, :cond_0
 
@@ -2139,13 +2139,13 @@
     invoke-virtual {p0}, Lcom/etsy/android/grid/ExtendableListView;->invalidate()V
 
     .line 949
-    new-instance v0, Lcom/etsy/android/grid/h;
+    new-instance v0, Lcom/etsy/android/grid/ExtendableListView$h;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/etsy/android/grid/h;-><init>(Lcom/etsy/android/grid/ExtendableListView;Lcom/etsy/android/grid/b;)V
+    invoke-direct {v0, p0, v1}, Lcom/etsy/android/grid/ExtendableListView$h;-><init>(Lcom/etsy/android/grid/ExtendableListView;Lcom/etsy/android/grid/ExtendableListView$b;)V
 
-    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->G:Lcom/etsy/android/grid/h;
+    iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->G:Lcom/etsy/android/grid/ExtendableListView$h;
 
     .line 951
     :cond_0
@@ -2167,16 +2167,16 @@
     if-eqz v1, :cond_1
 
     .line 953
-    iget-object v1, p0, Lcom/etsy/android/grid/ExtendableListView;->G:Lcom/etsy/android/grid/h;
+    iget-object v1, p0, Lcom/etsy/android/grid/ExtendableListView;->G:Lcom/etsy/android/grid/ExtendableListView$h;
 
     .line 954
-    iput v0, v1, Lcom/etsy/android/grid/h;->a:I
+    iput v0, v1, Lcom/etsy/android/grid/ExtendableListView$h;->a:I
 
     .line 955
-    invoke-virtual {v1}, Lcom/etsy/android/grid/h;->a()V
+    invoke-virtual {v1}, Lcom/etsy/android/grid/ExtendableListView$h;->a()V
 
     .line 956
-    invoke-virtual {v1}, Lcom/etsy/android/grid/h;->run()V
+    invoke-virtual {v1}, Lcom/etsy/android/grid/ExtendableListView$h;->run()V
 
     .line 958
     :cond_1
@@ -2868,14 +2868,14 @@
 
     .prologue
     .line 1867
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->F:Lcom/etsy/android/grid/e;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->F:Lcom/etsy/android/grid/ExtendableListView$e;
 
     if-eqz v0, :cond_0
 
     .line 1868
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->F:Lcom/etsy/android/grid/e;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->F:Lcom/etsy/android/grid/ExtendableListView$e;
 
-    invoke-static {v0}, Lcom/etsy/android/grid/e;->a(Lcom/etsy/android/grid/e;)V
+    invoke-static {v0}, Lcom/etsy/android/grid/ExtendableListView$e;->a(Lcom/etsy/android/grid/ExtendableListView$e;)V
 
     .line 1870
     :cond_0
@@ -3147,9 +3147,9 @@
     iput-boolean v1, p0, Lcom/etsy/android/grid/ExtendableListView;->z:Z
 
     .line 2593
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/i;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/ExtendableListView$i;
 
-    invoke-virtual {v0}, Lcom/etsy/android/grid/i;->b()V
+    invoke-virtual {v0}, Lcom/etsy/android/grid/ExtendableListView$i;->b()V
 
     .line 2594
     iput-boolean v1, p0, Lcom/etsy/android/grid/ExtendableListView;->i:Z
@@ -3206,9 +3206,9 @@
     invoke-direct {p0}, Lcom/etsy/android/grid/ExtendableListView;->m()V
 
     .line 243
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/i;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/ExtendableListView$i;
 
-    invoke-virtual {v0}, Lcom/etsy/android/grid/i;->b()V
+    invoke-virtual {v0}, Lcom/etsy/android/grid/ExtendableListView$i;->b()V
 
     .line 244
     const/4 v0, 0x1
@@ -3283,7 +3283,7 @@
     return-void
 .end method
 
-.method protected a(Landroid/view/View;Lcom/etsy/android/grid/f;)V
+.method protected a(Landroid/view/View;Lcom/etsy/android/grid/ExtendableListView$f;)V
     .locals 4
 
     .prologue
@@ -3302,14 +3302,14 @@
 
     add-int/2addr v1, v2
 
-    iget v2, p2, Lcom/etsy/android/grid/f;->width:I
+    iget v2, p2, Lcom/etsy/android/grid/ExtendableListView$f;->width:I
 
     invoke-static {v0, v1, v2}, Landroid/view/ViewGroup;->getChildMeasureSpec(III)I
 
     move-result v1
 
     .line 1531
-    iget v0, p2, Lcom/etsy/android/grid/f;->height:I
+    iget v0, p2, Lcom/etsy/android/grid/ExtendableListView$f;->height:I
 
     .line 1533
     if-lez v0, :cond_0
@@ -3342,18 +3342,18 @@
 
     .prologue
     .line 422
-    new-instance v0, Lcom/etsy/android/grid/d;
+    new-instance v0, Lcom/etsy/android/grid/ExtendableListView$d;
 
-    invoke-direct {v0, p0}, Lcom/etsy/android/grid/d;-><init>(Lcom/etsy/android/grid/ExtendableListView;)V
+    invoke-direct {v0, p0}, Lcom/etsy/android/grid/ExtendableListView$d;-><init>(Lcom/etsy/android/grid/ExtendableListView;)V
 
     .line 423
-    iput-object p1, v0, Lcom/etsy/android/grid/d;->a:Landroid/view/View;
+    iput-object p1, v0, Lcom/etsy/android/grid/ExtendableListView$d;->a:Landroid/view/View;
 
     .line 424
-    iput-object p2, v0, Lcom/etsy/android/grid/d;->b:Ljava/lang/Object;
+    iput-object p2, v0, Lcom/etsy/android/grid/ExtendableListView$d;->b:Ljava/lang/Object;
 
     .line 425
-    iput-boolean p3, v0, Lcom/etsy/android/grid/d;->c:Z
+    iput-boolean p3, v0, Lcom/etsy/android/grid/ExtendableListView$d;->c:Z
 
     .line 426
     iget-object v1, p0, Lcom/etsy/android/grid/ExtendableListView;->I:Ljava/util/ArrayList;
@@ -3365,14 +3365,14 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->D:Lcom/etsy/android/grid/c;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->D:Lcom/etsy/android/grid/ExtendableListView$c;
 
     if-eqz v0, :cond_0
 
     .line 431
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->D:Lcom/etsy/android/grid/c;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->D:Lcom/etsy/android/grid/ExtendableListView$c;
 
-    invoke-virtual {v0}, Lcom/etsy/android/grid/c;->onChanged()V
+    invoke-virtual {v0}, Lcom/etsy/android/grid/ExtendableListView$c;->onChanged()V
 
     .line 433
     :cond_0
@@ -3468,12 +3468,12 @@
     return v0
 .end method
 
-.method protected b(Landroid/view/View;)Lcom/etsy/android/grid/f;
+.method protected b(Landroid/view/View;)Lcom/etsy/android/grid/ExtendableListView$f;
     .locals 1
 
     .prologue
     .line 1502
-    invoke-virtual {p0, p1}, Lcom/etsy/android/grid/ExtendableListView;->c(Landroid/view/View;)Lcom/etsy/android/grid/f;
+    invoke-virtual {p0, p1}, Lcom/etsy/android/grid/ExtendableListView;->c(Landroid/view/View;)Lcom/etsy/android/grid/ExtendableListView$f;
 
     move-result-object v0
 
@@ -3578,7 +3578,7 @@
     goto :goto_0
 .end method
 
-.method protected c(Landroid/view/View;)Lcom/etsy/android/grid/f;
+.method protected c(Landroid/view/View;)Lcom/etsy/android/grid/ExtendableListView$f;
     .locals 2
 
     .prologue
@@ -3594,19 +3594,19 @@
     if-eqz v0, :cond_2
 
     .line 1510
-    instance-of v1, v0, Lcom/etsy/android/grid/f;
+    instance-of v1, v0, Lcom/etsy/android/grid/ExtendableListView$f;
 
     if-eqz v1, :cond_1
 
     .line 1511
-    check-cast v0, Lcom/etsy/android/grid/f;
+    check-cast v0, Lcom/etsy/android/grid/ExtendableListView$f;
 
     .line 1517
     :goto_0
     if-nez v0, :cond_0
 
     .line 1518
-    invoke-virtual {p0}, Lcom/etsy/android/grid/ExtendableListView;->d()Lcom/etsy/android/grid/f;
+    invoke-virtual {p0}, Lcom/etsy/android/grid/ExtendableListView;->d()Lcom/etsy/android/grid/ExtendableListView$f;
 
     move-result-object v0
 
@@ -3616,9 +3616,9 @@
 
     .line 1514
     :cond_1
-    new-instance v1, Lcom/etsy/android/grid/f;
+    new-instance v1, Lcom/etsy/android/grid/ExtendableListView$f;
 
-    invoke-direct {v1, v0}, Lcom/etsy/android/grid/f;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-direct {v1, v0}, Lcom/etsy/android/grid/ExtendableListView$f;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
     move-object v0, v1
 
@@ -3671,12 +3671,12 @@
     goto :goto_0
 .end method
 
-.method protected d()Lcom/etsy/android/grid/f;
+.method protected d()Lcom/etsy/android/grid/ExtendableListView$f;
     .locals 4
 
     .prologue
     .line 1544
-    new-instance v0, Lcom/etsy/android/grid/f;
+    new-instance v0, Lcom/etsy/android/grid/ExtendableListView$f;
 
     const/4 v1, -0x1
 
@@ -3684,7 +3684,7 @@
 
     const/4 v3, 0x0
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/etsy/android/grid/f;-><init>(III)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/etsy/android/grid/ExtendableListView$f;-><init>(III)V
 
     return-object v0
 .end method
@@ -3884,7 +3884,7 @@
 
     .prologue
     .line 64
-    invoke-virtual {p0}, Lcom/etsy/android/grid/ExtendableListView;->d()Lcom/etsy/android/grid/f;
+    invoke-virtual {p0}, Lcom/etsy/android/grid/ExtendableListView;->d()Lcom/etsy/android/grid/ExtendableListView$f;
 
     move-result-object v0
 
@@ -4488,7 +4488,7 @@
     iget v5, p0, Lcom/etsy/android/grid/ExtendableListView;->b:I
 
     .line 572
-    iget-object v6, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/i;
+    iget-object v6, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/ExtendableListView$i;
 
     .line 574
     if-eqz v1, :cond_5
@@ -4506,7 +4506,7 @@
 
     add-int v8, v5, v1
 
-    invoke-virtual {v6, v7, v8}, Lcom/etsy/android/grid/i;->a(Landroid/view/View;I)V
+    invoke-virtual {v6, v7, v8}, Lcom/etsy/android/grid/ExtendableListView$i;->a(Landroid/view/View;I)V
 
     .line 575
     add-int/lit8 v1, v1, 0x1
@@ -4515,14 +4515,14 @@
 
     .line 580
     :cond_5
-    invoke-virtual {v6, v4, v5}, Lcom/etsy/android/grid/i;->a(II)V
+    invoke-virtual {v6, v4, v5}, Lcom/etsy/android/grid/ExtendableListView$i;->a(II)V
 
     .line 584
     :cond_6
     invoke-virtual {p0}, Lcom/etsy/android/grid/ExtendableListView;->detachAllViewsFromParent()V
 
     .line 585
-    invoke-virtual {v6}, Lcom/etsy/android/grid/i;->d()V
+    invoke-virtual {v6}, Lcom/etsy/android/grid/ExtendableListView$i;->d()V
 
     .line 587
     iget v1, p0, Lcom/etsy/android/grid/ExtendableListView;->j:I
@@ -4537,7 +4537,7 @@
 
     .line 617
     :goto_3
-    invoke-virtual {v6}, Lcom/etsy/android/grid/i;->e()V
+    invoke-virtual {v6}, Lcom/etsy/android/grid/ExtendableListView$i;->e()V
 
     .line 618
     const/4 v0, 0x0
@@ -4689,17 +4689,17 @@
     invoke-super {p0}, Landroid/widget/AbsListView;->onDetachedFromWindow()V
 
     .line 216
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/i;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/ExtendableListView$i;
 
-    invoke-virtual {v0}, Lcom/etsy/android/grid/i;->b()V
+    invoke-virtual {v0}, Lcom/etsy/android/grid/ExtendableListView$i;->b()V
 
     .line 218
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->F:Lcom/etsy/android/grid/e;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->F:Lcom/etsy/android/grid/ExtendableListView$e;
 
     if-eqz v0, :cond_0
 
     .line 219
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->F:Lcom/etsy/android/grid/e;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->F:Lcom/etsy/android/grid/ExtendableListView$e;
 
     invoke-virtual {p0, v0}, Lcom/etsy/android/grid/ExtendableListView;->removeCallbacks(Ljava/lang/Runnable;)Z
 
@@ -4970,9 +4970,9 @@
 
     .line 513
     :cond_1
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/i;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/ExtendableListView$i;
 
-    invoke-virtual {v0}, Lcom/etsy/android/grid/i;->a()V
+    invoke-virtual {v0}, Lcom/etsy/android/grid/ExtendableListView$i;->a()V
 
     .line 517
     :cond_2
@@ -5442,7 +5442,7 @@
     .line 261
     iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->a:Landroid/widget/ListAdapter;
 
-    iget-object v1, p0, Lcom/etsy/android/grid/ExtendableListView;->D:Lcom/etsy/android/grid/c;
+    iget-object v1, p0, Lcom/etsy/android/grid/ExtendableListView;->D:Lcom/etsy/android/grid/ExtendableListView$c;
 
     invoke-interface {v0, v1}, Landroid/widget/ListAdapter;->unregisterDataSetObserver(Landroid/database/DataSetObserver;)V
 
@@ -5466,13 +5466,13 @@
 
     .line 266
     :cond_1
-    new-instance v0, Lcom/etsy/android/grid/k;
+    new-instance v0, Lcom/etsy/android/grid/HeaderViewListAdapter;
 
     iget-object v1, p0, Lcom/etsy/android/grid/ExtendableListView;->H:Ljava/util/ArrayList;
 
     iget-object v2, p0, Lcom/etsy/android/grid/ExtendableListView;->I:Ljava/util/ArrayList;
 
-    invoke-direct {v0, v1, v2, p1}, Lcom/etsy/android/grid/k;-><init>(Ljava/util/ArrayList;Ljava/util/ArrayList;Landroid/widget/ListAdapter;)V
+    invoke-direct {v0, v1, v2, p1}, Lcom/etsy/android/grid/HeaderViewListAdapter;-><init>(Ljava/util/ArrayList;Ljava/util/ArrayList;Landroid/widget/ListAdapter;)V
 
     iput-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->a:Landroid/widget/ListAdapter;
 
@@ -5504,12 +5504,12 @@
     .line 276
     iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->a:Landroid/widget/ListAdapter;
 
-    iget-object v1, p0, Lcom/etsy/android/grid/ExtendableListView;->D:Lcom/etsy/android/grid/c;
+    iget-object v1, p0, Lcom/etsy/android/grid/ExtendableListView;->D:Lcom/etsy/android/grid/ExtendableListView$c;
 
     invoke-interface {v0, v1}, Landroid/widget/ListAdapter;->registerDataSetObserver(Landroid/database/DataSetObserver;)V
 
     .line 277
-    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/i;
+    iget-object v0, p0, Lcom/etsy/android/grid/ExtendableListView;->C:Lcom/etsy/android/grid/ExtendableListView$i;
 
     iget-object v1, p0, Lcom/etsy/android/grid/ExtendableListView;->a:Landroid/widget/ListAdapter;
 
@@ -5517,7 +5517,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/etsy/android/grid/i;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/etsy/android/grid/ExtendableListView$i;->a(I)V
 
     .line 280
     :cond_2

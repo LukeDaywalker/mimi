@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private n:Lcom/wumii/android/mimi/ui/activities/authenticator/j;
+.field private n:Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$j;
 
 
 # direct methods
@@ -43,7 +43,7 @@
 
     move-result-object v0
 
-    const-class v1, Lcom/wumii/android/mimi/ui/a/a/a;
+    const-class v1, Lcom/wumii/android/mimi/ui/a/a/SubmitNewPasswordFragment;
 
     invoke-virtual {v1}, Ljava/lang/Class;->toString()Ljava/lang/String;
 
@@ -57,7 +57,7 @@
     if-nez v0, :cond_0
 
     .line 67
-    invoke-static {p1, p2}, Lcom/wumii/android/mimi/ui/a/a/a;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/wumii/android/mimi/ui/a/a/a;
+    invoke-static {p1, p2}, Lcom/wumii/android/mimi/ui/a/a/SubmitNewPasswordFragment;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/wumii/android/mimi/ui/a/a/SubmitNewPasswordFragment;
 
     move-result-object v0
 
@@ -114,7 +114,7 @@
 
     move-result-object v0
 
-    const-class v1, Lcom/wumii/android/mimi/ui/a/a/c;
+    const-class v1, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;
 
     invoke-virtual {v1}, Ljava/lang/Class;->toString()Ljava/lang/String;
 
@@ -128,9 +128,9 @@
     if-nez v0, :cond_0
 
     .line 59
-    new-instance v0, Lcom/wumii/android/mimi/ui/a/a/c;
+    new-instance v0, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/ui/a/a/c;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;-><init>()V
 
     .line 61
     :cond_0
@@ -139,25 +139,25 @@
 
 
 # virtual methods
-.method public g()Lcom/wumii/android/mimi/ui/activities/authenticator/j;
+.method public g()Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$j;
     .locals 1
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity;->n:Lcom/wumii/android/mimi/ui/activities/authenticator/j;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity;->n:Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$j;
 
     if-nez v0, :cond_0
 
     .line 41
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/authenticator/j;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$j;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/j;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$j;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity;->n:Lcom/wumii/android/mimi/ui/activities/authenticator/j;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity;->n:Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$j;
 
     .line 43
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity;->n:Lcom/wumii/android/mimi/ui/activities/authenticator/j;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity;->n:Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$j;
 
     return-object v0
 .end method
@@ -218,7 +218,7 @@
 
     move-result-object v2
 
-    const-class v3, Lcom/wumii/android/mimi/ui/a/a/c;
+    const-class v3, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;
 
     invoke-virtual {v3}, Ljava/lang/Class;->toString()Ljava/lang/String;
 
@@ -239,11 +239,11 @@
 
     .prologue
     .line 53
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity;->g()Lcom/wumii/android/mimi/ui/activities/authenticator/j;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity;->g()Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$j;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2, p3}, Lcom/wumii/android/mimi/ui/activities/authenticator/j;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, p1, p2, p3}, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$j;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 54
     return-void

@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field private f:Lcom/wumii/android/mimi/models/f;
+.field private f:Lcom/wumii/android/mimi/models/AppFacade;
 
 .field private g:Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
@@ -35,7 +35,7 @@
 
 .field private m:Lorg/eclipse/paho/client/mqttv3/MqttMessage;
 
-.field private n:Lcom/wumii/android/mimi/push/r;
+.field private n:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
 
 .field private o:Z
 
@@ -217,9 +217,9 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->q:Landroid/os/Handler;
 
     .line 264
-    new-instance v0, Lcom/wumii/android/mimi/push/h;
+    new-instance v0, Lcom/wumii/android/mimi/push/PushService$h;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/push/h;-><init>(Lcom/wumii/android/mimi/push/PushService;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/push/PushService$h;-><init>(Lcom/wumii/android/mimi/push/PushService;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->r:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
@@ -227,34 +227,34 @@
     iput v2, p0, Lcom/wumii/android/mimi/push/PushService;->s:I
 
     .line 529
-    new-instance v0, Lcom/wumii/android/mimi/push/l;
+    new-instance v0, Lcom/wumii/android/mimi/push/PushService$l;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/push/l;-><init>(Lcom/wumii/android/mimi/push/PushService;Landroid/os/Looper;)V
+    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/push/PushService$l;-><init>(Lcom/wumii/android/mimi/push/PushService;Landroid/os/Looper;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->t:Landroid/os/Handler;
 
     .line 568
-    new-instance v0, Lcom/wumii/android/mimi/push/m;
+    new-instance v0, Lcom/wumii/android/mimi/push/PushService$m;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/push/m;-><init>(Lcom/wumii/android/mimi/push/PushService;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/push/PushService$m;-><init>(Lcom/wumii/android/mimi/push/PushService;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->u:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
     .line 616
-    new-instance v0, Lcom/wumii/android/mimi/push/n;
+    new-instance v0, Lcom/wumii/android/mimi/push/PushService$n;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/push/n;-><init>(Lcom/wumii/android/mimi/push/PushService;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/push/PushService$n;-><init>(Lcom/wumii/android/mimi/push/PushService;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->v:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
     .line 629
-    new-instance v0, Lcom/wumii/android/mimi/push/o;
+    new-instance v0, Lcom/wumii/android/mimi/push/PushService$o;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/push/o;-><init>(Lcom/wumii/android/mimi/push/PushService;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/push/PushService$o;-><init>(Lcom/wumii/android/mimi/push/PushService;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->w:Lorg/eclipse/paho/client/mqttv3/IMqttActionListener;
 
@@ -262,13 +262,13 @@
     iput v2, p0, Lcom/wumii/android/mimi/push/PushService;->x:I
 
     .line 658
-    new-instance v0, Lcom/wumii/android/mimi/push/q;
+    new-instance v0, Lcom/wumii/android/mimi/push/PushService$q;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/push/q;-><init>(Lcom/wumii/android/mimi/push/PushService;Landroid/os/Looper;)V
+    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/push/PushService$q;-><init>(Lcom/wumii/android/mimi/push/PushService;Landroid/os/Looper;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->y:Landroid/os/Handler;
 
@@ -321,9 +321,9 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 160
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->h()Lcom/wumii/android/mimi/models/service/UserService;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->h()Lcom/wumii/android/mimi/models/service/UserService;
 
     move-result-object v0
 
@@ -385,7 +385,7 @@
     .line 171
     :cond_1
     :try_start_2
-    sget-object v0, Lcom/wumii/android/mimi/c/r;->c:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/c/Constants$r;->c:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -402,7 +402,7 @@
 
     .line 175
     :cond_2
-    sget-object v0, Lcom/wumii/android/mimi/c/r;->d:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/c/Constants$r;->d:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -454,9 +454,9 @@
 
     .line 191
     :goto_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->n:Lcom/wumii/android/mimi/push/r;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->n:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/push/r;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->a()V
 
     goto :goto_0
 
@@ -509,9 +509,9 @@
 
     .line 201
     :goto_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->n:Lcom/wumii/android/mimi/push/r;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->n:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/push/r;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->a()V
 
     goto/16 :goto_0
 
@@ -784,9 +784,9 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 220
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->n:Lcom/wumii/android/mimi/push/r;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->n:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/push/r;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->a()V
 
     .line 221
     invoke-direct {p0}, Lcom/wumii/android/mimi/push/PushService;->s()Z
@@ -1147,15 +1147,15 @@
 
     .prologue
     .line 306
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->I()Lcom/wumii/android/mimi/models/h/k;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/h/GlobalStorage;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/k;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/GlobalStorage;->a(Z)V
 
     .line 308
     invoke-virtual {p0}, Lcom/wumii/android/mimi/push/PushService;->stopSelf()V
@@ -1204,7 +1204,7 @@
     if-nez v0, :cond_0
 
     .line 316
-    new-instance v0, Lcom/wumii/android/mimi/push/a;
+    new-instance v0, Lcom/wumii/android/mimi/push/MqttFilePersistence;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/push/PushService;->getFilesDir()Ljava/io/File;
 
@@ -1214,7 +1214,7 @@
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/push/a;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/push/MqttFilePersistence;-><init>(Ljava/lang/String;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->h:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
 
@@ -1237,9 +1237,9 @@
 
     iget-object v3, p0, Lcom/wumii/android/mimi/push/PushService;->h:Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;
 
-    new-instance v4, Lcom/wumii/android/mimi/models/a;
+    new-instance v4, Lcom/wumii/android/mimi/models/AlarmPingSender;
 
-    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/models/a;-><init>(Lcom/wumii/android/mimi/push/PushService;)V
+    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/models/AlarmPingSender;-><init>(Lcom/wumii/android/mimi/push/PushService;)V
 
     invoke-direct {v0, v1, v2, v3, v4}, Lorg/eclipse/paho/client/mqttv3/MqttAsyncClient;-><init>(Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/paho/client/mqttv3/MqttClientPersistence;Lorg/eclipse/paho/client/mqttv3/MqttPingSender;)V
 
@@ -1337,9 +1337,9 @@
 
     .line 331
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->j()Lcom/wumii/android/mimi/models/d/j;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/d/FileHelper;
 
     move-result-object v0
 
@@ -1347,7 +1347,7 @@
 
     const-class v3, Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
-    invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/models/d/j;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/models/d/FileHelper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1856,13 +1856,13 @@
     const/4 v5, 0x0
 
     .line 542
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->n()Lcom/wumii/android/mimi/models/d/v;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->n()Lcom/wumii/android/mimi/models/d/NetworkHelper;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/v;->a()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/NetworkHelper;->a()Z
 
     move-result v0
 
@@ -1981,13 +1981,13 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->I()Lcom/wumii/android/mimi/models/h/k;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/h/GlobalStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/k;->c()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/GlobalStorage;->c()Z
 
     move-result v0
 
@@ -1995,15 +1995,15 @@
     if-nez v0, :cond_0
 
     .line 592
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->I()Lcom/wumii/android/mimi/models/h/k;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/h/GlobalStorage;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/k;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/GlobalStorage;->a(Z)V
 
     .line 595
     :cond_0
@@ -2213,13 +2213,13 @@
     const/4 v5, 0x0
 
     .line 671
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->n()Lcom/wumii/android/mimi/models/d/v;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->n()Lcom/wumii/android/mimi/models/d/NetworkHelper;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/v;->a()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/NetworkHelper;->a()Z
 
     move-result v0
 
@@ -2644,9 +2644,9 @@
 
     .prologue
     .line 436
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->h()Lcom/wumii/android/mimi/models/service/UserService;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->h()Lcom/wumii/android/mimi/models/service/UserService;
 
     move-result-object v0
 
@@ -2852,13 +2852,13 @@
 
     .line 420
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->n()Lcom/wumii/android/mimi/models/d/v;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->n()Lcom/wumii/android/mimi/models/d/NetworkHelper;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/v;->a()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/NetworkHelper;->a()Z
 
     move-result v0
 
@@ -3035,11 +3035,11 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 96
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/f;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
     .line 97
     new-instance v0, Lorg/eclipse/paho/client/mqttv3/MqttConnectOptions;
@@ -3081,16 +3081,16 @@
 
     .line 122
     :cond_0
-    new-instance v0, Lcom/wumii/android/mimi/push/r;
+    new-instance v0, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/push/r;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->n:Lcom/wumii/android/mimi/push/r;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->n:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
 
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->n:Lcom/wumii/android/mimi/push/r;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->n:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/push/r;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->a()V
 
     .line 125
     invoke-direct {p0}, Lcom/wumii/android/mimi/push/PushService;->j()Z
@@ -3118,13 +3118,13 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->debug(Ljava/lang/String;)V
 
     .line 370
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->I()Lcom/wumii/android/mimi/models/h/k;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/h/GlobalStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/k;->c()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/GlobalStorage;->c()Z
 
     move-result v0
 
@@ -3145,16 +3145,16 @@
     invoke-virtual {v1, v2}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 375
-    new-instance v1, Lcom/wumii/android/mimi/push/k;
+    new-instance v1, Lcom/wumii/android/mimi/push/PushService$k;
 
-    invoke-direct {v1, p0, v0}, Lcom/wumii/android/mimi/push/k;-><init>(Lcom/wumii/android/mimi/push/PushService;Z)V
+    invoke-direct {v1, p0, v0}, Lcom/wumii/android/mimi/push/PushService$k;-><init>(Lcom/wumii/android/mimi/push/PushService;Z)V
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/push/k;->j()V
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/push/PushService$k;->j()V
 
     .line 396
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->n:Lcom/wumii/android/mimi/push/r;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->n:Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/push/r;->b()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/push/PushServiceKeeperTimer;->b()V
 
     .line 397
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I

@@ -8,7 +8,7 @@
 
 .field private o:Lcom/viewpagerindicator/IconPageIndicator;
 
-.field private p:Lcom/wumii/android/mimi/models/service/a;
+.field private p:Lcom/wumii/android/mimi/models/service/ActivityService;
 
 
 # direct methods
@@ -94,9 +94,9 @@
 
     .prologue
     .line 50
-    sget-object v0, Lcom/wumii/android/mimi/c/af;->n:Lcom/wumii/android/mimi/c/af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->n:Lcom/wumii/android/mimi/c/EventUtils$af;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/ae;->onEvent(Lcom/wumii/android/mimi/c/af;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$af;)V
 
     .line 51
     const/4 v0, 0x1
@@ -112,9 +112,9 @@
 
     .prologue
     .line 55
-    sget-object v0, Lcom/wumii/android/mimi/c/af;->m:Lcom/wumii/android/mimi/c/af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->m:Lcom/wumii/android/mimi/c/EventUtils$af;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/ae;->onEvent(Lcom/wumii/android/mimi/c/af;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$af;)V
 
     .line 56
     const/4 v0, 0x2
@@ -130,9 +130,9 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->p:Lcom/wumii/android/mimi/models/service/a;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->p:Lcom/wumii/android/mimi/models/service/ActivityService;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/a;->b()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/ActivityService;->b()V
 
     .line 67
     return-void
@@ -151,15 +151,15 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->setContentView(I)V
 
     .line 34
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->g()Lcom/wumii/android/mimi/models/service/a;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->g()Lcom/wumii/android/mimi/models/service/ActivityService;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->p:Lcom/wumii/android/mimi/models/service/a;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->p:Lcom/wumii/android/mimi/models/service/ActivityService;
 
     .line 35
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->g()V
@@ -167,17 +167,17 @@
     .line 36
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->n:Landroid/support/v4/view/ViewPager;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;)V
 
     .line 38
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/a/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/a/GuidancePagerAdapter;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/a/a;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/a/GuidancePagerAdapter;-><init>(Landroid/content/Context;)V
 
     .line 39
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->n:Landroid/support/v4/view/ViewPager;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/a/a;->b()I
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/a/GuidancePagerAdapter;->b()I
 
     move-result v2
 

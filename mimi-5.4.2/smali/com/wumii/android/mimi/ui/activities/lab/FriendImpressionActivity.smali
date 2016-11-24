@@ -3,7 +3,7 @@
 .source "FriendImpressionActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/a/e/e;
+.implements Lcom/wumii/android/mimi/ui/a/e/FriendImpressionWriteQuestionFragment$e;
 
 
 # instance fields
@@ -79,11 +79,11 @@
 
     .prologue
     .line 105
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->h()Lcom/wumii/android/mimi/models/service/UserService;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->h()Lcom/wumii/android/mimi/models/service/UserService;
 
     move-result-object v0
 
@@ -100,7 +100,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/d;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/a/a/c/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -134,9 +134,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/at;
+    check-cast v0, Lcom/wumii/android/mimi/ui/QuestionProvider;
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/at;->a()Ljava/lang/String;
+    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/QuestionProvider;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -148,7 +148,7 @@
 
     .prologue
     .line 118
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;->getResources()Landroid/content/res/Resources;
 
@@ -158,21 +158,21 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     const v1, 0x7f06014e
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a;->setMessage(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
     const v1, 0x7f06014d
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/lab/g;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$g;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/lab/g;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$g;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -189,9 +189,9 @@
 
     .prologue
     .line 132
-    new-instance v0, Lcom/wumii/android/mimi/ui/a/e/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/a/e/FriendImpressionDefaultFragment;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/ui/a/e/a;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/ui/a/e/FriendImpressionDefaultFragment;-><init>()V
 
     .line 133
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;->f()Landroid/support/v4/app/FragmentManager;
@@ -219,9 +219,9 @@
 
     .prologue
     .line 137
-    new-instance v0, Lcom/wumii/android/mimi/ui/a/e/d;
+    new-instance v0, Lcom/wumii/android/mimi/ui/a/e/FriendImpressionWriteQuestionFragment;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/ui/a/e/d;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/ui/a/e/FriendImpressionWriteQuestionFragment;-><init>()V
 
     .line 138
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;->f()Landroid/support/v4/app/FragmentManager;
@@ -442,17 +442,17 @@
     if-nez v0, :cond_0
 
     .line 79
-    new-instance v0, Lcom/wumii/android/mimi/b/at;
+    new-instance v0, Lcom/wumii/android/mimi/b/LoadUserProfileTask;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/b/at;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/b/LoadUserProfileTask;-><init>(Landroid/app/Activity;)V
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/f;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$f;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/lab/f;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$f;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;)V
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/b/at;->a(Lcom/wumii/android/mimi/b/au;Z)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/b/LoadUserProfileTask;->a(Lcom/wumii/android/mimi/b/LoadUserProfileTask$au;Z)V
 
     goto :goto_0
 

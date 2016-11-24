@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
-.implements Lcom/wumii/android/mimi/ui/widgets/cg;
+.implements Lcom/wumii/android/mimi/ui/widgets/XListView$cg;
 
 
 # instance fields
@@ -14,11 +14,11 @@
 
 .field private o:Landroid/widget/TextView;
 
-.field private p:Lcom/wumii/android/mimi/ui/apdaters/circle/a;
+.field private p:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
 
-.field private q:Lcom/wumii/android/mimi/a/s;
+.field private q:Lcom/wumii/android/mimi/a/CircleManager;
 
-.field private r:Lcom/wumii/android/mimi/models/h/f;
+.field private r:Lcom/wumii/android/mimi/models/h/CircleStorage;
 
 .field private s:Lcom/wumii/android/mimi/models/entities/profile/CircleCategory;
 
@@ -79,12 +79,12 @@
     return-void
 .end method
 
-.method static synthetic b(Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;)Lcom/wumii/android/mimi/ui/apdaters/circle/a;
+.method static synthetic b(Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;)Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
     .locals 1
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->p:Lcom/wumii/android/mimi/ui/apdaters/circle/a;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->p:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
 
     return-object v0
 .end method
@@ -172,9 +172,9 @@
     .line 109
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->o:Landroid/widget/TextView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/j;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity$j;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/j;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity$j;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -196,7 +196,7 @@
     iput v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->C:I
 
     .line 142
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->q:Lcom/wumii/android/mimi/a/s;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->q:Lcom/wumii/android/mimi/a/CircleManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->s:Lcom/wumii/android/mimi/models/entities/profile/CircleCategory;
 
@@ -206,7 +206,7 @@
 
     iget v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->C:I
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/a/s;->a(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/a/CircleManager;->a(Ljava/lang/String;I)V
 
     .line 143
     return-void
@@ -269,7 +269,7 @@
 
     iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->t:Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;
 
-    invoke-static {v5}, Lcom/wumii/android/mimi/c/m;->a(Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;)Ljava/lang/String;
+    invoke-static {v5}, Lcom/wumii/android/mimi/c/CircleUtils;->a(Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -289,7 +289,7 @@
     .line 122
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setOnLoadMoreListener(Lcom/wumii/android/mimi/ui/widgets/cg;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setOnLoadMoreListener(Lcom/wumii/android/mimi/ui/widgets/XListView$cg;)V
 
     .line 123
     return-void
@@ -353,7 +353,7 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->setContentView(I)V
 
     .line 60
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/ac;->a(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->a(Ljava/lang/Object;)V
 
     .line 62
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->getIntent()Landroid/content/Intent;
@@ -446,41 +446,41 @@
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->g()V
 
     .line 77
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/circle/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/apdaters/circle/a;-><init>(Landroid/content/Context;Ljava/util/List;)V
+    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;-><init>(Landroid/content/Context;Ljava/util/List;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->p:Lcom/wumii/android/mimi/ui/apdaters/circle/a;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->p:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
 
     .line 78
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->p:Lcom/wumii/android/mimi/ui/apdaters/circle/a;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->p:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 80
-    new-instance v0, Lcom/wumii/android/mimi/a/s;
+    new-instance v0, Lcom/wumii/android/mimi/a/CircleManager;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/a/s;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/a/CircleManager;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->q:Lcom/wumii/android/mimi/a/s;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->q:Lcom/wumii/android/mimi/a/CircleManager;
 
     .line 81
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->F()Lcom/wumii/android/mimi/models/h/f;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->F()Lcom/wumii/android/mimi/models/h/CircleStorage;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->r:Lcom/wumii/android/mimi/models/h/f;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->r:Lcom/wumii/android/mimi/models/h/CircleStorage;
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->q:Lcom/wumii/android/mimi/a/s;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->q:Lcom/wumii/android/mimi/a/CircleManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->s:Lcom/wumii/android/mimi/models/entities/profile/CircleCategory;
 
@@ -490,7 +490,7 @@
 
     iget v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->C:I
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/a/s;->a(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/a/CircleManager;->a(Ljava/lang/String;I)V
 
     .line 83
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
@@ -500,9 +500,9 @@
     .line 85
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/i;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity$i;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/i;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity$i;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
@@ -545,12 +545,12 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onDestroy()V
 
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->q:Lcom/wumii/android/mimi/a/s;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->q:Lcom/wumii/android/mimi/a/CircleManager;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/s;->e()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/CircleManager;->e()V
 
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->r:Lcom/wumii/android/mimi/models/h/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->r:Lcom/wumii/android/mimi/models/h/CircleStorage;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->s:Lcom/wumii/android/mimi/models/entities/profile/CircleCategory;
 
@@ -558,32 +558,32 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/f;->c(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/CircleStorage;->c(Ljava/lang/String;)V
 
     .line 98
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/ac;->b(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->b(Ljava/lang/Object;)V
 
     .line 99
     return-void
 .end method
 
-.method public onEvent(Lcom/wumii/android/mimi/models/c/a/f;)V
+.method public onEvent(Lcom/wumii/android/mimi/models/c/a/RespEventLoadCategoryCircles;)V
     .locals 4
 
     .prologue
     const/4 v3, 0x0
 
     .line 127
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/f;->c()Z
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventLoadCategoryCircles;->c()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 128
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->p:Lcom/wumii/android/mimi/ui/apdaters/circle/a;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->p:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->r:Lcom/wumii/android/mimi/models/h/f;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->r:Lcom/wumii/android/mimi/models/h/CircleStorage;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->s:Lcom/wumii/android/mimi/models/entities/profile/CircleCategory;
 
@@ -591,16 +591,16 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/h/f;->b(Ljava/lang/String;)Ljava/util/List;
+    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/h/CircleStorage;->b(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/circle/a;->a(Ljava/util/List;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleCategoryAdapter;->a(Ljava/util/List;)V
 
     .line 129
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/f;->d()Z
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventLoadCategoryCircles;->d()Z
 
     move-result v1
 
@@ -609,7 +609,7 @@
     .line 130
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->o:Landroid/widget/TextView;
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 136
     :goto_0
@@ -624,7 +624,7 @@
     :cond_0
     const-string/jumbo v0, "\u52a0\u8f7d\u5931\u8d25\uff01"
 
-    invoke-static {p0, v0, v3}, Lcom/wumii/android/mimi/c/v;->a(Landroid/content/Context;Ljava/lang/String;I)V
+    invoke-static {p0, v0, v3}, Lcom/wumii/android/mimi/c/ContextToast;->a(Landroid/content/Context;Ljava/lang/String;I)V
 
     .line 133
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleCategoryDetailsActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;

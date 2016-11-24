@@ -183,11 +183,11 @@
     move-result-object v1
 
     .line 66
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->h()Lcom/wumii/android/mimi/models/service/UserService;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->h()Lcom/wumii/android/mimi/models/service/UserService;
 
     move-result-object v0
 
@@ -212,7 +212,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v3}, Lorg/a/a/c/d;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v3}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -280,7 +280,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v3}, Lorg/a/a/c/d;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v3}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -306,7 +306,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v3}, Lorg/a/a/c/d;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v3}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -345,9 +345,9 @@
     .line 86
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->g:Landroid/widget/TextView;
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/widgets/secret/a;
+    new-instance v3, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$a;
 
-    invoke-direct {v3, p0, v2}, Lcom/wumii/android/mimi/ui/widgets/secret/a;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;)V
+    invoke-direct {v3, p0, v2}, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$a;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;)V
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -370,7 +370,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lorg/a/a/c/d;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -465,7 +465,7 @@
 
     move-result-object v3
 
-    invoke-static {v3, v11}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v3, v11}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v3
 
@@ -609,9 +609,9 @@
     .line 106
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;->g:Landroid/widget/TextView;
 
-    new-instance v4, Lcom/wumii/android/mimi/ui/widgets/secret/b;
+    new-instance v4, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$b;
 
-    invoke-direct {v4, p0, v2, v3, v1}, Lcom/wumii/android/mimi/ui/widgets/secret/b;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
+    invoke-direct {v4, p0, v2, v3, v1}, Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView$b;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/CircleLockedFeedCardView;Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;Lcom/wumii/android/mimi/models/entities/circle/OrganizationType;Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -647,7 +647,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, v11}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v2, v11}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v2
 

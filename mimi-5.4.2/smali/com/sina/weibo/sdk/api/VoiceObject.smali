@@ -34,9 +34,9 @@
 
     .prologue
     .line 53
-    new-instance v0, Lcom/sina/weibo/sdk/api/f;
+    new-instance v0, Lcom/sina/weibo/sdk/api/VoiceObject$f;
 
-    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/f;-><init>()V
+    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/VoiceObject$f;-><init>()V
 
     sput-object v0, Lcom/sina/weibo/sdk/api/VoiceObject;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -134,7 +134,7 @@
 
     const-string/jumbo v2, "checkArgs fail, dataUrl is invalid"
 
-    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/a;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -157,7 +157,7 @@
 
     const-string/jumbo v2, "checkArgs fail, dataHdUrl is invalid"
 
-    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/a;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -172,7 +172,7 @@
 
     const-string/jumbo v2, "checkArgs fail, duration is invalid"
 
-    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/a;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 

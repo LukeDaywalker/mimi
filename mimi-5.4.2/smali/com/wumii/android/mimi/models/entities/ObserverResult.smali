@@ -6,11 +6,11 @@
 # instance fields
 .field private event:Ljava/lang/Object;
 
-.field private result:Lcom/wumii/android/mimi/network/m;
+.field private result:Lcom/wumii/android/mimi/network/Result;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;Lcom/wumii/android/mimi/network/m;)V
+.method public constructor <init>(Ljava/lang/Object;Lcom/wumii/android/mimi/network/Result;)V
     .locals 0
 
     .prologue
@@ -21,7 +21,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/ObserverResult;->event:Ljava/lang/Object;
 
     .line 15
-    iput-object p2, p0, Lcom/wumii/android/mimi/models/entities/ObserverResult;->result:Lcom/wumii/android/mimi/network/m;
+    iput-object p2, p0, Lcom/wumii/android/mimi/models/entities/ObserverResult;->result:Lcom/wumii/android/mimi/network/Result;
 
     .line 16
     return-void
@@ -39,12 +39,12 @@
     return-object v0
 .end method
 
-.method public getResult()Lcom/wumii/android/mimi/network/m;
+.method public getResult()Lcom/wumii/android/mimi/network/Result;
     .locals 1
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/ObserverResult;->result:Lcom/wumii/android/mimi/network/m;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/ObserverResult;->result:Lcom/wumii/android/mimi/network/Result;
 
     return-object v0
 .end method
@@ -60,12 +60,12 @@
     return-void
 .end method
 
-.method public setResult(Lcom/wumii/android/mimi/network/m;)V
+.method public setResult(Lcom/wumii/android/mimi/network/Result;)V
     .locals 0
 
     .prologue
     .line 31
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/ObserverResult;->result:Lcom/wumii/android/mimi/network/m;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/ObserverResult;->result:Lcom/wumii/android/mimi/network/Result;
 
     .line 32
     return-void

@@ -122,7 +122,7 @@
 
     .prologue
     .line 68
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->j()Lcom/wumii/android/mimi/b/n;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->j()Lcom/wumii/android/mimi/b/BlockTask;
 
     move-result-object v0
 
@@ -140,7 +140,7 @@
 
     move-result v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/b/n;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/chat/BlockType;Z)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/b/BlockTask;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/chat/BlockType;Z)V
 
     .line 69
     return-void
@@ -208,18 +208,18 @@
     move-result-object v1
 
     .line 38
-    invoke-static {}, Lcom/e/a/b/g;->a()Lcom/e/a/b/g;
+    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->p:Landroid/widget/ImageView;
 
-    invoke-virtual {v2, v1, v3}, Lcom/e/a/b/g;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
+    invoke-virtual {v2, v1, v3}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
 
     .line 40
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/SecretSingleChatInfoActivity;->q:Landroid/widget/TextView;
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/av;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, Lcom/wumii/android/mimi/c/Utils;->b(Ljava/lang/String;)Z
 
     move-result v1
 

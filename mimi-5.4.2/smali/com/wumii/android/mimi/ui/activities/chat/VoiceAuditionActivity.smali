@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private C:Lcom/wumii/android/mimi/ui/widgets/chat/bk;
+.field private C:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
-.field private D:Lcom/wumii/android/mimi/models/g;
+.field private D:Lcom/wumii/android/mimi/models/AuditionRecordClient;
 
 .field private E:Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;
 
@@ -238,11 +238,11 @@
     .line 184
     new-instance v0, Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/ef;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity$ef;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/ef;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity$ef;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;)V
 
-    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver;-><init>(Lcom/wumii/android/mimi/receivers/a;)V
+    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver;-><init>(Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver$a;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->s:Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver;
 
@@ -457,45 +457,45 @@
     const/4 v6, 0x0
 
     .line 243
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/bk;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->D:Lcom/wumii/android/mimi/models/g;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->D:Lcom/wumii/android/mimi/models/AuditionRecordClient;
 
-    new-instance v4, Lcom/wumii/android/mimi/ui/activities/chat/eg;
+    new-instance v4, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity$eg;
 
-    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/ui/activities/chat/eg;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;)V
+    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity$eg;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;)V
 
     iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->p:Landroid/widget/FrameLayout;
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/widgets/chat/bk;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/d/aa;Lcom/wumii/android/soundtouch/c;Lcom/wumii/android/mimi/ui/am;Landroid/view/ViewGroup;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/d/PreferencesHelper;Lcom/wumii/android/soundtouch/RecordClient;Lcom/wumii/android/mimi/ui/OnVoiceRecListener;Landroid/view/ViewGroup;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/bk;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     .line 267
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/bk;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/eh;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity$eh;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/eh;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity$eh;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/bk;->a(Lcom/wumii/android/mimi/ui/widgets/chat/bt;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->a(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$bt;)V
 
     .line 284
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/bk;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/bk;->b()Lcom/wumii/android/mimi/ui/widgets/chat/bu;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$bu;
 
     move-result-object v0
 
     .line 285
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/bu;->d()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$bu;->d()V
 
     .line 287
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/bu;->b()Landroid/widget/ImageButton;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$bu;->b()Landroid/widget/ImageButton;
 
     move-result-object v1
 
@@ -520,9 +520,9 @@
     .line 293
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->p:Landroid/widget/FrameLayout;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/bk;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/bk;->a()Landroid/widget/RelativeLayout;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->a()Landroid/widget/RelativeLayout;
 
     move-result-object v1
 
@@ -544,20 +544,20 @@
     .line 303
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 305
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->D:Lcom/wumii/android/mimi/models/g;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->D:Lcom/wumii/android/mimi/models/AuditionRecordClient;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->G:Ljava/lang/String;
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->E:Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;
 
-    new-instance v4, Lcom/wumii/android/mimi/ui/activities/chat/ei;
+    new-instance v4, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity$ei;
 
-    invoke-direct {v4, p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/ei;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;Landroid/widget/ImageView;)V
+    invoke-direct {v4, p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity$ei;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;Landroid/widget/ImageView;)V
 
-    invoke-virtual {v1, v2, v3, v4}, Lcom/wumii/android/mimi/models/g;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;Lcom/wumii/android/mimi/ui/t;)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3, v4}, Lcom/wumii/android/mimi/models/AuditionRecordClient;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;Lcom/wumii/android/mimi/ui/MediaPlayCallback;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -593,18 +593,18 @@
 
     .prologue
     .line 331
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->D:Lcom/wumii/android/mimi/models/g;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->D:Lcom/wumii/android/mimi/models/AuditionRecordClient;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/g;->c()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AuditionRecordClient;->c()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 332
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->D:Lcom/wumii/android/mimi/models/g;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->D:Lcom/wumii/android/mimi/models/AuditionRecordClient;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/g;->b()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AuditionRecordClient;->b()V
 
     .line 334
     :cond_0
@@ -661,9 +661,9 @@
 
     move-result-object v3
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->D:Lcom/wumii/android/mimi/models/g;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->D:Lcom/wumii/android/mimi/models/AuditionRecordClient;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/g;->c()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AuditionRecordClient;->c()Z
 
     move-result v0
 
@@ -672,12 +672,12 @@
     move v0, v1
 
     :goto_0
-    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->D:Lcom/wumii/android/mimi/models/g;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->D:Lcom/wumii/android/mimi/models/AuditionRecordClient;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/g;->c()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AuditionRecordClient;->c()Z
 
     move-result v0
 
@@ -716,7 +716,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v2, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 99
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->E:Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;
@@ -746,11 +746,11 @@
     if-nez v0, :cond_3
 
     .line 107
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/bk;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     const v1, 0x7f0601cd
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/bk;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->a(I)V
 
     goto :goto_1
 
@@ -766,11 +766,11 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/bk;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     const v1, 0x7f0601cd
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/bk;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->a(I)V
 
     .line 80
     return-void
@@ -842,11 +842,11 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->r:Landroid/view/LayoutInflater;
 
     .line 122
-    new-instance v0, Lcom/wumii/android/mimi/models/g;
+    new-instance v0, Lcom/wumii/android/mimi/models/AuditionRecordClient;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/models/g;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/models/AuditionRecordClient;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->D:Lcom/wumii/android/mimi/models/g;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->D:Lcom/wumii/android/mimi/models/AuditionRecordClient;
 
     .line 124
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->i()V
@@ -855,7 +855,7 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->j()V
 
     .line 127
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -867,7 +867,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/aa;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -880,7 +880,7 @@
     if-nez v0, :cond_0
 
     .line 128
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     const/4 v1, 0x1
 
@@ -890,14 +890,14 @@
 
     const-string/jumbo v2, "first_enter_voice_audition"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/aa;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 130
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/bk;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
     const v1, 0x7f0601cd
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/bk;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->a(I)V
 
     .line 132
     :cond_0
@@ -909,14 +909,14 @@
 
     .prologue
     .line 167
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->D:Lcom/wumii/android/mimi/models/g;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->D:Lcom/wumii/android/mimi/models/AuditionRecordClient;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/g;->b()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AuditionRecordClient;->b()V
 
     .line 168
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->D:Lcom/wumii/android/mimi/models/g;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->D:Lcom/wumii/android/mimi/models/AuditionRecordClient;
 
     .line 170
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->H:Ljava/util/List;
@@ -928,11 +928,11 @@
     if-nez v0, :cond_0
 
     .line 171
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/ee;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity$ee;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/ee;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity$ee;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;)V
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/ar;->a(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/ThreadUtils;->a(Ljava/lang/Runnable;)V
 
     .line 180
     :cond_0
@@ -950,11 +950,11 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onPause()V
 
     .line 153
-    invoke-static {}, Lcom/wumii/android/mimi/models/d/a;->a()Lcom/wumii/android/mimi/models/d/a;
+    invoke-static {}, Lcom/wumii/android/mimi/models/d/AudioManagerHelper;->a()Lcom/wumii/android/mimi/models/d/AudioManagerHelper;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/a;->b()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/AudioManagerHelper;->b()V
 
     .line 154
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->s:Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver;
@@ -973,13 +973,13 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onResume()V
 
     .line 145
-    invoke-static {}, Lcom/wumii/android/mimi/models/d/a;->a()Lcom/wumii/android/mimi/models/d/a;
+    invoke-static {}, Lcom/wumii/android/mimi/models/d/AudioManagerHelper;->a()Lcom/wumii/android/mimi/models/d/AudioManagerHelper;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/a;->b(Z)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/AudioManagerHelper;->b(Z)V
 
     .line 146
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/VoiceAuditionActivity;->h()V

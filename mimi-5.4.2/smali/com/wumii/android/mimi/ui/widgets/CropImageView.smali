@@ -38,7 +38,7 @@
 
 .field private q:Landroid/graphics/Bitmap;
 
-.field private r:Lcom/wumii/android/mimi/ui/widgets/z;
+.field private r:Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;
 
 .field private s:Landroid/graphics/Rect;
 
@@ -417,11 +417,11 @@
     invoke-virtual {v4, v0, v1, v2, v3}, Landroid/graphics/Rect;->set(IIII)V
 
     .line 247
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->r:Lcom/wumii/android/mimi/ui/widgets/z;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->r:Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->s:Landroid/graphics/Rect;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/z;->setBounds(Landroid/graphics/Rect;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;->setBounds(Landroid/graphics/Rect;)V
 
     .line 248
     return-void
@@ -480,11 +480,11 @@
     iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->w:I
 
     .line 81
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/z;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;
 
-    invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/z;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->r:Lcom/wumii/android/mimi/ui/widgets/z;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->r:Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;
 
     .line 83
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->getResources()Landroid/content/res/Resources;
@@ -853,9 +853,9 @@
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     .line 219
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->r:Lcom/wumii/android/mimi/ui/widgets/z;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CropImageView;->r:Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/z;->draw(Landroid/graphics/Canvas;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/FloatDrawable;->draw(Landroid/graphics/Canvas;)V
 
     goto :goto_0
 .end method

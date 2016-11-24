@@ -104,7 +104,7 @@
     move-result v0
 
     .line 106
-    invoke-static {v1, v0}, Lcom/wumii/android/mimi/c/av;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
+    invoke-static {v1, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -165,7 +165,7 @@
     move-result-object v0
 
     .line 135
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/av;->a(Ljava/lang/String;)D
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;)D
 
     move-result-wide v2
 
@@ -176,28 +176,28 @@
     if-gez v1, :cond_0
 
     .line 136
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->y:Landroid/util/DisplayMetrics;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 137
     const v1, 0x7f0600dd
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a;->setMessage(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     .line 138
     const v1, 0x7f0600c8
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 139
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a;->show()Landroid/app/AlertDialog;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->show()Landroid/app/AlertDialog;
 
     .line 143
     :goto_0
@@ -205,15 +205,15 @@
 
     .line 141
     :cond_0
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/aa;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$aa;
 
-    invoke-direct {v1, p0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/aa;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;Landroid/app/Activity;)V
+    invoke-direct {v1, p0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$aa;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;Landroid/app/Activity;)V
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->r:Ljava/lang/String;
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->q:Ljava/lang/String;
 
-    invoke-virtual {v1, v2, v0, v3}, Lcom/wumii/android/mimi/ui/activities/lab/aa;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v0, v3}, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$aa;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -246,7 +246,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/d;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/a/a/c/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -254,7 +254,7 @@
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->r:Ljava/lang/String;
 
-    invoke-static {v0}, Lorg/a/a/c/d;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/a/a/c/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -416,9 +416,9 @@
     .line 54
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->o:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/z;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$z;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/lab/z;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$z;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 

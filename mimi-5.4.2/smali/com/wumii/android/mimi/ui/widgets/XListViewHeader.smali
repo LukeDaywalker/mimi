@@ -72,7 +72,7 @@
 
     int-to-float v3, v3
 
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v2
 

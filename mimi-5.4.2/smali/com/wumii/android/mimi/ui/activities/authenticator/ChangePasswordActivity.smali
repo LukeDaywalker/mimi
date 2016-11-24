@@ -17,7 +17,7 @@
 
 .field private r:Landroid/widget/Button;
 
-.field private s:Lcom/wumii/android/mimi/ui/activities/authenticator/c;
+.field private s:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$c;
 
 
 # direct methods
@@ -172,18 +172,18 @@
     move-result-object v2
 
     .line 64
-    invoke-static {v0}, Lorg/a/a/c/d;->c(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/a/a/c/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
     .line 65
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->B:Lcom/wumii/android/mimi/c/v;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
 
     const v1, 0x7f060380
 
-    invoke-virtual {v0, v1, v5}, Lcom/wumii/android/mimi/c/v;->a(II)V
+    invoke-virtual {v0, v1, v5}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
 
     .line 80
     :goto_0
@@ -191,18 +191,18 @@
 
     .line 66
     :cond_0
-    invoke-static {v1}, Lorg/a/a/c/d;->c(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/a/a/c/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
     .line 67
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->B:Lcom/wumii/android/mimi/c/v;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
 
     const v1, 0x7f060381
 
-    invoke-virtual {v0, v1, v5}, Lcom/wumii/android/mimi/c/v;->a(II)V
+    invoke-virtual {v0, v1, v5}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
 
     goto :goto_0
 
@@ -217,66 +217,66 @@
     if-ge v3, v4, :cond_2
 
     .line 69
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->B:Lcom/wumii/android/mimi/c/v;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
 
     const v1, 0x7f060383
 
-    invoke-virtual {v0, v1, v5}, Lcom/wumii/android/mimi/c/v;->a(II)V
+    invoke-virtual {v0, v1, v5}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
 
     goto :goto_0
 
     .line 70
     :cond_2
-    invoke-static {v2}, Lorg/a/a/c/d;->c(Ljava/lang/String;)Z
+    invoke-static {v2}, Lorg/a/a/c/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v3
 
     if-eqz v3, :cond_3
 
     .line 71
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->B:Lcom/wumii/android/mimi/c/v;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
 
     const v1, 0x7f060382
 
-    invoke-virtual {v0, v1, v5}, Lcom/wumii/android/mimi/c/v;->a(II)V
+    invoke-virtual {v0, v1, v5}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
 
     goto :goto_0
 
     .line 72
     :cond_3
-    invoke-static {v1, v2}, Lorg/a/a/c/d;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v2}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v2
 
     if-nez v2, :cond_4
 
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->B:Lcom/wumii/android/mimi/c/v;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
 
     const v1, 0x7f0603a0
 
-    invoke-virtual {v0, v1, v5}, Lcom/wumii/android/mimi/c/v;->a(II)V
+    invoke-virtual {v0, v1, v5}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
 
     goto :goto_0
 
     .line 75
     :cond_4
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->s:Lcom/wumii/android/mimi/ui/activities/authenticator/c;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->s:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$c;
 
     if-nez v2, :cond_5
 
     .line 76
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/authenticator/c;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$c;
 
-    invoke-direct {v2, p0, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/c;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;Landroid/app/Activity;)V
+    invoke-direct {v2, p0, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$c;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;Landroid/app/Activity;)V
 
-    iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->s:Lcom/wumii/android/mimi/ui/activities/authenticator/c;
+    iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->s:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$c;
 
     .line 78
     :cond_5
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->s:Lcom/wumii/android/mimi/ui/activities/authenticator/c;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->s:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$c;
 
-    invoke-virtual {v2, v0, v1}, Lcom/wumii/android/mimi/ui/activities/authenticator/c;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v0, v1}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$c;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

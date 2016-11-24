@@ -19,7 +19,7 @@
 
 .field protected e:I
 
-.field protected f:Lcom/viewpagerindicator/f;
+.field protected f:Lcom/viewpagerindicator/TabPageIndicator$f;
 
 .field private g:Ljava/lang/Runnable;
 
@@ -62,9 +62,9 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/HorizontalScrollView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 57
-    new-instance v0, Lcom/viewpagerindicator/d;
+    new-instance v0, Lcom/viewpagerindicator/TabPageIndicator$d;
 
-    invoke-direct {v0, p0}, Lcom/viewpagerindicator/d;-><init>(Lcom/viewpagerindicator/TabPageIndicator;)V
+    invoke-direct {v0, p0}, Lcom/viewpagerindicator/TabPageIndicator$d;-><init>(Lcom/viewpagerindicator/TabPageIndicator;)V
 
     iput-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->h:Landroid/view/View$OnClickListener;
 
@@ -116,35 +116,35 @@
     const/4 v5, 0x0
 
     .line 157
-    new-instance v0, Lcom/viewpagerindicator/g;
+    new-instance v0, Lcom/viewpagerindicator/TabPageIndicator$g;
 
     invoke-virtual {p0}, Lcom/viewpagerindicator/TabPageIndicator;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/viewpagerindicator/g;-><init>(Lcom/viewpagerindicator/TabPageIndicator;Landroid/content/Context;)V
+    invoke-direct {v0, p0, v1}, Lcom/viewpagerindicator/TabPageIndicator$g;-><init>(Lcom/viewpagerindicator/TabPageIndicator;Landroid/content/Context;)V
 
     .line 158
-    invoke-static {v0, p1}, Lcom/viewpagerindicator/g;->a(Lcom/viewpagerindicator/g;I)I
+    invoke-static {v0, p1}, Lcom/viewpagerindicator/TabPageIndicator$g;->a(Lcom/viewpagerindicator/TabPageIndicator$g;I)I
 
     .line 159
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/viewpagerindicator/g;->setFocusable(Z)V
+    invoke-virtual {v0, v1}, Lcom/viewpagerindicator/TabPageIndicator$g;->setFocusable(Z)V
 
     .line 160
     iget-object v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->h:Landroid/view/View$OnClickListener;
 
-    invoke-virtual {v0, v1}, Lcom/viewpagerindicator/g;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Lcom/viewpagerindicator/TabPageIndicator$g;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 161
-    invoke-virtual {v0, p2}, Lcom/viewpagerindicator/g;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, p2}, Lcom/viewpagerindicator/TabPageIndicator$g;->setText(Ljava/lang/CharSequence;)V
 
     .line 163
     if-eqz p3, :cond_0
 
     .line 164
-    invoke-virtual {v0, p3, v5, v5, v5}, Lcom/viewpagerindicator/g;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
+    invoke-virtual {v0, p3, v5, v5, v5}, Lcom/viewpagerindicator/TabPageIndicator$g;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
     .line 167
     :cond_0
@@ -187,9 +187,9 @@
 
     .line 128
     :cond_0
-    new-instance v1, Lcom/viewpagerindicator/e;
+    new-instance v1, Lcom/viewpagerindicator/TabPageIndicator$e;
 
-    invoke-direct {v1, p0, v0}, Lcom/viewpagerindicator/e;-><init>(Lcom/viewpagerindicator/TabPageIndicator;Landroid/view/View;)V
+    invoke-direct {v1, p0, v0}, Lcom/viewpagerindicator/TabPageIndicator$e;-><init>(Lcom/viewpagerindicator/TabPageIndicator;Landroid/view/View;)V
 
     iput-object v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->g:Ljava/lang/Runnable;
 
@@ -226,14 +226,14 @@
     const/4 v0, 0x0
 
     .line 214
-    instance-of v2, v1, Lcom/viewpagerindicator/b;
+    instance-of v2, v1, Lcom/viewpagerindicator/IconPagerAdapter;
 
     if-eqz v2, :cond_0
 
     move-object v0, v1
 
     .line 215
-    check-cast v0, Lcom/viewpagerindicator/b;
+    check-cast v0, Lcom/viewpagerindicator/IconPagerAdapter;
 
     .line 217
     :cond_0
@@ -265,7 +265,7 @@
     if-eqz v0, :cond_3
 
     .line 225
-    invoke-interface {v0, v5}, Lcom/viewpagerindicator/b;->a(I)I
+    invoke-interface {v0, v5}, Lcom/viewpagerindicator/IconPagerAdapter;->a(I)I
 
     move-result v2
 
@@ -626,12 +626,12 @@
     return-void
 .end method
 
-.method public setOnTabReselectedListener(Lcom/viewpagerindicator/f;)V
+.method public setOnTabReselectedListener(Lcom/viewpagerindicator/TabPageIndicator$f;)V
     .locals 0
 
     .prologue
     .line 93
-    iput-object p1, p0, Lcom/viewpagerindicator/TabPageIndicator;->f:Lcom/viewpagerindicator/f;
+    iput-object p1, p0, Lcom/viewpagerindicator/TabPageIndicator;->f:Lcom/viewpagerindicator/TabPageIndicator$f;
 
     .line 94
     return-void

@@ -71,7 +71,7 @@
 
     .line 35
     :goto_0
-    invoke-static {v0, v1}, Lcom/google/tagmanager/y;->a(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/google/tagmanager/InstallReferrerUtil;->a(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 36
     invoke-direct {p0, v0, p1}, Lcom/google/tagmanager/InstallReferrerService;->a(Landroid/content/Context;Landroid/content/Intent;)V

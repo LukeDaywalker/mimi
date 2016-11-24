@@ -87,9 +87,9 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;->p:Lcom/wumii/android/mimi/ui/widgets/share/InviteList;
 
     .line 35
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->w()Lcom/wumii/android/mimi/models/h/a/h;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/h/a/ChatStorage;
 
     move-result-object v0
 
@@ -97,7 +97,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/h;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
 
     move-result-object v0
 
@@ -166,11 +166,11 @@
     .line 41
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;->p:Lcom/wumii/android/mimi/ui/widgets/share/InviteList;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/bz;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity$bz;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/bz;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity$bz;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/share/f;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/share/InviteList$f;)V
 
     goto :goto_0
 .end method

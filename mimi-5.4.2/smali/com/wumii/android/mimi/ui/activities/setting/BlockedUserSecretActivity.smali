@@ -10,15 +10,15 @@
 
 .field private o:Landroid/widget/TextView;
 
-.field private p:Lcom/wumii/android/mimi/a/ak;
+.field private p:Lcom/wumii/android/mimi/a/FeedManager;
 
-.field private q:Lcom/wumii/android/mimi/ui/activities/setting/f;
+.field private q:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$f;
 
-.field private r:Lcom/wumii/android/mimi/ui/apdaters/e;
+.field private r:Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter;
 
-.field private s:Lcom/wumii/android/mimi/b/bw;
+.field private s:Lcom/wumii/android/mimi/b/SecretOperationTask;
 
-.field private t:Lcom/wumii/android/mimi/ui/widgets/d;
+.field private t:Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;
 
 
 # direct methods
@@ -33,12 +33,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Lcom/wumii/android/mimi/a/ak;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Lcom/wumii/android/mimi/a/FeedManager;
     .locals 1
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->p:Lcom/wumii/android/mimi/a/ak;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->p:Lcom/wumii/android/mimi/a/FeedManager;
 
     return-object v0
 .end method
@@ -65,16 +65,16 @@
 
     .prologue
     .line 217
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->s:Lcom/wumii/android/mimi/b/bw;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->s:Lcom/wumii/android/mimi/b/SecretOperationTask;
 
     if-nez v0, :cond_0
 
     .line 218
-    new-instance v0, Lcom/wumii/android/mimi/b/bw;
+    new-instance v0, Lcom/wumii/android/mimi/b/SecretOperationTask;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/b/bw;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/b/SecretOperationTask;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->s:Lcom/wumii/android/mimi/b/bw;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->s:Lcom/wumii/android/mimi/b/SecretOperationTask;
 
     .line 221
     :cond_0
@@ -84,34 +84,34 @@
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/wumii/android/mimi/b/bx;->c:Lcom/wumii/android/mimi/b/bx;
+    sget-object v0, Lcom/wumii/android/mimi/b/SecretOperationTask$bx;->c:Lcom/wumii/android/mimi/b/SecretOperationTask$bx;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/b/bx;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/b/SecretOperationTask$bx;->a()Ljava/lang/String;
 
     move-result-object v0
 
     .line 222
     :goto_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->s:Lcom/wumii/android/mimi/b/bw;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->s:Lcom/wumii/android/mimi/b/SecretOperationTask;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getId()Ljava/lang/String;
 
     move-result-object v2
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/activities/setting/d;
+    new-instance v3, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$d;
 
-    invoke-direct {v3, p0, p1}, Lcom/wumii/android/mimi/ui/activities/setting/d;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;Lcom/wumii/android/mimi/models/entities/secret/Secret;)V
+    invoke-direct {v3, p0, p1}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$d;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;Lcom/wumii/android/mimi/models/entities/secret/Secret;)V
 
-    invoke-virtual {v1, v0, v2, v3}, Lcom/wumii/android/mimi/b/bw;->a(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/b/an;)V
+    invoke-virtual {v1, v0, v2, v3}, Lcom/wumii/android/mimi/b/SecretOperationTask;->a(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/b/IdOperationTask$an;)V
 
     .line 229
     return-void
 
     .line 221
     :cond_1
-    sget-object v0, Lcom/wumii/android/mimi/b/bx;->b:Lcom/wumii/android/mimi/b/bx;
+    sget-object v0, Lcom/wumii/android/mimi/b/SecretOperationTask$bx;->b:Lcom/wumii/android/mimi/b/SecretOperationTask$bx;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/b/bx;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/b/SecretOperationTask$bx;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -133,7 +133,7 @@
 
     .prologue
     .line 232
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->l()Lcom/wumii/android/mimi/ui/widgets/d;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->l()Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;
 
     move-result-object v1
 
@@ -165,14 +165,14 @@
     invoke-virtual {v2, v3, v0}, Landroid/support/v4/util/SimpleArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 237
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/setting/e;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$e;
 
-    invoke-direct {v0, p0, p1}, Lcom/wumii/android/mimi/ui/activities/setting/e;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;Lcom/wumii/android/mimi/models/entities/secret/Secret;)V
+    invoke-direct {v0, p0, p1}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$e;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;Lcom/wumii/android/mimi/models/entities/secret/Secret;)V
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/ui/widgets/d;->a(Landroid/support/v4/util/SimpleArrayMap;Lcom/wumii/android/mimi/ui/widgets/f;)V
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->a(Landroid/support/v4/util/SimpleArrayMap;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$f;)V
 
     .line 244
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/d;->show()Landroid/app/AlertDialog;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->show()Landroid/app/AlertDialog;
 
     .line 245
     return-void
@@ -224,12 +224,12 @@
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Lcom/wumii/android/mimi/ui/apdaters/e;
+.method static synthetic e(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter;
     .locals 1
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->r:Lcom/wumii/android/mimi/ui/apdaters/e;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->r:Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter;
 
     return-object v0
 .end method
@@ -286,12 +286,12 @@
     return-void
 .end method
 
-.method static synthetic h(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Lcom/wumii/android/mimi/models/f;
+.method static synthetic h(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)Lcom/wumii/android/mimi/models/AppFacade;
     .locals 1
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
     return-object v0
 .end method
@@ -368,13 +368,13 @@
 
     .prologue
     .line 159
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->r:Lcom/wumii/android/mimi/ui/apdaters/e;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->r:Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->h()Ljava/util/List;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/e;->a(Ljava/util/List;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter;->a(Ljava/util/List;)V
 
     .line 160
     return-void
@@ -424,7 +424,7 @@
 
     .prologue
     .line 169
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->getResources()Landroid/content/res/Resources;
 
@@ -434,59 +434,59 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 170
     const v1, 0x7f06003e
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a;->setMessage(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     .line 171
     const v1, 0x7f0600a8
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 172
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a;->show()Landroid/app/AlertDialog;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->show()Landroid/app/AlertDialog;
 
     .line 173
     return-void
 .end method
 
-.method private l()Lcom/wumii/android/mimi/ui/widgets/d;
+.method private l()Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;
     .locals 3
 
     .prologue
     .line 209
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->t:Lcom/wumii/android/mimi/ui/widgets/d;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->t:Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;
 
     if-nez v0, :cond_0
 
     .line 210
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/d;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->y:Landroid/util/DisplayMetrics;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/d;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->t:Lcom/wumii/android/mimi/ui/widgets/d;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->t:Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;
 
     .line 211
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->t:Lcom/wumii/android/mimi/ui/widgets/d;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->t:Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;
 
     const v1, 0x7f060111
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/d;->setTitle(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     .line 213
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->t:Lcom/wumii/android/mimi/ui/widgets/d;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->t:Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;
 
     return-object v0
 .end method
@@ -511,92 +511,92 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->g()V
 
     .line 68
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->A()Lcom/wumii/android/mimi/models/h/c/e;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/h/c/FeedModuleStorage;
 
     move-result-object v0
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->BLOCKED:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/h/c/e;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/h/c/FeedModuleStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->C:Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
     .line 70
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/e;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/e;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->r:Lcom/wumii/android/mimi/ui/apdaters/e;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->r:Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter;
 
     .line 71
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->r:Lcom/wumii/android/mimi/ui/apdaters/e;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->r:Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/a;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$a;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/a;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$a;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/e;->a(Lcom/wumii/android/mimi/ui/y;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter;->a(Lcom/wumii/android/mimi/ui/OnAdapterItemClickListener;)V
 
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->r:Lcom/wumii/android/mimi/ui/apdaters/e;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->r:Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/b;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$b;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/b;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$b;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/e;->a(Lcom/wumii/android/mimi/ui/z;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter;->a(Lcom/wumii/android/mimi/ui/OnAdapterItemLongClickListener;)V
 
     .line 90
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->r:Lcom/wumii/android/mimi/ui/apdaters/e;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->r:Lcom/wumii/android/mimi/ui/apdaters/BlockedUserSecretAdapter;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 91
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/c;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$c;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/c;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$c;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setOnRefreshListener(Lcom/wumii/android/mimi/ui/widgets/ch;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setOnRefreshListener(Lcom/wumii/android/mimi/ui/widgets/XListView$ch;)V
 
     .line 99
-    invoke-static {}, Lcom/wumii/android/mimi/a/at;->a()Lcom/wumii/android/mimi/a/at;
+    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/at;->c()Lcom/wumii/android/mimi/a/ak;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->c()Lcom/wumii/android/mimi/a/FeedManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->p:Lcom/wumii/android/mimi/a/ak;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->p:Lcom/wumii/android/mimi/a/FeedManager;
 
     .line 100
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/setting/f;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$f;
 
-    invoke-direct {v0, p0, v2}, Lcom/wumii/android/mimi/ui/activities/setting/f;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;Lcom/wumii/android/mimi/ui/activities/setting/a;)V
+    invoke-direct {v0, p0, v2}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$f;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$a;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->q:Lcom/wumii/android/mimi/ui/activities/setting/f;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->q:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$f;
 
     .line 101
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->p:Lcom/wumii/android/mimi/a/ak;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->p:Lcom/wumii/android/mimi/a/FeedManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->q:Lcom/wumii/android/mimi/ui/activities/setting/f;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->q:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$f;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/ak;->addObserver(Ljava/util/Observer;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/FeedManager;->addObserver(Ljava/util/Observer;)V
 
     .line 103
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->p:Lcom/wumii/android/mimi/a/ak;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->p:Lcom/wumii/android/mimi/a/FeedManager;
 
-    sget-object v1, Lcom/wumii/android/mimi/models/b/a;->a:Lcom/wumii/android/mimi/models/b/a;
+    sget-object v1, Lcom/wumii/android/mimi/models/b/FeedEvent;->a:Lcom/wumii/android/mimi/models/b/FeedEvent;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/ak;->a(Lcom/wumii/android/mimi/models/b/a;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/FeedManager;->a(Lcom/wumii/android/mimi/models/b/FeedEvent;)V
 
     .line 105
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->j()V
@@ -631,18 +631,18 @@
 
     .prologue
     .line 138
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->p:Lcom/wumii/android/mimi/a/ak;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->p:Lcom/wumii/android/mimi/a/FeedManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->q:Lcom/wumii/android/mimi/ui/activities/setting/f;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->q:Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity$f;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/ak;->deleteObserver(Ljava/util/Observer;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/FeedManager;->deleteObserver(Ljava/util/Observer;)V
 
     .line 139
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/BlockedUserSecretActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setOnRefreshListener(Lcom/wumii/android/mimi/ui/widgets/ch;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setOnRefreshListener(Lcom/wumii/android/mimi/ui/widgets/XListView$ch;)V
 
     .line 140
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onDestroy()V

@@ -63,7 +63,7 @@
     .line 40
     const-string/jumbo v0, "Error storing install campaign."
 
-    invoke-static {v0}, Lcom/google/analytics/tracking/android/ar;->a(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/google/analytics/tracking/android/Log;->a(Ljava/lang/String;)V
 
     goto :goto_0
 .end method

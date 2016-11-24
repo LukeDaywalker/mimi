@@ -12,9 +12,9 @@
 
 .field private p:Landroid/app/AlertDialog;
 
-.field private q:Lcom/wumii/android/mimi/a/az;
+.field private q:Lcom/wumii/android/mimi/a/OrgValidationManager;
 
-.field private r:Lcom/wumii/android/mimi/models/e/g;
+.field private r:Lcom/wumii/android/mimi/models/e/OrgValidationObserver;
 
 .field private s:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -110,12 +110,12 @@
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;)Lcom/wumii/android/mimi/c/v;
+.method static synthetic c(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;)Lcom/wumii/android/mimi/c/ContextToast;
     .locals 1
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->B:Lcom/wumii/android/mimi/c/v;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
 
     return-object v0
 .end method
@@ -150,12 +150,12 @@
     return-object v0
 .end method
 
-.method static synthetic g(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;)Lcom/wumii/android/mimi/ui/h;
+.method static synthetic g(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;)Lcom/wumii/android/mimi/ui/ActivityEventManager;
     .locals 1
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     return-object v0
 .end method
@@ -228,9 +228,9 @@
     .line 90
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->n:Landroid/widget/EditText;
 
-    new-instance v5, Lcom/wumii/android/mimi/ui/activities/circle/n;
+    new-instance v5, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity$n;
 
-    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/ui/activities/circle/n;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;)V
+    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity$n;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;)V
 
     invoke-virtual {v0, v5}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -251,9 +251,9 @@
     .line 108
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->o:Landroid/widget/TextView;
 
-    new-instance v5, Lcom/wumii/android/mimi/ui/activities/circle/o;
+    new-instance v5, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity$o;
 
-    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/ui/activities/circle/o;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;)V
+    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity$o;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;)V
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -324,9 +324,9 @@
 
     move-result-object v0
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/activities/circle/q;
+    new-instance v3, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity$q;
 
-    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/activities/circle/q;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;)V
+    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity$q;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;)V
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -342,7 +342,7 @@
     move v0, v2
 
     :goto_1
-    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 146
     const v0, 0x7f0b00b0
@@ -354,7 +354,7 @@
     if-eqz v1, :cond_4
 
     :goto_2
-    invoke-static {v0, v4}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v0, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 147
     return-void
@@ -462,7 +462,7 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->C:Ljava/lang/String;
 
     .line 162
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->q:Lcom/wumii/android/mimi/a/az;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->q:Lcom/wumii/android/mimi/a/OrgValidationManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->s:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
@@ -476,7 +476,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/a/az;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/a/OrgValidationManager;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 163
     return-void
@@ -519,15 +519,15 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->t:Ljava/util/List;
 
     .line 63
-    invoke-static {}, Lcom/wumii/android/mimi/a/at;->a()Lcom/wumii/android/mimi/a/at;
+    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/at;->l()Lcom/wumii/android/mimi/a/az;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->l()Lcom/wumii/android/mimi/a/OrgValidationManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->q:Lcom/wumii/android/mimi/a/az;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->q:Lcom/wumii/android/mimi/a/OrgValidationManager;
 
     .line 65
     const v0, 0x7f030024
@@ -538,18 +538,18 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->k()V
 
     .line 69
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/m;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity$m;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/m;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity$m;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->r:Lcom/wumii/android/mimi/models/e/g;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->r:Lcom/wumii/android/mimi/models/e/OrgValidationObserver;
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->q:Lcom/wumii/android/mimi/a/az;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->q:Lcom/wumii/android/mimi/a/OrgValidationManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->r:Lcom/wumii/android/mimi/models/e/g;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->r:Lcom/wumii/android/mimi/models/e/OrgValidationObserver;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/az;->addObserver(Ljava/util/Observer;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/OrgValidationManager;->addObserver(Ljava/util/Observer;)V
 
     .line 83
     return-void
@@ -560,16 +560,16 @@
 
     .prologue
     .line 167
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->q:Lcom/wumii/android/mimi/a/az;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->q:Lcom/wumii/android/mimi/a/OrgValidationManager;
 
     if-eqz v0, :cond_0
 
     .line 168
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->q:Lcom/wumii/android/mimi/a/az;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->q:Lcom/wumii/android/mimi/a/OrgValidationManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->r:Lcom/wumii/android/mimi/models/e/g;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->r:Lcom/wumii/android/mimi/models/e/OrgValidationObserver;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/az;->deleteObserver(Ljava/util/Observer;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/OrgValidationManager;->deleteObserver(Ljava/util/Observer;)V
 
     .line 170
     :cond_0

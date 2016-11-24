@@ -1,5 +1,5 @@
 .class public Lcom/wumii/android/mimi/ui/apdaters/secret/SecretsTabAdapter;
-.super Lcom/wumii/android/mimi/ui/widgets/w;
+.super Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$w;
 .source "SecretsTabAdapter.java"
 
 

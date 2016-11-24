@@ -151,17 +151,17 @@
     move-result-object v0
 
     .line 30
-    invoke-static {}, Lcom/e/a/b/g;->a()Lcom/e/a/b/g;
+    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
 
     move-result-object v1
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/av;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/ChatSelectImageActivity;->n:Landroid/widget/ImageView;
 
-    invoke-virtual {v1, v0, v2}, Lcom/e/a/b/g;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
+    invoke-virtual {v1, v0, v2}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
 
     .line 31
     return-void

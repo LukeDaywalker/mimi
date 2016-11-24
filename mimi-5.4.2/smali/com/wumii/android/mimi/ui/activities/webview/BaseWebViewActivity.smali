@@ -119,9 +119,9 @@
     .line 51
     const/high16 v1, 0x7f070000
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/webview/a;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$a;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/webview/a;-><init>(Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$a;-><init>(Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setItems(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -297,15 +297,15 @@
     if-eqz v1, :cond_5
 
     .line 192
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/f;->q()Lcom/wumii/android/mimi/models/d/m;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->q()Lcom/wumii/android/mimi/models/d/HttpHelper;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/d/m;->a()Ljava/util/Map;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a()Ljava/util/Map;
 
     move-result-object v1
 
@@ -451,13 +451,13 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->setContentView(I)V
 
     .line 83
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->q()Lcom/wumii/android/mimi/ui/widgets/ae;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->q()Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     move-result-object v0
 
     const v1, 0x7f020078
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ae;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->a(I)V
 
     .line 85
     const v0, 0x7f0b0145
@@ -473,9 +473,9 @@
     .line 87
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/webview/b;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$b;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/webview/b;-><init>(Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$b;-><init>(Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setWebChromeClient(Landroid/webkit/WebChromeClient;)V
 
@@ -550,18 +550,18 @@
     .line 104
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/webview/c;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$c;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/webview/c;-><init>(Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$c;-><init>(Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setWebChromeClient(Landroid/webkit/WebChromeClient;)V
 
     .line 126
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->p:Landroid/webkit/WebView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/webview/d;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$d;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/webview/d;-><init>(Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity$d;-><init>(Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
 
@@ -577,11 +577,11 @@
     invoke-virtual {v0, v1}, Landroid/webkit/CookieManager;->setAcceptCookie(Z)V
 
     .line 156
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/f;->h()Lcom/wumii/android/mimi/models/service/UserService;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->h()Lcom/wumii/android/mimi/models/service/UserService;
 
     move-result-object v1
 
@@ -604,21 +604,21 @@
 
     .line 159
     :cond_0
-    sget-object v2, Lcom/wumii/android/mimi/c/af;->f:Lcom/wumii/android/mimi/c/af;
+    sget-object v2, Lcom/wumii/android/mimi/c/EventUtils$af;->f:Lcom/wumii/android/mimi/c/EventUtils$af;
 
     const-string/jumbo v3, "Cookie\u4e3anull"
 
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/ae;->b(Lcom/wumii/android/mimi/c/af;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
 
     .line 161
     :cond_1
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/wumii/android/mimi/models/f;->l()Lcom/wumii/android/mimi/models/d/k;
+    invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->l()Lcom/wumii/android/mimi/models/d/HostHelper;
 
-    invoke-static {}, Lcom/wumii/android/mimi/models/d/k;->a()Ljava/lang/String;
+    invoke-static {}, Lcom/wumii/android/mimi/models/d/HostHelper;->a()Ljava/lang/String;
 
     move-result-object v2
 
@@ -681,11 +681,11 @@
     invoke-interface {v1, v2, v0}, Lorg/slf4j/Logger;->error(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 171
-    sget-object v0, Lcom/wumii/android/mimi/c/af;->f:Lcom/wumii/android/mimi/c/af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->f:Lcom/wumii/android/mimi/c/EventUtils$af;
 
     const-string/jumbo v1, "WebView\u8bbe\u7f6eCookie\u5931\u8d25"
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/ae;->b(Lcom/wumii/android/mimi/c/af;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

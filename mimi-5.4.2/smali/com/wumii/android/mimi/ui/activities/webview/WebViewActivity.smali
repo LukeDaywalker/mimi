@@ -126,11 +126,11 @@
     if-eqz v1, :cond_1
 
     .line 26
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/f;->l()Lcom/wumii/android/mimi/models/d/k;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->l()Lcom/wumii/android/mimi/models/d/HostHelper;
 
     const-string/jumbo v1, "path"
 
@@ -138,7 +138,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/models/d/k;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/wumii/android/mimi/models/d/HostHelper;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -185,11 +185,11 @@
     if-eqz v0, :cond_0
 
     .line 31
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->l()Lcom/wumii/android/mimi/models/d/k;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->l()Lcom/wumii/android/mimi/models/d/HostHelper;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -215,7 +215,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/models/d/k;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/wumii/android/mimi/models/d/HostHelper;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -225,13 +225,13 @@
 
     .line 34
     :cond_2
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->l()Lcom/wumii/android/mimi/models/d/k;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->l()Lcom/wumii/android/mimi/models/d/HostHelper;
 
-    invoke-static {}, Lcom/wumii/android/mimi/models/d/k;->a()Ljava/lang/String;
+    invoke-static {}, Lcom/wumii/android/mimi/models/d/HostHelper;->a()Ljava/lang/String;
 
     move-result-object v0
 

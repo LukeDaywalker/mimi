@@ -10,7 +10,7 @@
 
 .field private p:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
 
-.field private q:Lcom/wumii/android/mimi/ui/apdaters/n;
+.field private q:Lcom/wumii/android/mimi/ui/apdaters/DiscoverCirclePagerAdapter;
 
 
 # direct methods
@@ -78,7 +78,7 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/DiscoverCircleActivity;->n:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
     .line 34
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/n;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/DiscoverCirclePagerAdapter;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/discover/DiscoverCircleActivity;->f()Landroid/support/v4/app/FragmentManager;
 
@@ -90,14 +90,14 @@
 
     move-result v2
 
-    invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/n;-><init>(Landroid/support/v4/app/FragmentManager;I)V
+    invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/DiscoverCirclePagerAdapter;-><init>(Landroid/support/v4/app/FragmentManager;I)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/DiscoverCircleActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/n;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/DiscoverCircleActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/DiscoverCirclePagerAdapter;
 
     .line 35
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/DiscoverCircleActivity;->o:Landroid/support/v4/view/ViewPager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/DiscoverCircleActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/n;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/DiscoverCircleActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/DiscoverCirclePagerAdapter;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPager;->setAdapter(Landroid/support/v4/view/PagerAdapter;)V
 
@@ -113,7 +113,7 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/DiscoverCircleActivity;->p:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->setTabAdapter(Lcom/wumii/android/mimi/ui/widgets/w;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->setTabAdapter(Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$w;)V
 
     .line 40
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/DiscoverCircleActivity;->n:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;

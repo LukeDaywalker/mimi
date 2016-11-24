@@ -37,7 +37,7 @@
 
 .field private p:Landroid/widget/LinearLayout$LayoutParams;
 
-.field private q:Lcom/wumii/android/mimi/ui/widgets/feed/c;
+.field private q:Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView$c;
 
 
 # direct methods
@@ -234,7 +234,7 @@
 
     const/high16 v2, 0x41a00000    # 20.0f
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v2
 
@@ -246,7 +246,7 @@
     .line 93
     const/high16 v2, 0x41200000    # 10.0f
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v2
 
@@ -256,7 +256,7 @@
     .line 96
     const/high16 v3, 0x42000000    # 32.0f
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -410,7 +410,7 @@
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 174
-    invoke-static {v1, v4}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v1, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 164
     add-int/lit8 v0, v3, 0x1
@@ -449,7 +449,7 @@
     .line 180
     const/16 v3, 0x8
 
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 178
     add-int/lit8 v0, v0, 0x1
@@ -597,7 +597,7 @@
     .line 151
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->g:Landroid/widget/ImageView;
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 156
     :goto_3
@@ -615,7 +615,7 @@
     move v0, v1
 
     :goto_4
-    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 159
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->i:Landroid/view/View;
@@ -623,7 +623,7 @@
     if-eqz p2, :cond_6
 
     :goto_5
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 160
     return-void
@@ -654,7 +654,7 @@
 
     const/4 v3, 0x4
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_3
 
@@ -676,7 +676,7 @@
 
     .prologue
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->q:Lcom/wumii/android/mimi/ui/widgets/feed/c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->q:Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView$c;
 
     if-nez v0, :cond_1
 
@@ -716,11 +716,11 @@
     if-nez v0, :cond_0
 
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->q:Lcom/wumii/android/mimi/ui/widgets/feed/c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->q:Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView$c;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->k:Lcom/wumii/android/mimi/models/entities/CircleTags;
 
-    invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/feed/c;->a(Lcom/wumii/android/mimi/models/entities/CircleTags;)V
+    invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView$c;->a(Lcom/wumii/android/mimi/models/entities/CircleTags;)V
 
     goto :goto_0
 
@@ -755,7 +755,7 @@
     if-eqz v1, :cond_0
 
     .line 126
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->q:Lcom/wumii/android/mimi/ui/widgets/feed/c;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->q:Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView$c;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->k:Lcom/wumii/android/mimi/models/entities/CircleTags;
 
@@ -763,17 +763,17 @@
 
     move-result-object v2
 
-    invoke-interface {v1, v2, v0}, Lcom/wumii/android/mimi/ui/widgets/feed/c;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;Ljava/lang/String;)V
+    invoke-interface {v1, v2, v0}, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView$c;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
 
-.method public setOnCircleTagsCardViewClickListener(Lcom/wumii/android/mimi/ui/widgets/feed/c;)V
+.method public setOnCircleTagsCardViewClickListener(Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView$c;)V
     .locals 0
 
     .prologue
     .line 132
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->q:Lcom/wumii/android/mimi/ui/widgets/feed/c;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->q:Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView$c;
 
     .line 133
     return-void

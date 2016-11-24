@@ -41,7 +41,7 @@
 
     .prologue
     .line 18
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/ReselectOrgActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/ReselectOrgActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     const/4 v1, 0x0
 
@@ -51,10 +51,10 @@
 
     const-string/jumbo v2, "organizationValidationNeeded"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/aa;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 19
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/ReselectOrgActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/ReselectOrgActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     const/4 v1, 0x1
 
@@ -64,7 +64,7 @@
 
     const-string/jumbo v2, "first_organization_need_validation_reddot"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/aa;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 20
     const/4 v0, -0x1

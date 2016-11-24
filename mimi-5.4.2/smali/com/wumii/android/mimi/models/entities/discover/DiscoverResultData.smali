@@ -1,29 +1,29 @@
 .class public Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;
-.super Lcom/wumii/android/mimi/network/m;
+.super Lcom/wumii/android/mimi/network/Result;
 .source "DiscoverResultData.java"
 
 
 # instance fields
 .field private couldLoadMore:Z
 
-.field private feedEvent:Lcom/wumii/android/mimi/models/b/a;
+.field private feedEvent:Lcom/wumii/android/mimi/models/b/FeedEvent;
 
 .field private feedModule:Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
 
 # direct methods
-.method public constructor <init>(ILjava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Lcom/wumii/android/mimi/models/b/a;)V
+.method public constructor <init>(ILjava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Lcom/wumii/android/mimi/models/b/FeedEvent;)V
     .locals 1
 
     .prologue
     .line 14
-    invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/network/m;-><init>(ILjava/lang/String;)V
+    invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/network/Result;-><init>(ILjava/lang/String;)V
 
     .line 15
     iput-object p3, p0, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;->feedModule:Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
     .line 16
-    iput-object p4, p0, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;->feedEvent:Lcom/wumii/android/mimi/models/b/a;
+    iput-object p4, p0, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;->feedEvent:Lcom/wumii/android/mimi/models/b/FeedEvent;
 
     .line 17
     const/4 v0, 0x1
@@ -36,12 +36,12 @@
 
 
 # virtual methods
-.method public getFeedEvent()Lcom/wumii/android/mimi/models/b/a;
+.method public getFeedEvent()Lcom/wumii/android/mimi/models/b/FeedEvent;
     .locals 1
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;->feedEvent:Lcom/wumii/android/mimi/models/b/a;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;->feedEvent:Lcom/wumii/android/mimi/models/b/FeedEvent;
 
     return-object v0
 .end method
@@ -84,18 +84,18 @@
 
     .prologue
     .line 48
-    invoke-super {p0, p1}, Lcom/wumii/android/mimi/network/m;->setData(Ljava/lang/Object;)V
+    invoke-super {p0, p1}, Lcom/wumii/android/mimi/network/Result;->setData(Ljava/lang/Object;)V
 
     .line 49
     return-void
 .end method
 
-.method public setFeedEvent(Lcom/wumii/android/mimi/models/b/a;)V
+.method public setFeedEvent(Lcom/wumii/android/mimi/models/b/FeedEvent;)V
     .locals 0
 
     .prologue
     .line 33
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;->feedEvent:Lcom/wumii/android/mimi/models/b/a;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;->feedEvent:Lcom/wumii/android/mimi/models/b/FeedEvent;
 
     .line 34
     return-void

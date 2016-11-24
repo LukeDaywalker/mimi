@@ -49,7 +49,7 @@
 
     .line 42
     :cond_1
-    invoke-static {v0}, Lcom/google/tagmanager/y;->a(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/google/tagmanager/InstallReferrerUtil;->a(Ljava/lang/String;)V
 
     .line 45
     new-instance v1, Landroid/content/Intent;

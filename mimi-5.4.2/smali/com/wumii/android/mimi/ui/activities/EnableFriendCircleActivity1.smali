@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private n:Lcom/wumii/android/mimi/ui/activities/x;
+.field private n:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$x;
 
 .field private o:Landroid/content/IntentFilter;
 
@@ -86,23 +86,23 @@
     .line 108
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->y:Landroid/util/DisplayMetrics;
 
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->n()Lcom/wumii/android/mimi/ui/h;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->n()Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     move-result-object v2
 
-    sget-object v3, Lcom/wumii/android/mimi/c/af;->ao:Lcom/wumii/android/mimi/c/af;
+    sget-object v3, Lcom/wumii/android/mimi/c/EventUtils$af;->ao:Lcom/wumii/android/mimi/c/EventUtils$af;
 
-    sget-object v4, Lcom/wumii/android/mimi/c/af;->aq:Lcom/wumii/android/mimi/c/af;
+    sget-object v4, Lcom/wumii/android/mimi/c/EventUtils$af;->aq:Lcom/wumii/android/mimi/c/EventUtils$af;
 
-    sget-object v5, Lcom/wumii/android/mimi/c/af;->ap:Lcom/wumii/android/mimi/c/af;
+    sget-object v5, Lcom/wumii/android/mimi/c/EventUtils$af;->ap:Lcom/wumii/android/mimi/c/EventUtils$af;
 
-    new-instance v6, Lcom/wumii/android/mimi/ui/activities/w;
+    new-instance v6, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$w;
 
-    invoke-direct {v6, p0}, Lcom/wumii/android/mimi/ui/activities/w;-><init>(Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;)V
+    invoke-direct {v6, p0}, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$w;-><init>(Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;)V
 
     move-object v0, p0
 
-    invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/as;->b(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;Lcom/wumii/android/mimi/c/af;Lcom/wumii/android/mimi/c/af;Lcom/wumii/android/mimi/c/af;Lcom/wumii/android/mimi/ui/aq;)V
+    invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->b(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/c/EventUtils$af;Lcom/wumii/android/mimi/c/EventUtils$af;Lcom/wumii/android/mimi/c/EventUtils$af;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$aq;)V
 
     .line 123
     return-void
@@ -113,15 +113,15 @@
 
     .prologue
     .line 126
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->H()Lcom/wumii/android/mimi/models/h/g;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/h/CommonStorage;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/g;->g(Z)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/CommonStorage;->g(Z)V
 
     .line 127
     const/4 v0, 0x0
@@ -158,33 +158,33 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->setContentView(I)V
 
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->H()Lcom/wumii/android/mimi/models/h/g;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/h/CommonStorage;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/g;->d(Z)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/CommonStorage;->d(Z)V
 
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->H()Lcom/wumii/android/mimi/models/h/g;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/h/CommonStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/g;->m()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/CommonStorage;->m()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 47
-    sget-object v0, Lcom/wumii/android/mimi/c/af;->am:Lcom/wumii/android/mimi/c/af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->am:Lcom/wumii/android/mimi/c/EventUtils$af;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/ae;->onEvent(Lcom/wumii/android/mimi/c/af;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$af;)V
 
     .line 50
     :cond_0
@@ -193,9 +193,9 @@
     if-nez v0, :cond_1
 
     .line 51
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/v;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$v;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/v;-><init>(Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$v;-><init>(Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->q:Ljava/lang/Runnable;
 
@@ -245,21 +245,21 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onStart()V
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->n:Lcom/wumii/android/mimi/ui/activities/x;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->n:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$x;
 
     if-nez v0, :cond_0
 
     .line 83
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/x;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$x;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/x;-><init>(Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$x;-><init>(Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->n:Lcom/wumii/android/mimi/ui/activities/x;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->n:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$x;
 
     .line 85
     new-instance v0, Landroid/content/IntentFilter;
 
-    sget-object v1, Lcom/wumii/android/mimi/a/bo;->a:Ljava/lang/String;
+    sget-object v1, Lcom/wumii/android/mimi/a/UploadContactManager;->a:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
@@ -278,7 +278,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->n:Lcom/wumii/android/mimi/ui/activities/x;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->n:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$x;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->o:Landroid/content/IntentFilter;
 
@@ -296,7 +296,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onStop()V
 
     .line 94
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->n:Lcom/wumii/android/mimi/ui/activities/x;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->n:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$x;
 
     if-eqz v0, :cond_0
 
@@ -305,7 +305,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->n:Lcom/wumii/android/mimi/ui/activities/x;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->n:Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1$x;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/content/LocalBroadcastManager;->a(Landroid/content/BroadcastReceiver;)V
 

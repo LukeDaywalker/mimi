@@ -15,7 +15,7 @@
 
 .field private circleLimited:Z
 
-.field private circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/q;
+.field private circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;
 
 .field private description:Ljava/lang/String;
 
@@ -188,13 +188,13 @@
 
     .line 123
     :cond_6
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/q;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;
 
     if-eqz v2, :cond_f
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/q;
+    iget-object v2, p0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;
 
-    iget-object v3, p1, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/q;
+    iget-object v3, p1, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;
 
     invoke-virtual {v2, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -269,7 +269,7 @@
 
     .line 123
     :cond_f
-    iget-object v2, p1, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/q;
+    iget-object v2, p1, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;
 
     if-eqz v2, :cond_7
 
@@ -294,12 +294,12 @@
     return-object v0
 .end method
 
-.method public getCircleSelectorType()Lcom/wumii/android/mimi/ui/widgets/q;
+.method public getCircleSelectorType()Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;
     .locals 1
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/q;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;
 
     return-object v0
 .end method
@@ -463,11 +463,11 @@
     .line 137
     mul-int/lit8 v3, v0, 0x1f
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/q;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;
 
     if-eqz v0, :cond_6
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/q;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -609,12 +609,12 @@
     return-void
 .end method
 
-.method public setCircleSelectorType(Lcom/wumii/android/mimi/ui/widgets/q;)V
+.method public setCircleSelectorType(Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;)V
     .locals 0
 
     .prologue
     .line 78
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/q;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;
 
     .line 79
     return-void
@@ -784,7 +784,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/q;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->circleSelectorType:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

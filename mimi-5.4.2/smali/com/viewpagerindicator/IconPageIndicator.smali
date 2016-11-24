@@ -126,9 +126,9 @@
 
     .line 71
     :cond_0
-    new-instance v1, Lcom/viewpagerindicator/a;
+    new-instance v1, Lcom/viewpagerindicator/IconPageIndicator$a;
 
-    invoke-direct {v1, p0, v0}, Lcom/viewpagerindicator/a;-><init>(Lcom/viewpagerindicator/IconPageIndicator;Landroid/view/View;)V
+    invoke-direct {v1, p0, v0}, Lcom/viewpagerindicator/IconPageIndicator$a;-><init>(Lcom/viewpagerindicator/IconPageIndicator;Landroid/view/View;)V
 
     iput-object v1, p0, Lcom/viewpagerindicator/IconPageIndicator;->d:Ljava/lang/Runnable;
 
@@ -161,10 +161,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/viewpagerindicator/b;
+    check-cast v0, Lcom/viewpagerindicator/IconPagerAdapter;
 
     .line 142
-    invoke-interface {v0}, Lcom/viewpagerindicator/b;->b()I
+    invoke-interface {v0}, Lcom/viewpagerindicator/IconPagerAdapter;->b()I
 
     move-result v3
 
@@ -188,7 +188,7 @@
     invoke-direct {v4, v5, v6, v7}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 145
-    invoke-interface {v0, v1}, Lcom/viewpagerindicator/b;->a(I)I
+    invoke-interface {v0, v1}, Lcom/viewpagerindicator/IconPagerAdapter;->a(I)I
 
     move-result v5
 

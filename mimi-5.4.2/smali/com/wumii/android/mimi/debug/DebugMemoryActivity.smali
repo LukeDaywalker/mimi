@@ -3,7 +3,7 @@
 .source "DebugMemoryActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/br;
+.implements Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;
 
 
 # instance fields
@@ -172,7 +172,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setTag(Ljava/lang/Object;)V
 
     .line 89
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/br;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;)V
 
     .line 90
     iget-object v1, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->n:Landroid/widget/LinearLayout;
@@ -199,13 +199,13 @@
     .line 80
     iget-object v1, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->o:Landroid/util/DisplayMetrics;
 
-    invoke-static {v1, v3}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v1, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
     iget-object v2, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->o:Landroid/util/DisplayMetrics;
 
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v2
 
@@ -448,11 +448,11 @@
     invoke-direct {p0, v1}, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->b(Ljava/lang/String;)V
 
     .line 66
-    invoke-static {}, Lcom/wumii/android/mimi/a/au;->a()Lcom/wumii/android/mimi/a/au;
+    invoke-static {}, Lcom/wumii/android/mimi/a/MemoryMonitor;->a()Lcom/wumii/android/mimi/a/MemoryMonitor;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/a/au;->b()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/a/MemoryMonitor;->b()Ljava/util/List;
 
     move-result-object v2
 
@@ -476,7 +476,7 @@
     .line 71
     const-string/jumbo v3, "Debug"
 
-    invoke-static {v0, v3}, Lorg/a/a/c/d;->f(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v3}, Lorg/a/a/c/StringUtils;->f(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v3
 
@@ -484,7 +484,7 @@
 
     const-string/jumbo v3, "NavigationActivity"
 
-    invoke-static {v0, v3}, Lorg/a/a/c/d;->f(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v3}, Lorg/a/a/c/StringUtils;->f(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v3
 

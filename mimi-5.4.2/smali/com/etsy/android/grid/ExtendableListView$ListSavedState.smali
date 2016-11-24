@@ -34,9 +34,9 @@
 
     .prologue
     .line 2658
-    new-instance v0, Lcom/etsy/android/grid/g;
+    new-instance v0, Lcom/etsy/android/grid/ExtendableListView$g;
 
-    invoke-direct {v0}, Lcom/etsy/android/grid/g;-><init>()V
+    invoke-direct {v0}, Lcom/etsy/android/grid/ExtendableListView$g;-><init>()V
 
     sput-object v0, Lcom/etsy/android/grid/ExtendableListView$ListSavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 

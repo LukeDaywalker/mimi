@@ -3,7 +3,7 @@
 .source "DebugTrafficActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/br;
+.implements Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;
 
 
 # instance fields
@@ -169,13 +169,13 @@
     .line 76
     iget-object v1, p0, Lcom/wumii/android/mimi/debug/DebugTrafficActivity;->o:Landroid/util/DisplayMetrics;
 
-    invoke-static {v1, v3}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v1, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
     iget-object v2, p0, Lcom/wumii/android/mimi/debug/DebugTrafficActivity;->o:Landroid/util/DisplayMetrics;
 
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v2
 
@@ -234,7 +234,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setName(Ljava/lang/String;)V
 
     .line 50
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/br;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;)V
 
     .line 51
     const/4 v1, 0x1
@@ -256,11 +256,11 @@
     invoke-direct {p0, v0}, Lcom/wumii/android/mimi/debug/DebugTrafficActivity;->b(Ljava/lang/String;)V
 
     .line 55
-    invoke-static {}, Lcom/wumii/android/mimi/a/av;->a()Lcom/wumii/android/mimi/a/av;
+    invoke-static {}, Lcom/wumii/android/mimi/a/NetworkTrafficMonitor;->a()Lcom/wumii/android/mimi/a/NetworkTrafficMonitor;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/av;->b()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/NetworkTrafficMonitor;->b()Ljava/util/List;
 
     move-result-object v2
 
@@ -281,7 +281,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/a/aw;
+    check-cast v0, Lcom/wumii/android/mimi/a/NetworkTrafficMonitor$aw;
 
     .line 59
     new-instance v3, Ljava/lang/StringBuilder;
@@ -294,7 +294,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/aw;->b()I
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/NetworkTrafficMonitor$aw;->b()I
 
     move-result v4
 
@@ -308,7 +308,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/aw;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/NetworkTrafficMonitor$aw;->a()Ljava/lang/String;
 
     move-result-object v4
 
@@ -322,7 +322,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/aw;->c()J
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/NetworkTrafficMonitor$aw;->c()J
 
     move-result-wide v4
 

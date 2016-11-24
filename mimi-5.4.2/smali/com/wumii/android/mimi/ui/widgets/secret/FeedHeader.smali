@@ -155,9 +155,9 @@
 
     move-result-object v2
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/widgets/secret/f;
+    new-instance v3, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$f;
 
-    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/f;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
+    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$f;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -234,11 +234,11 @@
 
     .line 146
     :goto_1
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/wumii/android/mimi/models/f;->h()Lcom/wumii/android/mimi/models/service/UserService;
+    invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->h()Lcom/wumii/android/mimi/models/service/UserService;
 
     move-result-object v2
 
@@ -258,9 +258,9 @@
     invoke-virtual {v0, v9}, Landroid/widget/TableLayout;->setStretchAllColumns(Z)V
 
     .line 151
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/secret/i;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$i;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/i;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$i;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
 
     invoke-virtual {v5, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -328,16 +328,16 @@
 
     .line 126
     :cond_5
-    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/secret/g;
+    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$g;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/g;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$g;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
 
     invoke-virtual {v4, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 133
-    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/secret/h;
+    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$h;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/h;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$h;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
 
     invoke-virtual {v6, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -392,9 +392,9 @@
     invoke-virtual {v0, v9}, Landroid/widget/TableLayout;->setStretchAllColumns(Z)V
 
     .line 161
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/secret/j;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$j;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/j;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader$j;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;)V
 
     invoke-virtual {v5, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -460,13 +460,13 @@
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 66
-    invoke-static {}, Lcom/e/a/b/g;->a()Lcom/e/a/b/g;
+    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->d:Landroid/widget/ImageView;
 
-    invoke-virtual {v0, p2, v1}, Lcom/e/a/b/g;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
+    invoke-virtual {v0, p2, v1}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
 
     .line 68
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->c:Landroid/widget/TextView;

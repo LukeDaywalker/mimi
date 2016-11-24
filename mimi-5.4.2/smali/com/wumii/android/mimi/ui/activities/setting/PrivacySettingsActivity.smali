@@ -3,7 +3,7 @@
 .source "PrivacySettingsActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/br;
+.implements Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;
 
 
 # instance fields
@@ -87,16 +87,16 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->setResult(I)V
 
     .line 81
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/a;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->p:Landroid/util/DisplayMetrics;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v1, p0, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/a;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v1, p0, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     sget-object v2, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
@@ -108,7 +108,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v0, v2, v3, v4}, Lcom/wumii/android/mimi/models/d/aa;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v3, v4}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -118,7 +118,7 @@
 
     move-result-wide v2
 
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/av;->a(J)Z
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/Utils;->a(J)Z
 
     move-result v0
 
@@ -127,25 +127,25 @@
     .line 83
     const v0, 0x7f0600f8
 
-    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/a;->setMessage(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     .line 84
     const v0, 0x7f060051
 
-    invoke-virtual {v1, v0, v6}, Lcom/wumii/android/mimi/ui/widgets/a;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v1, v0, v6}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 85
     const v0, 0x7f0600a8
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/s;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$s;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/s;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$s;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;)V
 
-    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 114
     :goto_0
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/a;->show()Landroid/app/AlertDialog;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->show()Landroid/app/AlertDialog;
 
     .line 115
     return-void
@@ -154,7 +154,7 @@
     :cond_0
     const v0, 0x7f0600f9
 
-    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/a;->setMessage(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
@@ -235,7 +235,7 @@
     .line 45
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->o:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/br;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;)V
 
     .line 46
     return-void
@@ -249,7 +249,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onResume()V
 
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     const-class v1, Ljava/lang/String;
 
@@ -257,14 +257,14 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/aa;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
     .line 57
-    invoke-static {v0}, Lorg/a/a/c/d;->c(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/a/a/c/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v0
 

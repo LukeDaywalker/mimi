@@ -6,9 +6,9 @@
 # instance fields
 .field protected context:Landroid/content/Context;
 
-.field protected fileHelper:Lcom/wumii/android/mimi/models/d/j;
+.field protected fileHelper:Lcom/wumii/android/mimi/models/d/FileHelper;
 
-.field protected prefHelper:Lcom/wumii/android/mimi/models/d/aa;
+.field protected prefHelper:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
 
 # direct methods
@@ -27,26 +27,26 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/models/entities/BaseDataCenter;->context:Landroid/content/Context;
 
     .line 18
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->p()Lcom/wumii/android/mimi/models/d/aa;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/entities/BaseDataCenter;->prefHelper:Lcom/wumii/android/mimi/models/d/aa;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/entities/BaseDataCenter;->prefHelper:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     .line 19
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->j()Lcom/wumii/android/mimi/models/d/j;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/d/FileHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/entities/BaseDataCenter;->fileHelper:Lcom/wumii/android/mimi/models/d/j;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/entities/BaseDataCenter;->fileHelper:Lcom/wumii/android/mimi/models/d/FileHelper;
 
     .line 20
     return-void

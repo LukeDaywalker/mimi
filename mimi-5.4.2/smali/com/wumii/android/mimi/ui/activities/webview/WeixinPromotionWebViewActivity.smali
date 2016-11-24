@@ -18,12 +18,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;)Lcom/wumii/android/mimi/models/d/aa;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
     .locals 1
 
     .prologue
     .line 17
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     return-object v0
 .end method
@@ -61,7 +61,7 @@
     if-ne p1, v0, :cond_0
 
     .line 69
-    invoke-static {p0, p2, p3, p4}, Lcom/wumii/android/mimi/models/g/ab;->a(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p0, p2, p3, p4}, Lcom/wumii/android/mimi/models/g/PromotionShareController;->a(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 73
     :goto_0
@@ -69,7 +69,7 @@
 
     .line 71
     :cond_0
-    invoke-static {p0, p2, p3, p4}, Lcom/wumii/android/mimi/models/g/ab;->b(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p0, p2, p3, p4}, Lcom/wumii/android/mimi/models/g/PromotionShareController;->b(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -150,7 +150,7 @@
 
     move-result-object v6
 
-    invoke-static {v3, v6}, Lorg/a/a/c/d;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v3, v6}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v6
 
@@ -162,7 +162,7 @@
 
     move-result-object v6
 
-    invoke-static {v3, v6}, Lorg/a/a/c/d;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v3, v6}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v6
 
@@ -226,15 +226,15 @@
     if-eqz v1, :cond_1
 
     .line 58
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/f;->q()Lcom/wumii/android/mimi/models/d/m;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->q()Lcom/wumii/android/mimi/models/d/HttpHelper;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/d/m;->a()Ljava/util/Map;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a()Ljava/util/Map;
 
     move-result-object v1
 
@@ -286,13 +286,13 @@
     invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 32
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/webview/e;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity$e;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/webview/e;-><init>(Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity$e;-><init>(Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;)V
 
     const-wide/16 v2, 0xc8
 
-    invoke-static {v0, v2, v3}, Lcom/wumii/android/mimi/c/ar;->a(Ljava/lang/Runnable;J)V
+    invoke-static {v0, v2, v3}, Lcom/wumii/android/mimi/c/ThreadUtils;->a(Ljava/lang/Runnable;J)V
 
     .line 38
     return-void

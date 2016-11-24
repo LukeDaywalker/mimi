@@ -6,7 +6,7 @@
 # instance fields
 .field private n:Landroid/widget/ListView;
 
-.field private o:Lcom/wumii/android/mimi/ui/apdaters/b/w;
+.field private o:Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter;
 
 .field private p:Landroid/view/MenuItem;
 
@@ -14,9 +14,9 @@
 
 .field private r:Landroid/text/SpannableString;
 
-.field private s:Lcom/wumii/android/mimi/a/o;
+.field private s:Lcom/wumii/android/mimi/a/ChatManager;
 
-.field private t:Lcom/wumii/android/mimi/models/e/a;
+.field private t:Lcom/wumii/android/mimi/models/e/ChatObserver;
 
 
 # direct methods
@@ -28,11 +28,11 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;-><init>()V
 
     .line 213
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/dh;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$dh;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/dh;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$dh;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->t:Lcom/wumii/android/mimi/models/e/a;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->t:Lcom/wumii/android/mimi/models/e/ChatObserver;
 
     return-void
 .end method
@@ -95,7 +95,7 @@
     move-result v1
 
     .line 154
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -134,7 +134,7 @@
     move-result v1
 
     .line 162
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -149,22 +149,22 @@
     goto :goto_0
 .end method
 
-.method static synthetic b(Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;)Lcom/wumii/android/mimi/ui/h;
+.method static synthetic b(Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;)Lcom/wumii/android/mimi/ui/ActivityEventManager;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;)Lcom/wumii/android/mimi/models/f;
+.method static synthetic c(Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;)Lcom/wumii/android/mimi/models/AppFacade;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
     return-object v0
 .end method
@@ -197,9 +197,9 @@
 
     .line 144
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/b/w;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/b/w;->getCount()I
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter;->getCount()I
 
     move-result v0
 
@@ -242,21 +242,21 @@
 
     .prologue
     .line 180
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/b/w;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/f;->v()Lcom/wumii/android/mimi/models/h/a/f;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;
 
     move-result-object v1
 
     const/16 v2, 0x8
 
-    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/h/a/f;->a(I)Ljava/util/List;
+    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(I)Ljava/util/List;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/b/w;->a(Ljava/util/List;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter;->a(Ljava/util/List;)V
 
     .line 181
     return-void
@@ -284,16 +284,16 @@
 
     const/16 v2, 0x8
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/av;->a(II)Z
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(II)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 170
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->u:Lcom/wumii/android/mimi/models/f;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/f;->w()Lcom/wumii/android/mimi/models/h/a/h;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/h/a/ChatStorage;
 
     move-result-object v1
 
@@ -301,7 +301,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/h/a/h;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
+    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/h/a/ChatStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
 
     move-result-object v1
 
@@ -369,9 +369,9 @@
     if-ne p1, v0, :cond_0
 
     .line 112
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/b/w;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/b/w;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter;->notifyDataSetChanged()V
 
     .line 114
     :cond_0
@@ -402,22 +402,22 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->n:Landroid/widget/ListView;
 
     .line 62
-    invoke-static {}, Lcom/wumii/android/mimi/a/at;->a()Lcom/wumii/android/mimi/a/at;
+    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/at;->e()Lcom/wumii/android/mimi/a/o;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->e()Lcom/wumii/android/mimi/a/ChatManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->s:Lcom/wumii/android/mimi/a/o;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->s:Lcom/wumii/android/mimi/a/ChatManager;
 
     .line 65
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/b/w;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/b/w;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/b/w;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter;
 
     .line 66
     const v0, 0x1020004
@@ -448,16 +448,16 @@
     .line 70
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->n:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/b/w;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->o:Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 71
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->n:Landroid/widget/ListView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/de;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$de;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/de;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$de;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnItemLongClickListener(Landroid/widget/AdapterView$OnItemLongClickListener;)V
 
@@ -465,11 +465,11 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->h()V
 
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->s:Lcom/wumii/android/mimi/a/o;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->s:Lcom/wumii/android/mimi/a/ChatManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->t:Lcom/wumii/android/mimi/models/e/a;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->t:Lcom/wumii/android/mimi/models/e/ChatObserver;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/o;->addObserver(Ljava/util/Observer;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/ChatManager;->addObserver(Ljava/util/Observer;)V
 
     .line 106
     return-void
@@ -513,11 +513,11 @@
 
     .prologue
     .line 209
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->s:Lcom/wumii/android/mimi/a/o;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->s:Lcom/wumii/android/mimi/a/ChatManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->t:Lcom/wumii/android/mimi/models/e/a;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;->t:Lcom/wumii/android/mimi/models/e/ChatObserver;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/o;->deleteObserver(Ljava/util/Observer;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/ChatManager;->deleteObserver(Ljava/util/Observer;)V
 
     .line 210
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onDestroy()V
@@ -540,11 +540,11 @@
     if-ne v0, v1, :cond_0
 
     .line 132
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/di;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$di;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/di;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$di;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;Landroid/app/Activity;)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/di;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$di;->j()V
 
     .line 133
     const/4 v0, 0x1

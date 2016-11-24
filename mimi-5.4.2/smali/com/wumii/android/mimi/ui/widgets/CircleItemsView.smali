@@ -132,7 +132,7 @@
     return-void
 .end method
 
-.method public setText(Lcom/wumii/android/mimi/ui/widgets/h;Lcom/wumii/android/mimi/ui/widgets/h;)V
+.method public setText(Lcom/wumii/android/mimi/ui/widgets/CircleItem;Lcom/wumii/android/mimi/ui/widgets/CircleItem;)V
     .locals 3
 
     .prologue
@@ -146,7 +146,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/h;->b()Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;->b()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     move-result-object v1
 
@@ -161,11 +161,11 @@
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/h;->a()Lcom/wumii/android/mimi/ui/widgets/i;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;->a()Lcom/wumii/android/mimi/ui/widgets/CircleItem$i;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/i;->a()I
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/CircleItem$i;->a()I
 
     move-result v1
 
@@ -187,7 +187,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/h;->b()Lcom/wumii/android/mimi/models/entities/circle/Circle;
+    invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;->b()Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     move-result-object v1
 
@@ -202,11 +202,11 @@
 
     move-result-object v0
 
-    invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/h;->a()Lcom/wumii/android/mimi/ui/widgets/i;
+    invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/CircleItem;->a()Lcom/wumii/android/mimi/ui/widgets/CircleItem$i;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/i;->a()I
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/CircleItem$i;->a()I
 
     move-result v1
 

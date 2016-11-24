@@ -74,40 +74,40 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/y;)V
+.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$y;)V
     .locals 0
 
     .prologue
     .line 19
-    invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/y;)V
+    invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$y;)V
 
     return-void
 .end method
 
-.method private a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/y;)V
+.method private a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$y;)V
     .locals 6
 
     .prologue
     .line 78
-    invoke-static {}, Lcom/e/a/b/g;->a()Lcom/e/a/b/g;
+    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
 
     move-result-object v0
 
     const/4 v3, 0x0
 
-    new-instance v4, Lcom/wumii/android/mimi/ui/widgets/secret/ac;
+    new-instance v4, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ac;
 
-    invoke-direct {v4, p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/secret/ac;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/y;)V
+    invoke-direct {v4, p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ac;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$y;)V
 
-    new-instance v5, Lcom/wumii/android/mimi/ui/widgets/secret/ae;
+    new-instance v5, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ae;
 
-    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/ae;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;)V
+    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ae;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;)V
 
     move-object v1, p1
 
     move-object v2, p2
 
-    invoke-virtual/range {v0 .. v5}, Lcom/e/a/b/g;->a(Ljava/lang/String;Lcom/e/a/b/e/a;Lcom/e/a/b/d;Lcom/e/a/b/f/a;Lcom/e/a/b/f/b;)V
+    invoke-virtual/range {v0 .. v5}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Lcom/e/a/b/e/ImageAware;Lcom/e/a/b/DisplayImageOptions;Lcom/e/a/b/f/ImageLoadingListener;Lcom/e/a/b/f/ImageLoadingProgressListener;)V
 
     .line 114
     return-void
@@ -212,7 +212,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 61
     :goto_0
@@ -222,7 +222,7 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->f:Landroid/view/ViewGroup;
 
-    invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 49
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->f:Landroid/view/ViewGroup;
@@ -241,7 +241,7 @@
 
     iget v5, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->r:I
 
-    invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/c/ah;->a(Landroid/view/View;IIIIII)V
+    invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/c/ImageUtils;->a(Landroid/view/View;IIIIII)V
 
     .line 50
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->g:Landroid/widget/ImageView;
@@ -260,7 +260,7 @@
 
     iget v5, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->r:I
 
-    invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/c/ah;->a(Landroid/view/View;IIIIII)V
+    invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/c/ImageUtils;->a(Landroid/view/View;IIIIII)V
 
     .line 53
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
@@ -272,7 +272,7 @@
     if-eqz v0, :cond_1
 
     .line 54
-    invoke-static {}, Lcom/e/a/b/g;->a()Lcom/e/a/b/g;
+    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
 
     move-result-object v0
 
@@ -288,7 +288,7 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->g:Landroid/widget/ImageView;
 
-    invoke-virtual {v0, v1, v2}, Lcom/e/a/b/g;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
+    invoke-virtual {v0, v1, v2}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
 
     .line 57
     :cond_1
@@ -299,7 +299,7 @@
     move-result-object v8
 
     .line 58
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/secret/y;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$y;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->g:Landroid/widget/ImageView;
 
@@ -323,14 +323,14 @@
 
     int-to-double v8, v8
 
-    invoke-direct/range {v0 .. v9}, Lcom/wumii/android/mimi/ui/widgets/secret/y;-><init>(Landroid/widget/ImageView;DDDD)V
+    invoke-direct/range {v0 .. v9}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$y;-><init>(Landroid/widget/ImageView;DDDD)V
 
     .line 60
     invoke-virtual {v10}, Lcom/wumii/android/mimi/models/entities/Image;->getUrl()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1, v0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/y;)V
+    invoke-direct {p0, v1, v0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$y;)V
 
     goto :goto_0
 .end method

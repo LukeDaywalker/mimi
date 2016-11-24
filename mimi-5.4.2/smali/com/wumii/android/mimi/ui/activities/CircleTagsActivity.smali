@@ -9,7 +9,7 @@
 # instance fields
 .field private n:Lcom/wumii/android/mimi/models/entities/CircleTags;
 
-.field private o:Lcom/wumii/android/mimi/ui/activities/l;
+.field private o:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$l;
 
 
 # direct methods
@@ -97,7 +97,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/av;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -139,7 +139,7 @@
 
     const/high16 v2, 0x41400000    # 12.0f
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v2
 
@@ -172,7 +172,7 @@
 
     const/high16 v4, 0x42000000    # 32.0f
 
-    invoke-static {v3, v4}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v3, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v3
 
@@ -193,14 +193,14 @@
     move-result-object v4
 
     .line 67
-    new-instance v5, Lcom/wumii/android/mimi/ui/activities/l;
+    new-instance v5, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$l;
 
-    invoke-direct {v5, p0, v4, v1, v3}, Lcom/wumii/android/mimi/ui/activities/l;-><init>(Landroid/content/Context;Ljava/util/List;II)V
+    invoke-direct {v5, p0, v4, v1, v3}, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$l;-><init>(Landroid/content/Context;Ljava/util/List;II)V
 
-    iput-object v5, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->o:Lcom/wumii/android/mimi/ui/activities/l;
+    iput-object v5, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->o:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$l;
 
     .line 68
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->o:Lcom/wumii/android/mimi/ui/activities/l;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->o:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$l;
 
     invoke-virtual {v0, v1}, Landroid/widget/GridView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -277,9 +277,9 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->o:Lcom/wumii/android/mimi/ui/activities/l;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity;->o:Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$l;
 
-    invoke-virtual {v0, p3}, Lcom/wumii/android/mimi/ui/activities/l;->a(I)Ljava/lang/String;
+    invoke-virtual {v0, p3}, Lcom/wumii/android/mimi/ui/activities/CircleTagsActivity$l;->a(I)Ljava/lang/String;
 
     move-result-object v0
 

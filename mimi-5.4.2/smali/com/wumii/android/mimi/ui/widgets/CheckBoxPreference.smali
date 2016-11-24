@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/d/aa;
+.field private a:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
 
 # direct methods
@@ -46,15 +46,15 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/CheckBoxPreference;->setLayoutResource(I)V
 
     .line 42
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->p()Lcom/wumii/android/mimi/models/d/aa;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CheckBoxPreference;->a:Lcom/wumii/android/mimi/models/d/aa;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CheckBoxPreference;->a:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     .line 43
     return-void
@@ -67,7 +67,7 @@
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CheckBoxPreference;->a:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CheckBoxPreference;->a:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -79,7 +79,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/aa;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -97,7 +97,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CheckBoxPreference;->a:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CheckBoxPreference;->a:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -107,7 +107,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/aa;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 37
     const/4 v0, 0x1

@@ -204,17 +204,17 @@
     if-ne p1, v0, :cond_0
 
     .line 56
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->H()Lcom/wumii/android/mimi/models/h/g;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/h/CommonStorage;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SharedSmallCircleCardView;->f:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-    invoke-virtual {v0, v3, v1}, Lcom/wumii/android/mimi/models/h/g;->a(ZLcom/wumii/android/mimi/models/entities/secret/FeedType;)V
+    invoke-virtual {v0, v3, v1}, Lcom/wumii/android/mimi/models/h/CommonStorage;->a(ZLcom/wumii/android/mimi/models/entities/secret/FeedType;)V
 
     .line 65
     :goto_0
@@ -222,11 +222,11 @@
 
     .line 58
     :cond_0
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->p()Lcom/wumii/android/mimi/models/d/aa;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     move-result-object v0
 
@@ -238,7 +238,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/aa;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -251,7 +251,7 @@
     if-eqz v0, :cond_1
 
     .line 59
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/share/g;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -271,11 +271,11 @@
 
     move-result-object v2
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/h;
+    new-instance v3, Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v3}, Lcom/wumii/android/mimi/ui/h;-><init>()V
+    invoke-direct {v3}, Lcom/wumii/android/mimi/ui/ActivityEventManager;-><init>()V
 
-    invoke-direct {v1, v0, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/share/g;-><init>(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v1, v0, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;-><init>(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 60
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -286,13 +286,13 @@
 
     const-string/jumbo v2, "\u63a8\u8350\u65e0\u79d8\u5230"
 
-    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/share/g;->a(Landroid/app/Activity;Ljava/lang/String;)V
+    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a(Landroid/app/Activity;Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 62
     :cond_1
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/share/d;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -300,13 +300,13 @@
 
     check-cast v0, Landroid/app/Activity;
 
-    invoke-direct {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/share/d;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;-><init>(Landroid/app/Activity;)V
 
     const v0, 0x7f0b0049
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/share/d;->a(ILcom/wumii/android/mimi/models/g/ax;)V
+    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;->a(ILcom/wumii/android/mimi/models/g/WeixinShareHelper$ax;)V
 
     goto :goto_0
 .end method

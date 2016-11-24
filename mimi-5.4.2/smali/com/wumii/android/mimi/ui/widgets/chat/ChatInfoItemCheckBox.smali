@@ -150,9 +150,9 @@
     .line 48
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->e:Landroid/widget/CheckBox;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/chat/r;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$r;
 
-    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/widgets/chat/r;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;Ljava/lang/String;)V
+    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox$r;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;Ljava/lang/String;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

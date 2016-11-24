@@ -10,7 +10,7 @@
 
 .field private p:Landroid/view/MenuItem;
 
-.field private q:Lcom/wumii/android/mimi/b/by;
+.field private q:Lcom/wumii/android/mimi/b/SendFeedbackTask;
 
 
 # direct methods
@@ -121,25 +121,25 @@
     return-void
 .end method
 
-.method private h()Lcom/wumii/android/mimi/b/by;
+.method private h()Lcom/wumii/android/mimi/b/SendFeedbackTask;
     .locals 1
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->q:Lcom/wumii/android/mimi/b/by;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->q:Lcom/wumii/android/mimi/b/SendFeedbackTask;
 
     if-nez v0, :cond_0
 
     .line 67
-    new-instance v0, Lcom/wumii/android/mimi/b/by;
+    new-instance v0, Lcom/wumii/android/mimi/b/SendFeedbackTask;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/b/by;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/b/SendFeedbackTask;-><init>(Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->q:Lcom/wumii/android/mimi/b/by;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->q:Lcom/wumii/android/mimi/b/SendFeedbackTask;
 
     .line 69
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->q:Lcom/wumii/android/mimi/b/by;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->q:Lcom/wumii/android/mimi/b/SendFeedbackTask;
 
     return-object v0
 .end method
@@ -177,9 +177,9 @@
     .line 35
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->n:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/g;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity$g;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/g;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity$g;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -221,7 +221,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/d;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/a/a/c/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -267,7 +267,7 @@
     move-result-object v0
 
     .line 86
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->h()Lcom/wumii/android/mimi/b/by;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->h()Lcom/wumii/android/mimi/b/SendFeedbackTask;
 
     move-result-object v1
 
@@ -309,7 +309,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/b/by;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/b/SendFeedbackTask;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 87
     const/4 v0, 0x1

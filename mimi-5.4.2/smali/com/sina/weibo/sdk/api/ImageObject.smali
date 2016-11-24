@@ -28,9 +28,9 @@
 
     .prologue
     .line 45
-    new-instance v0, Lcom/sina/weibo/sdk/api/b;
+    new-instance v0, Lcom/sina/weibo/sdk/api/ImageObject$b;
 
-    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/b;-><init>()V
+    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/ImageObject$b;-><init>()V
 
     sput-object v0, Lcom/sina/weibo/sdk/api/ImageObject;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -96,7 +96,7 @@
 
     const-string/jumbo v2, "imageData and imagePath are null"
 
-    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/a;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 121
     :goto_0
@@ -121,7 +121,7 @@
 
     const-string/jumbo v2, "imageData is too large"
 
-    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/a;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -146,7 +146,7 @@
 
     const-string/jumbo v2, "imagePath is too length"
 
-    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/a;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -199,7 +199,7 @@
     const-string/jumbo v2, "checkArgs fail, image content is too large or not exists"
 
     .line 111
-    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/a;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -216,7 +216,7 @@
     const-string/jumbo v2, "checkArgs fail, image content is too large or not exists"
 
     .line 116
-    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/a;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 

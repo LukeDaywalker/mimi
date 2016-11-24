@@ -981,7 +981,7 @@
 
     .line 214
     :cond_2
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/database/Cursor;)V
+    invoke-static {v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/database/Cursor;)V
 
     .line 215
     return-object v0
@@ -1113,7 +1113,7 @@
     .line 100
     :goto_1
     :try_start_2
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/database/Cursor;)V
+    invoke-static {v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/database/Cursor;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -1150,7 +1150,7 @@
     move-exception v0
 
     :try_start_4
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/database/Cursor;)V
+    invoke-static {v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/database/Cursor;)V
 
     throw v0
 
@@ -1203,7 +1203,7 @@
 
     .line 122
     :goto_0
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/database/Cursor;)V
+    invoke-static {v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/database/Cursor;)V
 
     .line 124
     :goto_1
@@ -1243,14 +1243,14 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 122
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/database/Cursor;)V
+    invoke-static {v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/database/Cursor;)V
 
     goto :goto_1
 
     :catchall_0
     move-exception v0
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/database/Cursor;)V
+    invoke-static {v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/database/Cursor;)V
 
     throw v0
 .end method

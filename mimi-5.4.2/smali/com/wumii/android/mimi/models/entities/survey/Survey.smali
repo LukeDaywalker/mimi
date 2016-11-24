@@ -66,11 +66,11 @@
 
     .line 91
     :cond_0
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->E()Lcom/wumii/android/mimi/models/h/l;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->E()Lcom/wumii/android/mimi/models/h/SurveyStorage;
 
     move-result-object v0
 
@@ -78,7 +78,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/l;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/SurveyStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     move-result-object v0
 

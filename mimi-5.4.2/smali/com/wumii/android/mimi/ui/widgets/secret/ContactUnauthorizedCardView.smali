@@ -92,9 +92,9 @@
     .line 40
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;->d:Landroid/view/View;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/e;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView$e;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/e;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView$e;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/ContactUnauthorizedCardView;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -150,7 +150,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 62
     :goto_0
@@ -169,7 +169,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 .end method

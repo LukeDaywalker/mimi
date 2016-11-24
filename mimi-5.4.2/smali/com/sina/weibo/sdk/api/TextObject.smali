@@ -26,9 +26,9 @@
 
     .prologue
     .line 42
-    new-instance v0, Lcom/sina/weibo/sdk/api/d;
+    new-instance v0, Lcom/sina/weibo/sdk/api/TextObject$d;
 
-    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/d;-><init>()V
+    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/TextObject$d;-><init>()V
 
     sput-object v0, Lcom/sina/weibo/sdk/api/TextObject;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -100,7 +100,7 @@
 
     const-string/jumbo v1, "checkArgs fail, text is invalid"
 
-    invoke-static {v0, v1}, Lcom/sina/weibo/sdk/b/a;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 65
     const/4 v0, 0x0

@@ -183,7 +183,7 @@
 
     .line 114
     :cond_1
-    invoke-static {v2, v1}, Lorg/a/a/c/d;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v2, v1}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v5
 
@@ -271,7 +271,7 @@
     .line 147
     iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/ContactSectionMap;->extraContactSections:Ljava/util/List;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/av;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -323,7 +323,7 @@
     .line 98
     iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/ContactSectionMap;->recentContacts:Ljava/util/List;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/av;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -353,7 +353,7 @@
     .line 175
     iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/ContactSectionMap;->extraContactSections:Ljava/util/List;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/av;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -384,7 +384,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Lorg/a/a/c/d;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -542,7 +542,7 @@
 
     const/4 v1, 0x7
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Ljava/util/List;I)Ljava/util/List;
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/List;I)Ljava/util/List;
 
     move-result-object v0
 
@@ -680,7 +680,7 @@
     .line 133
     iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/ContactSectionMap;->contacts:Ljava/util/List;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/av;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 

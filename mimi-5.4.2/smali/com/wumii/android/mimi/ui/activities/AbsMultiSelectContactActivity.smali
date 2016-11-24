@@ -28,7 +28,7 @@
 
 .field protected p:Landroid/widget/Button;
 
-.field protected q:Lcom/wumii/android/mimi/ui/apdaters/d/c;
+.field protected q:Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;
 
 
 # direct methods
@@ -69,7 +69,7 @@
 
     .line 125
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;
 
     if-nez v0, :cond_2
 
@@ -90,9 +90,9 @@
 
     .line 130
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/d/c;->e()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;->e()V
 
     .line 132
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->r:Landroid/widget/ListView;
@@ -108,18 +108,18 @@
     if-nez v0, :cond_3
 
     .line 133
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/c;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;->notifyDataSetChanged()V
 
     .line 136
     :cond_3
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->t()V
 
     .line 137
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/d/c;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;->notifyDataSetChanged()V
 
     goto :goto_1
 .end method
@@ -142,9 +142,9 @@
     if-nez v0, :cond_0
 
     .line 142
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/c;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;->notifyDataSetChanged()V
 
     .line 145
     :cond_0
@@ -153,15 +153,15 @@
     .line 146
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->n:Landroid/widget/CheckBox;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/d/c;->f()I
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;->f()I
 
     move-result v0
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/c;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;
 
-    invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/apdaters/d/c;->a()Ljava/util/List;
+    invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;->a()Ljava/util/List;
 
     move-result-object v2
 
@@ -177,9 +177,9 @@
     invoke-virtual {v1, v0}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     .line 148
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/d/c;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;->notifyDataSetChanged()V
 
     .line 149
     return-void
@@ -286,7 +286,7 @@
     move v0, v1
 
     :goto_0
-    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 113
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->o:Landroid/widget/TextView;
@@ -298,7 +298,7 @@
     if-eqz v3, :cond_1
 
     :goto_1
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 114
     return-void
@@ -331,7 +331,7 @@
 
     new-array v4, v0, [Ljava/lang/Object;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;
 
     if-nez v0, :cond_0
 
@@ -355,9 +355,9 @@
 
     .line 117
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/d/c;->f()I
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;->f()I
 
     move-result v0
 
@@ -366,26 +366,26 @@
 
 
 # virtual methods
-.method public a(Lcom/wumii/android/mimi/models/entities/ContactSectionMap;)Lcom/wumii/android/mimi/ui/apdaters/d/c;
+.method public a(Lcom/wumii/android/mimi/models/entities/ContactSectionMap;)Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;
     .locals 2
 
     .prologue
     .line 85
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/d/c;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->E:Ljava/util/Set;
 
-    invoke-direct {v0, p0, p1, v1}, Lcom/wumii/android/mimi/ui/apdaters/d/c;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/ContactSectionMap;Ljava/util/Set;)V
+    invoke-direct {v0, p0, p1, v1}, Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/ContactSectionMap;Ljava/util/Set;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/c;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;
 
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/d/c;->a(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;->a(Landroid/view/View$OnClickListener;)V
 
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;
 
     return-object v0
 .end method
@@ -422,9 +422,9 @@
     if-eqz v0, :cond_0
 
     .line 94
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/d/c;->e()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;->e()V
 
     .line 96
     :cond_0
@@ -440,12 +440,12 @@
     goto :goto_0
 .end method
 
-.method public synthetic c(Lcom/wumii/android/mimi/models/entities/ContactSectionMap;)Lcom/wumii/android/mimi/ui/apdaters/d;
+.method public synthetic c(Lcom/wumii/android/mimi/models/entities/ContactSectionMap;)Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;
     .locals 1
 
     .prologue
     .line 23
-    invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->a(Lcom/wumii/android/mimi/models/entities/ContactSectionMap;)Lcom/wumii/android/mimi/ui/apdaters/d/c;
+    invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->a(Lcom/wumii/android/mimi/models/entities/ContactSectionMap;)Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;
 
     move-result-object v0
 
@@ -475,30 +475,30 @@
     return v0
 .end method
 
-.method protected i()Lcom/wumii/android/mimi/ui/apdaters/d/e;
+.method protected i()Lcom/wumii/android/mimi/ui/apdaters/d/SearchContactAdapter;
     .locals 2
 
     .prologue
     .line 78
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/d/e;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/d/SearchContactAdapter;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->E:Ljava/util/Set;
 
-    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/apdaters/d/e;-><init>(Landroid/content/Context;Ljava/util/Set;)V
+    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/apdaters/d/SearchContactAdapter;-><init>(Landroid/content/Context;Ljava/util/Set;)V
 
     .line 79
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/d/e;->a(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/d/SearchContactAdapter;->a(Landroid/view/View$OnClickListener;)V
 
     .line 80
     return-object v0
 .end method
 
-.method protected synthetic j()Lcom/wumii/android/mimi/ui/apdaters/c;
+.method protected synthetic j()Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;
     .locals 1
 
     .prologue
     .line 23
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->i()Lcom/wumii/android/mimi/ui/apdaters/d/e;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->i()Lcom/wumii/android/mimi/ui/apdaters/d/SearchContactAdapter;
 
     move-result-object v0
 
@@ -534,7 +534,7 @@
     if-ne p1, v0, :cond_3
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;
 
     if-eqz v0, :cond_1
 
@@ -563,11 +563,11 @@
     .line 49
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/AbsMultiSelectContactActivity;->n:Landroid/widget/CheckBox;
 
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/a;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/c/a;
+    invoke-static {p0}, Lcom/wumii/android/mimi/c/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/c/AppConfigManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/c/a;->a()Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/c/AppConfigManager;->a()Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     move-result-object v1
 

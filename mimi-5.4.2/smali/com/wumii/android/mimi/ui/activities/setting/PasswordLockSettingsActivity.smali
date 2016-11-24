@@ -112,9 +112,9 @@
 
     .prologue
     .line 67
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/setting/r;->c:Lcom/wumii/android/mimi/ui/activities/setting/r;
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$r;->c:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$r;
 
-    invoke-static {p0, v0}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->a(Landroid/content/Context;Lcom/wumii/android/mimi/ui/activities/setting/r;)V
+    invoke-static {p0, v0}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->a(Landroid/content/Context;Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$r;)V
 
     .line 68
     return-void
@@ -141,20 +141,20 @@
     :goto_0
     if-eqz v1, :cond_1
 
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/setting/r;->b:Lcom/wumii/android/mimi/ui/activities/setting/r;
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$r;->b:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$r;
 
     :goto_1
-    invoke-static {p0, v0}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->a(Landroid/content/Context;Lcom/wumii/android/mimi/ui/activities/setting/r;)V
+    invoke-static {p0, v0}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->a(Landroid/content/Context;Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$r;)V
 
     .line 63
-    sget-object v2, Lcom/wumii/android/mimi/c/af;->i:Lcom/wumii/android/mimi/c/af;
+    sget-object v2, Lcom/wumii/android/mimi/c/EventUtils$af;->i:Lcom/wumii/android/mimi/c/EventUtils$af;
 
     if-eqz v1, :cond_2
 
     const-string/jumbo v0, "0"
 
     :goto_2
-    invoke-static {v2, v0}, Lcom/wumii/android/mimi/c/ae;->b(Lcom/wumii/android/mimi/c/af;Ljava/lang/String;)V
+    invoke-static {v2, v0}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
 
     .line 64
     return-void
@@ -169,7 +169,7 @@
 
     .line 60
     :cond_1
-    sget-object v0, Lcom/wumii/android/mimi/ui/activities/setting/r;->a:Lcom/wumii/android/mimi/ui/activities/setting/r;
+    sget-object v0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$r;->a:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$r;
 
     goto :goto_1
 
@@ -211,7 +211,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onResume()V
 
     .line 51
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     const-class v3, Ljava/lang/String;
 
@@ -219,14 +219,14 @@
 
     const/4 v5, 0x0
 
-    invoke-virtual {v0, v3, v4, v5}, Lcom/wumii/android/mimi/models/d/aa;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v3, v4, v5}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
     .line 52
-    invoke-static {v0}, Lorg/a/a/c/d;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/a/a/c/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -243,7 +243,7 @@
     move v0, v1
 
     :goto_0
-    invoke-static {v4, v0}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v4, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 55
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockSettingsActivity;->r:Landroid/widget/TextView;
@@ -251,7 +251,7 @@
     if-eqz v3, :cond_1
 
     :goto_1
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 56
     return-void

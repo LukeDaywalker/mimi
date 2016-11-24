@@ -211,15 +211,15 @@
 
     .line 181
     :cond_0
-    invoke-static {}, Lcom/wumii/android/mimi/a/at;->a()Lcom/wumii/android/mimi/a/at;
+    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/at;->e()Lcom/wumii/android/mimi/a/o;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->e()Lcom/wumii/android/mimi/a/ChatManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/o;->i()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ChatManager;->i()V
 
     .line 182
     return-void
@@ -609,27 +609,27 @@
     const/4 v2, 0x0
 
     .line 220
-    invoke-static {v2}, Lcom/g/a/g;->a(Z)V
+    invoke-static {v2}, Lcom/g/a/MobclickAgent;->a(Z)V
 
     .line 221
     const/4 v0, 0x1
 
-    new-array v0, v0, [Lc/a/a/a/q;
+    new-array v0, v0, [Lc/a/a/a/Kit;
 
-    new-instance v1, Lcom/a/a/a;
+    new-instance v1, Lcom/a/a/Crashlytics;
 
-    invoke-direct {v1}, Lcom/a/a/a;-><init>()V
+    invoke-direct {v1}, Lcom/a/a/Crashlytics;-><init>()V
 
     aput-object v1, v0, v2
 
-    invoke-static {p0, v0}, Lc/a/a/a/f;->a(Landroid/content/Context;[Lc/a/a/a/q;)Lc/a/a/a/f;
+    invoke-static {p0, v0}, Lc/a/a/a/Fabric;->a(Landroid/content/Context;[Lc/a/a/a/Kit;)Lc/a/a/a/Fabric;
 
     .line 223
     invoke-static {}, Lcom/wumii/android/mimi/app/MainApplication;->e()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/d;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/a/a/c/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -642,7 +642,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/a/a/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/a/a/Crashlytics;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 227
     :cond_0
@@ -651,14 +651,14 @@
     move-result-object v0
 
     .line 228
-    invoke-static {v0}, Lorg/a/a/c/d;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/a/a/c/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
     .line 229
-    invoke-static {v0}, Lcom/a/a/a;->a(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/a/a/Crashlytics;->a(Ljava/lang/String;)V
 
     .line 231
     :cond_1
@@ -670,31 +670,31 @@
 
     .prologue
     .line 237
-    invoke-static {p0}, Lcom/b/a/c;->a(Landroid/content/Context;)Lcom/b/a/j;
+    invoke-static {p0}, Lcom/b/a/Stetho;->a(Landroid/content/Context;)Lcom/b/a/Stetho$j;
 
     move-result-object v0
 
-    invoke-static {p0}, Lcom/b/a/c;->b(Landroid/content/Context;)Lcom/b/a/a;
+    invoke-static {p0}, Lcom/b/a/Stetho;->b(Landroid/content/Context;)Lcom/b/a/DumperPluginsProvider;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/b/a/j;->a(Lcom/b/a/a;)Lcom/b/a/j;
+    invoke-virtual {v0, v1}, Lcom/b/a/Stetho$j;->a(Lcom/b/a/DumperPluginsProvider;)Lcom/b/a/Stetho$j;
 
     move-result-object v0
 
-    invoke-static {p0}, Lcom/b/a/c;->c(Landroid/content/Context;)Lcom/b/a/b;
+    invoke-static {p0}, Lcom/b/a/Stetho;->c(Landroid/content/Context;)Lcom/b/a/InspectorModulesProvider;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/b/a/j;->a(Lcom/b/a/b;)Lcom/b/a/j;
+    invoke-virtual {v0, v1}, Lcom/b/a/Stetho$j;->a(Lcom/b/a/InspectorModulesProvider;)Lcom/b/a/Stetho$j;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/b/a/j;->a()Lcom/b/a/h;
+    invoke-virtual {v0}, Lcom/b/a/Stetho$j;->a()Lcom/b/a/Stetho$h;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/b/a/c;->a(Lcom/b/a/h;)V
+    invoke-static {v0}, Lcom/b/a/Stetho;->a(Lcom/b/a/Stetho$h;)V
 
     .line 242
     return-void
@@ -705,11 +705,11 @@
 
     .prologue
     .line 245
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->h()Lcom/wumii/android/mimi/models/service/UserService;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->h()Lcom/wumii/android/mimi/models/service/UserService;
 
     move-result-object v0
 
@@ -724,9 +724,9 @@
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    new-instance v1, Lcom/wumii/android/mimi/app/b;
+    new-instance v1, Lcom/wumii/android/mimi/app/MainApplication$b;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/app/b;-><init>(Lcom/wumii/android/mimi/app/MainApplication;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/app/MainApplication$b;-><init>(Lcom/wumii/android/mimi/app/MainApplication;)V
 
     const-wide/16 v2, 0x7d0
 
@@ -747,7 +747,7 @@
     invoke-super {p0, p1}, Landroid/app/Application;->attachBaseContext(Landroid/content/Context;)V
 
     .line 136
-    invoke-static {p0}, Landroid/support/multidex/a;->a(Landroid/content/Context;)V
+    invoke-static {p0}, Landroid/support/multidex/MultiDex;->a(Landroid/content/Context;)V
 
     .line 137
     return-void
@@ -778,7 +778,7 @@
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/content/Context;I)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/content/Context;I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -802,79 +802,71 @@
 
     .line 76
     :cond_1
-    new-instance v0, Lcom/e/a/b/l;
+    new-instance v0, Lcom/e/a/b/ImageLoaderConfiguration$l;
 
-    invoke-direct {v0, p0}, Lcom/e/a/b/l;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/e/a/b/ImageLoaderConfiguration$l;-><init>(Landroid/content/Context;)V
 
     const/4 v1, 0x5
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/l;->a(I)Lcom/e/a/b/l;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/ImageLoaderConfiguration$l;->a(I)Lcom/e/a/b/ImageLoaderConfiguration$l;
 
     move-result-object v0
 
-    new-instance v1, Lcom/e/a/a/b/a/c;
+    new-instance v1, Lcom/e/a/a/b/a/UsingFreqLimitedMemoryCache;
 
     const/high16 v2, 0x600000
 
-    invoke-direct {v1, v2}, Lcom/e/a/a/b/a/c;-><init>(I)V
+    invoke-direct {v1, v2}, Lcom/e/a/a/b/a/UsingFreqLimitedMemoryCache;-><init>(I)V
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/l;->a(Lcom/e/a/a/b/c;)Lcom/e/a/b/l;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/ImageLoaderConfiguration$l;->a(Lcom/e/a/a/b/MemoryCache;)Lcom/e/a/b/ImageLoaderConfiguration$l;
 
     move-result-object v0
 
     const/high16 v1, 0x9600000
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/l;->b(I)Lcom/e/a/b/l;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/ImageLoaderConfiguration$l;->b(I)Lcom/e/a/b/ImageLoaderConfiguration$l;
 
     move-result-object v0
 
-    new-instance v1, Lcom/e/a/b/f;
+    new-instance v1, Lcom/e/a/b/DisplayImageOptions$f;
 
-    invoke-direct {v1}, Lcom/e/a/b/f;-><init>()V
+    invoke-direct {v1}, Lcom/e/a/b/DisplayImageOptions$f;-><init>()V
 
-    invoke-virtual {v1, v4}, Lcom/e/a/b/f;->b(Z)Lcom/e/a/b/f;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v4}, Lcom/e/a/b/f;->c(Z)Lcom/e/a/b/f;
+    invoke-virtual {v1, v4}, Lcom/e/a/b/DisplayImageOptions$f;->b(Z)Lcom/e/a/b/DisplayImageOptions$f;
 
     move-result-object v1
 
-    invoke-virtual {v1, v4}, Lcom/e/a/b/f;->d(Z)Lcom/e/a/b/f;
+    invoke-virtual {v1, v4}, Lcom/e/a/b/DisplayImageOptions$f;->c(Z)Lcom/e/a/b/DisplayImageOptions$f;
 
     move-result-object v1
 
-    invoke-virtual {v1, v4}, Lcom/e/a/b/f;->a(Z)Lcom/e/a/b/f;
+    invoke-virtual {v1, v4}, Lcom/e/a/b/DisplayImageOptions$f;->d(Z)Lcom/e/a/b/DisplayImageOptions$f;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v4}, Lcom/e/a/b/DisplayImageOptions$f;->a(Z)Lcom/e/a/b/DisplayImageOptions$f;
 
     move-result-object v1
 
     sget-object v2, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
-    invoke-virtual {v1, v2}, Lcom/e/a/b/f;->a(Landroid/graphics/Bitmap$Config;)Lcom/e/a/b/f;
+    invoke-virtual {v1, v2}, Lcom/e/a/b/DisplayImageOptions$f;->a(Landroid/graphics/Bitmap$Config;)Lcom/e/a/b/DisplayImageOptions$f;
 
     move-result-object v1
 
-    new-instance v2, Lcom/e/a/b/c/b;
+    new-instance v2, Lcom/e/a/b/c/FadeInBitmapDisplayer;
 
     const/16 v3, 0x15e
 
-    invoke-direct {v2, v3, v4, v4, v6}, Lcom/e/a/b/c/b;-><init>(IZZZ)V
+    invoke-direct {v2, v3, v4, v4, v6}, Lcom/e/a/b/c/FadeInBitmapDisplayer;-><init>(IZZZ)V
 
-    invoke-virtual {v1, v2}, Lcom/e/a/b/f;->a(Lcom/e/a/b/c/a;)Lcom/e/a/b/f;
-
-    move-result-object v1
-
-    sget-object v2, Lcom/e/a/b/a/e;->f:Lcom/e/a/b/a/e;
-
-    invoke-virtual {v1, v2}, Lcom/e/a/b/f;->a(Lcom/e/a/b/a/e;)Lcom/e/a/b/f;
+    invoke-virtual {v1, v2}, Lcom/e/a/b/DisplayImageOptions$f;->a(Lcom/e/a/b/c/BitmapDisplayer;)Lcom/e/a/b/DisplayImageOptions$f;
 
     move-result-object v1
 
-    new-instance v2, Landroid/graphics/drawable/ColorDrawable;
+    sget-object v2, Lcom/e/a/b/a/ImageScaleType;->f:Lcom/e/a/b/a/ImageScaleType;
 
-    invoke-direct {v2, v5}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
-
-    invoke-virtual {v1, v2}, Lcom/e/a/b/f;->a(Landroid/graphics/drawable/Drawable;)Lcom/e/a/b/f;
+    invoke-virtual {v1, v2}, Lcom/e/a/b/DisplayImageOptions$f;->a(Lcom/e/a/b/a/ImageScaleType;)Lcom/e/a/b/DisplayImageOptions$f;
 
     move-result-object v1
 
@@ -882,29 +874,37 @@
 
     invoke-direct {v2, v5}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
 
-    invoke-virtual {v1, v2}, Lcom/e/a/b/f;->b(Landroid/graphics/drawable/Drawable;)Lcom/e/a/b/f;
+    invoke-virtual {v1, v2}, Lcom/e/a/b/DisplayImageOptions$f;->a(Landroid/graphics/drawable/Drawable;)Lcom/e/a/b/DisplayImageOptions$f;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/e/a/b/f;->a()Lcom/e/a/b/d;
+    new-instance v2, Landroid/graphics/drawable/ColorDrawable;
+
+    invoke-direct {v2, v5}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
+
+    invoke-virtual {v1, v2}, Lcom/e/a/b/DisplayImageOptions$f;->b(Landroid/graphics/drawable/Drawable;)Lcom/e/a/b/DisplayImageOptions$f;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/l;->a(Lcom/e/a/b/d;)Lcom/e/a/b/l;
+    invoke-virtual {v1}, Lcom/e/a/b/DisplayImageOptions$f;->a()Lcom/e/a/b/DisplayImageOptions;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/e/a/b/ImageLoaderConfiguration$l;->a(Lcom/e/a/b/DisplayImageOptions;)Lcom/e/a/b/ImageLoaderConfiguration$l;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/e/a/b/l;->a()Lcom/e/a/b/j;
+    invoke-virtual {v0}, Lcom/e/a/b/ImageLoaderConfiguration$l;->a()Lcom/e/a/b/ImageLoaderConfiguration;
 
     move-result-object v0
 
     .line 93
-    invoke-static {}, Lcom/e/a/b/g;->a()Lcom/e/a/b/g;
+    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
 
     move-result-object v1
 
     .line 94
-    invoke-virtual {v1, v0}, Lcom/e/a/b/g;->a(Lcom/e/a/b/j;)V
+    invoke-virtual {v1, v0}, Lcom/e/a/b/ImageLoader;->a(Lcom/e/a/b/ImageLoaderConfiguration;)V
 
     .line 96
     invoke-direct {p0}, Lcom/wumii/android/mimi/app/MainApplication;->f()V
@@ -931,73 +931,73 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/app/MainApplication;->h()V
 
     .line 105
-    invoke-static {}, Lcom/wumii/android/mimi/network/server/c;->a()Lcom/wumii/android/mimi/network/server/c;
+    invoke-static {}, Lcom/wumii/android/mimi/network/server/ServersManager;->a()Lcom/wumii/android/mimi/network/server/ServersManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/network/server/c;->b()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/network/server/ServersManager;->b()V
 
     .line 107
-    new-instance v0, Lcom/wumii/android/mimi/app/a;
+    new-instance v0, Lcom/wumii/android/mimi/app/MainApplication$a;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/app/a;-><init>(Lcom/wumii/android/mimi/app/MainApplication;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/app/MainApplication$a;-><init>(Lcom/wumii/android/mimi/app/MainApplication;)V
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/ar;->b(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/ThreadUtils;->b(Ljava/lang/Runnable;)V
 
     .line 121
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->p()Lcom/wumii/android/mimi/models/d/aa;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     .line 122
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->I()Lcom/wumii/android/mimi/models/h/k;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/h/GlobalStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/k;->a()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/GlobalStorage;->a()Z
 
     move-result v0
 
     if-nez v0, :cond_3
 
     .line 123
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->I()Lcom/wumii/android/mimi/models/h/k;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/h/GlobalStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/k;->b()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/GlobalStorage;->b()V
 
     .line 124
-    invoke-static {}, Lcom/wumii/android/mimi/c/ao;->b()Z
+    invoke-static {}, Lcom/wumii/android/mimi/c/ShortcutUtils;->b()Z
 
     move-result v0
 
     if-nez v0, :cond_3
 
     .line 125
-    invoke-static {}, Lcom/wumii/android/mimi/c/ao;->a()V
+    invoke-static {}, Lcom/wumii/android/mimi/c/ShortcutUtils;->a()V
 
     .line 129
     :cond_3
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->H()Lcom/wumii/android/mimi/models/h/g;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/h/CommonStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0, v6}, Lcom/wumii/android/mimi/models/h/g;->c(Z)V
+    invoke-virtual {v0, v6}, Lcom/wumii/android/mimi/models/h/CommonStorage;->c(Z)V
 
     .line 130
     invoke-static {p0}, Lcom/baidu/mapapi/SDKInitializer;->initialize(Landroid/content/Context;)V
@@ -1013,11 +1013,11 @@
     invoke-super {p0}, Landroid/app/Application;->onLowMemory()V
 
     .line 143
-    invoke-static {}, Lcom/e/a/b/g;->a()Lcom/e/a/b/g;
+    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/e/a/b/g;->b()V
+    invoke-virtual {v0}, Lcom/e/a/b/ImageLoader;->b()V
 
     .line 144
     return-void

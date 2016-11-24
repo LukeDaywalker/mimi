@@ -62,16 +62,16 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 102
-    invoke-static {p1}, Lcom/wumii/android/mimi/c/av;->a(Ljava/util/Collection;)Z
+    invoke-static {p1}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 103
-    new-instance v2, Lcom/wumii/android/mimi/models/f/a/i;
+    new-instance v2, Lcom/wumii/android/mimi/models/f/a/MobileChatMessageParserFactory;
 
-    invoke-direct {v2}, Lcom/wumii/android/mimi/models/f/a/i;-><init>()V
+    invoke-direct {v2}, Lcom/wumii/android/mimi/models/f/a/MobileChatMessageParserFactory;-><init>()V
 
     .line 104
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -154,7 +154,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v2, v5}, Lcom/wumii/android/mimi/models/f/a/i;->a(Lcom/wumii/mimi/model/domain/mobile/MobileChatMessage;)Lcom/wumii/android/mimi/models/f/a/h;
+    invoke-virtual {v2, v5}, Lcom/wumii/android/mimi/models/f/a/MobileChatMessageParserFactory;->a(Lcom/wumii/mimi/model/domain/mobile/MobileChatMessage;)Lcom/wumii/android/mimi/models/f/a/MobileChatMessageParserBase;
 
     move-result-object v5
 
@@ -166,7 +166,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v5, v6, v0}, Lcom/wumii/android/mimi/models/f/a/h;->a(Lcom/wumii/mimi/model/domain/mobile/MobileChatMessage;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+    invoke-virtual {v5, v6, v0}, Lcom/wumii/android/mimi/models/f/a/MobileChatMessageParserBase;->a(Lcom/wumii/mimi/model/domain/mobile/MobileChatMessage;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     move-result-object v0
 
@@ -208,7 +208,7 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/models/entities/chat/ChatMessageReport;->reportTime:Ljava/util/Date;
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Ljava/lang/String;Ljava/util/Date;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v0
 

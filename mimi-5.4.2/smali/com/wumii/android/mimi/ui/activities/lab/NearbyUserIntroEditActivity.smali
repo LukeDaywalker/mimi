@@ -8,9 +8,9 @@
 
 .field private D:Landroid/view/View$OnClickListener;
 
-.field private E:Lcom/wumii/android/mimi/b/a;
+.field private E:Lcom/wumii/android/mimi/b/AppealLegalityTask;
 
-.field private F:Lcom/wumii/android/mimi/b/c;
+.field private F:Lcom/wumii/android/mimi/b/AppealLegalityTask$c;
 
 .field private q:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
 
@@ -110,7 +110,7 @@
     invoke-virtual {v0, v1, v3, v3}, Lcom/wumii/android/mimi/ui/widgets/TitleItemView;->setValue(Ljava/lang/CharSequence;ZZ)V
 
     .line 111
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     const-class v1, Ljava/lang/Boolean;
 
@@ -120,7 +120,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/aa;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -155,25 +155,25 @@
     goto :goto_0
 .end method
 
-.method private t()Lcom/wumii/android/mimi/b/c;
+.method private t()Lcom/wumii/android/mimi/b/AppealLegalityTask$c;
     .locals 1
 
     .prologue
     .line 139
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->F:Lcom/wumii/android/mimi/b/c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->F:Lcom/wumii/android/mimi/b/AppealLegalityTask$c;
 
     if-nez v0, :cond_0
 
     .line 140
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/lab/p;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$p;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/p;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$p;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->F:Lcom/wumii/android/mimi/b/c;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->F:Lcom/wumii/android/mimi/b/AppealLegalityTask$c;
 
     .line 156
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->F:Lcom/wumii/android/mimi/b/c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->F:Lcom/wumii/android/mimi/b/AppealLegalityTask$c;
 
     return-object v0
 .end method
@@ -189,7 +189,7 @@
     const/4 v3, 0x0
 
     .line 54
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     const-class v1, Lcom/wumii/android/mimi/models/entities/NearbyUser;
 
@@ -197,7 +197,7 @@
 
     const/4 v4, 0x0
 
-    invoke-virtual {v0, v1, v2, v4}, Lcom/wumii/android/mimi/models/d/aa;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v4}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -312,9 +312,9 @@
     iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->o:Landroid/widget/TextView;
 
     .line 77
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/lab/n;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$n;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/lab/n;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$n;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
@@ -323,7 +323,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lorg/a/a/c/a;->a(Ljava/lang/Boolean;)Z
+    invoke-static {v2}, Lorg/a/a/c/BooleanUtils;->a(Ljava/lang/Boolean;)Z
 
     move-result v2
 
@@ -335,7 +335,7 @@
     .line 89
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->s:Landroid/view/View;
 
-    invoke-static {v1, v3}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v1, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 94
     :goto_1
@@ -343,7 +343,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/a/a/c/d;->a(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -367,7 +367,7 @@
     .line 105
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->r:Landroid/widget/EditText;
 
-    invoke-static {v0}, Lorg/a/a/c/d;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -389,7 +389,7 @@
 
     const/16 v2, 0x8
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_1
 
@@ -501,9 +501,9 @@
     if-nez v0, :cond_0
 
     .line 121
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/lab/o;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$o;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/o;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$o;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->D:Landroid/view/View$OnClickListener;
 
@@ -514,33 +514,33 @@
     return-object v0
 .end method
 
-.method public m()Lcom/wumii/android/mimi/b/a;
+.method public m()Lcom/wumii/android/mimi/b/AppealLegalityTask;
     .locals 4
 
     .prologue
     .line 132
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->E:Lcom/wumii/android/mimi/b/a;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->E:Lcom/wumii/android/mimi/b/AppealLegalityTask;
 
     if-nez v0, :cond_0
 
     .line 133
-    new-instance v0, Lcom/wumii/android/mimi/b/a;
+    new-instance v0, Lcom/wumii/android/mimi/b/AppealLegalityTask;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->y:Landroid/util/DisplayMetrics;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->t()Lcom/wumii/android/mimi/b/c;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->t()Lcom/wumii/android/mimi/b/AppealLegalityTask$c;
 
     move-result-object v3
 
-    invoke-direct {v0, p0, v1, v2, v3}, Lcom/wumii/android/mimi/b/a;-><init>(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;Lcom/wumii/android/mimi/b/c;)V
+    invoke-direct {v0, p0, v1, v2, v3}, Lcom/wumii/android/mimi/b/AppealLegalityTask;-><init>(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/b/AppealLegalityTask$c;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->E:Lcom/wumii/android/mimi/b/a;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->E:Lcom/wumii/android/mimi/b/AppealLegalityTask;
 
     .line 135
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->E:Lcom/wumii/android/mimi/b/a;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->E:Lcom/wumii/android/mimi/b/AppealLegalityTask;
 
     return-object v0
 .end method

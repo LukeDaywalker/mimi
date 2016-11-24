@@ -396,15 +396,15 @@
 
     .prologue
     .line 53
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->G()Lcom/wumii/android/mimi/models/h/c/f;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/h/c/FeedStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/h/c/f;->b(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)Ljava/util/List;
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/h/c/FeedStorage;->b(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)Ljava/util/List;
 
     move-result-object v0
 
@@ -487,7 +487,7 @@
 
     .line 67
     :cond_1
-    invoke-static {v2}, Lcom/wumii/android/mimi/c/av;->a(Landroid/database/Cursor;)V
+    invoke-static {v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/database/Cursor;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -595,7 +595,7 @@
 
     .line 87
     :cond_1
-    invoke-static {v2}, Lcom/wumii/android/mimi/c/av;->a(Landroid/database/Cursor;)V
+    invoke-static {v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/database/Cursor;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

@@ -65,9 +65,9 @@
     .line 98
     iget-object v0, p0, Landroid/support/v4/app/FragmentActivity$1;->a:Landroid/support/v4/app/FragmentActivity;
 
-    iget-object v0, v0, Landroid/support/v4/app/FragmentActivity;->b:Landroid/support/v4/app/FragmentManagerImpl;
+    iget-object v0, v0, Landroid/support/v4/app/FragmentActivity;->b:Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;
 
-    invoke-virtual {v0}, Landroid/support/v4/app/FragmentManagerImpl;->g()Z
+    invoke-virtual {v0}, Landroid/support/v4/app/FragmentManager$FragmentManagerImpl;->g()Z
 
     goto :goto_0
 

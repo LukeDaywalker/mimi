@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private n:Lcom/wumii/android/mimi/ui/widgets/a/a;
+.field private n:Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
 
 .field private o:Landroid/widget/TextView;
 
@@ -15,7 +15,7 @@
 
 .field private q:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-.field private r:Lcom/wumii/android/mimi/b/aa;
+.field private r:Lcom/wumii/android/mimi/b/CircleAdviceTask;
 
 
 # direct methods
@@ -54,25 +54,25 @@
 
 
 # virtual methods
-.method public a(Lcom/wumii/android/mimi/ui/widgets/a/a;)V
+.method public a(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
     .locals 3
 
     .prologue
     .line 69
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/a/a;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->a()Ljava/lang/String;
 
     move-result-object v0
 
     const-string/jumbo v1, "submit"
 
-    invoke-static {v0, v1}, Lorg/a/a/c/d;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 70
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->g()Lcom/wumii/android/mimi/b/aa;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->g()Lcom/wumii/android/mimi/b/CircleAdviceTask;
 
     move-result-object v0
 
@@ -92,7 +92,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/b/aa;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/b/CircleAdviceTask;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 74
     :goto_0
@@ -100,7 +100,7 @@
 
     .line 72
     :cond_0
-    invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->a(Lcom/wumii/android/mimi/ui/widgets/a/a;)V
+    invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->a(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
 
     goto :goto_0
 .end method
@@ -114,7 +114,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/d;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -140,7 +140,7 @@
 
     .prologue
     .line 103
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->n:Lcom/wumii/android/mimi/ui/widgets/a/a;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->n:Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
 
     if-nez v0, :cond_0
 
@@ -155,9 +155,9 @@
     :cond_0
     new-instance v1, Landroid/text/SpannableString;
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->n:Lcom/wumii/android/mimi/ui/widgets/a/a;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->n:Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a/a;->c()Ljava/lang/CharSequence;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->c()Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -192,18 +192,18 @@
     invoke-virtual {v1, v2, v0, v3, v4}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
     .line 109
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->n:Lcom/wumii/android/mimi/ui/widgets/a/a;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->n:Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a/a;->a(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->a(Ljava/lang/CharSequence;)V
 
     .line 110
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->q()Lcom/wumii/android/mimi/ui/widgets/ae;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->q()Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->n:Lcom/wumii/android/mimi/ui/widgets/a/a;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->n:Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ae;->b(Lcom/wumii/android/mimi/ui/widgets/a/a;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->b(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
 
     goto :goto_0
 
@@ -222,25 +222,25 @@
     return-void
 .end method
 
-.method public g()Lcom/wumii/android/mimi/b/aa;
+.method public g()Lcom/wumii/android/mimi/b/CircleAdviceTask;
     .locals 1
 
     .prologue
     .line 77
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->r:Lcom/wumii/android/mimi/b/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->r:Lcom/wumii/android/mimi/b/CircleAdviceTask;
 
     if-nez v0, :cond_0
 
     .line 78
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/k;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity$k;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/k;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity$k;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->r:Lcom/wumii/android/mimi/b/aa;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->r:Lcom/wumii/android/mimi/b/CircleAdviceTask;
 
     .line 86
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->r:Lcom/wumii/android/mimi/b/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->r:Lcom/wumii/android/mimi/b/CircleAdviceTask;
 
     return-object v0
 .end method
@@ -333,7 +333,7 @@
 
     .prologue
     .line 61
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
 
     const-string/jumbo v1, "submit"
 
@@ -343,14 +343,14 @@
 
     move-result-object v2
 
-    invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a/a;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;)V
+    invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->n:Lcom/wumii/android/mimi/ui/widgets/a/a;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->n:Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->n:Lcom/wumii/android/mimi/ui/widgets/a/a;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->n:Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
 
-    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->b(Lcom/wumii/android/mimi/ui/widgets/a/a;)V
+    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/circle/CircleFeedbackActivity;->b(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
 
     .line 63
     const/4 v0, 0x0

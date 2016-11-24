@@ -84,11 +84,11 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->o:Ljava/lang/String;
 
     .line 89
-    invoke-static {}, Lcom/e/a/b/g;->a()Lcom/e/a/b/g;
+    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
 
     move-result-object v0
 
-    invoke-static {p1}, Lcom/wumii/android/mimi/c/av;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/wumii/android/mimi/c/Utils;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -98,15 +98,15 @@
 
     const/high16 v4, 0x42c80000    # 100.0f
 
-    invoke-static {v3, v4}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v3, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v3
 
-    invoke-static {v3}, Lcom/wumii/android/mimi/c/av;->a(I)Lcom/e/a/b/d;
+    invoke-static {v3}, Lcom/wumii/android/mimi/c/Utils;->a(I)Lcom/e/a/b/DisplayImageOptions;
 
     move-result-object v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/e/a/b/g;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/d;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
 
     .line 93
     const/4 v0, 0x1
@@ -122,28 +122,28 @@
 
     .prologue
     .line 75
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;->y:Landroid/util/DisplayMetrics;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/h;
+    new-instance v2, Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v2}, Lcom/wumii/android/mimi/ui/h;-><init>()V
+    invoke-direct {v2}, Lcom/wumii/android/mimi/ui/ActivityEventManager;-><init>()V
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 76
     const v1, 0x7f0600f5
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a;->setMessage(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
     const v1, 0x7f0600d2
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/j;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$j;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/j;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$j;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -225,17 +225,17 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
 
     .line 38
-    invoke-static {}, Lcom/wumii/android/mimi/c/as;->a()Lcom/wumii/android/mimi/c/as;
+    invoke-static {}, Lcom/wumii/android/mimi/c/UserProfileManager;->a()Lcom/wumii/android/mimi/c/UserProfileManager;
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/h;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$h;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/h;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity$h;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/ModifyAvatarActivity;)V
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/c/as;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/au;Z)V
+    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$au;Z)V
 
     .line 71
     return-void

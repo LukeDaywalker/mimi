@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected c:Lcom/wumii/android/mimi/ui/widgets/bn;
+.field protected c:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$bn;
 
 
 # direct methods
@@ -84,23 +84,23 @@
     check-cast v0, Landroid/widget/RelativeLayout;
 
     .line 40
-    new-instance v3, Lcom/wumii/android/mimi/ui/widgets/bn;
+    new-instance v3, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$bn;
 
-    invoke-direct {v3, v0}, Lcom/wumii/android/mimi/ui/widgets/bn;-><init>(Landroid/view/View;)V
+    invoke-direct {v3, v0}, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$bn;-><init>(Landroid/view/View;)V
 
-    iput-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView;->c:Lcom/wumii/android/mimi/ui/widgets/bn;
+    iput-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView;->c:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$bn;
 
     .line 41
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView;->c:Lcom/wumii/android/mimi/ui/widgets/bn;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView;->c:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$bn;
 
-    iget-object v3, v3, Lcom/wumii/android/mimi/ui/widgets/bn;->a:Landroid/widget/TextView;
+    iget-object v3, v3, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$bn;->a:Landroid/widget/TextView;
 
     invoke-virtual {v3, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 42
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView;->c:Lcom/wumii/android/mimi/ui/widgets/bn;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView;->c:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$bn;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/bn;->a:Landroid/widget/TextView;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$bn;->a:Landroid/widget/TextView;
 
     const/high16 v3, -0x1000000
 
@@ -140,7 +140,7 @@
 
     const/high16 v1, 0x42000000    # 32.0f
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -148,9 +148,9 @@
     invoke-virtual {p1, v3, v3, v0, v0}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView;->c:Lcom/wumii/android/mimi/ui/widgets/bn;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView;->c:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$bn;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/bn;->a:Landroid/widget/TextView;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$bn;->a:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1, v2, v2, v2}, Landroid/widget/TextView;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
@@ -168,9 +168,9 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView;->c:Lcom/wumii/android/mimi/ui/widgets/bn;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView;->c:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$bn;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/bn;->a:Landroid/widget/TextView;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$bn;->a:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -203,9 +203,9 @@
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView;->c:Lcom/wumii/android/mimi/ui/widgets/bn;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView;->c:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$bn;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/bn;->a:Landroid/widget/TextView;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$bn;->a:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(I)V
 
@@ -218,9 +218,9 @@
 
     .prologue
     .line 59
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView;->c:Lcom/wumii/android/mimi/ui/widgets/bn;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView;->c:Lcom/wumii/android/mimi/ui/widgets/SectionItemView$bn;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/bn;->a:Landroid/widget/TextView;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/SectionItemView$bn;->a:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 

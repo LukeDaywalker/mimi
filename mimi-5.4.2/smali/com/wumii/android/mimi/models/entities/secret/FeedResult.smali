@@ -1,5 +1,5 @@
 .class public Lcom/wumii/android/mimi/models/entities/secret/FeedResult;
-.super Lcom/wumii/android/mimi/network/m;
+.super Lcom/wumii/android/mimi/network/Result;
 .source "FeedResult.java"
 
 
@@ -18,7 +18,7 @@
     .end annotation
 .end field
 
-.field private feedEvent:Lcom/wumii/android/mimi/models/b/a;
+.field private feedEvent:Lcom/wumii/android/mimi/models/b/FeedEvent;
 
 .field private feedType:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -28,18 +28,18 @@
 
 
 # direct methods
-.method public constructor <init>(IILjava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/FeedType;Lcom/wumii/android/mimi/models/b/a;I)V
+.method public constructor <init>(IILjava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/FeedType;Lcom/wumii/android/mimi/models/b/FeedEvent;I)V
     .locals 1
 
     .prologue
     .line 20
-    invoke-direct {p0, p2, p3}, Lcom/wumii/android/mimi/network/m;-><init>(ILjava/lang/String;)V
+    invoke-direct {p0, p2, p3}, Lcom/wumii/android/mimi/network/Result;-><init>(ILjava/lang/String;)V
 
     .line 21
     iput-object p4, p0, Lcom/wumii/android/mimi/models/entities/secret/FeedResult;->feedType:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     .line 22
-    iput-object p5, p0, Lcom/wumii/android/mimi/models/entities/secret/FeedResult;->feedEvent:Lcom/wumii/android/mimi/models/b/a;
+    iput-object p5, p0, Lcom/wumii/android/mimi/models/entities/secret/FeedResult;->feedEvent:Lcom/wumii/android/mimi/models/b/FeedEvent;
 
     .line 23
     iput p6, p0, Lcom/wumii/android/mimi/models/entities/secret/FeedResult;->numNewFeeds:I
@@ -74,12 +74,12 @@
     return-object v0
 .end method
 
-.method public getFeedEvent()Lcom/wumii/android/mimi/models/b/a;
+.method public getFeedEvent()Lcom/wumii/android/mimi/models/b/FeedEvent;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/secret/FeedResult;->feedEvent:Lcom/wumii/android/mimi/models/b/a;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/entities/secret/FeedResult;->feedEvent:Lcom/wumii/android/mimi/models/b/FeedEvent;
 
     return-object v0
 .end method
@@ -175,7 +175,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/entities/secret/FeedResult;->feedEvent:Lcom/wumii/android/mimi/models/b/a;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/entities/secret/FeedResult;->feedEvent:Lcom/wumii/android/mimi/models/b/FeedEvent;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

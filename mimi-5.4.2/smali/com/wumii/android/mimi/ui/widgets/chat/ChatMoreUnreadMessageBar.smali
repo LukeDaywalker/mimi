@@ -77,7 +77,7 @@
     .line 39
     const/high16 v1, 0x41200000    # 10.0f
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -224,7 +224,7 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    invoke-static {p1, p2}, Lcom/wumii/android/mimi/c/av;->c(J)Ljava/lang/String;
+    invoke-static {p1, p2}, Lcom/wumii/android/mimi/c/Utils;->c(J)Ljava/lang/String;
 
     move-result-object v4
 
@@ -248,9 +248,9 @@
     invoke-virtual {p0, v5}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;->setVisibility(I)V
 
     .line 84
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/t;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar$t;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/t;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar$t;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreUnreadMessageBar;)V
 
     const-wide/16 v2, 0x1388
 

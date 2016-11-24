@@ -3,7 +3,7 @@
 .source "FragmentActivity.java"
 
 # interfaces
-.implements Landroid/support/v4/app/FragmentContainer;
+.implements Landroid/support/v4/app/FragmentManager$FragmentContainer;
 
 
 # instance fields

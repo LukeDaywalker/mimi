@@ -3,7 +3,7 @@
 .source "SettingsActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/br;
+.implements Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;
 
 
 # static fields
@@ -13,7 +13,7 @@
 # instance fields
 .field private C:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-.field private D:Lcom/wumii/android/mimi/models/d/j;
+.field private D:Lcom/wumii/android/mimi/models/d/FileHelper;
 
 .field private E:Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -96,12 +96,12 @@
     return-void
 .end method
 
-.method static synthetic b(Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;)Lcom/wumii/android/mimi/models/d/j;
+.method static synthetic b(Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;)Lcom/wumii/android/mimi/models/d/FileHelper;
     .locals 1
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->D:Lcom/wumii/android/mimi/models/d/j;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->D:Lcom/wumii/android/mimi/models/d/FileHelper;
 
     return-object v0
 .end method
@@ -226,13 +226,13 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setGravity(I)V
 
     .line 163
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     const-class v1, Ljava/lang/String;
 
     const-string/jumbo v2, "latest_version_name"
 
-    invoke-virtual {v0, v1, v2, v5}, Lcom/wumii/android/mimi/models/d/aa;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v5}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -273,13 +273,13 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->y:Landroid/util/DisplayMetrics;
 
-    invoke-static {v1, v3}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v1, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->y:Landroid/util/DisplayMetrics;
 
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v2
 
@@ -294,7 +294,7 @@
 
     const v1, 0x7f02013d
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/av;->b(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->b(Landroid/view/View;I)V
 
     .line 173
     :goto_0
@@ -344,37 +344,37 @@
 
     .prologue
     .line 176
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->y:Landroid/util/DisplayMetrics;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 177
     const v1, 0x7f060245
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a;->setMessage(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     .line 178
     const v1, 0x7f0600a8
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/ah;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ah;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ah;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ah;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 211
     const v1, 0x7f060051
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 212
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a;->show()Landroid/app/AlertDialog;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->show()Landroid/app/AlertDialog;
 
     .line 213
     return-void
@@ -436,13 +436,13 @@
 
     .line 149
     :pswitch_5
-    new-instance v0, Lcom/wumii/android/mimi/b/v;
+    new-instance v0, Lcom/wumii/android/mimi/b/CheckUpdateTask;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/b/v;-><init>(Landroid/app/Activity;Z)V
+    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/b/CheckUpdateTask;-><init>(Landroid/app/Activity;Z)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/b/v;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/b/CheckUpdateTask;->j()V
 
     goto :goto_0
 
@@ -507,11 +507,11 @@
     invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 73
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->h()Lcom/wumii/android/mimi/models/service/UserService;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->h()Lcom/wumii/android/mimi/models/service/UserService;
 
     move-result-object v0
 
@@ -526,50 +526,50 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->g()V
 
     .line 78
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->j()Lcom/wumii/android/mimi/models/d/j;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/d/FileHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->D:Lcom/wumii/android/mimi/models/d/j;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->D:Lcom/wumii/android/mimi/models/d/FileHelper;
 
     .line 79
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->o:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/br;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;)V
 
     .line 80
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->p:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/br;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;)V
 
     .line 81
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->r:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/br;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;)V
 
     .line 82
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->s:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/br;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;)V
 
     .line 83
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->t:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/br;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;)V
 
     .line 84
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->C:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/br;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;)V
 
     .line 85
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->q:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/br;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;)V
 
     .line 88
     :try_start_0
@@ -612,18 +612,18 @@
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 95
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/setting/ag;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ag;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ag;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ag;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->G:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     .line 103
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->G:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/aa;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
     .line 104
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->h()V
@@ -653,11 +653,11 @@
     if-eqz v0, :cond_0
 
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->w:Lcom/wumii/android/mimi/models/d/aa;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->G:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/aa;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
     .line 127
     :cond_0

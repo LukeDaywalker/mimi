@@ -40,11 +40,11 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->o:Ljava/lang/String;
 
     .line 59
-    invoke-static {}, Lcom/e/a/b/g;->a()Lcom/e/a/b/g;
+    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
 
     move-result-object v0
 
-    invoke-static {p1}, Lcom/wumii/android/mimi/c/av;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/wumii/android/mimi/c/Utils;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -54,15 +54,15 @@
 
     const/high16 v4, 0x42c80000    # 100.0f
 
-    invoke-static {v3, v4}, Lcom/wumii/android/mimi/c/av;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v3, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v3
 
-    invoke-static {v3}, Lcom/wumii/android/mimi/c/av;->a(I)Lcom/e/a/b/d;
+    invoke-static {v3}, Lcom/wumii/android/mimi/c/Utils;->a(I)Lcom/e/a/b/DisplayImageOptions;
 
     move-result-object v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/e/a/b/g;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/d;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
 
     .line 63
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->q:Landroid/widget/EditText;
@@ -97,28 +97,28 @@
 
     .prologue
     .line 68
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->y:Landroid/util/DisplayMetrics;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/h;
+    new-instance v2, Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v2}, Lcom/wumii/android/mimi/ui/h;-><init>()V
+    invoke-direct {v2}, Lcom/wumii/android/mimi/ui/ActivityEventManager;-><init>()V
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/a;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 69
     const v1, 0x7f0600f7
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a;->setMessage(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
     const v1, 0x7f0600d2
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/af;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$af;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/af;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$af;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -164,9 +164,9 @@
     .line 33
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->p:Landroid/widget/ImageView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/ad;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ad;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ad;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ad;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -184,9 +184,9 @@
     .line 40
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->q:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/ae;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ae;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/ae;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ae;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 

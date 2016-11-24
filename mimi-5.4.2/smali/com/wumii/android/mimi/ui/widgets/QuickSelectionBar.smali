@@ -23,7 +23,7 @@
 
 .field private e:I
 
-.field private f:Lcom/wumii/android/mimi/ui/widgets/bd;
+.field private f:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$bd;
 
 .field private g:Landroid/graphics/Rect;
 
@@ -149,9 +149,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/bc;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$bc;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/bc;-><init>(Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$bc;-><init>(Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;)V
 
     const-wide/16 v2, 0x64
 
@@ -166,7 +166,7 @@
 
     .prologue
     .line 114
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->f:Lcom/wumii/android/mimi/ui/widgets/bd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->f:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$bd;
 
     if-eqz v0, :cond_0
 
@@ -174,9 +174,9 @@
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->b(I)V
 
     .line 116
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->f:Lcom/wumii/android/mimi/ui/widgets/bd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->f:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$bd;
 
-    invoke-interface {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/bd;->a(I)V
+    invoke-interface {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$bd;->a(I)V
 
     .line 118
     :cond_0
@@ -571,12 +571,12 @@
     return-void
 .end method
 
-.method public setOnItemSelectedListener(Lcom/wumii/android/mimi/ui/widgets/bd;)V
+.method public setOnItemSelectedListener(Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$bd;)V
     .locals 0
 
     .prologue
     .line 156
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->f:Lcom/wumii/android/mimi/ui/widgets/bd;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->f:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$bd;
 
     .line 157
     return-void

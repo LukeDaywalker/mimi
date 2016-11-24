@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private o:Lcom/wumii/android/mimi/ui/widgets/share/g;
+.field private o:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
 .field private p:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
@@ -43,17 +43,17 @@
     return-void
 .end method
 
-.method private i()Lcom/wumii/android/mimi/ui/widgets/share/g;
+.method private i()Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
     .locals 3
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->o:Lcom/wumii/android/mimi/ui/widgets/share/g;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->o:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
     if-nez v0, :cond_0
 
     .line 65
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/share/g;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->getResources()Landroid/content/res/Resources;
 
@@ -63,29 +63,29 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->z:Lcom/wumii/android/mimi/ui/h;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/share/g;-><init>(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;-><init>(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->o:Lcom/wumii/android/mimi/ui/widgets/share/g;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->o:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
     .line 67
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->o:Lcom/wumii/android/mimi/ui/widgets/share/g;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->o:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public a(Lcom/wumii/android/mimi/ui/widgets/a/a;)V
+.method public a(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
     .locals 2
 
     .prologue
     .line 51
     const-string/jumbo v0, "menuSharePromotion"
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/a/a;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->a()Ljava/lang/String;
 
     move-result-object v1
 
@@ -96,13 +96,13 @@
     if-eqz v0, :cond_0
 
     .line 52
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->i()Lcom/wumii/android/mimi/ui/widgets/share/g;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->i()Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/webview/PromotionWebViewActivity;->p:Lcom/wumii/android/mimi/models/entities/secret/Promotion;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/share/g;->a(Lcom/wumii/android/mimi/models/entities/secret/Promotion;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a(Lcom/wumii/android/mimi/models/entities/secret/Promotion;)V
 
     .line 54
     :cond_0

@@ -57,7 +57,7 @@
     invoke-interface {v0, v1}, Lorg/slf4j/Logger;->info(Ljava/lang/String;)V
 
     .line 21
-    sget-object v0, Lcom/wumii/android/mimi/c/r;->c:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/c/Constants$r;->c:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/push/PushService;->a(Ljava/lang/String;)V
 

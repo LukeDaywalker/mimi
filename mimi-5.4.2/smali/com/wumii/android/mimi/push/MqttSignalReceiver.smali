@@ -108,7 +108,7 @@
 
     .line 61
     :try_start_1
-    sget-object v0, Lcom/wumii/android/mimi/c/r;->d:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/c/Constants$r;->d:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/wumii/android/mimi/push/PushService;->a(Ljava/lang/String;)V
     :try_end_1

@@ -25,7 +25,7 @@
 
 .field private j:Lcom/wumii/android/mimi/models/entities/secret/Feed;
 
-.field private k:Lcom/e/a/b/d;
+.field private k:Lcom/e/a/b/DisplayImageOptions;
 
 
 # direct methods
@@ -169,37 +169,37 @@
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 84
-    new-instance v0, Lcom/e/a/b/f;
+    new-instance v0, Lcom/e/a/b/DisplayImageOptions$f;
 
-    invoke-direct {v0}, Lcom/e/a/b/f;-><init>()V
+    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$f;-><init>()V
 
-    invoke-virtual {v0, v2}, Lcom/e/a/b/f;->b(Z)Lcom/e/a/b/f;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v2}, Lcom/e/a/b/f;->c(Z)Lcom/e/a/b/f;
+    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$f;->b(Z)Lcom/e/a/b/DisplayImageOptions$f;
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Lcom/e/a/b/f;->d(Z)Lcom/e/a/b/f;
+    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$f;->c(Z)Lcom/e/a/b/DisplayImageOptions$f;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$f;->d(Z)Lcom/e/a/b/DisplayImageOptions$f;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/f;->a(Z)Lcom/e/a/b/f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->a(Z)Lcom/e/a/b/DisplayImageOptions$f;
 
     move-result-object v0
 
     sget-object v1, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/f;->a(Landroid/graphics/Bitmap$Config;)Lcom/e/a/b/f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->a(Landroid/graphics/Bitmap$Config;)Lcom/e/a/b/DisplayImageOptions$f;
 
     move-result-object v0
 
-    sget-object v1, Lcom/e/a/b/a/e;->f:Lcom/e/a/b/a/e;
+    sget-object v1, Lcom/e/a/b/a/ImageScaleType;->f:Lcom/e/a/b/a/ImageScaleType;
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/f;->a(Lcom/e/a/b/a/e;)Lcom/e/a/b/f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->a(Lcom/e/a/b/a/ImageScaleType;)Lcom/e/a/b/DisplayImageOptions$f;
 
     move-result-object v0
 
@@ -207,13 +207,13 @@
 
     invoke-direct {v1, v3}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/f;->a(Landroid/graphics/drawable/Drawable;)Lcom/e/a/b/f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->a(Landroid/graphics/drawable/Drawable;)Lcom/e/a/b/DisplayImageOptions$f;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/f;->a(Lcom/e/a/b/g/a;)Lcom/e/a/b/f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->a(Lcom/e/a/b/g/BitmapProcessor;)Lcom/e/a/b/DisplayImageOptions$f;
 
     move-result-object v0
 
@@ -221,15 +221,15 @@
 
     invoke-direct {v1, v3}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/f;->b(Landroid/graphics/drawable/Drawable;)Lcom/e/a/b/f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->b(Landroid/graphics/drawable/Drawable;)Lcom/e/a/b/DisplayImageOptions$f;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/e/a/b/f;->a()Lcom/e/a/b/d;
+    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$f;->a()Lcom/e/a/b/DisplayImageOptions;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->k:Lcom/e/a/b/d;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->k:Lcom/e/a/b/DisplayImageOptions;
 
     .line 95
     return-void
@@ -240,11 +240,11 @@
 
     .prologue
     .line 208
-    invoke-static {}, Lcom/wumii/android/mimi/models/f;->a()Lcom/wumii/android/mimi/models/f;
+    invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/f;->h()Lcom/wumii/android/mimi/models/service/UserService;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->h()Lcom/wumii/android/mimi/models/service/UserService;
 
     move-result-object v0
 
@@ -332,15 +332,15 @@
 
     .prologue
     .line 169
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/secret/l;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$l;
 
-    invoke-direct {v0, p0, p1, p2, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/l;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/secret/Guidance;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p1, p2, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$l;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/secret/Guidance;Landroid/app/Activity;)V
 
-    invoke-static {p1, v0}, Lcom/wumii/android/mimi/ui/apdaters/g;->b(Landroid/app/Activity;Lcom/wumii/android/mimi/ui/a;)Lcom/wumii/android/mimi/ui/widgets/j;
+    invoke-static {p1, v0}, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper;->b(Landroid/app/Activity;Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;)Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/j;->b()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->b()V
 
     .line 205
     return-void
@@ -431,7 +431,7 @@
     const/16 v1, 0x8
 
     :goto_0
-    invoke-static {v2, v1}, Lcom/wumii/android/mimi/c/av;->a(Landroid/view/View;I)V
+    invoke-static {v2, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 138
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->g:Landroid/widget/TextView;
@@ -475,7 +475,7 @@
 
     .line 146
     :cond_2
-    invoke-static {}, Lcom/e/a/b/g;->a()Lcom/e/a/b/g;
+    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
 
     move-result-object v1
 
@@ -485,13 +485,13 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->f:Landroid/widget/ImageView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->k:Lcom/e/a/b/d;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->k:Lcom/e/a/b/DisplayImageOptions;
 
-    new-instance v4, Lcom/wumii/android/mimi/ui/widgets/secret/k;
+    new-instance v4, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$k;
 
-    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/k;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;)V
+    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$k;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;)V
 
-    invoke-virtual {v1, v0, v2, v3, v4}, Lcom/e/a/b/g;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/d;Lcom/e/a/b/f/a;)V
+    invoke-virtual {v1, v0, v2, v3, v4}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;Lcom/e/a/b/f/ImageLoadingListener;)V
 
     goto :goto_1
 .end method
@@ -610,7 +610,7 @@
     if-ne p1, v1, :cond_4
 
     .line 120
-    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/share/g;
+    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->getContext()Landroid/content/Context;
 
@@ -626,13 +626,13 @@
 
     move-result-object v3
 
-    new-instance v4, Lcom/wumii/android/mimi/ui/h;
+    new-instance v4, Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {v4}, Lcom/wumii/android/mimi/ui/h;-><init>()V
+    invoke-direct {v4}, Lcom/wumii/android/mimi/ui/ActivityEventManager;-><init>()V
 
-    invoke-direct {v2, v1, v3, v4}, Lcom/wumii/android/mimi/ui/widgets/share/g;-><init>(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/h;)V
+    invoke-direct {v2, v1, v3, v4}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;-><init>(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
-    invoke-virtual {v2, v0}, Lcom/wumii/android/mimi/ui/widgets/share/g;->a(Lcom/wumii/android/mimi/models/entities/secret/Guidance;)V
+    invoke-virtual {v2, v0}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a(Lcom/wumii/android/mimi/models/entities/secret/Guidance;)V
 
     goto :goto_0
 
