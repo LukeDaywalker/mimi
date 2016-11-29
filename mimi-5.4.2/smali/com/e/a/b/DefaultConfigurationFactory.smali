@@ -250,9 +250,9 @@
 
     .prologue
     .line 157
-    new-instance v0, Lcom/e/a/b/DefaultConfigurationFactory$b;
+    new-instance v0, Lcom/e/a/b/DefaultConfigurationFactory$ICb;
 
-    invoke-direct {v0, p0, p1}, Lcom/e/a/b/DefaultConfigurationFactory$b;-><init>(ILjava/lang/String;)V
+    invoke-direct {v0, p0, p1}, Lcom/e/a/b/DefaultConfigurationFactory$ICb;-><init>(ILjava/lang/String;)V
 
     return-object v0
 .end method

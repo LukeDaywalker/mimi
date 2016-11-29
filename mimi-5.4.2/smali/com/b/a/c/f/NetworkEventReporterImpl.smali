@@ -26,27 +26,27 @@
     return-void
 .end method
 
-.method private a(Lcom/b/a/c/f/NetworkEventReporter$i;)Ljava/lang/String;
+.method private a(Lcom/b/a/c/f/NetworkEventReporter$ICi;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 268
     const-string/jumbo v0, "Content-Type"
 
-    invoke-interface {p1, v0}, Lcom/b/a/c/f/NetworkEventReporter$i;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {p1, v0}, Lcom/b/a/c/f/NetworkEventReporter$ICi;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method private static a(Lcom/b/a/c/f/NetworkPeerManager;Lcom/b/a/c/f/NetworkEventReporter$j;)Ljava/lang/String;
+.method private static a(Lcom/b/a/c/f/NetworkPeerManager;Lcom/b/a/c/f/NetworkEventReporter$ICj;)Ljava/lang/String;
     .locals 5
 
     .prologue
     .line 109
     :try_start_0
-    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$j;->g()[B
+    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$ICj;->g()[B
 
     move-result-object v1
 
@@ -71,9 +71,9 @@
     move-exception v0
 
     .line 114
-    sget-object v1, Lcom/b/a/c/g/a/Console$f;->b:Lcom/b/a/c/g/a/Console$f;
+    sget-object v1, Lcom/b/a/c/g/a/Console$ICf;->b:Lcom/b/a/c/g/a/Console$ICf;
 
-    sget-object v2, Lcom/b/a/c/g/a/Console$g;->c:Lcom/b/a/c/g/a/Console$g;
+    sget-object v2, Lcom/b/a/c/g/a/Console$ICg;->c:Lcom/b/a/c/g/a/Console$ICg;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -93,7 +93,7 @@
 
     move-result-object v0
 
-    invoke-static {p0, v1, v2, v0}, Lcom/b/a/c/a/CLog;->a(Lcom/b/a/c/d/ChromePeerManager;Lcom/b/a/c/g/a/Console$f;Lcom/b/a/c/g/a/Console$g;Ljava/lang/String;)V
+    invoke-static {p0, v1, v2, v0}, Lcom/b/a/c/a/CLog;->a(Lcom/b/a/c/d/ChromePeerManager;Lcom/b/a/c/g/a/Console$ICf;Lcom/b/a/c/g/a/Console$ICg;Ljava/lang/String;)V
 
     .line 120
     :cond_0
@@ -142,7 +142,7 @@
     throw v0
 .end method
 
-.method private static b(Lcom/b/a/c/f/NetworkEventReporter$i;)Lorg/json/JSONObject;
+.method private static b(Lcom/b/a/c/f/NetworkEventReporter$ICi;)Lorg/json/JSONObject;
     .locals 4
 
     .prologue
@@ -155,7 +155,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-interface {p0}, Lcom/b/a/c/f/NetworkEventReporter$i;->a()I
+    invoke-interface {p0}, Lcom/b/a/c/f/NetworkEventReporter$ICi;->a()I
 
     move-result v2
 
@@ -163,11 +163,11 @@
 
     .line 275
     :try_start_0
-    invoke-interface {p0, v0}, Lcom/b/a/c/f/NetworkEventReporter$i;->a(I)Ljava/lang/String;
+    invoke-interface {p0, v0}, Lcom/b/a/c/f/NetworkEventReporter$ICi;->a(I)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-interface {p0, v0}, Lcom/b/a/c/f/NetworkEventReporter$i;->b(I)Ljava/lang/String;
+    invoke-interface {p0, v0}, Lcom/b/a/c/f/NetworkEventReporter$ICi;->b(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -209,12 +209,12 @@
     if-eqz v0, :cond_0
 
     .line 213
-    new-instance v1, Lcom/b/a/c/g/a/Network$s;
+    new-instance v1, Lcom/b/a/c/g/a/Network$ICs;
 
-    invoke-direct {v1}, Lcom/b/a/c/g/a/Network$s;-><init>()V
+    invoke-direct {v1}, Lcom/b/a/c/g/a/Network$ICs;-><init>()V
 
     .line 214
-    iput-object p1, v1, Lcom/b/a/c/g/a/Network$s;->a:Ljava/lang/String;
+    iput-object p1, v1, Lcom/b/a/c/g/a/Network$ICs;->a:Ljava/lang/String;
 
     .line 215
     invoke-static {}, Lcom/b/a/c/f/NetworkEventReporterImpl;->e()J
@@ -227,7 +227,7 @@
 
     div-double/2addr v2, v4
 
-    iput-wide v2, v1, Lcom/b/a/c/g/a/Network$s;->b:D
+    iput-wide v2, v1, Lcom/b/a/c/g/a/Network$ICs;->b:D
 
     .line 216
     const-string/jumbo v2, "Network.loadingFinished"
@@ -280,12 +280,12 @@
     if-eqz v0, :cond_0
 
     .line 228
-    new-instance v1, Lcom/b/a/c/g/a/Network$r;
+    new-instance v1, Lcom/b/a/c/g/a/Network$ICr;
 
-    invoke-direct {v1}, Lcom/b/a/c/g/a/Network$r;-><init>()V
+    invoke-direct {v1}, Lcom/b/a/c/g/a/Network$ICr;-><init>()V
 
     .line 229
-    iput-object p1, v1, Lcom/b/a/c/g/a/Network$r;->a:Ljava/lang/String;
+    iput-object p1, v1, Lcom/b/a/c/g/a/Network$ICr;->a:Ljava/lang/String;
 
     .line 230
     invoke-static {}, Lcom/b/a/c/f/NetworkEventReporterImpl;->e()J
@@ -298,15 +298,15 @@
 
     div-double/2addr v2, v4
 
-    iput-wide v2, v1, Lcom/b/a/c/g/a/Network$r;->b:D
+    iput-wide v2, v1, Lcom/b/a/c/g/a/Network$ICr;->b:D
 
     .line 231
-    iput-object p2, v1, Lcom/b/a/c/g/a/Network$r;->c:Ljava/lang/String;
+    iput-object p2, v1, Lcom/b/a/c/g/a/Network$ICr;->c:Ljava/lang/String;
 
     .line 232
-    sget-object v2, Lcom/b/a/c/g/a/Page$y;->h:Lcom/b/a/c/g/a/Page$y;
+    sget-object v2, Lcom/b/a/c/g/a/Page$ICy;->h:Lcom/b/a/c/g/a/Page$ICy;
 
-    iput-object v2, v1, Lcom/b/a/c/g/a/Network$r;->d:Lcom/b/a/c/g/a/Page$y;
+    iput-object v2, v1, Lcom/b/a/c/g/a/Network$ICr;->d:Lcom/b/a/c/g/a/Page$ICy;
 
     .line 233
     const-string/jumbo v2, "Network.loadingFailed"
@@ -390,7 +390,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, p2}, Lcom/b/a/c/f/ResourceTypeHelper;->a(Ljava/lang/String;)Lcom/b/a/c/g/a/Page$y;
+    invoke-virtual {v1, p2}, Lcom/b/a/c/f/ResourceTypeHelper;->a(Ljava/lang/String;)Lcom/b/a/c/g/a/Page$ICy;
 
     move-result-object v1
 
@@ -403,7 +403,7 @@
     .line 173
     if-eqz v2, :cond_2
 
-    sget-object v3, Lcom/b/a/c/g/a/Page$y;->c:Lcom/b/a/c/g/a/Page$y;
+    sget-object v3, Lcom/b/a/c/g/a/Page$ICy;->c:Lcom/b/a/c/g/a/Page$ICy;
 
     if-ne v2, v3, :cond_2
 
@@ -449,9 +449,9 @@
     move-exception v1
 
     .line 190
-    sget-object v1, Lcom/b/a/c/g/a/Console$f;->c:Lcom/b/a/c/g/a/Console$f;
+    sget-object v1, Lcom/b/a/c/g/a/Console$ICf;->c:Lcom/b/a/c/g/a/Console$ICf;
 
-    sget-object v2, Lcom/b/a/c/g/a/Console$g;->c:Lcom/b/a/c/g/a/Console$g;
+    sget-object v2, Lcom/b/a/c/g/a/Console$ICg;->c:Lcom/b/a/c/g/a/Console$ICg;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -471,12 +471,12 @@
 
     move-result-object v3
 
-    invoke-static {v0, v1, v2, v3}, Lcom/b/a/c/a/CLog;->a(Lcom/b/a/c/d/ChromePeerManager;Lcom/b/a/c/g/a/Console$f;Lcom/b/a/c/g/a/Console$g;Ljava/lang/String;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/b/a/c/a/CLog;->a(Lcom/b/a/c/d/ChromePeerManager;Lcom/b/a/c/g/a/Console$ICf;Lcom/b/a/c/g/a/Console$ICg;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
 
-.method public a(Lcom/b/a/c/f/NetworkEventReporter$j;)V
+.method public a(Lcom/b/a/c/f/NetworkEventReporter$ICj;)V
     .locals 10
 
     .prologue
@@ -491,69 +491,69 @@
     if-eqz v2, :cond_0
 
     .line 67
-    new-instance v3, Lcom/b/a/c/g/a/Network$t;
+    new-instance v3, Lcom/b/a/c/g/a/Network$ICt;
 
-    invoke-direct {v3}, Lcom/b/a/c/g/a/Network$t;-><init>()V
+    invoke-direct {v3}, Lcom/b/a/c/g/a/Network$ICt;-><init>()V
 
     .line 68
-    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$j;->e()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$ICj;->e()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v3, Lcom/b/a/c/g/a/Network$t;->a:Ljava/lang/String;
+    iput-object v0, v3, Lcom/b/a/c/g/a/Network$ICt;->a:Ljava/lang/String;
 
     .line 69
-    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$j;->f()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$ICj;->f()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v3, Lcom/b/a/c/g/a/Network$t;->b:Ljava/lang/String;
+    iput-object v0, v3, Lcom/b/a/c/g/a/Network$ICt;->b:Ljava/lang/String;
 
     .line 70
-    invoke-static {p1}, Lcom/b/a/c/f/NetworkEventReporterImpl;->b(Lcom/b/a/c/f/NetworkEventReporter$i;)Lorg/json/JSONObject;
+    invoke-static {p1}, Lcom/b/a/c/f/NetworkEventReporterImpl;->b(Lcom/b/a/c/f/NetworkEventReporter$ICi;)Lorg/json/JSONObject;
 
     move-result-object v0
 
-    iput-object v0, v3, Lcom/b/a/c/g/a/Network$t;->c:Lorg/json/JSONObject;
+    iput-object v0, v3, Lcom/b/a/c/g/a/Network$ICt;->c:Lorg/json/JSONObject;
 
     .line 71
-    invoke-static {v2, p1}, Lcom/b/a/c/f/NetworkEventReporterImpl;->a(Lcom/b/a/c/f/NetworkPeerManager;Lcom/b/a/c/f/NetworkEventReporter$j;)Ljava/lang/String;
+    invoke-static {v2, p1}, Lcom/b/a/c/f/NetworkEventReporterImpl;->a(Lcom/b/a/c/f/NetworkPeerManager;Lcom/b/a/c/f/NetworkEventReporter$ICj;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v3, Lcom/b/a/c/g/a/Network$t;->d:Ljava/lang/String;
+    iput-object v0, v3, Lcom/b/a/c/g/a/Network$ICt;->d:Ljava/lang/String;
 
     .line 75
-    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$j;->c()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$ICj;->c()Ljava/lang/String;
 
     move-result-object v4
 
     .line 76
-    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$j;->d()Ljava/lang/Integer;
+    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$ICj;->d()Ljava/lang/Integer;
 
     move-result-object v0
 
     .line 77
-    new-instance v5, Lcom/b/a/c/g/a/Network$p;
+    new-instance v5, Lcom/b/a/c/g/a/Network$ICp;
 
-    invoke-direct {v5}, Lcom/b/a/c/g/a/Network$p;-><init>()V
+    invoke-direct {v5}, Lcom/b/a/c/g/a/Network$ICp;-><init>()V
 
     .line 78
-    sget-object v6, Lcom/b/a/c/g/a/Network$q;->b:Lcom/b/a/c/g/a/Network$q;
+    sget-object v6, Lcom/b/a/c/g/a/Network$ICq;->b:Lcom/b/a/c/g/a/Network$ICq;
 
-    iput-object v6, v5, Lcom/b/a/c/g/a/Network$p;->a:Lcom/b/a/c/g/a/Network$q;
+    iput-object v6, v5, Lcom/b/a/c/g/a/Network$ICp;->a:Lcom/b/a/c/g/a/Network$ICq;
 
     .line 79
     new-instance v6, Ljava/util/ArrayList;
 
     invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v6, v5, Lcom/b/a/c/g/a/Network$p;->b:Ljava/util/List;
+    iput-object v6, v5, Lcom/b/a/c/g/a/Network$ICp;->b:Ljava/util/List;
 
     .line 80
-    iget-object v6, v5, Lcom/b/a/c/g/a/Network$p;->b:Ljava/util/List;
+    iget-object v6, v5, Lcom/b/a/c/g/a/Network$ICp;->b:Ljava/util/List;
 
-    new-instance v7, Lcom/b/a/c/g/a/Console$c;
+    new-instance v7, Lcom/b/a/c/g/a/Console$ICc;
 
     if-eqz v0, :cond_1
 
@@ -562,41 +562,41 @@
     move-result v0
 
     :goto_0
-    invoke-direct {v7, v4, v4, v0, v1}, Lcom/b/a/c/g/a/Console$c;-><init>(Ljava/lang/String;Ljava/lang/String;II)V
+    invoke-direct {v7, v4, v4, v0, v1}, Lcom/b/a/c/g/a/Console$ICc;-><init>(Ljava/lang/String;Ljava/lang/String;II)V
 
     invoke-interface {v6, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 85
-    new-instance v0, Lcom/b/a/c/g/a/Network$u;
+    new-instance v0, Lcom/b/a/c/g/a/Network$ICu;
 
-    invoke-direct {v0}, Lcom/b/a/c/g/a/Network$u;-><init>()V
+    invoke-direct {v0}, Lcom/b/a/c/g/a/Network$ICu;-><init>()V
 
     .line 86
-    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$j;->b()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$ICj;->b()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/b/a/c/g/a/Network$u;->a:Ljava/lang/String;
+    iput-object v1, v0, Lcom/b/a/c/g/a/Network$ICu;->a:Ljava/lang/String;
 
     .line 87
     const-string/jumbo v1, "1"
 
-    iput-object v1, v0, Lcom/b/a/c/g/a/Network$u;->b:Ljava/lang/String;
+    iput-object v1, v0, Lcom/b/a/c/g/a/Network$ICu;->b:Ljava/lang/String;
 
     .line 88
     const-string/jumbo v1, "1"
 
-    iput-object v1, v0, Lcom/b/a/c/g/a/Network$u;->c:Ljava/lang/String;
+    iput-object v1, v0, Lcom/b/a/c/g/a/Network$ICu;->c:Ljava/lang/String;
 
     .line 89
-    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$j;->e()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$ICj;->e()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/b/a/c/g/a/Network$u;->d:Ljava/lang/String;
+    iput-object v1, v0, Lcom/b/a/c/g/a/Network$ICu;->d:Ljava/lang/String;
 
     .line 90
-    iput-object v3, v0, Lcom/b/a/c/g/a/Network$u;->e:Lcom/b/a/c/g/a/Network$t;
+    iput-object v3, v0, Lcom/b/a/c/g/a/Network$ICu;->e:Lcom/b/a/c/g/a/Network$ICt;
 
     .line 91
     invoke-static {}, Lcom/b/a/c/f/NetworkEventReporterImpl;->e()J
@@ -609,20 +609,20 @@
 
     div-double/2addr v6, v8
 
-    iput-wide v6, v0, Lcom/b/a/c/g/a/Network$u;->f:D
+    iput-wide v6, v0, Lcom/b/a/c/g/a/Network$ICu;->f:D
 
     .line 92
-    iput-object v5, v0, Lcom/b/a/c/g/a/Network$u;->g:Lcom/b/a/c/g/a/Network$p;
+    iput-object v5, v0, Lcom/b/a/c/g/a/Network$ICu;->g:Lcom/b/a/c/g/a/Network$ICp;
 
     .line 93
     const/4 v1, 0x0
 
-    iput-object v1, v0, Lcom/b/a/c/g/a/Network$u;->h:Lcom/b/a/c/g/a/Network$v;
+    iput-object v1, v0, Lcom/b/a/c/g/a/Network$ICu;->h:Lcom/b/a/c/g/a/Network$ICv;
 
     .line 98
-    sget-object v1, Lcom/b/a/c/g/a/Page$y;->h:Lcom/b/a/c/g/a/Page$y;
+    sget-object v1, Lcom/b/a/c/g/a/Page$ICy;->h:Lcom/b/a/c/g/a/Page$ICy;
 
-    iput-object v1, v0, Lcom/b/a/c/g/a/Network$u;->i:Lcom/b/a/c/g/a/Page$y;
+    iput-object v1, v0, Lcom/b/a/c/g/a/Network$ICu;->i:Lcom/b/a/c/g/a/Page$ICy;
 
     .line 100
     const-string/jumbo v1, "Network.requestWillBeSent"
@@ -640,7 +640,7 @@
     goto :goto_0
 .end method
 
-.method public a(Lcom/b/a/c/f/NetworkEventReporter$k;)V
+.method public a(Lcom/b/a/c/f/NetworkEventReporter$ICk;)V
     .locals 10
 
     .prologue
@@ -653,40 +653,40 @@
     if-eqz v1, :cond_0
 
     .line 127
-    new-instance v2, Lcom/b/a/c/g/a/Network$v;
+    new-instance v2, Lcom/b/a/c/g/a/Network$ICv;
 
-    invoke-direct {v2}, Lcom/b/a/c/g/a/Network$v;-><init>()V
+    invoke-direct {v2}, Lcom/b/a/c/g/a/Network$ICv;-><init>()V
 
     .line 128
-    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$k;->c()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$ICk;->c()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v2, Lcom/b/a/c/g/a/Network$v;->a:Ljava/lang/String;
+    iput-object v0, v2, Lcom/b/a/c/g/a/Network$ICv;->a:Ljava/lang/String;
 
     .line 129
-    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$k;->d()I
+    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$ICk;->d()I
 
     move-result v0
 
-    iput v0, v2, Lcom/b/a/c/g/a/Network$v;->b:I
+    iput v0, v2, Lcom/b/a/c/g/a/Network$ICv;->b:I
 
     .line 130
-    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$k;->e()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$ICk;->e()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v2, Lcom/b/a/c/g/a/Network$v;->c:Ljava/lang/String;
+    iput-object v0, v2, Lcom/b/a/c/g/a/Network$ICv;->c:Ljava/lang/String;
 
     .line 131
-    invoke-static {p1}, Lcom/b/a/c/f/NetworkEventReporterImpl;->b(Lcom/b/a/c/f/NetworkEventReporter$i;)Lorg/json/JSONObject;
+    invoke-static {p1}, Lcom/b/a/c/f/NetworkEventReporterImpl;->b(Lcom/b/a/c/f/NetworkEventReporter$ICi;)Lorg/json/JSONObject;
 
     move-result-object v0
 
-    iput-object v0, v2, Lcom/b/a/c/g/a/Network$v;->d:Lorg/json/JSONObject;
+    iput-object v0, v2, Lcom/b/a/c/g/a/Network$ICv;->d:Lorg/json/JSONObject;
 
     .line 132
-    invoke-direct {p0, p1}, Lcom/b/a/c/f/NetworkEventReporterImpl;->a(Lcom/b/a/c/f/NetworkEventReporter$i;)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/b/a/c/f/NetworkEventReporterImpl;->a(Lcom/b/a/c/f/NetworkEventReporter$ICi;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -702,24 +702,24 @@
     move-result-object v0
 
     :goto_0
-    iput-object v0, v2, Lcom/b/a/c/g/a/Network$v;->e:Ljava/lang/String;
+    iput-object v0, v2, Lcom/b/a/c/g/a/Network$ICv;->e:Ljava/lang/String;
 
     .line 136
-    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$k;->f()Z
+    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$ICk;->f()Z
 
     move-result v0
 
-    iput-boolean v0, v2, Lcom/b/a/c/g/a/Network$v;->f:Z
+    iput-boolean v0, v2, Lcom/b/a/c/g/a/Network$ICv;->f:Z
 
     .line 137
-    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$k;->g()I
+    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$ICk;->g()I
 
     move-result v0
 
-    iput v0, v2, Lcom/b/a/c/g/a/Network$v;->g:I
+    iput v0, v2, Lcom/b/a/c/g/a/Network$ICv;->g:I
 
     .line 138
-    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$k;->h()Z
+    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$ICk;->h()Z
 
     move-result v0
 
@@ -727,29 +727,29 @@
 
     move-result-object v0
 
-    iput-object v0, v2, Lcom/b/a/c/g/a/Network$v;->h:Ljava/lang/Boolean;
+    iput-object v0, v2, Lcom/b/a/c/g/a/Network$ICv;->h:Ljava/lang/Boolean;
 
     .line 139
-    new-instance v4, Lcom/b/a/c/g/a/Network$w;
+    new-instance v4, Lcom/b/a/c/g/a/Network$ICw;
 
-    invoke-direct {v4}, Lcom/b/a/c/g/a/Network$w;-><init>()V
+    invoke-direct {v4}, Lcom/b/a/c/g/a/Network$ICw;-><init>()V
 
     .line 140
-    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$k;->b()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/b/a/c/f/NetworkEventReporter$ICk;->b()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v4, Lcom/b/a/c/g/a/Network$w;->a:Ljava/lang/String;
+    iput-object v0, v4, Lcom/b/a/c/g/a/Network$ICw;->a:Ljava/lang/String;
 
     .line 141
     const-string/jumbo v0, "1"
 
-    iput-object v0, v4, Lcom/b/a/c/g/a/Network$w;->b:Ljava/lang/String;
+    iput-object v0, v4, Lcom/b/a/c/g/a/Network$ICw;->b:Ljava/lang/String;
 
     .line 142
     const-string/jumbo v0, "1"
 
-    iput-object v0, v4, Lcom/b/a/c/g/a/Network$w;->c:Ljava/lang/String;
+    iput-object v0, v4, Lcom/b/a/c/g/a/Network$ICw;->c:Ljava/lang/String;
 
     .line 143
     invoke-static {}, Lcom/b/a/c/f/NetworkEventReporterImpl;->e()J
@@ -762,7 +762,7 @@
 
     div-double/2addr v6, v8
 
-    iput-wide v6, v4, Lcom/b/a/c/g/a/Network$w;->d:D
+    iput-wide v6, v4, Lcom/b/a/c/g/a/Network$ICw;->d:D
 
     .line 144
     if-eqz v3, :cond_2
@@ -771,15 +771,15 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v3}, Lcom/b/a/c/f/ResourceTypeHelper;->a(Ljava/lang/String;)Lcom/b/a/c/g/a/Page$y;
+    invoke-virtual {v0, v3}, Lcom/b/a/c/f/ResourceTypeHelper;->a(Ljava/lang/String;)Lcom/b/a/c/g/a/Page$ICy;
 
     move-result-object v0
 
     :goto_1
-    iput-object v0, v4, Lcom/b/a/c/g/a/Network$w;->e:Lcom/b/a/c/g/a/Page$y;
+    iput-object v0, v4, Lcom/b/a/c/g/a/Network$ICw;->e:Lcom/b/a/c/g/a/Page$ICy;
 
     .line 147
-    iput-object v2, v4, Lcom/b/a/c/g/a/Network$w;->f:Lcom/b/a/c/g/a/Network$v;
+    iput-object v2, v4, Lcom/b/a/c/g/a/Network$ICw;->f:Lcom/b/a/c/g/a/Network$ICv;
 
     .line 148
     const-string/jumbo v0, "Network.responseReceived"
@@ -798,7 +798,7 @@
 
     .line 144
     :cond_2
-    sget-object v0, Lcom/b/a/c/g/a/Page$y;->h:Lcom/b/a/c/g/a/Page$y;
+    sget-object v0, Lcom/b/a/c/g/a/Page$ICy;->h:Lcom/b/a/c/g/a/Page$ICy;
 
     goto :goto_1
 .end method
@@ -872,12 +872,12 @@
     if-eqz v0, :cond_0
 
     .line 255
-    new-instance v1, Lcom/b/a/c/g/a/Network$o;
+    new-instance v1, Lcom/b/a/c/g/a/Network$ICo;
 
-    invoke-direct {v1}, Lcom/b/a/c/g/a/Network$o;-><init>()V
+    invoke-direct {v1}, Lcom/b/a/c/g/a/Network$ICo;-><init>()V
 
     .line 256
-    iput-object p1, v1, Lcom/b/a/c/g/a/Network$o;->a:Ljava/lang/String;
+    iput-object p1, v1, Lcom/b/a/c/g/a/Network$ICo;->a:Ljava/lang/String;
 
     .line 257
     invoke-static {}, Lcom/b/a/c/f/NetworkEventReporterImpl;->e()J
@@ -890,13 +890,13 @@
 
     div-double/2addr v2, v4
 
-    iput-wide v2, v1, Lcom/b/a/c/g/a/Network$o;->b:D
+    iput-wide v2, v1, Lcom/b/a/c/g/a/Network$ICo;->b:D
 
     .line 258
-    iput p2, v1, Lcom/b/a/c/g/a/Network$o;->c:I
+    iput p2, v1, Lcom/b/a/c/g/a/Network$ICo;->c:I
 
     .line 259
-    iput p3, v1, Lcom/b/a/c/g/a/Network$o;->d:I
+    iput p3, v1, Lcom/b/a/c/g/a/Network$ICo;->d:I
 
     .line 260
     const-string/jumbo v2, "Network.dataReceived"

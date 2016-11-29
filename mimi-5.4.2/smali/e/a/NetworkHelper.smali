@@ -586,9 +586,9 @@
     .line 225
     new-instance v0, Le/a/TDeserializer;
 
-    new-instance v2, Le/a/TBinaryProtocol$gn;
+    new-instance v2, Le/a/TBinaryProtocol$ICgn;
 
-    invoke-direct {v2}, Le/a/TBinaryProtocol$gn;-><init>()V
+    invoke-direct {v2}, Le/a/TBinaryProtocol$ICgn;-><init>()V
 
     invoke-direct {v0, v2}, Le/a/TDeserializer;-><init>(Le/a/TProtocolFactory;)V
 

@@ -68,7 +68,7 @@
 
 .field private ae:Lcom/wumii/android/mimi/models/e/ChatObserver;
 
-.field private af:Lcom/wumii/android/mimi/models/h/BaseStorage$d;
+.field private af:Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
 
 .field protected o:Landroid/widget/ListView;
 
@@ -108,18 +108,18 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;-><init>()V
 
     .line 1064
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$l;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICl;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$l;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICl;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->ae:Lcom/wumii/android/mimi/models/e/ChatObserver;
 
     .line 1095
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$n;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICn;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$n;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICn;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->af:Lcom/wumii/android/mimi/models/h/BaseStorage$d;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->af:Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
 
     return-void
 .end method
@@ -131,11 +131,11 @@
     .line 585
     new-instance v0, Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$v;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICv;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$v;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICv;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
 
-    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver;-><init>(Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver$a;)V
+    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver;-><init>(Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver$ICa;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->X:Lcom/wumii/android/mimi/receivers/HeadsetPlugReceiver;
 
@@ -182,9 +182,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->af:Lcom/wumii/android/mimi/models/h/BaseStorage$d;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->af:Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatMessageStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$d;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatMessageStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;)V
 
     .line 664
     return-void
@@ -208,9 +208,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->af:Lcom/wumii/android/mimi/models/h/BaseStorage$d;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->af:Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatMessageStorage;->b(Lcom/wumii/android/mimi/models/h/BaseStorage$d;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatMessageStorage;->b(Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;)V
 
     .line 669
     return-void
@@ -238,11 +238,11 @@
     return-object v0
 
     :cond_0
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$bu;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$bu;->a()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;->a()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;
 
     move-result-object v0
 
@@ -302,13 +302,13 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$m;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICm;
 
-    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$m;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
+    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICm;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$au;Z)V
+    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$ICau;Z)V
 
     .line 298
     return-void
@@ -557,11 +557,11 @@
 
     move-result-object v0
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$o;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICo;
 
-    invoke-direct {v2, p0, p1, v1}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$o;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Z)V
+    invoke-direct {v2, p0, p1, v1}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICo;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Z)V
 
-    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/a/VoiceMessageManager;->a(Lcom/wumii/android/mimi/a/VoiceMessageManager$bx;)V
+    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/a/VoiceMessageManager;->a(Lcom/wumii/android/mimi/a/VoiceMessageManager$ICbx;)V
 
     .line 400
     invoke-static {}, Lcom/wumii/android/mimi/a/VoiceMessageManager;->a()Lcom/wumii/android/mimi/a/VoiceMessageManager;
@@ -1133,9 +1133,9 @@
     move-result-object v0
 
     .line 739
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$e;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICe;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$e;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICe;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -1598,11 +1598,11 @@
     invoke-virtual {v1, v3}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     .line 962
-    new-instance v3, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$k;
+    new-instance v3, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICk;
 
-    invoke-direct {v3, p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$k;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
+    invoke-direct {v3, p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICk;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
 
-    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->a(Landroid/support/v4/util/SimpleArrayMap;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$f;)V
+    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->a(Landroid/support/v4/util/SimpleArrayMap;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICf;)V
 
     .line 998
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->isFinishing()Z
@@ -1847,11 +1847,11 @@
     invoke-virtual {v2, v3}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     .line 241
-    new-instance v3, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$b;
+    new-instance v3, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICb;
 
-    invoke-direct {v3, p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$b;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
+    invoke-direct {v3, p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICb;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
 
-    invoke-virtual {v2, v1, v3}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->a(Landroid/support/v4/util/SimpleArrayMap;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$f;)V
+    invoke-virtual {v2, v1, v3}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->a(Landroid/support/v4/util/SimpleArrayMap;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICf;)V
 
     .line 256
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->isFinishing()Z
@@ -2187,9 +2187,9 @@
     .line 481
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->q:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$p;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$p;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -2207,13 +2207,13 @@
 
     iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->q:Landroid/widget/EditText;
 
-    new-instance v5, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$r;
+    new-instance v5, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICr;
 
-    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$r;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
+    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICr;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
 
-    new-instance v6, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$s;
+    new-instance v6, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICs;
 
-    invoke-direct {v6, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$s;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
+    invoke-direct {v6, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICs;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
 
     invoke-static {}, Lcom/wumii/android/mimi/a/VoiceMessageManager;->a()Lcom/wumii/android/mimi/a/VoiceMessageManager;
 
@@ -2232,9 +2232,9 @@
     .line 532
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->K:Lcom/wumii/android/mimi/c/BottomPanFacade;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$t;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$t;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICt;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/c/BottomPanFacade;->a(Lcom/wumii/android/mimi/ui/OnVoiceRecListener;)V
 
@@ -2258,9 +2258,9 @@
     .line 558
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->q:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$u;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICu;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$u;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICu;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
@@ -2721,9 +2721,9 @@
 
     .line 830
     :cond_2
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$f;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICf;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$f;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICf;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
 
     invoke-static {v0}, Lcom/wumii/android/mimi/c/ThreadUtils;->b(Ljava/lang/Runnable;)V
 
@@ -2750,9 +2750,9 @@
     if-eqz v0, :cond_4
 
     .line 844
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$g;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICg;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$g;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICg;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
 
     invoke-static {v0}, Lcom/wumii/android/mimi/c/ThreadUtils;->b(Ljava/lang/Runnable;)V
 
@@ -2793,9 +2793,9 @@
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$c;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICc;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$c;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICc;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
 
     const-wide/16 v2, 0xc8
 
@@ -2841,9 +2841,9 @@
     .line 724
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->o:Landroid/widget/ListView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$d;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICd;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$d;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICd;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
 
     const-wide/16 v2, 0x64
 
@@ -2879,27 +2879,27 @@
     .line 870
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->ab:Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$h;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICh;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$h;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICh;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter;->a(Landroid/view/View$OnLongClickListener;)V
 
     .line 880
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->ab:Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$i;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICi;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$i;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICi;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter;->a(Landroid/view/View$OnClickListener;)V
 
     .line 890
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->ab:Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$j;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICj;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$j;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICj;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter;->b(Landroid/view/View$OnClickListener;)V
 

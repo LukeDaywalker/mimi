@@ -126,9 +126,9 @@
 
     const v1, 0x7f0600c8
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$q;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICq;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$q;-><init>(Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICq;-><init>(Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -157,9 +157,9 @@
     if-nez v0, :cond_0
 
     .line 69
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$p;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$p;-><init>(Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity$ICp;-><init>(Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;Landroid/app/Activity;)V
 
     invoke-static {p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper;->b(Landroid/app/Activity;Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;)Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
 

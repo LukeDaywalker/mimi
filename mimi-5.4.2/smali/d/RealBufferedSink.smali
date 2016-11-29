@@ -387,9 +387,9 @@
 
     .prologue
     .line 188
-    new-instance v0, Ld/RealBufferedSink$v;
+    new-instance v0, Ld/RealBufferedSink$ICv;
 
-    invoke-direct {v0, p0}, Ld/RealBufferedSink$v;-><init>(Ld/RealBufferedSink;)V
+    invoke-direct {v0, p0}, Ld/RealBufferedSink$ICv;-><init>(Ld/RealBufferedSink;)V
 
     return-object v0
 .end method

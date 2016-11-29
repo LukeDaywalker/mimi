@@ -22,9 +22,9 @@
     invoke-direct {p0}, Lcom/b/a/c/d/ChromePeerManager;-><init>()V
 
     .line 40
-    new-instance v0, Lcom/b/a/c/f/NetworkPeerManager$n;
+    new-instance v0, Lcom/b/a/c/f/NetworkPeerManager$ICn;
 
-    invoke-direct {v0, p0}, Lcom/b/a/c/f/NetworkPeerManager$n;-><init>(Lcom/b/a/c/f/NetworkPeerManager;)V
+    invoke-direct {v0, p0}, Lcom/b/a/c/f/NetworkPeerManager$ICn;-><init>(Lcom/b/a/c/f/NetworkPeerManager;)V
 
     iput-object v0, p0, Lcom/b/a/c/f/NetworkPeerManager;->c:Lcom/b/a/c/d/PeersRegisteredListener;
 

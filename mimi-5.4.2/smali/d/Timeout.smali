@@ -21,9 +21,9 @@
 
     .prologue
     .line 48
-    new-instance v0, Ld/Timeout$ad;
+    new-instance v0, Ld/Timeout$ICad;
 
-    invoke-direct {v0}, Ld/Timeout$ad;-><init>()V
+    invoke-direct {v0}, Ld/Timeout$ICad;-><init>()V
 
     sput-object v0, Ld/Timeout;->b:Ld/Timeout;
 

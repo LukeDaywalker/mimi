@@ -67,11 +67,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/DatabaseConnection;->a()Lcom/wumii/android/mimi/models/d/DatabaseConnection$g;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/DatabaseConnection;->a()Lcom/wumii/android/mimi/models/d/DatabaseConnection$ICg;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/DatabaseConnection$g;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/DatabaseConnection$ICg;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
@@ -121,11 +121,11 @@
     .line 59
     iget-object v0, p0, Lcom/wumii/android/mimi/a/AccountManager;->b:Lcom/wumii/android/mimi/models/d/DatabaseConnection;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/DatabaseConnection;->a()Lcom/wumii/android/mimi/models/d/DatabaseConnection$g;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/DatabaseConnection;->a()Lcom/wumii/android/mimi/models/d/DatabaseConnection$ICg;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/DatabaseConnection$g;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/DatabaseConnection$ICg;->a()V
 
     .line 60
     const/4 v0, 0x0

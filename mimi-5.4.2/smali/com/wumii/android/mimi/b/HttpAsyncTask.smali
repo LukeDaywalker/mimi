@@ -161,9 +161,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/a/UploadContactManager$br;->b:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    sget-object v1, Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;->b:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/UploadContactManager;->a(Lcom/wumii/android/mimi/a/UploadContactManager$br;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/UploadContactManager;->a(Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;)V
 
     goto :goto_0
 .end method
@@ -376,7 +376,7 @@
     const/4 v4, 0x1
 
     .line 140
-    instance-of v0, p1, Lcom/wumii/android/mimi/models/d/HttpHelper$q;
+    instance-of v0, p1, Lcom/wumii/android/mimi/models/d/HttpHelper$ICq;
 
     if-eqz v0, :cond_2
 
@@ -412,7 +412,7 @@
 
     .line 147
     :cond_2
-    instance-of v0, p1, Lcom/wumii/android/mimi/models/d/HttpHelper$r;
+    instance-of v0, p1, Lcom/wumii/android/mimi/models/d/HttpHelper$ICr;
 
     if-eqz v0, :cond_4
 
@@ -445,7 +445,7 @@
 
     .line 156
     :cond_4
-    instance-of v0, p1, Lcom/wumii/android/mimi/models/d/HttpHelper$o;
+    instance-of v0, p1, Lcom/wumii/android/mimi/models/d/HttpHelper$ICo;
 
     if-eqz v0, :cond_5
 
@@ -493,7 +493,7 @@
 
     .line 167
     :cond_5
-    instance-of v0, p1, Lcom/wumii/android/mimi/models/d/HttpHelper$p;
+    instance-of v0, p1, Lcom/wumii/android/mimi/models/d/HttpHelper$ICp;
 
     if-eqz v0, :cond_a
 
@@ -504,10 +504,10 @@
     const/4 v0, 0x0
 
     .line 171
-    check-cast p1, Lcom/wumii/android/mimi/models/d/HttpHelper$p;
+    check-cast p1, Lcom/wumii/android/mimi/models/d/HttpHelper$ICp;
 
     .line 173
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/d/HttpHelper$p;->b()Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/d/HttpHelper$ICp;->b()Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v2
 
@@ -577,14 +577,14 @@
 
     .line 194
     :cond_9
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/d/HttpHelper$p;->a()I
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/d/HttpHelper$ICp;->a()I
 
     move-result v2
 
     invoke-virtual {p0, v2, v1, v0}, Lcom/wumii/android/mimi/b/HttpAsyncTask;->a(IILjava/lang/String;)V
 
     .line 196
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/d/HttpHelper$p;->c()Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/d/HttpHelper$ICp;->c()Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 
@@ -594,7 +594,7 @@
 
     .line 201
     :cond_a
-    instance-of v0, p1, Lcom/wumii/a/a/JacksonMapper$g;
+    instance-of v0, p1, Lcom/wumii/a/a/JacksonMapper$ICg;
 
     if-eqz v0, :cond_b
 
@@ -637,11 +637,11 @@
     if-eqz v0, :cond_d
 
     .line 215
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->b:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->b:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
     const-string/jumbo v1, "HttpAsyncTask EOF Exception"
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 218
     :cond_d

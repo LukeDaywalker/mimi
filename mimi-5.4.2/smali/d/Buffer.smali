@@ -2081,9 +2081,9 @@
 
     .prologue
     .line 68
-    new-instance v0, Ld/Buffer$g;
+    new-instance v0, Ld/Buffer$ICg;
 
-    invoke-direct {v0, p0}, Ld/Buffer$g;-><init>(Ld/Buffer;)V
+    invoke-direct {v0, p0}, Ld/Buffer$ICg;-><init>(Ld/Buffer;)V
 
     return-object v0
 .end method
@@ -2748,9 +2748,9 @@
 
     .prologue
     .line 110
-    new-instance v0, Ld/Buffer$h;
+    new-instance v0, Ld/Buffer$ICh;
 
-    invoke-direct {v0, p0}, Ld/Buffer$h;-><init>(Ld/Buffer;)V
+    invoke-direct {v0, p0}, Ld/Buffer$ICh;-><init>(Ld/Buffer;)V
 
     return-object v0
 .end method

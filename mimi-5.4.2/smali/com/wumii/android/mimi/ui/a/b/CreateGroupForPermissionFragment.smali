@@ -3,8 +3,8 @@
 .source "CreateGroupForPermissionFragment.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$bk;
-.implements Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$bp;
+.implements Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbk;
+.implements Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;
 
 
 # instance fields
@@ -340,12 +340,12 @@
     .line 63
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionFragment;->d:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$bp;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;)V
 
     .line 64
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionFragment;->e:Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$bp;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionRadioItemView$ICbp;)V
 
     .line 66
     const v0, 0x7f0b01e2
@@ -397,7 +397,7 @@
     .line 73
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionFragment;->k:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$bk;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView$ICbk;)V
 
     .line 75
     const v0, 0x7f0b0132
@@ -476,9 +476,9 @@
     .line 84
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionFragment;->m:Landroid/widget/EditText;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionFragment$t;
+    new-instance v2, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionFragment$ICt;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionFragment$t;-><init>(Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionFragment$ICt;-><init>(Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionFragment;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 

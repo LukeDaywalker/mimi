@@ -8,7 +8,7 @@
 
 .field private d:Lcom/wumii/android/mimi/models/d/NetworkHelper;
 
-.field private j:Lcom/wumii/android/mimi/b/SyncQuotaTask$ch;
+.field private j:Lcom/wumii/android/mimi/b/SyncQuotaTask$ICch;
 
 .field private k:Z
 
@@ -51,12 +51,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/b/SyncQuotaTask;)Lcom/wumii/android/mimi/b/SyncQuotaTask$ch;
+.method static synthetic a(Lcom/wumii/android/mimi/b/SyncQuotaTask;)Lcom/wumii/android/mimi/b/SyncQuotaTask$ICch;
     .locals 1
 
     .prologue
     .line 15
-    iget-object v0, p0, Lcom/wumii/android/mimi/b/SyncQuotaTask;->j:Lcom/wumii/android/mimi/b/SyncQuotaTask$ch;
+    iget-object v0, p0, Lcom/wumii/android/mimi/b/SyncQuotaTask;->j:Lcom/wumii/android/mimi/b/SyncQuotaTask$ICch;
 
     return-object v0
 .end method
@@ -165,7 +165,7 @@
 
 
 # virtual methods
-.method public a(ZLcom/wumii/android/mimi/b/SyncQuotaTask$ch;)V
+.method public a(ZLcom/wumii/android/mimi/b/SyncQuotaTask$ICch;)V
     .locals 0
 
     .prologue
@@ -176,7 +176,7 @@
     iput-boolean p1, p0, Lcom/wumii/android/mimi/b/SyncQuotaTask;->k:Z
 
     .line 79
-    iput-object p2, p0, Lcom/wumii/android/mimi/b/SyncQuotaTask;->j:Lcom/wumii/android/mimi/b/SyncQuotaTask$ch;
+    iput-object p2, p0, Lcom/wumii/android/mimi/b/SyncQuotaTask;->j:Lcom/wumii/android/mimi/b/SyncQuotaTask$ICch;
 
     .line 80
     invoke-virtual {p0}, Lcom/wumii/android/mimi/b/SyncQuotaTask;->j()V
@@ -242,16 +242,16 @@
 
     .line 47
     :goto_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/b/SyncQuotaTask;->j:Lcom/wumii/android/mimi/b/SyncQuotaTask$ch;
+    iget-object v1, p0, Lcom/wumii/android/mimi/b/SyncQuotaTask;->j:Lcom/wumii/android/mimi/b/SyncQuotaTask$ICch;
 
     if-eqz v1, :cond_1
 
     .line 49
     iget-object v1, p0, Lcom/wumii/android/mimi/b/SyncQuotaTask;->m:Landroid/os/Handler;
 
-    new-instance v2, Lcom/wumii/android/mimi/b/SyncQuotaTask$cg;
+    new-instance v2, Lcom/wumii/android/mimi/b/SyncQuotaTask$ICcg;
 
-    invoke-direct {v2, p0, v0}, Lcom/wumii/android/mimi/b/SyncQuotaTask$cg;-><init>(Lcom/wumii/android/mimi/b/SyncQuotaTask;I)V
+    invoke-direct {v2, p0, v0}, Lcom/wumii/android/mimi/b/SyncQuotaTask$ICcg;-><init>(Lcom/wumii/android/mimi/b/SyncQuotaTask;I)V
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

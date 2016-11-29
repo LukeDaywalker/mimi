@@ -162,9 +162,9 @@
     move-result-object p2
 
     .line 59
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$q;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$q;-><init>(Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;Landroid/view/View;)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;-><init>(Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;Landroid/view/View;)V
 
     .line 60
     invoke-virtual {p2, v3, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
@@ -176,7 +176,7 @@
     move-result-object v1
 
     .line 67
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$q;->a(Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$q;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->a(Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;)Landroid/widget/ImageView;
 
     move-result-object v2
 
@@ -195,7 +195,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
     .line 68
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$q;->b(Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$q;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->b(Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;)Landroid/widget/TextView;
 
     move-result-object v2
 
@@ -206,7 +206,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 69
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$q;->c(Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$q;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->c(Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;)Landroid/widget/TextView;
 
     move-result-object v2
 
@@ -217,7 +217,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 70
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$q;->d(Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$q;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;->d(Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;)Landroid/widget/TextView;
 
     move-result-object v2
 
@@ -250,7 +250,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$q;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter$ICq;
 
     goto :goto_0
 

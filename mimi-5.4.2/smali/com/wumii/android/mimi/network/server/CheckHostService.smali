@@ -222,9 +222,9 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/network/server/CheckHostService;->b:Ljava/util/concurrent/ScheduledExecutorService;
 
-    new-instance v1, Lcom/wumii/android/mimi/network/server/CheckHostService$b;
+    new-instance v1, Lcom/wumii/android/mimi/network/server/CheckHostService$ICb;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/network/server/CheckHostService$b;-><init>(Lcom/wumii/android/mimi/network/server/CheckHostService;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/network/server/CheckHostService$ICb;-><init>(Lcom/wumii/android/mimi/network/server/CheckHostService;)V
 
     sget-object v6, Ljava/util/concurrent/TimeUnit;->MINUTES:Ljava/util/concurrent/TimeUnit;
 

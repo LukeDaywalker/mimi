@@ -3,7 +3,7 @@
 .source "ParseCharStream.java"
 
 # interfaces
-.implements Lcom/c/a/a/ParseSource$p;
+.implements Lcom/c/a/a/ParseSource$ICp;
 
 
 # static fields
@@ -512,7 +512,7 @@
     .line 85
     iget-object v0, p0, Lcom/c/a/a/ParseCharStream;->O:Lcom/c/a/a/ParseHandler;
 
-    invoke-interface {v0, p0}, Lcom/c/a/a/ParseHandler;->a(Lcom/c/a/a/ParseSource$p;)V
+    invoke-interface {v0, p0}, Lcom/c/a/a/ParseHandler;->a(Lcom/c/a/a/ParseSource$ICp;)V
 
     .line 91
     invoke-direct {p0}, Lcom/c/a/a/ParseCharStream;->x()V

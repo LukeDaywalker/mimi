@@ -20,7 +20,7 @@
 
 .field private b:Landroid/view/LayoutInflater;
 
-.field private c:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$d;
+.field private c:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICd;
 
 .field private d:Landroid/text/SpannableString;
 
@@ -182,12 +182,12 @@
     return-object v0
 .end method
 
-.method public a(Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$d;)V
+.method public a(Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICd;)V
     .locals 0
 
     .prologue
     .line 97
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter;->c:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$d;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter;->c:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICd;
 
     .line 98
     return-void
@@ -290,22 +290,22 @@
     move-result-object p2
 
     .line 85
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$e;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICe;
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, p0, p2, v2}, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$e;-><init>(Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter;Landroid/view/View;Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$c;)V
+    invoke-direct {v0, p0, p2, v2}, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICe;-><init>(Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter;Landroid/view/View;Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICc;)V
 
     .line 86
     invoke-virtual {p2, v3, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 87
-    iget-object v2, v0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$e;->e:Landroid/widget/ImageView;
+    iget-object v2, v0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICe;->e:Landroid/widget/ImageView;
 
     invoke-virtual {v2, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 88
-    iget-object v2, v0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$e;->a:Landroid/view/View;
+    iget-object v2, v0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICe;->a:Landroid/view/View;
 
     invoke-virtual {v2, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -328,7 +328,7 @@
     const/4 v1, 0x1
 
     :cond_0
-    invoke-static {v0, v2, v1}, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$e;->a(Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$e;Lcom/wumii/android/mimi/models/entities/circle/Circle;Z)V
+    invoke-static {v0, v2, v1}, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICe;->a(Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICe;Lcom/wumii/android/mimi/models/entities/circle/Circle;Z)V
 
     .line 93
     return-object p2
@@ -339,7 +339,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$e;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICe;
 
     goto :goto_0
 .end method
@@ -349,7 +349,7 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter;->c:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$d;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter;->c:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICd;
 
     if-nez v0, :cond_0
 
@@ -369,7 +369,7 @@
 
     .line 107
     :sswitch_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter;->c:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$d;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter;->c:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICd;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -377,13 +377,13 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$d;->b(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
+    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICd;->b(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     goto :goto_0
 
     .line 110
     :sswitch_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter;->c:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$d;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter;->c:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICd;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -391,7 +391,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$d;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
+    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICd;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     goto :goto_0
 

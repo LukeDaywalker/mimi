@@ -555,11 +555,11 @@
 
     move-result v0
 
-    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->a(I)Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;
+    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->a(I)Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;->ordinal()I
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->ordinal()I
 
     move-result v0
 
@@ -637,11 +637,11 @@
     check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;
 
     .line 121
-    new-instance v3, Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter$b;
+    new-instance v3, Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter$ICb;
 
-    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter$b;-><init>(Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter;)V
+    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter$ICb;-><init>(Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter;)V
 
-    invoke-virtual {v0, v3}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;->a(Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$b;)V
+    invoke-virtual {v0, v3}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupApplicationResultChatItemBuilder;->a(Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICb;)V
 
     .line 131
     :cond_2
@@ -657,7 +657,7 @@
 
     .prologue
     .line 85
-    invoke-static {}, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;->values()[Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;
+    invoke-static {}, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->values()[Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
     move-result-object v0
 

@@ -8,7 +8,7 @@
 
 .field private b:I
 
-.field private c:Lcom/wumii/android/mimi/ui/widgets/WMText$cb;
+.field private c:Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;
 
 
 # direct methods
@@ -104,12 +104,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/WMText;)Lcom/wumii/android/mimi/ui/widgets/WMText$cb;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/WMText;)Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;
     .locals 1
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->c:Lcom/wumii/android/mimi/ui/widgets/WMText$cb;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->c:Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;
 
     return-object v0
 .end method
@@ -119,9 +119,9 @@
 
     .prologue
     .line 86
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/WMText$by;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/WMText$ICby;
 
-    invoke-direct {v0, p0, p1}, Lcom/wumii/android/mimi/ui/widgets/WMText$by;-><init>(Lcom/wumii/android/mimi/ui/widgets/WMText;I)V
+    invoke-direct {v0, p0, p1}, Lcom/wumii/android/mimi/ui/widgets/WMText$ICby;-><init>(Lcom/wumii/android/mimi/ui/widgets/WMText;I)V
 
     invoke-static {v0}, Lcom/wumii/android/mimi/c/ThreadUtils;->b(Ljava/lang/Runnable;)V
 
@@ -157,13 +157,13 @@
     if-eqz v1, :cond_0
 
     .line 116
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/WMText$cc;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/WMText$ICcc;
 
     invoke-virtual {v0}, Ljava/util/regex/Matcher;->group()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-direct {v1, p0, v2}, Lcom/wumii/android/mimi/ui/widgets/WMText$cc;-><init>(Lcom/wumii/android/mimi/ui/widgets/WMText;Ljava/lang/String;)V
+    invoke-direct {v1, p0, v2}, Lcom/wumii/android/mimi/ui/widgets/WMText$ICcc;-><init>(Lcom/wumii/android/mimi/ui/widgets/WMText;Ljava/lang/String;)V
 
     .line 117
     invoke-virtual {v0}, Ljava/util/regex/Matcher;->start()I
@@ -185,12 +185,12 @@
     return-void
 .end method
 
-.method public a(Lcom/wumii/android/mimi/ui/widgets/WMText$cb;)V
+.method public a(Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;)V
     .locals 2
 
     .prologue
     .line 102
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->c:Lcom/wumii/android/mimi/ui/widgets/WMText$cb;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->c:Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;
 
     .line 104
     if-eqz p1, :cond_1
@@ -247,9 +247,9 @@
     move-result-object v1
 
     .line 126
-    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/WMText$bz;
+    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/WMText$ICbz;
 
-    invoke-direct {v2, p0, v1}, Lcom/wumii/android/mimi/ui/widgets/WMText$bz;-><init>(Lcom/wumii/android/mimi/ui/widgets/WMText;Ljava/lang/String;)V
+    invoke-direct {v2, p0, v1}, Lcom/wumii/android/mimi/ui/widgets/WMText$ICbz;-><init>(Lcom/wumii/android/mimi/ui/widgets/WMText;Ljava/lang/String;)V
 
     .line 146
     invoke-virtual {v0}, Ljava/util/regex/Matcher;->start()I
@@ -370,14 +370,14 @@
     invoke-direct {v3, p3, v0, v1}, Lcom/wumii/android/mimi/ui/widgets/WMText;-><init>(Ljava/lang/CharSequence;II)V
 
     .line 71
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->c:Lcom/wumii/android/mimi/ui/widgets/WMText$cb;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->c:Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;
 
     if-eqz v0, :cond_2
 
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->c:Lcom/wumii/android/mimi/ui/widgets/WMText$cb;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->c:Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;
 
-    invoke-virtual {v3, v0}, Lcom/wumii/android/mimi/ui/widgets/WMText;->a(Lcom/wumii/android/mimi/ui/widgets/WMText$cb;)V
+    invoke-virtual {v3, v0}, Lcom/wumii/android/mimi/ui/widgets/WMText;->a(Lcom/wumii/android/mimi/ui/widgets/WMText$ICcb;)V
 
     :cond_2
     :goto_0

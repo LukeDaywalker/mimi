@@ -3,7 +3,7 @@
 .source "AdwordsClickReferrerListener.java"
 
 # interfaces
-.implements Lcom/google/tagmanager/DataLayer$j;
+.implements Lcom/google/tagmanager/DataLayer$ICj;
 
 
 # instance fields

@@ -17,7 +17,7 @@
 
 
 # virtual methods
-.method protected a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$g;)V
+.method protected a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICg;)V
     .locals 2
 
     .prologue
@@ -29,7 +29,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgSummons;
 
     .line 36
-    invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$g;->a()Landroid/widget/TextView;
+    invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICg;->a()Landroid/widget/TextView;
 
     move-result-object v1
 
@@ -40,7 +40,7 @@
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 37
-    invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$g;->a()Landroid/widget/TextView;
+    invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICg;->a()Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -68,7 +68,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$bi;
+    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;
 
     .line 25
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->getChatMsgItem()Lcom/wumii/android/mimi/models/entities/chat/ChatMsgItemBase;
@@ -78,7 +78,7 @@
     check-cast v1, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgSummons;
 
     .line 27
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$bi;->a()Landroid/widget/TextView;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;->a()Landroid/widget/TextView;
 
     move-result-object v4
 
@@ -94,7 +94,7 @@
     invoke-virtual {v4, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 28
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$bi;->a()Landroid/widget/TextView;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;->a()Landroid/widget/TextView;
 
     move-result-object v0
 

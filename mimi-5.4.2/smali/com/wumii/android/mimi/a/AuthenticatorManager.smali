@@ -569,16 +569,16 @@
     .line 85
     new-instance v6, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$i;->b:Lcom/wumii/android/mimi/network/HttpRequest$i;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v2, "register/v2"
 
     const-string/jumbo v3, "register"
 
-    invoke-direct {v6, v1, v2, v3, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$i;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v6, v1, v2, v3, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 86
-    new-instance v0, Lcom/wumii/android/mimi/a/AuthenticatorManager$g;
+    new-instance v0, Lcom/wumii/android/mimi/a/AuthenticatorManager$ICg;
 
     move-object v1, p0
 
@@ -590,9 +590,9 @@
 
     move-object v5, p4
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/a/AuthenticatorManager$g;-><init>(Lcom/wumii/android/mimi/a/AuthenticatorManager;Ljava/lang/String;Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/a/AuthenticatorManager$ICg;-><init>(Lcom/wumii/android/mimi/a/AuthenticatorManager;Ljava/lang/String;Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {p0, p1, v6, v0}, Lcom/wumii/android/mimi/a/AuthenticatorManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-virtual {p0, p1, v6, v0}, Lcom/wumii/android/mimi/a/AuthenticatorManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 124
     return-void
@@ -629,7 +629,7 @@
     .line 151
     const v7, 0x7f0602f2
 
-    new-instance v0, Lcom/wumii/android/mimi/a/AuthenticatorManager$i;
+    new-instance v0, Lcom/wumii/android/mimi/a/AuthenticatorManager$ICi;
 
     move-object v1, p0
 
@@ -641,14 +641,14 @@
 
     move-object v5, p4
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/a/AuthenticatorManager$i;-><init>(Lcom/wumii/android/mimi/a/AuthenticatorManager;Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/a/AuthenticatorManager$ICi;-><init>(Lcom/wumii/android/mimi/a/AuthenticatorManager;Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-virtual {v6, v7, v0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 157
     const v7, 0x7f0602e8
 
-    new-instance v0, Lcom/wumii/android/mimi/a/AuthenticatorManager$j;
+    new-instance v0, Lcom/wumii/android/mimi/a/AuthenticatorManager$ICj;
 
     move-object v1, p0
 
@@ -660,7 +660,7 @@
 
     move-object v5, p4
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/a/AuthenticatorManager$j;-><init>(Lcom/wumii/android/mimi/a/AuthenticatorManager;Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/a/AuthenticatorManager$ICj;-><init>(Lcom/wumii/android/mimi/a/AuthenticatorManager;Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-virtual {v6, v7, v0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -707,22 +707,22 @@
     .line 131
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$i;->b:Lcom/wumii/android/mimi/network/HttpRequest$i;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v3, "register/verify_code"
 
     const-string/jumbo v4, "requestVerifyCode"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$i;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 132
     const v0, 0x7f0602d2
 
-    new-instance v2, Lcom/wumii/android/mimi/a/AuthenticatorManager$h;
+    new-instance v2, Lcom/wumii/android/mimi/a/AuthenticatorManager$ICh;
 
-    invoke-direct {v2, p0, p2}, Lcom/wumii/android/mimi/a/AuthenticatorManager$h;-><init>(Lcom/wumii/android/mimi/a/AuthenticatorManager;Ljava/lang/String;)V
+    invoke-direct {v2, p0, p2}, Lcom/wumii/android/mimi/a/AuthenticatorManager$ICh;-><init>(Lcom/wumii/android/mimi/a/AuthenticatorManager;Ljava/lang/String;)V
 
-    invoke-virtual {p0, p1, v0, v1, v2}, Lcom/wumii/android/mimi/a/AuthenticatorManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;ILcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-virtual {p0, p1, v0, v1, v2}, Lcom/wumii/android/mimi/a/AuthenticatorManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;ILcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 146
     return-void
@@ -759,20 +759,20 @@
     .line 61
     new-instance v1, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$i;->b:Lcom/wumii/android/mimi/network/HttpRequest$i;
+    sget-object v2, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v3, "login"
 
     const-string/jumbo v4, "login"
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$i;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
 
     .line 62
-    new-instance v0, Lcom/wumii/android/mimi/a/AuthenticatorManager$f;
+    new-instance v0, Lcom/wumii/android/mimi/a/AuthenticatorManager$ICf;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/a/AuthenticatorManager$f;-><init>(Lcom/wumii/android/mimi/a/AuthenticatorManager;Ljava/lang/String;)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/a/AuthenticatorManager$ICf;-><init>(Lcom/wumii/android/mimi/a/AuthenticatorManager;Ljava/lang/String;)V
 
-    invoke-virtual {p0, p1, v1, v0}, Lcom/wumii/android/mimi/a/AuthenticatorManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-virtual {p0, p1, v1, v0}, Lcom/wumii/android/mimi/a/AuthenticatorManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Lcom/wumii/android/mimi/network/HttpRequest;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 68
     return-void
@@ -783,9 +783,9 @@
 
     .prologue
     .line 71
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->x:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->x:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$af;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
 
     .line 72
     const/4 v5, 0x0

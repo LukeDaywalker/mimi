@@ -6,7 +6,7 @@
 # instance fields
 .field private C:Lcom/wumii/android/mimi/b/LoadCountriesTask;
 
-.field private D:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$al;
+.field private D:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
 .field private n:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
@@ -59,11 +59,11 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;-><init>()V
 
     .line 146
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$q;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICq;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$q;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICq;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->D:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$al;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->D:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
     return-void
 .end method
@@ -242,9 +242,9 @@
     .line 108
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->s:Landroid/widget/ListView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$o;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICo;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$o;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICo;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
@@ -332,9 +332,9 @@
     if-nez v0, :cond_0
 
     .line 125
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$p;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$p;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->C:Lcom/wumii/android/mimi/b/LoadCountriesTask;
 
@@ -363,27 +363,27 @@
     .line 57
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->o:Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$l;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICl;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$l;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICl;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->setOnItemSelectedListener(Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$bd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar;->setOnItemSelectedListener(Lcom/wumii/android/mimi/ui/widgets/QuickSelectionBar$ICbd;)V
 
     .line 69
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->n:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$m;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICm;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$m;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICm;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)V
 
-    invoke-virtual {v0, v1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->setOnItemClickListener(Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$b;)V
+    invoke-virtual {v0, v1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->setOnItemClickListener(Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;)V
 
     .line 84
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->n:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$n;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICn;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$n;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICn;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)V
 
     invoke-virtual {v0, v1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
@@ -409,9 +409,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->D:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$al;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->D:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$al;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;)V
 
     .line 172
     invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z

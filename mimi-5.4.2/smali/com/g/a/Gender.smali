@@ -40,29 +40,29 @@
     const/4 v2, 0x0
 
     .line 10
-    new-instance v0, Lcom/g/a/Gender$c;
+    new-instance v0, Lcom/g/a/Gender$ICc;
 
     const-string/jumbo v1, "Male"
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/g/a/Gender$c;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/g/a/Gender$ICc;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/g/a/Gender;->a:Lcom/g/a/Gender;
 
     .line 15
-    new-instance v0, Lcom/g/a/Gender$d;
+    new-instance v0, Lcom/g/a/Gender$ICd;
 
     const-string/jumbo v1, "Female"
 
-    invoke-direct {v0, v1, v3, v4}, Lcom/g/a/Gender$d;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v1, v3, v4}, Lcom/g/a/Gender$ICd;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/g/a/Gender;->b:Lcom/g/a/Gender;
 
     .line 20
-    new-instance v0, Lcom/g/a/Gender$e;
+    new-instance v0, Lcom/g/a/Gender$ICe;
 
     const-string/jumbo v1, "Unknown"
 
-    invoke-direct {v0, v1, v4, v2}, Lcom/g/a/Gender$e;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v1, v4, v2}, Lcom/g/a/Gender$ICe;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/g/a/Gender;->c:Lcom/g/a/Gender;
 
@@ -107,7 +107,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Ljava/lang/String;IILcom/g/a/Gender$c;)V
+.method synthetic constructor <init>(Ljava/lang/String;IILcom/g/a/Gender$ICc;)V
     .locals 0
 
     .prologue
@@ -122,7 +122,7 @@
 
     .prologue
     .line 54
-    sget-object v0, Lcom/g/a/Gender$f;->a:[I
+    sget-object v0, Lcom/g/a/Gender$ICf;->a:[I
 
     invoke-virtual {p0}, Lcom/g/a/Gender;->ordinal()I
 

@@ -87,9 +87,9 @@
 
     iget-object v1, p0, Lcom/a/a/a/SessionAnalyticsManager;->a:Lcom/a/a/a/SessionEventMetadata;
 
-    sget-object v2, Lcom/a/a/a/SessionEvent$r;->a:Lcom/a/a/a/SessionEvent$r;
+    sget-object v2, Lcom/a/a/a/SessionEvent$ICr;->a:Lcom/a/a/a/SessionEvent$ICr;
 
-    invoke-static {v1, v2, p1}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$r;Landroid/app/Activity;)Lcom/a/a/a/SessionEvent;
+    invoke-static {v1, v2, p1}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$ICr;Landroid/app/Activity;)Lcom/a/a/a/SessionEvent;
 
     move-result-object v1
 
@@ -189,9 +189,9 @@
 
     iget-object v1, p0, Lcom/a/a/a/SessionAnalyticsManager;->a:Lcom/a/a/a/SessionEventMetadata;
 
-    sget-object v2, Lcom/a/a/a/SessionEvent$r;->g:Lcom/a/a/a/SessionEvent$r;
+    sget-object v2, Lcom/a/a/a/SessionEvent$ICr;->g:Lcom/a/a/a/SessionEvent$ICr;
 
-    invoke-static {v1, v2, p1}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$r;Landroid/app/Activity;)Lcom/a/a/a/SessionEvent;
+    invoke-static {v1, v2, p1}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$ICr;Landroid/app/Activity;)Lcom/a/a/a/SessionEvent;
 
     move-result-object v1
 
@@ -233,9 +233,9 @@
 
     iget-object v1, p0, Lcom/a/a/a/SessionAnalyticsManager;->a:Lcom/a/a/a/SessionEventMetadata;
 
-    sget-object v2, Lcom/a/a/a/SessionEvent$r;->e:Lcom/a/a/a/SessionEvent$r;
+    sget-object v2, Lcom/a/a/a/SessionEvent$ICr;->e:Lcom/a/a/a/SessionEvent$ICr;
 
-    invoke-static {v1, v2, p1}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$r;Landroid/app/Activity;)Lcom/a/a/a/SessionEvent;
+    invoke-static {v1, v2, p1}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$ICr;Landroid/app/Activity;)Lcom/a/a/a/SessionEvent;
 
     move-result-object v1
 
@@ -256,9 +256,9 @@
 
     iget-object v1, p0, Lcom/a/a/a/SessionAnalyticsManager;->a:Lcom/a/a/a/SessionEventMetadata;
 
-    sget-object v2, Lcom/a/a/a/SessionEvent$r;->c:Lcom/a/a/a/SessionEvent$r;
+    sget-object v2, Lcom/a/a/a/SessionEvent$ICr;->c:Lcom/a/a/a/SessionEvent$ICr;
 
-    invoke-static {v1, v2, p1}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$r;Landroid/app/Activity;)Lcom/a/a/a/SessionEvent;
+    invoke-static {v1, v2, p1}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$ICr;Landroid/app/Activity;)Lcom/a/a/a/SessionEvent;
 
     move-result-object v1
 
@@ -279,9 +279,9 @@
 
     iget-object v1, p0, Lcom/a/a/a/SessionAnalyticsManager;->a:Lcom/a/a/a/SessionEventMetadata;
 
-    sget-object v2, Lcom/a/a/a/SessionEvent$r;->d:Lcom/a/a/a/SessionEvent$r;
+    sget-object v2, Lcom/a/a/a/SessionEvent$ICr;->d:Lcom/a/a/a/SessionEvent$ICr;
 
-    invoke-static {v1, v2, p1}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$r;Landroid/app/Activity;)Lcom/a/a/a/SessionEvent;
+    invoke-static {v1, v2, p1}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$ICr;Landroid/app/Activity;)Lcom/a/a/a/SessionEvent;
 
     move-result-object v1
 
@@ -302,9 +302,9 @@
 
     iget-object v1, p0, Lcom/a/a/a/SessionAnalyticsManager;->a:Lcom/a/a/a/SessionEventMetadata;
 
-    sget-object v2, Lcom/a/a/a/SessionEvent$r;->b:Lcom/a/a/a/SessionEvent$r;
+    sget-object v2, Lcom/a/a/a/SessionEvent$ICr;->b:Lcom/a/a/a/SessionEvent$ICr;
 
-    invoke-static {v1, v2, p1}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$r;Landroid/app/Activity;)Lcom/a/a/a/SessionEvent;
+    invoke-static {v1, v2, p1}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$ICr;Landroid/app/Activity;)Lcom/a/a/a/SessionEvent;
 
     move-result-object v1
 
@@ -325,9 +325,9 @@
 
     iget-object v1, p0, Lcom/a/a/a/SessionAnalyticsManager;->a:Lcom/a/a/a/SessionEventMetadata;
 
-    sget-object v2, Lcom/a/a/a/SessionEvent$r;->f:Lcom/a/a/a/SessionEvent$r;
+    sget-object v2, Lcom/a/a/a/SessionEvent$ICr;->f:Lcom/a/a/a/SessionEvent$ICr;
 
-    invoke-static {v1, v2, p1}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$r;Landroid/app/Activity;)Lcom/a/a/a/SessionEvent;
+    invoke-static {v1, v2, p1}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$ICr;Landroid/app/Activity;)Lcom/a/a/a/SessionEvent;
 
     move-result-object v1
 

@@ -14,7 +14,7 @@
 
 .field private final e:Lcom/c/a/a/Document;
 
-.field private f:Lcom/c/a/a/ParseSource$p;
+.field private f:Lcom/c/a/a/ParseSource$ICp;
 
 
 # direct methods
@@ -51,7 +51,7 @@
     iput-object v0, p0, Lcom/c/a/a/BuildDocument;->e:Lcom/c/a/a/Document;
 
     .line 120
-    iput-object v1, p0, Lcom/c/a/a/BuildDocument;->f:Lcom/c/a/a/ParseSource$p;
+    iput-object v1, p0, Lcom/c/a/a/BuildDocument;->f:Lcom/c/a/a/ParseSource$ICp;
 
     .line 26
     if-nez p1, :cond_0
@@ -107,17 +107,17 @@
     goto :goto_0
 .end method
 
-.method public a(Lcom/c/a/a/ParseSource$p;)V
+.method public a(Lcom/c/a/a/ParseSource$ICp;)V
     .locals 2
 
     .prologue
     .line 30
-    iput-object p1, p0, Lcom/c/a/a/BuildDocument;->f:Lcom/c/a/a/ParseSource$p;
+    iput-object p1, p0, Lcom/c/a/a/BuildDocument;->f:Lcom/c/a/a/ParseSource$ICp;
 
     .line 31
     iget-object v0, p0, Lcom/c/a/a/BuildDocument;->e:Lcom/c/a/a/Document;
 
-    invoke-interface {p1}, Lcom/c/a/a/ParseSource$p;->toString()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/c/a/a/ParseSource$ICp;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -211,7 +211,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/c/a/a/BuildDocument;->f:Lcom/c/a/a/ParseSource$p;
+    iget-object v0, p0, Lcom/c/a/a/BuildDocument;->f:Lcom/c/a/a/ParseSource$ICp;
 
     if-eqz v0, :cond_0
 
@@ -226,9 +226,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/c/a/a/BuildDocument;->f:Lcom/c/a/a/ParseSource$p;
+    iget-object v1, p0, Lcom/c/a/a/BuildDocument;->f:Lcom/c/a/a/ParseSource$ICp;
 
-    invoke-interface {v1}, Lcom/c/a/a/ParseSource$p;->toString()Ljava/lang/String;
+    invoke-interface {v1}, Lcom/c/a/a/ParseSource$ICp;->toString()Ljava/lang/String;
 
     move-result-object v1
 

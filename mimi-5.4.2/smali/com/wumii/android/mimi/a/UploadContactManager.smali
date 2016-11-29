@@ -24,9 +24,9 @@
 
 .field private i:Landroid/support/v4/content/LocalBroadcastManager;
 
-.field private j:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+.field private j:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
-.field private k:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+.field private k:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
 
 # direct methods
@@ -96,10 +96,10 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->i:Landroid/support/v4/content/LocalBroadcastManager;
 
     .line 64
-    iput-object v1, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->j:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    iput-object v1, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->j:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     .line 65
-    iput-object v1, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    iput-object v1, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     .line 85
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -164,12 +164,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/a/UploadContactManager;Lcom/wumii/android/mimi/a/UploadContactManager$br;)Lcom/wumii/android/mimi/a/UploadContactManager$br;
+.method static synthetic a(Lcom/wumii/android/mimi/a/UploadContactManager;Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;)Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
     .locals 0
 
     .prologue
     .line 44
-    iput-object p1, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->j:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    iput-object p1, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->j:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     return-object p1
 .end method
@@ -252,12 +252,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/a/UploadContactManager;Ljava/util/List;Lcom/wumii/android/mimi/a/UploadContactManager$br;)V
+.method static synthetic a(Lcom/wumii/android/mimi/a/UploadContactManager;Ljava/util/List;Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;)V
     .locals 0
 
     .prologue
     .line 44
-    invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/a/UploadContactManager;->a(Ljava/util/List;Lcom/wumii/android/mimi/a/UploadContactManager$br;)V
+    invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/a/UploadContactManager;->a(Ljava/util/List;Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;)V
 
     return-void
 .end method
@@ -336,7 +336,7 @@
     goto :goto_0
 .end method
 
-.method private a(Ljava/util/List;Lcom/wumii/android/mimi/a/UploadContactManager$br;)V
+.method private a(Ljava/util/List;Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;)V
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -345,7 +345,7 @@
             "<",
             "Lcom/wumii/mimi/model/domain/mobile/MobileContactEntry;",
             ">;",
-            "Lcom/wumii/android/mimi/a/UploadContactManager$br;",
+            "Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;",
             ")V"
         }
     .end annotation
@@ -398,11 +398,11 @@
     if-eqz v0, :cond_0
 
     .line 200
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->c:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->c:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
     const-string/jumbo v1, "contact people empty"
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->a(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->a(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 261
     :goto_0
@@ -410,11 +410,11 @@
 
     .line 204
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/a/UploadContactManager$br;->b:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    sget-object v0, Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;->b:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     if-eq p2, v0, :cond_1
 
-    sget-object v0, Lcom/wumii/android/mimi/a/UploadContactManager$br;->c:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    sget-object v0, Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;->c:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     if-ne p2, v0, :cond_4
 
@@ -427,7 +427,7 @@
     .line 207
     const-string/jumbo v2, "nt"
 
-    sget-object v0, Lcom/wumii/android/mimi/a/UploadContactManager$br;->b:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    sget-object v0, Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;->b:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     if-ne p2, v0, :cond_3
 
@@ -508,7 +508,7 @@
 
     .line 213
     :cond_4
-    sget-object v0, Lcom/wumii/android/mimi/a/UploadContactManager$br;->a:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    sget-object v0, Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;->a:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     if-ne p2, v0, :cond_2
 
@@ -594,9 +594,9 @@
     :cond_6
     iget-object v4, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->d:Lcom/wumii/a/a/JacksonMapper;
 
-    new-instance v5, Lcom/wumii/android/mimi/a/UploadContactManager$bq;
+    new-instance v5, Lcom/wumii/android/mimi/a/UploadContactManager$ICbq;
 
-    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/a/UploadContactManager$bq;-><init>(Lcom/wumii/android/mimi/a/UploadContactManager;)V
+    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/a/UploadContactManager$ICbq;-><init>(Lcom/wumii/android/mimi/a/UploadContactManager;)V
 
     invoke-virtual {v4, v0, v5}, Lcom/wumii/a/a/JacksonMapper;->a(Ljava/lang/String;Lcom/fasterxml/jackson/core/type/TypeReference;)Ljava/lang/Object;
 
@@ -787,16 +787,16 @@
     return-object v0
 .end method
 
-.method private b(Lcom/wumii/android/mimi/a/UploadContactManager$br;)V
+.method private b(Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;)V
     .locals 2
 
     .prologue
     .line 111
     new-instance v0, Ljava/lang/Thread;
 
-    new-instance v1, Lcom/wumii/android/mimi/a/UploadContactManager$bp;
+    new-instance v1, Lcom/wumii/android/mimi/a/UploadContactManager$ICbp;
 
-    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/a/UploadContactManager$bp;-><init>(Lcom/wumii/android/mimi/a/UploadContactManager;Lcom/wumii/android/mimi/a/UploadContactManager$br;)V
+    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/a/UploadContactManager$ICbp;-><init>(Lcom/wumii/android/mimi/a/UploadContactManager;Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;)V
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
@@ -879,11 +879,11 @@
     invoke-interface {v0, v2}, Lorg/slf4j/Logger;->warn(Ljava/lang/String;)V
 
     .line 149
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->c:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->c:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
     const-string/jumbo v2, "contact cursor null"
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/EventUtils;->a(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/EventUtils;->a(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 150
     const/4 v0, 0x1
@@ -1017,7 +1017,7 @@
     invoke-direct {p0, v2}, Lcom/wumii/android/mimi/a/UploadContactManager;->a(Z)V
 
     .line 186
-    sget-object v2, Lcom/wumii/android/mimi/c/EventUtils$af;->c:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v2, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->c:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1027,7 +1027,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/EventUtils;->a(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/EventUtils;->a(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 187
     throw v0
@@ -1109,7 +1109,7 @@
     invoke-direct {p0, v0}, Lcom/wumii/android/mimi/a/UploadContactManager;->a(Z)V
 
     .line 193
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->c:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->c:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1133,7 +1133,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->a(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->a(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
 
     move-object v0, v6
 
@@ -1229,7 +1229,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v1, v2, v4}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/google/a/a/Phonenumber$n;
+    invoke-virtual {v1, v2, v4}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/google/a/a/Phonenumber$ICn;
 
     move-result-object v1
 
@@ -1238,7 +1238,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v1}, Lcom/google/a/a/Phonenumber$n;->a()I
+    invoke-virtual {v1}, Lcom/google/a/a/Phonenumber$ICn;->a()I
 
     move-result v5
 
@@ -1250,7 +1250,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v1}, Lcom/google/a/a/Phonenumber$n;->b()J
+    invoke-virtual {v1}, Lcom/google/a/a/Phonenumber$ICn;->b()J
 
     move-result-wide v6
 
@@ -1326,26 +1326,26 @@
 
 
 # virtual methods
-.method public a(Lcom/wumii/android/mimi/a/UploadContactManager$br;)V
+.method public a(Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;)V
     .locals 3
 
     .prologue
     const/4 v2, 0x0
 
     .line 94
-    iget-object v0, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    iget-object v0, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     if-eqz v0, :cond_0
 
     if-eqz p1, :cond_1
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/a/UploadContactManager$br;->ordinal()I
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;->ordinal()I
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    iget-object v1, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/a/UploadContactManager$br;->ordinal()I
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;->ordinal()I
 
     move-result v1
 
@@ -1353,27 +1353,27 @@
 
     .line 95
     :cond_0
-    iput-object p1, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    iput-object p1, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     .line 98
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->j:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    iget-object v0, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->j:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    iget-object v0, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->j:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    iget-object v0, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->j:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/UploadContactManager$br;->ordinal()I
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;->ordinal()I
 
     move-result v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    iget-object v1, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/a/UploadContactManager$br;->ordinal()I
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;->ordinal()I
 
     move-result v1
 
@@ -1385,7 +1385,7 @@
     invoke-direct {p0, v0}, Lcom/wumii/android/mimi/a/UploadContactManager;->a(I)V
 
     .line 100
-    iput-object v2, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    iput-object v2, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     .line 108
     :cond_2
@@ -1394,21 +1394,21 @@
 
     .line 104
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->j:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    iget-object v0, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->j:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    iget-object v0, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     if-eqz v0, :cond_2
 
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    iget-object v0, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
-    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/a/UploadContactManager;->b(Lcom/wumii/android/mimi/a/UploadContactManager$br;)V
+    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/a/UploadContactManager;->b(Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;)V
 
     .line 106
-    iput-object v2, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    iput-object v2, p0, Lcom/wumii/android/mimi/a/UploadContactManager;->k:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     goto :goto_0
 .end method

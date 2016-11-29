@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Le/a/ClientStats;",
-        "Le/a/ClientStats$aa;",
+        "Le/a/ClientStats$ICaa;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Le/a/ClientStats$aa;",
+            "Le/a/ClientStats$ICaa;",
             "Le/a/FieldMetaData;",
             ">;"
         }
@@ -69,7 +69,7 @@
 
 .field private j:B
 
-.field private k:[Le/a/ClientStats$aa;
+.field private k:[Le/a/ClientStats$ICaa;
 
 
 # direct methods
@@ -135,9 +135,9 @@
 
     const-class v1, Le/a/StandardScheme;
 
-    new-instance v2, Le/a/ClientStats$x;
+    new-instance v2, Le/a/ClientStats$ICx;
 
-    invoke-direct {v2, v3}, Le/a/ClientStats$x;-><init>(Le/a/ClientStats$v;)V
+    invoke-direct {v2, v3}, Le/a/ClientStats$ICx;-><init>(Le/a/ClientStats$ICv;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -146,21 +146,21 @@
 
     const-class v1, Le/a/TupleScheme;
 
-    new-instance v2, Le/a/ClientStats$z;
+    new-instance v2, Le/a/ClientStats$ICz;
 
-    invoke-direct {v2, v3}, Le/a/ClientStats$z;-><init>(Le/a/ClientStats$v;)V
+    invoke-direct {v2, v3}, Le/a/ClientStats$ICz;-><init>(Le/a/ClientStats$ICv;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 121
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Le/a/ClientStats$aa;
+    const-class v1, Le/a/ClientStats$ICaa;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 122
-    sget-object v1, Le/a/ClientStats$aa;->a:Le/a/ClientStats$aa;
+    sget-object v1, Le/a/ClientStats$ICaa;->a:Le/a/ClientStats$ICaa;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -175,7 +175,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 124
-    sget-object v1, Le/a/ClientStats$aa;->b:Le/a/ClientStats$aa;
+    sget-object v1, Le/a/ClientStats$ICaa;->b:Le/a/ClientStats$ICaa;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -190,7 +190,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 126
-    sget-object v1, Le/a/ClientStats$aa;->c:Le/a/ClientStats$aa;
+    sget-object v1, Le/a/ClientStats$ICaa;->c:Le/a/ClientStats$ICaa;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -237,13 +237,13 @@
     .line 118
     const/4 v0, 0x1
 
-    new-array v0, v0, [Le/a/ClientStats$aa;
+    new-array v0, v0, [Le/a/ClientStats$ICaa;
 
-    sget-object v1, Le/a/ClientStats$aa;->c:Le/a/ClientStats$aa;
+    sget-object v1, Le/a/ClientStats$ICaa;->c:Le/a/ClientStats$ICaa;
 
     aput-object v1, v0, v2
 
-    iput-object v0, p0, Le/a/ClientStats;->k:[Le/a/ClientStats$aa;
+    iput-object v0, p0, Le/a/ClientStats;->k:[Le/a/ClientStats$ICaa;
 
     .line 133
     iput v2, p0, Le/a/ClientStats;->a:I

@@ -11,7 +11,7 @@
 
 .field private b:Ljava/lang/String;
 
-.field private c:Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+.field private c:Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
 .field private d:Z
 
@@ -31,7 +31,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 55
-    iput-object v1, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    iput-object v1, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
     .line 58
     const/4 v0, 0x1
@@ -53,23 +53,23 @@
     .line 78
     iget-object v0, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->a:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/sina/weibo/sdk/api/a/ApiUtils;->a(Landroid/content/Context;)Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    invoke-static {v0}, Lcom/sina/weibo/sdk/api/a/ApiUtils;->a(Landroid/content/Context;)Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    iput-object v0, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
     .line 79
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
     if-eqz v0, :cond_0
 
     .line 80
     const-string/jumbo v0, "WeiboApiImpl"
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
-    invoke-virtual {v1}, Lcom/sina/weibo/sdk/api/a/ApiUtils$b;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -371,7 +371,7 @@
 
     .prologue
     .line 93
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
     if-eqz v0, :cond_0
 
@@ -423,9 +423,9 @@
     .line 282
     new-instance v1, Lcom/sina/weibo/sdk/api/a/VersionCheckHandler;
 
-    iget-object v2, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    iget-object v2, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
-    iget-object v2, v2, Lcom/sina/weibo/sdk/api/a/ApiUtils$b;->a:Ljava/lang/String;
+    iget-object v2, v2, Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;->a:Ljava/lang/String;
 
     invoke-direct {v1, v2}, Lcom/sina/weibo/sdk/api/a/VersionCheckHandler;-><init>(Ljava/lang/String;)V
 
@@ -463,9 +463,9 @@
 
     const-string/jumbo v2, "com.sina.weibo.sdk.action.ACTION_WEIBO_ACTIVITY"
 
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
-    iget-object v3, v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$b;->a:Ljava/lang/String;
+    iget-object v3, v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;->a:Ljava/lang/String;
 
     iget-object v4, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->b:Ljava/lang/String;
 
@@ -489,7 +489,7 @@
 
     .prologue
     .line 340
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
     if-nez v0, :cond_3
 
@@ -555,9 +555,9 @@
 
     .line 356
     :cond_3
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
-    iget v0, v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$b;->b:I
+    iget v0, v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;->b:I
 
     invoke-static {v0}, Lcom/sina/weibo/sdk/api/a/ApiUtils;->a(I)Z
 
@@ -578,9 +578,9 @@
     :cond_4
     iget-object v0, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->a:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    iget-object v1, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
-    iget-object v1, v1, Lcom/sina/weibo/sdk/api/a/ApiUtils$b;->a:Ljava/lang/String;
+    iget-object v1, v1, Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;->a:Ljava/lang/String;
 
     invoke-static {v0, v1}, Lcom/sina/weibo/sdk/api/a/ApiUtils;->b(Landroid/content/Context;Ljava/lang/String;)Z
 
@@ -609,7 +609,7 @@
 
     .prologue
     .line 115
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
     if-nez v0, :cond_0
 
@@ -619,9 +619,9 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/api/a/WeiboShareAPIImpl;->c:Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
-    iget v0, v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$b;->b:I
+    iget v0, v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;->b:I
 
     goto :goto_0
 .end method

@@ -17,7 +17,7 @@
 
 .field private r:Landroid/widget/Button;
 
-.field private s:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$c;
+.field private s:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
 
 
 # direct methods
@@ -261,22 +261,22 @@
 
     .line 75
     :cond_4
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->s:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$c;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->s:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
 
     if-nez v2, :cond_5
 
     .line 76
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$c;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
 
-    invoke-direct {v2, p0, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$c;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;Landroid/app/Activity;)V
+    invoke-direct {v2, p0, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;Landroid/app/Activity;)V
 
-    iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->s:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$c;
+    iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->s:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
 
     .line 78
     :cond_5
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->s:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$c;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity;->s:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;
 
-    invoke-virtual {v2, v0, v1}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$c;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v0, v1}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePasswordActivity$ICc;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

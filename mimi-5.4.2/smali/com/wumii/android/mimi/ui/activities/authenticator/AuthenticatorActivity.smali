@@ -422,7 +422,7 @@
 
     const/4 v4, 0x0
 
-    invoke-virtual {v2, v3, v4}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/google/a/a/Phonenumber$n;
+    invoke-virtual {v2, v3, v4}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/google/a/a/Phonenumber$ICn;
     :try_end_0
     .catch Lcom/google/a/a/NumberParseException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
@@ -479,9 +479,9 @@
     if-ne v0, v5, :cond_0
 
     .line 229
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->t:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->t:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$af;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
 
     .line 232
     :cond_0
@@ -683,9 +683,9 @@
 
     .prologue
     .line 256
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->q:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->q:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$af;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
 
     .line 258
     const-string/jumbo v0, "protocol"
@@ -701,9 +701,9 @@
 
     .prologue
     .line 186
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->o:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->o:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$af;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
 
     .line 188
     invoke-static {p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->a(Landroid/app/Activity;)V
@@ -727,9 +727,9 @@
     if-ne v0, v1, :cond_0
 
     .line 222
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->s:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->s:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$af;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
 
     .line 224
     :cond_0
@@ -816,9 +816,9 @@
     if-ne v0, v1, :cond_0
 
     .line 213
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->r:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->r:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$af;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
 
     .line 215
     :cond_0
@@ -900,9 +900,9 @@
     :goto_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->r:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$a;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$ICa;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$a;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$ICa;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
@@ -921,9 +921,9 @@
     .line 119
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->F:Landroid/widget/RadioGroup;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$b;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$ICb;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$b;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity$ICb;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioGroup;->setOnCheckedChangeListener(Landroid/widget/RadioGroup$OnCheckedChangeListener;)V
 

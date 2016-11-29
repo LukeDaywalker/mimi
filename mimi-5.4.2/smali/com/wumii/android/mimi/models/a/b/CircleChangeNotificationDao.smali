@@ -129,9 +129,9 @@
     invoke-direct {v1}, Lcom/wumii/android/mimi/models/entities/notification/CircleChangeNotification;-><init>()V
 
     .line 50
-    new-instance v3, Lcom/wumii/android/mimi/models/a/b/CircleChangeNotificationDao$b;
+    new-instance v3, Lcom/wumii/android/mimi/models/a/b/CircleChangeNotificationDao$ICb;
 
-    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/models/a/b/CircleChangeNotificationDao$b;-><init>(Lcom/wumii/android/mimi/models/a/b/CircleChangeNotificationDao;)V
+    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/models/a/b/CircleChangeNotificationDao$ICb;-><init>(Lcom/wumii/android/mimi/models/a/b/CircleChangeNotificationDao;)V
 
     invoke-static {v0, v3}, Lcom/wumii/android/mimi/models/a/b/CircleChangeNotificationDao;->fromJson(Ljava/lang/String;Lcom/fasterxml/jackson/core/type/TypeReference;)Ljava/lang/Object;
 

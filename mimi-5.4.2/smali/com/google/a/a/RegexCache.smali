@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/google/a/a/RegexCache$q;
+.field private a:Lcom/google/a/a/RegexCache$ICq;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/a/a/q",
@@ -26,11 +26,11 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 32
-    new-instance v0, Lcom/google/a/a/RegexCache$q;
+    new-instance v0, Lcom/google/a/a/RegexCache$ICq;
 
-    invoke-direct {v0, p1}, Lcom/google/a/a/RegexCache$q;-><init>(I)V
+    invoke-direct {v0, p1}, Lcom/google/a/a/RegexCache$ICq;-><init>(I)V
 
-    iput-object v0, p0, Lcom/google/a/a/RegexCache;->a:Lcom/google/a/a/RegexCache$q;
+    iput-object v0, p0, Lcom/google/a/a/RegexCache;->a:Lcom/google/a/a/RegexCache$ICq;
 
     .line 33
     return-void
@@ -43,9 +43,9 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/google/a/a/RegexCache;->a:Lcom/google/a/a/RegexCache$q;
+    iget-object v0, p0, Lcom/google/a/a/RegexCache;->a:Lcom/google/a/a/RegexCache$ICq;
 
-    invoke-virtual {v0, p1}, Lcom/google/a/a/RegexCache$q;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Lcom/google/a/a/RegexCache$ICq;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -60,9 +60,9 @@
     move-result-object v0
 
     .line 39
-    iget-object v1, p0, Lcom/google/a/a/RegexCache;->a:Lcom/google/a/a/RegexCache$q;
+    iget-object v1, p0, Lcom/google/a/a/RegexCache;->a:Lcom/google/a/a/RegexCache$ICq;
 
-    invoke-virtual {v1, p1, v0}, Lcom/google/a/a/RegexCache$q;->a(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-virtual {v1, p1, v0}, Lcom/google/a/a/RegexCache$ICq;->a(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 41
     :cond_0

@@ -13,9 +13,9 @@
 
     .prologue
     .line 26
-    new-instance v0, Lcom/f/a/a/Network$f;
+    new-instance v0, Lcom/f/a/a/Network$ICf;
 
-    invoke-direct {v0}, Lcom/f/a/a/Network$f;-><init>()V
+    invoke-direct {v0}, Lcom/f/a/a/Network$ICf;-><init>()V
 
     sput-object v0, Lcom/f/a/a/Network;->a:Lcom/f/a/a/Network;
 

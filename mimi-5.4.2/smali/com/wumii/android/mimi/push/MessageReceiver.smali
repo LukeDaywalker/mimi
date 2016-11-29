@@ -595,7 +595,7 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 198
-    sget-object v1, Lcom/wumii/android/mimi/c/Constants$r;->e:Ljava/lang/String;
+    sget-object v1, Lcom/wumii/android/mimi/c/Constants$ICr;->e:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
@@ -1304,7 +1304,7 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     .line 65
-    sget-object v0, Lcom/wumii/android/mimi/c/Constants$r;->a:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/c/Constants$ICr;->a:Ljava/lang/String;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

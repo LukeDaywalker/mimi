@@ -81,17 +81,17 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/b/a/c/f/MimeMatcher$g;
+    check-cast v0, Lcom/b/a/c/f/MimeMatcher$ICg;
 
     .line 34
-    invoke-virtual {v0, p1}, Lcom/b/a/c/f/MimeMatcher$g;->a(Ljava/lang/String;)Z
+    invoke-virtual {v0, p1}, Lcom/b/a/c/f/MimeMatcher$ICg;->a(Ljava/lang/String;)Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
     .line 35
-    invoke-virtual {v0}, Lcom/b/a/c/f/MimeMatcher$g;->a()Ljava/lang/Object;
+    invoke-virtual {v0}, Lcom/b/a/c/f/MimeMatcher$ICg;->a()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -128,9 +128,9 @@
     .line 22
     iget-object v0, p0, Lcom/b/a/c/f/MimeMatcher;->a:Ljava/util/ArrayList;
 
-    new-instance v1, Lcom/b/a/c/f/MimeMatcher$g;
+    new-instance v1, Lcom/b/a/c/f/MimeMatcher$ICg;
 
-    invoke-direct {v1, p0, p1, p2}, Lcom/b/a/c/f/MimeMatcher$g;-><init>(Lcom/b/a/c/f/MimeMatcher;Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-direct {v1, p0, p1, p2}, Lcom/b/a/c/f/MimeMatcher$ICg;-><init>(Lcom/b/a/c/f/MimeMatcher;Ljava/lang/String;Ljava/lang/Object;)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 

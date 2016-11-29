@@ -212,7 +212,7 @@
     throw v0
 .end method
 
-.method public a(Ljava/lang/String;Ljava/io/InputStream;Lcom/e/a/c/IoUtils$e;)Z
+.method public a(Ljava/lang/String;Ljava/io/InputStream;Lcom/e/a/c/IoUtils$ICe;)Z
     .locals 6
 
     .prologue
@@ -268,7 +268,7 @@
     :try_start_1
     iget v0, p0, Lcom/e/a/a/a/a/BaseDiskCache;->e:I
 
-    invoke-static {p2, v5, p3, v0}, Lcom/e/a/c/IoUtils;->a(Ljava/io/InputStream;Ljava/io/OutputStream;Lcom/e/a/c/IoUtils$e;I)Z
+    invoke-static {p2, v5, p3, v0}, Lcom/e/a/c/IoUtils;->a(Ljava/io/InputStream;Ljava/io/OutputStream;Lcom/e/a/c/IoUtils$ICe;I)Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

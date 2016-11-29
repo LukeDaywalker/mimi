@@ -156,9 +156,9 @@
     .line 47
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/AddOrgFragment;->d:Landroid/widget/EditText;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/AddOrgFragment$b;
+    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/AddOrgFragment$ICb;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/AddOrgFragment$b;-><init>(Lcom/wumii/android/mimi/ui/a/c/AddOrgFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/AddOrgFragment$ICb;-><init>(Lcom/wumii/android/mimi/ui/a/c/AddOrgFragment;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 

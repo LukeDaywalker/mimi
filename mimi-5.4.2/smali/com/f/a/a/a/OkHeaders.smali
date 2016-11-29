@@ -30,9 +30,9 @@
 
     .prologue
     .line 25
-    new-instance v0, Lcom/f/a/a/a/OkHeaders$x;
+    new-instance v0, Lcom/f/a/a/a/OkHeaders$ICx;
 
-    invoke-direct {v0}, Lcom/f/a/a/a/OkHeaders$x;-><init>()V
+    invoke-direct {v0}, Lcom/f/a/a/a/OkHeaders$ICx;-><init>()V
 
     sput-object v0, Lcom/f/a/a/a/OkHeaders;->e:Ljava/util/Comparator;
 
@@ -393,12 +393,12 @@
     return-object v0
 .end method
 
-.method public static a(Lcom/f/a/Request$ap;Ljava/util/Map;)V
+.method public static a(Lcom/f/a/Request$ICap;Ljava/util/Map;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/f/a/Request$ap;",
+            "Lcom/f/a/Request$ICap;",
             "Ljava/util/Map",
             "<",
             "Ljava/lang/String;",
@@ -482,7 +482,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v1, v0}, Lcom/f/a/Request$ap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {p0, v1, v0}, Lcom/f/a/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     goto :goto_0
 

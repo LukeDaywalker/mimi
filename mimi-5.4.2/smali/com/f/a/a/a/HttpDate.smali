@@ -37,9 +37,9 @@
     sput-object v0, Lcom/f/a/a/a/HttpDate;->a:Ljava/util/TimeZone;
 
     .line 37
-    new-instance v0, Lcom/f/a/a/a/HttpDate$p;
+    new-instance v0, Lcom/f/a/a/a/HttpDate$ICp;
 
-    invoke-direct {v0}, Lcom/f/a/a/a/HttpDate$p;-><init>()V
+    invoke-direct {v0}, Lcom/f/a/a/a/HttpDate$ICp;-><init>()V
 
     sput-object v0, Lcom/f/a/a/a/HttpDate;->b:Ljava/lang/ThreadLocal;
 

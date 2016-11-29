@@ -141,9 +141,9 @@
     move-result-object p2
 
     .line 53
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$g;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;
 
-    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$g;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;-><init>(Landroid/view/View;)V
 
     .line 54
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
@@ -160,7 +160,7 @@
     invoke-virtual {p2, v2, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 62
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$g;->a(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$g;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;->a(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;)Landroid/widget/TextView;
 
     move-result-object v2
 
@@ -171,7 +171,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 63
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$g;->b(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$g;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;->b(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;)Landroid/widget/TextView;
 
     move-result-object v2
 
@@ -190,7 +190,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 65
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$g;->c(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$g;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;->c(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;)Landroid/widget/TextView;
 
     move-result-object v2
 
@@ -214,7 +214,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$g;
+    check-cast v0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationAdapter$ICg;
 
     goto :goto_0
 

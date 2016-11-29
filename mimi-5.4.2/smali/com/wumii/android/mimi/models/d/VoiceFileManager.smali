@@ -218,11 +218,11 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 49
-    new-instance v0, Lcom/wumii/android/mimi/models/d/VoiceFileManager$ac;
+    new-instance v0, Lcom/wumii/android/mimi/models/d/VoiceFileManager$ICac;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/d/VoiceFileManager$ac;-><init>(Lcom/wumii/android/mimi/models/d/VoiceFileManager;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/d/VoiceFileManager$ICac;-><init>(Lcom/wumii/android/mimi/models/d/VoiceFileManager;)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/VoiceFileManager$ac;->start()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/VoiceFileManager$ICac;->start()V
 
     goto :goto_0
 .end method

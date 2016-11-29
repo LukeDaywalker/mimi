@@ -121,13 +121,13 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/b/LoadUserProfileTask;->a(Lcom/wumii/android/mimi/b/LoadUserProfileTask$au;Z)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/b/LoadUserProfileTask;->a(Lcom/wumii/android/mimi/b/LoadUserProfileTask$ICau;Z)V
 
     .line 85
     return-void
 .end method
 
-.method public a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$au;Z)V
+.method public a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$ICau;Z)V
     .locals 3
 
     .prologue
@@ -183,13 +183,13 @@
 
     invoke-direct {v0, p1}, Lcom/wumii/android/mimi/b/LoadUserProfileTask;-><init>(Landroid/app/Activity;)V
 
-    new-instance v1, Lcom/wumii/android/mimi/c/UserProfileManager$at;
+    new-instance v1, Lcom/wumii/android/mimi/c/UserProfileManager$ICat;
 
-    invoke-direct {v1, p0, p2}, Lcom/wumii/android/mimi/c/UserProfileManager$at;-><init>(Lcom/wumii/android/mimi/c/UserProfileManager;Lcom/wumii/android/mimi/c/UserProfileManager$au;)V
+    invoke-direct {v1, p0, p2}, Lcom/wumii/android/mimi/c/UserProfileManager$ICat;-><init>(Lcom/wumii/android/mimi/c/UserProfileManager;Lcom/wumii/android/mimi/c/UserProfileManager$ICau;)V
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/b/LoadUserProfileTask;->a(Lcom/wumii/android/mimi/b/LoadUserProfileTask$au;Z)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/b/LoadUserProfileTask;->a(Lcom/wumii/android/mimi/b/LoadUserProfileTask$ICau;Z)V
 
     .line 71
     :cond_1
@@ -201,7 +201,7 @@
     if-eqz p2, :cond_1
 
     .line 68
-    invoke-interface {p2, v0, v1}, Lcom/wumii/android/mimi/c/UserProfileManager$au;->a(Lcom/wumii/android/mimi/models/entities/profile/UserProfile;Lcom/wumii/android/mimi/models/entities/profile/UserPrivilege;)V
+    invoke-interface {p2, v0, v1}, Lcom/wumii/android/mimi/c/UserProfileManager$ICau;->a(Lcom/wumii/android/mimi/models/entities/profile/UserProfile;Lcom/wumii/android/mimi/models/entities/profile/UserPrivilege;)V
 
     goto :goto_0
 .end method

@@ -48,9 +48,9 @@
     invoke-direct {p0}, Lcom/b/a/c/d/ChromePeerManager;-><init>()V
 
     .line 135
-    new-instance v0, Lcom/b/a/c/b/DatabasePeerManager$b;
+    new-instance v0, Lcom/b/a/c/b/DatabasePeerManager$ICb;
 
-    invoke-direct {v0, p0}, Lcom/b/a/c/b/DatabasePeerManager$b;-><init>(Lcom/b/a/c/b/DatabasePeerManager;)V
+    invoke-direct {v0, p0}, Lcom/b/a/c/b/DatabasePeerManager$ICb;-><init>(Lcom/b/a/c/b/DatabasePeerManager;)V
 
     iput-object v0, p0, Lcom/b/a/c/b/DatabasePeerManager;->c:Lcom/b/a/c/d/PeerRegistrationListener;
 

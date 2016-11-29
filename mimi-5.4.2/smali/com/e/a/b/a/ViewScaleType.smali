@@ -88,7 +88,7 @@
 
     .prologue
     .line 59
-    sget-object v0, Lcom/e/a/b/a/ViewScaleType$j;->a:[I
+    sget-object v0, Lcom/e/a/b/a/ViewScaleType$ICj;->a:[I
 
     invoke-virtual {p0}, Landroid/widget/ImageView;->getScaleType()Landroid/widget/ImageView$ScaleType;
 

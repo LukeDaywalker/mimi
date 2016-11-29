@@ -33,9 +33,9 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/network/NetworkManager;->a:Lcom/wumii/android/mimi/models/d/NetworkHelper;
 
     .line 25
-    new-instance v0, Lcom/wumii/android/mimi/network/NetworkManager$k;
+    new-instance v0, Lcom/wumii/android/mimi/network/NetworkManager$ICk;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/network/NetworkManager$k;-><init>(Lcom/wumii/android/mimi/network/NetworkManager;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/network/NetworkManager$ICk;-><init>(Lcom/wumii/android/mimi/network/NetworkManager;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/network/NetworkManager;->b:Landroid/content/BroadcastReceiver;
 

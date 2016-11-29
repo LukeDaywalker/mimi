@@ -3,7 +3,7 @@
 .source "FriendImpressionActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/a/e/FriendImpressionWriteQuestionFragment$e;
+.implements Lcom/wumii/android/mimi/ui/a/e/FriendImpressionWriteQuestionFragment$ICe;
 
 
 # instance fields
@@ -170,9 +170,9 @@
 
     const v1, 0x7f06014d
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$g;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICg;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$g;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICg;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -446,13 +446,13 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/b/LoadUserProfileTask;-><init>(Landroid/app/Activity;)V
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$f;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICf;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$f;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICf;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;)V
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/b/LoadUserProfileTask;->a(Lcom/wumii/android/mimi/b/LoadUserProfileTask$au;Z)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/b/LoadUserProfileTask;->a(Lcom/wumii/android/mimi/b/LoadUserProfileTask$ICau;Z)V
 
     goto :goto_0
 

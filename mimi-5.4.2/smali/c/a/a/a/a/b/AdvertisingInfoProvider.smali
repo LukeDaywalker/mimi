@@ -56,9 +56,9 @@
     .line 68
     new-instance v0, Ljava/lang/Thread;
 
-    new-instance v1, Lc/a/a/a/a/b/AdvertisingInfoProvider$d;
+    new-instance v1, Lc/a/a/a/a/b/AdvertisingInfoProvider$ICd;
 
-    invoke-direct {v1, p0, p1}, Lc/a/a/a/a/b/AdvertisingInfoProvider$d;-><init>(Lc/a/a/a/a/b/AdvertisingInfoProvider;Lc/a/a/a/a/b/AdvertisingInfo;)V
+    invoke-direct {v1, p0, p1}, Lc/a/a/a/a/b/AdvertisingInfoProvider$ICd;-><init>(Lc/a/a/a/a/b/AdvertisingInfoProvider;Lc/a/a/a/a/b/AdvertisingInfo;)V
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 

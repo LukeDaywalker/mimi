@@ -55,7 +55,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lc/a/a/a/a/g/Settings$r;)V
+.method synthetic constructor <init>(Lc/a/a/a/a/g/Settings$ICr;)V
     .locals 0
 
     .prologue
@@ -70,7 +70,7 @@
 
     .prologue
     .line 55
-    invoke-static {}, Lc/a/a/a/a/g/Settings$s;->a()Lc/a/a/a/a/g/Settings;
+    invoke-static {}, Lc/a/a/a/a/g/Settings$ICs;->a()Lc/a/a/a/a/g/Settings;
 
     move-result-object v0
 
@@ -279,7 +279,7 @@
     throw v2
 .end method
 
-.method public a(Lc/a/a/a/a/g/Settings$t;Ljava/lang/Object;)Ljava/lang/Object;
+.method public a(Lc/a/a/a/a/g/Settings$ICt;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -308,7 +308,7 @@
     return-object p2
 
     :cond_0
-    invoke-interface {p1, v0}, Lc/a/a/a/a/g/Settings$t;->b(Lc/a/a/a/a/g/SettingsData;)Ljava/lang/Object;
+    invoke-interface {p1, v0}, Lc/a/a/a/a/g/Settings$ICt;->b(Lc/a/a/a/a/g/SettingsData;)Ljava/lang/Object;
 
     move-result-object p2
 

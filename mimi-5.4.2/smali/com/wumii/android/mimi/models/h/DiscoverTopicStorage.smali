@@ -68,11 +68,11 @@
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/a/DiscoverTopicDao;->a(Ljava/util/List;)V
 
     .line 45
-    sget-object v0, Lcom/wumii/android/mimi/models/h/BaseStorage$c;->c:Lcom/wumii/android/mimi/models/h/BaseStorage$c;
+    sget-object v0, Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;->c:Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/h/DiscoverTopicStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$c;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/h/DiscoverTopicStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;Ljava/lang/String;)V
 
     .line 46
     return-void

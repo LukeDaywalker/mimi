@@ -188,7 +188,7 @@
 
     iget-object v3, p0, Lcom/wumii/android/mimi/b/GetPushConfTask;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
 
-    sget-object v4, Lcom/wumii/android/mimi/c/Constants$t;->a:Lcom/fasterxml/jackson/core/type/TypeReference;
+    sget-object v4, Lcom/wumii/android/mimi/c/Constants$ICt;->a:Lcom/fasterxml/jackson/core/type/TypeReference;
 
     const-string/jumbo v7, "topics"
 

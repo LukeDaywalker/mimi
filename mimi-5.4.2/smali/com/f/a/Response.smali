@@ -28,7 +28,7 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/f/a/Response$au;)V
+.method private constructor <init>(Lcom/f/a/Response$ICau;)V
     .locals 1
 
     .prologue
@@ -36,74 +36,74 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 51
-    invoke-static {p1}, Lcom/f/a/Response$au;->a(Lcom/f/a/Response$au;)Lcom/f/a/Request;
+    invoke-static {p1}, Lcom/f/a/Response$ICau;->a(Lcom/f/a/Response$ICau;)Lcom/f/a/Request;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/f/a/Response;->a:Lcom/f/a/Request;
 
     .line 52
-    invoke-static {p1}, Lcom/f/a/Response$au;->b(Lcom/f/a/Response$au;)Lcom/f/a/Protocol;
+    invoke-static {p1}, Lcom/f/a/Response$ICau;->b(Lcom/f/a/Response$ICau;)Lcom/f/a/Protocol;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/f/a/Response;->b:Lcom/f/a/Protocol;
 
     .line 53
-    invoke-static {p1}, Lcom/f/a/Response$au;->c(Lcom/f/a/Response$au;)I
+    invoke-static {p1}, Lcom/f/a/Response$ICau;->c(Lcom/f/a/Response$ICau;)I
 
     move-result v0
 
     iput v0, p0, Lcom/f/a/Response;->c:I
 
     .line 54
-    invoke-static {p1}, Lcom/f/a/Response$au;->d(Lcom/f/a/Response$au;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/f/a/Response$ICau;->d(Lcom/f/a/Response$ICau;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/f/a/Response;->d:Ljava/lang/String;
 
     .line 55
-    invoke-static {p1}, Lcom/f/a/Response$au;->e(Lcom/f/a/Response$au;)Lcom/f/a/Handshake;
+    invoke-static {p1}, Lcom/f/a/Response$ICau;->e(Lcom/f/a/Response$ICau;)Lcom/f/a/Handshake;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/f/a/Response;->e:Lcom/f/a/Handshake;
 
     .line 56
-    invoke-static {p1}, Lcom/f/a/Response$au;->f(Lcom/f/a/Response$au;)Lcom/f/a/Headers$ab;
+    invoke-static {p1}, Lcom/f/a/Response$ICau;->f(Lcom/f/a/Response$ICau;)Lcom/f/a/Headers$ICab;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/f/a/Headers$ab;->a()Lcom/f/a/Headers;
+    invoke-virtual {v0}, Lcom/f/a/Headers$ICab;->a()Lcom/f/a/Headers;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/f/a/Response;->f:Lcom/f/a/Headers;
 
     .line 57
-    invoke-static {p1}, Lcom/f/a/Response$au;->g(Lcom/f/a/Response$au;)Lcom/f/a/ResponseBody;
+    invoke-static {p1}, Lcom/f/a/Response$ICau;->g(Lcom/f/a/Response$ICau;)Lcom/f/a/ResponseBody;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/f/a/Response;->g:Lcom/f/a/ResponseBody;
 
     .line 58
-    invoke-static {p1}, Lcom/f/a/Response$au;->h(Lcom/f/a/Response$au;)Lcom/f/a/Response;
+    invoke-static {p1}, Lcom/f/a/Response$ICau;->h(Lcom/f/a/Response$ICau;)Lcom/f/a/Response;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/f/a/Response;->h:Lcom/f/a/Response;
 
     .line 59
-    invoke-static {p1}, Lcom/f/a/Response$au;->i(Lcom/f/a/Response$au;)Lcom/f/a/Response;
+    invoke-static {p1}, Lcom/f/a/Response$ICau;->i(Lcom/f/a/Response$ICau;)Lcom/f/a/Response;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/f/a/Response;->i:Lcom/f/a/Response;
 
     .line 60
-    invoke-static {p1}, Lcom/f/a/Response$au;->j(Lcom/f/a/Response$au;)Lcom/f/a/Response;
+    invoke-static {p1}, Lcom/f/a/Response$ICau;->j(Lcom/f/a/Response$ICau;)Lcom/f/a/Response;
 
     move-result-object v0
 
@@ -113,12 +113,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/f/a/Response$au;Lcom/f/a/Response$at;)V
+.method synthetic constructor <init>(Lcom/f/a/Response$ICau;Lcom/f/a/Response$ICat;)V
     .locals 0
 
     .prologue
     .line 36
-    invoke-direct {p0, p1}, Lcom/f/a/Response;-><init>(Lcom/f/a/Response$au;)V
+    invoke-direct {p0, p1}, Lcom/f/a/Response;-><init>(Lcom/f/a/Response$ICau;)V
 
     return-void
 .end method
@@ -357,16 +357,16 @@
     return-object v0
 .end method
 
-.method public i()Lcom/f/a/Response$au;
+.method public i()Lcom/f/a/Response$ICau;
     .locals 2
 
     .prologue
     .line 134
-    new-instance v0, Lcom/f/a/Response$au;
+    new-instance v0, Lcom/f/a/Response$ICau;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/f/a/Response$au;-><init>(Lcom/f/a/Response;Lcom/f/a/Response$at;)V
+    invoke-direct {v0, p0, v1}, Lcom/f/a/Response$ICau;-><init>(Lcom/f/a/Response;Lcom/f/a/Response$ICat;)V
 
     return-object v0
 .end method

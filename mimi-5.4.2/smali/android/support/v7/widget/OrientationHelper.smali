@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field protected final a:Landroid/support/v7/widget/RecyclerView$ar;
+.field protected final a:Landroid/support/v7/widget/RecyclerView$ICar;
 
 .field private b:I
 
 
 # direct methods
-.method private constructor <init>(Landroid/support/v7/widget/RecyclerView$ar;)V
+.method private constructor <init>(Landroid/support/v7/widget/RecyclerView$ICar;)V
     .locals 1
 
     .prologue
@@ -23,35 +23,35 @@
     iput v0, p0, Landroid/support/v7/widget/OrientationHelper;->b:I
 
     .line 45
-    iput-object p1, p0, Landroid/support/v7/widget/OrientationHelper;->a:Landroid/support/v7/widget/RecyclerView$ar;
+    iput-object p1, p0, Landroid/support/v7/widget/OrientationHelper;->a:Landroid/support/v7/widget/RecyclerView$ICar;
 
     .line 46
     return-void
 .end method
 
-.method synthetic constructor <init>(Landroid/support/v7/widget/RecyclerView$ar;Landroid/support/v7/widget/OrientationHelper$aa;)V
+.method synthetic constructor <init>(Landroid/support/v7/widget/RecyclerView$ICar;Landroid/support/v7/widget/OrientationHelper$ICaa;)V
     .locals 0
 
     .prologue
     .line 32
-    invoke-direct {p0, p1}, Landroid/support/v7/widget/OrientationHelper;-><init>(Landroid/support/v7/widget/RecyclerView$ar;)V
+    invoke-direct {p0, p1}, Landroid/support/v7/widget/OrientationHelper;-><init>(Landroid/support/v7/widget/RecyclerView$ICar;)V
 
     return-void
 .end method
 
-.method public static a(Landroid/support/v7/widget/RecyclerView$ar;)Landroid/support/v7/widget/OrientationHelper;
+.method public static a(Landroid/support/v7/widget/RecyclerView$ICar;)Landroid/support/v7/widget/OrientationHelper;
     .locals 1
 
     .prologue
     .line 194
-    new-instance v0, Landroid/support/v7/widget/OrientationHelper$aa;
+    new-instance v0, Landroid/support/v7/widget/OrientationHelper$ICaa;
 
-    invoke-direct {v0, p0}, Landroid/support/v7/widget/OrientationHelper$aa;-><init>(Landroid/support/v7/widget/RecyclerView$ar;)V
+    invoke-direct {v0, p0}, Landroid/support/v7/widget/OrientationHelper$ICaa;-><init>(Landroid/support/v7/widget/RecyclerView$ICar;)V
 
     return-object v0
 .end method
 
-.method public static a(Landroid/support/v7/widget/RecyclerView$ar;I)Landroid/support/v7/widget/OrientationHelper;
+.method public static a(Landroid/support/v7/widget/RecyclerView$ICar;I)Landroid/support/v7/widget/OrientationHelper;
     .locals 2
 
     .prologue
@@ -69,7 +69,7 @@
 
     .line 179
     :pswitch_0
-    invoke-static {p0}, Landroid/support/v7/widget/OrientationHelper;->a(Landroid/support/v7/widget/RecyclerView$ar;)Landroid/support/v7/widget/OrientationHelper;
+    invoke-static {p0}, Landroid/support/v7/widget/OrientationHelper;->a(Landroid/support/v7/widget/RecyclerView$ICar;)Landroid/support/v7/widget/OrientationHelper;
 
     move-result-object v0
 
@@ -78,7 +78,7 @@
     return-object v0
 
     :pswitch_1
-    invoke-static {p0}, Landroid/support/v7/widget/OrientationHelper;->b(Landroid/support/v7/widget/RecyclerView$ar;)Landroid/support/v7/widget/OrientationHelper;
+    invoke-static {p0}, Landroid/support/v7/widget/OrientationHelper;->b(Landroid/support/v7/widget/RecyclerView$ICar;)Landroid/support/v7/widget/OrientationHelper;
 
     move-result-object v0
 
@@ -92,14 +92,14 @@
     .end packed-switch
 .end method
 
-.method public static b(Landroid/support/v7/widget/RecyclerView$ar;)Landroid/support/v7/widget/OrientationHelper;
+.method public static b(Landroid/support/v7/widget/RecyclerView$ICar;)Landroid/support/v7/widget/OrientationHelper;
     .locals 1
 
     .prologue
     .line 270
-    new-instance v0, Landroid/support/v7/widget/OrientationHelper$ab;
+    new-instance v0, Landroid/support/v7/widget/OrientationHelper$ICab;
 
-    invoke-direct {v0, p0}, Landroid/support/v7/widget/OrientationHelper$ab;-><init>(Landroid/support/v7/widget/RecyclerView$ar;)V
+    invoke-direct {v0, p0}, Landroid/support/v7/widget/OrientationHelper$ICab;-><init>(Landroid/support/v7/widget/RecyclerView$ICar;)V
 
     return-object v0
 .end method

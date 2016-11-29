@@ -126,9 +126,9 @@
 
     .line 71
     :cond_0
-    new-instance v1, Lcom/viewpagerindicator/IconPageIndicator$a;
+    new-instance v1, Lcom/viewpagerindicator/IconPageIndicator$ICa;
 
-    invoke-direct {v1, p0, v0}, Lcom/viewpagerindicator/IconPageIndicator$a;-><init>(Lcom/viewpagerindicator/IconPageIndicator;Landroid/view/View;)V
+    invoke-direct {v1, p0, v0}, Lcom/viewpagerindicator/IconPageIndicator$ICa;-><init>(Lcom/viewpagerindicator/IconPageIndicator;Landroid/view/View;)V
 
     iput-object v1, p0, Lcom/viewpagerindicator/IconPageIndicator;->d:Ljava/lang/Runnable;
 

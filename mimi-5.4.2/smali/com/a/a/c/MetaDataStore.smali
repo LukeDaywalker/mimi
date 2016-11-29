@@ -47,11 +47,11 @@
 
     .prologue
     .line 147
-    new-instance v0, Lcom/a/a/c/MetaDataStore$bc;
+    new-instance v0, Lcom/a/a/c/MetaDataStore$ICbc;
 
-    invoke-direct {v0, p0}, Lcom/a/a/c/MetaDataStore$bc;-><init>(Lcom/a/a/c/UserMetaData;)V
+    invoke-direct {v0, p0}, Lcom/a/a/c/MetaDataStore$ICbc;-><init>(Lcom/a/a/c/UserMetaData;)V
 
-    invoke-virtual {v0}, Lcom/a/a/c/MetaDataStore$bc;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/a/a/c/MetaDataStore$ICbc;->toString()Ljava/lang/String;
 
     move-result-object v0
 

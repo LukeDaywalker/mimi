@@ -60,11 +60,11 @@
 
     .prologue
     .line 58
-    invoke-virtual {p0}, Lc/a/a/a/a/c/PriorityAsyncTask;->j_()Lc/a/a/a/a/c/AsyncTask$j;
+    invoke-virtual {p0}, Lc/a/a/a/a/c/PriorityAsyncTask;->j_()Lc/a/a/a/a/c/AsyncTask$ICj;
 
     move-result-object v0
 
-    sget-object v1, Lc/a/a/a/a/c/AsyncTask$j;->a:Lc/a/a/a/a/c/AsyncTask$j;
+    sget-object v1, Lc/a/a/a/a/c/AsyncTask$ICj;->a:Lc/a/a/a/a/c/AsyncTask$ICj;
 
     if-eq v0, v1, :cond_0
 
@@ -124,9 +124,9 @@
 
     .prologue
     .line 42
-    new-instance v0, Lc/a/a/a/a/c/PriorityAsyncTask$q;
+    new-instance v0, Lc/a/a/a/a/c/PriorityAsyncTask$ICq;
 
-    invoke-direct {v0, p1, p0}, Lc/a/a/a/a/c/PriorityAsyncTask$q;-><init>(Ljava/util/concurrent/Executor;Lc/a/a/a/a/c/PriorityAsyncTask;)V
+    invoke-direct {v0, p1, p0}, Lc/a/a/a/a/c/PriorityAsyncTask$ICq;-><init>(Ljava/util/concurrent/Executor;Lc/a/a/a/a/c/PriorityAsyncTask;)V
 
     .line 43
     invoke-super {p0, v0, p2}, Lc/a/a/a/a/c/AsyncTask;->a(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Lc/a/a/a/a/c/AsyncTask;

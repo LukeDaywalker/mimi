@@ -9,7 +9,7 @@
 # instance fields
 .field private a:Landroid/widget/LinearLayout$LayoutParams;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ba;
+.field private b:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;
 
 
 # direct methods
@@ -496,7 +496,7 @@
 
     .prologue
     .line 152
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ba;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;
 
     if-eqz v0, :cond_0
 
@@ -515,13 +515,13 @@
     sparse-switch v1, :sswitch_data_0
 
     .line 162
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ba;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;
 
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
 
-    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ba;->a(I)V
+    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;->a(I)V
 
     .line 163
     const/4 v0, 0x1
@@ -535,17 +535,17 @@
 
     .line 156
     :sswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ba;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ba;->g()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;->g()V
 
     goto :goto_0
 
     .line 159
     :sswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ba;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ba;->h()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;->h()V
 
     goto :goto_0
 
@@ -559,12 +559,12 @@
     .end sparse-switch
 .end method
 
-.method public setOnPasswordKeyboardKeyClickListener(Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ba;)V
+.method public setOnPasswordKeyboardKeyClickListener(Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;)V
     .locals 0
 
     .prologue
     .line 37
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ba;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard;->b:Lcom/wumii/android/mimi/ui/widgets/PasswordKeyboard$ICba;
 
     .line 38
     return-void

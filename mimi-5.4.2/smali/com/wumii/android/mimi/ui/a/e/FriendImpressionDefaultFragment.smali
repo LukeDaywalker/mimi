@@ -79,11 +79,11 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/a/e/FriendImpressionDefaultFragment$c;
+    new-instance v1, Lcom/wumii/android/mimi/ui/a/e/FriendImpressionDefaultFragment$ICc;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/a/e/FriendImpressionDefaultFragment$c;-><init>(Lcom/wumii/android/mimi/ui/a/e/FriendImpressionDefaultFragment;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/a/e/FriendImpressionDefaultFragment$ICc;-><init>(Lcom/wumii/android/mimi/ui/a/e/FriendImpressionDefaultFragment;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/c/AppConfigManager;->b(Lcom/wumii/android/mimi/c/AppConfigManager$b;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/c/AppConfigManager;->b(Lcom/wumii/android/mimi/c/AppConfigManager$ICb;)V
 
     .line 57
     return-void
@@ -282,9 +282,9 @@
     .line 40
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/e/FriendImpressionDefaultFragment;->a:Landroid/widget/Button;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/a/e/FriendImpressionDefaultFragment$b;
+    new-instance v2, Lcom/wumii/android/mimi/ui/a/e/FriendImpressionDefaultFragment$ICb;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/e/FriendImpressionDefaultFragment$b;-><init>(Lcom/wumii/android/mimi/ui/a/e/FriendImpressionDefaultFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/e/FriendImpressionDefaultFragment$ICb;-><init>(Lcom/wumii/android/mimi/ui/a/e/FriendImpressionDefaultFragment;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

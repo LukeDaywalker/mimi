@@ -70,7 +70,7 @@
 
 
 # virtual methods
-.method protected a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$c;)V
+.method protected a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICc;)V
     .locals 11
 
     .prologue
@@ -206,13 +206,13 @@
 
     move-result-object v9
 
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder$am;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder$ICam;
 
     move-object v1, p0
 
     move-object v5, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder$am;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;Landroid/text/SpannableStringBuilder;IILcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$c;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder$ICam;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;Landroid/text/SpannableStringBuilder;IILcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICc;)V
 
     invoke-virtual {v8, v9, v0}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Lcom/e/a/b/f/ImageLoadingListener;)V
 
@@ -316,7 +316,7 @@
     if-eqz v1, :cond_3
 
     .line 113
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder$an;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder$ICan;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->getChatId()Ljava/lang/String;
 
@@ -330,7 +330,7 @@
 
     move-result-object v5
 
-    invoke-direct {v1, p0, v3, v4, v5}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder$an;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, p0, v3, v4, v5}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder$ICan;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 114
     invoke-virtual {v0}, Ljava/util/regex/Matcher;->start()I
@@ -347,19 +347,19 @@
 
     .line 118
     :cond_3
-    iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$c;->a:Landroid/widget/TextView;
+    iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICc;->a:Landroid/widget/TextView;
 
     const v1, 0x7f0b0010
 
     invoke-virtual {v0, v1, v2}, Landroid/widget/TextView;->setTag(ILjava/lang/Object;)V
 
     .line 119
-    iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$c;->a:Landroid/widget/TextView;
+    iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICc;->a:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 120
-    iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$c;->a:Landroid/widget/TextView;
+    iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICc;->a:Landroid/widget/TextView;
 
     invoke-static {}, Landroid/text/method/LinkMovementMethod;->getInstance()Landroid/text/method/MovementMethod;
 

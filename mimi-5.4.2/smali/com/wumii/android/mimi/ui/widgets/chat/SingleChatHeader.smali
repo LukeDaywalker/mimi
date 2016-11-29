@@ -409,21 +409,21 @@
     const/4 v3, 0x0
 
     .line 101
-    new-instance v0, Lcom/e/a/b/DisplayImageOptions$f;
+    new-instance v0, Lcom/e/a/b/DisplayImageOptions$ICf;
 
-    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$f;-><init>()V
+    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;-><init>()V
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->b(Z)Lcom/e/a/b/DisplayImageOptions$f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->b(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->c(Z)Lcom/e/a/b/DisplayImageOptions$f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->c(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
 
     move-result-object v0
 
     sget-object v1, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->a(Landroid/graphics/Bitmap$Config;)Lcom/e/a/b/DisplayImageOptions$f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Landroid/graphics/Bitmap$Config;)Lcom/e/a/b/DisplayImageOptions$ICf;
 
     move-result-object v0
 
@@ -443,11 +443,11 @@
 
     invoke-direct {v1, v2}, Lcom/e/a/b/c/RoundedBitmapDisplayer;-><init>(I)V
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->a(Lcom/e/a/b/c/BitmapDisplayer;)Lcom/e/a/b/DisplayImageOptions$f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Lcom/e/a/b/c/BitmapDisplayer;)Lcom/e/a/b/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$f;->a()Lcom/e/a/b/DisplayImageOptions;
+    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;->a()Lcom/e/a/b/DisplayImageOptions;
 
     move-result-object v4
 
@@ -524,9 +524,9 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 120
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader$bc;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader$ICbc;
 
-    invoke-direct {v1, p0, p2}, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader$bc;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;Lcom/wumii/android/mimi/models/entities/secret/Secret;)V
+    invoke-direct {v1, p0, p2}, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader$ICbc;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;Lcom/wumii/android/mimi/models/entities/secret/Secret;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

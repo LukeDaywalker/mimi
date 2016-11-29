@@ -28,7 +28,7 @@
 
 
 # instance fields
-.field private r:Lcom/wumii/android/mimi/c/AppConfigManager$c;
+.field private r:Lcom/wumii/android/mimi/c/AppConfigManager$ICc;
 
 .field private s:Landroid/content/Context;
 
@@ -451,27 +451,27 @@
     return-object v1
 .end method
 
-.method private f()Lcom/wumii/android/mimi/c/AppConfigManager$c;
+.method private f()Lcom/wumii/android/mimi/c/AppConfigManager$ICc;
     .locals 2
 
     .prologue
     .line 127
-    iget-object v0, p0, Lcom/wumii/android/mimi/c/AppConfigManager;->r:Lcom/wumii/android/mimi/c/AppConfigManager$c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/c/AppConfigManager;->r:Lcom/wumii/android/mimi/c/AppConfigManager$ICc;
 
     if-nez v0, :cond_0
 
     .line 128
-    new-instance v0, Lcom/wumii/android/mimi/c/AppConfigManager$c;
+    new-instance v0, Lcom/wumii/android/mimi/c/AppConfigManager$ICc;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/c/AppConfigManager;->s:Landroid/content/Context;
 
-    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/c/AppConfigManager$c;-><init>(Lcom/wumii/android/mimi/c/AppConfigManager;Landroid/content/Context;)V
+    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/c/AppConfigManager$ICc;-><init>(Lcom/wumii/android/mimi/c/AppConfigManager;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/c/AppConfigManager;->r:Lcom/wumii/android/mimi/c/AppConfigManager$c;
+    iput-object v0, p0, Lcom/wumii/android/mimi/c/AppConfigManager;->r:Lcom/wumii/android/mimi/c/AppConfigManager$ICc;
 
     .line 130
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/c/AppConfigManager;->r:Lcom/wumii/android/mimi/c/AppConfigManager$c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/c/AppConfigManager;->r:Lcom/wumii/android/mimi/c/AppConfigManager$ICc;
 
     return-object v0
 .end method
@@ -500,7 +500,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/c/AppConfigManager;->c(Lcom/wumii/android/mimi/c/AppConfigManager$b;)V
+    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/c/AppConfigManager;->c(Lcom/wumii/android/mimi/c/AppConfigManager$ICb;)V
 
     .line 80
     invoke-direct {p0}, Lcom/wumii/android/mimi/c/AppConfigManager;->e()Lcom/wumii/android/mimi/models/entities/AppConfigModule;
@@ -510,7 +510,7 @@
     goto :goto_0
 .end method
 
-.method public a(Lcom/wumii/android/mimi/c/AppConfigManager$b;)V
+.method public a(Lcom/wumii/android/mimi/c/AppConfigManager$ICb;)V
     .locals 1
 
     .prologue
@@ -524,7 +524,7 @@
     .line 67
     sget-object v0, Lcom/wumii/android/mimi/c/AppConfigManager;->q:Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
-    invoke-interface {p1, v0}, Lcom/wumii/android/mimi/c/AppConfigManager$b;->a(Lcom/wumii/android/mimi/models/entities/AppConfigModule;)V
+    invoke-interface {p1, v0}, Lcom/wumii/android/mimi/c/AppConfigManager$ICb;->a(Lcom/wumii/android/mimi/models/entities/AppConfigModule;)V
 
     .line 71
     :goto_0
@@ -532,7 +532,7 @@
 
     .line 69
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/c/AppConfigManager;->c(Lcom/wumii/android/mimi/c/AppConfigManager$b;)V
+    invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/c/AppConfigManager;->c(Lcom/wumii/android/mimi/c/AppConfigManager$ICb;)V
 
     goto :goto_0
 .end method
@@ -550,41 +550,41 @@
 
     .prologue
     .line 84
-    invoke-direct {p0}, Lcom/wumii/android/mimi/c/AppConfigManager;->f()Lcom/wumii/android/mimi/c/AppConfigManager$c;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/c/AppConfigManager;->f()Lcom/wumii/android/mimi/c/AppConfigManager$ICc;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/AppConfigManager$c;->k()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/AppConfigManager$ICc;->k()V
 
     .line 85
     return-void
 .end method
 
-.method public b(Lcom/wumii/android/mimi/c/AppConfigManager$b;)V
+.method public b(Lcom/wumii/android/mimi/c/AppConfigManager$ICb;)V
     .locals 1
 
     .prologue
     .line 88
-    invoke-direct {p0}, Lcom/wumii/android/mimi/c/AppConfigManager;->f()Lcom/wumii/android/mimi/c/AppConfigManager$c;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/c/AppConfigManager;->f()Lcom/wumii/android/mimi/c/AppConfigManager$ICc;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/c/AppConfigManager$c;->a(Lcom/wumii/android/mimi/c/AppConfigManager$b;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/c/AppConfigManager$ICc;->a(Lcom/wumii/android/mimi/c/AppConfigManager$ICb;)V
 
     .line 89
     return-void
 .end method
 
-.method public c(Lcom/wumii/android/mimi/c/AppConfigManager$b;)V
+.method public c(Lcom/wumii/android/mimi/c/AppConfigManager$ICb;)V
     .locals 1
 
     .prologue
     .line 92
-    invoke-direct {p0}, Lcom/wumii/android/mimi/c/AppConfigManager;->f()Lcom/wumii/android/mimi/c/AppConfigManager$c;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/c/AppConfigManager;->f()Lcom/wumii/android/mimi/c/AppConfigManager$ICc;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/c/AppConfigManager$c;->b(Lcom/wumii/android/mimi/c/AppConfigManager$b;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/c/AppConfigManager$ICc;->b(Lcom/wumii/android/mimi/c/AppConfigManager$ICb;)V
 
     .line 93
     return-void

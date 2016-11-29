@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Le/a/UALogEntry;",
-        "Le/a/UALogEntry$ew;",
+        "Le/a/UALogEntry$ICew;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Le/a/UALogEntry$ew;",
+            "Le/a/UALogEntry$ICew;",
             "Le/a/FieldMetaData;",
             ">;"
         }
@@ -109,7 +109,7 @@
 
 .field public i:Le/a/IdTracking;
 
-.field private v:[Le/a/UALogEntry$ew;
+.field private v:[Le/a/UALogEntry$ICew;
 
 
 # direct methods
@@ -243,9 +243,9 @@
 
     const-class v1, Le/a/StandardScheme;
 
-    new-instance v2, Le/a/UALogEntry$et;
+    new-instance v2, Le/a/UALogEntry$ICet;
 
-    invoke-direct {v2, v3}, Le/a/UALogEntry$et;-><init>(Le/a/UALogEntry$er;)V
+    invoke-direct {v2, v3}, Le/a/UALogEntry$ICet;-><init>(Le/a/UALogEntry$ICer;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -254,21 +254,21 @@
 
     const-class v1, Le/a/TupleScheme;
 
-    new-instance v2, Le/a/UALogEntry$ev;
+    new-instance v2, Le/a/UALogEntry$ICev;
 
-    invoke-direct {v2, v3}, Le/a/UALogEntry$ev;-><init>(Le/a/UALogEntry$er;)V
+    invoke-direct {v2, v3}, Le/a/UALogEntry$ICev;-><init>(Le/a/UALogEntry$ICer;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 147
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Le/a/UALogEntry$ew;
+    const-class v1, Le/a/UALogEntry$ICew;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 148
-    sget-object v1, Le/a/UALogEntry$ew;->a:Le/a/UALogEntry$ew;
+    sget-object v1, Le/a/UALogEntry$ICew;->a:Le/a/UALogEntry$ICew;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -285,7 +285,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 150
-    sget-object v1, Le/a/UALogEntry$ew;->b:Le/a/UALogEntry$ew;
+    sget-object v1, Le/a/UALogEntry$ICew;->b:Le/a/UALogEntry$ICew;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -302,7 +302,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 152
-    sget-object v1, Le/a/UALogEntry$ew;->c:Le/a/UALogEntry$ew;
+    sget-object v1, Le/a/UALogEntry$ICew;->c:Le/a/UALogEntry$ICew;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -319,7 +319,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 154
-    sget-object v1, Le/a/UALogEntry$ew;->d:Le/a/UALogEntry$ew;
+    sget-object v1, Le/a/UALogEntry$ICew;->d:Le/a/UALogEntry$ICew;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -336,7 +336,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 156
-    sget-object v1, Le/a/UALogEntry$ew;->e:Le/a/UALogEntry$ew;
+    sget-object v1, Le/a/UALogEntry$ICew;->e:Le/a/UALogEntry$ICew;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -353,7 +353,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 158
-    sget-object v1, Le/a/UALogEntry$ew;->f:Le/a/UALogEntry$ew;
+    sget-object v1, Le/a/UALogEntry$ICew;->f:Le/a/UALogEntry$ICew;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -374,7 +374,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 161
-    sget-object v1, Le/a/UALogEntry$ew;->g:Le/a/UALogEntry$ew;
+    sget-object v1, Le/a/UALogEntry$ICew;->g:Le/a/UALogEntry$ICew;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -395,7 +395,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 164
-    sget-object v1, Le/a/UALogEntry$ew;->h:Le/a/UALogEntry$ew;
+    sget-object v1, Le/a/UALogEntry$ICew;->h:Le/a/UALogEntry$ICew;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -412,7 +412,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 166
-    sget-object v1, Le/a/UALogEntry$ew;->i:Le/a/UALogEntry$ew;
+    sget-object v1, Le/a/UALogEntry$ICew;->i:Le/a/UALogEntry$ICew;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -456,39 +456,39 @@
     .line 144
     const/4 v0, 0x5
 
-    new-array v0, v0, [Le/a/UALogEntry$ew;
+    new-array v0, v0, [Le/a/UALogEntry$ICew;
 
     const/4 v1, 0x0
 
-    sget-object v2, Le/a/UALogEntry$ew;->e:Le/a/UALogEntry$ew;
+    sget-object v2, Le/a/UALogEntry$ICew;->e:Le/a/UALogEntry$ICew;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x1
 
-    sget-object v2, Le/a/UALogEntry$ew;->f:Le/a/UALogEntry$ew;
+    sget-object v2, Le/a/UALogEntry$ICew;->f:Le/a/UALogEntry$ICew;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x2
 
-    sget-object v2, Le/a/UALogEntry$ew;->g:Le/a/UALogEntry$ew;
+    sget-object v2, Le/a/UALogEntry$ICew;->g:Le/a/UALogEntry$ICew;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x3
 
-    sget-object v2, Le/a/UALogEntry$ew;->h:Le/a/UALogEntry$ew;
+    sget-object v2, Le/a/UALogEntry$ICew;->h:Le/a/UALogEntry$ICew;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x4
 
-    sget-object v2, Le/a/UALogEntry$ew;->i:Le/a/UALogEntry$ew;
+    sget-object v2, Le/a/UALogEntry$ICew;->i:Le/a/UALogEntry$ICew;
 
     aput-object v2, v0, v1
 
-    iput-object v0, p0, Le/a/UALogEntry;->v:[Le/a/UALogEntry$ew;
+    iput-object v0, p0, Le/a/UALogEntry;->v:[Le/a/UALogEntry$ICew;
 
     .line 173
     return-void

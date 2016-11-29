@@ -202,36 +202,36 @@
 
     .line 599
     :cond_0
-    new-instance v0, Lcom/e/a/b/DisplayImageOptions$f;
+    new-instance v0, Lcom/e/a/b/DisplayImageOptions$ICf;
 
-    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$f;-><init>()V
+    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;-><init>()V
 
-    invoke-virtual {v0, p3}, Lcom/e/a/b/DisplayImageOptions$f;->a(Lcom/e/a/b/DisplayImageOptions;)Lcom/e/a/b/DisplayImageOptions$f;
+    invoke-virtual {v0, p3}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Lcom/e/a/b/DisplayImageOptions;)Lcom/e/a/b/DisplayImageOptions$ICf;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->e(Z)Lcom/e/a/b/DisplayImageOptions$f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->e(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$f;->a()Lcom/e/a/b/DisplayImageOptions;
+    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;->a()Lcom/e/a/b/DisplayImageOptions;
 
     move-result-object v0
 
     .line 601
-    new-instance v1, Lcom/e/a/b/ImageLoader$i;
+    new-instance v1, Lcom/e/a/b/ImageLoader$ICi;
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, v2}, Lcom/e/a/b/ImageLoader$i;-><init>(Lcom/e/a/b/ImageLoader$h;)V
+    invoke-direct {v1, v2}, Lcom/e/a/b/ImageLoader$ICi;-><init>(Lcom/e/a/b/ImageLoader$ICh;)V
 
     .line 602
     invoke-virtual {p0, p1, p2, v0, v1}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Lcom/e/a/b/a/ImageSize;Lcom/e/a/b/DisplayImageOptions;Lcom/e/a/b/f/ImageLoadingListener;)V
 
     .line 603
-    invoke-virtual {v1}, Lcom/e/a/b/ImageLoader$i;->a()Landroid/graphics/Bitmap;
+    invoke-virtual {v1}, Lcom/e/a/b/ImageLoader$ICi;->a()Landroid/graphics/Bitmap;
 
     move-result-object v0
 

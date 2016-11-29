@@ -19,7 +19,7 @@
 
 .field protected e:I
 
-.field protected f:Lcom/viewpagerindicator/TabPageIndicator$f;
+.field protected f:Lcom/viewpagerindicator/TabPageIndicator$ICf;
 
 .field private g:Ljava/lang/Runnable;
 
@@ -62,9 +62,9 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/HorizontalScrollView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 57
-    new-instance v0, Lcom/viewpagerindicator/TabPageIndicator$d;
+    new-instance v0, Lcom/viewpagerindicator/TabPageIndicator$ICd;
 
-    invoke-direct {v0, p0}, Lcom/viewpagerindicator/TabPageIndicator$d;-><init>(Lcom/viewpagerindicator/TabPageIndicator;)V
+    invoke-direct {v0, p0}, Lcom/viewpagerindicator/TabPageIndicator$ICd;-><init>(Lcom/viewpagerindicator/TabPageIndicator;)V
 
     iput-object v0, p0, Lcom/viewpagerindicator/TabPageIndicator;->h:Landroid/view/View$OnClickListener;
 
@@ -116,35 +116,35 @@
     const/4 v5, 0x0
 
     .line 157
-    new-instance v0, Lcom/viewpagerindicator/TabPageIndicator$g;
+    new-instance v0, Lcom/viewpagerindicator/TabPageIndicator$ICg;
 
     invoke-virtual {p0}, Lcom/viewpagerindicator/TabPageIndicator;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/viewpagerindicator/TabPageIndicator$g;-><init>(Lcom/viewpagerindicator/TabPageIndicator;Landroid/content/Context;)V
+    invoke-direct {v0, p0, v1}, Lcom/viewpagerindicator/TabPageIndicator$ICg;-><init>(Lcom/viewpagerindicator/TabPageIndicator;Landroid/content/Context;)V
 
     .line 158
-    invoke-static {v0, p1}, Lcom/viewpagerindicator/TabPageIndicator$g;->a(Lcom/viewpagerindicator/TabPageIndicator$g;I)I
+    invoke-static {v0, p1}, Lcom/viewpagerindicator/TabPageIndicator$ICg;->a(Lcom/viewpagerindicator/TabPageIndicator$ICg;I)I
 
     .line 159
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/viewpagerindicator/TabPageIndicator$g;->setFocusable(Z)V
+    invoke-virtual {v0, v1}, Lcom/viewpagerindicator/TabPageIndicator$ICg;->setFocusable(Z)V
 
     .line 160
     iget-object v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->h:Landroid/view/View$OnClickListener;
 
-    invoke-virtual {v0, v1}, Lcom/viewpagerindicator/TabPageIndicator$g;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Lcom/viewpagerindicator/TabPageIndicator$ICg;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 161
-    invoke-virtual {v0, p2}, Lcom/viewpagerindicator/TabPageIndicator$g;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, p2}, Lcom/viewpagerindicator/TabPageIndicator$ICg;->setText(Ljava/lang/CharSequence;)V
 
     .line 163
     if-eqz p3, :cond_0
 
     .line 164
-    invoke-virtual {v0, p3, v5, v5, v5}, Lcom/viewpagerindicator/TabPageIndicator$g;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
+    invoke-virtual {v0, p3, v5, v5, v5}, Lcom/viewpagerindicator/TabPageIndicator$ICg;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
     .line 167
     :cond_0
@@ -187,9 +187,9 @@
 
     .line 128
     :cond_0
-    new-instance v1, Lcom/viewpagerindicator/TabPageIndicator$e;
+    new-instance v1, Lcom/viewpagerindicator/TabPageIndicator$ICe;
 
-    invoke-direct {v1, p0, v0}, Lcom/viewpagerindicator/TabPageIndicator$e;-><init>(Lcom/viewpagerindicator/TabPageIndicator;Landroid/view/View;)V
+    invoke-direct {v1, p0, v0}, Lcom/viewpagerindicator/TabPageIndicator$ICe;-><init>(Lcom/viewpagerindicator/TabPageIndicator;Landroid/view/View;)V
 
     iput-object v1, p0, Lcom/viewpagerindicator/TabPageIndicator;->g:Ljava/lang/Runnable;
 
@@ -626,12 +626,12 @@
     return-void
 .end method
 
-.method public setOnTabReselectedListener(Lcom/viewpagerindicator/TabPageIndicator$f;)V
+.method public setOnTabReselectedListener(Lcom/viewpagerindicator/TabPageIndicator$ICf;)V
     .locals 0
 
     .prologue
     .line 93
-    iput-object p1, p0, Lcom/viewpagerindicator/TabPageIndicator;->f:Lcom/viewpagerindicator/TabPageIndicator$f;
+    iput-object p1, p0, Lcom/viewpagerindicator/TabPageIndicator;->f:Lcom/viewpagerindicator/TabPageIndicator$ICf;
 
     .line 94
     return-void

@@ -15,7 +15,7 @@
 
 .field private D:Ljava/lang/String;
 
-.field private E:Lcom/wumii/android/mimi/a/GroupBannedManager$an;
+.field private E:Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;
 
 .field private o:Landroid/widget/ListView;
 
@@ -55,11 +55,11 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;-><init>()V
 
     .line 161
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ba;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ICba;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ba;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ICba;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;->E:Lcom/wumii/android/mimi/a/GroupBannedManager$an;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;->E:Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;
 
     return-void
 .end method
@@ -112,12 +112,12 @@
     return-void
 .end method
 
-.method static synthetic b(Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;)Lcom/wumii/android/mimi/a/GroupBannedManager$an;
+.method static synthetic b(Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;)Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;
     .locals 1
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;->E:Lcom/wumii/android/mimi/a/GroupBannedManager$an;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;->E:Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;
 
     return-object v0
 .end method
@@ -340,9 +340,9 @@
     invoke-virtual {v0, v3, v5}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 127
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ay;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ICay;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ay;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ICay;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;)V
 
     invoke-virtual {v0, v4, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -375,9 +375,9 @@
     invoke-virtual {v0, v3, v5}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 141
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$az;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ICaz;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$az;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ICaz;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;)V
 
     invoke-virtual {v0, v4, v1}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -518,9 +518,9 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;->C:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;->E:Lcom/wumii/android/mimi/a/GroupBannedManager$an;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;->E:Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/a/GroupBannedManager;->a(Ljava/lang/String;Lcom/wumii/android/mimi/a/GroupBannedManager$an;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/a/GroupBannedManager;->a(Ljava/lang/String;Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;)V
 
     .line 79
     return-void
@@ -644,9 +644,9 @@
 
     .prologue
     .line 158
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->c:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->c:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->name()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->name()Ljava/lang/String;
 
     move-result-object v0
 

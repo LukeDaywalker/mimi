@@ -15,7 +15,7 @@
         value = {
             "Ljava/util/Deque",
             "<",
-            "Lcom/f/a/Call$j;",
+            "Lcom/f/a/Call$ICj;",
             ">;"
         }
     .end annotation
@@ -26,7 +26,7 @@
         value = {
             "Ljava/util/Deque",
             "<",
-            "Lcom/f/a/Call$j;",
+            "Lcom/f/a/Call$ICj;",
             ">;"
         }
     .end annotation
@@ -136,10 +136,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/f/a/Call$j;
+    check-cast v0, Lcom/f/a/Call$ICj;
 
     .line 152
-    invoke-direct {p0, v0}, Lcom/f/a/Dispatcher;->c(Lcom/f/a/Call$j;)I
+    invoke-direct {p0, v0}, Lcom/f/a/Dispatcher;->c(Lcom/f/a/Call$ICj;)I
 
     move-result v2
 
@@ -177,7 +177,7 @@
     goto :goto_0
 .end method
 
-.method private c(Lcom/f/a/Call$j;)I
+.method private c(Lcom/f/a/Call$ICj;)I
     .locals 4
 
     .prologue
@@ -204,14 +204,14 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/f/a/Call$j;
+    check-cast v0, Lcom/f/a/Call$ICj;
 
     .line 166
-    invoke-virtual {v0}, Lcom/f/a/Call$j;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/f/a/Call$ICj;->a()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lcom/f/a/Call$j;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/f/a/Call$ICj;->a()Ljava/lang/String;
 
     move-result-object v3
 
@@ -300,7 +300,7 @@
     throw v0
 .end method
 
-.method declared-synchronized a(Lcom/f/a/Call$j;)V
+.method declared-synchronized a(Lcom/f/a/Call$ICj;)V
     .locals 2
 
     .prologue
@@ -318,7 +318,7 @@
 
     if-ge v0, v1, :cond_0
 
-    invoke-direct {p0, p1}, Lcom/f/a/Dispatcher;->c(Lcom/f/a/Call$j;)I
+    invoke-direct {p0, p1}, Lcom/f/a/Dispatcher;->c(Lcom/f/a/Call$ICj;)I
 
     move-result v0
 
@@ -394,7 +394,7 @@
     throw v0
 .end method
 
-.method declared-synchronized b(Lcom/f/a/Call$j;)V
+.method declared-synchronized b(Lcom/f/a/Call$ICj;)V
     .locals 2
 
     .prologue

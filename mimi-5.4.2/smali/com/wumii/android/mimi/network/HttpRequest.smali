@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/network/HttpRequest$i;
+.field private a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
 .field private b:Ljava/lang/String;
 
@@ -24,16 +24,16 @@
 
 .field private e:Ljava/lang/Object;
 
-.field private f:Lcom/wumii/android/mimi/network/HttpProcessor$f;
+.field private f:Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
 
 
 # direct methods
-.method public constructor <init>(Lcom/wumii/android/mimi/network/HttpRequest$i;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+.method public constructor <init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/wumii/android/mimi/network/HttpRequest$i;",
+            "Lcom/wumii/android/mimi/network/HttpRequest$ICi;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             "Ljava/util/Map",
@@ -49,7 +49,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 45
-    iput-object p1, p0, Lcom/wumii/android/mimi/network/HttpRequest;->a:Lcom/wumii/android/mimi/network/HttpRequest$i;
+    iput-object p1, p0, Lcom/wumii/android/mimi/network/HttpRequest;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     .line 46
     iput-object p2, p0, Lcom/wumii/android/mimi/network/HttpRequest;->b:Ljava/lang/String;
@@ -64,12 +64,12 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/wumii/android/mimi/network/HttpRequest$i;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+.method public constructor <init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/wumii/android/mimi/network/HttpRequest$i;",
+            "Lcom/wumii/android/mimi/network/HttpRequest$ICi;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             "Ljava/util/Map",
@@ -98,18 +98,18 @@
 
     move-object v5, p5
 
-    invoke-direct/range {v0 .. v6}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$i;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-direct/range {v0 .. v6}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 24
     return-void
 .end method
 
-.method public constructor <init>(Lcom/wumii/android/mimi/network/HttpRequest$i;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+.method public constructor <init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/wumii/android/mimi/network/HttpRequest$i;",
+            "Lcom/wumii/android/mimi/network/HttpRequest$ICi;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             "Ljava/util/Map",
@@ -118,7 +118,7 @@
             "Ljava/lang/Object;",
             ">;",
             "Ljava/lang/Object;",
-            "Lcom/wumii/android/mimi/network/HttpProcessor$f;",
+            "Lcom/wumii/android/mimi/network/HttpProcessor$ICf;",
             ")V"
         }
     .end annotation
@@ -128,7 +128,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 27
-    iput-object p1, p0, Lcom/wumii/android/mimi/network/HttpRequest;->a:Lcom/wumii/android/mimi/network/HttpRequest$i;
+    iput-object p1, p0, Lcom/wumii/android/mimi/network/HttpRequest;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     .line 28
     iput-object p2, p0, Lcom/wumii/android/mimi/network/HttpRequest;->b:Ljava/lang/String;
@@ -143,7 +143,7 @@
     iput-object p5, p0, Lcom/wumii/android/mimi/network/HttpRequest;->e:Ljava/lang/Object;
 
     .line 32
-    iput-object p6, p0, Lcom/wumii/android/mimi/network/HttpRequest;->f:Lcom/wumii/android/mimi/network/HttpProcessor$f;
+    iput-object p6, p0, Lcom/wumii/android/mimi/network/HttpRequest;->f:Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
 
     .line 33
     return-void
@@ -151,22 +151,22 @@
 
 
 # virtual methods
-.method public a()Lcom/wumii/android/mimi/network/HttpRequest$i;
+.method public a()Lcom/wumii/android/mimi/network/HttpRequest$ICi;
     .locals 1
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpRequest;->a:Lcom/wumii/android/mimi/network/HttpRequest$i;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpRequest;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     return-object v0
 .end method
 
-.method public a(Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+.method public a(Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
     .locals 0
 
     .prologue
     .line 76
-    iput-object p1, p0, Lcom/wumii/android/mimi/network/HttpRequest;->f:Lcom/wumii/android/mimi/network/HttpProcessor$f;
+    iput-object p1, p0, Lcom/wumii/android/mimi/network/HttpRequest;->f:Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
 
     .line 77
     return-void
@@ -222,12 +222,12 @@
     return-object v0
 .end method
 
-.method public f()Lcom/wumii/android/mimi/network/HttpProcessor$f;
+.method public f()Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
     .locals 1
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpRequest;->f:Lcom/wumii/android/mimi/network/HttpProcessor$f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpRequest;->f:Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
 
     return-object v0
 .end method

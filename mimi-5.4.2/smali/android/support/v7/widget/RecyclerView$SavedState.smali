@@ -26,9 +26,9 @@
 
     .prologue
     .line 8905
-    new-instance v0, Landroid/support/v7/widget/RecyclerView$ba;
+    new-instance v0, Landroid/support/v7/widget/RecyclerView$ICba;
 
-    invoke-direct {v0}, Landroid/support/v7/widget/RecyclerView$ba;-><init>()V
+    invoke-direct {v0}, Landroid/support/v7/widget/RecyclerView$ICba;-><init>()V
 
     sput-object v0, Landroid/support/v7/widget/RecyclerView$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -43,7 +43,7 @@
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
     .line 8885
-    const-class v0, Landroid/support/v7/widget/RecyclerView$ar;
+    const-class v0, Landroid/support/v7/widget/RecyclerView$ICar;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 

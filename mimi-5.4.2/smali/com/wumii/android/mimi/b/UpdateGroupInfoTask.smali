@@ -18,7 +18,7 @@
     .end annotation
 .end field
 
-.field private q:Lcom/wumii/android/mimi/b/UpdateGroupInfoTask$cj;
+.field private q:Lcom/wumii/android/mimi/b/UpdateGroupInfoTask$ICcj;
 
 
 # direct methods
@@ -47,7 +47,7 @@
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;->q:Lcom/wumii/android/mimi/b/UpdateGroupInfoTask$cj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;->q:Lcom/wumii/android/mimi/b/UpdateGroupInfoTask$ICcj;
 
     if-eqz v0, :cond_0
 
@@ -83,11 +83,11 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/h/a/ChatStorage;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
 
     .line 48
-    iget-object v1, p0, Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;->q:Lcom/wumii/android/mimi/b/UpdateGroupInfoTask$cj;
+    iget-object v1, p0, Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;->q:Lcom/wumii/android/mimi/b/UpdateGroupInfoTask$ICcj;
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
-    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/b/UpdateGroupInfoTask$cj;->a(Lcom/wumii/android/mimi/models/entities/chat/GroupChat;)V
+    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/b/UpdateGroupInfoTask$ICcj;->a(Lcom/wumii/android/mimi/models/entities/chat/GroupChat;)V
 
     .line 50
     :cond_0
@@ -103,7 +103,7 @@
     return-void
 .end method
 
-.method public a(Lcom/wumii/android/mimi/models/entities/chat/GroupChat;ZLjava/lang/String;Lcom/wumii/android/mimi/b/UpdateGroupInfoTask$cj;)V
+.method public a(Lcom/wumii/android/mimi/models/entities/chat/GroupChat;ZLjava/lang/String;Lcom/wumii/android/mimi/b/UpdateGroupInfoTask$ICcj;)V
     .locals 3
 
     .prologue
@@ -111,7 +111,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;->a:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
     .line 61
-    iput-object p4, p0, Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;->q:Lcom/wumii/android/mimi/b/UpdateGroupInfoTask$cj;
+    iput-object p4, p0, Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;->q:Lcom/wumii/android/mimi/b/UpdateGroupInfoTask$ICcj;
 
     .line 62
     iget-object v0, p0, Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;->d:Ljava/util/Map;

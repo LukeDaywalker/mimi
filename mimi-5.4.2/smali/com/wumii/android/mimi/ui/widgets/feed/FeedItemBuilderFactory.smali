@@ -49,7 +49,7 @@
     move-result-object v0
 
     .line 23
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory$f;->a:[I
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/feed/FeedItemBuilderFactory$ICf;->a:[I
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/secret/Feed$FeedItemType;->ordinal()I
 

@@ -62,9 +62,9 @@
 
     .line 234
     :goto_0
-    new-instance v3, Lcom/f/a/Request$ap;
+    new-instance v3, Lcom/f/a/Request$ICap;
 
-    invoke-direct {v3}, Lcom/f/a/Request$ap;-><init>()V
+    invoke-direct {v3}, Lcom/f/a/Request$ICap;-><init>()V
 
     new-instance v4, Ljava/net/URL;
 
@@ -75,14 +75,14 @@
     invoke-direct {v4, v5, v1, v2, v6}, Ljava/net/URL;-><init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
 
     .line 235
-    invoke-virtual {v3, v4}, Lcom/f/a/Request$ap;->a(Ljava/net/URL;)Lcom/f/a/Request$ap;
+    invoke-virtual {v3, v4}, Lcom/f/a/Request$ICap;->a(Ljava/net/URL;)Lcom/f/a/Request$ICap;
 
     move-result-object v1
 
     const-string/jumbo v2, "Host"
 
     .line 236
-    invoke-virtual {v1, v2, v0}, Lcom/f/a/Request$ap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v1, v2, v0}, Lcom/f/a/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     move-result-object v0
 
@@ -91,7 +91,7 @@
     const-string/jumbo v2, "Keep-Alive"
 
     .line 237
-    invoke-virtual {v0, v1, v2}, Lcom/f/a/Request$ap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v0, v1, v2}, Lcom/f/a/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     move-result-object v0
 
@@ -108,7 +108,7 @@
     .line 242
     const-string/jumbo v2, "User-Agent"
 
-    invoke-virtual {v0, v2, v1}, Lcom/f/a/Request$ap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v0, v2, v1}, Lcom/f/a/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 246
     :cond_0
@@ -124,11 +124,11 @@
     .line 248
     const-string/jumbo v2, "Proxy-Authorization"
 
-    invoke-virtual {v0, v2, v1}, Lcom/f/a/Request$ap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v0, v2, v1}, Lcom/f/a/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 251
     :cond_1
-    invoke-virtual {v0}, Lcom/f/a/Request$ap;->a()Lcom/f/a/Request;
+    invoke-virtual {v0}, Lcom/f/a/Request$ICap;->a()Lcom/f/a/Request;
 
     move-result-object v0
 
@@ -245,15 +245,15 @@
     invoke-virtual {v4}, Lcom/f/a/a/a/HttpConnection;->d()V
 
     .line 185
-    invoke-virtual {v4}, Lcom/f/a/a/a/HttpConnection;->g()Lcom/f/a/Response$au;
+    invoke-virtual {v4}, Lcom/f/a/a/a/HttpConnection;->g()Lcom/f/a/Response$ICau;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lcom/f/a/Response$au;->a(Lcom/f/a/Request;)Lcom/f/a/Response$au;
+    invoke-virtual {v1, v0}, Lcom/f/a/Response$ICau;->a(Lcom/f/a/Request;)Lcom/f/a/Response$ICau;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/f/a/Response$au;->a()Lcom/f/a/Response;
+    invoke-virtual {v0}, Lcom/f/a/Response$ICau;->a()Lcom/f/a/Response;
 
     move-result-object v6
 
@@ -489,7 +489,7 @@
 
 
 # virtual methods
-.method public a(IIILcom/f/a/Request;Lcom/f/a/Route;Ljava/util/List;Z)Lcom/f/a/a/a/SocketConnector$af;
+.method public a(IIILcom/f/a/Request;Lcom/f/a/Route;Ljava/util/List;Z)Lcom/f/a/a/a/SocketConnector$ICaf;
     .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -500,7 +500,7 @@
             "<",
             "Lcom/f/a/ConnectionSpec;",
             ">;Z)",
-            "Lcom/f/a/a/a/SocketConnector$af;"
+            "Lcom/f/a/a/a/SocketConnector$ICaf;"
         }
     .end annotation
 
@@ -846,11 +846,11 @@
     invoke-virtual {v3, v4, v10}, Lcom/f/a/CertificatePinner;->a(Ljava/lang/String;Ljava/util/List;)V
 
     .line 130
-    new-instance v3, Lcom/f/a/a/a/SocketConnector$af;
+    new-instance v3, Lcom/f/a/a/a/SocketConnector$ICaf;
 
     move-object/from16 v0, p5
 
-    invoke-direct {v3, v0, v1, v2, v5}, Lcom/f/a/a/a/SocketConnector$af;-><init>(Lcom/f/a/Route;Ljavax/net/ssl/SSLSocket;Lcom/f/a/Protocol;Lcom/f/a/Handshake;)V
+    invoke-direct {v3, v0, v1, v2, v5}, Lcom/f/a/a/a/SocketConnector$ICaf;-><init>(Lcom/f/a/Route;Ljavax/net/ssl/SSLSocket;Lcom/f/a/Protocol;Lcom/f/a/Handshake;)V
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
 
@@ -889,7 +889,7 @@
     goto :goto_1
 .end method
 
-.method public a(IILcom/f/a/Route;)Lcom/f/a/a/a/SocketConnector$af;
+.method public a(IILcom/f/a/Route;)Lcom/f/a/a/a/SocketConnector$ICaf;
     .locals 2
 
     .prologue
@@ -899,9 +899,9 @@
     move-result-object v0
 
     .line 68
-    new-instance v1, Lcom/f/a/a/a/SocketConnector$af;
+    new-instance v1, Lcom/f/a/a/a/SocketConnector$ICaf;
 
-    invoke-direct {v1, p3, v0}, Lcom/f/a/a/a/SocketConnector$af;-><init>(Lcom/f/a/Route;Ljava/net/Socket;)V
+    invoke-direct {v1, p3, v0}, Lcom/f/a/a/a/SocketConnector$ICaf;-><init>(Lcom/f/a/Route;Ljava/net/Socket;)V
 
     return-object v1
 .end method

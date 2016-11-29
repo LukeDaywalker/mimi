@@ -116,9 +116,9 @@
 
     const v1, 0x7f0600d2
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$af;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICaf;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$af;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICaf;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -164,9 +164,9 @@
     .line 33
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->p:Landroid/widget/ImageView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ad;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICad;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ad;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICad;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -184,9 +184,9 @@
     .line 40
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->q:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ae;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICae;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ae;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICae;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 

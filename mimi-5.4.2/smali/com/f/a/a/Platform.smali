@@ -289,9 +289,9 @@
     .line 139
     :goto_2
     :try_start_6
-    new-instance v0, Lcom/f/a/a/Platform$i;
+    new-instance v0, Lcom/f/a/a/Platform$ICi;
 
-    invoke-direct/range {v0 .. v6}, Lcom/f/a/a/Platform$i;-><init>(Lcom/f/a/a/OptionalMethod;Lcom/f/a/a/OptionalMethod;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Lcom/f/a/a/OptionalMethod;Lcom/f/a/a/OptionalMethod;)V
+    invoke-direct/range {v0 .. v6}, Lcom/f/a/a/Platform$ICi;-><init>(Lcom/f/a/a/OptionalMethod;Lcom/f/a/a/OptionalMethod;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Lcom/f/a/a/OptionalMethod;Lcom/f/a/a/OptionalMethod;)V
 
     .line 160
     :goto_3
@@ -448,9 +448,9 @@
     move-result-object v3
 
     .line 155
-    new-instance v0, Lcom/f/a/a/Platform$j;
+    new-instance v0, Lcom/f/a/a/Platform$ICj;
 
-    invoke-direct/range {v0 .. v5}, Lcom/f/a/a/Platform$j;-><init>(Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/Class;Ljava/lang/Class;)V
+    invoke-direct/range {v0 .. v5}, Lcom/f/a/a/Platform$ICj;-><init>(Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/Class;Ljava/lang/Class;)V
     :try_end_7
     .catch Ljava/lang/ClassNotFoundException; {:try_start_7 .. :try_end_7} :catch_2
     .catch Ljava/lang/NoSuchMethodException; {:try_start_7 .. :try_end_7} :catch_5

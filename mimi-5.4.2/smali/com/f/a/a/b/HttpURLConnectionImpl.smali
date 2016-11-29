@@ -27,7 +27,7 @@
 
 .field d:Lcom/f/a/Handshake;
 
-.field private g:Lcom/f/a/Headers$ab;
+.field private g:Lcom/f/a/Headers$ICab;
 
 .field private h:J
 
@@ -129,11 +129,11 @@
     invoke-direct {p0, p1}, Ljava/net/HttpURLConnection;-><init>(Ljava/net/URL;)V
 
     .line 83
-    new-instance v0, Lcom/f/a/Headers$ab;
+    new-instance v0, Lcom/f/a/Headers$ICab;
 
-    invoke-direct {v0}, Lcom/f/a/Headers$ab;-><init>()V
+    invoke-direct {v0}, Lcom/f/a/Headers$ICab;-><init>()V
 
-    iput-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->g:Lcom/f/a/Headers$ab;
+    iput-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->g:Lcom/f/a/Headers$ICab;
 
     .line 86
     const-wide/16 v0, -0x1
@@ -171,7 +171,7 @@
     move-result-object v1
 
     .line 153
-    invoke-virtual {v1}, Lcom/f/a/Headers;->b()Lcom/f/a/Headers$ab;
+    invoke-virtual {v1}, Lcom/f/a/Headers;->b()Lcom/f/a/Headers$ICab;
 
     move-result-object v1
 
@@ -206,12 +206,12 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v2, v0}, Lcom/f/a/Headers$ab;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Headers$ab;
+    invoke-virtual {v1, v2, v0}, Lcom/f/a/Headers$ICab;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Headers$ICab;
 
     move-result-object v0
 
     .line 155
-    invoke-virtual {v0}, Lcom/f/a/Headers$ab;->a()Lcom/f/a/Headers;
+    invoke-virtual {v0}, Lcom/f/a/Headers$ICab;->a()Lcom/f/a/Headers;
 
     move-result-object v0
 
@@ -239,28 +239,28 @@
 
     .line 325
     :goto_0
-    new-instance v1, Lcom/f/a/Request$ap;
+    new-instance v1, Lcom/f/a/Request$ICap;
 
-    invoke-direct {v1}, Lcom/f/a/Request$ap;-><init>()V
+    invoke-direct {v1}, Lcom/f/a/Request$ICap;-><init>()V
 
     .line 326
     invoke-virtual {p0}, Lcom/f/a/a/b/HttpURLConnectionImpl;->getURL()Ljava/net/URL;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/f/a/Request$ap;->a(Ljava/net/URL;)Lcom/f/a/Request$ap;
+    invoke-virtual {v1, v2}, Lcom/f/a/Request$ICap;->a(Ljava/net/URL;)Lcom/f/a/Request$ICap;
 
     move-result-object v1
 
     .line 327
-    invoke-virtual {v1, p1, v0}, Lcom/f/a/Request$ap;->a(Ljava/lang/String;Lcom/f/a/RequestBody;)Lcom/f/a/Request$ap;
+    invoke-virtual {v1, p1, v0}, Lcom/f/a/Request$ICap;->a(Ljava/lang/String;Lcom/f/a/RequestBody;)Lcom/f/a/Request$ICap;
 
     move-result-object v1
 
     .line 328
-    iget-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->g:Lcom/f/a/Headers$ab;
+    iget-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->g:Lcom/f/a/Headers$ICab;
 
-    invoke-virtual {v0}, Lcom/f/a/Headers$ab;->a()Lcom/f/a/Headers;
+    invoke-virtual {v0}, Lcom/f/a/Headers$ICab;->a()Lcom/f/a/Headers;
 
     move-result-object v2
 
@@ -283,7 +283,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v1, v4, v5}, Lcom/f/a/Request$ap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v1, v4, v5}, Lcom/f/a/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 329
     add-int/lit8 v0, v0, 0x1
@@ -325,7 +325,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v1, v3, v4}, Lcom/f/a/Request$ap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v1, v3, v4}, Lcom/f/a/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 345
     :goto_2
@@ -342,7 +342,7 @@
 
     const-string/jumbo v4, "application/x-www-form-urlencoded"
 
-    invoke-virtual {v1, v3, v4}, Lcom/f/a/Request$ap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v1, v3, v4}, Lcom/f/a/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     :cond_2
     move v3, v0
@@ -363,11 +363,11 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v0, v2}, Lcom/f/a/Request$ap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v1, v0, v2}, Lcom/f/a/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 354
     :cond_3
-    invoke-virtual {v1}, Lcom/f/a/Request$ap;->a()Lcom/f/a/Request;
+    invoke-virtual {v1}, Lcom/f/a/Request$ICap;->a()Lcom/f/a/Request;
 
     move-result-object v2
 
@@ -433,7 +433,7 @@
 
     const-string/jumbo v4, "chunked"
 
-    invoke-virtual {v1, v3, v4}, Lcom/f/a/Request$ap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v1, v3, v4}, Lcom/f/a/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     goto :goto_2
 
@@ -1059,11 +1059,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/f/a/Headers;->b()Lcom/f/a/Headers$ab;
+    invoke-virtual {v0}, Lcom/f/a/Headers;->b()Lcom/f/a/Headers$ICab;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->g:Lcom/f/a/Headers$ab;
+    iput-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->g:Lcom/f/a/Headers$ICab;
 
     .line 407
     iget-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->c:Lcom/f/a/a/a/HttpEngine;
@@ -1250,9 +1250,9 @@
 
     .line 555
     :cond_4
-    iget-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->g:Lcom/f/a/Headers$ab;
+    iget-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->g:Lcom/f/a/Headers$ICab;
 
-    invoke-virtual {v0, p1, p2}, Lcom/f/a/Headers$ab;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Headers$ab;
+    invoke-virtual {v0, p1, p2}, Lcom/f/a/Headers$ICab;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Headers$ICab;
 
     goto :goto_0
 .end method
@@ -1819,9 +1819,9 @@
 
     .line 223
     :cond_0
-    iget-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->g:Lcom/f/a/Headers$ab;
+    iget-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->g:Lcom/f/a/Headers$ICab;
 
-    invoke-virtual {v0}, Lcom/f/a/Headers$ab;->a()Lcom/f/a/Headers;
+    invoke-virtual {v0}, Lcom/f/a/Headers$ICab;->a()Lcom/f/a/Headers;
 
     move-result-object v0
 
@@ -1848,9 +1848,9 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->g:Lcom/f/a/Headers$ab;
+    iget-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->g:Lcom/f/a/Headers$ICab;
 
-    invoke-virtual {v0, p1}, Lcom/f/a/Headers$ab;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lcom/f/a/Headers$ICab;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -2010,7 +2010,7 @@
     if-eqz v0, :cond_0
 
     .line 528
-    iget-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->g:Lcom/f/a/Headers$ab;
+    iget-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->g:Lcom/f/a/Headers$ICab;
 
     const-string/jumbo v1, "If-Modified-Since"
 
@@ -2024,7 +2024,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/f/a/Headers$ab;->c(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Headers$ab;
+    invoke-virtual {v0, v1, v2}, Lcom/f/a/Headers$ICab;->c(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Headers$ICab;
 
     .line 532
     :goto_0
@@ -2032,11 +2032,11 @@
 
     .line 530
     :cond_0
-    iget-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->g:Lcom/f/a/Headers$ab;
+    iget-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->g:Lcom/f/a/Headers$ICab;
 
     const-string/jumbo v1, "If-Modified-Since"
 
-    invoke-virtual {v0, v1}, Lcom/f/a/Headers$ab;->b(Ljava/lang/String;)Lcom/f/a/Headers$ab;
+    invoke-virtual {v0, v1}, Lcom/f/a/Headers$ICab;->b(Ljava/lang/String;)Lcom/f/a/Headers$ICab;
 
     goto :goto_0
 .end method
@@ -2227,9 +2227,9 @@
 
     .line 521
     :cond_4
-    iget-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->g:Lcom/f/a/Headers$ab;
+    iget-object v0, p0, Lcom/f/a/a/b/HttpURLConnectionImpl;->g:Lcom/f/a/Headers$ICab;
 
-    invoke-virtual {v0, p1, p2}, Lcom/f/a/Headers$ab;->c(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Headers$ab;
+    invoke-virtual {v0, p1, p2}, Lcom/f/a/Headers$ICab;->c(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Headers$ICab;
 
     goto :goto_0
 .end method

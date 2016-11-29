@@ -116,9 +116,9 @@
     invoke-static/range {v0 .. v5}, Lcom/f/a/a/Util;->a(JJJ)V
 
     .line 86
-    new-instance v0, Lcom/f/a/RequestBody$ar;
+    new-instance v0, Lcom/f/a/RequestBody$ICar;
 
-    invoke-direct {v0, p0, p3, p1, p2}, Lcom/f/a/RequestBody$ar;-><init>(Lcom/f/a/MediaType;I[BI)V
+    invoke-direct {v0, p0, p3, p1, p2}, Lcom/f/a/RequestBody$ICar;-><init>(Lcom/f/a/MediaType;I[BI)V
 
     return-object v0
 .end method

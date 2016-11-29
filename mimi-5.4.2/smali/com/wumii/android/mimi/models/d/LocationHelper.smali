@@ -16,7 +16,7 @@
 
 .field private e:Lcom/baidu/location/BDLocationListener;
 
-.field private f:Lcom/wumii/android/mimi/models/d/LocationHelper$u;
+.field private f:Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;
 
 
 # direct methods
@@ -65,12 +65,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/models/d/LocationHelper;Lcom/wumii/android/mimi/models/d/LocationHelper$u;)Lcom/wumii/android/mimi/models/d/LocationHelper$u;
+.method static synthetic a(Lcom/wumii/android/mimi/models/d/LocationHelper;Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;)Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;
     .locals 0
 
     .prologue
     .line 20
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/d/LocationHelper;->f:Lcom/wumii/android/mimi/models/d/LocationHelper$u;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/d/LocationHelper;->f:Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;
 
     return-object p1
 .end method
@@ -172,12 +172,12 @@
     return v0
 .end method
 
-.method static synthetic b(Lcom/wumii/android/mimi/models/d/LocationHelper;)Lcom/wumii/android/mimi/models/d/LocationHelper$u;
+.method static synthetic b(Lcom/wumii/android/mimi/models/d/LocationHelper;)Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;
     .locals 1
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/d/LocationHelper;->f:Lcom/wumii/android/mimi/models/d/LocationHelper$u;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/d/LocationHelper;->f:Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;
 
     return-object v0
 .end method
@@ -293,9 +293,9 @@
     invoke-virtual {v1, v0}, Lcom/baidu/location/LocationClient;->setLocOption(Lcom/baidu/location/LocationClientOption;)V
 
     .line 165
-    new-instance v0, Lcom/wumii/android/mimi/models/d/LocationHelper$t;
+    new-instance v0, Lcom/wumii/android/mimi/models/d/LocationHelper$ICt;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/d/LocationHelper$t;-><init>(Lcom/wumii/android/mimi/models/d/LocationHelper;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/d/LocationHelper$ICt;-><init>(Lcom/wumii/android/mimi/models/d/LocationHelper;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/models/d/LocationHelper;->e:Lcom/baidu/location/BDLocationListener;
 
@@ -323,12 +323,12 @@
     return-object v0
 .end method
 
-.method public a(Lcom/wumii/android/mimi/models/d/LocationHelper$u;)V
+.method public a(Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;)V
     .locals 1
 
     .prologue
     .line 61
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/d/LocationHelper;->f:Lcom/wumii/android/mimi/models/d/LocationHelper$u;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/d/LocationHelper;->f:Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;
 
     .line 62
     iget-object v0, p0, Lcom/wumii/android/mimi/models/d/LocationHelper;->d:Lcom/baidu/location/LocationClient;
@@ -438,19 +438,19 @@
 
     move-result-wide v4
 
-    invoke-static {v2, v3, v4, v5}, Lcom/wumii/android/mimi/models/d/WgsGcjConverter;->b(DD)Lcom/wumii/android/mimi/models/d/WgsGcjConverter$ae;
+    invoke-static {v2, v3, v4, v5}, Lcom/wumii/android/mimi/models/d/WgsGcjConverter;->b(DD)Lcom/wumii/android/mimi/models/d/WgsGcjConverter$ICae;
 
     move-result-object v0
 
     .line 94
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/WgsGcjConverter$ae;->a()D
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/WgsGcjConverter$ICae;->a()D
 
     move-result-wide v2
 
     invoke-virtual {v1, v2, v3}, Lcom/baidu/location/BDLocation;->setLatitude(D)V
 
     .line 95
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/WgsGcjConverter$ae;->b()D
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/WgsGcjConverter$ICae;->b()D
 
     move-result-wide v2
 
@@ -462,12 +462,12 @@
     goto :goto_0
 .end method
 
-.method public b(Lcom/wumii/android/mimi/models/d/LocationHelper$u;)V
+.method public b(Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;)V
     .locals 2
 
     .prologue
     .line 69
-    iput-object p1, p0, Lcom/wumii/android/mimi/models/d/LocationHelper;->f:Lcom/wumii/android/mimi/models/d/LocationHelper$u;
+    iput-object p1, p0, Lcom/wumii/android/mimi/models/d/LocationHelper;->f:Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;
 
     .line 70
     iget-object v0, p0, Lcom/wumii/android/mimi/models/d/LocationHelper;->d:Lcom/baidu/location/LocationClient;
@@ -501,14 +501,14 @@
 
     .line 77
     :cond_1
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/d/LocationHelper;->f:Lcom/wumii/android/mimi/models/d/LocationHelper$u;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/d/LocationHelper;->f:Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;
 
-    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/models/d/LocationHelper$u;->a(Lcom/baidu/location/BDLocation;)V
+    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;->a(Lcom/baidu/location/BDLocation;)V
 
     .line 78
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/d/LocationHelper;->f:Lcom/wumii/android/mimi/models/d/LocationHelper$u;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/d/LocationHelper;->f:Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;
 
     goto :goto_0
 .end method

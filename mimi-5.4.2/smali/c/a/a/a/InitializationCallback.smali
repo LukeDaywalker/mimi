@@ -24,11 +24,11 @@
 
     .prologue
     .line 25
-    new-instance v0, Lc/a/a/a/InitializationCallback$n;
+    new-instance v0, Lc/a/a/a/InitializationCallback$ICn;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lc/a/a/a/InitializationCallback$n;-><init>(Lc/a/a/a/InitializationCallback$m;)V
+    invoke-direct {v0, v1}, Lc/a/a/a/InitializationCallback$ICn;-><init>(Lc/a/a/a/InitializationCallback$ICm;)V
 
     sput-object v0, Lc/a/a/a/InitializationCallback;->d:Lc/a/a/a/InitializationCallback;
 

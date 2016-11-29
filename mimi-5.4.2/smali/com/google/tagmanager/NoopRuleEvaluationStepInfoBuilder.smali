@@ -38,7 +38,7 @@
             "(",
             "Ljava/util/Set",
             "<",
-            "Lcom/google/tagmanager/ResourceUtil$at;",
+            "Lcom/google/tagmanager/ResourceUtil$ICat;",
             ">;)V"
         }
     .end annotation

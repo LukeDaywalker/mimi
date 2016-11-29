@@ -451,38 +451,38 @@
     .line 69
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;->d:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment$d;
+    new-instance v1, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment$ICd;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment$d;-><init>(Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment$ICd;-><init>(Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     .line 76
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;->a:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment$e;
+    new-instance v1, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment$ICe;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment$e;-><init>(Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment$ICe;-><init>(Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 91
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;->a:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment$f;
+    new-instance v1, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment$ICf;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment$f;-><init>(Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment$ICf;-><init>(Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     .line 98
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;->c:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment$g;
+    new-instance v1, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment$ICg;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment$g;-><init>(Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment$ICg;-><init>(Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;->setOnCountDownListener(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$x;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;->setOnCountDownListener(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICx;)V
 
     .line 105
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;

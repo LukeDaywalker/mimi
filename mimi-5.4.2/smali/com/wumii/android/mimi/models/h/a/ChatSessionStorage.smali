@@ -15,7 +15,7 @@
     .end annotation
 .end field
 
-.field private c:Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage$g;
+.field private c:Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage$ICg;
 
 .field private d:Lcom/wumii/android/mimi/models/a/a/ChatSessionDao;
 
@@ -36,11 +36,11 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->d:Lcom/wumii/android/mimi/models/a/a/ChatSessionDao;
 
     .line 28
-    new-instance v0, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage$g;
+    new-instance v0, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage$ICg;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage$g;-><init>(Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage$ICg;-><init>(Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->c:Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage$g;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->c:Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage$ICg;
 
     .line 29
     iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->d:Lcom/wumii/android/mimi/models/a/a/ChatSessionDao;
@@ -62,16 +62,16 @@
     .line 33
     iget-object v0, p0, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->b:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->c:Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage$g;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->c:Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage$ICg;
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     .line 35
-    sget-object v0, Lcom/wumii/android/mimi/models/h/BaseStorage$c;->c:Lcom/wumii/android/mimi/models/h/BaseStorage$c;
+    sget-object v0, Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;->c:Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$c;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;Ljava/lang/String;)V
 
     .line 36
     return-void
@@ -489,13 +489,13 @@
 
     .line 173
     :cond_1
-    sget-object v0, Lcom/wumii/android/mimi/models/h/BaseStorage$c;->a:Lcom/wumii/android/mimi/models/h/BaseStorage$c;
+    sget-object v0, Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;->a:Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/ChatSession;->getSessionId()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$c;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;Ljava/lang/String;)V
 
     .line 175
     :cond_2
@@ -619,11 +619,11 @@
     invoke-virtual {p0, v0, v4, v5}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(Ljava/lang/String;J)V
 
     .line 150
-    sget-object v0, Lcom/wumii/android/mimi/models/h/BaseStorage$c;->c:Lcom/wumii/android/mimi/models/h/BaseStorage$c;
+    sget-object v0, Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;->c:Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$c;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;Ljava/lang/String;)V
 
     .line 151
     return-void
@@ -705,11 +705,11 @@
 
     .line 139
     :cond_2
-    sget-object v0, Lcom/wumii/android/mimi/models/h/BaseStorage$c;->c:Lcom/wumii/android/mimi/models/h/BaseStorage$c;
+    sget-object v0, Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;->c:Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$c;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;Ljava/lang/String;)V
 
     .line 140
     return-void
@@ -740,13 +740,13 @@
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/a/a/ChatSessionDao;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)I
 
     .line 110
-    sget-object v1, Lcom/wumii/android/mimi/models/h/BaseStorage$c;->b:Lcom/wumii/android/mimi/models/h/BaseStorage$c;
+    sget-object v1, Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;->b:Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/ChatSession;->getSessionId()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {p0, v1, v2}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$c;Ljava/lang/String;)V
+    invoke-virtual {p0, v1, v2}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;Ljava/lang/String;)V
 
     .line 113
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/ChatSession;->getUnreadCount()J
@@ -801,13 +801,13 @@
     invoke-virtual {p0, v2, v4, v5}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(Ljava/lang/String;J)V
 
     .line 118
-    sget-object v0, Lcom/wumii/android/mimi/models/h/BaseStorage$c;->a:Lcom/wumii/android/mimi/models/h/BaseStorage$c;
+    sget-object v0, Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;->a:Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/chat/ChatSession;->getSessionId()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$c;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;Ljava/lang/String;)V
 
     .line 122
     :cond_0

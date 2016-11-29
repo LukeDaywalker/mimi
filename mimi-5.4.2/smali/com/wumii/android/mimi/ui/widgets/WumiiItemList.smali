@@ -9,7 +9,7 @@
 # instance fields
 .field private a:Landroid/view/LayoutInflater;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$cd;
+.field private b:Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$ICcd;
 
 
 # direct methods
@@ -333,12 +333,12 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->b:Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$cd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->b:Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$ICcd;
 
     if-eqz v0, :cond_0
 
     .line 52
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->b:Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$cd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->b:Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$ICcd;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -346,19 +346,19 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/ListItem;
 
-    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$cd;->a(Lcom/wumii/android/mimi/models/entities/ListItem;)V
+    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$ICcd;->a(Lcom/wumii/android/mimi/models/entities/ListItem;)V
 
     .line 54
     :cond_0
     return-void
 .end method
 
-.method public setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$cd;)V
+.method public setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$ICcd;)V
     .locals 0
 
     .prologue
     .line 46
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->b:Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$cd;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->b:Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$ICcd;
 
     .line 47
     return-void

@@ -40,9 +40,9 @@
     invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/ui/apdaters/BaseContactSectionedAdapter;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/ContactSectionMap;)V
 
     .line 21
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter$d;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter$ICd;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter$d;-><init>(Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter$ICd;-><init>(Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;->c:Landroid/view/View$OnClickListener;
 

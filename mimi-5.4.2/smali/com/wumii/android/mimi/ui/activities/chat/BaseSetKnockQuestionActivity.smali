@@ -202,11 +202,11 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$x;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;
 
-    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$x;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;Z)V
+    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;Z)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/c/AppConfigManager;->a(Lcom/wumii/android/mimi/c/AppConfigManager$b;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/c/AppConfigManager;->a(Lcom/wumii/android/mimi/c/AppConfigManager$ICb;)V
 
     .line 86
     return-void
@@ -434,11 +434,11 @@
 
     .line 133
     :pswitch_0
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$y;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICy;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$y;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICy;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;Landroid/app/Activity;)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$y;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICy;->j()V
 
     .line 134
     const/4 v0, 0x1
@@ -467,9 +467,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$w;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICw;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$w;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICw;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 

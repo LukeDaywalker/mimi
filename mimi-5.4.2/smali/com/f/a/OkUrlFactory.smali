@@ -182,9 +182,9 @@
     return-object v0
 
     :cond_0
-    new-instance v0, Lcom/f/a/OkUrlFactory$al;
+    new-instance v0, Lcom/f/a/OkUrlFactory$ICal;
 
-    invoke-direct {v0, p0, p1}, Lcom/f/a/OkUrlFactory$al;-><init>(Lcom/f/a/OkUrlFactory;Ljava/lang/String;)V
+    invoke-direct {v0, p0, p1}, Lcom/f/a/OkUrlFactory$ICal;-><init>(Lcom/f/a/OkUrlFactory;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

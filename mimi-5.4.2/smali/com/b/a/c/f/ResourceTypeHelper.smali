@@ -9,7 +9,7 @@
         value = {
             "Lcom/b/a/c/f/f",
             "<",
-            "Lcom/b/a/c/g/a/Page$y;",
+            "Lcom/b/a/c/g/a/Page$ICy;",
             ">;"
         }
     .end annotation
@@ -36,7 +36,7 @@
 
     const-string/jumbo v1, "text/css"
 
-    sget-object v2, Lcom/b/a/c/g/a/Page$y;->b:Lcom/b/a/c/g/a/Page$y;
+    sget-object v2, Lcom/b/a/c/g/a/Page$ICy;->b:Lcom/b/a/c/g/a/Page$ICy;
 
     invoke-virtual {v0, v1, v2}, Lcom/b/a/c/f/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -45,7 +45,7 @@
 
     const-string/jumbo v1, "image/*"
 
-    sget-object v2, Lcom/b/a/c/g/a/Page$y;->c:Lcom/b/a/c/g/a/Page$y;
+    sget-object v2, Lcom/b/a/c/g/a/Page$ICy;->c:Lcom/b/a/c/g/a/Page$ICy;
 
     invoke-virtual {v0, v1, v2}, Lcom/b/a/c/f/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -54,7 +54,7 @@
 
     const-string/jumbo v1, "application/x-javascript"
 
-    sget-object v2, Lcom/b/a/c/g/a/Page$y;->e:Lcom/b/a/c/g/a/Page$y;
+    sget-object v2, Lcom/b/a/c/g/a/Page$ICy;->e:Lcom/b/a/c/g/a/Page$ICy;
 
     invoke-virtual {v0, v1, v2}, Lcom/b/a/c/f/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -63,7 +63,7 @@
 
     const-string/jumbo v1, "text/javascript"
 
-    sget-object v2, Lcom/b/a/c/g/a/Page$y;->f:Lcom/b/a/c/g/a/Page$y;
+    sget-object v2, Lcom/b/a/c/g/a/Page$ICy;->f:Lcom/b/a/c/g/a/Page$ICy;
 
     invoke-virtual {v0, v1, v2}, Lcom/b/a/c/f/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -72,7 +72,7 @@
 
     const-string/jumbo v1, "application/json"
 
-    sget-object v2, Lcom/b/a/c/g/a/Page$y;->f:Lcom/b/a/c/g/a/Page$y;
+    sget-object v2, Lcom/b/a/c/g/a/Page$ICy;->f:Lcom/b/a/c/g/a/Page$ICy;
 
     invoke-virtual {v0, v1, v2}, Lcom/b/a/c/f/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -81,7 +81,7 @@
 
     const-string/jumbo v1, "text/*"
 
-    sget-object v2, Lcom/b/a/c/g/a/Page$y;->a:Lcom/b/a/c/g/a/Page$y;
+    sget-object v2, Lcom/b/a/c/g/a/Page$ICy;->a:Lcom/b/a/c/g/a/Page$ICy;
 
     invoke-virtual {v0, v1, v2}, Lcom/b/a/c/f/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -90,7 +90,7 @@
 
     const-string/jumbo v1, "*"
 
-    sget-object v2, Lcom/b/a/c/g/a/Page$y;->h:Lcom/b/a/c/g/a/Page$y;
+    sget-object v2, Lcom/b/a/c/g/a/Page$ICy;->h:Lcom/b/a/c/g/a/Page$ICy;
 
     invoke-virtual {v0, v1, v2}, Lcom/b/a/c/f/MimeMatcher;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -100,7 +100,7 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/String;)Lcom/b/a/c/g/a/Page$y;
+.method public a(Ljava/lang/String;)Lcom/b/a/c/g/a/Page$ICy;
     .locals 2
 
     .prologue
@@ -116,7 +116,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/b/a/c/g/a/Page$y;
+    check-cast v0, Lcom/b/a/c/g/a/Page$ICy;
 
     return-object v0
 .end method

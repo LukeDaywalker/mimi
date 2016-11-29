@@ -9,7 +9,7 @@
         value = {
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/wumii/android/mimi/models/h/BaseStorage$d;",
+            "Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;",
             ">;"
         }
     .end annotation
@@ -37,19 +37,19 @@
 
 
 # virtual methods
-.method protected a(Lcom/wumii/android/mimi/models/h/BaseStorage$c;Ljava/lang/String;)V
+.method protected a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;Ljava/lang/String;)V
     .locals 2
 
     .prologue
     .line 16
-    new-instance v0, Lcom/wumii/android/mimi/models/h/BaseStorage$e;
+    new-instance v0, Lcom/wumii/android/mimi/models/h/BaseStorage$ICe;
 
-    invoke-direct {v0, p1, p2}, Lcom/wumii/android/mimi/models/h/BaseStorage$e;-><init>(Lcom/wumii/android/mimi/models/h/BaseStorage$c;Ljava/lang/String;)V
+    invoke-direct {v0, p1, p2}, Lcom/wumii/android/mimi/models/h/BaseStorage$ICe;-><init>(Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;Ljava/lang/String;)V
 
     .line 18
-    new-instance v1, Lcom/wumii/android/mimi/models/h/BaseStorage$b;
+    new-instance v1, Lcom/wumii/android/mimi/models/h/BaseStorage$ICb;
 
-    invoke-direct {v1, p0, v0}, Lcom/wumii/android/mimi/models/h/BaseStorage$b;-><init>(Lcom/wumii/android/mimi/models/h/BaseStorage;Lcom/wumii/android/mimi/models/h/BaseStorage$e;)V
+    invoke-direct {v1, p0, v0}, Lcom/wumii/android/mimi/models/h/BaseStorage$ICb;-><init>(Lcom/wumii/android/mimi/models/h/BaseStorage;Lcom/wumii/android/mimi/models/h/BaseStorage$ICe;)V
 
     invoke-static {v1}, Lcom/wumii/android/mimi/c/ThreadUtils;->b(Ljava/lang/Runnable;)V
 
@@ -57,7 +57,7 @@
     return-void
 .end method
 
-.method public a(Lcom/wumii/android/mimi/models/h/BaseStorage$d;)V
+.method public a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;)V
     .locals 2
 
     .prologue
@@ -112,7 +112,7 @@
     throw v0
 .end method
 
-.method public b(Lcom/wumii/android/mimi/models/h/BaseStorage$d;)V
+.method public b(Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;)V
     .locals 3
 
     .prologue

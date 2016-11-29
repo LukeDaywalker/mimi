@@ -243,9 +243,9 @@
     :try_start_3
     iget-object v1, p0, Lcom/b/a/c/f/ResponseHandlingInputStream;->d:Lcom/b/a/c/d/ChromePeerManager;
 
-    sget-object v2, Lcom/b/a/c/g/a/Console$f;->c:Lcom/b/a/c/g/a/Console$f;
+    sget-object v2, Lcom/b/a/c/g/a/Console$ICf;->c:Lcom/b/a/c/g/a/Console$ICf;
 
-    sget-object v3, Lcom/b/a/c/g/a/Console$g;->c:Lcom/b/a/c/g/a/Console$g;
+    sget-object v3, Lcom/b/a/c/g/a/Console$ICg;->c:Lcom/b/a/c/g/a/Console$ICg;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -265,7 +265,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v2, v3, v0}, Lcom/b/a/c/a/CLog;->a(Lcom/b/a/c/d/ChromePeerManager;Lcom/b/a/c/g/a/Console$f;Lcom/b/a/c/g/a/Console$g;Ljava/lang/String;)V
+    invoke-static {v1, v2, v3, v0}, Lcom/b/a/c/a/CLog;->a(Lcom/b/a/c/d/ChromePeerManager;Lcom/b/a/c/g/a/Console$ICf;Lcom/b/a/c/g/a/Console$ICg;Ljava/lang/String;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
@@ -364,9 +364,9 @@
     .line 262
     iget-object v0, p0, Lcom/b/a/c/f/ResponseHandlingInputStream;->d:Lcom/b/a/c/d/ChromePeerManager;
 
-    sget-object v1, Lcom/b/a/c/g/a/Console$f;->c:Lcom/b/a/c/g/a/Console$f;
+    sget-object v1, Lcom/b/a/c/g/a/Console$ICf;->c:Lcom/b/a/c/g/a/Console$ICf;
 
-    sget-object v2, Lcom/b/a/c/g/a/Console$g;->c:Lcom/b/a/c/g/a/Console$g;
+    sget-object v2, Lcom/b/a/c/g/a/Console$ICg;->c:Lcom/b/a/c/g/a/Console$ICg;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -386,7 +386,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v1, v2, v3}, Lcom/b/a/c/a/CLog;->a(Lcom/b/a/c/d/ChromePeerManager;Lcom/b/a/c/g/a/Console$f;Lcom/b/a/c/g/a/Console$g;Ljava/lang/String;)V
+    invoke-static {v0, v1, v2, v3}, Lcom/b/a/c/a/CLog;->a(Lcom/b/a/c/d/ChromePeerManager;Lcom/b/a/c/g/a/Console$ICf;Lcom/b/a/c/g/a/Console$ICg;Ljava/lang/String;)V
 
     .line 268
     invoke-direct {p0}, Lcom/b/a/c/f/ResponseHandlingInputStream;->b()V
@@ -482,9 +482,9 @@
     .line 174
     iget-object v2, p0, Lcom/b/a/c/f/ResponseHandlingInputStream;->d:Lcom/b/a/c/d/ChromePeerManager;
 
-    sget-object v3, Lcom/b/a/c/g/a/Console$f;->c:Lcom/b/a/c/g/a/Console$f;
+    sget-object v3, Lcom/b/a/c/g/a/Console$ICf;->c:Lcom/b/a/c/g/a/Console$ICf;
 
-    sget-object v4, Lcom/b/a/c/g/a/Console$g;->c:Lcom/b/a/c/g/a/Console$g;
+    sget-object v4, Lcom/b/a/c/g/a/Console$ICg;->c:Lcom/b/a/c/g/a/Console$ICg;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -526,7 +526,7 @@
 
     move-result-object v0
 
-    invoke-static {v2, v3, v4, v0}, Lcom/b/a/c/a/CLog;->a(Lcom/b/a/c/d/ChromePeerManager;Lcom/b/a/c/g/a/Console$f;Lcom/b/a/c/g/a/Console$g;Ljava/lang/String;)V
+    invoke-static {v2, v3, v4, v0}, Lcom/b/a/c/a/CLog;->a(Lcom/b/a/c/d/ChromePeerManager;Lcom/b/a/c/g/a/Console$ICf;Lcom/b/a/c/g/a/Console$ICg;Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

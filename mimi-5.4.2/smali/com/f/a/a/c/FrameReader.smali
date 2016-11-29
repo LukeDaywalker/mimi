@@ -10,5 +10,5 @@
 .method public abstract a()V
 .end method
 
-.method public abstract a(Lcom/f/a/a/c/FrameReader$c;)Z
+.method public abstract a(Lcom/f/a/a/c/FrameReader$ICc;)Z
 .end method

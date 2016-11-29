@@ -1,5 +1,5 @@
 .class public Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
-.super Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$w;
+.super Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICw;
 .source "CustomTabAdapter.java"
 
 
@@ -22,7 +22,7 @@
 
     .prologue
     .line 25
-    invoke-direct {p0, p1}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$w;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICw;-><init>(Landroid/content/Context;)V
 
     .line 26
     new-instance v0, Ljava/util/ArrayList;
@@ -40,7 +40,7 @@
 
     .prologue
     .line 20
-    invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$w;-><init>(Landroid/content/Context;Landroid/widget/LinearLayout$LayoutParams;)V
+    invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICw;-><init>(Landroid/content/Context;Landroid/widget/LinearLayout$LayoutParams;)V
 
     .line 21
     new-instance v0, Ljava/util/ArrayList;

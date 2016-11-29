@@ -20,9 +20,9 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/a/c/BaseCircleFragment;-><init>()V
 
     .line 30
-    new-instance v0, Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment$f;
+    new-instance v0, Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment$ICf;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment$f;-><init>(Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment$ICf;-><init>(Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment;->k:Lcom/wumii/android/mimi/models/e/CircleObserver;
 
@@ -95,9 +95,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment$h;
+    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment$ICh;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment$h;-><init>(Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment$ICh;-><init>(Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment;)V
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/circle/CrowdSplitsAdapter;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/ui/OnCircleClickListener;)V
 
@@ -192,9 +192,9 @@
     .line 76
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment;->j:Landroid/widget/ListView;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment$g;
+    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment$ICg;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment$g;-><init>(Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment$ICg;-><init>(Lcom/wumii/android/mimi/ui/a/c/CircleSplitFragment;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 

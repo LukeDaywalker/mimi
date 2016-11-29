@@ -26,9 +26,9 @@
 
     .prologue
     .line 39
-    new-instance v0, Lcom/sina/weibo/sdk/api/WebpageObject$g;
+    new-instance v0, Lcom/sina/weibo/sdk/api/WebpageObject$ICg;
 
-    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/WebpageObject$g;-><init>()V
+    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/WebpageObject$ICg;-><init>()V
 
     sput-object v0, Lcom/sina/weibo/sdk/api/WebpageObject;->CREATOR:Landroid/os/Parcelable$Creator;
 

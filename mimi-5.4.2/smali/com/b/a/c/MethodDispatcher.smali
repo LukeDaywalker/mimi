@@ -10,7 +10,7 @@
             "Ljava/util/Map",
             "<",
             "Ljava/lang/String;",
-            "Lcom/b/a/c/MethodDispatcher$f;",
+            "Lcom/b/a/c/MethodDispatcher$ICf;",
             ">;"
         }
     .end annotation
@@ -58,7 +58,7 @@
     return-void
 .end method
 
-.method private declared-synchronized a(Ljava/lang/String;)Lcom/b/a/c/MethodDispatcher$f;
+.method private declared-synchronized a(Ljava/lang/String;)Lcom/b/a/c/MethodDispatcher$ICf;
     .locals 2
 
     .prologue
@@ -89,7 +89,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/b/a/c/MethodDispatcher$f;
+    check-cast v0, Lcom/b/a/c/MethodDispatcher$ICf;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -119,7 +119,7 @@
             "Ljava/util/Map",
             "<",
             "Ljava/lang/String;",
-            "Lcom/b/a/c/MethodDispatcher$f;",
+            "Lcom/b/a/c/MethodDispatcher$ICf;",
             ">;"
         }
     .end annotation
@@ -189,9 +189,9 @@
     if-eqz v8, :cond_1
 
     .line 110
-    new-instance v8, Lcom/b/a/c/MethodDispatcher$f;
+    new-instance v8, Lcom/b/a/c/MethodDispatcher$ICf;
 
-    invoke-direct {v8, p0, v0, v7}, Lcom/b/a/c/MethodDispatcher$f;-><init>(Lcom/b/a/d/ObjectMapper;Lcom/b/a/c/g/ChromeDevtoolsDomain;Ljava/lang/reflect/Method;)V
+    invoke-direct {v8, p0, v0, v7}, Lcom/b/a/c/MethodDispatcher$ICf;-><init>(Lcom/b/a/d/ObjectMapper;Lcom/b/a/c/g/ChromeDevtoolsDomain;Ljava/lang/reflect/Method;)V
 
     .line 114
     new-instance v9, Ljava/lang/StringBuilder;
@@ -432,7 +432,7 @@
     const/4 v5, 0x0
 
     .line 53
-    invoke-direct {p0, p2}, Lcom/b/a/c/MethodDispatcher;->a(Ljava/lang/String;)Lcom/b/a/c/MethodDispatcher$f;
+    invoke-direct {p0, p2}, Lcom/b/a/c/MethodDispatcher;->a(Ljava/lang/String;)Lcom/b/a/c/MethodDispatcher$ICf;
 
     move-result-object v0
 
@@ -444,7 +444,7 @@
 
     new-instance v1, Lcom/b/a/c/e/a/JsonRpcError;
 
-    sget-object v2, Lcom/b/a/c/e/a/JsonRpcError$c;->c:Lcom/b/a/c/e/a/JsonRpcError$c;
+    sget-object v2, Lcom/b/a/c/e/a/JsonRpcError$ICc;->c:Lcom/b/a/c/e/a/JsonRpcError$ICc;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -464,7 +464,7 @@
 
     move-result-object v3
 
-    invoke-direct {v1, v2, v3, v5}, Lcom/b/a/c/e/a/JsonRpcError;-><init>(Lcom/b/a/c/e/a/JsonRpcError$c;Ljava/lang/String;Lorg/json/JSONObject;)V
+    invoke-direct {v1, v2, v3, v5}, Lcom/b/a/c/e/a/JsonRpcError;-><init>(Lcom/b/a/c/e/a/JsonRpcError$ICc;Ljava/lang/String;Lorg/json/JSONObject;)V
 
     invoke-direct {v0, v1}, Lcom/b/a/c/e/JsonRpcException;-><init>(Lcom/b/a/c/e/a/JsonRpcError;)V
 
@@ -473,7 +473,7 @@
     .line 60
     :cond_0
     :try_start_0
-    invoke-virtual {v0, p1, p3}, Lcom/b/a/c/MethodDispatcher$f;->a(Lcom/b/a/c/e/JsonRpcPeer;Lorg/json/JSONObject;)Lorg/json/JSONObject;
+    invoke-virtual {v0, p1, p3}, Lcom/b/a/c/MethodDispatcher$ICf;->a(Lcom/b/a/c/e/JsonRpcPeer;Lorg/json/JSONObject;)Lorg/json/JSONObject;
     :try_end_0
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
@@ -524,13 +524,13 @@
 
     new-instance v2, Lcom/b/a/c/e/a/JsonRpcError;
 
-    sget-object v3, Lcom/b/a/c/e/a/JsonRpcError$c;->e:Lcom/b/a/c/e/a/JsonRpcError$c;
+    sget-object v3, Lcom/b/a/c/e/a/JsonRpcError$ICc;->e:Lcom/b/a/c/e/a/JsonRpcError$ICc;
 
     invoke-virtual {v0}, Lorg/json/JSONException;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {v2, v3, v0, v5}, Lcom/b/a/c/e/a/JsonRpcError;-><init>(Lcom/b/a/c/e/a/JsonRpcError$c;Ljava/lang/String;Lorg/json/JSONObject;)V
+    invoke-direct {v2, v3, v0, v5}, Lcom/b/a/c/e/a/JsonRpcError;-><init>(Lcom/b/a/c/e/a/JsonRpcError$ICc;Ljava/lang/String;Lorg/json/JSONObject;)V
 
     invoke-direct {v1, v2}, Lcom/b/a/c/e/JsonRpcException;-><init>(Lcom/b/a/c/e/a/JsonRpcError;)V
 

@@ -34,9 +34,9 @@
 
     .prologue
     .line 53
-    new-instance v0, Lcom/sina/weibo/sdk/api/VoiceObject$f;
+    new-instance v0, Lcom/sina/weibo/sdk/api/VoiceObject$ICf;
 
-    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/VoiceObject$f;-><init>()V
+    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/VoiceObject$ICf;-><init>()V
 
     sput-object v0, Lcom/sina/weibo/sdk/api/VoiceObject;->CREATOR:Landroid/os/Parcelable$Creator;
 

@@ -434,11 +434,11 @@
 
     .line 137
     :cond_0
-    new-instance v0, Lcom/wumii/android/mimi/ui/a/d/MineFragment$p;
+    new-instance v0, Lcom/wumii/android/mimi/ui/a/d/MineFragment$ICp;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/d/MineFragment$p;-><init>(Lcom/wumii/android/mimi/ui/a/d/MineFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/d/MineFragment$ICp;-><init>(Lcom/wumii/android/mimi/ui/a/d/MineFragment;)V
 
-    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$cd;)V
+    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/WumiiItemList;->setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/WumiiItemList$ICcd;)V
 
     .line 172
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/a/d/MineFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -498,16 +498,16 @@
 
     move-result-object v1
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/a/d/MineFragment$q;
+    new-instance v3, Lcom/wumii/android/mimi/ui/a/d/MineFragment$ICq;
 
-    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/a/d/MineFragment$q;-><init>(Lcom/wumii/android/mimi/ui/a/d/MineFragment;)V
+    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/a/d/MineFragment$ICq;-><init>(Lcom/wumii/android/mimi/ui/a/d/MineFragment;)V
 
-    invoke-virtual {v0, v1, v3, v4}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$au;Z)V
+    invoke-virtual {v0, v1, v3, v4}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$ICau;Z)V
 
     .line 184
-    new-instance v0, Lcom/wumii/android/mimi/ui/a/d/MineFragment$r;
+    new-instance v0, Lcom/wumii/android/mimi/ui/a/d/MineFragment$ICr;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/d/MineFragment$r;-><init>(Lcom/wumii/android/mimi/ui/a/d/MineFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/d/MineFragment$ICr;-><init>(Lcom/wumii/android/mimi/ui/a/d/MineFragment;)V
 
     invoke-virtual {v2, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -557,9 +557,9 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/a/d/MineFragment;->a:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
     .line 58
-    new-instance v0, Lcom/wumii/android/mimi/ui/a/d/MineFragment$n;
+    new-instance v0, Lcom/wumii/android/mimi/ui/a/d/MineFragment$ICn;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/d/MineFragment$n;-><init>(Lcom/wumii/android/mimi/ui/a/d/MineFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/d/MineFragment$ICn;-><init>(Lcom/wumii/android/mimi/ui/a/d/MineFragment;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/a/d/MineFragment;->e:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 

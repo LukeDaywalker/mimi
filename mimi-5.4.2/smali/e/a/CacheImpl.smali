@@ -12,7 +12,7 @@
 
 .field private b:Le/a/NetworkHelper;
 
-.field private c:Lcom/g/a/ReportPolicy$m;
+.field private c:Lcom/g/a/ReportPolicy$ICm;
 
 .field private d:Lcom/g/a/StoreHelper;
 
@@ -42,7 +42,7 @@
     iput-object v0, p0, Le/a/CacheImpl;->b:Le/a/NetworkHelper;
 
     .line 29
-    iput-object v0, p0, Le/a/CacheImpl;->c:Lcom/g/a/ReportPolicy$m;
+    iput-object v0, p0, Le/a/CacheImpl;->c:Lcom/g/a/ReportPolicy$ICm;
 
     .line 30
     iput-object v0, p0, Le/a/CacheImpl;->d:Lcom/g/a/StoreHelper;
@@ -178,11 +178,11 @@
 
     .line 305
     :pswitch_0
-    new-instance v0, Lcom/g/a/ReportPolicy$i;
+    new-instance v0, Lcom/g/a/ReportPolicy$ICi;
 
-    invoke-direct {v0}, Lcom/g/a/ReportPolicy$i;-><init>()V
+    invoke-direct {v0}, Lcom/g/a/ReportPolicy$ICi;-><init>()V
 
-    iput-object v0, p0, Le/a/CacheImpl;->c:Lcom/g/a/ReportPolicy$m;
+    iput-object v0, p0, Le/a/CacheImpl;->c:Lcom/g/a/ReportPolicy$ICm;
 
     .line 309
     :goto_0
@@ -223,71 +223,71 @@
 
     .line 287
     :pswitch_1
-    new-instance v0, Lcom/g/a/ReportPolicy$i;
+    new-instance v0, Lcom/g/a/ReportPolicy$ICi;
 
-    invoke-direct {v0}, Lcom/g/a/ReportPolicy$i;-><init>()V
+    invoke-direct {v0}, Lcom/g/a/ReportPolicy$ICi;-><init>()V
 
-    iput-object v0, p0, Le/a/CacheImpl;->c:Lcom/g/a/ReportPolicy$m;
+    iput-object v0, p0, Le/a/CacheImpl;->c:Lcom/g/a/ReportPolicy$ICm;
 
     goto :goto_0
 
     .line 290
     :pswitch_2
-    new-instance v0, Lcom/g/a/ReportPolicy$j;
+    new-instance v0, Lcom/g/a/ReportPolicy$ICj;
 
     iget-object v1, p0, Le/a/CacheImpl;->e:Le/a/StatTracer;
 
     int-to-long v2, p2
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/g/a/ReportPolicy$j;-><init>(Le/a/StatTracer;J)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/g/a/ReportPolicy$ICj;-><init>(Le/a/StatTracer;J)V
 
-    iput-object v0, p0, Le/a/CacheImpl;->c:Lcom/g/a/ReportPolicy$m;
+    iput-object v0, p0, Le/a/CacheImpl;->c:Lcom/g/a/ReportPolicy$ICm;
 
     goto :goto_0
 
     .line 293
     :pswitch_3
-    new-instance v0, Lcom/g/a/ReportPolicy$l;
+    new-instance v0, Lcom/g/a/ReportPolicy$ICl;
 
     iget-object v1, p0, Le/a/CacheImpl;->e:Le/a/StatTracer;
 
-    invoke-direct {v0, v1}, Lcom/g/a/ReportPolicy$l;-><init>(Le/a/StatTracer;)V
+    invoke-direct {v0, v1}, Lcom/g/a/ReportPolicy$ICl;-><init>(Le/a/StatTracer;)V
 
-    iput-object v0, p0, Le/a/CacheImpl;->c:Lcom/g/a/ReportPolicy$m;
+    iput-object v0, p0, Le/a/CacheImpl;->c:Lcom/g/a/ReportPolicy$ICm;
 
     goto :goto_0
 
     .line 296
     :pswitch_4
-    new-instance v0, Lcom/g/a/ReportPolicy$m;
+    new-instance v0, Lcom/g/a/ReportPolicy$ICm;
 
-    invoke-direct {v0}, Lcom/g/a/ReportPolicy$m;-><init>()V
+    invoke-direct {v0}, Lcom/g/a/ReportPolicy$ICm;-><init>()V
 
-    iput-object v0, p0, Le/a/CacheImpl;->c:Lcom/g/a/ReportPolicy$m;
+    iput-object v0, p0, Le/a/CacheImpl;->c:Lcom/g/a/ReportPolicy$ICm;
 
     goto :goto_0
 
     .line 299
     :pswitch_5
-    new-instance v0, Lcom/g/a/ReportPolicy$n;
+    new-instance v0, Lcom/g/a/ReportPolicy$ICn;
 
     iget-object v1, p0, Le/a/CacheImpl;->h:Landroid/content/Context;
 
-    invoke-direct {v0, v1}, Lcom/g/a/ReportPolicy$n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/g/a/ReportPolicy$ICn;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Le/a/CacheImpl;->c:Lcom/g/a/ReportPolicy$m;
+    iput-object v0, p0, Le/a/CacheImpl;->c:Lcom/g/a/ReportPolicy$ICm;
 
     goto :goto_0
 
     .line 302
     :pswitch_6
-    new-instance v0, Lcom/g/a/ReportPolicy$k;
+    new-instance v0, Lcom/g/a/ReportPolicy$ICk;
 
     iget-object v1, p0, Le/a/CacheImpl;->a:Le/a/MemoCache;
 
-    invoke-direct {v0, v1, p2}, Lcom/g/a/ReportPolicy$k;-><init>(Le/a/MemoCache;I)V
+    invoke-direct {v0, v1, p2}, Lcom/g/a/ReportPolicy$ICk;-><init>(Le/a/MemoCache;I)V
 
-    iput-object v0, p0, Le/a/CacheImpl;->c:Lcom/g/a/ReportPolicy$m;
+    iput-object v0, p0, Le/a/CacheImpl;->c:Lcom/g/a/ReportPolicy$ICm;
 
     goto :goto_0
 
@@ -367,9 +367,9 @@
 
     .line 202
     :cond_3
-    iget-object v0, p0, Le/a/CacheImpl;->c:Lcom/g/a/ReportPolicy$m;
+    iget-object v0, p0, Le/a/CacheImpl;->c:Lcom/g/a/ReportPolicy$ICm;
 
-    invoke-virtual {v0, p1}, Lcom/g/a/ReportPolicy$m;->a(Z)Z
+    invoke-virtual {v0, p1}, Lcom/g/a/ReportPolicy$ICm;->a(Z)Z
 
     move-result v0
 

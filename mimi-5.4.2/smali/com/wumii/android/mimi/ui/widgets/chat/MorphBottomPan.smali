@@ -9,9 +9,9 @@
 # instance fields
 .field private a:Landroid/view/View;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+.field private b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-.field private c:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ay;
+.field private c:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICay;
 
 .field private d:Lcom/e/a/b/DisplayImageOptions;
 
@@ -109,9 +109,9 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->d:Lcom/e/a/b/DisplayImageOptions;
 
     .line 50
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$aw;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICaw;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$aw;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICaw;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->m:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
@@ -160,9 +160,9 @@
     if-eqz v0, :cond_1
 
     .line 115
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->d(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->d(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -177,9 +177,9 @@
     if-nez v0, :cond_4
 
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->e(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/view/View;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->e(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/view/View;
 
     move-result-object v0
 
@@ -192,9 +192,9 @@
     if-eqz v0, :cond_2
 
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->f(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->f(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -209,9 +209,9 @@
     if-nez v0, :cond_5
 
     .line 128
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->g(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/view/View;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->g(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/view/View;
 
     move-result-object v0
 
@@ -234,9 +234,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v2}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->a(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/widget/ImageView;
+    invoke-static {v2}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->a(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/widget/ImageView;
 
     move-result-object v2
 
@@ -245,9 +245,9 @@
     invoke-virtual {v0, v1, v2, v3}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
 
     .line 136
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->h(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->h(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -267,9 +267,9 @@
 
     .line 120
     :cond_4
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->e(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/view/View;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->e(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/view/View;
 
     move-result-object v0
 
@@ -282,9 +282,9 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->g:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v2}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->b(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/widget/ImageView;
+    invoke-static {v2}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->b(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/widget/ImageView;
 
     move-result-object v2
 
@@ -296,9 +296,9 @@
 
     .line 130
     :cond_5
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->g(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/view/View;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->g(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/view/View;
 
     move-result-object v0
 
@@ -311,9 +311,9 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->h:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v2}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->c(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/widget/ImageView;
+    invoke-static {v2}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->c(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/widget/ImageView;
 
     move-result-object v2
 
@@ -365,27 +365,27 @@
     if-ne v0, v1, :cond_1
 
     .line 176
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->i(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->i(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 177
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->j(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->j(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 178
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->k(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->k(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/widget/ImageView;
 
     move-result-object v0
 
@@ -405,27 +405,27 @@
     if-ne v0, v1, :cond_2
 
     .line 180
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->i(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->i(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 181
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->j(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->j(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 182
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->k(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->k(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/widget/ImageView;
 
     move-result-object v0
 
@@ -442,27 +442,27 @@
     if-ne v0, v1, :cond_0
 
     .line 184
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->i(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->i(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 185
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->j(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->j(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 186
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->k(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->k(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/widget/ImageView;
 
     move-result-object v0
 
@@ -533,36 +533,36 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 81
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->a:Landroid/view/View;
 
-    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;-><init>(Landroid/view/View;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->a(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->a(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     invoke-direct {p0, v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->a(Landroid/view/View;Landroid/view/View$OnClickListener;)V
 
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->b(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->b(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     invoke-direct {p0, v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->a(Landroid/view/View;Landroid/view/View$OnClickListener;)V
 
     .line 84
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;->c(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ax;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;->c(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;)Landroid/widget/ImageView;
 
     move-result-object v0
 
@@ -600,12 +600,12 @@
     return-void
 .end method
 
-.method public a(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ay;)V
+.method public a(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICay;)V
     .locals 0
 
     .prologue
     .line 92
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->c:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ay;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->c:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICay;
 
     .line 93
     return-void
@@ -658,15 +658,15 @@
 
     .line 153
     :sswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->c:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ay;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->c:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICay;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->c:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ay;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->c:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICay;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->g:Ljava/lang/String;
 
-    invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ay;->e(Ljava/lang/String;)Z
+    invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICay;->e(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -679,15 +679,15 @@
 
     .line 158
     :sswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->c:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ay;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->c:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICay;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->c:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ay;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->c:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICay;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->h:Ljava/lang/String;
 
-    invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ay;->f(Ljava/lang/String;)Z
+    invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICay;->f(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -700,15 +700,15 @@
 
     .line 163
     :sswitch_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->c:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ay;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->c:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICay;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->c:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ay;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->c:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICay;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->k:Lcom/wumii/android/mimi/models/entities/profile/NamedUser;
 
-    invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ay;->a(Lcom/wumii/android/mimi/models/entities/profile/NamedUser;)Z
+    invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICay;->a(Lcom/wumii/android/mimi/models/entities/profile/NamedUser;)Z
 
     move-result v0
 

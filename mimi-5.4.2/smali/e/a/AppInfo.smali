@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Le/a/AppInfo;",
-        "Le/a/AppInfo$t;",
+        "Le/a/AppInfo$ICt;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Le/a/AppInfo$t;",
+            "Le/a/AppInfo$ICt;",
             "Le/a/FieldMetaData;",
             ">;"
         }
@@ -97,7 +97,7 @@
 
 .field private x:B
 
-.field private y:[Le/a/AppInfo$t;
+.field private y:[Le/a/AppInfo$ICt;
 
 
 # direct methods
@@ -240,9 +240,9 @@
 
     const-class v1, Le/a/StandardScheme;
 
-    new-instance v2, Le/a/AppInfo$q;
+    new-instance v2, Le/a/AppInfo$ICq;
 
-    invoke-direct {v2, v3}, Le/a/AppInfo$q;-><init>(Le/a/AppInfo$o;)V
+    invoke-direct {v2, v3}, Le/a/AppInfo$ICq;-><init>(Le/a/AppInfo$ICo;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -251,21 +251,21 @@
 
     const-class v1, Le/a/TupleScheme;
 
-    new-instance v2, Le/a/AppInfo$s;
+    new-instance v2, Le/a/AppInfo$ICs;
 
-    invoke-direct {v2, v3}, Le/a/AppInfo$s;-><init>(Le/a/AppInfo$o;)V
+    invoke-direct {v2, v3}, Le/a/AppInfo$ICs;-><init>(Le/a/AppInfo$ICo;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 163
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Le/a/AppInfo$t;
+    const-class v1, Le/a/AppInfo$ICt;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 164
-    sget-object v1, Le/a/AppInfo$t;->a:Le/a/AppInfo$t;
+    sget-object v1, Le/a/AppInfo$ICt;->a:Le/a/AppInfo$ICt;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -280,7 +280,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 166
-    sget-object v1, Le/a/AppInfo$t;->b:Le/a/AppInfo$t;
+    sget-object v1, Le/a/AppInfo$ICt;->b:Le/a/AppInfo$ICt;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -295,7 +295,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 168
-    sget-object v1, Le/a/AppInfo$t;->c:Le/a/AppInfo$t;
+    sget-object v1, Le/a/AppInfo$ICt;->c:Le/a/AppInfo$ICt;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -310,7 +310,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 170
-    sget-object v1, Le/a/AppInfo$t;->d:Le/a/AppInfo$t;
+    sget-object v1, Le/a/AppInfo$ICt;->d:Le/a/AppInfo$ICt;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -325,7 +325,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 172
-    sget-object v1, Le/a/AppInfo$t;->e:Le/a/AppInfo$t;
+    sget-object v1, Le/a/AppInfo$ICt;->e:Le/a/AppInfo$ICt;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -344,7 +344,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 174
-    sget-object v1, Le/a/AppInfo$t;->f:Le/a/AppInfo$t;
+    sget-object v1, Le/a/AppInfo$ICt;->f:Le/a/AppInfo$ICt;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -359,7 +359,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 176
-    sget-object v1, Le/a/AppInfo$t;->g:Le/a/AppInfo$t;
+    sget-object v1, Le/a/AppInfo$ICt;->g:Le/a/AppInfo$ICt;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -374,7 +374,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 178
-    sget-object v1, Le/a/AppInfo$t;->h:Le/a/AppInfo$t;
+    sget-object v1, Le/a/AppInfo$ICt;->h:Le/a/AppInfo$ICt;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -389,7 +389,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 180
-    sget-object v1, Le/a/AppInfo$t;->i:Le/a/AppInfo$t;
+    sget-object v1, Le/a/AppInfo$ICt;->i:Le/a/AppInfo$ICt;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -404,7 +404,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 182
-    sget-object v1, Le/a/AppInfo$t;->j:Le/a/AppInfo$t;
+    sget-object v1, Le/a/AppInfo$ICt;->j:Le/a/AppInfo$ICt;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -451,43 +451,43 @@
     .line 160
     const/4 v0, 0x6
 
-    new-array v0, v0, [Le/a/AppInfo$t;
+    new-array v0, v0, [Le/a/AppInfo$ICt;
 
-    sget-object v1, Le/a/AppInfo$t;->b:Le/a/AppInfo$t;
+    sget-object v1, Le/a/AppInfo$ICt;->b:Le/a/AppInfo$ICt;
 
     aput-object v1, v0, v2
 
     const/4 v1, 0x1
 
-    sget-object v2, Le/a/AppInfo$t;->c:Le/a/AppInfo$t;
+    sget-object v2, Le/a/AppInfo$ICt;->c:Le/a/AppInfo$ICt;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x2
 
-    sget-object v2, Le/a/AppInfo$t;->d:Le/a/AppInfo$t;
+    sget-object v2, Le/a/AppInfo$ICt;->d:Le/a/AppInfo$ICt;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x3
 
-    sget-object v2, Le/a/AppInfo$t;->h:Le/a/AppInfo$t;
+    sget-object v2, Le/a/AppInfo$ICt;->h:Le/a/AppInfo$ICt;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x4
 
-    sget-object v2, Le/a/AppInfo$t;->i:Le/a/AppInfo$t;
+    sget-object v2, Le/a/AppInfo$ICt;->i:Le/a/AppInfo$ICt;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x5
 
-    sget-object v2, Le/a/AppInfo$t;->j:Le/a/AppInfo$t;
+    sget-object v2, Le/a/AppInfo$ICt;->j:Le/a/AppInfo$ICt;
 
     aput-object v2, v0, v1
 
-    iput-object v0, p0, Le/a/AppInfo;->y:[Le/a/AppInfo$t;
+    iput-object v0, p0, Le/a/AppInfo;->y:[Le/a/AppInfo$ICt;
 
     .line 189
     return-void

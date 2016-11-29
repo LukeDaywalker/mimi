@@ -82,11 +82,11 @@
     move-result-object v0
 
     .line 142
-    sget-object v1, Lcom/b/a/c/ChromeDevtoolsServer$b;->a:[I
+    sget-object v1, Lcom/b/a/c/ChromeDevtoolsServer$ICb;->a:[I
 
-    iget-object v2, v0, Lcom/b/a/c/e/a/JsonRpcError;->a:Lcom/b/a/c/e/a/JsonRpcError$c;
+    iget-object v2, v0, Lcom/b/a/c/e/a/JsonRpcError;->a:Lcom/b/a/c/e/a/JsonRpcError$ICc;
 
-    invoke-virtual {v2}, Lcom/b/a/c/e/a/JsonRpcError$c;->ordinal()I
+    invoke-virtual {v2}, Lcom/b/a/c/e/a/JsonRpcError$ICc;->ordinal()I
 
     move-result v2
 

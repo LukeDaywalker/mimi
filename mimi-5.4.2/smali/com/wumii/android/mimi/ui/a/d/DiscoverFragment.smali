@@ -161,9 +161,9 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 43
-    new-instance v1, Lcom/wumii/android/mimi/ui/a/d/DiscoverFragment$e;
+    new-instance v1, Lcom/wumii/android/mimi/ui/a/d/DiscoverFragment$ICe;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/a/d/DiscoverFragment$e;-><init>(Lcom/wumii/android/mimi/ui/a/d/DiscoverFragment;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/a/d/DiscoverFragment$ICe;-><init>(Lcom/wumii/android/mimi/ui/a/d/DiscoverFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -220,7 +220,7 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/a/d/DiscoverFragment;->c:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->setTabAdapter(Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$w;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->setTabAdapter(Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICw;)V
 
     .line 58
     const/4 v0, 0x4
@@ -285,9 +285,9 @@
     .line 64
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/d/DiscoverFragment;->a:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/a/d/DiscoverFragment$f;
+    new-instance v1, Lcom/wumii/android/mimi/ui/a/d/DiscoverFragment$ICf;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/a/d/DiscoverFragment$f;-><init>(Lcom/wumii/android/mimi/ui/a/d/DiscoverFragment;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/a/d/DiscoverFragment$ICf;-><init>(Lcom/wumii/android/mimi/ui/a/d/DiscoverFragment;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->setOnPageChangeListener(Landroid/support/v4/view/ViewPager$OnPageChangeListener;)V
 

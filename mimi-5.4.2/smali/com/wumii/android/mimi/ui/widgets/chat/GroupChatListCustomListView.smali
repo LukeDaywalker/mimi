@@ -19,7 +19,7 @@
     .end annotation
 .end field
 
-.field private d:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$af;
+.field private d:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICaf;
 
 .field private e:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -87,12 +87,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;)Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$af;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;)Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICaf;
     .locals 1
 
     .prologue
     .line 21
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;->d:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$af;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;->d:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICaf;
 
     return-object v0
 .end method
@@ -131,9 +131,9 @@
     .line 104
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;->a:Landroid/view/View;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ac;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICac;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ac;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICac;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -172,9 +172,9 @@
     check-cast v0, Landroid/view/View;
 
     .line 118
-    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ad;
+    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICad;
 
-    invoke-direct {v2, p0, v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ad;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;Landroid/view/View;I)V
+    invoke-direct {v2, p0, v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICad;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;Landroid/view/View;I)V
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -197,9 +197,9 @@
     .line 130
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;->b:Landroid/view/View;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ae;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICae;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ae;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICae;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -346,12 +346,12 @@
     return-void
 .end method
 
-.method public setOnItemListener(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$af;)V
+.method public setOnItemListener(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICaf;)V
     .locals 0
 
     .prologue
     .line 61
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;->d:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$af;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView;->d:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatListCustomListView$ICaf;
 
     .line 62
     return-void

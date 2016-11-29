@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field private final d:Lcom/f/a/a/c/Huffman$p;
+.field private final d:Lcom/f/a/a/c/Huffman$ICp;
 
 
 # direct methods
@@ -576,11 +576,11 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 83
-    new-instance v0, Lcom/f/a/a/c/Huffman$p;
+    new-instance v0, Lcom/f/a/a/c/Huffman$ICp;
 
-    invoke-direct {v0}, Lcom/f/a/a/c/Huffman$p;-><init>()V
+    invoke-direct {v0}, Lcom/f/a/a/c/Huffman$ICp;-><init>()V
 
-    iput-object v0, p0, Lcom/f/a/a/c/Huffman;->d:Lcom/f/a/a/c/Huffman$p;
+    iput-object v0, p0, Lcom/f/a/a/c/Huffman;->d:Lcom/f/a/a/c/Huffman$ICp;
 
     .line 86
     invoke-direct {p0}, Lcom/f/a/a/c/Huffman;->b()V
@@ -604,12 +604,12 @@
 
     .prologue
     .line 171
-    new-instance v3, Lcom/f/a/a/c/Huffman$p;
+    new-instance v3, Lcom/f/a/a/c/Huffman$ICp;
 
-    invoke-direct {v3, p1, p3}, Lcom/f/a/a/c/Huffman$p;-><init>(II)V
+    invoke-direct {v3, p1, p3}, Lcom/f/a/a/c/Huffman$ICp;-><init>(II)V
 
     .line 173
-    iget-object v0, p0, Lcom/f/a/a/c/Huffman;->d:Lcom/f/a/a/c/Huffman$p;
+    iget-object v0, p0, Lcom/f/a/a/c/Huffman;->d:Lcom/f/a/a/c/Huffman$ICp;
 
     move-object v2, v0
 
@@ -630,7 +630,7 @@
     and-int/lit16 v0, v0, 0xff
 
     .line 177
-    invoke-static {v2}, Lcom/f/a/a/c/Huffman$p;->a(Lcom/f/a/a/c/Huffman$p;)[Lcom/f/a/a/c/Huffman$p;
+    invoke-static {v2}, Lcom/f/a/a/c/Huffman$ICp;->a(Lcom/f/a/a/c/Huffman$ICp;)[Lcom/f/a/a/c/Huffman$ICp;
 
     move-result-object v1
 
@@ -647,7 +647,7 @@
 
     .line 180
     :cond_0
-    invoke-static {v2}, Lcom/f/a/a/c/Huffman$p;->a(Lcom/f/a/a/c/Huffman$p;)[Lcom/f/a/a/c/Huffman$p;
+    invoke-static {v2}, Lcom/f/a/a/c/Huffman$ICp;->a(Lcom/f/a/a/c/Huffman$ICp;)[Lcom/f/a/a/c/Huffman$ICp;
 
     move-result-object v1
 
@@ -656,19 +656,19 @@
     if-nez v1, :cond_1
 
     .line 181
-    invoke-static {v2}, Lcom/f/a/a/c/Huffman$p;->a(Lcom/f/a/a/c/Huffman$p;)[Lcom/f/a/a/c/Huffman$p;
+    invoke-static {v2}, Lcom/f/a/a/c/Huffman$ICp;->a(Lcom/f/a/a/c/Huffman$ICp;)[Lcom/f/a/a/c/Huffman$ICp;
 
     move-result-object v1
 
-    new-instance v4, Lcom/f/a/a/c/Huffman$p;
+    new-instance v4, Lcom/f/a/a/c/Huffman$ICp;
 
-    invoke-direct {v4}, Lcom/f/a/a/c/Huffman$p;-><init>()V
+    invoke-direct {v4}, Lcom/f/a/a/c/Huffman$ICp;-><init>()V
 
     aput-object v4, v1, v0
 
     .line 183
     :cond_1
-    invoke-static {v2}, Lcom/f/a/a/c/Huffman$p;->a(Lcom/f/a/a/c/Huffman$p;)[Lcom/f/a/a/c/Huffman$p;
+    invoke-static {v2}, Lcom/f/a/a/c/Huffman$ICp;->a(Lcom/f/a/a/c/Huffman$ICp;)[Lcom/f/a/a/c/Huffman$ICp;
 
     move-result-object v1
 
@@ -702,7 +702,7 @@
     if-ge v0, v5, :cond_3
 
     .line 190
-    invoke-static {v2}, Lcom/f/a/a/c/Huffman$p;->a(Lcom/f/a/a/c/Huffman$p;)[Lcom/f/a/a/c/Huffman$p;
+    invoke-static {v2}, Lcom/f/a/a/c/Huffman$ICp;->a(Lcom/f/a/a/c/Huffman$ICp;)[Lcom/f/a/a/c/Huffman$ICp;
 
     move-result-object v5
 
@@ -767,7 +767,7 @@
     invoke-direct {v4}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
     .line 128
-    iget-object v1, p0, Lcom/f/a/a/c/Huffman;->d:Lcom/f/a/a/c/Huffman$p;
+    iget-object v1, p0, Lcom/f/a/a/c/Huffman;->d:Lcom/f/a/a/c/Huffman$ICp;
 
     move v2, v0
 
@@ -808,35 +808,35 @@
     and-int/lit16 v5, v5, 0xff
 
     .line 137
-    invoke-static {v3}, Lcom/f/a/a/c/Huffman$p;->a(Lcom/f/a/a/c/Huffman$p;)[Lcom/f/a/a/c/Huffman$p;
+    invoke-static {v3}, Lcom/f/a/a/c/Huffman$ICp;->a(Lcom/f/a/a/c/Huffman$ICp;)[Lcom/f/a/a/c/Huffman$ICp;
 
     move-result-object v3
 
     aget-object v3, v3, v5
 
     .line 138
-    invoke-static {v3}, Lcom/f/a/a/c/Huffman$p;->a(Lcom/f/a/a/c/Huffman$p;)[Lcom/f/a/a/c/Huffman$p;
+    invoke-static {v3}, Lcom/f/a/a/c/Huffman$ICp;->a(Lcom/f/a/a/c/Huffman$ICp;)[Lcom/f/a/a/c/Huffman$ICp;
 
     move-result-object v5
 
     if-nez v5, :cond_0
 
     .line 140
-    invoke-static {v3}, Lcom/f/a/a/c/Huffman$p;->b(Lcom/f/a/a/c/Huffman$p;)I
+    invoke-static {v3}, Lcom/f/a/a/c/Huffman$ICp;->b(Lcom/f/a/a/c/Huffman$ICp;)I
 
     move-result v5
 
     invoke-virtual {v4, v5}, Ljava/io/ByteArrayOutputStream;->write(I)V
 
     .line 141
-    invoke-static {v3}, Lcom/f/a/a/c/Huffman$p;->c(Lcom/f/a/a/c/Huffman$p;)I
+    invoke-static {v3}, Lcom/f/a/a/c/Huffman$ICp;->c(Lcom/f/a/a/c/Huffman$ICp;)I
 
     move-result v3
 
     sub-int/2addr v1, v3
 
     .line 142
-    iget-object v3, p0, Lcom/f/a/a/c/Huffman;->d:Lcom/f/a/a/c/Huffman$p;
+    iget-object v3, p0, Lcom/f/a/a/c/Huffman;->d:Lcom/f/a/a/c/Huffman$ICp;
 
     goto :goto_1
 
@@ -854,21 +854,21 @@
 
     .line 156
     :cond_2
-    invoke-static {v0}, Lcom/f/a/a/c/Huffman$p;->b(Lcom/f/a/a/c/Huffman$p;)I
+    invoke-static {v0}, Lcom/f/a/a/c/Huffman$ICp;->b(Lcom/f/a/a/c/Huffman$ICp;)I
 
     move-result v3
 
     invoke-virtual {v4, v3}, Ljava/io/ByteArrayOutputStream;->write(I)V
 
     .line 157
-    invoke-static {v0}, Lcom/f/a/a/c/Huffman$p;->c(Lcom/f/a/a/c/Huffman$p;)I
+    invoke-static {v0}, Lcom/f/a/a/c/Huffman$ICp;->c(Lcom/f/a/a/c/Huffman$ICp;)I
 
     move-result v0
 
     sub-int/2addr v1, v0
 
     .line 158
-    iget-object v3, p0, Lcom/f/a/a/c/Huffman;->d:Lcom/f/a/a/c/Huffman$p;
+    iget-object v3, p0, Lcom/f/a/a/c/Huffman;->d:Lcom/f/a/a/c/Huffman$ICp;
 
     .line 150
     :cond_3
@@ -882,20 +882,20 @@
     and-int/lit16 v0, v0, 0xff
 
     .line 152
-    invoke-static {v3}, Lcom/f/a/a/c/Huffman$p;->a(Lcom/f/a/a/c/Huffman$p;)[Lcom/f/a/a/c/Huffman$p;
+    invoke-static {v3}, Lcom/f/a/a/c/Huffman$ICp;->a(Lcom/f/a/a/c/Huffman$ICp;)[Lcom/f/a/a/c/Huffman$ICp;
 
     move-result-object v3
 
     aget-object v0, v3, v0
 
     .line 153
-    invoke-static {v0}, Lcom/f/a/a/c/Huffman$p;->a(Lcom/f/a/a/c/Huffman$p;)[Lcom/f/a/a/c/Huffman$p;
+    invoke-static {v0}, Lcom/f/a/a/c/Huffman$ICp;->a(Lcom/f/a/a/c/Huffman$ICp;)[Lcom/f/a/a/c/Huffman$ICp;
 
     move-result-object v3
 
     if-nez v3, :cond_4
 
-    invoke-static {v0}, Lcom/f/a/a/c/Huffman$p;->c(Lcom/f/a/a/c/Huffman$p;)I
+    invoke-static {v0}, Lcom/f/a/a/c/Huffman$ICp;->c(Lcom/f/a/a/c/Huffman$ICp;)I
 
     move-result v3
 

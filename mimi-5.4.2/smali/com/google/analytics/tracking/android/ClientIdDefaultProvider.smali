@@ -335,11 +335,11 @@
 
     .prologue
     .line 130
-    new-instance v0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider$k;
+    new-instance v0, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider$ICk;
 
     const-string/jumbo v1, "client_id_fetcher"
 
-    invoke-direct {v0, p0, v1}, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider$k;-><init>(Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;Ljava/lang/String;)V
+    invoke-direct {v0, p0, v1}, Lcom/google/analytics/tracking/android/ClientIdDefaultProvider$ICk;-><init>(Lcom/google/analytics/tracking/android/ClientIdDefaultProvider;Ljava/lang/String;)V
 
     .line 140
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V

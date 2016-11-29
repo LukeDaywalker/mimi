@@ -189,9 +189,9 @@
 
     .prologue
     .line 120
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->p:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->p:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$af;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
 
     .line 121
     invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
@@ -255,9 +255,9 @@
     .line 99
     const v1, 0x7f0603f3
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$t;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$ICt;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$t;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$ICt;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -320,20 +320,20 @@
     .line 52
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->q:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$r;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$ICr;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$r;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$ICr;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     .line 59
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->p:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$s;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$ICs;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$s;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$ICs;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;->setOnCountDownListener(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$x;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;->setOnCountDownListener(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICx;)V
 
     .line 67
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;->p:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;

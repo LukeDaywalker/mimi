@@ -101,7 +101,7 @@
     return-object v0
 .end method
 
-.method private a(Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;)Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
+.method private a(Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;)Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
     .locals 6
 
     .prologue
@@ -110,7 +110,7 @@
     .line 545
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
 
-    invoke-direct {v1, p1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;-><init>(Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;)V
+    invoke-direct {v1, p1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;-><init>(Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;)V
 
     .line 547
     iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->J:Z
@@ -132,9 +132,9 @@
 
     move-result-object v0
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$au;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICau;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$au;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICau;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)V
 
     invoke-virtual {v0, v2}, Landroid/app/ActionBar$Tab;->setTabListener(Landroid/app/ActionBar$TabListener;)Landroid/app/ActionBar$Tab;
 
@@ -157,11 +157,11 @@
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->s:Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->name()Ljava/lang/String;
+    invoke-virtual {v4}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->name()Ljava/lang/String;
 
     move-result-object v4
 
@@ -169,7 +169,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->name()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->name()Ljava/lang/String;
 
     move-result-object v4
 
@@ -177,11 +177,11 @@
 
     move-result-object v3
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->a()Ljava/lang/Class;
+    invoke-virtual {v4}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->a()Ljava/lang/Class;
 
     move-result-object v4
 
@@ -213,11 +213,11 @@
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->s:Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->name()Ljava/lang/String;
+    invoke-virtual {v4}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->name()Ljava/lang/String;
 
     move-result-object v4
 
@@ -229,11 +229,11 @@
 
     move-result-object v3
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->a()Ljava/lang/Class;
+    invoke-virtual {v4}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->a()Ljava/lang/Class;
 
     move-result-object v4
 
@@ -296,7 +296,7 @@
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->D:Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     move-result-object v0
 
@@ -380,11 +380,11 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->D:Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->name()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->name()Ljava/lang/String;
 
     move-result-object v1
 
@@ -397,9 +397,9 @@
     .line 333
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->s:Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->c:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->c:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->ordinal()I
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->ordinal()I
 
     move-result v1
 
@@ -474,7 +474,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/b/LoadInvitationTask;->a(Lcom/wumii/android/mimi/b/LoadInvitationTask$as;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/b/LoadInvitationTask;->a(Lcom/wumii/android/mimi/b/LoadInvitationTask$ICas;)V
 
     .line 357
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->l()V
@@ -578,11 +578,11 @@
 
     .prologue
     .line 651
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->j:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->j:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
     const-string/jumbo v1, "\u9996\u9875\u65b0\u624b\u5f15\u5bfc\u6d6e\u5c42\u51fa\u73b0\u7684\u6b21\u6570"
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 653
     const v0, 0x7f0b00e0
@@ -632,9 +632,9 @@
     check-cast v3, Landroid/widget/ImageView;
 
     .line 662
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$av;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICav;
 
-    invoke-direct {v0, p0, v5, p1}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$av;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;Landroid/view/View;Ljava/util/List;)V
+    invoke-direct {v0, p0, v5, p1}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICav;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;Landroid/view/View;Ljava/util/List;)V
 
     invoke-virtual {v3, v0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -648,9 +648,9 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 676
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ah;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICah;
 
-    invoke-direct {v1, p0, v3}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ah;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;Landroid/widget/ImageView;)V
+    invoke-direct {v1, p0, v3}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICah;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;Landroid/widget/ImageView;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -659,11 +659,11 @@
 
     invoke-direct {v6}, Landroid/os/Handler;-><init>()V
 
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ai;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ai;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;Landroid/view/View;Landroid/widget/ImageView;Landroid/view/View;Landroid/view/View;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICai;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;Landroid/view/View;Landroid/widget/ImageView;Landroid/view/View;Landroid/view/View;)V
 
     const-wide/16 v2, 0x1f4
 
@@ -1315,7 +1315,7 @@
     if-eqz v1, :cond_3
 
     .line 381
-    sget-object v0, Lcom/wumii/android/mimi/a/UploadContactManager$br;->b:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    sget-object v0, Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;->b:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     .line 382
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
@@ -1338,11 +1338,11 @@
 
     move-result-object v2
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ag;
+    new-instance v3, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICag;
 
-    invoke-direct {v3, p0, v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ag;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;Lcom/wumii/android/mimi/a/UploadContactManager$br;)V
+    invoke-direct {v3, p0, v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICag;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;)V
 
-    invoke-static {p0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->b(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$aq;)V
+    invoke-static {p0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->b(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
 
     goto :goto_0
 
@@ -1361,7 +1361,7 @@
     if-eqz v1, :cond_4
 
     .line 384
-    sget-object v0, Lcom/wumii/android/mimi/a/UploadContactManager$br;->c:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    sget-object v0, Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;->c:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     .line 385
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
@@ -1393,7 +1393,7 @@
     if-eqz v1, :cond_5
 
     .line 387
-    sget-object v0, Lcom/wumii/android/mimi/a/UploadContactManager$br;->c:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    sget-object v0, Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;->c:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     goto :goto_1
 
@@ -1416,7 +1416,7 @@
     if-eqz v1, :cond_2
 
     .line 389
-    sget-object v0, Lcom/wumii/android/mimi/a/UploadContactManager$br;->a:Lcom/wumii/android/mimi/a/UploadContactManager$br;
+    sget-object v0, Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;->a:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
 
     goto :goto_1
 .end method
@@ -1426,9 +1426,9 @@
 
     .prologue
     .line 412
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ao;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICao;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ao;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICao;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->F:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
@@ -1481,36 +1481,36 @@
     invoke-virtual {v0, v1}, Landroid/widget/TabWidget;->setShowDividers(I)V
 
     .line 459
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->a:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->a:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
-    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->a(Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;)Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
+    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->a(Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;)Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->t:Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
 
     .line 460
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->b:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->b:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
-    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->a(Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;)Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
+    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->a(Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;)Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->C:Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
 
     .line 461
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->c:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->c:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
-    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->a(Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;)Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
+    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->a(Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;)Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->D:Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
 
     .line 462
-    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->d:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;
+    sget-object v0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->d:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
-    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->a(Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;)Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
+    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->a(Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;)Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
 
     move-result-object v0
 
@@ -1532,9 +1532,9 @@
     :goto_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->s:Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$at;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICat;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$at;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICat;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/FragmentTabHost;->setOnTabChangedListener(Landroid/widget/TabHost$OnTabChangeListener;)V
 
@@ -1558,9 +1558,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ap;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICap;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ap;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICap;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1571,9 +1571,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$aq;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaq;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$aq;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaq;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1584,9 +1584,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ar;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICar;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ar;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICar;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1597,9 +1597,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$as;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICas;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$as;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICas;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1965,13 +1965,13 @@
 
     .prologue
     .line 922
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$al;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;
 
     const/4 v1, 0x1
 
-    invoke-direct {v0, p0, p0, v1}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$al;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;Landroid/content/Context;Z)V
+    invoke-direct {v0, p0, p0, v1}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;Landroid/content/Context;Z)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$al;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;->j()V
 
     .line 945
     return-void
@@ -2063,9 +2063,9 @@
 
     .prologue
     .line 720
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$aj;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;
 
-    invoke-direct {v0, p0, p0, p1}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$aj;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;Landroid/app/Activity;Ljava/lang/String;)V
+    invoke-direct {v0, p0, p0, p1}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaj;-><init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;Landroid/app/Activity;Ljava/lang/String;)V
 
     invoke-static {p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/CircleSelectorControllerHelper;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;)Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;
 
@@ -2340,11 +2340,11 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->t:Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->name()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->name()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2368,11 +2368,11 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->D:Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->name()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->name()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2396,11 +2396,11 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->C:Lcom/wumii/android/mimi/ui/widgets/NavigationTab;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b()Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->name()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->name()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2440,9 +2440,9 @@
 
     move-result v0
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->a:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->a:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->ordinal()I
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->ordinal()I
 
     move-result v1
 
@@ -2530,9 +2530,9 @@
 
     move-result v0
 
-    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->c:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;
+    sget-object v1, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->c:Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$aq;->ordinal()I
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;->ordinal()I
 
     move-result v1
 
@@ -2610,11 +2610,11 @@
     if-eqz v1, :cond_1
 
     .line 907
-    sget-object v1, Lcom/wumii/android/mimi/c/EventUtils$af;->j:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v1, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->j:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
     const-string/jumbo v2, "\u9996\u9875\u70b9\u51fb\u53d6\u6d88\u7684\u6b21\u6570"
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 908
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->getApplicationContext()Landroid/content/Context;

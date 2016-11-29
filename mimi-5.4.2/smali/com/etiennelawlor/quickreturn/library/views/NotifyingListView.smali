@@ -6,7 +6,7 @@
 # instance fields
 .field private a:Z
 
-.field private b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$a;
+.field private b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$ICa;
 
 
 # direct methods
@@ -68,12 +68,12 @@
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/ListView;->onScrollChanged(IIII)V
 
     .line 41
-    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$a;
+    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$ICa;
 
     if-eqz v0, :cond_0
 
     .line 42
-    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$a;
+    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$ICa;
 
     move-object v1, p0
 
@@ -85,7 +85,7 @@
 
     move v5, p4
 
-    invoke-interface/range {v0 .. v5}, Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$a;->a(Landroid/widget/ListView;IIII)V
+    invoke-interface/range {v0 .. v5}, Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$ICa;->a(Landroid/widget/ListView;IIII)V
 
     .line 44
     :cond_0
@@ -144,12 +144,12 @@
     goto :goto_1
 .end method
 
-.method public setOnScrollChangedListener(Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$a;)V
+.method public setOnScrollChangedListener(Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$ICa;)V
     .locals 0
 
     .prologue
     .line 63
-    iput-object p1, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$a;
+    iput-object p1, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingListView$ICa;
 
     .line 64
     return-void

@@ -89,9 +89,9 @@
     .line 119
     const v1, 0x7f0600cc
 
-    new-instance v2, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$b;
+    new-instance v2, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICb;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$b;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICb;-><init>(Landroid/app/Activity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -166,9 +166,9 @@
     .line 144
     const v1, 0x7f0600cc
 
-    new-instance v2, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$d;
+    new-instance v2, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICd;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$d;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICd;-><init>(Landroid/app/Activity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -188,11 +188,11 @@
     .line 154
     const v1, 0x7f0b004a
 
-    new-instance v2, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$e;
+    new-instance v2, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICe;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$e;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICe;-><init>(Landroid/app/Activity;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;->a(ILcom/wumii/android/mimi/models/g/WeixinShareHelper$ax;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;->a(ILcom/wumii/android/mimi/models/g/WeixinShareHelper$ICax;)V
 
     goto :goto_0
 .end method
@@ -298,9 +298,9 @@
     .line 72
     const v1, 0x7f0600c8
 
-    new-instance v2, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$a;
+    new-instance v2, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICa;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$a;-><init>(Lcom/wumii/android/mimi/wxapi/WXEntryActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICa;-><init>(Lcom/wumii/android/mimi/wxapi/WXEntryActivity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -347,7 +347,7 @@
     if-nez v2, :cond_2
 
     .line 85
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->k:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->k:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/ShareAction;->WEIXIN_FRIEND:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 
@@ -359,7 +359,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 86
     invoke-virtual {p0}, Lcom/wumii/android/mimi/wxapi/WXEntryActivity;->finish()V
@@ -375,7 +375,7 @@
     if-nez v2, :cond_3
 
     .line 88
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->k:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->k:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/ShareAction;->WEIXIN_TIMELINE:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 
@@ -387,7 +387,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 89
     invoke-virtual {p0}, Lcom/wumii/android/mimi/wxapi/WXEntryActivity;->finish()V

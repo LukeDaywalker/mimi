@@ -6,7 +6,7 @@
 # instance fields
 .field private a:Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenuAdapter;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ah;
+.field private b:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 
 .field private c:Landroid/widget/PopupWindow;
 
@@ -51,11 +51,11 @@
     .line 33
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;->a:Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenuAdapter;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu$c;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu$ICc;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu$c;-><init>(Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu$ICc;-><init>(Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenuAdapter;->a(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ah;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenuAdapter;->a(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;)V
 
     .line 47
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
@@ -135,12 +135,12 @@
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;)Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ah;
+.method static synthetic b(Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;)Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
     .locals 1
 
     .prologue
     .line 16
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;->b:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ah;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;->b:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 
     return-object v0
 .end method
@@ -179,12 +179,12 @@
     return-void
 .end method
 
-.method public a(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ah;)V
+.method public a(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;)V
     .locals 0
 
     .prologue
     .line 57
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;->b:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ah;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;->b:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 
     .line 58
     return-void

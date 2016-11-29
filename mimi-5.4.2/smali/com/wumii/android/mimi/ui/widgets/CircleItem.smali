@@ -6,11 +6,11 @@
 # instance fields
 .field private a:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/CircleItem$i;
+.field private b:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
 
 # direct methods
-.method public constructor <init>(Lcom/wumii/android/mimi/models/entities/circle/Circle;Lcom/wumii/android/mimi/ui/widgets/CircleItem$i;)V
+.method public constructor <init>(Lcom/wumii/android/mimi/models/entities/circle/Circle;Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;)V
     .locals 0
 
     .prologue
@@ -21,7 +21,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItem;->a:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
     .line 33
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItem;->b:Lcom/wumii/android/mimi/ui/widgets/CircleItem$i;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItem;->b:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     .line 34
     return-void
@@ -29,12 +29,12 @@
 
 
 # virtual methods
-.method public a()Lcom/wumii/android/mimi/ui/widgets/CircleItem$i;
+.method public a()Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItem;->b:Lcom/wumii/android/mimi/ui/widgets/CircleItem$i;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleItem;->b:Lcom/wumii/android/mimi/ui/widgets/CircleItem$ICi;
 
     return-object v0
 .end method

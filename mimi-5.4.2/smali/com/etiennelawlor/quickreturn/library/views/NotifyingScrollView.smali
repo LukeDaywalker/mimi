@@ -6,7 +6,7 @@
 # instance fields
 .field private a:Z
 
-.field private b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$b;
+.field private b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$ICb;
 
 
 # direct methods
@@ -68,12 +68,12 @@
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/ScrollView;->onScrollChanged(IIII)V
 
     .line 40
-    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$b;
+    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$ICb;
 
     if-eqz v0, :cond_0
 
     .line 41
-    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$b;
+    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$ICb;
 
     move-object v1, p0
 
@@ -85,7 +85,7 @@
 
     move v5, p4
 
-    invoke-interface/range {v0 .. v5}, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$b;->a(Landroid/widget/ScrollView;IIII)V
+    invoke-interface/range {v0 .. v5}, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$ICb;->a(Landroid/widget/ScrollView;IIII)V
 
     .line 43
     :cond_0
@@ -144,12 +144,12 @@
     goto :goto_1
 .end method
 
-.method public setOnScrollChangedListener(Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$b;)V
+.method public setOnScrollChangedListener(Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$ICb;)V
     .locals 0
 
     .prologue
     .line 62
-    iput-object p1, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$b;
+    iput-object p1, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingScrollView$ICb;
 
     .line 63
     return-void

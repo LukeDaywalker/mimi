@@ -148,13 +148,13 @@
 
     const/4 v3, 0x0
 
-    new-instance v4, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$p;
+    new-instance v4, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICp;
 
-    invoke-direct {v4, p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$p;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;Ljava/lang/String;Landroid/widget/ImageView;)V
+    invoke-direct {v4, p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICp;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;Ljava/lang/String;Landroid/widget/ImageView;)V
 
-    new-instance v5, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$r;
+    new-instance v5, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICr;
 
-    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$r;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;)V
+    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICr;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;)V
 
     move-object v1, p1
 
@@ -285,9 +285,9 @@
     .line 80
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;->c:Landroid/view/View;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$o;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;
 
-    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$o;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;Lcom/wumii/android/mimi/models/entities/secret/Promotion;)V
+    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView$ICo;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/PromotionCardView;Lcom/wumii/android/mimi/models/entities/secret/Promotion;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

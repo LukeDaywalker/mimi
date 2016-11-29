@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static a:Lcom/c/a/a/Sparta$x;
+.field private static a:Lcom/c/a/a/Sparta$ICx;
 
-.field private static b:Lcom/c/a/a/Sparta$v;
+.field private static b:Lcom/c/a/a/Sparta$ICv;
 
 
 # direct methods
@@ -15,30 +15,30 @@
 
     .prologue
     .line 66
-    new-instance v0, Lcom/c/a/a/Sparta$s;
+    new-instance v0, Lcom/c/a/a/Sparta$ICs;
 
-    invoke-direct {v0}, Lcom/c/a/a/Sparta$s;-><init>()V
+    invoke-direct {v0}, Lcom/c/a/a/Sparta$ICs;-><init>()V
 
-    sput-object v0, Lcom/c/a/a/Sparta;->a:Lcom/c/a/a/Sparta$x;
+    sput-object v0, Lcom/c/a/a/Sparta;->a:Lcom/c/a/a/Sparta$ICx;
 
     .line 129
-    new-instance v0, Lcom/c/a/a/Sparta$t;
+    new-instance v0, Lcom/c/a/a/Sparta$ICt;
 
-    invoke-direct {v0}, Lcom/c/a/a/Sparta$t;-><init>()V
+    invoke-direct {v0}, Lcom/c/a/a/Sparta$ICt;-><init>()V
 
-    sput-object v0, Lcom/c/a/a/Sparta;->b:Lcom/c/a/a/Sparta$v;
+    sput-object v0, Lcom/c/a/a/Sparta;->b:Lcom/c/a/a/Sparta$ICv;
 
     return-void
 .end method
 
-.method static a()Lcom/c/a/a/Sparta$u;
+.method static a()Lcom/c/a/a/Sparta$ICu;
     .locals 1
 
     .prologue
     .line 99
-    sget-object v0, Lcom/c/a/a/Sparta;->b:Lcom/c/a/a/Sparta$v;
+    sget-object v0, Lcom/c/a/a/Sparta;->b:Lcom/c/a/a/Sparta$ICv;
 
-    invoke-interface {v0}, Lcom/c/a/a/Sparta$v;->a()Lcom/c/a/a/Sparta$u;
+    invoke-interface {v0}, Lcom/c/a/a/Sparta$ICv;->a()Lcom/c/a/a/Sparta$ICu;
 
     move-result-object v0
 
@@ -50,9 +50,9 @@
 
     .prologue
     .line 35
-    sget-object v0, Lcom/c/a/a/Sparta;->a:Lcom/c/a/a/Sparta$x;
+    sget-object v0, Lcom/c/a/a/Sparta;->a:Lcom/c/a/a/Sparta$ICx;
 
-    invoke-interface {v0, p0}, Lcom/c/a/a/Sparta$x;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, p0}, Lcom/c/a/a/Sparta$ICx;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

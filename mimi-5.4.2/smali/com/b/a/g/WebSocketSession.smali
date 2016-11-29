@@ -40,16 +40,16 @@
     iput-object v0, p0, Lcom/b/a/g/WebSocketSession;->d:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 115
-    new-instance v0, Lcom/b/a/g/WebSocketSession$l;
+    new-instance v0, Lcom/b/a/g/WebSocketSession$ICl;
 
-    invoke-direct {v0, p0}, Lcom/b/a/g/WebSocketSession$l;-><init>(Lcom/b/a/g/WebSocketSession;)V
+    invoke-direct {v0, p0}, Lcom/b/a/g/WebSocketSession$ICl;-><init>(Lcom/b/a/g/WebSocketSession;)V
 
     iput-object v0, p0, Lcom/b/a/g/WebSocketSession;->f:Lcom/b/a/g/ReadCallback;
 
     .line 177
-    new-instance v0, Lcom/b/a/g/WebSocketSession$m;
+    new-instance v0, Lcom/b/a/g/WebSocketSession$ICm;
 
-    invoke-direct {v0, p0}, Lcom/b/a/g/WebSocketSession$m;-><init>(Lcom/b/a/g/WebSocketSession;)V
+    invoke-direct {v0, p0}, Lcom/b/a/g/WebSocketSession$ICm;-><init>(Lcom/b/a/g/WebSocketSession;)V
 
     iput-object v0, p0, Lcom/b/a/g/WebSocketSession;->g:Lcom/b/a/g/WriteCallback;
 

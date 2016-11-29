@@ -170,9 +170,9 @@
     .line 54
     const-string/jumbo v1, "type"
 
-    iget-object v2, p1, Lcom/a/a/a/SessionEvent;->c:Lcom/a/a/a/SessionEvent$r;
+    iget-object v2, p1, Lcom/a/a/a/SessionEvent;->c:Lcom/a/a/a/SessionEvent$ICr;
 
-    invoke-virtual {v2}, Lcom/a/a/a/SessionEvent$r;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/a/a/a/SessionEvent$ICr;->toString()Ljava/lang/String;
 
     move-result-object v2
 

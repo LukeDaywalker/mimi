@@ -7,7 +7,7 @@
 .method public abstract a()Lcom/google/tagmanager/ResolvedFunctionCallBuilder;
 .end method
 
-.method public abstract a(Lcom/google/analytics/b/a/a/TypeSystem$b;)V
+.method public abstract a(Lcom/google/analytics/b/a/a/TypeSystem$ICb;)V
 .end method
 
 .method public abstract b()Lcom/google/tagmanager/ResolvedFunctionCallBuilder;

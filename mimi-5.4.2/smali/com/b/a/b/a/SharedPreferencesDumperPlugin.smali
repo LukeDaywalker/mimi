@@ -227,7 +227,7 @@
 
     const-string/jumbo v1, "|"
 
-    invoke-static {v0, v1}, Lcom/b/a/b/a/SharedPreferencesDumperPlugin$c;->a(Ljava/lang/StringBuilder;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v1}, Lcom/b/a/b/a/SharedPreferencesDumperPlugin$ICc;->a(Ljava/lang/StringBuilder;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -665,7 +665,7 @@
     move-result-object v4
 
     .line 65
-    invoke-static {v4}, Lcom/b/a/b/a/SharedPreferencesDumperPlugin$c;->a(Ljava/lang/String;)Lcom/b/a/b/a/SharedPreferencesDumperPlugin$c;
+    invoke-static {v4}, Lcom/b/a/b/a/SharedPreferencesDumperPlugin$ICc;->a(Ljava/lang/String;)Lcom/b/a/b/a/SharedPreferencesDumperPlugin$ICc;
 
     move-result-object v4
 
@@ -681,7 +681,7 @@
 
     const-string/jumbo v0, ", "
 
-    invoke-static {v2, v0}, Lcom/b/a/b/a/SharedPreferencesDumperPlugin$c;->a(Ljava/lang/StringBuilder;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2, v0}, Lcom/b/a/b/a/SharedPreferencesDumperPlugin$ICc;->a(Ljava/lang/StringBuilder;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -705,9 +705,9 @@
     move-result-object v0
 
     .line 74
-    sget-object v2, Lcom/b/a/b/a/SharedPreferencesDumperPlugin$b;->a:[I
+    sget-object v2, Lcom/b/a/b/a/SharedPreferencesDumperPlugin$ICb;->a:[I
 
-    invoke-virtual {v4}, Lcom/b/a/b/a/SharedPreferencesDumperPlugin$c;->ordinal()I
+    invoke-virtual {v4}, Lcom/b/a/b/a/SharedPreferencesDumperPlugin$ICc;->ordinal()I
 
     move-result v4
 

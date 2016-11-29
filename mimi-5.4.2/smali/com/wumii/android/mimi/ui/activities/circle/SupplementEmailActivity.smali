@@ -186,9 +186,9 @@
     .line 45
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;->n:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$ba;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$ICba;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$ba;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$ICba;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -211,9 +211,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 63
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$bb;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$ICbb;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$bb;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity$ICbb;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SupplementEmailActivity;->q:Lcom/wumii/android/mimi/models/e/OrgValidationObserver;
 

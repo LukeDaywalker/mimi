@@ -257,9 +257,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 54
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity$ar;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity$ICar;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity$ar;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity$ICar;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/OrganizationsActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

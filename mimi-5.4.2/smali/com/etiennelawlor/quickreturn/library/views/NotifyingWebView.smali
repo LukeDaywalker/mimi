@@ -6,7 +6,7 @@
 # instance fields
 .field private a:Z
 
-.field private b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$c;
+.field private b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$ICc;
 
 
 # direct methods
@@ -68,12 +68,12 @@
     invoke-super {p0, p1, p2, p3, p4}, Landroid/webkit/WebView;->onScrollChanged(IIII)V
 
     .line 40
-    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$c;
+    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$ICc;
 
     if-eqz v0, :cond_0
 
     .line 41
-    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$c;
+    iget-object v0, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$ICc;
 
     move-object v1, p0
 
@@ -85,7 +85,7 @@
 
     move v5, p4
 
-    invoke-interface/range {v0 .. v5}, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$c;->a(Landroid/webkit/WebView;IIII)V
+    invoke-interface/range {v0 .. v5}, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$ICc;->a(Landroid/webkit/WebView;IIII)V
 
     .line 43
     :cond_0
@@ -144,12 +144,12 @@
     goto :goto_1
 .end method
 
-.method public setOnScrollChangedListener(Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$c;)V
+.method public setOnScrollChangedListener(Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$ICc;)V
     .locals 0
 
     .prologue
     .line 62
-    iput-object p1, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$c;
+    iput-object p1, p0, Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView;->b:Lcom/etiennelawlor/quickreturn/library/views/NotifyingWebView$ICc;
 
     .line 63
     return-void

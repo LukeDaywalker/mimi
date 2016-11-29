@@ -174,9 +174,9 @@
     sput-object v0, Lcom/f/a/OkHttpClient;->b:Ljava/util/List;
 
     .line 64
-    new-instance v0, Lcom/f/a/OkHttpClient$aj;
+    new-instance v0, Lcom/f/a/OkHttpClient$ICaj;
 
-    invoke-direct {v0}, Lcom/f/a/OkHttpClient$aj;-><init>()V
+    invoke-direct {v0}, Lcom/f/a/OkHttpClient$ICaj;-><init>()V
 
     sput-object v0, Lcom/f/a/a/Internal;->b:Lcom/f/a/a/Internal;
 

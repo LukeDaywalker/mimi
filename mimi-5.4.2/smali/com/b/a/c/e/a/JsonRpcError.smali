@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field public a:Lcom/b/a/c/e/a/JsonRpcError$c;
+.field public a:Lcom/b/a/c/e/a/JsonRpcError$ICc;
     .annotation runtime Lcom/b/a/d/a/JsonProperty;
         a = true
     .end annotation
@@ -43,7 +43,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/b/a/c/e/a/JsonRpcError$c;Ljava/lang/String;Lorg/json/JSONObject;)V
+.method public constructor <init>(Lcom/b/a/c/e/a/JsonRpcError$ICc;Ljava/lang/String;Lorg/json/JSONObject;)V
     .locals 0
 
     .prologue
@@ -51,7 +51,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 28
-    iput-object p1, p0, Lcom/b/a/c/e/a/JsonRpcError;->a:Lcom/b/a/c/e/a/JsonRpcError$c;
+    iput-object p1, p0, Lcom/b/a/c/e/a/JsonRpcError;->a:Lcom/b/a/c/e/a/JsonRpcError$ICc;
 
     .line 29
     iput-object p2, p0, Lcom/b/a/c/e/a/JsonRpcError;->b:Ljava/lang/String;

@@ -496,7 +496,7 @@
     goto :goto_0
 .end method
 
-.method a(ILandroid/support/v7/widget/StaggeredGridLayoutManager$bo;)V
+.method a(ILandroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;)V
     .locals 2
 
     .prologue
@@ -506,7 +506,7 @@
     .line 2415
     iget-object v0, p0, Landroid/support/v7/widget/StaggeredGridLayoutManager$LazySpanLookup;->a:[I
 
-    iget v1, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$bo;->d:I
+    iget v1, p2, Landroid/support/v7/widget/StaggeredGridLayoutManager$ICbo;->d:I
 
     aput v1, v0, p1
 

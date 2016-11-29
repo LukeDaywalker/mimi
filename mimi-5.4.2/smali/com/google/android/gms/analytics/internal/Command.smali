@@ -33,9 +33,9 @@
 
     .prologue
     .line 54
-    new-instance v0, Lcom/google/android/gms/analytics/internal/Command$a;
+    new-instance v0, Lcom/google/android/gms/analytics/internal/Command$ICa;
 
-    invoke-direct {v0}, Lcom/google/android/gms/analytics/internal/Command$a;-><init>()V
+    invoke-direct {v0}, Lcom/google/android/gms/analytics/internal/Command$ICa;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/analytics/internal/Command;->CREATOR:Landroid/os/Parcelable$Creator;
 

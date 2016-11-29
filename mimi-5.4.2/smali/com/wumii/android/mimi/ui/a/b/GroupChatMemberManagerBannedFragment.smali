@@ -22,7 +22,7 @@
 
 .field private l:Lcom/wumii/android/mimi/a/GroupBannedManager;
 
-.field private m:Lcom/wumii/android/mimi/a/GroupBannedManager$an;
+.field private m:Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;
 
 
 # direct methods
@@ -50,11 +50,11 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/a/BaseMimiFragment;-><init>()V
 
     .line 101
-    new-instance v0, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment$al;
+    new-instance v0, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment$ICal;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment$al;-><init>(Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment$ICal;-><init>(Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment;->m:Lcom/wumii/android/mimi/a/GroupBannedManager$an;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment;->m:Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;
 
     return-void
 .end method
@@ -89,12 +89,12 @@
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment;)Lcom/wumii/android/mimi/a/GroupBannedManager$an;
+.method static synthetic d(Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment;)Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment;->m:Lcom/wumii/android/mimi/a/GroupBannedManager$an;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment;->m:Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;
 
     return-object v0
 .end method
@@ -195,9 +195,9 @@
     .line 70
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment;->e:Landroid/widget/TextView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment$aj;
+    new-instance v1, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment$ICaj;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment$aj;-><init>(Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment$ICaj;-><init>(Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -208,9 +208,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment$ak;
+    new-instance v2, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment$ICak;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment$ak;-><init>(Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment$ICak;-><init>(Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment;)V
 
     invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/b/GroupChatMemberBannedListAdapter;-><init>(Landroid/content/Context;Landroid/view/View$OnClickListener;)V
 
@@ -232,9 +232,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment;->m:Lcom/wumii/android/mimi/a/GroupBannedManager$an;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment;->m:Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/a/GroupBannedManager;->d(Ljava/lang/String;Lcom/wumii/android/mimi/a/GroupBannedManager$an;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/a/GroupBannedManager;->d(Ljava/lang/String;Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;)V
 
     .line 93
     return-void

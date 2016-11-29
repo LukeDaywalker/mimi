@@ -74,7 +74,7 @@
         value = {
             "Ljava/lang/ThreadLocal",
             "<",
-            "Lb/a/a/EventBus$f;",
+            "Lb/a/a/EventBus$ICf;",
             ">;"
         }
     .end annotation
@@ -151,9 +151,9 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 53
-    new-instance v0, Lb/a/a/EventBus$d;
+    new-instance v0, Lb/a/a/EventBus$ICd;
 
-    invoke-direct {v0, p0}, Lb/a/a/EventBus$d;-><init>(Lb/a/a/EventBus;)V
+    invoke-direct {v0, p0}, Lb/a/a/EventBus$ICd;-><init>(Lb/a/a/EventBus;)V
 
     iput-object v0, p0, Lb/a/a/EventBus;->h:Ljava/lang/ThreadLocal;
 
@@ -572,7 +572,7 @@
 
     .prologue
     .line 427
-    sget-object v0, Lb/a/a/EventBus$e;->a:[I
+    sget-object v0, Lb/a/a/EventBus$ICe;->a:[I
 
     iget-object v1, p1, Lb/a/a/Subscription;->b:Lb/a/a/SubscriberMethod;
 
@@ -677,7 +677,7 @@
     .end packed-switch
 .end method
 
-.method private a(Ljava/lang/Object;Lb/a/a/EventBus$f;)V
+.method private a(Ljava/lang/Object;Lb/a/a/EventBus$ICf;)V
     .locals 6
 
     .prologue
@@ -719,7 +719,7 @@
     check-cast v0, Ljava/lang/Class;
 
     .line 383
-    invoke-direct {p0, p1, p2, v0}, Lb/a/a/EventBus;->a(Ljava/lang/Object;Lb/a/a/EventBus$f;Ljava/lang/Class;)Z
+    invoke-direct {p0, p1, p2, v0}, Lb/a/a/EventBus;->a(Ljava/lang/Object;Lb/a/a/EventBus$ICf;Ljava/lang/Class;)Z
 
     move-result v0
 
@@ -794,7 +794,7 @@
 
     .line 386
     :cond_3
-    invoke-direct {p0, p1, p2, v3}, Lb/a/a/EventBus;->a(Ljava/lang/Object;Lb/a/a/EventBus$f;Ljava/lang/Class;)Z
+    invoke-direct {p0, p1, p2, v3}, Lb/a/a/EventBus;->a(Ljava/lang/Object;Lb/a/a/EventBus$ICf;Ljava/lang/Class;)Z
 
     move-result v0
 
@@ -1213,13 +1213,13 @@
     return-void
 .end method
 
-.method private a(Ljava/lang/Object;Lb/a/a/EventBus$f;Ljava/lang/Class;)Z
+.method private a(Ljava/lang/Object;Lb/a/a/EventBus$ICf;Ljava/lang/Class;)Z
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Object;",
-            "Lb/a/a/EventBus$f;",
+            "Lb/a/a/EventBus$ICf;",
             "Ljava/lang/Class",
             "<*>;)Z"
         }
@@ -1276,30 +1276,30 @@
     check-cast v0, Lb/a/a/Subscription;
 
     .line 406
-    iput-object p1, p2, Lb/a/a/EventBus$f;->e:Ljava/lang/Object;
+    iput-object p1, p2, Lb/a/a/EventBus$ICf;->e:Ljava/lang/Object;
 
     .line 407
-    iput-object v0, p2, Lb/a/a/EventBus$f;->d:Lb/a/a/Subscription;
+    iput-object v0, p2, Lb/a/a/EventBus$ICf;->d:Lb/a/a/Subscription;
 
     .line 410
     :try_start_1
-    iget-boolean v3, p2, Lb/a/a/EventBus$f;->c:Z
+    iget-boolean v3, p2, Lb/a/a/EventBus$ICf;->c:Z
 
     invoke-direct {p0, v0, p1, v3}, Lb/a/a/EventBus;->a(Lb/a/a/Subscription;Ljava/lang/Object;Z)V
 
     .line 411
-    iget-boolean v0, p2, Lb/a/a/EventBus$f;->f:Z
+    iget-boolean v0, p2, Lb/a/a/EventBus$ICf;->f:Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     .line 413
-    iput-object v4, p2, Lb/a/a/EventBus$f;->e:Ljava/lang/Object;
+    iput-object v4, p2, Lb/a/a/EventBus$ICf;->e:Ljava/lang/Object;
 
     .line 414
-    iput-object v4, p2, Lb/a/a/EventBus$f;->d:Lb/a/a/Subscription;
+    iput-object v4, p2, Lb/a/a/EventBus$ICf;->d:Lb/a/a/Subscription;
 
     .line 415
-    iput-boolean v1, p2, Lb/a/a/EventBus$f;->f:Z
+    iput-boolean v1, p2, Lb/a/a/EventBus$ICf;->f:Z
 
     .line 417
     if-eqz v0, :cond_0
@@ -1327,13 +1327,13 @@
     :catchall_1
     move-exception v0
 
-    iput-object v4, p2, Lb/a/a/EventBus$f;->e:Ljava/lang/Object;
+    iput-object v4, p2, Lb/a/a/EventBus$ICf;->e:Ljava/lang/Object;
 
     .line 414
-    iput-object v4, p2, Lb/a/a/EventBus$f;->d:Lb/a/a/Subscription;
+    iput-object v4, p2, Lb/a/a/EventBus$ICf;->d:Lb/a/a/Subscription;
 
     .line 415
-    iput-boolean v1, p2, Lb/a/a/EventBus$f;->f:Z
+    iput-boolean v1, p2, Lb/a/a/EventBus$ICf;->f:Z
 
     throw v0
 
@@ -1595,16 +1595,16 @@
 
     move-result-object v0
 
-    check-cast v0, Lb/a/a/EventBus$f;
+    check-cast v0, Lb/a/a/EventBus$ICf;
 
     .line 252
-    iget-object v4, v0, Lb/a/a/EventBus$f;->a:Ljava/util/List;
+    iget-object v4, v0, Lb/a/a/EventBus$ICf;->a:Ljava/util/List;
 
     .line 253
     invoke-interface {v4, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 255
-    iget-boolean v1, v0, Lb/a/a/EventBus$f;->b:Z
+    iget-boolean v1, v0, Lb/a/a/EventBus$ICf;->b:Z
 
     if-nez v1, :cond_3
 
@@ -1622,13 +1622,13 @@
     move v1, v2
 
     :goto_0
-    iput-boolean v1, v0, Lb/a/a/EventBus$f;->c:Z
+    iput-boolean v1, v0, Lb/a/a/EventBus$ICf;->c:Z
 
     .line 257
-    iput-boolean v2, v0, Lb/a/a/EventBus$f;->b:Z
+    iput-boolean v2, v0, Lb/a/a/EventBus$ICf;->b:Z
 
     .line 258
-    iget-boolean v1, v0, Lb/a/a/EventBus$f;->f:Z
+    iget-boolean v1, v0, Lb/a/a/EventBus$ICf;->f:Z
 
     if-eqz v1, :cond_1
 
@@ -1664,7 +1664,7 @@
 
     move-result-object v1
 
-    invoke-direct {p0, v1, v0}, Lb/a/a/EventBus;->a(Ljava/lang/Object;Lb/a/a/EventBus$f;)V
+    invoke-direct {p0, v1, v0}, Lb/a/a/EventBus;->a(Ljava/lang/Object;Lb/a/a/EventBus$ICf;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1674,19 +1674,19 @@
     :catchall_0
     move-exception v1
 
-    iput-boolean v3, v0, Lb/a/a/EventBus$f;->b:Z
+    iput-boolean v3, v0, Lb/a/a/EventBus$ICf;->b:Z
 
     .line 267
-    iput-boolean v3, v0, Lb/a/a/EventBus$f;->c:Z
+    iput-boolean v3, v0, Lb/a/a/EventBus$ICf;->c:Z
 
     throw v1
 
     .line 266
     :cond_2
-    iput-boolean v3, v0, Lb/a/a/EventBus$f;->b:Z
+    iput-boolean v3, v0, Lb/a/a/EventBus$ICf;->b:Z
 
     .line 267
-    iput-boolean v3, v0, Lb/a/a/EventBus$f;->c:Z
+    iput-boolean v3, v0, Lb/a/a/EventBus$ICf;->c:Z
 
     .line 270
     :cond_3

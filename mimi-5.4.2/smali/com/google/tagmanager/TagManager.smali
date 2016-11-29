@@ -8,13 +8,13 @@
 
 
 # instance fields
-.field private final a:Lcom/google/tagmanager/TagManager$bi;
+.field private final a:Lcom/google/tagmanager/TagManager$ICbi;
 
 .field private final b:Landroid/content/Context;
 
 .field private final c:Lcom/google/tagmanager/DataLayer;
 
-.field private volatile d:Lcom/google/tagmanager/TagManager$bj;
+.field private volatile d:Lcom/google/tagmanager/TagManager$ICbj;
 
 .field private final e:Ljava/util/concurrent/ConcurrentMap;
     .annotation system Ldalvik/annotation/Signature;
@@ -30,7 +30,7 @@
 
 
 # direct methods
-.method constructor <init>(Landroid/content/Context;Lcom/google/tagmanager/TagManager$bi;Lcom/google/tagmanager/DataLayer;)V
+.method constructor <init>(Landroid/content/Context;Lcom/google/tagmanager/TagManager$ICbi;Lcom/google/tagmanager/DataLayer;)V
     .locals 3
 
     .prologue
@@ -58,12 +58,12 @@
     iput-object v0, p0, Lcom/google/tagmanager/TagManager;->b:Landroid/content/Context;
 
     .line 143
-    iput-object p2, p0, Lcom/google/tagmanager/TagManager;->a:Lcom/google/tagmanager/TagManager$bi;
+    iput-object p2, p0, Lcom/google/tagmanager/TagManager;->a:Lcom/google/tagmanager/TagManager$ICbi;
 
     .line 144
-    sget-object v0, Lcom/google/tagmanager/TagManager$bj;->a:Lcom/google/tagmanager/TagManager$bj;
+    sget-object v0, Lcom/google/tagmanager/TagManager$ICbj;->a:Lcom/google/tagmanager/TagManager$ICbj;
 
-    iput-object v0, p0, Lcom/google/tagmanager/TagManager;->d:Lcom/google/tagmanager/TagManager$bj;
+    iput-object v0, p0, Lcom/google/tagmanager/TagManager;->d:Lcom/google/tagmanager/TagManager$ICbj;
 
     .line 145
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
@@ -78,11 +78,11 @@
     .line 147
     iget-object v0, p0, Lcom/google/tagmanager/TagManager;->c:Lcom/google/tagmanager/DataLayer;
 
-    new-instance v1, Lcom/google/tagmanager/TagManager$bf;
+    new-instance v1, Lcom/google/tagmanager/TagManager$ICbf;
 
-    invoke-direct {v1, p0}, Lcom/google/tagmanager/TagManager$bf;-><init>(Lcom/google/tagmanager/TagManager;)V
+    invoke-direct {v1, p0}, Lcom/google/tagmanager/TagManager$ICbf;-><init>(Lcom/google/tagmanager/TagManager;)V
 
-    invoke-virtual {v0, v1}, Lcom/google/tagmanager/DataLayer;->a(Lcom/google/tagmanager/DataLayer$j;)V
+    invoke-virtual {v0, v1}, Lcom/google/tagmanager/DataLayer;->a(Lcom/google/tagmanager/DataLayer$ICj;)V
 
     .line 157
     iget-object v0, p0, Lcom/google/tagmanager/TagManager;->c:Lcom/google/tagmanager/DataLayer;
@@ -93,7 +93,7 @@
 
     invoke-direct {v1, v2}, Lcom/google/tagmanager/AdwordsClickReferrerListener;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v0, v1}, Lcom/google/tagmanager/DataLayer;->a(Lcom/google/tagmanager/DataLayer$j;)V
+    invoke-virtual {v0, v1}, Lcom/google/tagmanager/DataLayer;->a(Lcom/google/tagmanager/DataLayer$ICj;)V
 
     .line 158
     return-void
@@ -142,9 +142,9 @@
     .line 172
     :cond_0
     :try_start_1
-    new-instance v0, Lcom/google/tagmanager/TagManager$bg;
+    new-instance v0, Lcom/google/tagmanager/TagManager$ICbg;
 
-    invoke-direct {v0}, Lcom/google/tagmanager/TagManager$bg;-><init>()V
+    invoke-direct {v0}, Lcom/google/tagmanager/TagManager$ICbg;-><init>()V
 
     .line 179
     new-instance v2, Lcom/google/tagmanager/DataLayerPersistentStoreImpl;
@@ -156,9 +156,9 @@
 
     new-instance v4, Lcom/google/tagmanager/DataLayer;
 
-    invoke-direct {v4, v2}, Lcom/google/tagmanager/DataLayer;-><init>(Lcom/google/tagmanager/DataLayer$k;)V
+    invoke-direct {v4, v2}, Lcom/google/tagmanager/DataLayer;-><init>(Lcom/google/tagmanager/DataLayer$ICk;)V
 
-    invoke-direct {v3, p0, v0, v4}, Lcom/google/tagmanager/TagManager;-><init>(Landroid/content/Context;Lcom/google/tagmanager/TagManager$bi;Lcom/google/tagmanager/DataLayer;)V
+    invoke-direct {v3, p0, v0, v4}, Lcom/google/tagmanager/TagManager;-><init>(Landroid/content/Context;Lcom/google/tagmanager/TagManager$ICbi;Lcom/google/tagmanager/DataLayer;)V
 
     sput-object v3, Lcom/google/tagmanager/TagManager;->f:Lcom/google/tagmanager/TagManager;
 
@@ -223,12 +223,12 @@
 
 
 # virtual methods
-.method public a()Lcom/google/tagmanager/TagManager$bj;
+.method public a()Lcom/google/tagmanager/TagManager$ICbj;
     .locals 1
 
     .prologue
     .line 259
-    iget-object v0, p0, Lcom/google/tagmanager/TagManager;->d:Lcom/google/tagmanager/TagManager$bj;
+    iget-object v0, p0, Lcom/google/tagmanager/TagManager;->d:Lcom/google/tagmanager/TagManager$ICbj;
 
     return-object v0
 .end method
@@ -258,13 +258,13 @@
     move-result-object v3
 
     .line 274
-    sget-object v0, Lcom/google/tagmanager/TagManager$bh;->a:[I
+    sget-object v0, Lcom/google/tagmanager/TagManager$ICbh;->a:[I
 
-    invoke-virtual {v2}, Lcom/google/tagmanager/PreviewManager;->b()Lcom/google/tagmanager/PreviewManager$an;
+    invoke-virtual {v2}, Lcom/google/tagmanager/PreviewManager;->b()Lcom/google/tagmanager/PreviewManager$ICan;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/google/tagmanager/PreviewManager$an;->ordinal()I
+    invoke-virtual {v1}, Lcom/google/tagmanager/PreviewManager$ICan;->ordinal()I
 
     move-result v1
 

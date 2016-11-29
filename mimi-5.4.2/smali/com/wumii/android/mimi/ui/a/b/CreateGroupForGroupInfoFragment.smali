@@ -453,9 +453,9 @@
     .line 180
     const v1, 0x7f070004
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment$r;
+    new-instance v2, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment$ICr;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment$r;-><init>(Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment$ICr;-><init>(Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setItems(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1206,9 +1206,9 @@
     .line 89
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment;->j:Landroid/widget/EditText;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment$p;
+    new-instance v2, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment$ICp;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment$p;-><init>(Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment$ICp;-><init>(Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1306,11 +1306,11 @@
 
     const/4 v1, 0x0
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment$q;
+    new-instance v2, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment$ICq;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment$q;-><init>(Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment$ICq;-><init>(Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/b/SyncQuotaTask;->a(ZLcom/wumii/android/mimi/b/SyncQuotaTask$ch;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/b/SyncQuotaTask;->a(ZLcom/wumii/android/mimi/b/SyncQuotaTask$ICch;)V
 
     .line 122
     :cond_0

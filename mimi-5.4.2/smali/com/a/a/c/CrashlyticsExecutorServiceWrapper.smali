@@ -139,9 +139,9 @@
     :try_start_0
     iget-object v0, p0, Lcom/a/a/c/CrashlyticsExecutorServiceWrapper;->a:Ljava/util/concurrent/ExecutorService;
 
-    new-instance v1, Lcom/a/a/c/CrashlyticsExecutorServiceWrapper$u;
+    new-instance v1, Lcom/a/a/c/CrashlyticsExecutorServiceWrapper$ICu;
 
-    invoke-direct {v1, p0, p1}, Lcom/a/a/c/CrashlyticsExecutorServiceWrapper$u;-><init>(Lcom/a/a/c/CrashlyticsExecutorServiceWrapper;Ljava/lang/Runnable;)V
+    invoke-direct {v1, p0, p1}, Lcom/a/a/c/CrashlyticsExecutorServiceWrapper$ICu;-><init>(Lcom/a/a/c/CrashlyticsExecutorServiceWrapper;Ljava/lang/Runnable;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
     :try_end_0
@@ -193,9 +193,9 @@
     :try_start_0
     iget-object v0, p0, Lcom/a/a/c/CrashlyticsExecutorServiceWrapper;->a:Ljava/util/concurrent/ExecutorService;
 
-    new-instance v1, Lcom/a/a/c/CrashlyticsExecutorServiceWrapper$v;
+    new-instance v1, Lcom/a/a/c/CrashlyticsExecutorServiceWrapper$ICv;
 
-    invoke-direct {v1, p0, p1}, Lcom/a/a/c/CrashlyticsExecutorServiceWrapper$v;-><init>(Lcom/a/a/c/CrashlyticsExecutorServiceWrapper;Ljava/util/concurrent/Callable;)V
+    invoke-direct {v1, p0, p1}, Lcom/a/a/c/CrashlyticsExecutorServiceWrapper$ICv;-><init>(Lcom/a/a/c/CrashlyticsExecutorServiceWrapper;Ljava/util/concurrent/Callable;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
     :try_end_0

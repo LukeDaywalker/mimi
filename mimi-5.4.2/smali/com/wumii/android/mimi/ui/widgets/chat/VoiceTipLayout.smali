@@ -14,9 +14,9 @@
 
 .field private e:Landroid/widget/LinearLayout;
 
-.field private f:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;
+.field private f:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;
 
-.field private g:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ce;
+.field private g:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICce;
 
 
 # direct methods
@@ -28,9 +28,9 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 24
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cb;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcb;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cb;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcb;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->c:Ljava/lang/Runnable;
 
@@ -203,56 +203,56 @@
     return-object v0
 .end method
 
-.method private f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;
+.method private f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;
     .locals 2
 
     .prologue
     .line 158
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;
 
     if-nez v0, :cond_0
 
     .line 159
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->d()Landroid/widget/LinearLayout;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;Landroid/view/View;)V
+    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;Landroid/view/View;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;
 
     .line 161
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;
 
     return-object v0
 .end method
 
-.method private g()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ce;
+.method private g()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICce;
     .locals 2
 
     .prologue
     .line 165
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->g:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ce;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->g:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICce;
 
     if-nez v0, :cond_0
 
     .line 166
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ce;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICce;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->e()Landroid/widget/LinearLayout;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ce;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;Landroid/view/View;)V
+    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICce;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;Landroid/view/View;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->g:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ce;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->g:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICce;
 
     .line 168
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->g:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ce;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->g:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICce;
 
     return-object v0
 .end method
@@ -281,11 +281,11 @@
 
     .prologue
     .line 88
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;->d:Landroid/widget/LinearLayout;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->d:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->getVisibility()I
 
@@ -301,11 +301,11 @@
 
     .line 92
     :cond_0
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;->d:Landroid/widget/LinearLayout;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->d:Landroid/widget/LinearLayout;
 
     const v1, 0x7f0b0246
 
@@ -316,11 +316,11 @@
     check-cast v0, Landroid/widget/ImageView;
 
     .line 93
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;
 
     move-result-object v1
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;->d:Landroid/widget/LinearLayout;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->d:Landroid/widget/LinearLayout;
 
     const v2, 0x7f0b0247
 
@@ -331,11 +331,11 @@
     check-cast v1, Landroid/widget/ImageView;
 
     .line 94
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;
 
     move-result-object v2
 
-    iget-object v2, v2, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;->d:Landroid/widget/LinearLayout;
+    iget-object v2, v2, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->d:Landroid/widget/LinearLayout;
 
     const v3, 0x7f0b0248
 
@@ -346,11 +346,11 @@
     check-cast v2, Landroid/widget/ImageView;
 
     .line 95
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;
 
     move-result-object v3
 
-    iget-object v3, v3, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;->d:Landroid/widget/LinearLayout;
+    iget-object v3, v3, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->d:Landroid/widget/LinearLayout;
 
     const v4, 0x7f0b0249
 
@@ -361,11 +361,11 @@
     check-cast v3, Landroid/widget/ImageView;
 
     .line 96
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;
 
     move-result-object v4
 
-    iget-object v4, v4, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;->d:Landroid/widget/LinearLayout;
+    iget-object v4, v4, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->d:Landroid/widget/LinearLayout;
 
     const v5, 0x7f0b024a
 
@@ -402,18 +402,18 @@
     invoke-direct {p0, v2, v5}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->a(Landroid/widget/ImageView;I)V
 
     .line 101
-    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cc;
+    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcc;
 
-    invoke-direct {v2, p0, v1, v5, v3}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cc;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;Landroid/widget/ImageView;ILandroid/widget/ImageView;)V
+    invoke-direct {v2, p0, v1, v5, v3}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcc;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;Landroid/widget/ImageView;ILandroid/widget/ImageView;)V
 
     const-wide/16 v6, 0x32
 
     invoke-static {v2, v6, v7}, Lcom/wumii/android/mimi/c/ThreadUtils;->a(Ljava/lang/Runnable;J)V
 
     .line 110
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cd;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcd;
 
-    invoke-direct {v1, p0, v0, v5, v4}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cd;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;Landroid/widget/ImageView;ILandroid/widget/ImageView;)V
+    invoke-direct {v1, p0, v0, v5, v4}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcd;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;Landroid/widget/ImageView;ILandroid/widget/ImageView;)V
 
     const-wide/16 v2, 0x64
 
@@ -427,11 +427,11 @@
 
     .prologue
     .line 43
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->g()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ce;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->g()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICce;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ce;->a:Landroid/widget/TextView;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICce;->a:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(I)V
 
@@ -505,7 +505,7 @@
     const/4 v3, 0x1
 
     .line 58
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;
 
     move-result-object v0
 
@@ -513,25 +513,25 @@
     if-nez p2, :cond_0
 
     .line 60
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;->a:Landroid/widget/TextView;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->a:Landroid/widget/TextView;
 
     const/high16 v2, 0x41c00000    # 24.0f
 
     invoke-virtual {v1, v3, v2}, Landroid/widget/TextView;->setTextSize(IF)V
 
     .line 61
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;->c:Landroid/widget/ImageView;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->c:Landroid/widget/ImageView;
 
     invoke-static {v1, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 70
     :goto_0
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;->a:Landroid/widget/TextView;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->a:Landroid/widget/TextView;
 
     invoke-virtual {v1, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 72
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;->d:Landroid/widget/LinearLayout;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->d:Landroid/widget/LinearLayout;
 
     invoke-static {v0, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
@@ -543,24 +543,24 @@
 
     .line 63
     :cond_0
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;->a:Landroid/widget/TextView;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->a:Landroid/widget/TextView;
 
     const/high16 v2, 0x41500000    # 13.0f
 
     invoke-virtual {v1, v3, v2}, Landroid/widget/TextView;->setTextSize(IF)V
 
     .line 64
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;->c:Landroid/widget/ImageView;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->c:Landroid/widget/ImageView;
 
     invoke-virtual {v1, p2}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 66
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;->c:Landroid/widget/ImageView;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->c:Landroid/widget/ImageView;
 
     invoke-static {v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/widget/ImageView;)V
 
     .line 68
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;->c:Landroid/widget/ImageView;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->c:Landroid/widget/ImageView;
 
     const/4 v2, 0x0
 
@@ -591,12 +591,12 @@
 
     .prologue
     .line 77
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;
 
     move-result-object v0
 
     .line 78
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;->a:Landroid/widget/TextView;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->a:Landroid/widget/TextView;
 
     const/4 v2, 0x1
 
@@ -605,7 +605,7 @@
     invoke-virtual {v1, v2, v3}, Landroid/widget/TextView;->setTextSize(IF)V
 
     .line 79
-    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;->a:Landroid/widget/TextView;
+    iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->a:Landroid/widget/TextView;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->a:Landroid/content/Context;
 
@@ -619,18 +619,18 @@
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->a()V
 
     .line 83
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;->c:Landroid/widget/ImageView;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->c:Landroid/widget/ImageView;
 
     const/16 v1, 0x8
 
     invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 84
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;
 
     move-result-object v0
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$cf;->d:Landroid/widget/LinearLayout;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->d:Landroid/widget/LinearLayout;
 
     const/4 v1, 0x0
 

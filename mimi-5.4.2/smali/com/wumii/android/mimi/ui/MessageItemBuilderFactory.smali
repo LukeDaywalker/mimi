@@ -48,7 +48,7 @@
 
 
 # virtual methods
-.method public a(I)Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;
+.method public a(I)Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
     .locals 3
 
     .prologue
@@ -83,7 +83,7 @@
 
     .line 136
     :pswitch_1
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;->a:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->a:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
     .line 158
     :goto_0
@@ -91,67 +91,67 @@
 
     .line 138
     :pswitch_2
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;->b:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->b:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
     goto :goto_0
 
     .line 140
     :pswitch_3
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;->c:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->c:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
     goto :goto_0
 
     .line 142
     :pswitch_4
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;->d:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->d:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
     goto :goto_0
 
     .line 144
     :pswitch_5
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;->f:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->f:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
     goto :goto_0
 
     .line 146
     :pswitch_6
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;->e:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->e:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
     goto :goto_0
 
     .line 148
     :pswitch_7
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;->g:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->g:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
     goto :goto_0
 
     .line 150
     :pswitch_8
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;->h:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->h:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
     goto :goto_0
 
     .line 152
     :pswitch_9
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;->i:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->i:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
     goto :goto_0
 
     .line 154
     :pswitch_a
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;->j:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->j:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
     goto :goto_0
 
     .line 156
     :pswitch_b
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;->k:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->k:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
     goto :goto_0
 
     .line 158
     :pswitch_c
-    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;->l:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;
+    sget-object v0, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->l:Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
     goto :goto_0
 
@@ -185,14 +185,14 @@
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->a(I)Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;
+    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory;->a(I)Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;
 
     move-result-object v0
 
     .line 67
-    sget-object v1, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$v;->a:[I
+    sget-object v1, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICv;->a:[I
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$w;->ordinal()I
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/MessageItemBuilderFactory$ICw;->ordinal()I
 
     move-result v2
 

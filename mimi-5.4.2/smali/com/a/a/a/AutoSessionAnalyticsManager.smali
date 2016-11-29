@@ -24,9 +24,9 @@
     invoke-direct {p0, p1, p2}, Lcom/a/a/a/SessionAnalyticsManager;-><init>(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEventsHandler;)V
 
     .line 24
-    new-instance v0, Lcom/a/a/a/AutoSessionAnalyticsManager$d;
+    new-instance v0, Lcom/a/a/a/AutoSessionAnalyticsManager$ICd;
 
-    invoke-direct {v0, p0}, Lcom/a/a/a/AutoSessionAnalyticsManager$d;-><init>(Lcom/a/a/a/AutoSessionAnalyticsManager;)V
+    invoke-direct {v0, p0}, Lcom/a/a/a/AutoSessionAnalyticsManager$ICd;-><init>(Lcom/a/a/a/AutoSessionAnalyticsManager;)V
 
     iput-object v0, p0, Lcom/a/a/a/AutoSessionAnalyticsManager;->e:Landroid/app/Application$ActivityLifecycleCallbacks;
 

@@ -185,7 +185,7 @@
     move-result v5
 
     .line 99
-    sget-object v0, Lcom/e/a/c/ImageSizeUtils$c;->a:[I
+    sget-object v0, Lcom/e/a/c/ImageSizeUtils$ICc;->a:[I
 
     invoke-virtual {p2}, Lcom/e/a/b/a/ViewScaleType;->ordinal()I
 

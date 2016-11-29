@@ -22,7 +22,7 @@
 
 
 # instance fields
-.field protected a:Lcom/wumii/android/mimi/b/BaseShareImageTask$l;
+.field protected a:Lcom/wumii/android/mimi/b/BaseShareImageTask$ICl;
 
 .field private d:Lcom/wumii/android/mimi/c/ContextToast;
 
@@ -67,9 +67,9 @@
     .line 36
     iget-object v0, p0, Lcom/wumii/android/mimi/b/BaseShareImageTask;->f:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
-    new-instance v1, Lcom/wumii/android/mimi/b/BaseShareImageTask$k;
+    new-instance v1, Lcom/wumii/android/mimi/b/BaseShareImageTask$ICk;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/b/BaseShareImageTask$k;-><init>(Lcom/wumii/android/mimi/b/BaseShareImageTask;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/b/BaseShareImageTask$ICk;-><init>(Lcom/wumii/android/mimi/b/BaseShareImageTask;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -86,12 +86,12 @@
 
 
 # virtual methods
-.method public a(Lcom/wumii/android/mimi/b/BaseShareImageTask$l;)V
+.method public a(Lcom/wumii/android/mimi/b/BaseShareImageTask$ICl;)V
     .locals 0
 
     .prologue
     .line 93
-    iput-object p1, p0, Lcom/wumii/android/mimi/b/BaseShareImageTask;->a:Lcom/wumii/android/mimi/b/BaseShareImageTask$l;
+    iput-object p1, p0, Lcom/wumii/android/mimi/b/BaseShareImageTask;->a:Lcom/wumii/android/mimi/b/BaseShareImageTask$ICl;
 
     .line 94
     invoke-virtual {p0}, Lcom/wumii/android/mimi/b/BaseShareImageTask;->j()V
@@ -105,14 +105,14 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/b/BaseShareImageTask;->a:Lcom/wumii/android/mimi/b/BaseShareImageTask$l;
+    iget-object v0, p0, Lcom/wumii/android/mimi/b/BaseShareImageTask;->a:Lcom/wumii/android/mimi/b/BaseShareImageTask$ICl;
 
     if-eqz v0, :cond_0
 
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/b/BaseShareImageTask;->a:Lcom/wumii/android/mimi/b/BaseShareImageTask$l;
+    iget-object v0, p0, Lcom/wumii/android/mimi/b/BaseShareImageTask;->a:Lcom/wumii/android/mimi/b/BaseShareImageTask$ICl;
 
-    invoke-interface {v0, p1, p0}, Lcom/wumii/android/mimi/b/BaseShareImageTask$l;->a(Ljava/io/File;Lcom/wumii/android/mimi/b/BaseShareImageTask;)V
+    invoke-interface {v0, p1, p0}, Lcom/wumii/android/mimi/b/BaseShareImageTask$ICl;->a(Ljava/io/File;Lcom/wumii/android/mimi/b/BaseShareImageTask;)V
 
     .line 81
     :cond_0
@@ -211,12 +211,12 @@
 
     .prologue
     .line 85
-    iget-object v0, p0, Lcom/wumii/android/mimi/b/BaseShareImageTask;->a:Lcom/wumii/android/mimi/b/BaseShareImageTask$l;
+    iget-object v0, p0, Lcom/wumii/android/mimi/b/BaseShareImageTask;->a:Lcom/wumii/android/mimi/b/BaseShareImageTask$ICl;
 
     if-eqz v0, :cond_0
 
     .line 86
-    iget-object v0, p0, Lcom/wumii/android/mimi/b/BaseShareImageTask;->a:Lcom/wumii/android/mimi/b/BaseShareImageTask$l;
+    iget-object v0, p0, Lcom/wumii/android/mimi/b/BaseShareImageTask;->a:Lcom/wumii/android/mimi/b/BaseShareImageTask$ICl;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/b/BaseShareImageTask;->b:Landroid/content/Context;
 
@@ -228,7 +228,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1, p0}, Lcom/wumii/android/mimi/b/BaseShareImageTask$l;->a(Ljava/io/File;Lcom/wumii/android/mimi/b/BaseShareImageTask;)V
+    invoke-interface {v0, v1, p0}, Lcom/wumii/android/mimi/b/BaseShareImageTask$ICl;->a(Ljava/io/File;Lcom/wumii/android/mimi/b/BaseShareImageTask;)V
 
     .line 90
     :goto_0

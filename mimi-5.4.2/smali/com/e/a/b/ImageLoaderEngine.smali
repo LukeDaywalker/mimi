@@ -311,9 +311,9 @@
     .line 69
     iget-object v0, p0, Lcom/e/a/b/ImageLoaderEngine;->d:Ljava/util/concurrent/Executor;
 
-    new-instance v1, Lcom/e/a/b/ImageLoaderEngine$p;
+    new-instance v1, Lcom/e/a/b/ImageLoaderEngine$ICp;
 
-    invoke-direct {v1, p0, p1}, Lcom/e/a/b/ImageLoaderEngine$p;-><init>(Lcom/e/a/b/ImageLoaderEngine;Lcom/e/a/b/LoadAndDisplayImageTask;)V
+    invoke-direct {v1, p0, p1}, Lcom/e/a/b/ImageLoaderEngine$ICp;-><init>(Lcom/e/a/b/ImageLoaderEngine;Lcom/e/a/b/LoadAndDisplayImageTask;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 

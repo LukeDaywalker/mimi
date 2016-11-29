@@ -97,9 +97,9 @@
     .line 61
     const v1, 0x7f0602b9
 
-    new-instance v2, Lcom/wumii/android/mimi/b/ChangePnoTask$p;
+    new-instance v2, Lcom/wumii/android/mimi/b/ChangePnoTask$ICp;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/b/ChangePnoTask$p;-><init>(Lcom/wumii/android/mimi/b/ChangePnoTask;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/b/ChangePnoTask$ICp;-><init>(Lcom/wumii/android/mimi/b/ChangePnoTask;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -153,9 +153,9 @@
     .line 73
     const v1, 0x7f06013a
 
-    new-instance v2, Lcom/wumii/android/mimi/b/ChangePnoTask$q;
+    new-instance v2, Lcom/wumii/android/mimi/b/ChangePnoTask$ICq;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/b/ChangePnoTask$q;-><init>(Lcom/wumii/android/mimi/b/ChangePnoTask;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/b/ChangePnoTask$ICq;-><init>(Lcom/wumii/android/mimi/b/ChangePnoTask;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

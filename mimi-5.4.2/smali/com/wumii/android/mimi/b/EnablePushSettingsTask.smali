@@ -35,16 +35,16 @@
     .line 44
     iget-object v0, p0, Lcom/wumii/android/mimi/b/EnablePushSettingsTask;->q:Lcom/wumii/android/mimi/b/HttpAsyncTaskCallback;
 
-    instance-of v0, v0, Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ae;
+    instance-of v0, v0, Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ICae;
 
     if-eqz v0, :cond_0
 
     .line 45
     iget-object v0, p0, Lcom/wumii/android/mimi/b/EnablePushSettingsTask;->q:Lcom/wumii/android/mimi/b/HttpAsyncTaskCallback;
 
-    check-cast v0, Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ae;
+    check-cast v0, Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ICae;
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ae;->a()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ICae;->a()V
 
     .line 47
     :cond_0
@@ -106,16 +106,16 @@
     .line 59
     iget-object v0, p0, Lcom/wumii/android/mimi/b/EnablePushSettingsTask;->q:Lcom/wumii/android/mimi/b/HttpAsyncTaskCallback;
 
-    instance-of v0, v0, Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ae;
+    instance-of v0, v0, Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ICae;
 
     if-eqz v0, :cond_0
 
     .line 60
     iget-object v0, p0, Lcom/wumii/android/mimi/b/EnablePushSettingsTask;->q:Lcom/wumii/android/mimi/b/HttpAsyncTaskCallback;
 
-    check-cast v0, Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ae;
+    check-cast v0, Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ICae;
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ae;->a()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ICae;->a()V
 
     .line 62
     :cond_0
@@ -141,16 +141,16 @@
     .line 51
     iget-object v0, p0, Lcom/wumii/android/mimi/b/EnablePushSettingsTask;->q:Lcom/wumii/android/mimi/b/HttpAsyncTaskCallback;
 
-    instance-of v0, v0, Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ae;
+    instance-of v0, v0, Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ICae;
 
     if-eqz v0, :cond_0
 
     .line 52
     iget-object v0, p0, Lcom/wumii/android/mimi/b/EnablePushSettingsTask;->q:Lcom/wumii/android/mimi/b/HttpAsyncTaskCallback;
 
-    check-cast v0, Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ae;
+    check-cast v0, Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ICae;
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ae;->a()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ICae;->a()V
 
     .line 54
     :cond_0

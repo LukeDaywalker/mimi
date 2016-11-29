@@ -41,17 +41,17 @@
     if-eqz v0, :cond_0
 
     .line 86
-    sget-object v0, Lcom/google/analytics/tracking/android/Logger$at;->a:Lcom/google/analytics/tracking/android/Logger$at;
+    sget-object v0, Lcom/google/analytics/tracking/android/Logger$ICat;->a:Lcom/google/analytics/tracking/android/Logger$ICat;
 
     invoke-static {}, Lcom/google/analytics/tracking/android/Log;->b()Lcom/google/analytics/tracking/android/Logger;
 
     move-result-object v1
 
-    invoke-interface {v1}, Lcom/google/analytics/tracking/android/Logger;->a()Lcom/google/analytics/tracking/android/Logger$at;
+    invoke-interface {v1}, Lcom/google/analytics/tracking/android/Logger;->a()Lcom/google/analytics/tracking/android/Logger$ICat;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/Logger$at;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/Logger$ICat;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 

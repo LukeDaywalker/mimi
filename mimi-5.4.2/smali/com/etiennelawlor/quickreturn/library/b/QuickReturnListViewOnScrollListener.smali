@@ -38,7 +38,7 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$c;)V
+.method private constructor <init>(Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;)V
     .locals 1
 
     .prologue
@@ -64,42 +64,42 @@
     iput-object v0, p0, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener;->j:Ljava/util/List;
 
     .line 34
-    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$c;->a(Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$c;)Lcom/etiennelawlor/quickreturn/library/a/QuickReturnViewType;
+    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;->a(Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;)Lcom/etiennelawlor/quickreturn/library/a/QuickReturnViewType;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener;->a:Lcom/etiennelawlor/quickreturn/library/a/QuickReturnViewType;
 
     .line 35
-    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$c;->b(Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$c;)Landroid/view/View;
+    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;->b(Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;)Landroid/view/View;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener;->b:Landroid/view/View;
 
     .line 36
-    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$c;->c(Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$c;)I
+    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;->c(Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;)I
 
     move-result v0
 
     iput v0, p0, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener;->c:I
 
     .line 37
-    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$c;->d(Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$c;)Landroid/view/View;
+    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;->d(Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;)Landroid/view/View;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener;->d:Landroid/view/View;
 
     .line 38
-    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$c;->e(Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$c;)I
+    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;->e(Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;)I
 
     move-result v0
 
     iput v0, p0, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener;->e:I
 
     .line 39
-    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$c;->f(Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$c;)Z
+    invoke-static {p1}, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;->f(Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;)Z
 
     move-result v0
 
@@ -109,12 +109,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$c;Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$b;)V
+.method synthetic constructor <init>(Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICb;)V
     .locals 0
 
     .prologue
     .line 16
-    invoke-direct {p0, p1}, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener;-><init>(Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$c;)V
+    invoke-direct {p0, p1}, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener;-><init>(Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;)V
 
     return-void
 .end method
@@ -167,7 +167,7 @@
     if-eqz v1, :cond_1
 
     .line 152
-    sget-object v2, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$b;->a:[I
+    sget-object v2, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICb;->a:[I
 
     iget-object v3, p0, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener;->a:Lcom/etiennelawlor/quickreturn/library/a/QuickReturnViewType;
 
@@ -565,7 +565,7 @@
     div-int/lit8 v1, v1, 0x2
 
     .line 55
-    sget-object v2, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$b;->a:[I
+    sget-object v2, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICb;->a:[I
 
     iget-object v3, p0, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener;->a:Lcom/etiennelawlor/quickreturn/library/a/QuickReturnViewType;
 

@@ -81,9 +81,9 @@
 
     .line 39
     :cond_2
-    sget-object v0, Lcom/b/a/c/g/a/Console$f;->b:Lcom/b/a/c/g/a/Console$f;
+    sget-object v0, Lcom/b/a/c/g/a/Console$ICf;->b:Lcom/b/a/c/g/a/Console$ICf;
 
-    sget-object v1, Lcom/b/a/c/g/a/Console$g;->c:Lcom/b/a/c/g/a/Console$g;
+    sget-object v1, Lcom/b/a/c/g/a/Console$ICg;->c:Lcom/b/a/c/g/a/Console$ICg;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -113,7 +113,7 @@
 
     move-result-object v2
 
-    invoke-static {p0, v0, v1, v2}, Lcom/b/a/c/a/CLog;->a(Lcom/b/a/c/d/ChromePeerManager;Lcom/b/a/c/g/a/Console$f;Lcom/b/a/c/g/a/Console$g;Ljava/lang/String;)V
+    invoke-static {p0, v0, v1, v2}, Lcom/b/a/c/a/CLog;->a(Lcom/b/a/c/d/ChromePeerManager;Lcom/b/a/c/g/a/Console$ICf;Lcom/b/a/c/g/a/Console$ICg;Ljava/lang/String;)V
 
     :cond_3
     move-object v3, p3

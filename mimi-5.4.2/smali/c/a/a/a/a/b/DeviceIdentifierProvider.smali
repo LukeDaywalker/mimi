@@ -10,7 +10,7 @@
             "()",
             "Ljava/util/Map",
             "<",
-            "Lc/a/a/a/a/b/IdManager$aa;",
+            "Lc/a/a/a/a/b/IdManager$ICaa;",
             "Ljava/lang/String;",
             ">;"
         }

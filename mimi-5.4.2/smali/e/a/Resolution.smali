@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Le/a/Resolution;",
-        "Le/a/Resolution$dt;",
+        "Le/a/Resolution$ICdt;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Le/a/Resolution$dt;",
+            "Le/a/Resolution$ICdt;",
             "Le/a/FieldMetaData;",
             ">;"
         }
@@ -118,9 +118,9 @@
 
     const-class v1, Le/a/StandardScheme;
 
-    new-instance v2, Le/a/Resolution$dq;
+    new-instance v2, Le/a/Resolution$ICdq;
 
-    invoke-direct {v2, v3}, Le/a/Resolution$dq;-><init>(Le/a/Resolution$do;)V
+    invoke-direct {v2, v3}, Le/a/Resolution$ICdq;-><init>(Le/a/Resolution$ICdo;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -129,21 +129,21 @@
 
     const-class v1, Le/a/TupleScheme;
 
-    new-instance v2, Le/a/Resolution$ds;
+    new-instance v2, Le/a/Resolution$ICds;
 
-    invoke-direct {v2, v3}, Le/a/Resolution$ds;-><init>(Le/a/Resolution$do;)V
+    invoke-direct {v2, v3}, Le/a/Resolution$ICds;-><init>(Le/a/Resolution$ICdo;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 114
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Le/a/Resolution$dt;
+    const-class v1, Le/a/Resolution$ICdt;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 115
-    sget-object v1, Le/a/Resolution$dt;->a:Le/a/Resolution$dt;
+    sget-object v1, Le/a/Resolution$ICdt;->a:Le/a/Resolution$ICdt;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -158,7 +158,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 117
-    sget-object v1, Le/a/Resolution$dt;->b:Le/a/Resolution$dt;
+    sget-object v1, Le/a/Resolution$ICdt;->b:Le/a/Resolution$ICdt;
 
     new-instance v2, Le/a/FieldMetaData;
 

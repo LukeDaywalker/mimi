@@ -18,7 +18,7 @@
 
     .prologue
     .line 43
-    const-class v0, Lcom/f/a/a/c/Http2$l;
+    const-class v0, Lcom/f/a/a/c/Http2$ICl;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -288,11 +288,11 @@
 
     .prologue
     .line 80
-    new-instance v0, Lcom/f/a/a/c/Http2$m;
+    new-instance v0, Lcom/f/a/a/c/Http2$ICm;
 
     const/16 v1, 0x1000
 
-    invoke-direct {v0, p1, v1, p2}, Lcom/f/a/a/c/Http2$m;-><init>(Ld/BufferedSource;IZ)V
+    invoke-direct {v0, p1, v1, p2}, Lcom/f/a/a/c/Http2$ICm;-><init>(Ld/BufferedSource;IZ)V
 
     return-object v0
 .end method
@@ -302,9 +302,9 @@
 
     .prologue
     .line 84
-    new-instance v0, Lcom/f/a/a/c/Http2$n;
+    new-instance v0, Lcom/f/a/a/c/Http2$ICn;
 
-    invoke-direct {v0, p1, p2}, Lcom/f/a/a/c/Http2$n;-><init>(Ld/BufferedSink;Z)V
+    invoke-direct {v0, p1, p2}, Lcom/f/a/a/c/Http2$ICn;-><init>(Ld/BufferedSink;Z)V
 
     return-object v0
 .end method

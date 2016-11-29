@@ -82,9 +82,9 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 69
-    new-instance v2, Lc/a/a/a/a/b/AdvertisingInfoServiceStrategy$h;
+    new-instance v2, Lc/a/a/a/a/b/AdvertisingInfoServiceStrategy$ICh;
 
-    invoke-direct {v2, v0}, Lc/a/a/a/a/b/AdvertisingInfoServiceStrategy$h;-><init>(Lc/a/a/a/a/b/AdvertisingInfoServiceStrategy$g;)V
+    invoke-direct {v2, v0}, Lc/a/a/a/a/b/AdvertisingInfoServiceStrategy$ICh;-><init>(Lc/a/a/a/a/b/AdvertisingInfoServiceStrategy$ICg;)V
 
     .line 70
     new-instance v1, Landroid/content/Intent;
@@ -114,22 +114,22 @@
 
     .line 75
     :try_start_2
-    new-instance v3, Lc/a/a/a/a/b/AdvertisingInfoServiceStrategy$i;
+    new-instance v3, Lc/a/a/a/a/b/AdvertisingInfoServiceStrategy$ICi;
 
-    invoke-virtual {v2}, Lc/a/a/a/a/b/AdvertisingInfoServiceStrategy$h;->a()Landroid/os/IBinder;
+    invoke-virtual {v2}, Lc/a/a/a/a/b/AdvertisingInfoServiceStrategy$ICh;->a()Landroid/os/IBinder;
 
     move-result-object v1
 
-    invoke-direct {v3, v1}, Lc/a/a/a/a/b/AdvertisingInfoServiceStrategy$i;-><init>(Landroid/os/IBinder;)V
+    invoke-direct {v3, v1}, Lc/a/a/a/a/b/AdvertisingInfoServiceStrategy$ICi;-><init>(Landroid/os/IBinder;)V
 
     .line 77
     new-instance v1, Lc/a/a/a/a/b/AdvertisingInfo;
 
-    invoke-virtual {v3}, Lc/a/a/a/a/b/AdvertisingInfoServiceStrategy$i;->a()Ljava/lang/String;
+    invoke-virtual {v3}, Lc/a/a/a/a/b/AdvertisingInfoServiceStrategy$ICi;->a()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {v3}, Lc/a/a/a/a/b/AdvertisingInfoServiceStrategy$i;->b()Z
+    invoke-virtual {v3}, Lc/a/a/a/a/b/AdvertisingInfoServiceStrategy$ICi;->b()Z
 
     move-result v3
 

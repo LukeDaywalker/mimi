@@ -143,7 +143,7 @@
             "Ljava/util/Map",
             "<",
             "Ljava/lang/String;",
-            "Lcom/google/a/a/Phonemetadata$j;",
+            "Lcom/google/a/a/Phonemetadata$ICj;",
             ">;"
         }
     .end annotation
@@ -155,7 +155,7 @@
             "Ljava/util/Map",
             "<",
             "Ljava/lang/Integer;",
-            "Lcom/google/a/a/Phonemetadata$j;",
+            "Lcom/google/a/a/Phonemetadata$ICj;",
             ">;"
         }
     .end annotation
@@ -206,9 +206,9 @@
     const/16 v6, 0x2d
 
     .line 60
-    new-instance v0, Lcom/google/a/a/PhoneNumberUtil$f;
+    new-instance v0, Lcom/google/a/a/PhoneNumberUtil$ICf;
 
-    invoke-direct {v0}, Lcom/google/a/a/PhoneNumberUtil$f;-><init>()V
+    invoke-direct {v0}, Lcom/google/a/a/PhoneNumberUtil$ICf;-><init>()V
 
     sput-object v0, Lcom/google/a/a/PhoneNumberUtil;->a:Lcom/google/a/a/MetadataLoader;
 
@@ -1675,7 +1675,7 @@
     return-void
 .end method
 
-.method private a(Ljava/util/regex/Pattern;Ljava/lang/String;)Lcom/google/a/a/PhoneNumberUtil$g;
+.method private a(Ljava/util/regex/Pattern;Ljava/lang/String;)Lcom/google/a/a/PhoneNumberUtil$ICg;
     .locals 2
 
     .prologue
@@ -1692,7 +1692,7 @@
     if-eqz v1, :cond_0
 
     .line 2318
-    sget-object v0, Lcom/google/a/a/PhoneNumberUtil$g;->a:Lcom/google/a/a/PhoneNumberUtil$g;
+    sget-object v0, Lcom/google/a/a/PhoneNumberUtil$ICg;->a:Lcom/google/a/a/PhoneNumberUtil$ICg;
 
     .line 2323
     :goto_0
@@ -1707,13 +1707,13 @@
     if-eqz v0, :cond_1
 
     .line 2321
-    sget-object v0, Lcom/google/a/a/PhoneNumberUtil$g;->d:Lcom/google/a/a/PhoneNumberUtil$g;
+    sget-object v0, Lcom/google/a/a/PhoneNumberUtil$ICg;->d:Lcom/google/a/a/PhoneNumberUtil$ICg;
 
     goto :goto_0
 
     .line 2323
     :cond_1
-    sget-object v0, Lcom/google/a/a/PhoneNumberUtil$g;->c:Lcom/google/a/a/PhoneNumberUtil$g;
+    sget-object v0, Lcom/google/a/a/PhoneNumberUtil$ICg;->c:Lcom/google/a/a/PhoneNumberUtil$ICg;
 
     goto :goto_0
 .end method
@@ -1791,7 +1791,7 @@
     return-object v0
 .end method
 
-.method private a(ILjava/lang/String;)Lcom/google/a/a/Phonemetadata$j;
+.method private a(ILjava/lang/String;)Lcom/google/a/a/Phonemetadata$ICj;
     .locals 1
 
     .prologue
@@ -1804,7 +1804,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0, p1}, Lcom/google/a/a/PhoneNumberUtil;->a(I)Lcom/google/a/a/Phonemetadata$j;
+    invoke-virtual {p0, p1}, Lcom/google/a/a/PhoneNumberUtil;->a(I)Lcom/google/a/a/Phonemetadata$ICj;
 
     move-result-object v0
 
@@ -1812,25 +1812,25 @@
     return-object v0
 
     :cond_0
-    invoke-virtual {p0, p2}, Lcom/google/a/a/PhoneNumberUtil;->e(Ljava/lang/String;)Lcom/google/a/a/Phonemetadata$j;
+    invoke-virtual {p0, p2}, Lcom/google/a/a/PhoneNumberUtil;->e(Ljava/lang/String;)Lcom/google/a/a/Phonemetadata$ICj;
 
     move-result-object v0
 
     goto :goto_0
 .end method
 
-.method private static a(Ljava/io/ObjectInputStream;)Lcom/google/a/a/Phonemetadata$k;
+.method private static a(Ljava/io/ObjectInputStream;)Lcom/google/a/a/Phonemetadata$ICk;
     .locals 5
 
     .prologue
     .line 654
-    new-instance v0, Lcom/google/a/a/Phonemetadata$k;
+    new-instance v0, Lcom/google/a/a/Phonemetadata$ICk;
 
-    invoke-direct {v0}, Lcom/google/a/a/Phonemetadata$k;-><init>()V
+    invoke-direct {v0}, Lcom/google/a/a/Phonemetadata$ICk;-><init>()V
 
     .line 656
     :try_start_0
-    invoke-virtual {v0, p0}, Lcom/google/a/a/Phonemetadata$k;->readExternal(Ljava/io/ObjectInput;)V
+    invoke-virtual {v0, p0}, Lcom/google/a/a/Phonemetadata$ICk;->readExternal(Ljava/io/ObjectInput;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
@@ -2250,7 +2250,7 @@
     throw v1
 .end method
 
-.method static a(Ljava/lang/String;Lcom/google/a/a/Phonenumber$n;)V
+.method static a(Ljava/lang/String;Lcom/google/a/a/Phonenumber$ICn;)V
     .locals 4
 
     .prologue
@@ -2274,7 +2274,7 @@
     if-ne v0, v3, :cond_1
 
     .line 2857
-    invoke-virtual {p1, v1}, Lcom/google/a/a/Phonenumber$n;->a(Z)Lcom/google/a/a/Phonenumber$n;
+    invoke-virtual {p1, v1}, Lcom/google/a/a/Phonenumber$ICn;->a(Z)Lcom/google/a/a/Phonenumber$ICn;
 
     move v0, v1
 
@@ -2304,14 +2304,14 @@
     if-eq v0, v1, :cond_1
 
     .line 2866
-    invoke-virtual {p1, v0}, Lcom/google/a/a/Phonenumber$n;->b(I)Lcom/google/a/a/Phonenumber$n;
+    invoke-virtual {p1, v0}, Lcom/google/a/a/Phonenumber$ICn;->b(I)Lcom/google/a/a/Phonenumber$ICn;
 
     .line 2869
     :cond_1
     return-void
 .end method
 
-.method private a(Ljava/lang/String;Ljava/lang/String;ZZLcom/google/a/a/Phonenumber$n;)V
+.method private a(Ljava/lang/String;Ljava/lang/String;ZZLcom/google/a/a/Phonenumber$ICn;)V
     .locals 8
 
     .prologue
@@ -2323,11 +2323,11 @@
     .line 2881
     new-instance v0, Lcom/google/a/a/NumberParseException;
 
-    sget-object v1, Lcom/google/a/a/NumberParseException$d;->b:Lcom/google/a/a/NumberParseException$d;
+    sget-object v1, Lcom/google/a/a/NumberParseException$ICd;->b:Lcom/google/a/a/NumberParseException$ICd;
 
     const-string/jumbo v2, "The phone number supplied was null."
 
-    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$d;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$ICd;Ljava/lang/String;)V
 
     throw v0
 
@@ -2344,11 +2344,11 @@
     .line 2884
     new-instance v0, Lcom/google/a/a/NumberParseException;
 
-    sget-object v1, Lcom/google/a/a/NumberParseException$d;->e:Lcom/google/a/a/NumberParseException$d;
+    sget-object v1, Lcom/google/a/a/NumberParseException$ICd;->e:Lcom/google/a/a/NumberParseException$ICd;
 
     const-string/jumbo v2, "The string supplied was too long to parse."
 
-    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$d;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$ICd;Ljava/lang/String;)V
 
     throw v0
 
@@ -2375,11 +2375,11 @@
     .line 2892
     new-instance v0, Lcom/google/a/a/NumberParseException;
 
-    sget-object v1, Lcom/google/a/a/NumberParseException$d;->b:Lcom/google/a/a/NumberParseException$d;
+    sget-object v1, Lcom/google/a/a/NumberParseException$ICd;->b:Lcom/google/a/a/NumberParseException$ICd;
 
     const-string/jumbo v2, "The string supplied did not seem to be a phone number."
 
-    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$d;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$ICd;Ljava/lang/String;)V
 
     throw v0
 
@@ -2400,11 +2400,11 @@
     .line 2899
     new-instance v0, Lcom/google/a/a/NumberParseException;
 
-    sget-object v1, Lcom/google/a/a/NumberParseException$d;->a:Lcom/google/a/a/NumberParseException$d;
+    sget-object v1, Lcom/google/a/a/NumberParseException$ICd;->a:Lcom/google/a/a/NumberParseException$ICd;
 
     const-string/jumbo v2, "Missing or invalid default region."
 
-    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$d;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$ICd;Ljava/lang/String;)V
 
     throw v0
 
@@ -2413,7 +2413,7 @@
     if-eqz p3, :cond_4
 
     .line 2904
-    invoke-virtual {p5, p1}, Lcom/google/a/a/Phonenumber$n;->b(Ljava/lang/String;)Lcom/google/a/a/Phonenumber$n;
+    invoke-virtual {p5, p1}, Lcom/google/a/a/Phonenumber$ICn;->b(Ljava/lang/String;)Lcom/google/a/a/Phonenumber$ICn;
 
     .line 2908
     :cond_4
@@ -2429,11 +2429,11 @@
     if-lez v1, :cond_5
 
     .line 2910
-    invoke-virtual {p5, v0}, Lcom/google/a/a/Phonenumber$n;->a(Ljava/lang/String;)Lcom/google/a/a/Phonenumber$n;
+    invoke-virtual {p5, v0}, Lcom/google/a/a/Phonenumber$ICn;->a(Ljava/lang/String;)Lcom/google/a/a/Phonenumber$ICn;
 
     .line 2913
     :cond_5
-    invoke-virtual {p0, p2}, Lcom/google/a/a/PhoneNumberUtil;->e(Ljava/lang/String;)Lcom/google/a/a/Phonemetadata$j;
+    invoke-virtual {p0, p2}, Lcom/google/a/a/PhoneNumberUtil;->e(Ljava/lang/String;)Lcom/google/a/a/Phonemetadata$ICj;
 
     move-result-object v2
 
@@ -2454,7 +2454,7 @@
 
     move-object v5, p5
 
-    invoke-virtual/range {v0 .. v5}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/String;Lcom/google/a/a/Phonemetadata$j;Ljava/lang/StringBuilder;ZLcom/google/a/a/Phonenumber$n;)I
+    invoke-virtual/range {v0 .. v5}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/String;Lcom/google/a/a/Phonemetadata$ICj;Ljava/lang/StringBuilder;ZLcom/google/a/a/Phonenumber$ICn;)I
     :try_end_0
     .catch Lcom/google/a/a/NumberParseException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2477,7 +2477,7 @@
     if-nez v4, :cond_7
 
     .line 2944
-    invoke-direct {p0, v0, v1}, Lcom/google/a/a/PhoneNumberUtil;->a(ILjava/lang/String;)Lcom/google/a/a/Phonemetadata$j;
+    invoke-direct {p0, v0, v1}, Lcom/google/a/a/PhoneNumberUtil;->a(ILjava/lang/String;)Lcom/google/a/a/Phonemetadata$ICj;
 
     move-result-object v2
 
@@ -2493,11 +2493,11 @@
     .line 2959
     new-instance v0, Lcom/google/a/a/NumberParseException;
 
-    sget-object v1, Lcom/google/a/a/NumberParseException$d;->d:Lcom/google/a/a/NumberParseException$d;
+    sget-object v1, Lcom/google/a/a/NumberParseException$ICd;->d:Lcom/google/a/a/NumberParseException$ICd;
 
     const-string/jumbo v2, "The string supplied is too short to be a phone number."
 
-    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$d;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$ICd;Ljava/lang/String;)V
 
     throw v0
 
@@ -2517,11 +2517,11 @@
     move-result-object v1
 
     .line 2926
-    invoke-virtual {v0}, Lcom/google/a/a/NumberParseException;->a()Lcom/google/a/a/NumberParseException$d;
+    invoke-virtual {v0}, Lcom/google/a/a/NumberParseException;->a()Lcom/google/a/a/NumberParseException$ICd;
 
     move-result-object v4
 
-    sget-object v5, Lcom/google/a/a/NumberParseException$d;->a:Lcom/google/a/a/NumberParseException$d;
+    sget-object v5, Lcom/google/a/a/NumberParseException$ICd;->a:Lcom/google/a/a/NumberParseException$ICd;
 
     if-ne v4, v5, :cond_8
 
@@ -2546,7 +2546,7 @@
 
     move-object v5, p5
 
-    invoke-virtual/range {v0 .. v5}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/String;Lcom/google/a/a/Phonemetadata$j;Ljava/lang/StringBuilder;ZLcom/google/a/a/Phonenumber$n;)I
+    invoke-virtual/range {v0 .. v5}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/String;Lcom/google/a/a/Phonemetadata$ICj;Ljava/lang/StringBuilder;ZLcom/google/a/a/Phonenumber$ICn;)I
 
     move-result v0
 
@@ -2556,11 +2556,11 @@
     .line 2933
     new-instance v0, Lcom/google/a/a/NumberParseException;
 
-    sget-object v1, Lcom/google/a/a/NumberParseException$d;->a:Lcom/google/a/a/NumberParseException$d;
+    sget-object v1, Lcom/google/a/a/NumberParseException$ICd;->a:Lcom/google/a/a/NumberParseException$ICd;
 
     const-string/jumbo v2, "Could not interpret numbers after plus-sign."
 
-    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$d;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$ICd;Ljava/lang/String;)V
 
     throw v0
 
@@ -2568,7 +2568,7 @@
     :cond_8
     new-instance v1, Lcom/google/a/a/NumberParseException;
 
-    invoke-virtual {v0}, Lcom/google/a/a/NumberParseException;->a()Lcom/google/a/a/NumberParseException$d;
+    invoke-virtual {v0}, Lcom/google/a/a/NumberParseException;->a()Lcom/google/a/a/NumberParseException$ICd;
 
     move-result-object v2
 
@@ -2576,7 +2576,7 @@
 
     move-result-object v0
 
-    invoke-direct {v1, v2, v0}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$d;Ljava/lang/String;)V
+    invoke-direct {v1, v2, v0}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$ICd;Ljava/lang/String;)V
 
     throw v1
 
@@ -2591,12 +2591,12 @@
     if-eqz p2, :cond_a
 
     .line 2952
-    invoke-virtual {v2}, Lcom/google/a/a/Phonemetadata$j;->b()I
+    invoke-virtual {v2}, Lcom/google/a/a/Phonemetadata$ICj;->b()I
 
     move-result v0
 
     .line 2953
-    invoke-virtual {p5, v0}, Lcom/google/a/a/Phonenumber$n;->a(I)Lcom/google/a/a/Phonenumber$n;
+    invoke-virtual {p5, v0}, Lcom/google/a/a/Phonenumber$ICn;->a(I)Lcom/google/a/a/Phonenumber$ICn;
 
     goto :goto_0
 
@@ -2605,7 +2605,7 @@
     if-eqz p3, :cond_7
 
     .line 2955
-    invoke-virtual {p5}, Lcom/google/a/a/Phonenumber$n;->l()Lcom/google/a/a/Phonenumber$n;
+    invoke-virtual {p5}, Lcom/google/a/a/Phonenumber$ICn;->l()Lcom/google/a/a/Phonenumber$ICn;
 
     goto :goto_0
 
@@ -2624,14 +2624,14 @@
     invoke-direct {v0, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/CharSequence;)V
 
     .line 2965
-    invoke-virtual {p0, v0, v2, v1}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/StringBuilder;Lcom/google/a/a/Phonemetadata$j;Ljava/lang/StringBuilder;)Z
+    invoke-virtual {p0, v0, v2, v1}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/StringBuilder;Lcom/google/a/a/Phonemetadata$ICj;Ljava/lang/StringBuilder;)Z
 
     .line 2969
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-direct {p0, v2, v4}, Lcom/google/a/a/PhoneNumberUtil;->a(Lcom/google/a/a/Phonemetadata$j;Ljava/lang/String;)Z
+    invoke-direct {p0, v2, v4}, Lcom/google/a/a/PhoneNumberUtil;->a(Lcom/google/a/a/Phonemetadata$ICj;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -2645,7 +2645,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p5, v1}, Lcom/google/a/a/Phonenumber$n;->c(Ljava/lang/String;)Lcom/google/a/a/Phonenumber$n;
+    invoke-virtual {p5, v1}, Lcom/google/a/a/Phonenumber$ICn;->c(Ljava/lang/String;)Lcom/google/a/a/Phonenumber$ICn;
 
     :cond_c
     move-object v3, v0
@@ -2662,11 +2662,11 @@
     .line 2978
     new-instance v0, Lcom/google/a/a/NumberParseException;
 
-    sget-object v1, Lcom/google/a/a/NumberParseException$d;->d:Lcom/google/a/a/NumberParseException$d;
+    sget-object v1, Lcom/google/a/a/NumberParseException$ICd;->d:Lcom/google/a/a/NumberParseException$ICd;
 
     const-string/jumbo v2, "The string supplied is too short to be a phone number."
 
-    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$d;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$ICd;Ljava/lang/String;)V
 
     throw v0
 
@@ -2679,11 +2679,11 @@
     .line 2982
     new-instance v0, Lcom/google/a/a/NumberParseException;
 
-    sget-object v1, Lcom/google/a/a/NumberParseException$d;->e:Lcom/google/a/a/NumberParseException$d;
+    sget-object v1, Lcom/google/a/a/NumberParseException$ICd;->e:Lcom/google/a/a/NumberParseException$ICd;
 
     const-string/jumbo v2, "The string supplied is too long to be a phone number."
 
-    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$d;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$ICd;Ljava/lang/String;)V
 
     throw v0
 
@@ -2693,7 +2693,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, p5}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/String;Lcom/google/a/a/Phonenumber$n;)V
+    invoke-static {v0, p5}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/String;Lcom/google/a/a/Phonenumber$ICn;)V
 
     .line 2986
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -2704,7 +2704,7 @@
 
     move-result-wide v0
 
-    invoke-virtual {p5, v0, v1}, Lcom/google/a/a/Phonenumber$n;->a(J)Lcom/google/a/a/Phonenumber$n;
+    invoke-virtual {p5, v0, v1}, Lcom/google/a/a/Phonenumber$ICn;->a(J)Lcom/google/a/a/Phonenumber$ICn;
 
     .line 2987
     return-void
@@ -2851,18 +2851,18 @@
     return-void
 .end method
 
-.method private a(Lcom/google/a/a/Phonemetadata$j;Ljava/lang/String;)Z
+.method private a(Lcom/google/a/a/Phonemetadata$ICj;Ljava/lang/String;)Z
     .locals 2
 
     .prologue
     .line 2332
     iget-object v0, p0, Lcom/google/a/a/PhoneNumberUtil;->G:Lcom/google/a/a/RegexCache;
 
-    invoke-virtual {p1}, Lcom/google/a/a/Phonemetadata$j;->a()Lcom/google/a/a/Phonemetadata$l;
+    invoke-virtual {p1}, Lcom/google/a/a/Phonemetadata$ICj;->a()Lcom/google/a/a/Phonemetadata$ICl;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/google/a/a/Phonemetadata$l;->b()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/google/a/a/Phonemetadata$ICl;->b()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2871,11 +2871,11 @@
     move-result-object v0
 
     .line 2334
-    invoke-direct {p0, v0, p2}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/util/regex/Pattern;Ljava/lang/String;)Lcom/google/a/a/PhoneNumberUtil$g;
+    invoke-direct {p0, v0, p2}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/util/regex/Pattern;Ljava/lang/String;)Lcom/google/a/a/PhoneNumberUtil$ICg;
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/a/a/PhoneNumberUtil$g;->c:Lcom/google/a/a/PhoneNumberUtil$g;
+    sget-object v1, Lcom/google/a/a/PhoneNumberUtil$ICg;->c:Lcom/google/a/a/PhoneNumberUtil$ICg;
 
     if-ne v0, v1, :cond_0
 
@@ -3201,7 +3201,7 @@
 
 
 # virtual methods
-.method a(Ljava/lang/String;Lcom/google/a/a/Phonemetadata$j;Ljava/lang/StringBuilder;ZLcom/google/a/a/Phonenumber$n;)I
+.method a(Ljava/lang/String;Lcom/google/a/a/Phonemetadata$ICj;Ljava/lang/StringBuilder;ZLcom/google/a/a/Phonenumber$ICn;)I
     .locals 7
 
     .prologue
@@ -3233,13 +3233,13 @@
     if-eqz p2, :cond_1
 
     .line 2518
-    invoke-virtual {p2}, Lcom/google/a/a/Phonemetadata$j;->c()Ljava/lang/String;
+    invoke-virtual {p2}, Lcom/google/a/a/Phonemetadata$ICj;->c()Ljava/lang/String;
 
     move-result-object v0
 
     .line 2521
     :cond_1
-    invoke-virtual {p0, v2, v0}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/StringBuilder;Ljava/lang/String;)Lcom/google/a/a/Phonenumber$o;
+    invoke-virtual {p0, v2, v0}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/StringBuilder;Ljava/lang/String;)Lcom/google/a/a/Phonenumber$ICo;
 
     move-result-object v0
 
@@ -3247,11 +3247,11 @@
     if-eqz p4, :cond_2
 
     .line 2524
-    invoke-virtual {p5, v0}, Lcom/google/a/a/Phonenumber$n;->a(Lcom/google/a/a/Phonenumber$o;)Lcom/google/a/a/Phonenumber$n;
+    invoke-virtual {p5, v0}, Lcom/google/a/a/Phonenumber$ICn;->a(Lcom/google/a/a/Phonenumber$ICo;)Lcom/google/a/a/Phonenumber$ICn;
 
     .line 2526
     :cond_2
-    sget-object v3, Lcom/google/a/a/Phonenumber$o;->d:Lcom/google/a/a/Phonenumber$o;
+    sget-object v3, Lcom/google/a/a/Phonenumber$ICo;->d:Lcom/google/a/a/Phonenumber$ICo;
 
     if-eq v0, v3, :cond_5
 
@@ -3267,11 +3267,11 @@
     .line 2528
     new-instance v0, Lcom/google/a/a/NumberParseException;
 
-    sget-object v1, Lcom/google/a/a/NumberParseException$d;->c:Lcom/google/a/a/NumberParseException$d;
+    sget-object v1, Lcom/google/a/a/NumberParseException$ICd;->c:Lcom/google/a/a/NumberParseException$ICd;
 
     const-string/jumbo v2, "Phone number had an IDD, but after this was not long enough to be a viable phone number."
 
-    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$d;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$ICd;Ljava/lang/String;)V
 
     throw v0
 
@@ -3285,7 +3285,7 @@
     if-eqz v0, :cond_4
 
     .line 2534
-    invoke-virtual {p5, v0}, Lcom/google/a/a/Phonenumber$n;->a(I)Lcom/google/a/a/Phonenumber$n;
+    invoke-virtual {p5, v0}, Lcom/google/a/a/Phonenumber$ICn;->a(I)Lcom/google/a/a/Phonenumber$ICn;
 
     goto :goto_0
 
@@ -3293,11 +3293,11 @@
     :cond_4
     new-instance v0, Lcom/google/a/a/NumberParseException;
 
-    sget-object v1, Lcom/google/a/a/NumberParseException$d;->a:Lcom/google/a/a/NumberParseException$d;
+    sget-object v1, Lcom/google/a/a/NumberParseException$ICd;->a:Lcom/google/a/a/NumberParseException$ICd;
 
     const-string/jumbo v2, "Country calling code supplied was not recognised."
 
-    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$d;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Lcom/google/a/a/NumberParseException;-><init>(Lcom/google/a/a/NumberParseException$ICd;Ljava/lang/String;)V
 
     throw v0
 
@@ -3306,7 +3306,7 @@
     if-eqz p2, :cond_9
 
     .line 2546
-    invoke-virtual {p2}, Lcom/google/a/a/Phonemetadata$j;->b()I
+    invoke-virtual {p2}, Lcom/google/a/a/Phonemetadata$ICj;->b()I
 
     move-result v0
 
@@ -3341,14 +3341,14 @@
     invoke-direct {v5, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 2552
-    invoke-virtual {p2}, Lcom/google/a/a/Phonemetadata$j;->a()Lcom/google/a/a/Phonemetadata$l;
+    invoke-virtual {p2}, Lcom/google/a/a/Phonemetadata$ICj;->a()Lcom/google/a/a/Phonemetadata$ICl;
 
     move-result-object v3
 
     .line 2553
     iget-object v4, p0, Lcom/google/a/a/PhoneNumberUtil;->G:Lcom/google/a/a/RegexCache;
 
-    invoke-virtual {v3}, Lcom/google/a/a/Phonemetadata$l;->a()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/google/a/a/Phonemetadata$ICl;->a()Ljava/lang/String;
 
     move-result-object v6
 
@@ -3359,12 +3359,12 @@
     .line 2555
     const/4 v6, 0x0
 
-    invoke-virtual {p0, v5, p2, v6}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/StringBuilder;Lcom/google/a/a/Phonemetadata$j;Ljava/lang/StringBuilder;)Z
+    invoke-virtual {p0, v5, p2, v6}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/StringBuilder;Lcom/google/a/a/Phonemetadata$ICj;Ljava/lang/StringBuilder;)Z
 
     .line 2557
     iget-object v6, p0, Lcom/google/a/a/PhoneNumberUtil;->G:Lcom/google/a/a/RegexCache;
 
-    invoke-virtual {v3}, Lcom/google/a/a/Phonemetadata$l;->b()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/google/a/a/Phonemetadata$ICl;->b()Ljava/lang/String;
 
     move-result-object v3
 
@@ -3398,11 +3398,11 @@
 
     move-result-object v2
 
-    invoke-direct {p0, v3, v2}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/util/regex/Pattern;Ljava/lang/String;)Lcom/google/a/a/PhoneNumberUtil$g;
+    invoke-direct {p0, v3, v2}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/util/regex/Pattern;Ljava/lang/String;)Lcom/google/a/a/PhoneNumberUtil$ICg;
 
     move-result-object v2
 
-    sget-object v3, Lcom/google/a/a/PhoneNumberUtil$g;->d:Lcom/google/a/a/PhoneNumberUtil$g;
+    sget-object v3, Lcom/google/a/a/PhoneNumberUtil$ICg;->d:Lcom/google/a/a/PhoneNumberUtil$ICg;
 
     if-ne v2, v3, :cond_9
 
@@ -3414,19 +3414,19 @@
     if-eqz p4, :cond_8
 
     .line 2568
-    sget-object v1, Lcom/google/a/a/Phonenumber$o;->c:Lcom/google/a/a/Phonenumber$o;
+    sget-object v1, Lcom/google/a/a/Phonenumber$ICo;->c:Lcom/google/a/a/Phonenumber$ICo;
 
-    invoke-virtual {p5, v1}, Lcom/google/a/a/Phonenumber$n;->a(Lcom/google/a/a/Phonenumber$o;)Lcom/google/a/a/Phonenumber$n;
+    invoke-virtual {p5, v1}, Lcom/google/a/a/Phonenumber$ICn;->a(Lcom/google/a/a/Phonenumber$ICo;)Lcom/google/a/a/Phonenumber$ICn;
 
     .line 2570
     :cond_8
-    invoke-virtual {p5, v0}, Lcom/google/a/a/Phonenumber$n;->a(I)Lcom/google/a/a/Phonenumber$n;
+    invoke-virtual {p5, v0}, Lcom/google/a/a/Phonenumber$ICn;->a(I)Lcom/google/a/a/Phonenumber$ICn;
 
     goto/16 :goto_0
 
     .line 2576
     :cond_9
-    invoke-virtual {p5, v1}, Lcom/google/a/a/Phonenumber$n;->a(I)Lcom/google/a/a/Phonenumber$n;
+    invoke-virtual {p5, v1}, Lcom/google/a/a/Phonenumber$ICn;->a(I)Lcom/google/a/a/Phonenumber$ICn;
 
     move v0, v1
 
@@ -3526,7 +3526,7 @@
     goto :goto_0
 .end method
 
-.method a(I)Lcom/google/a/a/Phonemetadata$j;
+.method a(I)Lcom/google/a/a/Phonemetadata$ICj;
     .locals 4
 
     .prologue
@@ -3598,7 +3598,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/a/a/Phonemetadata$j;
+    check-cast v0, Lcom/google/a/a/Phonemetadata$ICj;
 
     goto :goto_0
 
@@ -3614,23 +3614,23 @@
     throw v0
 .end method
 
-.method public a(Ljava/lang/String;Ljava/lang/String;)Lcom/google/a/a/Phonenumber$n;
+.method public a(Ljava/lang/String;Ljava/lang/String;)Lcom/google/a/a/Phonenumber$ICn;
     .locals 1
 
     .prologue
     .line 2764
-    new-instance v0, Lcom/google/a/a/Phonenumber$n;
+    new-instance v0, Lcom/google/a/a/Phonenumber$ICn;
 
-    invoke-direct {v0}, Lcom/google/a/a/Phonenumber$n;-><init>()V
+    invoke-direct {v0}, Lcom/google/a/a/Phonenumber$ICn;-><init>()V
 
     .line 2765
-    invoke-virtual {p0, p1, p2, v0}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/String;Ljava/lang/String;Lcom/google/a/a/Phonenumber$n;)V
+    invoke-virtual {p0, p1, p2, v0}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/String;Ljava/lang/String;Lcom/google/a/a/Phonenumber$ICn;)V
 
     .line 2766
     return-object v0
 .end method
 
-.method a(Ljava/lang/StringBuilder;Ljava/lang/String;)Lcom/google/a/a/Phonenumber$o;
+.method a(Ljava/lang/StringBuilder;Ljava/lang/String;)Lcom/google/a/a/Phonenumber$ICo;
     .locals 2
 
     .prologue
@@ -3642,7 +3642,7 @@
     if-nez v0, :cond_0
 
     .line 2620
-    sget-object v0, Lcom/google/a/a/Phonenumber$o;->d:Lcom/google/a/a/Phonenumber$o;
+    sget-object v0, Lcom/google/a/a/Phonenumber$ICo;->d:Lcom/google/a/a/Phonenumber$ICo;
 
     .line 2633
     :goto_0
@@ -3676,7 +3676,7 @@
     invoke-static {p1}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/StringBuilder;)V
 
     .line 2628
-    sget-object v0, Lcom/google/a/a/Phonenumber$o;->a:Lcom/google/a/a/Phonenumber$o;
+    sget-object v0, Lcom/google/a/a/Phonenumber$ICo;->a:Lcom/google/a/a/Phonenumber$ICo;
 
     goto :goto_0
 
@@ -3698,12 +3698,12 @@
 
     if-eqz v0, :cond_2
 
-    sget-object v0, Lcom/google/a/a/Phonenumber$o;->b:Lcom/google/a/a/Phonenumber$o;
+    sget-object v0, Lcom/google/a/a/Phonenumber$ICo;->b:Lcom/google/a/a/Phonenumber$ICo;
 
     goto :goto_0
 
     :cond_2
-    sget-object v0, Lcom/google/a/a/Phonenumber$o;->d:Lcom/google/a/a/Phonenumber$o;
+    sget-object v0, Lcom/google/a/a/Phonenumber$ICo;->d:Lcom/google/a/a/Phonenumber$ICo;
 
     goto :goto_0
 .end method
@@ -3821,12 +3821,12 @@
     invoke-direct {v3, v0}, Ljava/io/ObjectInputStream;-><init>(Ljava/io/InputStream;)V
 
     .line 624
-    invoke-static {v3}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/io/ObjectInputStream;)Lcom/google/a/a/Phonemetadata$k;
+    invoke-static {v3}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/io/ObjectInputStream;)Lcom/google/a/a/Phonemetadata$ICk;
 
     move-result-object v0
 
     .line 625
-    invoke-virtual {v0}, Lcom/google/a/a/Phonemetadata$k;->a()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/google/a/a/Phonemetadata$ICk;->a()Ljava/util/List;
 
     move-result-object v0
 
@@ -3987,7 +3987,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/a/a/Phonemetadata$j;
+    check-cast v0, Lcom/google/a/a/Phonemetadata$ICj;
 
     .line 634
     if-eqz v1, :cond_4
@@ -4016,7 +4016,7 @@
     goto :goto_1
 .end method
 
-.method public a(Ljava/lang/String;Ljava/lang/String;Lcom/google/a/a/Phonenumber$n;)V
+.method public a(Ljava/lang/String;Ljava/lang/String;Lcom/google/a/a/Phonenumber$ICn;)V
     .locals 6
 
     .prologue
@@ -4033,13 +4033,13 @@
 
     move-object v5, p3
 
-    invoke-direct/range {v0 .. v5}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/String;Ljava/lang/String;ZZLcom/google/a/a/Phonenumber$n;)V
+    invoke-direct/range {v0 .. v5}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/String;Ljava/lang/String;ZZLcom/google/a/a/Phonenumber$ICn;)V
 
     .line 2776
     return-void
 .end method
 
-.method a(Ljava/lang/StringBuilder;Lcom/google/a/a/Phonemetadata$j;Ljava/lang/StringBuilder;)Z
+.method a(Ljava/lang/StringBuilder;Lcom/google/a/a/Phonemetadata$ICj;Ljava/lang/StringBuilder;)Z
     .locals 9
 
     .prologue
@@ -4053,7 +4053,7 @@
     move-result v2
 
     .line 2651
-    invoke-virtual {p2}, Lcom/google/a/a/Phonemetadata$j;->d()Ljava/lang/String;
+    invoke-virtual {p2}, Lcom/google/a/a/Phonemetadata$ICj;->d()Ljava/lang/String;
 
     move-result-object v3
 
@@ -4093,11 +4093,11 @@
     .line 2659
     iget-object v4, p0, Lcom/google/a/a/PhoneNumberUtil;->G:Lcom/google/a/a/RegexCache;
 
-    invoke-virtual {p2}, Lcom/google/a/a/Phonemetadata$j;->a()Lcom/google/a/a/Phonemetadata$l;
+    invoke-virtual {p2}, Lcom/google/a/a/Phonemetadata$ICj;->a()Lcom/google/a/a/Phonemetadata$ICl;
 
     move-result-object v5
 
-    invoke-virtual {v5}, Lcom/google/a/a/Phonemetadata$l;->a()Ljava/lang/String;
+    invoke-virtual {v5}, Lcom/google/a/a/Phonemetadata$ICl;->a()Ljava/lang/String;
 
     move-result-object v5
 
@@ -4120,7 +4120,7 @@
     move-result v6
 
     .line 2667
-    invoke-virtual {p2}, Lcom/google/a/a/Phonemetadata$j;->e()Ljava/lang/String;
+    invoke-virtual {p2}, Lcom/google/a/a/Phonemetadata$ICj;->e()Ljava/lang/String;
 
     move-result-object v7
 
@@ -4375,7 +4375,7 @@
     goto :goto_1
 .end method
 
-.method e(Ljava/lang/String;)Lcom/google/a/a/Phonemetadata$j;
+.method e(Ljava/lang/String;)Lcom/google/a/a/Phonemetadata$ICj;
     .locals 4
 
     .prologue
@@ -4431,7 +4431,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/a/a/Phonemetadata$j;
+    check-cast v0, Lcom/google/a/a/Phonemetadata$ICj;
 
     goto :goto_0
 

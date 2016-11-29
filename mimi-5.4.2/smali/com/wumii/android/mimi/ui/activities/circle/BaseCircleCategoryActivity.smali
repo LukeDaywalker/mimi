@@ -107,9 +107,9 @@
     .line 68
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity$g;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity$ICg;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity$g;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity$ICg;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
@@ -217,9 +217,9 @@
     .line 88
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;->D:Landroid/widget/TextView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity$h;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity$ICh;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity$h;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity$ICh;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/BaseCircleCategoryActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

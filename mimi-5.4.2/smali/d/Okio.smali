@@ -116,9 +116,9 @@
 
     .line 71
     :cond_1
-    new-instance v0, Ld/Okio$r;
+    new-instance v0, Ld/Okio$ICr;
 
-    invoke-direct {v0, p1, p0}, Ld/Okio$r;-><init>(Ld/Timeout;Ljava/io/OutputStream;)V
+    invoke-direct {v0, p1, p0}, Ld/Okio$ICr;-><init>(Ld/Timeout;Ljava/io/OutputStream;)V
 
     return-object v0
 .end method
@@ -206,9 +206,9 @@
 
     .line 130
     :cond_1
-    new-instance v0, Ld/Okio$s;
+    new-instance v0, Ld/Okio$ICs;
 
-    invoke-direct {v0, p1, p0}, Ld/Okio$s;-><init>(Ld/Timeout;Ljava/io/InputStream;)V
+    invoke-direct {v0, p1, p0}, Ld/Okio$ICs;-><init>(Ld/Timeout;Ljava/io/InputStream;)V
 
     return-object v0
 .end method
@@ -266,9 +266,9 @@
 
     .prologue
     .line 203
-    new-instance v0, Ld/Okio$t;
+    new-instance v0, Ld/Okio$ICt;
 
-    invoke-direct {v0, p0}, Ld/Okio$t;-><init>(Ljava/net/Socket;)V
+    invoke-direct {v0, p0}, Ld/Okio$ICt;-><init>(Ljava/net/Socket;)V
 
     return-object v0
 .end method

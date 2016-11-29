@@ -22,7 +22,7 @@
     .end annotation
 .end field
 
-.field private final e:Lcom/b/a/c/e/JsonRpcPeer$e;
+.field private final e:Lcom/b/a/c/e/JsonRpcPeer$ICe;
 
 
 # direct methods
@@ -41,13 +41,13 @@
     iput-object v0, p0, Lcom/b/a/c/e/JsonRpcPeer;->d:Ljava/util/Map;
 
     .line 34
-    new-instance v0, Lcom/b/a/c/e/JsonRpcPeer$e;
+    new-instance v0, Lcom/b/a/c/e/JsonRpcPeer$ICe;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/b/a/c/e/JsonRpcPeer$e;-><init>(Lcom/b/a/c/e/JsonRpcPeer$d;)V
+    invoke-direct {v0, v1}, Lcom/b/a/c/e/JsonRpcPeer$ICe;-><init>(Lcom/b/a/c/e/JsonRpcPeer$ICd;)V
 
-    iput-object v0, p0, Lcom/b/a/c/e/JsonRpcPeer;->e:Lcom/b/a/c/e/JsonRpcPeer$e;
+    iput-object v0, p0, Lcom/b/a/c/e/JsonRpcPeer;->e:Lcom/b/a/c/e/JsonRpcPeer$ICe;
 
     .line 37
     iput-object p1, p0, Lcom/b/a/c/e/JsonRpcPeer;->b:Lcom/b/a/d/ObjectMapper;
@@ -231,9 +231,9 @@
 
     .prologue
     .line 71
-    iget-object v0, p0, Lcom/b/a/c/e/JsonRpcPeer;->e:Lcom/b/a/c/e/JsonRpcPeer$e;
+    iget-object v0, p0, Lcom/b/a/c/e/JsonRpcPeer;->e:Lcom/b/a/c/e/JsonRpcPeer$ICe;
 
-    invoke-virtual {v0}, Lcom/b/a/c/e/JsonRpcPeer$e;->a()V
+    invoke-virtual {v0}, Lcom/b/a/c/e/JsonRpcPeer$ICe;->a()V
 
     .line 72
     return-void

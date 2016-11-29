@@ -17,7 +17,7 @@
 
 .field private c:Lcom/wumii/android/mimi/models/a/SysNotificationDao;
 
-.field private d:Lcom/wumii/android/mimi/models/h/SysNotificationStorage$n;
+.field private d:Lcom/wumii/android/mimi/models/h/SysNotificationStorage$ICn;
 
 
 # direct methods
@@ -45,11 +45,11 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/models/h/SysNotificationStorage;->b:Ljava/util/List;
 
     .line 24
-    new-instance v0, Lcom/wumii/android/mimi/models/h/SysNotificationStorage$n;
+    new-instance v0, Lcom/wumii/android/mimi/models/h/SysNotificationStorage$ICn;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/h/SysNotificationStorage$n;-><init>(Lcom/wumii/android/mimi/models/h/SysNotificationStorage;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/h/SysNotificationStorage$ICn;-><init>(Lcom/wumii/android/mimi/models/h/SysNotificationStorage;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/h/SysNotificationStorage;->d:Lcom/wumii/android/mimi/models/h/SysNotificationStorage$n;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/h/SysNotificationStorage;->d:Lcom/wumii/android/mimi/models/h/SysNotificationStorage$ICn;
 
     .line 25
     return-void
@@ -62,16 +62,16 @@
     .line 32
     iget-object v0, p0, Lcom/wumii/android/mimi/models/h/SysNotificationStorage;->b:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/models/h/SysNotificationStorage;->d:Lcom/wumii/android/mimi/models/h/SysNotificationStorage$n;
+    iget-object v1, p0, Lcom/wumii/android/mimi/models/h/SysNotificationStorage;->d:Lcom/wumii/android/mimi/models/h/SysNotificationStorage$ICn;
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     .line 33
-    sget-object v0, Lcom/wumii/android/mimi/models/h/BaseStorage$c;->c:Lcom/wumii/android/mimi/models/h/BaseStorage$c;
+    sget-object v0, Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;->c:Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/h/SysNotificationStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$c;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/h/SysNotificationStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;Ljava/lang/String;)V
 
     .line 34
     return-void

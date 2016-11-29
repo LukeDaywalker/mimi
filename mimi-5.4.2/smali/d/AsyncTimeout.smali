@@ -51,11 +51,11 @@
     sput-object v0, Ld/AsyncTimeout;->a:Ld/AsyncTimeout;
 
     .line 77
-    new-instance v0, Ld/AsyncTimeout$d;
+    new-instance v0, Ld/AsyncTimeout$ICd;
 
-    invoke-direct {v0}, Ld/AsyncTimeout$d;-><init>()V
+    invoke-direct {v0}, Ld/AsyncTimeout$ICd;-><init>()V
 
-    invoke-virtual {v0}, Ld/AsyncTimeout$d;->start()V
+    invoke-virtual {v0}, Ld/AsyncTimeout$ICd;->start()V
 
     .line 80
     :cond_0
@@ -391,9 +391,9 @@
 
     .prologue
     .line 150
-    new-instance v0, Ld/AsyncTimeout$b;
+    new-instance v0, Ld/AsyncTimeout$ICb;
 
-    invoke-direct {v0, p0, p1}, Ld/AsyncTimeout$b;-><init>(Ld/AsyncTimeout;Ld/Sink;)V
+    invoke-direct {v0, p0, p1}, Ld/AsyncTimeout$ICb;-><init>(Ld/AsyncTimeout;Ld/Sink;)V
 
     return-object v0
 .end method
@@ -403,9 +403,9 @@
 
     .prologue
     .line 206
-    new-instance v0, Ld/AsyncTimeout$c;
+    new-instance v0, Ld/AsyncTimeout$ICc;
 
-    invoke-direct {v0, p0, p1}, Ld/AsyncTimeout$c;-><init>(Ld/AsyncTimeout;Ld/Source;)V
+    invoke-direct {v0, p0, p1}, Ld/AsyncTimeout$ICc;-><init>(Ld/AsyncTimeout;Ld/Source;)V
 
     return-object v0
 .end method

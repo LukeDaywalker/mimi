@@ -50,9 +50,9 @@
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
     .line 54
-    new-instance v0, Lcom/wumii/android/mimi/services/AppDownloadService$a;
+    new-instance v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/services/AppDownloadService$a;-><init>(Lcom/wumii/android/mimi/services/AppDownloadService;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;-><init>(Lcom/wumii/android/mimi/services/AppDownloadService;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->i:Landroid/os/Handler;
 
@@ -94,11 +94,11 @@
 
     .prologue
     .line 142
-    new-instance v0, Lcom/wumii/android/mimi/services/AppDownloadService$b;
+    new-instance v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/wumii/android/mimi/services/AppDownloadService$b;-><init>(Lcom/wumii/android/mimi/services/AppDownloadService;Ljava/lang/String;Ljava/io/File;)V
+    invoke-direct {v0, p0, p1, p2}, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;-><init>(Lcom/wumii/android/mimi/services/AppDownloadService;Ljava/lang/String;Ljava/io/File;)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/services/AppDownloadService$b;->start()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->start()V
 
     .line 201
     return-void

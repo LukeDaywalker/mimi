@@ -134,9 +134,9 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->n:Luk/co/senab/photoview/PhotoView;
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ad;
+    new-instance v3, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICad;
 
-    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ad;-><init>(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)V
+    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICad;-><init>(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)V
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/f/ImageLoadingListener;)V
 
@@ -241,9 +241,9 @@
     .line 81
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->n:Luk/co/senab/photoview/PhotoView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ac;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICac;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ac;-><init>(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICac;-><init>(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)V
 
     invoke-virtual {v0, v1}, Luk/co/senab/photoview/PhotoView;->setOnPhotoTapListener(Luk/co/senab/photoview/PhotoViewAttacher$OnPhotoTapListener;)V
 
@@ -294,13 +294,13 @@
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->p:Lcom/e/a/b/DisplayImageOptions;
 
-    new-instance v4, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ae;
+    new-instance v4, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;
 
-    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ae;-><init>(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)V
+    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;-><init>(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)V
 
-    new-instance v5, Lcom/wumii/android/mimi/ui/activities/ImageActivity$af;
+    new-instance v5, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICaf;
 
-    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity$af;-><init>(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)V
+    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICaf;-><init>(Lcom/wumii/android/mimi/ui/activities/ImageActivity;)V
 
     invoke-virtual/range {v0 .. v5}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Lcom/e/a/b/a/ImageSize;Lcom/e/a/b/DisplayImageOptions;Lcom/e/a/b/f/ImageLoadingListener;Lcom/e/a/b/f/ImageLoadingProgressListener;)V
 
@@ -383,19 +383,19 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity;->C:Ljava/lang/String;
 
     .line 62
-    new-instance v0, Lcom/e/a/b/DisplayImageOptions$f;
+    new-instance v0, Lcom/e/a/b/DisplayImageOptions$ICf;
 
-    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$f;-><init>()V
+    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;-><init>()V
 
-    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$f;->c(Z)Lcom/e/a/b/DisplayImageOptions$f;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$f;->b(Z)Lcom/e/a/b/DisplayImageOptions$f;
+    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$ICf;->c(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$f;->a()Lcom/e/a/b/DisplayImageOptions;
+    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$ICf;->b(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;->a()Lcom/e/a/b/DisplayImageOptions;
 
     move-result-object v0
 

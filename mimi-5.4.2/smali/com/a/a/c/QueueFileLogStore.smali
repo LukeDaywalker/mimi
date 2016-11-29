@@ -147,11 +147,11 @@
     :try_start_0
     iget-object v0, p0, Lcom/a/a/c/QueueFileLogStore;->c:Lc/a/a/a/a/b/QueueFile;
 
-    new-instance v3, Lcom/a/a/c/QueueFileLogStore$bt;
+    new-instance v3, Lcom/a/a/c/QueueFileLogStore$ICbt;
 
-    invoke-direct {v3, p0, v2, v1}, Lcom/a/a/c/QueueFileLogStore$bt;-><init>(Lcom/a/a/c/QueueFileLogStore;[B[I)V
+    invoke-direct {v3, p0, v2, v1}, Lcom/a/a/c/QueueFileLogStore$ICbt;-><init>(Lcom/a/a/c/QueueFileLogStore;[B[I)V
 
-    invoke-virtual {v0, v3}, Lc/a/a/a/a/b/QueueFile;->a(Lc/a/a/a/a/b/QueueFile$ah;)V
+    invoke-virtual {v0, v3}, Lc/a/a/a/a/b/QueueFile;->a(Lc/a/a/a/a/b/QueueFile$ICah;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 

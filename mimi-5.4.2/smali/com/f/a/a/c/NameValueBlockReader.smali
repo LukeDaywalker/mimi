@@ -20,14 +20,14 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 54
-    new-instance v0, Lcom/f/a/a/c/NameValueBlockReader$t;
+    new-instance v0, Lcom/f/a/a/c/NameValueBlockReader$ICt;
 
-    invoke-direct {v0, p0, p1}, Lcom/f/a/a/c/NameValueBlockReader$t;-><init>(Lcom/f/a/a/c/NameValueBlockReader;Ld/Source;)V
+    invoke-direct {v0, p0, p1}, Lcom/f/a/a/c/NameValueBlockReader$ICt;-><init>(Lcom/f/a/a/c/NameValueBlockReader;Ld/Source;)V
 
     .line 65
-    new-instance v1, Lcom/f/a/a/c/NameValueBlockReader$u;
+    new-instance v1, Lcom/f/a/a/c/NameValueBlockReader$ICu;
 
-    invoke-direct {v1, p0}, Lcom/f/a/a/c/NameValueBlockReader$u;-><init>(Lcom/f/a/a/c/NameValueBlockReader;)V
+    invoke-direct {v1, p0}, Lcom/f/a/a/c/NameValueBlockReader$ICu;-><init>(Lcom/f/a/a/c/NameValueBlockReader;)V
 
     .line 77
     new-instance v2, Ld/InflaterSource;

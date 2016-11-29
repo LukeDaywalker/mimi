@@ -77,9 +77,9 @@
 
     .prologue
     .line 25
-    new-instance v0, Lcom/a/a/a/SessionEventsHandler$v;
+    new-instance v0, Lcom/a/a/a/SessionEventsHandler$ICv;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/a/a/a/SessionEventsHandler$v;-><init>(Lcom/a/a/a/SessionEventsHandler;Lc/a/a/a/a/g/AnalyticsSettingsData;Ljava/lang/String;)V
+    invoke-direct {v0, p0, p1, p2}, Lcom/a/a/a/SessionEventsHandler$ICv;-><init>(Lcom/a/a/a/SessionEventsHandler;Lc/a/a/a/a/g/AnalyticsSettingsData;Ljava/lang/String;)V
 
     invoke-super {p0, v0}, Lc/a/a/a/a/d/EventsHandler;->b(Ljava/lang/Runnable;)V
 

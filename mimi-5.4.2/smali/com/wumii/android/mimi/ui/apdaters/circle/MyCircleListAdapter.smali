@@ -108,9 +108,9 @@
     move-result-object p3
 
     .line 86
-    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;
+    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;
 
-    invoke-direct {v1}, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;-><init>()V
+    invoke-direct {v1}, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;-><init>()V
 
     .line 87
     const v0, 0x7f0b01f3
@@ -121,7 +121,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v1, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->a:Landroid/widget/TextView;
+    iput-object v0, v1, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->a:Landroid/widget/TextView;
 
     .line 88
     const v0, 0x7f0b0236
@@ -132,10 +132,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v1, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iput-object v0, v1, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     .line 89
-    iget-object v0, v1, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v0, v1, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter;->d:Landroid/view/View$OnClickListener;
 
@@ -153,7 +153,7 @@
     move-result-object v1
 
     .line 95
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     invoke-virtual {v0, v5}, Landroid/widget/TextView;->setEnabled(Z)V
 
@@ -161,7 +161,7 @@
     if-nez p1, :cond_6
 
     .line 97
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     const/high16 v4, 0x41800000    # 16.0f
 
@@ -173,7 +173,7 @@
     if-eqz v0, :cond_4
 
     .line 99
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->a:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->a:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getName()Ljava/lang/String;
 
@@ -182,7 +182,7 @@
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 100
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
@@ -196,7 +196,7 @@
     move-result v4
 
     .line 102
-    iget-object v5, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v5, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     if-eqz v4, :cond_2
 
@@ -206,7 +206,7 @@
     invoke-virtual {v5, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 103
-    iget-object v5, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v5, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     if-eqz v4, :cond_3
 
@@ -216,18 +216,18 @@
     invoke-virtual {v5, v0}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
     .line 104
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 115
     :goto_3
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     invoke-virtual {v0, v7, v1}, Landroid/widget/TextView;->setTag(ILjava/lang/Object;)V
 
     .line 116
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
@@ -244,7 +244,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;
 
     move-object v2, v0
 
@@ -269,7 +269,7 @@
     if-eqz v0, :cond_5
 
     .line 106
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->a:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->a:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getName()Ljava/lang/String;
 
@@ -278,24 +278,24 @@
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 107
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
     .line 108
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 109
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     const-string/jumbo v4, "\u9000\u51fa"
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 110
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
@@ -303,7 +303,7 @@
 
     .line 112
     :cond_5
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->a:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->a:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getName()Ljava/lang/String;
 
@@ -312,7 +312,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 113
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     const/16 v3, 0x8
 
@@ -325,14 +325,14 @@
     if-ne p1, v5, :cond_0
 
     .line 118
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     const/high16 v4, 0x41400000    # 12.0f
 
     invoke-virtual {v0, v5, v4}, Landroid/widget/TextView;->setTextSize(IF)V
 
     .line 119
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->a:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->a:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Lcom/wumii/android/mimi/models/entities/circle/Circle;->getName()Ljava/lang/String;
 
@@ -341,31 +341,31 @@
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 120
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
     .line 121
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     const-string/jumbo v4, "\u53d6\u6d88\u5173\u6ce8"
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 122
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
     .line 124
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     const/4 v3, 0x0
 
     invoke-virtual {v0, v7, v3}, Landroid/widget/TextView;->setTag(ILjava/lang/Object;)V
 
     .line 125
-    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$o;->b:Landroid/widget/TextView;
+    iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
     invoke-virtual {v0, v8, v1}, Landroid/widget/TextView;->setTag(ILjava/lang/Object;)V
 
@@ -548,9 +548,9 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
     .line 150
-    new-instance v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$m;
+    new-instance v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICm;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$m;-><init>(Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICm;-><init>(Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter;)V
 
     invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -635,9 +635,9 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
     .line 169
-    new-instance v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$n;
+    new-instance v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICn;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$n;-><init>(Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICn;-><init>(Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter;)V
 
     invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

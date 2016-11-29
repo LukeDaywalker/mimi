@@ -233,13 +233,13 @@
 
     .prologue
     .line 85
-    sget-object v0, Lcom/e/a/b/d/BaseImageDownloader$b;->a:[I
+    sget-object v0, Lcom/e/a/b/d/BaseImageDownloader$ICb;->a:[I
 
-    invoke-static {p1}, Lcom/e/a/b/d/ImageDownloader$d;->a(Ljava/lang/String;)Lcom/e/a/b/d/ImageDownloader$d;
+    invoke-static {p1}, Lcom/e/a/b/d/ImageDownloader$ICd;->a(Ljava/lang/String;)Lcom/e/a/b/d/ImageDownloader$ICd;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/e/a/b/d/ImageDownloader$d;->ordinal()I
+    invoke-virtual {v1}, Lcom/e/a/b/d/ImageDownloader$ICd;->ordinal()I
 
     move-result v1
 
@@ -499,9 +499,9 @@
 
     .prologue
     .line 176
-    sget-object v0, Lcom/e/a/b/d/ImageDownloader$d;->c:Lcom/e/a/b/d/ImageDownloader$d;
+    sget-object v0, Lcom/e/a/b/d/ImageDownloader$ICd;->c:Lcom/e/a/b/d/ImageDownloader$ICd;
 
-    invoke-virtual {v0, p1}, Lcom/e/a/b/d/ImageDownloader$d;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lcom/e/a/b/d/ImageDownloader$ICd;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -655,9 +655,9 @@
 
     .prologue
     .line 248
-    sget-object v0, Lcom/e/a/b/d/ImageDownloader$d;->e:Lcom/e/a/b/d/ImageDownloader$d;
+    sget-object v0, Lcom/e/a/b/d/ImageDownloader$ICd;->e:Lcom/e/a/b/d/ImageDownloader$ICd;
 
-    invoke-virtual {v0, p1}, Lcom/e/a/b/d/ImageDownloader$d;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lcom/e/a/b/d/ImageDownloader$ICd;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -680,9 +680,9 @@
 
     .prologue
     .line 261
-    sget-object v0, Lcom/e/a/b/d/ImageDownloader$d;->f:Lcom/e/a/b/d/ImageDownloader$d;
+    sget-object v0, Lcom/e/a/b/d/ImageDownloader$ICd;->f:Lcom/e/a/b/d/ImageDownloader$ICd;
 
-    invoke-virtual {v0, p1}, Lcom/e/a/b/d/ImageDownloader$d;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lcom/e/a/b/d/ImageDownloader$ICd;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

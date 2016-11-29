@@ -65,13 +65,13 @@
 
     .line 61
     :cond_0
-    new-instance v0, Lcom/e/a/b/c/RoundedBitmapDisplayer$d;
+    new-instance v0, Lcom/e/a/b/c/RoundedBitmapDisplayer$ICd;
 
     iget v1, p0, Lcom/e/a/b/c/RoundedBitmapDisplayer;->a:I
 
     iget v2, p0, Lcom/e/a/b/c/RoundedBitmapDisplayer;->b:I
 
-    invoke-direct {v0, p1, v1, v2}, Lcom/e/a/b/c/RoundedBitmapDisplayer$d;-><init>(Landroid/graphics/Bitmap;II)V
+    invoke-direct {v0, p1, v1, v2}, Lcom/e/a/b/c/RoundedBitmapDisplayer$ICd;-><init>(Landroid/graphics/Bitmap;II)V
 
     invoke-interface {p2, v0}, Lcom/e/a/b/e/ImageAware;->a(Landroid/graphics/drawable/Drawable;)Z
 

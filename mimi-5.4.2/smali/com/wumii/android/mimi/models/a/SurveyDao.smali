@@ -24,9 +24,9 @@
 
     .prologue
     .line 30
-    new-instance v0, Lcom/wumii/android/mimi/models/a/SurveyDao$g;
+    new-instance v0, Lcom/wumii/android/mimi/models/a/SurveyDao$ICg;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/models/a/SurveyDao$g;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/models/a/SurveyDao$ICg;-><init>()V
 
     sput-object v0, Lcom/wumii/android/mimi/models/a/SurveyDao;->a:Lcom/fasterxml/jackson/core/type/TypeReference;
 

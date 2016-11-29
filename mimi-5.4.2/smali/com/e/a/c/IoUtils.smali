@@ -80,7 +80,7 @@
     throw v0
 .end method
 
-.method private static a(Lcom/e/a/c/IoUtils$e;II)Z
+.method private static a(Lcom/e/a/c/IoUtils$ICe;II)Z
     .locals 2
 
     .prologue
@@ -88,7 +88,7 @@
     if-eqz p0, :cond_0
 
     .line 88
-    invoke-interface {p0, p1, p2}, Lcom/e/a/c/IoUtils$e;->a(II)Z
+    invoke-interface {p0, p1, p2}, Lcom/e/a/c/IoUtils$ICe;->a(II)Z
 
     move-result v0
 
@@ -117,7 +117,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Ljava/io/InputStream;Ljava/io/OutputStream;Lcom/e/a/c/IoUtils$e;I)Z
+.method public static a(Ljava/io/InputStream;Ljava/io/OutputStream;Lcom/e/a/c/IoUtils$ICe;I)Z
     .locals 6
 
     .prologue
@@ -140,7 +140,7 @@
     new-array v3, p3, [B
 
     .line 76
-    invoke-static {p2, v2, v0}, Lcom/e/a/c/IoUtils;->a(Lcom/e/a/c/IoUtils$e;II)Z
+    invoke-static {p2, v2, v0}, Lcom/e/a/c/IoUtils;->a(Lcom/e/a/c/IoUtils$ICe;II)Z
 
     move-result v1
 
@@ -170,7 +170,7 @@
     add-int/2addr v1, v4
 
     .line 80
-    invoke-static {p2, v1, v0}, Lcom/e/a/c/IoUtils;->a(Lcom/e/a/c/IoUtils$e;II)Z
+    invoke-static {p2, v1, v0}, Lcom/e/a/c/IoUtils;->a(Lcom/e/a/c/IoUtils$ICe;II)Z
 
     move-result v4
 

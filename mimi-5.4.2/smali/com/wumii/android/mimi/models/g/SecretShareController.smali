@@ -98,11 +98,11 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/models/g/SecretShareController$am;
+    new-instance v1, Lcom/wumii/android/mimi/models/g/SecretShareController$ICam;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/g/SecretShareController$am;-><init>(Lcom/wumii/android/mimi/models/g/SecretShareController;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/g/SecretShareController$ICam;-><init>(Lcom/wumii/android/mimi/models/g/SecretShareController;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/g/SecretShareController;->a(Ljava/lang/String;Lcom/wumii/android/mimi/b/BaseShareImageTask$l;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/g/SecretShareController;->a(Ljava/lang/String;Lcom/wumii/android/mimi/b/BaseShareImageTask$ICl;)V
 
     .line 56
     return-void
@@ -126,11 +126,11 @@
     .line 36
     iget-object v1, p0, Lcom/wumii/android/mimi/models/g/SecretShareController;->a:Landroid/app/Activity;
 
-    new-instance v2, Lcom/wumii/android/mimi/models/g/SecretShareController$ak;
+    new-instance v2, Lcom/wumii/android/mimi/models/g/SecretShareController$ICak;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/g/SecretShareController$ak;-><init>(Lcom/wumii/android/mimi/models/g/SecretShareController;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/g/SecretShareController$ICak;-><init>(Lcom/wumii/android/mimi/models/g/SecretShareController;)V
 
-    invoke-static {v1, v0, v2}, Lcom/wumii/android/mimi/c/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/c/ShareUtils$an;)V
+    invoke-static {v1, v0, v2}, Lcom/wumii/android/mimi/c/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/c/ShareUtils$ICan;)V
 
     .line 47
     return-void
@@ -148,7 +148,7 @@
     invoke-direct {v0, v1}, Lcom/wumii/android/mimi/models/g/ShareInsideController;-><init>(Landroid/app/Activity;)V
 
     .line 61
-    new-instance v1, Lcom/wumii/android/mimi/models/g/ShareInsideController$at;
+    new-instance v1, Lcom/wumii/android/mimi/models/g/ShareInsideController$ICat;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/models/g/SecretShareController;->d:Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
@@ -168,9 +168,9 @@
 
     move-result-object v4
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/wumii/android/mimi/models/g/ShareInsideController$at;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/wumii/android/mimi/models/g/ShareInsideController$ICat;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/g/ShareInsideController;->a(Lcom/wumii/android/mimi/models/g/ShareInsideController$as;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/g/ShareInsideController;->a(Lcom/wumii/android/mimi/models/g/ShareInsideController$ICas;)V
 
     .line 62
     return-void
@@ -187,11 +187,11 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/models/g/SecretShareController$an;
+    new-instance v2, Lcom/wumii/android/mimi/models/g/SecretShareController$ICan;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/g/SecretShareController$an;-><init>(Lcom/wumii/android/mimi/models/g/SecretShareController;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/g/SecretShareController$ICan;-><init>(Lcom/wumii/android/mimi/models/g/SecretShareController;)V
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/c/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/c/ShareUtils$an;)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/c/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/c/ShareUtils$ICan;)V
 
     .line 77
     return-void

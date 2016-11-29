@@ -303,9 +303,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$an;->ac:Lcom/google/analytics/tracking/android/GAUsage$an;
+    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$ICan;->ac:Lcom/google/analytics/tracking/android/GAUsage$ICan;
 
-    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$an;)V
+    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
 
     .line 136
     iput-boolean p1, p0, Lcom/google/analytics/tracking/android/GoogleAnalytics;->a:Z
@@ -323,9 +323,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$an;->ad:Lcom/google/analytics/tracking/android/GAUsage$an;
+    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$ICan;->ad:Lcom/google/analytics/tracking/android/GAUsage$ICan;
 
-    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$an;)V
+    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
 
     .line 144
     iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GoogleAnalytics;->a:Z
@@ -342,9 +342,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$an;->R:Lcom/google/analytics/tracking/android/GAUsage$an;
+    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$ICan;->R:Lcom/google/analytics/tracking/android/GAUsage$ICan;
 
-    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$an;)V
+    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
 
     .line 275
     iget-object v0, p0, Lcom/google/analytics/tracking/android/GoogleAnalytics;->d:Ljava/lang/Boolean;

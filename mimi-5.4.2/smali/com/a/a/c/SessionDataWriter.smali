@@ -210,7 +210,7 @@
             "IJJZ",
             "Ljava/util/Map",
             "<",
-            "Lc/a/a/a/a/b/IdManager$aa;",
+            "Lc/a/a/a/a/b/IdManager$ICaa;",
             "Ljava/lang/String;",
             ">;I",
             "Lcom/a/a/c/ByteString;",
@@ -319,7 +319,7 @@
 
     move-result-object v2
 
-    check-cast v2, Lc/a/a/a/a/b/IdManager$aa;
+    check-cast v2, Lc/a/a/a/a/b/IdManager$ICaa;
 
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -327,7 +327,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    invoke-direct {p0, v2, v1}, Lcom/a/a/c/SessionDataWriter;->a(Lc/a/a/a/a/b/IdManager$aa;Ljava/lang/String;)I
+    invoke-direct {p0, v2, v1}, Lcom/a/a/c/SessionDataWriter;->a(Lc/a/a/a/a/b/IdManager$ICaa;Ljava/lang/String;)I
 
     move-result v1
 
@@ -422,14 +422,14 @@
     goto :goto_3
 .end method
 
-.method private a(Lc/a/a/a/a/b/IdManager$aa;Ljava/lang/String;)I
+.method private a(Lc/a/a/a/a/b/IdManager$ICaa;Ljava/lang/String;)I
     .locals 3
 
     .prologue
     .line 417
     const/4 v0, 0x1
 
-    iget v1, p1, Lc/a/a/a/a/b/IdManager$aa;->h:I
+    iget v1, p1, Lc/a/a/a/a/b/IdManager$ICaa;->h:I
 
     invoke-static {v0, v1}, Lcom/a/a/c/CodedOutputStream;->e(II)I
 
@@ -2614,7 +2614,7 @@
             "IJJZ",
             "Ljava/util/Map",
             "<",
-            "Lc/a/a/a/a/b/IdManager$aa;",
+            "Lc/a/a/a/a/b/IdManager$ICaa;",
             "Ljava/lang/String;",
             ">;I",
             "Ljava/lang/String;",
@@ -2785,7 +2785,7 @@
 
     move-result-object v5
 
-    check-cast v5, Lc/a/a/a/a/b/IdManager$aa;
+    check-cast v5, Lc/a/a/a/a/b/IdManager$ICaa;
 
     invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -2795,7 +2795,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v5, v6}, Lcom/a/a/c/SessionDataWriter;->a(Lc/a/a/a/a/b/IdManager$aa;Ljava/lang/String;)I
+    invoke-direct {v0, v5, v6}, Lcom/a/a/c/SessionDataWriter;->a(Lc/a/a/a/a/b/IdManager$ICaa;Ljava/lang/String;)I
 
     move-result v5
 
@@ -2810,9 +2810,9 @@
 
     move-result-object v5
 
-    check-cast v5, Lc/a/a/a/a/b/IdManager$aa;
+    check-cast v5, Lc/a/a/a/a/b/IdManager$ICaa;
 
-    iget v5, v5, Lc/a/a/a/a/b/IdManager$aa;->h:I
+    iget v5, v5, Lc/a/a/a/a/b/IdManager$ICaa;->h:I
 
     move-object/from16 v0, p1
 

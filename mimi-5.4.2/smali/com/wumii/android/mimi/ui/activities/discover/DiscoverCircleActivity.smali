@@ -113,7 +113,7 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/DiscoverCircleActivity;->p:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->setTabAdapter(Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$w;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;->setTabAdapter(Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator$ICw;)V
 
     .line 40
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/DiscoverCircleActivity;->n:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;

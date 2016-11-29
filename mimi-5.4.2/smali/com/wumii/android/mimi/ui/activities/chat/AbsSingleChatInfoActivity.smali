@@ -126,7 +126,7 @@
 
     .prologue
     .line 74
-    sget-object v0, Lcom/wumii/android/mimi/b/ChatInfoEditTask$t;->d:Lcom/wumii/android/mimi/b/ChatInfoEditTask$t;
+    sget-object v0, Lcom/wumii/android/mimi/b/ChatInfoEditTask$ICt;->d:Lcom/wumii/android/mimi/b/ChatInfoEditTask$ICt;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
@@ -142,7 +142,7 @@
 
     const/4 v3, 0x1
 
-    invoke-static {p0, v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/b/ChatInfoEditTask$t;Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-static {p0, v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/b/ChatInfoEditTask$ICt;Ljava/lang/String;Ljava/lang/String;Z)V
 
     .line 75
     return-void
@@ -270,9 +270,9 @@
     if-nez v0, :cond_0
 
     .line 98
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$a;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$a;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;Landroid/app/Activity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->q:Lcom/wumii/android/mimi/b/BlockTask;
 

@@ -41,27 +41,27 @@
 
     .prologue
     .line 20
-    new-instance v0, Lcom/f/a/CacheControl$f;
+    new-instance v0, Lcom/f/a/CacheControl$ICf;
 
-    invoke-direct {v0}, Lcom/f/a/CacheControl$f;-><init>()V
+    invoke-direct {v0}, Lcom/f/a/CacheControl$ICf;-><init>()V
 
-    invoke-virtual {v0}, Lcom/f/a/CacheControl$f;->a()Lcom/f/a/CacheControl$f;
+    invoke-virtual {v0}, Lcom/f/a/CacheControl$ICf;->a()Lcom/f/a/CacheControl$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/f/a/CacheControl$f;->c()Lcom/f/a/CacheControl;
+    invoke-virtual {v0}, Lcom/f/a/CacheControl$ICf;->c()Lcom/f/a/CacheControl;
 
     move-result-object v0
 
     sput-object v0, Lcom/f/a/CacheControl;->a:Lcom/f/a/CacheControl;
 
     .line 28
-    new-instance v0, Lcom/f/a/CacheControl$f;
+    new-instance v0, Lcom/f/a/CacheControl$ICf;
 
-    invoke-direct {v0}, Lcom/f/a/CacheControl$f;-><init>()V
+    invoke-direct {v0}, Lcom/f/a/CacheControl$ICf;-><init>()V
 
     .line 29
-    invoke-virtual {v0}, Lcom/f/a/CacheControl$f;->b()Lcom/f/a/CacheControl$f;
+    invoke-virtual {v0}, Lcom/f/a/CacheControl$ICf;->b()Lcom/f/a/CacheControl$ICf;
 
     move-result-object v0
 
@@ -70,12 +70,12 @@
     sget-object v2, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     .line 30
-    invoke-virtual {v0, v1, v2}, Lcom/f/a/CacheControl$f;->a(ILjava/util/concurrent/TimeUnit;)Lcom/f/a/CacheControl$f;
+    invoke-virtual {v0, v1, v2}, Lcom/f/a/CacheControl$ICf;->a(ILjava/util/concurrent/TimeUnit;)Lcom/f/a/CacheControl$ICf;
 
     move-result-object v0
 
     .line 31
-    invoke-virtual {v0}, Lcom/f/a/CacheControl$f;->c()Lcom/f/a/CacheControl;
+    invoke-virtual {v0}, Lcom/f/a/CacheControl$ICf;->c()Lcom/f/a/CacheControl;
 
     move-result-object v0
 
@@ -85,7 +85,7 @@
     return-void
 .end method
 
-.method private constructor <init>(Lcom/f/a/CacheControl$f;)V
+.method private constructor <init>(Lcom/f/a/CacheControl$ICf;)V
     .locals 2
 
     .prologue
@@ -95,17 +95,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 65
-    iget-boolean v0, p1, Lcom/f/a/CacheControl$f;->a:Z
+    iget-boolean v0, p1, Lcom/f/a/CacheControl$ICf;->a:Z
 
     iput-boolean v0, p0, Lcom/f/a/CacheControl;->d:Z
 
     .line 66
-    iget-boolean v0, p1, Lcom/f/a/CacheControl$f;->b:Z
+    iget-boolean v0, p1, Lcom/f/a/CacheControl$ICf;->b:Z
 
     iput-boolean v0, p0, Lcom/f/a/CacheControl;->e:Z
 
     .line 67
-    iget v0, p1, Lcom/f/a/CacheControl$f;->c:I
+    iget v0, p1, Lcom/f/a/CacheControl$ICf;->c:I
 
     iput v0, p0, Lcom/f/a/CacheControl;->f:I
 
@@ -124,22 +124,22 @@
     iput-boolean v1, p0, Lcom/f/a/CacheControl;->j:Z
 
     .line 72
-    iget v0, p1, Lcom/f/a/CacheControl$f;->d:I
+    iget v0, p1, Lcom/f/a/CacheControl$ICf;->d:I
 
     iput v0, p0, Lcom/f/a/CacheControl;->k:I
 
     .line 73
-    iget v0, p1, Lcom/f/a/CacheControl$f;->e:I
+    iget v0, p1, Lcom/f/a/CacheControl$ICf;->e:I
 
     iput v0, p0, Lcom/f/a/CacheControl;->l:I
 
     .line 74
-    iget-boolean v0, p1, Lcom/f/a/CacheControl$f;->f:Z
+    iget-boolean v0, p1, Lcom/f/a/CacheControl$ICf;->f:Z
 
     iput-boolean v0, p0, Lcom/f/a/CacheControl;->m:Z
 
     .line 75
-    iget-boolean v0, p1, Lcom/f/a/CacheControl$f;->g:Z
+    iget-boolean v0, p1, Lcom/f/a/CacheControl$ICf;->g:Z
 
     iput-boolean v0, p0, Lcom/f/a/CacheControl;->n:Z
 
@@ -147,12 +147,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/f/a/CacheControl$f;Lcom/f/a/CacheControl$e;)V
+.method synthetic constructor <init>(Lcom/f/a/CacheControl$ICf;Lcom/f/a/CacheControl$ICe;)V
     .locals 0
 
     .prologue
     .line 14
-    invoke-direct {p0, p1}, Lcom/f/a/CacheControl;-><init>(Lcom/f/a/CacheControl$f;)V
+    invoke-direct {p0, p1}, Lcom/f/a/CacheControl;-><init>(Lcom/f/a/CacheControl$ICf;)V
 
     return-void
 .end method

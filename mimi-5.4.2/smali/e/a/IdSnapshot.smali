@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Le/a/IdSnapshot;",
-        "Le/a/IdSnapshot$bl;",
+        "Le/a/IdSnapshot$ICbl;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Le/a/IdSnapshot$bl;",
+            "Le/a/IdSnapshot$ICbl;",
             "Le/a/FieldMetaData;",
             ">;"
         }
@@ -137,9 +137,9 @@
 
     const-class v1, Le/a/StandardScheme;
 
-    new-instance v2, Le/a/IdSnapshot$bi;
+    new-instance v2, Le/a/IdSnapshot$ICbi;
 
-    invoke-direct {v2, v3}, Le/a/IdSnapshot$bi;-><init>(Le/a/IdSnapshot$bg;)V
+    invoke-direct {v2, v3}, Le/a/IdSnapshot$ICbi;-><init>(Le/a/IdSnapshot$ICbg;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -148,21 +148,21 @@
 
     const-class v1, Le/a/TupleScheme;
 
-    new-instance v2, Le/a/IdSnapshot$bk;
+    new-instance v2, Le/a/IdSnapshot$ICbk;
 
-    invoke-direct {v2, v3}, Le/a/IdSnapshot$bk;-><init>(Le/a/IdSnapshot$bg;)V
+    invoke-direct {v2, v3}, Le/a/IdSnapshot$ICbk;-><init>(Le/a/IdSnapshot$ICbg;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 119
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Le/a/IdSnapshot$bl;
+    const-class v1, Le/a/IdSnapshot$ICbl;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 120
-    sget-object v1, Le/a/IdSnapshot$bl;->a:Le/a/IdSnapshot$bl;
+    sget-object v1, Le/a/IdSnapshot$ICbl;->a:Le/a/IdSnapshot$ICbl;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -177,7 +177,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 122
-    sget-object v1, Le/a/IdSnapshot$bl;->b:Le/a/IdSnapshot$bl;
+    sget-object v1, Le/a/IdSnapshot$ICbl;->b:Le/a/IdSnapshot$ICbl;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -192,7 +192,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 124
-    sget-object v1, Le/a/IdSnapshot$bl;->c:Le/a/IdSnapshot$bl;
+    sget-object v1, Le/a/IdSnapshot$ICbl;->c:Le/a/IdSnapshot$ICbl;
 
     new-instance v2, Le/a/FieldMetaData;
 

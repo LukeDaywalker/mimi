@@ -38,14 +38,14 @@
 
 
 # virtual methods
-.method a(Landroid/support/v7/widget/RecyclerView$ax;)Landroid/view/View;
+.method a(Landroid/support/v7/widget/RecyclerView$ICax;)Landroid/view/View;
     .locals 3
 
     .prologue
     .line 86
     iget v0, p0, Landroid/support/v7/widget/LayoutState;->b:I
 
-    invoke-virtual {p1, v0}, Landroid/support/v7/widget/RecyclerView$ax;->b(I)Landroid/view/View;
+    invoke-virtual {p1, v0}, Landroid/support/v7/widget/RecyclerView$ICax;->b(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -62,7 +62,7 @@
     return-object v0
 .end method
 
-.method a(Landroid/support/v7/widget/RecyclerView$bd;)Z
+.method a(Landroid/support/v7/widget/RecyclerView$ICbd;)Z
     .locals 2
 
     .prologue
@@ -73,7 +73,7 @@
 
     iget v0, p0, Landroid/support/v7/widget/LayoutState;->b:I
 
-    invoke-virtual {p1}, Landroid/support/v7/widget/RecyclerView$bd;->e()I
+    invoke-virtual {p1}, Landroid/support/v7/widget/RecyclerView$ICbd;->e()I
 
     move-result v1
 

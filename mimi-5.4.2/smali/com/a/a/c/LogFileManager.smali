@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Lcom/a/a/c/LogFileManager$ba;
+.field private static final a:Lcom/a/a/c/LogFileManager$ICba;
 
 
 # instance fields
@@ -21,13 +21,13 @@
 
     .prologue
     .line 19
-    new-instance v0, Lcom/a/a/c/LogFileManager$ba;
+    new-instance v0, Lcom/a/a/c/LogFileManager$ICba;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/a/a/c/LogFileManager$ba;-><init>(Lcom/a/a/c/LogFileManager$az;)V
+    invoke-direct {v0, v1}, Lcom/a/a/c/LogFileManager$ICba;-><init>(Lcom/a/a/c/LogFileManager$ICaz;)V
 
-    sput-object v0, Lcom/a/a/c/LogFileManager;->a:Lcom/a/a/c/LogFileManager$ba;
+    sput-object v0, Lcom/a/a/c/LogFileManager;->a:Lcom/a/a/c/LogFileManager$ICba;
 
     return-void
 .end method
@@ -52,7 +52,7 @@
     iput-object v0, p0, Lcom/a/a/c/LogFileManager;->c:Ljava/io/File;
 
     .line 31
-    sget-object v0, Lcom/a/a/c/LogFileManager;->a:Lcom/a/a/c/LogFileManager$ba;
+    sget-object v0, Lcom/a/a/c/LogFileManager;->a:Lcom/a/a/c/LogFileManager$ICba;
 
     iput-object v0, p0, Lcom/a/a/c/LogFileManager;->d:Lcom/a/a/c/FileLogStore;
 
@@ -205,7 +205,7 @@
     invoke-interface {v0, v1, v2}, Lc/a/a/a/Logger;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 42
-    sget-object v0, Lcom/a/a/c/LogFileManager;->a:Lcom/a/a/c/LogFileManager$ba;
+    sget-object v0, Lcom/a/a/c/LogFileManager;->a:Lcom/a/a/c/LogFileManager$ICba;
 
     iput-object v0, p0, Lcom/a/a/c/LogFileManager;->d:Lcom/a/a/c/FileLogStore;
 

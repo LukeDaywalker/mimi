@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static volatile a:Lcom/b/a/a/LogRedirector$c;
+.field private static volatile a:Lcom/b/a/a/LogRedirector$ICc;
 
 
 # direct methods
@@ -41,13 +41,13 @@
 
     .prologue
     .line 80
-    sget-object v0, Lcom/b/a/a/LogRedirector;->a:Lcom/b/a/a/LogRedirector$c;
+    sget-object v0, Lcom/b/a/a/LogRedirector;->a:Lcom/b/a/a/LogRedirector$ICc;
 
     .line 81
     if-eqz v0, :cond_0
 
     .line 82
-    invoke-interface {v0, p0, p1, p2}, Lcom/b/a/a/LogRedirector$c;->a(ILjava/lang/String;Ljava/lang/String;)V
+    invoke-interface {v0, p0, p1, p2}, Lcom/b/a/a/LogRedirector$ICc;->a(ILjava/lang/String;Ljava/lang/String;)V
 
     .line 86
     :goto_0
@@ -115,13 +115,13 @@
 
     .prologue
     .line 89
-    sget-object v0, Lcom/b/a/a/LogRedirector;->a:Lcom/b/a/a/LogRedirector$c;
+    sget-object v0, Lcom/b/a/a/LogRedirector;->a:Lcom/b/a/a/LogRedirector$ICc;
 
     .line 90
     if-eqz v0, :cond_0
 
     .line 91
-    invoke-interface {v0, p0, p1}, Lcom/b/a/a/LogRedirector$c;->a(Ljava/lang/String;I)Z
+    invoke-interface {v0, p0, p1}, Lcom/b/a/a/LogRedirector$ICc;->a(Ljava/lang/String;I)Z
 
     move-result v0
 

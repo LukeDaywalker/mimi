@@ -7,7 +7,7 @@
 .method public abstract a(Lcom/c/a/a/Element;)V
 .end method
 
-.method public abstract a(Lcom/c/a/a/ParseSource$p;)V
+.method public abstract a(Lcom/c/a/a/ParseSource$ICp;)V
 .end method
 
 .method public abstract a([CII)V

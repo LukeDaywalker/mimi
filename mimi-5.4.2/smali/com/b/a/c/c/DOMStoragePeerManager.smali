@@ -18,9 +18,9 @@
     invoke-direct {p0}, Lcom/b/a/c/d/ChromePeerManager;-><init>()V
 
     .line 58
-    new-instance v0, Lcom/b/a/c/c/DOMStoragePeerManager$b;
+    new-instance v0, Lcom/b/a/c/c/DOMStoragePeerManager$ICb;
 
-    invoke-direct {v0, p0}, Lcom/b/a/c/c/DOMStoragePeerManager$b;-><init>(Lcom/b/a/c/c/DOMStoragePeerManager;)V
+    invoke-direct {v0, p0}, Lcom/b/a/c/c/DOMStoragePeerManager$ICb;-><init>(Lcom/b/a/c/c/DOMStoragePeerManager;)V
 
     iput-object v0, p0, Lcom/b/a/c/c/DOMStoragePeerManager;->b:Lcom/b/a/c/d/PeerRegistrationListener;
 

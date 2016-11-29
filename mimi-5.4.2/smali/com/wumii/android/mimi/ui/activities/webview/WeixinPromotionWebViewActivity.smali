@@ -286,9 +286,9 @@
     invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/activities/webview/BaseWebViewActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 32
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity$e;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity$ICe;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity$e;-><init>(Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity$ICe;-><init>(Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;)V
 
     const-wide/16 v2, 0xc8
 

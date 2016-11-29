@@ -163,9 +163,9 @@
     iput-object v1, p0, Lcom/f/a/ConnectionPool;->e:Ljava/util/concurrent/Executor;
 
     .line 95
-    new-instance v0, Lcom/f/a/ConnectionPool$s;
+    new-instance v0, Lcom/f/a/ConnectionPool$ICs;
 
-    invoke-direct {v0, p0}, Lcom/f/a/ConnectionPool$s;-><init>(Lcom/f/a/ConnectionPool;)V
+    invoke-direct {v0, p0}, Lcom/f/a/ConnectionPool$ICs;-><init>(Lcom/f/a/ConnectionPool;)V
 
     iput-object v0, p0, Lcom/f/a/ConnectionPool;->f:Ljava/lang/Runnable;
 

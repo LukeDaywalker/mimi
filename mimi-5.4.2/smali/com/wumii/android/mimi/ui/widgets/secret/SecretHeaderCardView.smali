@@ -74,17 +74,17 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$y;)V
+.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICy;)V
     .locals 0
 
     .prologue
     .line 19
-    invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$y;)V
+    invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICy;)V
 
     return-void
 .end method
 
-.method private a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$y;)V
+.method private a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICy;)V
     .locals 6
 
     .prologue
@@ -95,13 +95,13 @@
 
     const/4 v3, 0x0
 
-    new-instance v4, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ac;
+    new-instance v4, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;
 
-    invoke-direct {v4, p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ac;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$y;)V
+    invoke-direct {v4, p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICy;)V
 
-    new-instance v5, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ae;
+    new-instance v5, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICae;
 
-    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ae;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;)V
+    invoke-direct {v5, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICae;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;)V
 
     move-object v1, p1
 
@@ -299,7 +299,7 @@
     move-result-object v8
 
     .line 58
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$y;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICy;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->g:Landroid/widget/ImageView;
 
@@ -323,14 +323,14 @@
 
     int-to-double v8, v8
 
-    invoke-direct/range {v0 .. v9}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$y;-><init>(Landroid/widget/ImageView;DDDD)V
+    invoke-direct/range {v0 .. v9}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICy;-><init>(Landroid/widget/ImageView;DDDD)V
 
     .line 60
     invoke-virtual {v10}, Lcom/wumii/android/mimi/models/entities/Image;->getUrl()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1, v0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$y;)V
+    invoke-direct {p0, v1, v0}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICy;)V
 
     goto :goto_0
 .end method

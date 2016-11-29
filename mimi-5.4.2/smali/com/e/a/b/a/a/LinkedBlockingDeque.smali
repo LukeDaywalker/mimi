@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field transient a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+.field transient a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/e/a/b/a/a/h",
@@ -36,7 +36,7 @@
     .end annotation
 .end field
 
-.field transient b:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+.field transient b:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/e/a/b/a/a/h",
@@ -119,7 +119,7 @@
     return-void
 .end method
 
-.method private b(Lcom/e/a/b/a/a/LinkedBlockingDeque$h;)Z
+.method private b(Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;)Z
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -146,21 +146,21 @@
 
     .line 202
     :cond_0
-    iget-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 203
-    iput-object v0, p1, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object v0, p1, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 204
-    iput-object p1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object p1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 205
-    iget-object v1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     if-nez v1, :cond_1
 
     .line 206
-    iput-object p1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object p1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 209
     :goto_1
@@ -182,12 +182,12 @@
 
     .line 208
     :cond_1
-    iput-object p1, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object p1, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     goto :goto_1
 .end method
 
-.method private c(Lcom/e/a/b/a/a/LinkedBlockingDeque$h;)Z
+.method private c(Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;)Z
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -214,21 +214,21 @@
 
     .line 221
     :cond_0
-    iget-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 222
-    iput-object v0, p1, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object v0, p1, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 223
-    iput-object p1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object p1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 224
-    iget-object v1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     if-nez v1, :cond_1
 
     .line 225
-    iput-object p1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object p1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 228
     :goto_1
@@ -250,7 +250,7 @@
 
     .line 227
     :cond_1
-    iput-object p1, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object p1, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     goto :goto_1
 .end method
@@ -267,7 +267,7 @@
     const/4 v0, 0x0
 
     .line 238
-    iget-object v2, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v2, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 239
     if-nez v2, :cond_0
@@ -278,25 +278,25 @@
 
     .line 241
     :cond_0
-    iget-object v3, v2, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v3, v2, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 242
-    iget-object v1, v2, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->a:Ljava/lang/Object;
+    iget-object v1, v2, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
 
     .line 243
-    iput-object v0, v2, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->a:Ljava/lang/Object;
+    iput-object v0, v2, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
 
     .line 244
-    iput-object v2, v2, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object v2, v2, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 245
-    iput-object v3, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object v3, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 246
     if-nez v3, :cond_1
 
     .line 247
-    iput-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 250
     :goto_1
@@ -318,7 +318,7 @@
 
     .line 249
     :cond_1
-    iput-object v0, v3, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object v0, v3, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     goto :goto_1
 .end method
@@ -335,7 +335,7 @@
     const/4 v0, 0x0
 
     .line 260
-    iget-object v2, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v2, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 261
     if-nez v2, :cond_0
@@ -346,25 +346,25 @@
 
     .line 263
     :cond_0
-    iget-object v3, v2, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v3, v2, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 264
-    iget-object v1, v2, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->a:Ljava/lang/Object;
+    iget-object v1, v2, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
 
     .line 265
-    iput-object v0, v2, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->a:Ljava/lang/Object;
+    iput-object v0, v2, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
 
     .line 266
-    iput-object v2, v2, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object v2, v2, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 267
-    iput-object v3, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object v3, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 268
     if-nez v3, :cond_1
 
     .line 269
-    iput-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 272
     :goto_1
@@ -386,7 +386,7 @@
 
     .line 271
     :cond_1
-    iput-object v0, v3, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object v0, v3, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     goto :goto_1
 .end method
@@ -406,10 +406,10 @@
     iput v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->d:I
 
     .line 1185
-    iput-object v1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object v1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 1186
-    iput-object v1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object v1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 1190
     :goto_0
@@ -445,18 +445,18 @@
     invoke-virtual {p1}, Ljava/io/ObjectOutputStream;->defaultWriteObject()V
 
     .line 1166
-    iget-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     :goto_0
     if-eqz v0, :cond_0
 
     .line 1167
-    iget-object v2, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->a:Ljava/lang/Object;
+    iget-object v2, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
 
     invoke-virtual {p1, v2}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
 
     .line 1166
-    iget-object v0, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v0, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     goto :goto_0
 
@@ -593,7 +593,7 @@
     throw v0
 .end method
 
-.method a(Lcom/e/a/b/a/a/LinkedBlockingDeque$h;)V
+.method a(Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -605,10 +605,10 @@
 
     .prologue
     .line 282
-    iget-object v0, p1, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v0, p1, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 283
-    iget-object v1, p1, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v1, p1, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 284
     if-nez v0, :cond_0
@@ -631,15 +631,15 @@
 
     .line 289
     :cond_1
-    iput-object v1, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object v1, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 290
-    iput-object v0, v1, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object v0, v1, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 291
     const/4 v0, 0x0
 
-    iput-object v0, p1, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->a:Ljava/lang/Object;
+    iput-object v0, p1, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
 
     .line 294
     iget v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->d:I
@@ -708,9 +708,9 @@
 
     .line 413
     :cond_0
-    new-instance v2, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    new-instance v2, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
-    invoke-direct {v2, p1}, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v2, p1}, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;-><init>(Ljava/lang/Object;)V
 
     .line 414
     invoke-virtual {p4, p2, p3}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
@@ -726,7 +726,7 @@
     .line 418
     :goto_0
     :try_start_0
-    invoke-direct {p0, v2}, Lcom/e/a/b/a/a/LinkedBlockingDeque;->c(Lcom/e/a/b/a/a/LinkedBlockingDeque$h;)Z
+    invoke-direct {p0, v2}, Lcom/e/a/b/a/a/LinkedBlockingDeque;->c(Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -854,9 +854,9 @@
 
     .line 324
     :cond_0
-    new-instance v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    new-instance v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
-    invoke-direct {v0, p1}, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v0, p1}, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;-><init>(Ljava/lang/Object;)V
 
     .line 325
     iget-object v1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->c:Ljava/util/concurrent/locks/ReentrantLock;
@@ -866,7 +866,7 @@
 
     .line 328
     :try_start_0
-    invoke-direct {p0, v0}, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b(Lcom/e/a/b/a/a/LinkedBlockingDeque$h;)Z
+    invoke-direct {p0, v0}, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b(Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -952,9 +952,9 @@
 
     .line 339
     :cond_0
-    new-instance v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    new-instance v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
-    invoke-direct {v0, p1}, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v0, p1}, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;-><init>(Ljava/lang/Object;)V
 
     .line 340
     iget-object v1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->c:Ljava/util/concurrent/locks/ReentrantLock;
@@ -964,7 +964,7 @@
 
     .line 343
     :try_start_0
-    invoke-direct {p0, v0}, Lcom/e/a/b/a/a/LinkedBlockingDeque;->c(Lcom/e/a/b/a/a/LinkedBlockingDeque$h;)Z
+    invoke-direct {p0, v0}, Lcom/e/a/b/a/a/LinkedBlockingDeque;->c(Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -995,7 +995,7 @@
 
     .line 972
     :try_start_0
-    iget-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     :goto_0
     if-eqz v0, :cond_0
@@ -1003,20 +1003,20 @@
     .line 973
     const/4 v1, 0x0
 
-    iput-object v1, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->a:Ljava/lang/Object;
+    iput-object v1, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
 
     .line 974
-    iget-object v1, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v1, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 975
     const/4 v3, 0x0
 
-    iput-object v3, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object v3, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 976
     const/4 v3, 0x0
 
-    iput-object v3, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object v3, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     move-object v0, v1
 
@@ -1027,9 +1027,9 @@
     :cond_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->b:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
-    iput-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iput-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 980
     const/4 v0, 0x0
@@ -1080,13 +1080,13 @@
 
     .line 808
     :try_start_0
-    iget-object v1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     :goto_1
     if-eqz v1, :cond_2
 
     .line 809
-    iget-object v3, v1, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->a:Ljava/lang/Object;
+    iget-object v3, v1, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
 
     invoke-virtual {p1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
     :try_end_0
@@ -1107,7 +1107,7 @@
     .line 808
     :cond_1
     :try_start_1
-    iget-object v1, v1, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v1, v1, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -1175,9 +1175,9 @@
 
     .line 372
     :cond_0
-    new-instance v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    new-instance v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
-    invoke-direct {v0, p1}, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v0, p1}, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;-><init>(Ljava/lang/Object;)V
 
     .line 373
     iget-object v1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->c:Ljava/util/concurrent/locks/ReentrantLock;
@@ -1188,7 +1188,7 @@
     .line 376
     :goto_0
     :try_start_0
-    invoke-direct {p0, v0}, Lcom/e/a/b/a/a/LinkedBlockingDeque;->c(Lcom/e/a/b/a/a/LinkedBlockingDeque$h;)Z
+    invoke-direct {p0, v0}, Lcom/e/a/b/a/a/LinkedBlockingDeque;->c(Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;)Z
 
     move-result v2
 
@@ -1293,9 +1293,9 @@
     if-ge v0, v2, :cond_2
 
     .line 734
-    iget-object v3, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v3, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
-    iget-object v3, v3, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->a:Ljava/lang/Object;
+    iget-object v3, v3, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
 
     invoke-interface {p1, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
@@ -1340,7 +1340,7 @@
 
     .line 551
     :try_start_0
-    iget-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1357,9 +1357,9 @@
     .line 551
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
-    iget-object v0, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->a:Ljava/lang/Object;
+    iget-object v0, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -1396,13 +1396,13 @@
 
     .line 572
     :try_start_0
-    iget-object v1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v1, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     :goto_1
     if-eqz v1, :cond_2
 
     .line 573
-    iget-object v3, v1, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->a:Ljava/lang/Object;
+    iget-object v3, v1, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
 
     invoke-virtual {p1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -1411,7 +1411,7 @@
     if-eqz v3, :cond_1
 
     .line 574
-    invoke-virtual {p0, v1}, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a(Lcom/e/a/b/a/a/LinkedBlockingDeque$h;)V
+    invoke-virtual {p0, v1}, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a(Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1426,7 +1426,7 @@
     .line 572
     :cond_1
     :try_start_1
-    iget-object v1, v1, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v1, v1, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -1475,11 +1475,11 @@
 
     .prologue
     .line 1001
-    new-instance v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$g;
+    new-instance v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICg;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/e/a/b/a/a/LinkedBlockingDeque$g;-><init>(Lcom/e/a/b/a/a/LinkedBlockingDeque;Lcom/e/a/b/a/a/LinkedBlockingDeque$e;)V
+    invoke-direct {v0, p0, v1}, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICg;-><init>(Lcom/e/a/b/a/a/LinkedBlockingDeque;Lcom/e/a/b/a/a/LinkedBlockingDeque$ICe;)V
 
     return-object v0
 .end method
@@ -1717,7 +1717,7 @@
     const/4 v1, 0x0
 
     .line 877
-    iget-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     :goto_0
     if-eqz v0, :cond_0
@@ -1725,12 +1725,12 @@
     .line 878
     add-int/lit8 v2, v1, 0x1
 
-    iget-object v5, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->a:Ljava/lang/Object;
+    iget-object v5, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
 
     aput-object v5, v4, v1
 
     .line 877
-    iget-object v0, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v0, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1803,7 +1803,7 @@
     const/4 v1, 0x0
 
     .line 931
-    iget-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     :goto_0
     if-eqz v0, :cond_1
@@ -1811,12 +1811,12 @@
     .line 932
     add-int/lit8 v2, v1, 0x1
 
-    iget-object v4, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->a:Ljava/lang/Object;
+    iget-object v4, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
 
     aput-object v4, p1, v1
 
     .line 931
-    iget-object v0, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v0, v0, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     move v1, v2
 
@@ -1861,7 +1861,7 @@
 
     .line 945
     :try_start_0
-    iget-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v0, p0, Lcom/e/a/b/a/a/LinkedBlockingDeque;->a:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 946
     if-nez v0, :cond_0
@@ -1893,7 +1893,7 @@
 
     .line 952
     :goto_1
-    iget-object v0, v1, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->a:Ljava/lang/Object;
+    iget-object v0, v1, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->a:Ljava/lang/Object;
 
     .line 953
     if-ne v0, p0, :cond_1
@@ -1904,7 +1904,7 @@
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 954
-    iget-object v0, v1, Lcom/e/a/b/a/a/LinkedBlockingDeque$h;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$h;
+    iget-object v0, v1, Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;->c:Lcom/e/a/b/a/a/LinkedBlockingDeque$ICh;
 
     .line 955
     if-nez v0, :cond_2

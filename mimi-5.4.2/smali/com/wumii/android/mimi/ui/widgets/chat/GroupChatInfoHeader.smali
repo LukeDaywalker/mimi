@@ -15,7 +15,7 @@
 
 .field private d:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
-.field private e:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ab;
+.field private e:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICab;
 
 
 # direct methods
@@ -112,7 +112,7 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->e:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ab;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->e:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICab;
 
     if-eqz v0, :cond_0
 
@@ -122,13 +122,13 @@
     if-ne p1, v0, :cond_1
 
     .line 85
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->e:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ab;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->e:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICab;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->a:Landroid/widget/ImageView;
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$aa;->a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$aa;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->a:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
-    invoke-interface {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ab;->a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$aa;)V
+    invoke-interface {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICab;->a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;)V
 
     .line 94
     :cond_0
@@ -142,13 +142,13 @@
     if-ne p1, v0, :cond_2
 
     .line 87
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->e:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ab;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->e:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICab;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->b:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$aa;->b:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$aa;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->b:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
-    invoke-interface {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ab;->a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$aa;)V
+    invoke-interface {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICab;->a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;)V
 
     goto :goto_0
 
@@ -159,13 +159,13 @@
     if-ne p1, v0, :cond_3
 
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->e:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ab;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->e:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICab;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->c:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$aa;->c:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$aa;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->c:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
-    invoke-interface {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ab;->a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$aa;)V
+    invoke-interface {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICab;->a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;)V
 
     goto :goto_0
 
@@ -176,23 +176,23 @@
     if-ne p1, v0, :cond_0
 
     .line 91
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->e:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ab;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->e:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICab;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->d:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;
 
-    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$aa;->d:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$aa;
+    sget-object v2, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;->d:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;
 
-    invoke-interface {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ab;->a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$aa;)V
+    invoke-interface {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICab;->a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICaa;)V
 
     goto :goto_0
 .end method
 
-.method public setCallback(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ab;)V
+.method public setCallback(Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICab;)V
     .locals 0
 
     .prologue
     .line 78
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->e:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ab;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->e:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader$ICab;
 
     .line 79
     return-void

@@ -27,7 +27,7 @@
 
 .field private i:Landroid/view/View;
 
-.field private j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;
+.field private j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;
 
 .field private k:Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;
 
@@ -94,26 +94,26 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->d:Landroid/app/Activity;
 
     .line 89
-    new-instance v0, Lcom/e/a/b/DisplayImageOptions$f;
+    new-instance v0, Lcom/e/a/b/DisplayImageOptions$ICf;
 
-    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$f;-><init>()V
+    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;-><init>()V
 
     sget-object v1, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->a(Landroid/graphics/Bitmap$Config;)Lcom/e/a/b/DisplayImageOptions$f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Landroid/graphics/Bitmap$Config;)Lcom/e/a/b/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$f;->a()Lcom/e/a/b/DisplayImageOptions;
+    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;->a()Lcom/e/a/b/DisplayImageOptions;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->e:Lcom/e/a/b/DisplayImageOptions;
 
     .line 93
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$k;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICk;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$k;-><init>(Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICk;-><init>(Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->p:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
@@ -121,12 +121,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;)Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;)Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;
     .locals 1
 
     .prologue
     .line 43
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;
 
     return-object v0
 .end method
@@ -148,9 +148,9 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
     .line 241
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$o;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICo;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$o;-><init>(Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICo;-><init>(Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;)V
 
     invoke-static {v0, p1, p2}, Lcom/wumii/android/mimi/c/ThreadUtils;->a(Ljava/lang/Runnable;J)V
 
@@ -185,9 +185,9 @@
     .line 160
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->k:Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;->a:Landroid/view/View;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->a:Landroid/view/View;
 
     invoke-virtual {v0, v1, p1}, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->b(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;)Z
 
@@ -266,13 +266,13 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->d:Landroid/app/Activity;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$l;
+    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICl;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$l;-><init>(Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICl;-><init>(Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;)V
 
     const/4 v3, 0x0
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$au;Z)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$ICau;Z)V
 
     .line 137
     return-void
@@ -337,13 +337,13 @@
 
     .prologue
     .line 166
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;->a:Landroid/view/View;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->a:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->isShown()Z
 
@@ -417,13 +417,13 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->i:Landroid/view/View;
 
     .line 175
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->i:Landroid/view/View;
 
-    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;-><init>(Landroid/view/View;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;
 
     .line 176
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->d()V
@@ -486,9 +486,9 @@
 
     move-result-object v2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;->c:Landroid/view/View;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->c:Landroid/view/View;
 
     check-cast v0, Landroid/widget/ImageView;
 
@@ -497,9 +497,9 @@
     invoke-virtual {v1, v2, v0, v5}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
 
     .line 187
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;->a:Landroid/view/View;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->a:Landroid/view/View;
 
     invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
 
@@ -528,9 +528,9 @@
 
     .line 193
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;->a:Landroid/view/View;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->a:Landroid/view/View;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->m:Landroid/view/animation/AlphaAnimation;
 
@@ -570,9 +570,9 @@
 
     .line 200
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;->b:Landroid/view/View;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->b:Landroid/view/View;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->n:Landroid/view/animation/Animation;
 
@@ -596,18 +596,18 @@
 
     .line 205
     :cond_3
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;->c:Landroid/view/View;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->c:Landroid/view/View;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->o:Landroid/view/animation/Animation;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
 
     .line 206
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;->d:Landroid/view/ViewGroup;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->d:Landroid/view/ViewGroup;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->o:Landroid/view/animation/Animation;
 
@@ -617,9 +617,9 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->d()V
 
     .line 209
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;->b:Landroid/view/View;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->b:Landroid/view/View;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -669,17 +669,17 @@
     .line 218
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->l:Landroid/view/animation/AlphaAnimation;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$n;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICn;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$n;-><init>(Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICn;-><init>(Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;)V
 
     invoke-virtual {v0, v1}, Landroid/view/animation/AlphaAnimation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 
     .line 235
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;->a:Landroid/view/View;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->a:Landroid/view/View;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->l:Landroid/view/animation/AlphaAnimation;
 
@@ -705,9 +705,9 @@
 
     .line 153
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController;->j:Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$p;->b:Landroid/view/View;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICp;->b:Landroid/view/View;
 
     if-ne p1, v0, :cond_0
 

@@ -96,9 +96,9 @@
     .line 171
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->G:Landroid/os/Handler;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$aw;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICaw;
 
-    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$aw;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
+    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICaw;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     const-wide/16 v2, 0x1f4
 
@@ -482,9 +482,9 @@
     .line 97
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->o:Landroid/widget/ListView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$as;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICas;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$as;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICas;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
@@ -614,9 +614,9 @@
     .line 120
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->n:Landroid/widget/TextView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$at;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICat;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$at;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICat;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -662,11 +662,11 @@
     .line 133
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->C:Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$au;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICau;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$au;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICau;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$d;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter;->a(Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICd;)V
 
     .line 147
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->p:Landroid/widget/ListView;
@@ -702,9 +702,9 @@
     .line 151
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->s:Landroid/view/ViewGroup;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$av;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICav;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$av;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICav;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -911,11 +911,11 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ax;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICax;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ax;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICax;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$al;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->a(Ljava/lang/String;Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;)V
 
     .line 231
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->q()Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;

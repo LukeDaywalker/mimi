@@ -200,23 +200,23 @@
 
     move v7, p6
 
-    invoke-virtual/range {v0 .. v7}, Lcom/f/a/a/a/SocketConnector;->a(IIILcom/f/a/Request;Lcom/f/a/Route;Ljava/util/List;Z)Lcom/f/a/a/a/SocketConnector$af;
+    invoke-virtual/range {v0 .. v7}, Lcom/f/a/a/a/SocketConnector;->a(IIILcom/f/a/Request;Lcom/f/a/Route;Ljava/util/List;Z)Lcom/f/a/a/a/SocketConnector$ICaf;
 
     move-result-object v0
 
     .line 155
     :goto_0
-    iget-object v1, v0, Lcom/f/a/a/a/SocketConnector$af;->b:Ljava/net/Socket;
+    iget-object v1, v0, Lcom/f/a/a/a/SocketConnector$ICaf;->b:Ljava/net/Socket;
 
     iput-object v1, p0, Lcom/f/a/Connection;->c:Ljava/net/Socket;
 
     .line 156
-    iget-object v1, v0, Lcom/f/a/a/a/SocketConnector$af;->d:Lcom/f/a/Handshake;
+    iget-object v1, v0, Lcom/f/a/a/a/SocketConnector$ICaf;->d:Lcom/f/a/Handshake;
 
     iput-object v1, p0, Lcom/f/a/Connection;->i:Lcom/f/a/Handshake;
 
     .line 157
-    iget-object v1, v0, Lcom/f/a/a/a/SocketConnector$af;->c:Lcom/f/a/Protocol;
+    iget-object v1, v0, Lcom/f/a/a/a/SocketConnector$ICaf;->c:Lcom/f/a/Protocol;
 
     if-nez v1, :cond_4
 
@@ -248,7 +248,7 @@
     invoke-virtual {v0, v1}, Ljava/net/Socket;->setSoTimeout(I)V
 
     .line 163
-    new-instance v0, Lcom/f/a/a/c/SpdyConnection$ak;
+    new-instance v0, Lcom/f/a/a/c/SpdyConnection$ICak;
 
     iget-object v1, p0, Lcom/f/a/Connection;->b:Lcom/f/a/Route;
 
@@ -260,16 +260,16 @@
 
     iget-object v3, p0, Lcom/f/a/Connection;->c:Ljava/net/Socket;
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/f/a/a/c/SpdyConnection$ak;-><init>(Ljava/lang/String;ZLjava/net/Socket;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/f/a/a/c/SpdyConnection$ICak;-><init>(Ljava/lang/String;ZLjava/net/Socket;)V
 
     iget-object v1, p0, Lcom/f/a/Connection;->g:Lcom/f/a/Protocol;
 
     .line 164
-    invoke-virtual {v0, v1}, Lcom/f/a/a/c/SpdyConnection$ak;->a(Lcom/f/a/Protocol;)Lcom/f/a/a/c/SpdyConnection$ak;
+    invoke-virtual {v0, v1}, Lcom/f/a/a/c/SpdyConnection$ICak;->a(Lcom/f/a/Protocol;)Lcom/f/a/a/c/SpdyConnection$ICak;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/f/a/a/c/SpdyConnection$ak;->a()Lcom/f/a/a/c/SpdyConnection;
+    invoke-virtual {v0}, Lcom/f/a/a/c/SpdyConnection$ICak;->a()Lcom/f/a/a/c/SpdyConnection;
 
     move-result-object v0
 
@@ -332,7 +332,7 @@
     :cond_3
     iget-object v1, p0, Lcom/f/a/Connection;->b:Lcom/f/a/Route;
 
-    invoke-virtual {v0, p1, p2, v1}, Lcom/f/a/a/a/SocketConnector;->a(IILcom/f/a/Route;)Lcom/f/a/a/a/SocketConnector$af;
+    invoke-virtual {v0, p1, p2, v1}, Lcom/f/a/a/a/SocketConnector;->a(IILcom/f/a/Route;)Lcom/f/a/a/a/SocketConnector$ICaf;
 
     move-result-object v0
 
@@ -340,7 +340,7 @@
 
     .line 157
     :cond_4
-    iget-object v0, v0, Lcom/f/a/a/a/SocketConnector$af;->c:Lcom/f/a/Protocol;
+    iget-object v0, v0, Lcom/f/a/a/a/SocketConnector$ICaf;->c:Lcom/f/a/Protocol;
 
     goto :goto_1
 

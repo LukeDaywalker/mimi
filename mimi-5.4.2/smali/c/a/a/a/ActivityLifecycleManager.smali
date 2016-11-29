@@ -6,7 +6,7 @@
 # instance fields
 .field private final a:Landroid/app/Application;
 
-.field private b:Lc/a/a/a/ActivityLifecycleManager$b;
+.field private b:Lc/a/a/a/ActivityLifecycleManager$ICb;
 
 
 # direct methods
@@ -34,13 +34,13 @@
     if-lt v0, v1, :cond_0
 
     .line 58
-    new-instance v0, Lc/a/a/a/ActivityLifecycleManager$b;
+    new-instance v0, Lc/a/a/a/ActivityLifecycleManager$ICb;
 
     iget-object v1, p0, Lc/a/a/a/ActivityLifecycleManager;->a:Landroid/app/Application;
 
-    invoke-direct {v0, v1}, Lc/a/a/a/ActivityLifecycleManager$b;-><init>(Landroid/app/Application;)V
+    invoke-direct {v0, v1}, Lc/a/a/a/ActivityLifecycleManager$ICb;-><init>(Landroid/app/Application;)V
 
-    iput-object v0, p0, Lc/a/a/a/ActivityLifecycleManager;->b:Lc/a/a/a/ActivityLifecycleManager$b;
+    iput-object v0, p0, Lc/a/a/a/ActivityLifecycleManager;->b:Lc/a/a/a/ActivityLifecycleManager$ICb;
 
     .line 60
     :cond_0
@@ -49,18 +49,18 @@
 
 
 # virtual methods
-.method public a(Lc/a/a/a/ActivityLifecycleManager$d;)Z
+.method public a(Lc/a/a/a/ActivityLifecycleManager$ICd;)Z
     .locals 1
 
     .prologue
     .line 68
-    iget-object v0, p0, Lc/a/a/a/ActivityLifecycleManager;->b:Lc/a/a/a/ActivityLifecycleManager$b;
+    iget-object v0, p0, Lc/a/a/a/ActivityLifecycleManager;->b:Lc/a/a/a/ActivityLifecycleManager$ICb;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lc/a/a/a/ActivityLifecycleManager;->b:Lc/a/a/a/ActivityLifecycleManager$b;
+    iget-object v0, p0, Lc/a/a/a/ActivityLifecycleManager;->b:Lc/a/a/a/ActivityLifecycleManager$ICb;
 
-    invoke-static {v0, p1}, Lc/a/a/a/ActivityLifecycleManager$b;->a(Lc/a/a/a/ActivityLifecycleManager$b;Lc/a/a/a/ActivityLifecycleManager$d;)Z
+    invoke-static {v0, p1}, Lc/a/a/a/ActivityLifecycleManager$ICb;->a(Lc/a/a/a/ActivityLifecycleManager$ICb;Lc/a/a/a/ActivityLifecycleManager$ICd;)Z
 
     move-result v0
 

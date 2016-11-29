@@ -93,7 +93,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgGroupBannedMember;->setMemberIsLoginUser(Z)V
 
     .line 28
-    sget-object v1, Lcom/wumii/android/mimi/models/f/a/MobileChatGroupBannedMemberMessageParser$d;->a:[I
+    sget-object v1, Lcom/wumii/android/mimi/models/f/a/MobileChatGroupBannedMemberMessageParser$ICd;->a:[I
 
     invoke-virtual {p1}, Lcom/wumii/mimi/model/domain/mobile/MobileGroupChatMemberBanMessage;->getStatus()Lcom/wumii/mimi/model/domain/mobile/status/MobileGroupMemberBanStatus;
 

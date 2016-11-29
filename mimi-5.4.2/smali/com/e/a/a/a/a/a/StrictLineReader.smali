@@ -283,7 +283,7 @@
 
     .line 147
     :cond_4
-    new-instance v1, Lcom/e/a/a/a/a/a/StrictLineReader$j;
+    new-instance v1, Lcom/e/a/a/a/a/a/StrictLineReader$ICj;
 
     iget v0, p0, Lcom/e/a/a/a/a/a/StrictLineReader;->e:I
 
@@ -293,7 +293,7 @@
 
     add-int/lit8 v0, v0, 0x50
 
-    invoke-direct {v1, p0, v0}, Lcom/e/a/a/a/a/a/StrictLineReader$j;-><init>(Lcom/e/a/a/a/a/a/StrictLineReader;I)V
+    invoke-direct {v1, p0, v0}, Lcom/e/a/a/a/a/a/StrictLineReader$ICj;-><init>(Lcom/e/a/a/a/a/a/StrictLineReader;I)V
 
     .line 160
     :cond_5

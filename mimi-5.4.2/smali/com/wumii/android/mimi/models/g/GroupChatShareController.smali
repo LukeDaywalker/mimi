@@ -53,11 +53,11 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/models/g/GroupChatShareController$v;
+    new-instance v1, Lcom/wumii/android/mimi/models/g/GroupChatShareController$ICv;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/g/GroupChatShareController$v;-><init>(Lcom/wumii/android/mimi/models/g/GroupChatShareController;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/g/GroupChatShareController$ICv;-><init>(Lcom/wumii/android/mimi/models/g/GroupChatShareController;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/g/GroupChatShareController;->a(Ljava/lang/String;Lcom/wumii/android/mimi/b/BaseShareImageTask$l;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/g/GroupChatShareController;->a(Ljava/lang/String;Lcom/wumii/android/mimi/b/BaseShareImageTask$ICl;)V
 
     .line 34
     return-void
@@ -75,7 +75,7 @@
     invoke-direct {v6, v0}, Lcom/wumii/android/mimi/models/g/ShareInsideController;-><init>(Landroid/app/Activity;)V
 
     .line 39
-    new-instance v0, Lcom/wumii/android/mimi/models/g/ShareInsideController$ar;
+    new-instance v0, Lcom/wumii/android/mimi/models/g/ShareInsideController$ICar;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/models/g/GroupChatShareController;->d:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
@@ -103,9 +103,9 @@
 
     const/4 v5, 0x0
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/models/g/ShareInsideController$ar;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/models/g/ShareInsideController$ICar;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/models/g/ShareInsideController;->a(Lcom/wumii/android/mimi/models/g/ShareInsideController$as;)V
+    invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/models/g/ShareInsideController;->a(Lcom/wumii/android/mimi/models/g/ShareInsideController$ICas;)V
 
     .line 40
     return-void

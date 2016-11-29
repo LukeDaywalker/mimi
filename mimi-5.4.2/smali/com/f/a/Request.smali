@@ -22,7 +22,7 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/f/a/Request$ap;)V
+.method private constructor <init>(Lcom/f/a/Request$ICap;)V
     .locals 1
 
     .prologue
@@ -30,45 +30,45 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 40
-    invoke-static {p1}, Lcom/f/a/Request$ap;->a(Lcom/f/a/Request$ap;)Lcom/f/a/HttpUrl;
+    invoke-static {p1}, Lcom/f/a/Request$ICap;->a(Lcom/f/a/Request$ICap;)Lcom/f/a/HttpUrl;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/f/a/Request;->a:Lcom/f/a/HttpUrl;
 
     .line 41
-    invoke-static {p1}, Lcom/f/a/Request$ap;->b(Lcom/f/a/Request$ap;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/f/a/Request$ICap;->b(Lcom/f/a/Request$ICap;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/f/a/Request;->b:Ljava/lang/String;
 
     .line 42
-    invoke-static {p1}, Lcom/f/a/Request$ap;->c(Lcom/f/a/Request$ap;)Lcom/f/a/Headers$ab;
+    invoke-static {p1}, Lcom/f/a/Request$ICap;->c(Lcom/f/a/Request$ICap;)Lcom/f/a/Headers$ICab;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/f/a/Headers$ab;->a()Lcom/f/a/Headers;
+    invoke-virtual {v0}, Lcom/f/a/Headers$ICab;->a()Lcom/f/a/Headers;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/f/a/Request;->c:Lcom/f/a/Headers;
 
     .line 43
-    invoke-static {p1}, Lcom/f/a/Request$ap;->d(Lcom/f/a/Request$ap;)Lcom/f/a/RequestBody;
+    invoke-static {p1}, Lcom/f/a/Request$ICap;->d(Lcom/f/a/Request$ICap;)Lcom/f/a/RequestBody;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/f/a/Request;->d:Lcom/f/a/RequestBody;
 
     .line 44
-    invoke-static {p1}, Lcom/f/a/Request$ap;->e(Lcom/f/a/Request$ap;)Ljava/lang/Object;
+    invoke-static {p1}, Lcom/f/a/Request$ICap;->e(Lcom/f/a/Request$ICap;)Ljava/lang/Object;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    invoke-static {p1}, Lcom/f/a/Request$ap;->e(Lcom/f/a/Request$ap;)Ljava/lang/Object;
+    invoke-static {p1}, Lcom/f/a/Request$ICap;->e(Lcom/f/a/Request$ICap;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -85,12 +85,12 @@
     goto :goto_0
 .end method
 
-.method synthetic constructor <init>(Lcom/f/a/Request$ap;Lcom/f/a/Request$ao;)V
+.method synthetic constructor <init>(Lcom/f/a/Request$ICap;Lcom/f/a/Request$ICao;)V
     .locals 0
 
     .prologue
     .line 28
-    invoke-direct {p0, p1}, Lcom/f/a/Request;-><init>(Lcom/f/a/Request$ap;)V
+    invoke-direct {p0, p1}, Lcom/f/a/Request;-><init>(Lcom/f/a/Request$ICap;)V
 
     return-void
 .end method
@@ -273,16 +273,16 @@
     return-object v0
 .end method
 
-.method public g()Lcom/f/a/Request$ap;
+.method public g()Lcom/f/a/Request$ICap;
     .locals 2
 
     .prologue
     .line 94
-    new-instance v0, Lcom/f/a/Request$ap;
+    new-instance v0, Lcom/f/a/Request$ICap;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/f/a/Request$ap;-><init>(Lcom/f/a/Request;Lcom/f/a/Request$ao;)V
+    invoke-direct {v0, p0, v1}, Lcom/f/a/Request$ICap;-><init>(Lcom/f/a/Request;Lcom/f/a/Request$ICao;)V
 
     return-object v0
 .end method

@@ -210,15 +210,15 @@
     if-nez v0, :cond_0
 
     .line 303
-    new-instance v0, Lc/a/a/a/Fabric$i;
+    new-instance v0, Lc/a/a/a/Fabric$ICi;
 
-    invoke-direct {v0, p0}, Lc/a/a/a/Fabric$i;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lc/a/a/a/Fabric$ICi;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v0, p1}, Lc/a/a/a/Fabric$i;->a([Lc/a/a/a/Kit;)Lc/a/a/a/Fabric$i;
+    invoke-virtual {v0, p1}, Lc/a/a/a/Fabric$ICi;->a([Lc/a/a/a/Kit;)Lc/a/a/a/Fabric$ICi;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lc/a/a/a/Fabric$i;->a()Lc/a/a/a/Fabric;
+    invoke-virtual {v0}, Lc/a/a/a/Fabric$ICi;->a()Lc/a/a/a/Fabric;
 
     move-result-object v0
 
@@ -523,11 +523,11 @@
     .line 357
     iget-object v0, p0, Lc/a/a/a/Fabric;->l:Lc/a/a/a/ActivityLifecycleManager;
 
-    new-instance v1, Lc/a/a/a/Fabric$g;
+    new-instance v1, Lc/a/a/a/Fabric$ICg;
 
-    invoke-direct {v1, p0}, Lc/a/a/a/Fabric$g;-><init>(Lc/a/a/a/Fabric;)V
+    invoke-direct {v1, p0}, Lc/a/a/a/Fabric$ICg;-><init>(Lc/a/a/a/Fabric;)V
 
-    invoke-virtual {v0, v1}, Lc/a/a/a/ActivityLifecycleManager;->a(Lc/a/a/a/ActivityLifecycleManager$d;)Z
+    invoke-virtual {v0, v1}, Lc/a/a/a/ActivityLifecycleManager;->a(Lc/a/a/a/ActivityLifecycleManager$ICd;)Z
 
     .line 375
     iget-object v0, p0, Lc/a/a/a/Fabric;->e:Landroid/content/Context;
@@ -567,9 +567,9 @@
 
     .prologue
     .line 582
-    new-instance v0, Lc/a/a/a/Fabric$h;
+    new-instance v0, Lc/a/a/a/Fabric$ICh;
 
-    invoke-direct {v0, p0, p1}, Lc/a/a/a/Fabric$h;-><init>(Lc/a/a/a/Fabric;I)V
+    invoke-direct {v0, p0, p1}, Lc/a/a/a/Fabric$ICh;-><init>(Lc/a/a/a/Fabric;I)V
 
     return-object v0
 .end method

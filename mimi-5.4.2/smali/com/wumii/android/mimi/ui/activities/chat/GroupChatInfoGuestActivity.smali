@@ -30,9 +30,9 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;-><init>()V
 
     .line 371
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$by;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICby;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$by;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICby;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;->E:Lcom/wumii/android/mimi/models/e/GroupChatObserver;
 
@@ -103,13 +103,13 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$bq;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICbq;
 
-    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$bq;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;Lcom/wumii/android/mimi/models/entities/chat/GroupChat;)V
+    invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICbq;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;Lcom/wumii/android/mimi/models/entities/chat/GroupChat;)V
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$au;Z)V
+    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$ICau;Z)V
 
     goto :goto_0
 .end method
@@ -253,9 +253,9 @@
     .line 127
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;->C:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$bp;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICbp;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$bp;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICbp;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;)V
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -427,9 +427,9 @@
     .line 361
     const v1, 0x7f060272
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$bx;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICbx;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$bx;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICbx;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -678,11 +678,11 @@
 
     .prologue
     .line 285
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->d:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->d:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
     const-string/jumbo v1, "\u63d0\u793a\u9700\u8981\u8865\u5145\u5708\u5b50\u4fe1\u606f"
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 286
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
@@ -712,9 +712,9 @@
     .line 289
     const v1, 0x7f0603ea
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$bt;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICbt;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$bt;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICbt;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -753,11 +753,11 @@
     .line 303
     const v1, 0x7f0600d1
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$bu;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICbu;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$bu;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICbu;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;->a(ILcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ay;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;->a(ILcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder$ICay;)Landroid/app/AlertDialog$Builder;
 
     .line 309
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/PasswordDialogBuilder;->show()Landroid/app/AlertDialog;
@@ -792,9 +792,9 @@
     .line 326
     const v1, 0x7f0600d8
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$bv;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICbv;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$bv;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICbv;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -838,9 +838,9 @@
     .line 342
     const v1, 0x7f0600d7
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$bw;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICbw;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$bw;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICbw;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -907,11 +907,11 @@
 
     .prologue
     .line 210
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->d:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->d:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
     const-string/jumbo v1, "\u70b9\u51fb[\u52a0\u5165\u7fa4\u804a]\u6309\u94ae"
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 211
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;->o:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
@@ -954,13 +954,13 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$bs;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICbs;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$bs;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICbs;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;)V
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$au;Z)V
+    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$ICau;Z)V
 
     goto :goto_0
 .end method

@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static a(Lcom/b/a/c/d/ChromePeerManager;Lcom/b/a/c/g/a/Console$f;Lcom/b/a/c/g/a/Console$g;Ljava/lang/String;)V
+.method public static a(Lcom/b/a/c/d/ChromePeerManager;Lcom/b/a/c/g/a/Console$ICf;Lcom/b/a/c/g/a/Console$ICg;Ljava/lang/String;)V
     .locals 2
 
     .prologue
@@ -14,26 +14,26 @@
     invoke-static {v0, p3}, Lcom/b/a/a/LogRedirector;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 21
-    new-instance v0, Lcom/b/a/c/g/a/Console$d;
+    new-instance v0, Lcom/b/a/c/g/a/Console$ICd;
 
-    invoke-direct {v0}, Lcom/b/a/c/g/a/Console$d;-><init>()V
+    invoke-direct {v0}, Lcom/b/a/c/g/a/Console$ICd;-><init>()V
 
     .line 22
-    iput-object p2, v0, Lcom/b/a/c/g/a/Console$d;->a:Lcom/b/a/c/g/a/Console$g;
+    iput-object p2, v0, Lcom/b/a/c/g/a/Console$ICd;->a:Lcom/b/a/c/g/a/Console$ICg;
 
     .line 23
-    iput-object p1, v0, Lcom/b/a/c/g/a/Console$d;->b:Lcom/b/a/c/g/a/Console$f;
+    iput-object p1, v0, Lcom/b/a/c/g/a/Console$ICd;->b:Lcom/b/a/c/g/a/Console$ICf;
 
     .line 24
-    iput-object p3, v0, Lcom/b/a/c/g/a/Console$d;->c:Ljava/lang/String;
+    iput-object p3, v0, Lcom/b/a/c/g/a/Console$ICd;->c:Ljava/lang/String;
 
     .line 25
-    new-instance v1, Lcom/b/a/c/g/a/Console$e;
+    new-instance v1, Lcom/b/a/c/g/a/Console$ICe;
 
-    invoke-direct {v1}, Lcom/b/a/c/g/a/Console$e;-><init>()V
+    invoke-direct {v1}, Lcom/b/a/c/g/a/Console$ICe;-><init>()V
 
     .line 26
-    iput-object v0, v1, Lcom/b/a/c/g/a/Console$e;->a:Lcom/b/a/c/g/a/Console$d;
+    iput-object v0, v1, Lcom/b/a/c/g/a/Console$ICe;->a:Lcom/b/a/c/g/a/Console$ICd;
 
     .line 27
     const-string/jumbo v0, "Console.messageAdded"

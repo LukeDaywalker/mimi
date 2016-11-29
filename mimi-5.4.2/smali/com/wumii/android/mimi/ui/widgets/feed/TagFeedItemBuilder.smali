@@ -77,11 +77,11 @@
     invoke-virtual {v0, v3, v2}, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->a(Lcom/wumii/android/mimi/models/entities/CircleTags;Z)V
 
     .line 36
-    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder$p;
+    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder$ICp;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder$p;-><init>(Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder$ICp;-><init>(Lcom/wumii/android/mimi/ui/widgets/feed/TagFeedItemBuilder;)V
 
-    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->setOnCircleTagsCardViewClickListener(Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView$c;)V
+    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->setOnCircleTagsCardViewClickListener(Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView$ICc;)V
 
     .line 49
     return-object v1

@@ -3,7 +3,7 @@
 .source "SectionedBaseAdapter.java"
 
 # interfaces
-.implements Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$d;
+.implements Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICd;
 
 
 # static fields

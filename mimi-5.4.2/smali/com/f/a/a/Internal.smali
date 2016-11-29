@@ -60,7 +60,7 @@
 .method public abstract a(Lcom/f/a/ConnectionSpec;Ljavax/net/ssl/SSLSocket;Z)V
 .end method
 
-.method public abstract a(Lcom/f/a/Headers$ab;Ljava/lang/String;)V
+.method public abstract a(Lcom/f/a/Headers$ICab;Ljava/lang/String;)V
 .end method
 
 .method public abstract a(Lcom/f/a/OkHttpClient;Lcom/f/a/Connection;Lcom/f/a/a/a/HttpEngine;Lcom/f/a/Request;)V

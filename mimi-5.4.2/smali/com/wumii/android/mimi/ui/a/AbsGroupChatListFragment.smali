@@ -209,9 +209,9 @@
     iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/a/AbsGroupChatListFragment;->d:Z
 
     .line 64
-    new-instance v0, Lcom/wumii/android/mimi/ui/a/AbsGroupChatListFragment$b;
+    new-instance v0, Lcom/wumii/android/mimi/ui/a/AbsGroupChatListFragment$ICb;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/AbsGroupChatListFragment$b;-><init>(Lcom/wumii/android/mimi/ui/a/AbsGroupChatListFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/AbsGroupChatListFragment$ICb;-><init>(Lcom/wumii/android/mimi/ui/a/AbsGroupChatListFragment;)V
 
     invoke-static {v0}, Lcom/wumii/android/mimi/c/ThreadUtils;->b(Ljava/lang/Runnable;)V
 

@@ -3,7 +3,7 @@
 .source "UserProfileActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/a/d/UserProfileGenderSettedFragment$w;
+.implements Lcom/wumii/android/mimi/ui/a/d/UserProfileGenderSettedFragment$ICw;
 
 
 # instance fields
@@ -133,13 +133,13 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$aj;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICaj;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$aj;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICaj;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;)V
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$au;Z)V
+    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$ICau;Z)V
 
     .line 76
     return-void
@@ -271,9 +271,9 @@
     if-nez v0, :cond_0
 
     .line 153
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ak;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICak;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ak;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;Landroid/app/Activity;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICak;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;Landroid/app/Activity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->C:Lcom/wumii/android/mimi/b/SetUserProfileTask;
 
@@ -415,11 +415,11 @@
 
     .prologue
     .line 169
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->d:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->d:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
     const-string/jumbo v1, "\u70b9\u51fb\u4e2a\u4eba\u4fe1\u606f\u9875\u9762[\u4fdd\u5b58]\u6309\u94ae"
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 170
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;->s:Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;
@@ -452,9 +452,9 @@
 
     const v1, 0x7f0600a8
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$al;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$al;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICal;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

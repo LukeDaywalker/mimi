@@ -8,7 +8,7 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/f/a/Headers$ab;)V
+.method private constructor <init>(Lcom/f/a/Headers$ICab;)V
     .locals 2
 
     .prologue
@@ -16,11 +16,11 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 52
-    invoke-static {p1}, Lcom/f/a/Headers$ab;->a(Lcom/f/a/Headers$ab;)Ljava/util/List;
+    invoke-static {p1}, Lcom/f/a/Headers$ICab;->a(Lcom/f/a/Headers$ICab;)Ljava/util/List;
 
     move-result-object v0
 
-    invoke-static {p1}, Lcom/f/a/Headers$ab;->a(Lcom/f/a/Headers$ab;)Ljava/util/List;
+    invoke-static {p1}, Lcom/f/a/Headers$ICab;->a(Lcom/f/a/Headers$ICab;)Ljava/util/List;
 
     move-result-object v1
 
@@ -42,12 +42,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/f/a/Headers$ab;Lcom/f/a/Headers$aa;)V
+.method synthetic constructor <init>(Lcom/f/a/Headers$ICab;Lcom/f/a/Headers$ICaa;)V
     .locals 0
 
     .prologue
     .line 48
-    invoke-direct {p0, p1}, Lcom/f/a/Headers;-><init>(Lcom/f/a/Headers$ab;)V
+    invoke-direct {p0, p1}, Lcom/f/a/Headers;-><init>(Lcom/f/a/Headers$ICab;)V
 
     return-void
 .end method
@@ -157,17 +157,17 @@
     return-object v0
 .end method
 
-.method public b()Lcom/f/a/Headers$ab;
+.method public b()Lcom/f/a/Headers$ICab;
     .locals 3
 
     .prologue
     .line 121
-    new-instance v0, Lcom/f/a/Headers$ab;
+    new-instance v0, Lcom/f/a/Headers$ICab;
 
-    invoke-direct {v0}, Lcom/f/a/Headers$ab;-><init>()V
+    invoke-direct {v0}, Lcom/f/a/Headers$ICab;-><init>()V
 
     .line 122
-    invoke-static {v0}, Lcom/f/a/Headers$ab;->a(Lcom/f/a/Headers$ab;)Ljava/util/List;
+    invoke-static {v0}, Lcom/f/a/Headers$ICab;->a(Lcom/f/a/Headers$ICab;)Ljava/util/List;
 
     move-result-object v1
 

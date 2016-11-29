@@ -230,11 +230,11 @@
     iput v0, p0, Lcom/f/a/a/a/HttpConnection;->f:I
 
     .line 234
-    new-instance v0, Lcom/f/a/a/a/HttpConnection$l;
+    new-instance v0, Lcom/f/a/a/a/HttpConnection$ICl;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, p1, p2, v1}, Lcom/f/a/a/a/HttpConnection$l;-><init>(Lcom/f/a/a/a/HttpConnection;JLcom/f/a/a/a/HttpConnection$h;)V
+    invoke-direct {v0, p0, p1, p2, v1}, Lcom/f/a/a/a/HttpConnection$ICl;-><init>(Lcom/f/a/a/a/HttpConnection;JLcom/f/a/a/a/HttpConnection$ICh;)V
 
     return-object v0
 .end method
@@ -283,9 +283,9 @@
     iput v0, p0, Lcom/f/a/a/a/HttpConnection;->f:I
 
     .line 252
-    new-instance v0, Lcom/f/a/a/a/HttpConnection$k;
+    new-instance v0, Lcom/f/a/a/a/HttpConnection$ICk;
 
-    invoke-direct {v0, p0, p1}, Lcom/f/a/a/a/HttpConnection$k;-><init>(Lcom/f/a/a/a/HttpConnection;Lcom/f/a/a/a/HttpEngine;)V
+    invoke-direct {v0, p0, p1}, Lcom/f/a/a/a/HttpConnection$ICk;-><init>(Lcom/f/a/a/a/HttpConnection;Lcom/f/a/a/a/HttpEngine;)V
 
     return-object v0
 .end method
@@ -365,7 +365,7 @@
     return-void
 .end method
 
-.method public a(Lcom/f/a/Headers$ab;)V
+.method public a(Lcom/f/a/Headers$ICab;)V
     .locals 2
 
     .prologue
@@ -386,7 +386,7 @@
     .line 221
     sget-object v1, Lcom/f/a/a/Internal;->b:Lcom/f/a/a/Internal;
 
-    invoke-virtual {v1, p1, v0}, Lcom/f/a/a/Internal;->a(Lcom/f/a/Headers$ab;Ljava/lang/String;)V
+    invoke-virtual {v1, p1, v0}, Lcom/f/a/a/Internal;->a(Lcom/f/a/Headers$ICab;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -617,9 +617,9 @@
     iput v0, p0, Lcom/f/a/a/a/HttpConnection;->f:I
 
     .line 246
-    new-instance v0, Lcom/f/a/a/a/HttpConnection$m;
+    new-instance v0, Lcom/f/a/a/a/HttpConnection$ICm;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/f/a/a/a/HttpConnection$m;-><init>(Lcom/f/a/a/a/HttpConnection;J)V
+    invoke-direct {v0, p0, p1, p2}, Lcom/f/a/a/a/HttpConnection$ICm;-><init>(Lcom/f/a/a/a/HttpConnection;J)V
 
     return-object v0
 .end method
@@ -796,7 +796,7 @@
     goto :goto_0
 .end method
 
-.method public g()Lcom/f/a/Response$au;
+.method public g()Lcom/f/a/Response$ICau;
     .locals 5
 
     .prologue
@@ -854,38 +854,38 @@
     move-result-object v0
 
     .line 193
-    new-instance v1, Lcom/f/a/Response$au;
+    new-instance v1, Lcom/f/a/Response$ICau;
 
-    invoke-direct {v1}, Lcom/f/a/Response$au;-><init>()V
+    invoke-direct {v1}, Lcom/f/a/Response$ICau;-><init>()V
 
     iget-object v2, v0, Lcom/f/a/a/a/StatusLine;->a:Lcom/f/a/Protocol;
 
     .line 194
-    invoke-virtual {v1, v2}, Lcom/f/a/Response$au;->a(Lcom/f/a/Protocol;)Lcom/f/a/Response$au;
+    invoke-virtual {v1, v2}, Lcom/f/a/Response$ICau;->a(Lcom/f/a/Protocol;)Lcom/f/a/Response$ICau;
 
     move-result-object v1
 
     iget v2, v0, Lcom/f/a/a/a/StatusLine;->b:I
 
     .line 195
-    invoke-virtual {v1, v2}, Lcom/f/a/Response$au;->a(I)Lcom/f/a/Response$au;
+    invoke-virtual {v1, v2}, Lcom/f/a/Response$ICau;->a(I)Lcom/f/a/Response$ICau;
 
     move-result-object v1
 
     iget-object v2, v0, Lcom/f/a/a/a/StatusLine;->c:Ljava/lang/String;
 
     .line 196
-    invoke-virtual {v1, v2}, Lcom/f/a/Response$au;->a(Ljava/lang/String;)Lcom/f/a/Response$au;
+    invoke-virtual {v1, v2}, Lcom/f/a/Response$ICau;->a(Ljava/lang/String;)Lcom/f/a/Response$ICau;
 
     move-result-object v1
 
     .line 198
-    new-instance v2, Lcom/f/a/Headers$ab;
+    new-instance v2, Lcom/f/a/Headers$ICab;
 
-    invoke-direct {v2}, Lcom/f/a/Headers$ab;-><init>()V
+    invoke-direct {v2}, Lcom/f/a/Headers$ICab;-><init>()V
 
     .line 199
-    invoke-virtual {p0, v2}, Lcom/f/a/a/a/HttpConnection;->a(Lcom/f/a/Headers$ab;)V
+    invoke-virtual {p0, v2}, Lcom/f/a/a/a/HttpConnection;->a(Lcom/f/a/Headers$ICab;)V
 
     .line 200
     sget-object v3, Lcom/f/a/a/a/OkHeaders;->d:Ljava/lang/String;
@@ -896,14 +896,14 @@
 
     move-result-object v4
 
-    invoke-virtual {v2, v3, v4}, Lcom/f/a/Headers$ab;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Headers$ab;
+    invoke-virtual {v2, v3, v4}, Lcom/f/a/Headers$ICab;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Headers$ICab;
 
     .line 201
-    invoke-virtual {v2}, Lcom/f/a/Headers$ab;->a()Lcom/f/a/Headers;
+    invoke-virtual {v2}, Lcom/f/a/Headers$ICab;->a()Lcom/f/a/Headers;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/f/a/Response$au;->a(Lcom/f/a/Headers;)Lcom/f/a/Response$au;
+    invoke-virtual {v1, v2}, Lcom/f/a/Response$ICau;->a(Lcom/f/a/Headers;)Lcom/f/a/Response$ICau;
 
     .line 203
     iget v0, v0, Lcom/f/a/a/a/StatusLine;->b:I
@@ -1027,11 +1027,11 @@
     iput v0, p0, Lcom/f/a/a/a/HttpConnection;->f:I
 
     .line 228
-    new-instance v0, Lcom/f/a/a/a/HttpConnection$j;
+    new-instance v0, Lcom/f/a/a/a/HttpConnection$ICj;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/f/a/a/a/HttpConnection$j;-><init>(Lcom/f/a/a/a/HttpConnection;Lcom/f/a/a/a/HttpConnection$h;)V
+    invoke-direct {v0, p0, v1}, Lcom/f/a/a/a/HttpConnection$ICj;-><init>(Lcom/f/a/a/a/HttpConnection;Lcom/f/a/a/a/HttpConnection$ICh;)V
 
     return-object v0
 .end method
@@ -1080,11 +1080,11 @@
     iput v0, p0, Lcom/f/a/a/a/HttpConnection;->f:I
 
     .line 258
-    new-instance v0, Lcom/f/a/a/a/HttpConnection$n;
+    new-instance v0, Lcom/f/a/a/a/HttpConnection$ICn;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/f/a/a/a/HttpConnection$n;-><init>(Lcom/f/a/a/a/HttpConnection;Lcom/f/a/a/a/HttpConnection$h;)V
+    invoke-direct {v0, p0, v1}, Lcom/f/a/a/a/HttpConnection$ICn;-><init>(Lcom/f/a/a/a/HttpConnection;Lcom/f/a/a/a/HttpConnection$ICh;)V
 
     return-object v0
 .end method

@@ -14,11 +14,11 @@
 
 .field private s:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-.field private t:Lcom/wumii/android/mimi/b/AppealLegalityTask$c;
+.field private t:Lcom/wumii/android/mimi/b/AppealLegalityTask$ICc;
 
 
 # direct methods
-.method public constructor <init>(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/b/AppealLegalityTask$c;)V
+.method public constructor <init>(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/b/AppealLegalityTask$ICc;)V
     .locals 0
 
     .prologue
@@ -32,7 +32,7 @@
     iput-object p3, p0, Lcom/wumii/android/mimi/b/AppealLegalityTask;->s:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
     .line 31
-    iput-object p4, p0, Lcom/wumii/android/mimi/b/AppealLegalityTask;->t:Lcom/wumii/android/mimi/b/AppealLegalityTask$c;
+    iput-object p4, p0, Lcom/wumii/android/mimi/b/AppealLegalityTask;->t:Lcom/wumii/android/mimi/b/AppealLegalityTask$ICc;
 
     .line 32
     return-void
@@ -48,12 +48,12 @@
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/wumii/android/mimi/b/AppealLegalityTask;)Lcom/wumii/android/mimi/b/AppealLegalityTask$c;
+.method static synthetic b(Lcom/wumii/android/mimi/b/AppealLegalityTask;)Lcom/wumii/android/mimi/b/AppealLegalityTask$ICc;
     .locals 1
 
     .prologue
     .line 18
-    iget-object v0, p0, Lcom/wumii/android/mimi/b/AppealLegalityTask;->t:Lcom/wumii/android/mimi/b/AppealLegalityTask$c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/b/AppealLegalityTask;->t:Lcom/wumii/android/mimi/b/AppealLegalityTask$ICc;
 
     return-object v0
 .end method
@@ -111,9 +111,9 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 70
-    iget-object v0, p0, Lcom/wumii/android/mimi/b/AppealLegalityTask;->t:Lcom/wumii/android/mimi/b/AppealLegalityTask$c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/b/AppealLegalityTask;->t:Lcom/wumii/android/mimi/b/AppealLegalityTask$ICc;
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/b/AppealLegalityTask$c;->a()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/b/AppealLegalityTask$ICc;->a()V
 
     .line 72
     :cond_0
@@ -181,9 +181,9 @@
 
     const v1, 0x7f0603e5
 
-    new-instance v2, Lcom/wumii/android/mimi/b/AppealLegalityTask$b;
+    new-instance v2, Lcom/wumii/android/mimi/b/AppealLegalityTask$ICb;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/b/AppealLegalityTask$b;-><init>(Lcom/wumii/android/mimi/b/AppealLegalityTask;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/b/AppealLegalityTask$ICb;-><init>(Lcom/wumii/android/mimi/b/AppealLegalityTask;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

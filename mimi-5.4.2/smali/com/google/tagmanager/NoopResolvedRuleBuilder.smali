@@ -32,7 +32,7 @@
     return-object v0
 .end method
 
-.method public a(Lcom/google/analytics/b/a/a/TypeSystem$b;)V
+.method public a(Lcom/google/analytics/b/a/a/TypeSystem$ICb;)V
     .locals 0
 
     .prologue
@@ -57,9 +57,9 @@
 
     .prologue
     .line 26
-    new-instance v0, Lcom/google/tagmanager/NoopResolvedRuleBuilder$ah;
+    new-instance v0, Lcom/google/tagmanager/NoopResolvedRuleBuilder$ICah;
 
-    invoke-direct {v0, p0}, Lcom/google/tagmanager/NoopResolvedRuleBuilder$ah;-><init>(Lcom/google/tagmanager/NoopResolvedRuleBuilder;)V
+    invoke-direct {v0, p0}, Lcom/google/tagmanager/NoopResolvedRuleBuilder$ICah;-><init>(Lcom/google/tagmanager/NoopResolvedRuleBuilder;)V
 
     return-object v0
 .end method
@@ -69,9 +69,9 @@
 
     .prologue
     .line 31
-    new-instance v0, Lcom/google/tagmanager/NoopResolvedRuleBuilder$ah;
+    new-instance v0, Lcom/google/tagmanager/NoopResolvedRuleBuilder$ICah;
 
-    invoke-direct {v0, p0}, Lcom/google/tagmanager/NoopResolvedRuleBuilder$ah;-><init>(Lcom/google/tagmanager/NoopResolvedRuleBuilder;)V
+    invoke-direct {v0, p0}, Lcom/google/tagmanager/NoopResolvedRuleBuilder$ICah;-><init>(Lcom/google/tagmanager/NoopResolvedRuleBuilder;)V
 
     return-object v0
 .end method
@@ -81,9 +81,9 @@
 
     .prologue
     .line 36
-    new-instance v0, Lcom/google/tagmanager/NoopResolvedRuleBuilder$ah;
+    new-instance v0, Lcom/google/tagmanager/NoopResolvedRuleBuilder$ICah;
 
-    invoke-direct {v0, p0}, Lcom/google/tagmanager/NoopResolvedRuleBuilder$ah;-><init>(Lcom/google/tagmanager/NoopResolvedRuleBuilder;)V
+    invoke-direct {v0, p0}, Lcom/google/tagmanager/NoopResolvedRuleBuilder$ICah;-><init>(Lcom/google/tagmanager/NoopResolvedRuleBuilder;)V
 
     return-object v0
 .end method
@@ -93,9 +93,9 @@
 
     .prologue
     .line 41
-    new-instance v0, Lcom/google/tagmanager/NoopResolvedRuleBuilder$ah;
+    new-instance v0, Lcom/google/tagmanager/NoopResolvedRuleBuilder$ICah;
 
-    invoke-direct {v0, p0}, Lcom/google/tagmanager/NoopResolvedRuleBuilder$ah;-><init>(Lcom/google/tagmanager/NoopResolvedRuleBuilder;)V
+    invoke-direct {v0, p0}, Lcom/google/tagmanager/NoopResolvedRuleBuilder$ICah;-><init>(Lcom/google/tagmanager/NoopResolvedRuleBuilder;)V
 
     return-object v0
 .end method

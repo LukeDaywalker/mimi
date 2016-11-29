@@ -83,11 +83,11 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/models/g/FriendImpressionShareController$t;
+    new-instance v1, Lcom/wumii/android/mimi/models/g/FriendImpressionShareController$ICt;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/g/FriendImpressionShareController$t;-><init>(Lcom/wumii/android/mimi/models/g/FriendImpressionShareController;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/models/g/FriendImpressionShareController$ICt;-><init>(Lcom/wumii/android/mimi/models/g/FriendImpressionShareController;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/g/FriendImpressionShareController;->a(Ljava/lang/String;Lcom/wumii/android/mimi/b/BaseShareImageTask$l;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/g/FriendImpressionShareController;->a(Ljava/lang/String;Lcom/wumii/android/mimi/b/BaseShareImageTask$ICl;)V
 
     .line 38
     return-void

@@ -23,9 +23,9 @@
 
     .prologue
     .line 103
-    new-instance v0, Lcom/a/a/c/ClsFileOutputStream$e;
+    new-instance v0, Lcom/a/a/c/ClsFileOutputStream$ICe;
 
-    invoke-direct {v0}, Lcom/a/a/c/ClsFileOutputStream$e;-><init>()V
+    invoke-direct {v0}, Lcom/a/a/c/ClsFileOutputStream$ICe;-><init>()V
 
     sput-object v0, Lcom/a/a/c/ClsFileOutputStream;->a:Ljava/io/FilenameFilter;
 

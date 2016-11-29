@@ -6,7 +6,7 @@
 # instance fields
 .field private n:Lcom/wumii/android/mimi/ui/widgets/CropImageView;
 
-.field private o:Lcom/wumii/android/mimi/ui/activities/CropImageActivity$o;
+.field private o:Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;
 
 .field private p:Ljava/lang/String;
 
@@ -130,22 +130,22 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->o:Lcom/wumii/android/mimi/ui/activities/CropImageActivity$o;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->o:Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;
 
     if-nez v0, :cond_0
 
     .line 84
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$o;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$o;-><init>(Lcom/wumii/android/mimi/ui/activities/CropImageActivity;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;-><init>(Lcom/wumii/android/mimi/ui/activities/CropImageActivity;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->o:Lcom/wumii/android/mimi/ui/activities/CropImageActivity$o;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->o:Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;
 
     .line 86
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->o:Lcom/wumii/android/mimi/ui/activities/CropImageActivity$o;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->o:Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$o;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;->j()V
 
     .line 87
     return-void
@@ -230,11 +230,11 @@
 
     .line 75
     :cond_0
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$m;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;
 
-    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$m;-><init>(Lcom/wumii/android/mimi/ui/activities/CropImageActivity;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;-><init>(Lcom/wumii/android/mimi/ui/activities/CropImageActivity;Landroid/content/Context;)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$m;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->j()V
 
     .line 76
     return-void

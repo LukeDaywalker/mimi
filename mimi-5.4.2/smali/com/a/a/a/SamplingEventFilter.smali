@@ -12,7 +12,7 @@
         value = {
             "Ljava/util/Set",
             "<",
-            "Lcom/a/a/a/SessionEvent$r;",
+            "Lcom/a/a/a/SessionEvent$ICr;",
             ">;"
         }
     .end annotation
@@ -29,9 +29,9 @@
 
     .prologue
     .line 19
-    new-instance v0, Lcom/a/a/a/SamplingEventFilter$l;
+    new-instance v0, Lcom/a/a/a/SamplingEventFilter$ICl;
 
-    invoke-direct {v0}, Lcom/a/a/a/SamplingEventFilter$l;-><init>()V
+    invoke-direct {v0}, Lcom/a/a/a/SamplingEventFilter$ICl;-><init>()V
 
     sput-object v0, Lcom/a/a/a/SamplingEventFilter;->b:Ljava/util/Set;
 
@@ -86,7 +86,7 @@
     .line 43
     sget-object v0, Lcom/a/a/a/SamplingEventFilter;->b:Ljava/util/Set;
 
-    iget-object v1, p1, Lcom/a/a/a/SessionEvent;->c:Lcom/a/a/a/SessionEvent$r;
+    iget-object v1, p1, Lcom/a/a/a/SessionEvent;->c:Lcom/a/a/a/SessionEvent$ICr;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 

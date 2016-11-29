@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Le/a/Traffic;",
-        "Le/a/Traffic$ep;",
+        "Le/a/Traffic$ICep;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Le/a/Traffic$ep;",
+            "Le/a/Traffic$ICep;",
             "Le/a/FieldMetaData;",
             ">;"
         }
@@ -118,9 +118,9 @@
 
     const-class v1, Le/a/StandardScheme;
 
-    new-instance v2, Le/a/Traffic$em;
+    new-instance v2, Le/a/Traffic$ICem;
 
-    invoke-direct {v2, v3}, Le/a/Traffic$em;-><init>(Le/a/Traffic$ek;)V
+    invoke-direct {v2, v3}, Le/a/Traffic$ICem;-><init>(Le/a/Traffic$ICek;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -129,21 +129,21 @@
 
     const-class v1, Le/a/TupleScheme;
 
-    new-instance v2, Le/a/Traffic$eo;
+    new-instance v2, Le/a/Traffic$ICeo;
 
-    invoke-direct {v2, v3}, Le/a/Traffic$eo;-><init>(Le/a/Traffic$ek;)V
+    invoke-direct {v2, v3}, Le/a/Traffic$ICeo;-><init>(Le/a/Traffic$ICek;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 114
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Le/a/Traffic$ep;
+    const-class v1, Le/a/Traffic$ICep;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 115
-    sget-object v1, Le/a/Traffic$ep;->a:Le/a/Traffic$ep;
+    sget-object v1, Le/a/Traffic$ICep;->a:Le/a/Traffic$ICep;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -158,7 +158,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 117
-    sget-object v1, Le/a/Traffic$ep;->b:Le/a/Traffic$ep;
+    sget-object v1, Le/a/Traffic$ICep;->b:Le/a/Traffic$ICep;
 
     new-instance v2, Le/a/FieldMetaData;
 

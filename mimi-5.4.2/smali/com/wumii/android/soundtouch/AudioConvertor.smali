@@ -6,7 +6,7 @@
 # static fields
 .field private static final a:Lorg/slf4j/Logger;
 
-.field private static b:Lcom/hikvh/media/amr/AmrEncoder$a;
+.field private static b:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
 .field private static c:I
 
@@ -34,9 +34,9 @@
     sput-object v0, Lcom/wumii/android/soundtouch/AudioConvertor;->a:Lorg/slf4j/Logger;
 
     .line 29
-    sget-object v0, Lcom/hikvh/media/amr/AmrEncoder$a;->h:Lcom/hikvh/media/amr/AmrEncoder$a;
+    sget-object v0, Lcom/hikvh/media/amr/AmrEncoder$ICa;->h:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
-    sput-object v0, Lcom/wumii/android/soundtouch/AudioConvertor;->b:Lcom/hikvh/media/amr/AmrEncoder$a;
+    sput-object v0, Lcom/wumii/android/soundtouch/AudioConvertor;->b:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
     .line 30
     const/4 v0, 0x0
@@ -298,9 +298,9 @@
     new-array v4, v4, [B
 
     .line 88
-    sget-object v5, Lcom/wumii/android/soundtouch/AudioConvertor;->b:Lcom/hikvh/media/amr/AmrEncoder$a;
+    sget-object v5, Lcom/wumii/android/soundtouch/AudioConvertor;->b:Lcom/hikvh/media/amr/AmrEncoder$ICa;
 
-    invoke-virtual {v5}, Lcom/hikvh/media/amr/AmrEncoder$a;->ordinal()I
+    invoke-virtual {v5}, Lcom/hikvh/media/amr/AmrEncoder$ICa;->ordinal()I
 
     move-result v5
 

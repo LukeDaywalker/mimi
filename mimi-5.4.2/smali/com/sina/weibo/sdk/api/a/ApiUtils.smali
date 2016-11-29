@@ -25,12 +25,12 @@
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;)Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+.method public static a(Landroid/content/Context;)Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
     .locals 1
 
     .prologue
     .line 128
-    invoke-static {p0}, Lcom/sina/weibo/sdk/api/a/ApiUtils;->b(Landroid/content/Context;)Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    invoke-static {p0}, Lcom/sina/weibo/sdk/api/a/ApiUtils;->b(Landroid/content/Context;)Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
     move-result-object v0
 
@@ -38,7 +38,7 @@
     if-nez v0, :cond_0
 
     .line 130
-    invoke-static {p0}, Lcom/sina/weibo/sdk/api/a/ApiUtils;->c(Landroid/content/Context;)Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    invoke-static {p0}, Lcom/sina/weibo/sdk/api/a/ApiUtils;->c(Landroid/content/Context;)Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
     move-result-object v0
 
@@ -47,7 +47,7 @@
     return-object v0
 .end method
 
-.method public static a(Landroid/content/Context;Ljava/lang/String;)Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+.method public static a(Landroid/content/Context;Ljava/lang/String;)Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
     .locals 3
 
     .prologue
@@ -68,7 +68,7 @@
 
     .line 107
     :cond_2
-    invoke-static {p0, p1}, Lcom/sina/weibo/sdk/api/a/ApiUtils;->c(Landroid/content/Context;Ljava/lang/String;)Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    invoke-static {p0, p1}, Lcom/sina/weibo/sdk/api/a/ApiUtils;->c(Landroid/content/Context;Ljava/lang/String;)Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
     move-result-object v0
 
@@ -76,14 +76,14 @@
     if-nez v0, :cond_1
 
     .line 112
-    invoke-static {p0}, Lcom/sina/weibo/sdk/api/a/ApiUtils;->b(Landroid/content/Context;)Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    invoke-static {p0}, Lcom/sina/weibo/sdk/api/a/ApiUtils;->b(Landroid/content/Context;)Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
     move-result-object v0
 
     .line 113
     if-eqz v0, :cond_3
 
-    iget-object v2, v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$b;->a:Ljava/lang/String;
+    iget-object v2, v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;->a:Ljava/lang/String;
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -180,7 +180,7 @@
     goto :goto_1
 .end method
 
-.method private static b(Landroid/content/Context;)Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+.method private static b(Landroid/content/Context;)Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
     .locals 7
 
     .prologue
@@ -294,15 +294,15 @@
     if-eqz v0, :cond_5
 
     .line 209
-    new-instance v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    new-instance v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
-    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/a/ApiUtils$b;-><init>()V
+    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;-><init>()V
 
     .line 210
-    iput-object v3, v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$b;->a:Ljava/lang/String;
+    iput-object v3, v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;->a:Ljava/lang/String;
 
     .line 211
-    iput v2, v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$b;->b:I
+    iput v2, v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;->b:I
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_2
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
@@ -446,7 +446,7 @@
     goto :goto_0
 .end method
 
-.method private static c(Landroid/content/Context;)Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+.method private static c(Landroid/content/Context;)Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
     .locals 4
 
     .prologue
@@ -559,7 +559,7 @@
     iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
     .line 251
-    invoke-static {p0, v0}, Lcom/sina/weibo/sdk/api/a/ApiUtils;->c(Landroid/content/Context;Ljava/lang/String;)Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    invoke-static {p0, v0}, Lcom/sina/weibo/sdk/api/a/ApiUtils;->c(Landroid/content/Context;Ljava/lang/String;)Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
     move-result-object v0
 
@@ -569,7 +569,7 @@
     goto :goto_0
 .end method
 
-.method private static c(Landroid/content/Context;Ljava/lang/String;)Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+.method private static c(Landroid/content/Context;Ljava/lang/String;)Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
     .locals 8
 
     .prologue
@@ -746,15 +746,15 @@
     move-result v3
 
     .line 295
-    new-instance v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    new-instance v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
-    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/a/ApiUtils$b;-><init>()V
+    invoke-direct {v0}, Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;-><init>()V
 
     .line 296
-    iput-object p1, v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$b;->a:Ljava/lang/String;
+    iput-object p1, v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;->a:Ljava/lang/String;
 
     .line 297
-    iput v3, v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$b;->b:I
+    iput v3, v0, Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;->b:I
     :try_end_6
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_6 .. :try_end_6} :catch_0
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_d

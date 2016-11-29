@@ -12,7 +12,7 @@
 
 .field b:J
 
-.field final c:Lcom/f/a/a/c/SpdyStream$aq;
+.field final c:Lcom/f/a/a/c/SpdyStream$ICaq;
 
 .field private final e:I
 
@@ -40,11 +40,11 @@
     .end annotation
 .end field
 
-.field private final i:Lcom/f/a/a/c/SpdyStream$ar;
+.field private final i:Lcom/f/a/a/c/SpdyStream$ICar;
 
-.field private final j:Lcom/f/a/a/c/SpdyStream$as;
+.field private final j:Lcom/f/a/a/c/SpdyStream$ICas;
 
-.field private final k:Lcom/f/a/a/c/SpdyStream$as;
+.field private final k:Lcom/f/a/a/c/SpdyStream$ICas;
 
 .field private l:Lcom/f/a/a/c/ErrorCode;
 
@@ -104,18 +104,18 @@
     iput-wide v0, p0, Lcom/f/a/a/c/SpdyStream;->a:J
 
     .line 65
-    new-instance v0, Lcom/f/a/a/c/SpdyStream$as;
+    new-instance v0, Lcom/f/a/a/c/SpdyStream$ICas;
 
-    invoke-direct {v0, p0}, Lcom/f/a/a/c/SpdyStream$as;-><init>(Lcom/f/a/a/c/SpdyStream;)V
+    invoke-direct {v0, p0}, Lcom/f/a/a/c/SpdyStream$ICas;-><init>(Lcom/f/a/a/c/SpdyStream;)V
 
-    iput-object v0, p0, Lcom/f/a/a/c/SpdyStream;->j:Lcom/f/a/a/c/SpdyStream$as;
+    iput-object v0, p0, Lcom/f/a/a/c/SpdyStream;->j:Lcom/f/a/a/c/SpdyStream$ICas;
 
     .line 66
-    new-instance v0, Lcom/f/a/a/c/SpdyStream$as;
+    new-instance v0, Lcom/f/a/a/c/SpdyStream$ICas;
 
-    invoke-direct {v0, p0}, Lcom/f/a/a/c/SpdyStream$as;-><init>(Lcom/f/a/a/c/SpdyStream;)V
+    invoke-direct {v0, p0}, Lcom/f/a/a/c/SpdyStream$ICas;-><init>(Lcom/f/a/a/c/SpdyStream;)V
 
-    iput-object v0, p0, Lcom/f/a/a/c/SpdyStream;->k:Lcom/f/a/a/c/SpdyStream$as;
+    iput-object v0, p0, Lcom/f/a/a/c/SpdyStream;->k:Lcom/f/a/a/c/SpdyStream$ICas;
 
     .line 73
     iput-object v4, p0, Lcom/f/a/a/c/SpdyStream;->l:Lcom/f/a/a/c/ErrorCode;
@@ -163,7 +163,7 @@
     iput-wide v0, p0, Lcom/f/a/a/c/SpdyStream;->b:J
 
     .line 83
-    new-instance v0, Lcom/f/a/a/c/SpdyStream$ar;
+    new-instance v0, Lcom/f/a/a/c/SpdyStream$ICar;
 
     iget-object v1, p2, Lcom/f/a/a/c/SpdyConnection;->e:Lcom/f/a/a/c/Settings;
 
@@ -174,26 +174,26 @@
 
     int-to-long v2, v1
 
-    invoke-direct {v0, p0, v2, v3, v4}, Lcom/f/a/a/c/SpdyStream$ar;-><init>(Lcom/f/a/a/c/SpdyStream;JLcom/f/a/a/c/SpdyStream$ap;)V
+    invoke-direct {v0, p0, v2, v3, v4}, Lcom/f/a/a/c/SpdyStream$ICar;-><init>(Lcom/f/a/a/c/SpdyStream;JLcom/f/a/a/c/SpdyStream$ICap;)V
 
-    iput-object v0, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ar;
+    iput-object v0, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ICar;
 
     .line 85
-    new-instance v0, Lcom/f/a/a/c/SpdyStream$aq;
+    new-instance v0, Lcom/f/a/a/c/SpdyStream$ICaq;
 
-    invoke-direct {v0, p0}, Lcom/f/a/a/c/SpdyStream$aq;-><init>(Lcom/f/a/a/c/SpdyStream;)V
+    invoke-direct {v0, p0}, Lcom/f/a/a/c/SpdyStream$ICaq;-><init>(Lcom/f/a/a/c/SpdyStream;)V
 
-    iput-object v0, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$aq;
+    iput-object v0, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$ICaq;
 
     .line 86
-    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ar;
+    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ICar;
 
-    invoke-static {v0, p4}, Lcom/f/a/a/c/SpdyStream$ar;->a(Lcom/f/a/a/c/SpdyStream$ar;Z)Z
+    invoke-static {v0, p4}, Lcom/f/a/a/c/SpdyStream$ICar;->a(Lcom/f/a/a/c/SpdyStream$ICar;Z)Z
 
     .line 87
-    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$aq;
+    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$ICaq;
 
-    invoke-static {v0, p3}, Lcom/f/a/a/c/SpdyStream$aq;->a(Lcom/f/a/a/c/SpdyStream$aq;Z)Z
+    invoke-static {v0, p3}, Lcom/f/a/a/c/SpdyStream$ICaq;->a(Lcom/f/a/a/c/SpdyStream$ICaq;Z)Z
 
     .line 88
     iput-object p5, p0, Lcom/f/a/a/c/SpdyStream;->g:Ljava/util/List;
@@ -222,12 +222,12 @@
     return v0
 .end method
 
-.method static synthetic c(Lcom/f/a/a/c/SpdyStream;)Lcom/f/a/a/c/SpdyStream$as;
+.method static synthetic c(Lcom/f/a/a/c/SpdyStream;)Lcom/f/a/a/c/SpdyStream$ICas;
     .locals 1
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->j:Lcom/f/a/a/c/SpdyStream$as;
+    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->j:Lcom/f/a/a/c/SpdyStream$ICas;
 
     return-object v0
 .end method
@@ -284,17 +284,17 @@
 
     .line 242
     :cond_1
-    iget-object v1, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ar;
+    iget-object v1, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ICar;
 
-    invoke-static {v1}, Lcom/f/a/a/c/SpdyStream$ar;->a(Lcom/f/a/a/c/SpdyStream$ar;)Z
+    invoke-static {v1}, Lcom/f/a/a/c/SpdyStream$ICar;->a(Lcom/f/a/a/c/SpdyStream$ICar;)Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$aq;
+    iget-object v1, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$ICaq;
 
-    invoke-static {v1}, Lcom/f/a/a/c/SpdyStream$aq;->a(Lcom/f/a/a/c/SpdyStream$aq;)Z
+    invoke-static {v1}, Lcom/f/a/a/c/SpdyStream$ICaq;->a(Lcom/f/a/a/c/SpdyStream$ICaq;)Z
 
     move-result v1
 
@@ -361,12 +361,12 @@
     return-void
 .end method
 
-.method static synthetic g(Lcom/f/a/a/c/SpdyStream;)Lcom/f/a/a/c/SpdyStream$as;
+.method static synthetic g(Lcom/f/a/a/c/SpdyStream;)Lcom/f/a/a/c/SpdyStream$ICas;
     .locals 1
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->k:Lcom/f/a/a/c/SpdyStream$as;
+    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->k:Lcom/f/a/a/c/SpdyStream$ICas;
 
     return-object v0
 .end method
@@ -408,33 +408,33 @@
 
     .line 451
     :try_start_0
-    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ar;
+    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ICar;
 
-    invoke-static {v0}, Lcom/f/a/a/c/SpdyStream$ar;->a(Lcom/f/a/a/c/SpdyStream$ar;)Z
+    invoke-static {v0}, Lcom/f/a/a/c/SpdyStream$ICar;->a(Lcom/f/a/a/c/SpdyStream$ICar;)Z
 
     move-result v0
 
     if-nez v0, :cond_3
 
-    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ar;
+    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ICar;
 
-    invoke-static {v0}, Lcom/f/a/a/c/SpdyStream$ar;->b(Lcom/f/a/a/c/SpdyStream$ar;)Z
+    invoke-static {v0}, Lcom/f/a/a/c/SpdyStream$ICar;->b(Lcom/f/a/a/c/SpdyStream$ICar;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$aq;
+    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$ICaq;
 
-    invoke-static {v0}, Lcom/f/a/a/c/SpdyStream$aq;->a(Lcom/f/a/a/c/SpdyStream$aq;)Z
+    invoke-static {v0}, Lcom/f/a/a/c/SpdyStream$ICaq;->a(Lcom/f/a/a/c/SpdyStream$ICaq;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$aq;
+    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$ICaq;
 
-    invoke-static {v0}, Lcom/f/a/a/c/SpdyStream$aq;->b(Lcom/f/a/a/c/SpdyStream$aq;)Z
+    invoke-static {v0}, Lcom/f/a/a/c/SpdyStream$ICaq;->b(Lcom/f/a/a/c/SpdyStream$ICaq;)Z
 
     move-result v0
 
@@ -503,9 +503,9 @@
 
     .prologue
     .line 572
-    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$aq;
+    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$ICaq;
 
-    invoke-static {v0}, Lcom/f/a/a/c/SpdyStream$aq;->b(Lcom/f/a/a/c/SpdyStream$aq;)Z
+    invoke-static {v0}, Lcom/f/a/a/c/SpdyStream$ICaq;->b(Lcom/f/a/a/c/SpdyStream$ICaq;)Z
 
     move-result v0
 
@@ -522,9 +522,9 @@
 
     .line 574
     :cond_0
-    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$aq;
+    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$ICaq;
 
-    invoke-static {v0}, Lcom/f/a/a/c/SpdyStream$aq;->a(Lcom/f/a/a/c/SpdyStream$aq;)Z
+    invoke-static {v0}, Lcom/f/a/a/c/SpdyStream$ICaq;->a(Lcom/f/a/a/c/SpdyStream$ICaq;)Z
 
     move-result v0
 
@@ -688,11 +688,11 @@
 
     .line 285
     :cond_0
-    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ar;
+    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ICar;
 
     int-to-long v2, p2
 
-    invoke-virtual {v0, p1, v2, v3}, Lcom/f/a/a/c/SpdyStream$ar;->a(Ld/BufferedSource;J)V
+    invoke-virtual {v0, p1, v2, v3}, Lcom/f/a/a/c/SpdyStream$ICar;->a(Ld/BufferedSource;J)V
 
     .line 286
     return-void
@@ -899,35 +899,35 @@
     .line 109
     :cond_1
     :try_start_1
-    iget-object v1, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ar;
+    iget-object v1, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ICar;
 
-    invoke-static {v1}, Lcom/f/a/a/c/SpdyStream$ar;->a(Lcom/f/a/a/c/SpdyStream$ar;)Z
+    invoke-static {v1}, Lcom/f/a/a/c/SpdyStream$ICar;->a(Lcom/f/a/a/c/SpdyStream$ICar;)Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    iget-object v1, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ar;
+    iget-object v1, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ICar;
 
-    invoke-static {v1}, Lcom/f/a/a/c/SpdyStream$ar;->b(Lcom/f/a/a/c/SpdyStream$ar;)Z
+    invoke-static {v1}, Lcom/f/a/a/c/SpdyStream$ICar;->b(Lcom/f/a/a/c/SpdyStream$ICar;)Z
 
     move-result v1
 
     if-eqz v1, :cond_4
 
     :cond_2
-    iget-object v1, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$aq;
+    iget-object v1, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$ICaq;
 
     .line 110
-    invoke-static {v1}, Lcom/f/a/a/c/SpdyStream$aq;->a(Lcom/f/a/a/c/SpdyStream$aq;)Z
+    invoke-static {v1}, Lcom/f/a/a/c/SpdyStream$ICaq;->a(Lcom/f/a/a/c/SpdyStream$ICaq;)Z
 
     move-result v1
 
     if-nez v1, :cond_3
 
-    iget-object v1, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$aq;
+    iget-object v1, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$ICaq;
 
-    invoke-static {v1}, Lcom/f/a/a/c/SpdyStream$aq;->b(Lcom/f/a/a/c/SpdyStream$aq;)Z
+    invoke-static {v1}, Lcom/f/a/a/c/SpdyStream$ICaq;->b(Lcom/f/a/a/c/SpdyStream$ICaq;)Z
 
     move-result v1
 
@@ -1048,9 +1048,9 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->j:Lcom/f/a/a/c/SpdyStream$as;
+    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->j:Lcom/f/a/a/c/SpdyStream$ICas;
 
-    invoke-virtual {v0}, Lcom/f/a/a/c/SpdyStream$as;->c()V
+    invoke-virtual {v0}, Lcom/f/a/a/c/SpdyStream$ICas;->c()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
@@ -1077,9 +1077,9 @@
     move-exception v0
 
     :try_start_2
-    iget-object v1, p0, Lcom/f/a/a/c/SpdyStream;->j:Lcom/f/a/a/c/SpdyStream$as;
+    iget-object v1, p0, Lcom/f/a/a/c/SpdyStream;->j:Lcom/f/a/a/c/SpdyStream$ICas;
 
-    invoke-virtual {v1}, Lcom/f/a/a/c/SpdyStream$as;->b()V
+    invoke-virtual {v1}, Lcom/f/a/a/c/SpdyStream$ICas;->b()V
 
     throw v0
     :try_end_2
@@ -1096,9 +1096,9 @@
     .line 142
     :cond_0
     :try_start_3
-    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->j:Lcom/f/a/a/c/SpdyStream$as;
+    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->j:Lcom/f/a/a/c/SpdyStream$ICas;
 
-    invoke-virtual {v0}, Lcom/f/a/a/c/SpdyStream$as;->b()V
+    invoke-virtual {v0}, Lcom/f/a/a/c/SpdyStream$ICas;->b()V
 
     .line 144
     iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->h:Ljava/util/List;
@@ -1150,7 +1150,7 @@
 
     .prologue
     .line 186
-    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->j:Lcom/f/a/a/c/SpdyStream$as;
+    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->j:Lcom/f/a/a/c/SpdyStream$ICas;
 
     return-object v0
 .end method
@@ -1160,7 +1160,7 @@
 
     .prologue
     .line 195
-    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ar;
+    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ICar;
 
     return-object v0
 .end method
@@ -1210,7 +1210,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 210
-    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$aq;
+    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->c:Lcom/f/a/a/c/SpdyStream$ICaq;
 
     return-object v0
 .end method
@@ -1242,11 +1242,11 @@
 
     .line 292
     :try_start_0
-    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ar;
+    iget-object v0, p0, Lcom/f/a/a/c/SpdyStream;->i:Lcom/f/a/a/c/SpdyStream$ICar;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/f/a/a/c/SpdyStream$ar;->a(Lcom/f/a/a/c/SpdyStream$ar;Z)Z
+    invoke-static {v0, v1}, Lcom/f/a/a/c/SpdyStream$ICar;->a(Lcom/f/a/a/c/SpdyStream$ICar;Z)Z
 
     .line 293
     invoke-virtual {p0}, Lcom/f/a/a/c/SpdyStream;->b()Z

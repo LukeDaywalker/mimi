@@ -31,7 +31,7 @@
     return-object v0
 .end method
 
-.method public a(Lcom/google/analytics/b/a/a/TypeSystem$b;)V
+.method public a(Lcom/google/analytics/b/a/a/TypeSystem$ICb;)V
     .locals 0
 
     .prologue

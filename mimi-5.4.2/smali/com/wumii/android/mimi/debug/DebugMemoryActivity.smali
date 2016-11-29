@@ -3,7 +3,7 @@
 .source "DebugMemoryActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;
+.implements Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;
 
 
 # instance fields
@@ -172,7 +172,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setTag(Ljava/lang/Object;)V
 
     .line 89
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$br;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;->setListener(Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView$ICbr;)V
 
     .line 90
     iget-object v1, p0, Lcom/wumii/android/mimi/debug/DebugMemoryActivity;->n:Landroid/widget/LinearLayout;

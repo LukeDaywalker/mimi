@@ -76,9 +76,9 @@
     iput-boolean v1, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->j:Z
 
     .line 57
-    new-instance v0, Lcom/google/analytics/tracking/android/GAServiceManager$x;
+    new-instance v0, Lcom/google/analytics/tracking/android/GAServiceManager$ICx;
 
-    invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/GAServiceManager$x;-><init>(Lcom/google/analytics/tracking/android/GAServiceManager;)V
+    invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/GAServiceManager$ICx;-><init>(Lcom/google/analytics/tracking/android/GAServiceManager;)V
 
     iput-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->k:Lcom/google/analytics/tracking/android/AnalyticsStoreStateListener;
 
@@ -199,9 +199,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/google/analytics/tracking/android/GAServiceManager$y;
+    new-instance v2, Lcom/google/analytics/tracking/android/GAServiceManager$ICy;
 
-    invoke-direct {v2, p0}, Lcom/google/analytics/tracking/android/GAServiceManager$y;-><init>(Lcom/google/analytics/tracking/android/GAServiceManager;)V
+    invoke-direct {v2, p0}, Lcom/google/analytics/tracking/android/GAServiceManager$ICy;-><init>(Lcom/google/analytics/tracking/android/GAServiceManager;)V
 
     invoke-direct {v0, v1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
 
@@ -278,9 +278,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$an;->T:Lcom/google/analytics/tracking/android/GAUsage$an;
+    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$ICan;->T:Lcom/google/analytics/tracking/android/GAUsage$ICan;
 
-    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$an;)V
+    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
 
     .line 229
     iget-boolean v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->n:Z
@@ -733,9 +733,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$an;->S:Lcom/google/analytics/tracking/android/GAUsage$an;
+    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$ICan;->S:Lcom/google/analytics/tracking/android/GAUsage$ICan;
 
-    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$an;)V
+    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
 
     .line 214
     iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->d:Lcom/google/analytics/tracking/android/AnalyticsThread;
@@ -786,9 +786,9 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$an;->af:Lcom/google/analytics/tracking/android/GAUsage$an;
+    sget-object v1, Lcom/google/analytics/tracking/android/GAUsage$ICan;->af:Lcom/google/analytics/tracking/android/GAUsage$ICan;
 
-    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$an;)V
+    invoke-virtual {v0, v1}, Lcom/google/analytics/tracking/android/GAUsage;->a(Lcom/google/analytics/tracking/android/GAUsage$ICan;)V
 
     .line 249
     iget-object v0, p0, Lcom/google/analytics/tracking/android/GAServiceManager;->d:Lcom/google/analytics/tracking/android/AnalyticsThread;

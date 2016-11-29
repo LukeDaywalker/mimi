@@ -131,13 +131,13 @@
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/a/c/SecretDao;->a(Lcom/wumii/android/mimi/models/entities/secret/Secret;)V
 
     .line 57
-    sget-object v0, Lcom/wumii/android/mimi/models/h/BaseStorage$c;->a:Lcom/wumii/android/mimi/models/h/BaseStorage$c;
+    sget-object v0, Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;->a:Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getId()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/h/c/SecretStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$c;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/models/h/c/SecretStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;Ljava/lang/String;)V
 
     .line 58
     return-void
@@ -237,9 +237,9 @@
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/a/c/SecretDao;->b(Ljava/lang/String;)V
 
     .line 64
-    sget-object v0, Lcom/wumii/android/mimi/models/h/BaseStorage$c;->b:Lcom/wumii/android/mimi/models/h/BaseStorage$c;
+    sget-object v0, Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;->b:Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;
 
-    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/h/c/SecretStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$c;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, p1}, Lcom/wumii/android/mimi/models/h/c/SecretStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;Ljava/lang/String;)V
 
     .line 65
     return-void

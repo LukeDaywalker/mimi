@@ -21,7 +21,7 @@
         value = {
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;",
+            "Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;",
             ">;"
         }
     .end annotation
@@ -39,7 +39,7 @@
 
 .field private l:Landroid/util/DisplayMetrics;
 
-.field private m:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;
+.field private m:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
 
 
 # direct methods
@@ -183,10 +183,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;
+    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
 
     .line 117
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;->b(Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;)F
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->b(Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;)F
 
     move-result v3
 
@@ -196,7 +196,7 @@
 
     if-gtz v3, :cond_0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;->a(Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;)I
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->a(Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;)I
 
     move-result v3
 
@@ -218,7 +218,7 @@
 
     .line 121
     :cond_1
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;->a(Landroid/graphics/Canvas;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->a(Landroid/graphics/Canvas;)V
 
     goto :goto_1
 
@@ -252,7 +252,7 @@
     return-object v0
 .end method
 
-.method private d()Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;
+.method private d()Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
     .locals 7
 
     .prologue
@@ -263,7 +263,7 @@
 
     .line 128
     :try_start_0
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
 
     iget v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->h:F
 
@@ -277,7 +277,7 @@
 
     iget v5, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->d:F
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;-><init>(FFFFF)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;-><init>(FFFFF)V
 
     .line 129
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->f:Ljava/util/ArrayList;
@@ -390,21 +390,21 @@
     iput-wide v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->e:J
 
     .line 97
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->d()Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->d()Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->m:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->m:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
 
     .line 99
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->m:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->m:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->m:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->m:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;->a(Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;)I
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;->a(Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;)I
 
     move-result v0
 
@@ -413,11 +413,11 @@
     if-gt v0, v1, :cond_1
 
     .line 100
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->d()Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->d()Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->m:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$cg;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->m:Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout$ICcg;
 
     .line 101
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J

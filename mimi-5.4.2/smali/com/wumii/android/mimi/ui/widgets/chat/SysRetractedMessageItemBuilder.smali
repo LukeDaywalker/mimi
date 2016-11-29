@@ -70,9 +70,9 @@
     move-result-object p2
 
     .line 35
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder$bf;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder$ICbf;
 
-    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder$bf;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder$ICbf;-><init>(Landroid/view/View;)V
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
@@ -89,7 +89,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder$bf;
+    check-cast v1, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder$ICbf;
 
     .line 40
     invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
@@ -100,7 +100,7 @@
 
     move-result-object v0
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder$bf;->a(Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder$bf;)Landroid/widget/ImageView;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder$ICbf;->a(Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder$ICbf;)Landroid/widget/ImageView;
 
     move-result-object v1
 

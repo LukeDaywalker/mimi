@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Le/a/UMEnvelope;",
-        "Le/a/UMEnvelope$fk;",
+        "Le/a/UMEnvelope$ICfk;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Le/a/UMEnvelope$fk;",
+            "Le/a/UMEnvelope$ICfk;",
             "Le/a/FieldMetaData;",
             ">;"
         }
@@ -223,9 +223,9 @@
 
     const-class v1, Le/a/StandardScheme;
 
-    new-instance v2, Le/a/UMEnvelope$fh;
+    new-instance v2, Le/a/UMEnvelope$ICfh;
 
-    invoke-direct {v2, v3}, Le/a/UMEnvelope$fh;-><init>(Le/a/UMEnvelope$ff;)V
+    invoke-direct {v2, v3}, Le/a/UMEnvelope$ICfh;-><init>(Le/a/UMEnvelope$ICff;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -234,21 +234,21 @@
 
     const-class v1, Le/a/TupleScheme;
 
-    new-instance v2, Le/a/UMEnvelope$fj;
+    new-instance v2, Le/a/UMEnvelope$ICfj;
 
-    invoke-direct {v2, v3}, Le/a/UMEnvelope$fj;-><init>(Le/a/UMEnvelope$ff;)V
+    invoke-direct {v2, v3}, Le/a/UMEnvelope$ICfj;-><init>(Le/a/UMEnvelope$ICff;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 152
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Le/a/UMEnvelope$fk;
+    const-class v1, Le/a/UMEnvelope$ICfk;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 153
-    sget-object v1, Le/a/UMEnvelope$fk;->a:Le/a/UMEnvelope$fk;
+    sget-object v1, Le/a/UMEnvelope$ICfk;->a:Le/a/UMEnvelope$ICfk;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -263,7 +263,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 155
-    sget-object v1, Le/a/UMEnvelope$fk;->b:Le/a/UMEnvelope$fk;
+    sget-object v1, Le/a/UMEnvelope$ICfk;->b:Le/a/UMEnvelope$ICfk;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -278,7 +278,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 157
-    sget-object v1, Le/a/UMEnvelope$fk;->c:Le/a/UMEnvelope$fk;
+    sget-object v1, Le/a/UMEnvelope$ICfk;->c:Le/a/UMEnvelope$ICfk;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -293,7 +293,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 159
-    sget-object v1, Le/a/UMEnvelope$fk;->d:Le/a/UMEnvelope$fk;
+    sget-object v1, Le/a/UMEnvelope$ICfk;->d:Le/a/UMEnvelope$ICfk;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -308,7 +308,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 161
-    sget-object v1, Le/a/UMEnvelope$fk;->e:Le/a/UMEnvelope$fk;
+    sget-object v1, Le/a/UMEnvelope$ICfk;->e:Le/a/UMEnvelope$ICfk;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -323,7 +323,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 163
-    sget-object v1, Le/a/UMEnvelope$fk;->f:Le/a/UMEnvelope$fk;
+    sget-object v1, Le/a/UMEnvelope$ICfk;->f:Le/a/UMEnvelope$ICfk;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -338,7 +338,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 165
-    sget-object v1, Le/a/UMEnvelope$fk;->g:Le/a/UMEnvelope$fk;
+    sget-object v1, Le/a/UMEnvelope$ICfk;->g:Le/a/UMEnvelope$ICfk;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -353,7 +353,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 167
-    sget-object v1, Le/a/UMEnvelope$fk;->h:Le/a/UMEnvelope$fk;
+    sget-object v1, Le/a/UMEnvelope$ICfk;->h:Le/a/UMEnvelope$ICfk;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -368,7 +368,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 169
-    sget-object v1, Le/a/UMEnvelope$fk;->i:Le/a/UMEnvelope$fk;
+    sget-object v1, Le/a/UMEnvelope$ICfk;->i:Le/a/UMEnvelope$ICfk;
 
     new-instance v2, Le/a/FieldMetaData;
 

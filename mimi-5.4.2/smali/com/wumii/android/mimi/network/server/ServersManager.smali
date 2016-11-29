@@ -3,7 +3,7 @@
 .source "ServersManager.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/network/HttpProcessor$f;
+.implements Lcom/wumii/android/mimi/network/HttpProcessor$ICf;
 
 
 # static fields
@@ -52,7 +52,7 @@
 
     const-string/jumbo v1, "servers"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 44
     return-void
@@ -99,9 +99,9 @@
     add-int/lit8 v0, p1, 0x1
 
     .line 87
-    new-instance v1, Lcom/wumii/android/mimi/network/server/ServersManager$d;
+    new-instance v1, Lcom/wumii/android/mimi/network/server/ServersManager$ICd;
 
-    invoke-direct {v1, p0, v0}, Lcom/wumii/android/mimi/network/server/ServersManager$d;-><init>(Lcom/wumii/android/mimi/network/server/ServersManager;I)V
+    invoke-direct {v1, p0, v0}, Lcom/wumii/android/mimi/network/server/ServersManager$ICd;-><init>(Lcom/wumii/android/mimi/network/server/ServersManager;I)V
 
     const-wide/16 v2, 0x7d0
 
@@ -164,7 +164,7 @@
     .line 100
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$i;->a:Lcom/wumii/android/mimi/network/HttpRequest$i;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v2, "servers"
 
@@ -174,7 +174,7 @@
 
     move-result-object v4
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$i;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     .line 101
     iget-object v1, p0, Lcom/wumii/android/mimi/network/server/ServersManager;->c:Lcom/wumii/android/mimi/network/HttpProcessor;

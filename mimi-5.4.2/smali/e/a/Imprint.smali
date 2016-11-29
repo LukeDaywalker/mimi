@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Le/a/Imprint;",
-        "Le/a/Imprint$bz;",
+        "Le/a/Imprint$ICbz;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Le/a/Imprint$bz;",
+            "Le/a/Imprint$ICbz;",
             "Le/a/FieldMetaData;",
             ">;"
         }
@@ -147,9 +147,9 @@
 
     const-class v1, Le/a/StandardScheme;
 
-    new-instance v2, Le/a/Imprint$bw;
+    new-instance v2, Le/a/Imprint$ICbw;
 
-    invoke-direct {v2, v3}, Le/a/Imprint$bw;-><init>(Le/a/Imprint$bu;)V
+    invoke-direct {v2, v3}, Le/a/Imprint$ICbw;-><init>(Le/a/Imprint$ICbu;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -158,21 +158,21 @@
 
     const-class v1, Le/a/TupleScheme;
 
-    new-instance v2, Le/a/Imprint$by;
+    new-instance v2, Le/a/Imprint$ICby;
 
-    invoke-direct {v2, v3}, Le/a/Imprint$by;-><init>(Le/a/Imprint$bu;)V
+    invoke-direct {v2, v3}, Le/a/Imprint$ICby;-><init>(Le/a/Imprint$ICbu;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 118
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Le/a/Imprint$bz;
+    const-class v1, Le/a/Imprint$ICbz;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 119
-    sget-object v1, Le/a/Imprint$bz;->a:Le/a/Imprint$bz;
+    sget-object v1, Le/a/Imprint$ICbz;->a:Le/a/Imprint$ICbz;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -199,7 +199,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 123
-    sget-object v1, Le/a/Imprint$bz;->b:Le/a/Imprint$bz;
+    sget-object v1, Le/a/Imprint$ICbz;->b:Le/a/Imprint$ICbz;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -214,7 +214,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 125
-    sget-object v1, Le/a/Imprint$bz;->c:Le/a/Imprint$bz;
+    sget-object v1, Le/a/Imprint$ICbz;->c:Le/a/Imprint$ICbz;
 
     new-instance v2, Le/a/FieldMetaData;
 

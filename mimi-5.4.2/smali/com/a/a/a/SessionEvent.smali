@@ -8,7 +8,7 @@
 
 .field public final b:J
 
-.field public final c:Lcom/a/a/a/SessionEvent$r;
+.field public final c:Lcom/a/a/a/SessionEvent$ICr;
 
 .field public final d:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -40,14 +40,14 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/a/a/a/SessionEventMetadata;JLcom/a/a/a/SessionEvent$r;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;)V
+.method private constructor <init>(Lcom/a/a/a/SessionEventMetadata;JLcom/a/a/a/SessionEvent$ICr;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/a/a/a/SessionEventMetadata;",
             "J",
-            "Lcom/a/a/a/SessionEvent$r;",
+            "Lcom/a/a/a/SessionEvent$ICr;",
             "Ljava/util/Map",
             "<",
             "Ljava/lang/String;",
@@ -73,7 +73,7 @@
     iput-wide p2, p0, Lcom/a/a/a/SessionEvent;->b:J
 
     .line 78
-    iput-object p4, p0, Lcom/a/a/a/SessionEvent;->c:Lcom/a/a/a/SessionEvent$r;
+    iput-object p4, p0, Lcom/a/a/a/SessionEvent;->c:Lcom/a/a/a/SessionEvent$ICr;
 
     .line 79
     iput-object p5, p0, Lcom/a/a/a/SessionEvent;->d:Ljava/util/Map;
@@ -93,20 +93,20 @@
 
     .prologue
     .line 44
-    sget-object v0, Lcom/a/a/a/SessionEvent$r;->j:Lcom/a/a/a/SessionEvent$r;
+    sget-object v0, Lcom/a/a/a/SessionEvent$ICr;->j:Lcom/a/a/a/SessionEvent$ICr;
 
     invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object v1
 
-    invoke-static {p0, v0, v1}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$r;Ljava/util/Map;)Lcom/a/a/a/SessionEvent;
+    invoke-static {p0, v0, v1}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$ICr;Ljava/util/Map;)Lcom/a/a/a/SessionEvent;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$r;Landroid/app/Activity;)Lcom/a/a/a/SessionEvent;
+.method public static a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$ICr;Landroid/app/Activity;)Lcom/a/a/a/SessionEvent;
     .locals 2
 
     .prologue
@@ -126,20 +126,20 @@
     move-result-object v0
 
     .line 40
-    invoke-static {p0, p1, v0}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$r;Ljava/util/Map;)Lcom/a/a/a/SessionEvent;
+    invoke-static {p0, p1, v0}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$ICr;Ljava/util/Map;)Lcom/a/a/a/SessionEvent;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method private static a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$r;Ljava/util/Map;)Lcom/a/a/a/SessionEvent;
+.method private static a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$ICr;Ljava/util/Map;)Lcom/a/a/a/SessionEvent;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/a/a/a/SessionEventMetadata;",
-            "Lcom/a/a/a/SessionEvent$r;",
+            "Lcom/a/a/a/SessionEvent$ICr;",
             "Ljava/util/Map",
             "<",
             "Ljava/lang/String;",
@@ -157,20 +157,20 @@
 
     move-result-object v1
 
-    invoke-static {p0, p1, p2, v0, v1}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$r;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;)Lcom/a/a/a/SessionEvent;
+    invoke-static {p0, p1, p2, v0, v1}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$ICr;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;)Lcom/a/a/a/SessionEvent;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method private static a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$r;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;)Lcom/a/a/a/SessionEvent;
+.method private static a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$ICr;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;)Lcom/a/a/a/SessionEvent;
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/a/a/a/SessionEventMetadata;",
-            "Lcom/a/a/a/SessionEvent$r;",
+            "Lcom/a/a/a/SessionEvent$ICr;",
             "Ljava/util/Map",
             "<",
             "Ljava/lang/String;",
@@ -204,7 +204,7 @@
 
     move-object v7, p4
 
-    invoke-direct/range {v0 .. v7}, Lcom/a/a/a/SessionEvent;-><init>(Lcom/a/a/a/SessionEventMetadata;JLcom/a/a/a/SessionEvent$r;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;)V
+    invoke-direct/range {v0 .. v7}, Lcom/a/a/a/SessionEvent;-><init>(Lcom/a/a/a/SessionEventMetadata;JLcom/a/a/a/SessionEvent$ICr;Ljava/util/Map;Ljava/lang/String;Ljava/util/Map;)V
 
     return-object v0
 .end method
@@ -221,9 +221,9 @@
     move-result-object v0
 
     .line 49
-    sget-object v1, Lcom/a/a/a/SessionEvent$r;->h:Lcom/a/a/a/SessionEvent$r;
+    sget-object v1, Lcom/a/a/a/SessionEvent$ICr;->h:Lcom/a/a/a/SessionEvent$ICr;
 
-    invoke-static {p0, v1, v0}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$r;Ljava/util/Map;)Lcom/a/a/a/SessionEvent;
+    invoke-static {p0, v1, v0}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$ICr;Ljava/util/Map;)Lcom/a/a/a/SessionEvent;
 
     move-result-object v0
 
@@ -242,9 +242,9 @@
     move-result-object v0
 
     .line 54
-    sget-object v1, Lcom/a/a/a/SessionEvent$r;->i:Lcom/a/a/a/SessionEvent$r;
+    sget-object v1, Lcom/a/a/a/SessionEvent$ICr;->i:Lcom/a/a/a/SessionEvent$ICr;
 
-    invoke-static {p0, v1, v0}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$r;Ljava/util/Map;)Lcom/a/a/a/SessionEvent;
+    invoke-static {p0, v1, v0}, Lcom/a/a/a/SessionEvent;->a(Lcom/a/a/a/SessionEventMetadata;Lcom/a/a/a/SessionEvent$ICr;Ljava/util/Map;)Lcom/a/a/a/SessionEvent;
 
     move-result-object v0
 
@@ -309,7 +309,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/a/a/a/SessionEvent;->c:Lcom/a/a/a/SessionEvent$r;
+    iget-object v1, p0, Lcom/a/a/a/SessionEvent;->c:Lcom/a/a/a/SessionEvent$ICr;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

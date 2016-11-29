@@ -722,7 +722,7 @@
     throw v1
 .end method
 
-.method private b(Ljava/net/URL;)Lcom/f/a/Request$ap;
+.method private b(Ljava/net/URL;)Lcom/f/a/Request$ICap;
     .locals 3
 
     .prologue
@@ -736,17 +736,17 @@
     if-nez v0, :cond_0
 
     .line 208
-    sget-object v0, Lcom/wumii/android/mimi/models/d/HttpHelper$r;->a:Lcom/wumii/android/mimi/models/d/HttpHelper$r;
+    sget-object v0, Lcom/wumii/android/mimi/models/d/HttpHelper$ICr;->a:Lcom/wumii/android/mimi/models/d/HttpHelper$ICr;
 
     throw v0
 
     .line 211
     :cond_0
-    new-instance v0, Lcom/f/a/Request$ap;
+    new-instance v0, Lcom/f/a/Request$ICap;
 
-    invoke-direct {v0}, Lcom/f/a/Request$ap;-><init>()V
+    invoke-direct {v0}, Lcom/f/a/Request$ICap;-><init>()V
 
-    invoke-virtual {v0, p1}, Lcom/f/a/Request$ap;->a(Ljava/net/URL;)Lcom/f/a/Request$ap;
+    invoke-virtual {v0, p1}, Lcom/f/a/Request$ICap;->a(Ljava/net/URL;)Lcom/f/a/Request$ICap;
 
     move-result-object v0
 
@@ -754,7 +754,7 @@
 
     const-string/jumbo v2, "gzip,deflate"
 
-    invoke-virtual {v0, v1, v2}, Lcom/f/a/Request$ap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v0, v1, v2}, Lcom/f/a/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     move-result-object v0
 
@@ -767,7 +767,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/f/a/Request$ap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v0, v1, v2}, Lcom/f/a/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 213
     return-object v0
@@ -810,7 +810,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/net/URL;)Lcom/f/a/Request$ap;
+    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/net/URL;)Lcom/f/a/Request$ICap;
 
     move-result-object v0
 
@@ -819,7 +819,7 @@
 
     const-string/jumbo v2, "text/plain;charset=UTF-8"
 
-    invoke-virtual {v0, v1, v2}, Lcom/f/a/Request$ap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v0, v1, v2}, Lcom/f/a/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 435
     const-string/jumbo v1, "text/plain;charset=UTF-8"
@@ -832,10 +832,10 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/f/a/Request$ap;->a(Lcom/f/a/RequestBody;)Lcom/f/a/Request$ap;
+    invoke-virtual {v0, v1}, Lcom/f/a/Request$ICap;->a(Lcom/f/a/RequestBody;)Lcom/f/a/Request$ICap;
 
     .line 436
-    invoke-virtual {v0}, Lcom/f/a/Request$ap;->a()Lcom/f/a/Request;
+    invoke-virtual {v0}, Lcom/f/a/Request$ICap;->a()Lcom/f/a/Request;
 
     move-result-object v0
 
@@ -884,7 +884,7 @@
     if-nez v0, :cond_0
 
     .line 461
-    sget-object v0, Lcom/wumii/android/mimi/models/d/HttpHelper$r;->a:Lcom/wumii/android/mimi/models/d/HttpHelper$r;
+    sget-object v0, Lcom/wumii/android/mimi/models/d/HttpHelper$ICr;->a:Lcom/wumii/android/mimi/models/d/HttpHelper$ICr;
 
     throw v0
     :try_end_0
@@ -979,7 +979,7 @@
     if-nez v0, :cond_0
 
     .line 481
-    sget-object v0, Lcom/wumii/android/mimi/models/d/HttpHelper$r;->a:Lcom/wumii/android/mimi/models/d/HttpHelper$r;
+    sget-object v0, Lcom/wumii/android/mimi/models/d/HttpHelper$ICr;->a:Lcom/wumii/android/mimi/models/d/HttpHelper$ICr;
 
     throw v0
     :try_end_0
@@ -1015,7 +1015,7 @@
     if-nez v1, :cond_1
 
     .line 489
-    new-instance v0, Lcom/wumii/a/a/JacksonMapper$g;
+    new-instance v0, Lcom/wumii/a/a/JacksonMapper$ICg;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1039,7 +1039,7 @@
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/wumii/a/a/JacksonMapper$g;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/wumii/a/a/JacksonMapper$ICg;-><init>(Ljava/lang/String;)V
 
     throw v0
 
@@ -1148,21 +1148,21 @@
 
     .line 515
     :cond_2
-    new-instance v0, Lcom/wumii/android/mimi/models/d/HttpHelper$p;
+    new-instance v0, Lcom/wumii/android/mimi/models/d/HttpHelper$ICp;
 
-    invoke-direct {v0, v2, v1, v3}, Lcom/wumii/android/mimi/models/d/HttpHelper$p;-><init>(ILcom/fasterxml/jackson/databind/JsonNode;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    invoke-direct {v0, v2, v1, v3}, Lcom/wumii/android/mimi/models/d/HttpHelper$ICp;-><init>(ILcom/fasterxml/jackson/databind/JsonNode;Lcom/fasterxml/jackson/databind/JsonNode;)V
 
     throw v0
 
     .line 507
     :pswitch_1
-    sget-object v0, Lcom/wumii/android/mimi/models/d/HttpHelper$o;->a:Lcom/wumii/android/mimi/models/d/HttpHelper$o;
+    sget-object v0, Lcom/wumii/android/mimi/models/d/HttpHelper$ICo;->a:Lcom/wumii/android/mimi/models/d/HttpHelper$ICo;
 
     throw v0
 
     .line 518
     :cond_3
-    new-instance v1, Lcom/wumii/a/a/JacksonMapper$g;
+    new-instance v1, Lcom/wumii/a/a/JacksonMapper$ICg;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1182,7 +1182,7 @@
 
     move-result-object v0
 
-    invoke-direct {v1, v0}, Lcom/wumii/a/a/JacksonMapper$g;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Lcom/wumii/a/a/JacksonMapper$ICg;-><init>(Ljava/lang/String;)V
 
     throw v1
 
@@ -1278,7 +1278,7 @@
     goto :goto_0
 .end method
 
-.method private e(Ljava/lang/String;Ljava/util/Map;)Lcom/f/a/Request$ap;
+.method private e(Ljava/lang/String;Ljava/util/Map;)Lcom/f/a/Request$ICap;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1289,7 +1289,7 @@
             "Ljava/lang/String;",
             "Ljava/lang/Object;",
             ">;)",
-            "Lcom/f/a/Request$ap;"
+            "Lcom/f/a/Request$ICap;"
         }
     .end annotation
 
@@ -1313,7 +1313,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/net/URL;)Lcom/f/a/Request$ap;
+    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/net/URL;)Lcom/f/a/Request$ICap;
 
     move-result-object v0
 
@@ -1342,7 +1342,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/net/URL;)Lcom/f/a/Request$ap;
+    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/net/URL;)Lcom/f/a/Request$ICap;
 
     move-result-object v0
 
@@ -1351,7 +1351,7 @@
 
     const-string/jumbo v2, "application/x-www-form-urlencoded"
 
-    invoke-virtual {v0, v1, v2}, Lcom/f/a/Request$ap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v0, v1, v2}, Lcom/f/a/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 425
     const-string/jumbo v1, "application/x-www-form-urlencoded"
@@ -1374,10 +1374,10 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/f/a/Request$ap;->a(Lcom/f/a/RequestBody;)Lcom/f/a/Request$ap;
+    invoke-virtual {v0, v1}, Lcom/f/a/Request$ICap;->a(Lcom/f/a/RequestBody;)Lcom/f/a/Request$ICap;
 
     .line 426
-    invoke-virtual {v0}, Lcom/f/a/Request$ap;->a()Lcom/f/a/Request;
+    invoke-virtual {v0}, Lcom/f/a/Request$ICap;->a()Lcom/f/a/Request;
 
     move-result-object v0
 
@@ -1386,12 +1386,12 @@
 
 
 # virtual methods
-.method public a(Ljava/net/URL;)Lcom/f/a/Request$ap;
+.method public a(Ljava/net/URL;)Lcom/f/a/Request$ICap;
     .locals 6
 
     .prologue
     .line 166
-    invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/d/HttpHelper;->b(Ljava/net/URL;)Lcom/f/a/Request$ap;
+    invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/d/HttpHelper;->b(Ljava/net/URL;)Lcom/f/a/Request$ICap;
 
     move-result-object v2
 
@@ -1406,7 +1406,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v2, v0, v1}, Lcom/f/a/Request$ap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v2, v0, v1}, Lcom/f/a/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 169
     iget-object v0, p0, Lcom/wumii/android/mimi/models/d/HttpHelper;->f:Ljava/util/Map;
@@ -1449,7 +1449,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v2, v1, v0}, Lcom/f/a/Request$ap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v2, v1, v0}, Lcom/f/a/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     goto :goto_0
 
@@ -1483,7 +1483,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v2, v1, v0}, Lcom/f/a/Request$ap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v2, v1, v0}, Lcom/f/a/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 178
     :cond_1
@@ -1532,7 +1532,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v2, v1, v3}, Lcom/f/a/Request$ap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v2, v1, v3}, Lcom/f/a/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 184
     const-string/jumbo v1, "X-App-Latitude"
@@ -1545,7 +1545,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v2, v1, v0}, Lcom/f/a/Request$ap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v2, v1, v0}, Lcom/f/a/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 191
     :cond_3
@@ -1564,7 +1564,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v2, v0, v1}, Lcom/f/a/Request$ap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v2, v0, v1}, Lcom/f/a/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 195
     :cond_4
@@ -1618,11 +1618,11 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/d/HostHelper;->a(Ljava/net/URL;)V
 
     .line 279
-    sget-object v1, Lcom/wumii/android/mimi/c/EventUtils$af;->a:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v1, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->a:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
     const-string/jumbo v2, "HttpHelper SocketException"
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 280
     iget-object v1, p0, Lcom/wumii/android/mimi/models/d/HttpHelper;->a:Lorg/slf4j/Logger;
@@ -1632,13 +1632,13 @@
     invoke-interface {v1, v2, v0}, Lorg/slf4j/Logger;->error(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 281
-    new-instance v1, Lcom/wumii/android/mimi/models/d/HttpHelper$q;
+    new-instance v1, Lcom/wumii/android/mimi/models/d/HttpHelper$ICq;
 
     invoke-virtual {v0}, Ljava/net/SocketException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {v1, v0, v3}, Lcom/wumii/android/mimi/models/d/HttpHelper$q;-><init>(Ljava/lang/String;Lcom/wumii/android/mimi/models/d/HttpHelper$n;)V
+    invoke-direct {v1, v0, v3}, Lcom/wumii/android/mimi/models/d/HttpHelper$ICq;-><init>(Ljava/lang/String;Lcom/wumii/android/mimi/models/d/HttpHelper$ICn;)V
 
     throw v1
 
@@ -1656,11 +1656,11 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/d/HostHelper;->a(Ljava/net/URL;)V
 
     .line 284
-    sget-object v1, Lcom/wumii/android/mimi/c/EventUtils$af;->a:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v1, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->a:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
     const-string/jumbo v2, "HttpHelper SocketTimeoutException"
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 285
     iget-object v1, p0, Lcom/wumii/android/mimi/models/d/HttpHelper;->a:Lorg/slf4j/Logger;
@@ -1670,13 +1670,13 @@
     invoke-interface {v1, v2, v0}, Lorg/slf4j/Logger;->error(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 286
-    new-instance v1, Lcom/wumii/android/mimi/models/d/HttpHelper$q;
+    new-instance v1, Lcom/wumii/android/mimi/models/d/HttpHelper$ICq;
 
     invoke-virtual {v0}, Ljava/net/SocketTimeoutException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {v1, v0, v3}, Lcom/wumii/android/mimi/models/d/HttpHelper$q;-><init>(Ljava/lang/String;Lcom/wumii/android/mimi/models/d/HttpHelper$n;)V
+    invoke-direct {v1, v0, v3}, Lcom/wumii/android/mimi/models/d/HttpHelper$ICq;-><init>(Ljava/lang/String;Lcom/wumii/android/mimi/models/d/HttpHelper$ICn;)V
 
     throw v1
 
@@ -1694,11 +1694,11 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/d/HostHelper;->a(Ljava/net/URL;)V
 
     .line 289
-    sget-object v1, Lcom/wumii/android/mimi/c/EventUtils$af;->a:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v1, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->a:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
     const-string/jumbo v2, "HttpHelper SSLException"
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 290
     iget-object v1, p0, Lcom/wumii/android/mimi/models/d/HttpHelper;->a:Lorg/slf4j/Logger;
@@ -1724,11 +1724,11 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/d/HostHelper;->a(Ljava/net/URL;)V
 
     .line 294
-    sget-object v1, Lcom/wumii/android/mimi/c/EventUtils$af;->a:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v1, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->a:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
     const-string/jumbo v2, "HttpHelper IOException"
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 295
     iget-object v1, p0, Lcom/wumii/android/mimi/models/d/HttpHelper;->a:Lorg/slf4j/Logger;
@@ -1746,15 +1746,15 @@
 
     .prologue
     .line 221
-    new-instance v0, Lcom/f/a/Request$ap;
+    new-instance v0, Lcom/f/a/Request$ICap;
 
-    invoke-direct {v0}, Lcom/f/a/Request$ap;-><init>()V
+    invoke-direct {v0}, Lcom/f/a/Request$ICap;-><init>()V
 
     new-instance v1, Ljava/net/URL;
 
     invoke-direct {v1, p1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Lcom/f/a/Request$ap;->a(Ljava/net/URL;)Lcom/f/a/Request$ap;
+    invoke-virtual {v0, v1}, Lcom/f/a/Request$ICap;->a(Ljava/net/URL;)Lcom/f/a/Request$ICap;
 
     move-result-object v0
 
@@ -1763,7 +1763,7 @@
 
     invoke-direct {v1}, Lcom/f/a/OkHttpClient;-><init>()V
 
-    invoke-virtual {v0}, Lcom/f/a/Request$ap;->a()Lcom/f/a/Request;
+    invoke-virtual {v0}, Lcom/f/a/Request$ICap;->a()Lcom/f/a/Request;
 
     move-result-object v0
 
@@ -1837,11 +1837,11 @@
 
     .prologue
     .line 217
-    invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/models/d/HttpHelper;->e(Ljava/lang/String;Ljava/util/Map;)Lcom/f/a/Request$ap;
+    invoke-direct {p0, p1, p2}, Lcom/wumii/android/mimi/models/d/HttpHelper;->e(Ljava/lang/String;Ljava/util/Map;)Lcom/f/a/Request$ICap;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/f/a/Request$ap;->a()Lcom/f/a/Request;
+    invoke-virtual {v0}, Lcom/f/a/Request$ICap;->a()Lcom/f/a/Request;
 
     move-result-object v0
 
@@ -1982,7 +1982,7 @@
     if-nez v0, :cond_0
 
     .line 537
-    new-instance v0, Lcom/wumii/a/a/JacksonMapper$g;
+    new-instance v0, Lcom/wumii/a/a/JacksonMapper$ICg;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2026,7 +2026,7 @@
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/wumii/a/a/JacksonMapper$g;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/wumii/a/a/JacksonMapper$ICg;-><init>(Ljava/lang/String;)V
 
     throw v0
 
@@ -2072,22 +2072,22 @@
 
     invoke-direct {v0, p1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->b(Ljava/net/URL;)Lcom/f/a/Request$ap;
+    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->b(Ljava/net/URL;)Lcom/f/a/Request$ICap;
 
     move-result-object v0
 
     .line 237
     const-string/jumbo v1, "User-Agent"
 
-    invoke-virtual {v0, v1}, Lcom/f/a/Request$ap;->b(Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v0, v1}, Lcom/f/a/Request$ICap;->b(Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 238
     const-string/jumbo v1, "User-Agent"
 
-    invoke-virtual {v0, v1, p2}, Lcom/f/a/Request$ap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v0, v1, p2}, Lcom/f/a/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 239
-    invoke-virtual {v0}, Lcom/f/a/Request$ap;->a()Lcom/f/a/Request;
+    invoke-virtual {v0}, Lcom/f/a/Request$ICap;->a()Lcom/f/a/Request;
 
     move-result-object v0
 
@@ -2453,7 +2453,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/net/URL;)Lcom/f/a/Request$ap;
+    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/net/URL;)Lcom/f/a/Request$ICap;
 
     move-result-object v0
 
@@ -2478,7 +2478,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v0, v1, v4}, Lcom/f/a/Request$ap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v0, v1, v4}, Lcom/f/a/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 361
     const-string/jumbo v1, "Content-Length"
@@ -2491,7 +2491,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v0, v1, v4}, Lcom/f/a/Request$ap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v0, v1, v4}, Lcom/f/a/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 362
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2524,10 +2524,10 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/f/a/Request$ap;->a(Lcom/f/a/RequestBody;)Lcom/f/a/Request$ap;
+    invoke-virtual {v0, v1}, Lcom/f/a/Request$ICap;->a(Lcom/f/a/RequestBody;)Lcom/f/a/Request$ICap;
 
     .line 364
-    invoke-virtual {v0}, Lcom/f/a/Request$ap;->a()Lcom/f/a/Request;
+    invoke-virtual {v0}, Lcom/f/a/Request$ICap;->a()Lcom/f/a/Request;
 
     move-result-object v0
 
@@ -2547,21 +2547,21 @@
 
     invoke-direct {v0, p1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->b(Ljava/net/URL;)Lcom/f/a/Request$ap;
+    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->b(Ljava/net/URL;)Lcom/f/a/Request$ICap;
 
     move-result-object v0
 
     .line 244
     const-string/jumbo v1, "Referer"
 
-    invoke-virtual {v0, v1, p2}, Lcom/f/a/Request$ap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v0, v1, p2}, Lcom/f/a/Request$ICap;->b(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 246
     const/4 v1, 0x0
 
     .line 248
     :try_start_0
-    invoke-virtual {v0}, Lcom/f/a/Request$ap;->a()Lcom/f/a/Request;
+    invoke-virtual {v0}, Lcom/f/a/Request$ICap;->a()Lcom/f/a/Request;
 
     move-result-object v0
 

@@ -178,18 +178,18 @@
     .line 41
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->d:Landroid/app/AlertDialog;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder$b;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder$ICb;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder$b;-><init>(Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder$ICb;-><init>(Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;)V
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
 
     .line 51
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->d:Landroid/app/AlertDialog;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder$c;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder$ICc;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder$c;-><init>(Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder$ICc;-><init>(Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;)V
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 

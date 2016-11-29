@@ -29,11 +29,11 @@
 
     .prologue
     .line 133
-    new-instance v0, Lcom/f/a/CertificatePinner$n;
+    new-instance v0, Lcom/f/a/CertificatePinner$ICn;
 
-    invoke-direct {v0}, Lcom/f/a/CertificatePinner$n;-><init>()V
+    invoke-direct {v0}, Lcom/f/a/CertificatePinner$ICn;-><init>()V
 
-    invoke-virtual {v0}, Lcom/f/a/CertificatePinner$n;->a()Lcom/f/a/CertificatePinner;
+    invoke-virtual {v0}, Lcom/f/a/CertificatePinner$ICn;->a()Lcom/f/a/CertificatePinner;
 
     move-result-object v0
 
@@ -42,7 +42,7 @@
     return-void
 .end method
 
-.method private constructor <init>(Lcom/f/a/CertificatePinner$n;)V
+.method private constructor <init>(Lcom/f/a/CertificatePinner$ICn;)V
     .locals 1
 
     .prologue
@@ -50,7 +50,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 138
-    invoke-static {p1}, Lcom/f/a/CertificatePinner$n;->a(Lcom/f/a/CertificatePinner$n;)Ljava/util/Map;
+    invoke-static {p1}, Lcom/f/a/CertificatePinner$ICn;->a(Lcom/f/a/CertificatePinner$ICn;)Ljava/util/Map;
 
     move-result-object v0
 
@@ -64,12 +64,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/f/a/CertificatePinner$n;Lcom/f/a/CertificatePinner$m;)V
+.method synthetic constructor <init>(Lcom/f/a/CertificatePinner$ICn;Lcom/f/a/CertificatePinner$ICm;)V
     .locals 0
 
     .prologue
     .line 132
-    invoke-direct {p0, p1}, Lcom/f/a/CertificatePinner;-><init>(Lcom/f/a/CertificatePinner$n;)V
+    invoke-direct {p0, p1}, Lcom/f/a/CertificatePinner;-><init>(Lcom/f/a/CertificatePinner$ICn;)V
 
     return-void
 .end method

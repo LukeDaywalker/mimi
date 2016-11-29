@@ -140,9 +140,9 @@
     .line 128
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment;->k:Landroid/widget/Button;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment$ah;
+    new-instance v1, Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment$ICah;
 
-    invoke-direct {v1, p0, p2}, Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment$ah;-><init>(Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment;Z)V
+    invoke-direct {v1, p0, p2}, Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment$ICah;-><init>(Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment;Z)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -248,9 +248,9 @@
 
     .prologue
     .line 81
-    new-instance v0, Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment$ag;
+    new-instance v0, Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment$ICag;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment$ag;-><init>(Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment$ICag;-><init>(Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment;)V
 
     return-object v0
 .end method
@@ -357,11 +357,11 @@
     .line 69
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment;->d:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment$af;
+    new-instance v1, Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment$ICaf;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment$af;-><init>(Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment$ICaf;-><init>(Lcom/wumii/android/mimi/ui/a/b/GroupChatListFragment;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setOnRefreshListener(Lcom/wumii/android/mimi/ui/widgets/XListView$ch;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setOnRefreshListener(Lcom/wumii/android/mimi/ui/widgets/XListView$ICch;)V
 
     .line 75
     new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/circle/OrgInfoGroupChatListAdapter;

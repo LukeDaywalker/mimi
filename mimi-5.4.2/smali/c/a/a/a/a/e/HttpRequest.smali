@@ -6,7 +6,7 @@
 # static fields
 .field private static final b:[Ljava/lang/String;
 
-.field private static c:Lc/a/a/a/a/e/HttpRequest$h;
+.field private static c:Lc/a/a/a/a/e/HttpRequest$ICh;
 
 
 # instance fields
@@ -16,7 +16,7 @@
 
 .field private final e:Ljava/lang/String;
 
-.field private f:Lc/a/a/a/a/e/HttpRequest$l;
+.field private f:Lc/a/a/a/a/e/HttpRequest$ICl;
 
 .field private g:Z
 
@@ -44,9 +44,9 @@
     sput-object v0, Lc/a/a/a/a/e/HttpRequest;->b:[Ljava/lang/String;
 
     .line 378
-    sget-object v0, Lc/a/a/a/a/e/HttpRequest$h;->a:Lc/a/a/a/a/e/HttpRequest$h;
+    sget-object v0, Lc/a/a/a/a/e/HttpRequest$ICh;->a:Lc/a/a/a/a/e/HttpRequest$ICh;
 
-    sput-object v0, Lc/a/a/a/a/e/HttpRequest;->c:Lc/a/a/a/a/e/HttpRequest$h;
+    sput-object v0, Lc/a/a/a/a/e/HttpRequest;->c:Lc/a/a/a/a/e/HttpRequest$ICh;
 
     return-void
 .end method
@@ -103,9 +103,9 @@
     move-exception v0
 
     .line 1325
-    new-instance v1, Lc/a/a/a/a/e/HttpRequest$j;
+    new-instance v1, Lc/a/a/a/a/e/HttpRequest$ICj;
 
-    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$j;-><init>(Ljava/io/IOException;)V
+    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$ICj;-><init>(Ljava/io/IOException;)V
 
     throw v1
 .end method
@@ -304,9 +304,9 @@
     move-exception v0
 
     .line 776
-    new-instance v1, Lc/a/a/a/a/e/HttpRequest$j;
+    new-instance v1, Lc/a/a/a/a/e/HttpRequest$ICj;
 
-    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$j;-><init>(Ljava/io/IOException;)V
+    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$ICj;-><init>(Ljava/io/IOException;)V
 
     throw v1
 
@@ -325,9 +325,9 @@
     invoke-virtual {v1, v0}, Ljava/io/IOException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     .line 794
-    new-instance v0, Lc/a/a/a/a/e/HttpRequest$j;
+    new-instance v0, Lc/a/a/a/a/e/HttpRequest$ICj;
 
-    invoke-direct {v0, v1}, Lc/a/a/a/a/e/HttpRequest$j;-><init>(Ljava/io/IOException;)V
+    invoke-direct {v0, v1}, Lc/a/a/a/a/e/HttpRequest$ICj;-><init>(Ljava/io/IOException;)V
 
     throw v0
 .end method
@@ -711,7 +711,7 @@
     if-eqz v0, :cond_0
 
     .line 1350
-    sget-object v0, Lc/a/a/a/a/e/HttpRequest;->c:Lc/a/a/a/a/e/HttpRequest$h;
+    sget-object v0, Lc/a/a/a/a/e/HttpRequest;->c:Lc/a/a/a/a/e/HttpRequest$ICh;
 
     iget-object v1, p0, Lc/a/a/a/a/e/HttpRequest;->a:Ljava/net/URL;
 
@@ -719,7 +719,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lc/a/a/a/a/e/HttpRequest$h;->a(Ljava/net/URL;Ljava/net/Proxy;)Ljava/net/HttpURLConnection;
+    invoke-interface {v0, v1, v2}, Lc/a/a/a/a/e/HttpRequest$ICh;->a(Ljava/net/URL;Ljava/net/Proxy;)Ljava/net/HttpURLConnection;
 
     move-result-object v0
 
@@ -734,11 +734,11 @@
 
     .line 1352
     :cond_0
-    sget-object v0, Lc/a/a/a/a/e/HttpRequest;->c:Lc/a/a/a/a/e/HttpRequest$h;
+    sget-object v0, Lc/a/a/a/a/e/HttpRequest;->c:Lc/a/a/a/a/e/HttpRequest$ICh;
 
     iget-object v1, p0, Lc/a/a/a/a/e/HttpRequest;->a:Ljava/net/URL;
 
-    invoke-interface {v0, v1}, Lc/a/a/a/a/e/HttpRequest$h;->a(Ljava/net/URL;)Ljava/net/HttpURLConnection;
+    invoke-interface {v0, v1}, Lc/a/a/a/a/e/HttpRequest$ICh;->a(Ljava/net/URL;)Ljava/net/HttpURLConnection;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -751,9 +751,9 @@
     move-exception v0
 
     .line 1356
-    new-instance v1, Lc/a/a/a/a/e/HttpRequest$j;
+    new-instance v1, Lc/a/a/a/a/e/HttpRequest$ICj;
 
-    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$j;-><init>(Ljava/io/IOException;)V
+    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$ICj;-><init>(Ljava/io/IOException;)V
 
     throw v1
 .end method
@@ -799,7 +799,7 @@
 
     .prologue
     .line 2419
-    new-instance v0, Lc/a/a/a/a/e/HttpRequest$f;
+    new-instance v0, Lc/a/a/a/a/e/HttpRequest$ICf;
 
     iget-boolean v3, p0, Lc/a/a/a/a/e/HttpRequest;->h:Z
 
@@ -811,9 +811,9 @@
 
     move-object v5, p2
 
-    invoke-direct/range {v0 .. v5}, Lc/a/a/a/a/e/HttpRequest$f;-><init>(Lc/a/a/a/a/e/HttpRequest;Ljava/io/Closeable;ZLjava/io/InputStream;Ljava/io/OutputStream;)V
+    invoke-direct/range {v0 .. v5}, Lc/a/a/a/a/e/HttpRequest$ICf;-><init>(Lc/a/a/a/a/e/HttpRequest;Ljava/io/Closeable;ZLjava/io/InputStream;Ljava/io/OutputStream;)V
 
-    invoke-virtual {v0}, Lc/a/a/a/a/e/HttpRequest$f;->call()Ljava/lang/Object;
+    invoke-virtual {v0}, Lc/a/a/a/a/e/HttpRequest$ICf;->call()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -991,9 +991,9 @@
     .line 2673
     :goto_1
     :try_start_3
-    new-instance v2, Lc/a/a/a/a/e/HttpRequest$j;
+    new-instance v2, Lc/a/a/a/a/e/HttpRequest$ICj;
 
-    invoke-direct {v2, v0}, Lc/a/a/a/a/e/HttpRequest$j;-><init>(Ljava/io/IOException;)V
+    invoke-direct {v2, v0}, Lc/a/a/a/a/e/HttpRequest$ICj;-><init>(Ljava/io/IOException;)V
 
     throw v2
     :try_end_3
@@ -1055,7 +1055,7 @@
     invoke-virtual {p0, p1, p2, p3}, Lc/a/a/a/a/e/HttpRequest;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lc/a/a/a/a/e/HttpRequest;
 
     .line 2711
-    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$l;
+    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$ICl;
 
     invoke-virtual {p0, p4, v0}, Lc/a/a/a/a/e/HttpRequest;->a(Ljava/io/InputStream;Ljava/io/OutputStream;)Lc/a/a/a/a/e/HttpRequest;
     :try_end_0
@@ -1069,9 +1069,9 @@
     move-exception v0
 
     .line 2713
-    new-instance v1, Lc/a/a/a/a/e/HttpRequest$j;
+    new-instance v1, Lc/a/a/a/a/e/HttpRequest$ICj;
 
-    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$j;-><init>(Ljava/io/IOException;)V
+    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$ICj;-><init>(Ljava/io/IOException;)V
 
     throw v1
 .end method
@@ -1088,9 +1088,9 @@
     invoke-virtual {p0, p1, p2, p3}, Lc/a/a/a/a/e/HttpRequest;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lc/a/a/a/a/e/HttpRequest;
 
     .line 2598
-    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$l;
+    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$ICl;
 
-    invoke-virtual {v0, p4}, Lc/a/a/a/a/e/HttpRequest$l;->a(Ljava/lang/String;)Lc/a/a/a/a/e/HttpRequest$l;
+    invoke-virtual {v0, p4}, Lc/a/a/a/a/e/HttpRequest$ICl;->a(Ljava/lang/String;)Lc/a/a/a/a/e/HttpRequest$ICl;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1102,9 +1102,9 @@
     move-exception v0
 
     .line 2600
-    new-instance v1, Lc/a/a/a/a/e/HttpRequest$j;
+    new-instance v1, Lc/a/a/a/a/e/HttpRequest$ICj;
 
-    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$j;-><init>(Ljava/io/IOException;)V
+    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$ICj;-><init>(Ljava/io/IOException;)V
 
     throw v1
 .end method
@@ -1194,9 +1194,9 @@
     move-exception v0
 
     .line 1597
-    new-instance v1, Lc/a/a/a/a/e/HttpRequest$j;
+    new-instance v1, Lc/a/a/a/a/e/HttpRequest$ICj;
 
-    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$j;-><init>(Ljava/io/IOException;)V
+    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$ICj;-><init>(Ljava/io/IOException;)V
 
     throw v1
 .end method
@@ -1250,9 +1250,9 @@
     move-exception v0
 
     .line 1409
-    new-instance v1, Lc/a/a/a/a/e/HttpRequest$j;
+    new-instance v1, Lc/a/a/a/a/e/HttpRequest$ICj;
 
-    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$j;-><init>(Ljava/io/IOException;)V
+    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$ICj;-><init>(Ljava/io/IOException;)V
 
     throw v1
 .end method
@@ -1672,13 +1672,13 @@
     invoke-virtual {p0}, Lc/a/a/a/a/e/HttpRequest;->m()Lc/a/a/a/a/e/HttpRequest;
 
     .line 2815
-    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$l;
+    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$ICl;
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lc/a/a/a/a/e/HttpRequest$l;->a(Ljava/lang/String;)Lc/a/a/a/a/e/HttpRequest$l;
+    invoke-virtual {v0, v1}, Lc/a/a/a/a/e/HttpRequest$ICl;->a(Ljava/lang/String;)Lc/a/a/a/a/e/HttpRequest$ICl;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1690,9 +1690,9 @@
     move-exception v0
 
     .line 2817
-    new-instance v1, Lc/a/a/a/a/e/HttpRequest$j;
+    new-instance v1, Lc/a/a/a/a/e/HttpRequest$ICj;
 
-    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$j;-><init>(Ljava/io/IOException;)V
+    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$ICj;-><init>(Ljava/io/IOException;)V
 
     throw v1
 .end method
@@ -1797,9 +1797,9 @@
     move-exception v0
 
     .line 1686
-    new-instance v1, Lc/a/a/a/a/e/HttpRequest$j;
+    new-instance v1, Lc/a/a/a/a/e/HttpRequest$ICj;
 
-    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$j;-><init>(Ljava/io/IOException;)V
+    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$ICj;-><init>(Ljava/io/IOException;)V
 
     throw v1
 
@@ -1835,9 +1835,9 @@
     move-exception v0
 
     .line 1694
-    new-instance v1, Lc/a/a/a/a/e/HttpRequest$j;
+    new-instance v1, Lc/a/a/a/a/e/HttpRequest$ICj;
 
-    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$j;-><init>(Ljava/io/IOException;)V
+    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$ICj;-><init>(Ljava/io/IOException;)V
 
     throw v1
 
@@ -1859,9 +1859,9 @@
     move-exception v0
 
     .line 1704
-    new-instance v1, Lc/a/a/a/a/e/HttpRequest$j;
+    new-instance v1, Lc/a/a/a/a/e/HttpRequest$ICj;
 
-    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$j;-><init>(Ljava/io/IOException;)V
+    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$ICj;-><init>(Ljava/io/IOException;)V
 
     throw v1
 .end method
@@ -1915,7 +1915,7 @@
 
     .prologue
     .line 2462
-    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$l;
+    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$ICl;
 
     if-nez v0, :cond_0
 
@@ -1930,11 +1930,11 @@
     if-eqz v0, :cond_1
 
     .line 2465
-    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$l;
+    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$ICl;
 
     const-string/jumbo v1, "\r\n--00content0boundary00--\r\n"
 
-    invoke-virtual {v0, v1}, Lc/a/a/a/a/e/HttpRequest$l;->a(Ljava/lang/String;)Lc/a/a/a/a/e/HttpRequest$l;
+    invoke-virtual {v0, v1}, Lc/a/a/a/a/e/HttpRequest$ICl;->a(Ljava/lang/String;)Lc/a/a/a/a/e/HttpRequest$ICl;
 
     .line 2466
     :cond_1
@@ -1944,9 +1944,9 @@
 
     .line 2468
     :try_start_0
-    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$l;
+    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$ICl;
 
-    invoke-virtual {v0}, Lc/a/a/a/a/e/HttpRequest$l;->close()V
+    invoke-virtual {v0}, Lc/a/a/a/a/e/HttpRequest$ICl;->close()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1954,15 +1954,15 @@
     :goto_1
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$l;
+    iput-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$ICl;
 
     goto :goto_0
 
     .line 2473
     :cond_2
-    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$l;
+    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$ICl;
 
-    invoke-virtual {v0}, Lc/a/a/a/a/e/HttpRequest$l;->close()V
+    invoke-virtual {v0}, Lc/a/a/a/a/e/HttpRequest$ICl;->close()V
 
     goto :goto_1
 
@@ -1992,9 +1992,9 @@
     move-exception v0
 
     .line 2489
-    new-instance v1, Lc/a/a/a/a/e/HttpRequest$j;
+    new-instance v1, Lc/a/a/a/a/e/HttpRequest$ICj;
 
-    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$j;-><init>(Ljava/io/IOException;)V
+    invoke-direct {v1, v0}, Lc/a/a/a/a/e/HttpRequest$ICj;-><init>(Ljava/io/IOException;)V
 
     throw v1
 .end method
@@ -2004,7 +2004,7 @@
 
     .prologue
     .line 2500
-    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$l;
+    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$ICl;
 
     if-eqz v0, :cond_0
 
@@ -2040,7 +2040,7 @@
     move-result-object v0
 
     .line 2504
-    new-instance v1, Lc/a/a/a/a/e/HttpRequest$l;
+    new-instance v1, Lc/a/a/a/a/e/HttpRequest$ICl;
 
     invoke-virtual {p0}, Lc/a/a/a/a/e/HttpRequest;->a()Ljava/net/HttpURLConnection;
 
@@ -2052,9 +2052,9 @@
 
     iget v3, p0, Lc/a/a/a/a/e/HttpRequest;->j:I
 
-    invoke-direct {v1, v2, v0, v3}, Lc/a/a/a/a/e/HttpRequest$l;-><init>(Ljava/io/OutputStream;Ljava/lang/String;I)V
+    invoke-direct {v1, v2, v0, v3}, Lc/a/a/a/a/e/HttpRequest$ICl;-><init>(Ljava/io/OutputStream;Ljava/lang/String;I)V
 
-    iput-object v1, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$l;
+    iput-object v1, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$ICl;
 
     goto :goto_0
 .end method
@@ -2083,11 +2083,11 @@
     invoke-virtual {v0}, Lc/a/a/a/a/e/HttpRequest;->m()Lc/a/a/a/a/e/HttpRequest;
 
     .line 2518
-    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$l;
+    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$ICl;
 
     const-string/jumbo v1, "--00content0boundary00\r\n"
 
-    invoke-virtual {v0, v1}, Lc/a/a/a/a/e/HttpRequest$l;->a(Ljava/lang/String;)Lc/a/a/a/a/e/HttpRequest$l;
+    invoke-virtual {v0, v1}, Lc/a/a/a/a/e/HttpRequest$ICl;->a(Ljava/lang/String;)Lc/a/a/a/a/e/HttpRequest$ICl;
 
     .line 2521
     :goto_0
@@ -2095,11 +2095,11 @@
 
     .line 2520
     :cond_0
-    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$l;
+    iget-object v0, p0, Lc/a/a/a/a/e/HttpRequest;->f:Lc/a/a/a/a/e/HttpRequest$ICl;
 
     const-string/jumbo v1, "\r\n--00content0boundary00\r\n"
 
-    invoke-virtual {v0, v1}, Lc/a/a/a/a/e/HttpRequest$l;->a(Ljava/lang/String;)Lc/a/a/a/a/e/HttpRequest$l;
+    invoke-virtual {v0, v1}, Lc/a/a/a/a/e/HttpRequest$ICl;->a(Ljava/lang/String;)Lc/a/a/a/a/e/HttpRequest$ICl;
 
     goto :goto_0
 .end method

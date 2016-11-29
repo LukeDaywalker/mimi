@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private b:Lcom/wumii/android/mimi/models/d/DatabaseConnection$g;
+.field private b:Lcom/wumii/android/mimi/models/d/DatabaseConnection$ICg;
 
 .field private c:Landroid/content/Context;
 
@@ -61,29 +61,29 @@
 
 
 # virtual methods
-.method public a()Lcom/wumii/android/mimi/models/d/DatabaseConnection$g;
+.method public a()Lcom/wumii/android/mimi/models/d/DatabaseConnection$ICg;
     .locals 3
 
     .prologue
     .line 162
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/d/DatabaseConnection;->b:Lcom/wumii/android/mimi/models/d/DatabaseConnection$g;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/d/DatabaseConnection;->b:Lcom/wumii/android/mimi/models/d/DatabaseConnection$ICg;
 
     if-nez v0, :cond_0
 
     .line 163
-    new-instance v0, Lcom/wumii/android/mimi/models/d/DatabaseConnection$g;
+    new-instance v0, Lcom/wumii/android/mimi/models/d/DatabaseConnection$ICg;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/models/d/DatabaseConnection;->c:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/models/d/DatabaseConnection;->d:Ljava/lang/String;
 
-    invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/DatabaseConnection$g;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/DatabaseConnection$ICg;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/d/DatabaseConnection;->b:Lcom/wumii/android/mimi/models/d/DatabaseConnection$g;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/d/DatabaseConnection;->b:Lcom/wumii/android/mimi/models/d/DatabaseConnection$ICg;
 
     .line 165
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/d/DatabaseConnection;->b:Lcom/wumii/android/mimi/models/d/DatabaseConnection$g;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/d/DatabaseConnection;->b:Lcom/wumii/android/mimi/models/d/DatabaseConnection$ICg;
 
     return-object v0
 .end method

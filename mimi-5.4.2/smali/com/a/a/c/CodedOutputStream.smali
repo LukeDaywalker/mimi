@@ -84,9 +84,9 @@
     if-nez v0, :cond_0
 
     .line 663
-    new-instance v0, Lcom/a/a/c/CodedOutputStream$g;
+    new-instance v0, Lcom/a/a/c/CodedOutputStream$ICg;
 
-    invoke-direct {v0}, Lcom/a/a/c/CodedOutputStream$g;-><init>()V
+    invoke-direct {v0}, Lcom/a/a/c/CodedOutputStream$ICg;-><init>()V
 
     throw v0
 

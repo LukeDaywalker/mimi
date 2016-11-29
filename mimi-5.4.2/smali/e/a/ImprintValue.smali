@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Le/a/ImprintValue;",
-        "Le/a/ImprintValue$cg;",
+        "Le/a/ImprintValue$ICcg;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Le/a/ImprintValue$cg;",
+            "Le/a/ImprintValue$ICcg;",
             "Le/a/FieldMetaData;",
             ">;"
         }
@@ -69,7 +69,7 @@
 
 .field private j:B
 
-.field private k:[Le/a/ImprintValue$cg;
+.field private k:[Le/a/ImprintValue$ICcg;
 
 
 # direct methods
@@ -137,9 +137,9 @@
 
     const-class v1, Le/a/StandardScheme;
 
-    new-instance v2, Le/a/ImprintValue$cd;
+    new-instance v2, Le/a/ImprintValue$ICcd;
 
-    invoke-direct {v2, v3}, Le/a/ImprintValue$cd;-><init>(Le/a/ImprintValue$cb;)V
+    invoke-direct {v2, v3}, Le/a/ImprintValue$ICcd;-><init>(Le/a/ImprintValue$ICcb;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -148,21 +148,21 @@
 
     const-class v1, Le/a/TupleScheme;
 
-    new-instance v2, Le/a/ImprintValue$cf;
+    new-instance v2, Le/a/ImprintValue$ICcf;
 
-    invoke-direct {v2, v3}, Le/a/ImprintValue$cf;-><init>(Le/a/ImprintValue$cb;)V
+    invoke-direct {v2, v3}, Le/a/ImprintValue$ICcf;-><init>(Le/a/ImprintValue$ICcb;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 119
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Le/a/ImprintValue$cg;
+    const-class v1, Le/a/ImprintValue$ICcg;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 120
-    sget-object v1, Le/a/ImprintValue$cg;->a:Le/a/ImprintValue$cg;
+    sget-object v1, Le/a/ImprintValue$ICcg;->a:Le/a/ImprintValue$ICcg;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -177,7 +177,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 122
-    sget-object v1, Le/a/ImprintValue$cg;->b:Le/a/ImprintValue$cg;
+    sget-object v1, Le/a/ImprintValue$ICcg;->b:Le/a/ImprintValue$ICcg;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -192,7 +192,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 124
-    sget-object v1, Le/a/ImprintValue$cg;->c:Le/a/ImprintValue$cg;
+    sget-object v1, Le/a/ImprintValue$ICcg;->c:Le/a/ImprintValue$ICcg;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -239,13 +239,13 @@
     .line 116
     const/4 v0, 0x1
 
-    new-array v0, v0, [Le/a/ImprintValue$cg;
+    new-array v0, v0, [Le/a/ImprintValue$ICcg;
 
-    sget-object v1, Le/a/ImprintValue$cg;->a:Le/a/ImprintValue$cg;
+    sget-object v1, Le/a/ImprintValue$ICcg;->a:Le/a/ImprintValue$ICcg;
 
     aput-object v1, v0, v2
 
-    iput-object v0, p0, Le/a/ImprintValue;->k:[Le/a/ImprintValue$cg;
+    iput-object v0, p0, Le/a/ImprintValue;->k:[Le/a/ImprintValue$ICcg;
 
     .line 131
     return-void

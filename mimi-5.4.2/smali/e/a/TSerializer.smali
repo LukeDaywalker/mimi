@@ -17,9 +17,9 @@
 
     .prologue
     .line 58
-    new-instance v0, Le/a/TCompactProtocol$gp;
+    new-instance v0, Le/a/TCompactProtocol$ICgp;
 
-    invoke-direct {v0}, Le/a/TCompactProtocol$gp;-><init>()V
+    invoke-direct {v0}, Le/a/TCompactProtocol$ICgp;-><init>()V
 
     invoke-direct {p0, v0}, Le/a/TSerializer;-><init>(Le/a/TProtocolFactory;)V
 

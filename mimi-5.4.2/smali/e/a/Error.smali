@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Le/a/Error;",
-        "Le/a/Error$ao;",
+        "Le/a/Error$ICao;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Le/a/Error$ao;",
+            "Le/a/Error$ICao;",
             "Le/a/FieldMetaData;",
             ">;"
         }
@@ -69,7 +69,7 @@
 
 .field private j:B
 
-.field private k:[Le/a/Error$ao;
+.field private k:[Le/a/Error$ICao;
 
 
 # direct methods
@@ -139,9 +139,9 @@
 
     const-class v1, Le/a/StandardScheme;
 
-    new-instance v2, Le/a/Error$al;
+    new-instance v2, Le/a/Error$ICal;
 
-    invoke-direct {v2, v4}, Le/a/Error$al;-><init>(Le/a/Error$aj;)V
+    invoke-direct {v2, v4}, Le/a/Error$ICal;-><init>(Le/a/Error$ICaj;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -150,21 +150,21 @@
 
     const-class v1, Le/a/TupleScheme;
 
-    new-instance v2, Le/a/Error$an;
+    new-instance v2, Le/a/Error$ICan;
 
-    invoke-direct {v2, v4}, Le/a/Error$an;-><init>(Le/a/Error$aj;)V
+    invoke-direct {v2, v4}, Le/a/Error$ICan;-><init>(Le/a/Error$ICaj;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 127
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Le/a/Error$ao;
+    const-class v1, Le/a/Error$ICao;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 128
-    sget-object v1, Le/a/Error$ao;->a:Le/a/Error$ao;
+    sget-object v1, Le/a/Error$ICao;->a:Le/a/Error$ICao;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -179,7 +179,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 130
-    sget-object v1, Le/a/Error$ao;->b:Le/a/Error$ao;
+    sget-object v1, Le/a/Error$ICao;->b:Le/a/Error$ICao;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -194,7 +194,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 132
-    sget-object v1, Le/a/Error$ao;->c:Le/a/Error$ao;
+    sget-object v1, Le/a/Error$ICao;->c:Le/a/Error$ICao;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -245,13 +245,13 @@
     .line 124
     const/4 v0, 0x1
 
-    new-array v0, v0, [Le/a/Error$ao;
+    new-array v0, v0, [Le/a/Error$ICao;
 
-    sget-object v1, Le/a/Error$ao;->c:Le/a/Error$ao;
+    sget-object v1, Le/a/Error$ICao;->c:Le/a/Error$ICao;
 
     aput-object v1, v0, v2
 
-    iput-object v0, p0, Le/a/Error;->k:[Le/a/Error$ao;
+    iput-object v0, p0, Le/a/Error;->k:[Le/a/Error$ICao;
 
     .line 139
     return-void

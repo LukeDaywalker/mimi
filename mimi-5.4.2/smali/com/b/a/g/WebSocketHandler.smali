@@ -189,7 +189,7 @@
 
     .prologue
     .line 128
-    invoke-static {p3}, Lcom/b/a/g/WebSocketHandler$j;->a(Lorg/apache/http/protocol/HttpContext;)Lcom/b/a/g/WebSocketHandler$j;
+    invoke-static {p3}, Lcom/b/a/g/WebSocketHandler$ICj;->a(Lorg/apache/http/protocol/HttpContext;)Lcom/b/a/g/WebSocketHandler$ICj;
 
     move-result-object v0
 
@@ -238,7 +238,7 @@
 
     .line 141
     :cond_0
-    invoke-virtual {v0}, Lcom/b/a/g/WebSocketHandler$j;->a()Lorg/apache/http/HttpServerConnection;
+    invoke-virtual {v0}, Lcom/b/a/g/WebSocketHandler$ICj;->a()Lorg/apache/http/HttpServerConnection;
 
     move-result-object v1
 
@@ -247,11 +247,11 @@
     .line 143
     new-instance v1, Lcom/b/a/g/WebSocketSession;
 
-    invoke-virtual {v0}, Lcom/b/a/g/WebSocketHandler$j;->b()Ljava/io/InputStream;
+    invoke-virtual {v0}, Lcom/b/a/g/WebSocketHandler$ICj;->b()Ljava/io/InputStream;
 
     move-result-object v2
 
-    invoke-virtual {v0}, Lcom/b/a/g/WebSocketHandler$j;->c()Ljava/io/OutputStream;
+    invoke-virtual {v0}, Lcom/b/a/g/WebSocketHandler$ICj;->c()Ljava/io/OutputStream;
 
     move-result-object v0
 

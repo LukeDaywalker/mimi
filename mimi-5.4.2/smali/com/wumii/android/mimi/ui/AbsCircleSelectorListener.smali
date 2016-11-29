@@ -120,9 +120,9 @@
     .line 87
     const v1, 0x7f06030f
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener$b;
+    new-instance v2, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener$ICb;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener$b;-><init>(Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener$ICb;-><init>(Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -249,7 +249,7 @@
 
     .prologue
     .line 145
-    sget-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener$d;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener$ICd;->a:[I
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;->a()Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -403,9 +403,9 @@
     .line 112
     const v1, 0x7f0600ca
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener$c;
+    new-instance v2, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener$ICc;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener$c;-><init>(Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener$ICc;-><init>(Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

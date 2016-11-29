@@ -8,7 +8,7 @@
 
 .field private volatile b:Z
 
-.field private volatile c:Lcom/b/a/f/LocalSocketHttpServerConnection$d;
+.field private volatile c:Lcom/b/a/f/LocalSocketHttpServerConnection$ICd;
 
 
 # direct methods
@@ -88,18 +88,18 @@
     move-result v0
 
     .line 31
-    new-instance v1, Lcom/b/a/f/LocalSocketHttpServerConnection$d;
+    new-instance v1, Lcom/b/a/f/LocalSocketHttpServerConnection$ICd;
 
-    invoke-direct {v1, p1, v0, p2}, Lcom/b/a/f/LocalSocketHttpServerConnection$d;-><init>(Landroid/net/LocalSocket;ILorg/apache/http/params/HttpParams;)V
+    invoke-direct {v1, p1, v0, p2}, Lcom/b/a/f/LocalSocketHttpServerConnection$ICd;-><init>(Landroid/net/LocalSocket;ILorg/apache/http/params/HttpParams;)V
 
-    iput-object v1, p0, Lcom/b/a/f/LocalSocketHttpServerConnection;->c:Lcom/b/a/f/LocalSocketHttpServerConnection$d;
+    iput-object v1, p0, Lcom/b/a/f/LocalSocketHttpServerConnection;->c:Lcom/b/a/f/LocalSocketHttpServerConnection$ICd;
 
     .line 32
-    iget-object v1, p0, Lcom/b/a/f/LocalSocketHttpServerConnection;->c:Lcom/b/a/f/LocalSocketHttpServerConnection$d;
+    iget-object v1, p0, Lcom/b/a/f/LocalSocketHttpServerConnection;->c:Lcom/b/a/f/LocalSocketHttpServerConnection$ICd;
 
-    new-instance v2, Lcom/b/a/f/LocalSocketHttpServerConnection$e;
+    new-instance v2, Lcom/b/a/f/LocalSocketHttpServerConnection$ICe;
 
-    invoke-direct {v2, p1, v0, p2}, Lcom/b/a/f/LocalSocketHttpServerConnection$e;-><init>(Landroid/net/LocalSocket;ILorg/apache/http/params/HttpParams;)V
+    invoke-direct {v2, p1, v0, p2}, Lcom/b/a/f/LocalSocketHttpServerConnection$ICe;-><init>(Landroid/net/LocalSocket;ILorg/apache/http/params/HttpParams;)V
 
     invoke-virtual {p0, v1, v2, p2}, Lcom/b/a/f/LocalSocketHttpServerConnection;->init(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/io/SessionOutputBuffer;Lorg/apache/http/params/HttpParams;)V
 
@@ -130,9 +130,9 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/b/a/f/LocalSocketHttpServerConnection;->c:Lcom/b/a/f/LocalSocketHttpServerConnection$d;
+    iget-object v0, p0, Lcom/b/a/f/LocalSocketHttpServerConnection;->c:Lcom/b/a/f/LocalSocketHttpServerConnection$ICd;
 
-    invoke-virtual {v0}, Lcom/b/a/f/LocalSocketHttpServerConnection$d;->a()[B
+    invoke-virtual {v0}, Lcom/b/a/f/LocalSocketHttpServerConnection$ICd;->a()[B
 
     move-result-object v0
 

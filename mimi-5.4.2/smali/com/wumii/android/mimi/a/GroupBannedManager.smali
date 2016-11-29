@@ -36,28 +36,28 @@
 
     const-string/jumbo v1, "chat/member/ban/detail"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 34
     iget-object v0, p0, Lcom/wumii/android/mimi/a/GroupBannedManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/member/ban/cancel"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 35
     iget-object v0, p0, Lcom/wumii/android/mimi/a/GroupBannedManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/group/kick"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 36
     iget-object v0, p0, Lcom/wumii/android/mimi/a/GroupBannedManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/member/bans"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 37
     return-void
@@ -72,7 +72,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/a/GroupBannedManager$an;
+    check-cast v0, Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;
 
     .line 84
     invoke-virtual {p2}, Lcom/wumii/android/mimi/network/HttpJsonResponse;->getStatusCode()I
@@ -161,7 +161,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/wumii/android/mimi/a/GroupBannedManager$an;->a(ZILjava/lang/String;)V
+    invoke-virtual {v0, v3, v1, v2}, Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;->a(ZILjava/lang/String;)V
 
     .line 98
     :cond_1
@@ -198,7 +198,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/a/GroupBannedManager$an;
+    check-cast v0, Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;
 
     .line 103
     if-eqz v0, :cond_0
@@ -221,7 +221,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/a/GroupBannedManager$an;->b(ZILjava/lang/String;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;->b(ZILjava/lang/String;)V
 
     .line 106
     :cond_0
@@ -243,7 +243,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/a/GroupBannedManager$an;
+    check-cast v0, Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;
 
     .line 111
     invoke-virtual {p2}, Lcom/wumii/android/mimi/network/HttpJsonResponse;->getStatusCode()I
@@ -267,7 +267,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/a/GroupBannedManager$an;->c(ZILjava/lang/String;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;->c(ZILjava/lang/String;)V
 
     .line 116
     :cond_0
@@ -293,7 +293,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/a/GroupBannedManager$an;
+    check-cast v0, Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;
 
     .line 121
     invoke-virtual {p2}, Lcom/wumii/android/mimi/network/HttpJsonResponse;->getStatusCode()I
@@ -393,7 +393,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v3, v1, v2}, Lcom/wumii/android/mimi/a/GroupBannedManager$an;->d(ZILjava/lang/String;)V
+    invoke-virtual {v0, v3, v1, v2}, Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;->d(ZILjava/lang/String;)V
 
     .line 140
     :cond_1
@@ -510,7 +510,7 @@
     goto :goto_0
 .end method
 
-.method public a(Ljava/lang/String;Lcom/wumii/android/mimi/a/GroupBannedManager$an;)V
+.method public a(Ljava/lang/String;Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;)V
     .locals 7
 
     .prologue
@@ -529,7 +529,7 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$i;->a:Lcom/wumii/android/mimi/network/HttpRequest$i;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v2, "chat/member/ban/detail"
 
@@ -537,7 +537,7 @@
 
     move-object v5, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$i;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -545,7 +545,7 @@
     return-void
 .end method
 
-.method public b(Ljava/lang/String;Lcom/wumii/android/mimi/a/GroupBannedManager$an;)V
+.method public b(Ljava/lang/String;Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;)V
     .locals 7
 
     .prologue
@@ -564,7 +564,7 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$i;->b:Lcom/wumii/android/mimi/network/HttpRequest$i;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v2, "chat/member/ban/cancel"
 
@@ -572,7 +572,7 @@
 
     move-object v5, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$i;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -580,7 +580,7 @@
     return-void
 .end method
 
-.method public c(Ljava/lang/String;Lcom/wumii/android/mimi/a/GroupBannedManager$an;)V
+.method public c(Ljava/lang/String;Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;)V
     .locals 7
 
     .prologue
@@ -599,7 +599,7 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$i;->b:Lcom/wumii/android/mimi/network/HttpRequest$i;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v2, "chat/group/kick"
 
@@ -607,7 +607,7 @@
 
     move-object v5, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$i;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -615,7 +615,7 @@
     return-void
 .end method
 
-.method public d(Ljava/lang/String;Lcom/wumii/android/mimi/a/GroupBannedManager$an;)V
+.method public d(Ljava/lang/String;Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;)V
     .locals 7
 
     .prologue
@@ -634,7 +634,7 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$i;->a:Lcom/wumii/android/mimi/network/HttpRequest$i;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v2, "chat/member/bans"
 
@@ -642,7 +642,7 @@
 
     move-object v5, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$i;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 

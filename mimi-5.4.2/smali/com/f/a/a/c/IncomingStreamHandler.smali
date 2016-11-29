@@ -13,9 +13,9 @@
 
     .prologue
     .line 23
-    new-instance v0, Lcom/f/a/a/c/IncomingStreamHandler$r;
+    new-instance v0, Lcom/f/a/a/c/IncomingStreamHandler$ICr;
 
-    invoke-direct {v0}, Lcom/f/a/a/c/IncomingStreamHandler$r;-><init>()V
+    invoke-direct {v0}, Lcom/f/a/a/c/IncomingStreamHandler$ICr;-><init>()V
 
     sput-object v0, Lcom/f/a/a/c/IncomingStreamHandler;->a:Lcom/f/a/a/c/IncomingStreamHandler;
 

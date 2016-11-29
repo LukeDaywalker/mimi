@@ -464,9 +464,9 @@
     .line 62
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;->p:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$i;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICi;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$i;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICi;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -528,11 +528,11 @@
     if-eqz v1, :cond_0
 
     .line 104
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$l;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICl;
 
-    invoke-direct {v1, p0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$l;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;Landroid/app/Activity;)V
+    invoke-direct {v1, p0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICl;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;Landroid/app/Activity;)V
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$l;->j()V
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICl;->j()V
 
     .line 124
     :goto_0
@@ -556,9 +556,9 @@
     .line 108
     const v2, 0x7f0600c8
 
-    new-instance v3, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$k;
+    new-instance v3, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICk;
 
-    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$k;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;)V
+    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICk;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;)V
 
     invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -566,9 +566,9 @@
 
     const v3, 0x7f060106
 
-    new-instance v4, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$j;
+    new-instance v4, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICj;
 
-    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$j;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;)V
+    invoke-direct {v4, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICj;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;)V
 
     invoke-virtual {v2, v3, v4}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

@@ -2,4 +2,4 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/c/a/a/ParseSource$p;
+.implements Lcom/c/a/a/ParseSource$ICp;

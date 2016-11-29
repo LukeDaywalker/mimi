@@ -245,7 +245,7 @@
     const/4 v2, 0x1
 
     .line 83
-    sget-object v0, Lc/a/a/a/a/e/DefaultHttpRequestFactory$c;->a:[I
+    sget-object v0, Lc/a/a/a/a/e/DefaultHttpRequestFactory$ICc;->a:[I
 
     invoke-virtual {p1}, Lc/a/a/a/a/e/HttpMethod;->ordinal()I
 

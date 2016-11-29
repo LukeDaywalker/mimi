@@ -311,7 +311,7 @@
     goto :goto_1
 .end method
 
-.method public a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[BJLcom/wumii/android/mimi/models/g/WeixinShareHelper$ax;)V
+.method public a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[BJLcom/wumii/android/mimi/models/g/WeixinShareHelper$ICax;)V
     .locals 9
 
     .prologue
@@ -326,7 +326,7 @@
     if-eqz p7, :cond_0
 
     .line 99
-    invoke-interface/range {p7 .. p7}, Lcom/wumii/android/mimi/models/g/WeixinShareHelper$ax;->a()V
+    invoke-interface/range {p7 .. p7}, Lcom/wumii/android/mimi/models/g/WeixinShareHelper$ICax;->a()V
 
     .line 107
     :cond_0
@@ -389,7 +389,7 @@
 
     move-wide v6, p5
 
-    invoke-virtual/range {v1 .. v8}, Lcom/wumii/android/mimi/models/g/WeixinShareHelper;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[BJLcom/wumii/android/mimi/models/g/WeixinShareHelper$ax;)V
+    invoke-virtual/range {v1 .. v8}, Lcom/wumii/android/mimi/models/g/WeixinShareHelper;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[BJLcom/wumii/android/mimi/models/g/WeixinShareHelper$ICax;)V
 
     .line 94
     return-void

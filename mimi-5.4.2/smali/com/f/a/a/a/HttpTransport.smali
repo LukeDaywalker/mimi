@@ -296,14 +296,14 @@
     return-void
 .end method
 
-.method public b()Lcom/f/a/Response$au;
+.method public b()Lcom/f/a/Response$ICau;
     .locals 1
 
     .prologue
     .line 80
     iget-object v0, p0, Lcom/f/a/a/a/HttpTransport;->b:Lcom/f/a/a/a/HttpConnection;
 
-    invoke-virtual {v0}, Lcom/f/a/a/a/HttpConnection;->g()Lcom/f/a/Response$au;
+    invoke-virtual {v0}, Lcom/f/a/a/a/HttpConnection;->g()Lcom/f/a/Response$ICau;
 
     move-result-object v0
 

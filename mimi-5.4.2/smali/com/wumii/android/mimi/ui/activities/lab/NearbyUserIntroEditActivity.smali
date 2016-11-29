@@ -10,7 +10,7 @@
 
 .field private E:Lcom/wumii/android/mimi/b/AppealLegalityTask;
 
-.field private F:Lcom/wumii/android/mimi/b/AppealLegalityTask$c;
+.field private F:Lcom/wumii/android/mimi/b/AppealLegalityTask$ICc;
 
 .field private q:Lcom/wumii/android/mimi/ui/widgets/TitleItemView;
 
@@ -155,25 +155,25 @@
     goto :goto_0
 .end method
 
-.method private t()Lcom/wumii/android/mimi/b/AppealLegalityTask$c;
+.method private t()Lcom/wumii/android/mimi/b/AppealLegalityTask$ICc;
     .locals 1
 
     .prologue
     .line 139
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->F:Lcom/wumii/android/mimi/b/AppealLegalityTask$c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->F:Lcom/wumii/android/mimi/b/AppealLegalityTask$ICc;
 
     if-nez v0, :cond_0
 
     .line 140
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$p;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICp;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$p;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICp;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->F:Lcom/wumii/android/mimi/b/AppealLegalityTask$c;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->F:Lcom/wumii/android/mimi/b/AppealLegalityTask$ICc;
 
     .line 156
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->F:Lcom/wumii/android/mimi/b/AppealLegalityTask$c;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->F:Lcom/wumii/android/mimi/b/AppealLegalityTask$ICc;
 
     return-object v0
 .end method
@@ -312,9 +312,9 @@
     iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->o:Landroid/widget/TextView;
 
     .line 77
-    new-instance v2, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$n;
+    new-instance v2, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICn;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$n;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICn;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
@@ -501,9 +501,9 @@
     if-nez v0, :cond_0
 
     .line 121
-    new-instance v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$o;
+    new-instance v0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICo;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$o;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICo;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->D:Landroid/view/View$OnClickListener;
 
@@ -530,11 +530,11 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->z:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->t()Lcom/wumii/android/mimi/b/AppealLegalityTask$c;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->t()Lcom/wumii/android/mimi/b/AppealLegalityTask$ICc;
 
     move-result-object v3
 
-    invoke-direct {v0, p0, v1, v2, v3}, Lcom/wumii/android/mimi/b/AppealLegalityTask;-><init>(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/b/AppealLegalityTask$c;)V
+    invoke-direct {v0, p0, v1, v2, v3}, Lcom/wumii/android/mimi/b/AppealLegalityTask;-><init>(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/b/AppealLegalityTask$ICc;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->E:Lcom/wumii/android/mimi/b/AppealLegalityTask;
 

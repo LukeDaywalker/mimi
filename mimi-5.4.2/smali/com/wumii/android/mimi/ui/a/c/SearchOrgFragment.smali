@@ -3,7 +3,7 @@
 .source "SearchOrgFragment.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$be;
+.implements Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
 
 
 # instance fields
@@ -37,11 +37,11 @@
 
 .field private v:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
-.field private w:Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$z;
+.field private w:Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICz;
 
 .field private x:Z
 
-.field private y:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$b;
+.field private y:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;
 
 
 # direct methods
@@ -53,11 +53,11 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/a/c/OrgInfoBaseFragment;-><init>()V
 
     .line 383
-    new-instance v0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$l;
+    new-instance v0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICl;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$l;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICl;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->y:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$b;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->y:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;
 
     return-void
 .end method
@@ -198,9 +198,9 @@
     invoke-direct {v1, v0}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
 
     .line 307
-    new-instance v3, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$x;
+    new-instance v3, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICx;
 
-    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$x;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
+    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICx;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -298,9 +298,9 @@
     invoke-direct {v1, v0}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
 
     .line 334
-    new-instance v3, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$y;
+    new-instance v3, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICy;
 
-    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$y;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
+    invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICy;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -359,12 +359,12 @@
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$z;
+.method static synthetic c(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICz;
     .locals 1
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->w:Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$z;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->w:Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICz;
 
     return-object v0
 .end method
@@ -783,9 +783,9 @@
     if-nez v0, :cond_0
 
     .line 279
-    new-instance v0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$w;
+    new-instance v0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICw;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$w;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICw;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->t:Ljava/lang/Runnable;
 
@@ -832,9 +832,9 @@
     if-eqz v0, :cond_0
 
     .line 438
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->at:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->at:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$af;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
 
     .line 443
     :goto_0
@@ -849,26 +849,26 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->b:Lcom/wumii/android/mimi/ui/ActivityEventManager;
 
-    sget-object v3, Lcom/wumii/android/mimi/c/EventUtils$af;->aD:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v3, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->aD:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
-    sget-object v4, Lcom/wumii/android/mimi/c/EventUtils$af;->aF:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v4, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->aF:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
-    sget-object v5, Lcom/wumii/android/mimi/c/EventUtils$af;->aE:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v5, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->aE:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
-    new-instance v6, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$o;
+    new-instance v6, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICo;
 
-    invoke-direct {v6, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$o;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
+    invoke-direct {v6, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICo;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
 
-    invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/c/EventUtils$af;Lcom/wumii/android/mimi/c/EventUtils$af;Lcom/wumii/android/mimi/c/EventUtils$af;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$aq;)V
+    invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
 
     .line 472
     return-void
 
     .line 440
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->aO:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->aO:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$af;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
 
     goto :goto_0
 .end method
@@ -886,9 +886,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$z;
+    check-cast v0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICz;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->w:Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$z;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->w:Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICz;
     :try_end_0
     .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1014,7 +1014,7 @@
     .line 127
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->j:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;
 
-    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->setOnSearchOrgFooterViewClickListener(Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$be;)V
+    invoke-virtual {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->setOnSearchOrgFooterViewClickListener(Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;)V
 
     .line 128
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->e:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
@@ -1074,9 +1074,9 @@
     .line 135
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->q:Landroid/widget/Button;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$k;
+    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICk;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$k;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICk;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1105,9 +1105,9 @@
     .line 146
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->l:Landroid/widget/TextView;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$r;
+    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICr;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$r;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICr;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1125,9 +1125,9 @@
     .line 154
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->m:Landroid/widget/TextView;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$s;
+    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICs;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$s;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICs;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1152,18 +1152,18 @@
     .line 170
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$t;
+    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICt;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$t;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICt;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
 
-    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->setListener(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$al;)V
+    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->setListener(Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;)V
 
     .line 209
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->d:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$u;
+    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICu;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$u;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICu;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
 
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->setOnSearchBoxClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1181,16 +1181,16 @@
     .line 231
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->e:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->y:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$b;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->y:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;
 
-    invoke-virtual {v0, v2}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->setOnItemClickListener(Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$b;)V
+    invoke-virtual {v0, v2}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->setOnItemClickListener(Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView$ICb;)V
 
     .line 232
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->e:Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$v;
+    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICv;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$v;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICv;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
 
     invoke-virtual {v0, v2}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
@@ -1549,9 +1549,9 @@
     if-eqz v0, :cond_0
 
     .line 538
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->w:Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$z;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;->w:Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICz;
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$z;->h()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICz;->h()V
 
     .line 556
     :goto_0
@@ -1594,9 +1594,9 @@
     .line 545
     const v1, 0x7f0600a8
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$q;
+    new-instance v2, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICq;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$q;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment$ICq;-><init>(Lcom/wumii/android/mimi/ui/a/c/SearchOrgFragment;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

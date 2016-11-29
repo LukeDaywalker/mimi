@@ -27,7 +27,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/f/a/Request;Lcom/f/a/Response;Lcom/f/a/a/a/CacheStrategy$d;)V
+.method synthetic constructor <init>(Lcom/f/a/Request;Lcom/f/a/Response;Lcom/f/a/a/a/CacheStrategy$ICd;)V
     .locals 0
 
     .prologue

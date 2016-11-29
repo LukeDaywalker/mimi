@@ -85,7 +85,7 @@
     return v0
 .end method
 
-.method protected c()Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$y;
+.method protected c()Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
     .locals 1
 
     .prologue
@@ -185,7 +185,7 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemBaseRadioFragment;->a:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;
 
     .line 37
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemBaseRadioFragment;->c()Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$y;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemBaseRadioFragment;->c()Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
 
     move-result-object v0
 
@@ -193,9 +193,9 @@
     if-nez v0, :cond_0
 
     .line 39
-    new-instance v0, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemBaseRadioFragment$v;
+    new-instance v0, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemBaseRadioFragment$ICv;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemBaseRadioFragment$v;-><init>(Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemBaseRadioFragment;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemBaseRadioFragment$ICv;-><init>(Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemBaseRadioFragment;)V
 
     .line 46
     :cond_0
@@ -209,7 +209,7 @@
 
     move-result v4
 
-    invoke-virtual {v2, v3, v4, v0}, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->setRadios(Ljava/util/List;ILcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$y;)V
+    invoke-virtual {v2, v3, v4, v0}, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->setRadios(Ljava/util/List;ILcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;)V
 
     .line 47
     return-object v1

@@ -626,9 +626,9 @@
 
     .prologue
     .line 334
-    new-instance v0, Ld/RealBufferedSource$x;
+    new-instance v0, Ld/RealBufferedSource$ICx;
 
-    invoke-direct {v0, p0}, Ld/RealBufferedSource$x;-><init>(Ld/RealBufferedSource;)V
+    invoke-direct {v0, p0}, Ld/RealBufferedSource$ICx;-><init>(Ld/RealBufferedSource;)V
 
     return-object v0
 .end method

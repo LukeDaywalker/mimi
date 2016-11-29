@@ -22,7 +22,7 @@
 .method public abstract a(Lcom/f/a/a/a/RetryableSink;)V
 .end method
 
-.method public abstract b()Lcom/f/a/Response$au;
+.method public abstract b()Lcom/f/a/Response$ICau;
 .end method
 
 .method public abstract c()V

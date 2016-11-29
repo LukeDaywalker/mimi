@@ -35,9 +35,9 @@
 
     .prologue
     .line 25
-    new-instance v0, Lcom/a/a/c/ReportUploader$bw;
+    new-instance v0, Lcom/a/a/c/ReportUploader$ICbw;
 
-    invoke-direct {v0}, Lcom/a/a/c/ReportUploader$bw;-><init>()V
+    invoke-direct {v0}, Lcom/a/a/c/ReportUploader$ICbw;-><init>()V
 
     sput-object v0, Lcom/a/a/c/ReportUploader;->b:Ljava/io/FilenameFilter;
 
@@ -288,9 +288,9 @@
     .line 55
     new-instance v0, Ljava/lang/Thread;
 
-    new-instance v1, Lcom/a/a/c/ReportUploader$bx;
+    new-instance v1, Lcom/a/a/c/ReportUploader$ICbx;
 
-    invoke-direct {v1, p0, p1}, Lcom/a/a/c/ReportUploader$bx;-><init>(Lcom/a/a/c/ReportUploader;F)V
+    invoke-direct {v1, p0, p1}, Lcom/a/a/c/ReportUploader$ICbx;-><init>(Lcom/a/a/c/ReportUploader;F)V
 
     const-string/jumbo v2, "Crashlytics Report Uploader"
 

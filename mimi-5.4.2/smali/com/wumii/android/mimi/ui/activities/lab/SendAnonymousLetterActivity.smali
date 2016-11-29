@@ -205,15 +205,15 @@
 
     .line 141
     :cond_0
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$aa;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$ICaa;
 
-    invoke-direct {v1, p0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$aa;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;Landroid/app/Activity;)V
+    invoke-direct {v1, p0, p0}, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$ICaa;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;Landroid/app/Activity;)V
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->r:Ljava/lang/String;
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->q:Ljava/lang/String;
 
-    invoke-virtual {v1, v2, v0, v3}, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$aa;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v0, v3}, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$ICaa;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -416,9 +416,9 @@
     .line 54
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->o:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$z;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$ICz;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$z;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$ICz;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lorg/a/a/c/ObjectUtils$c;
+.field public static final a:Lorg/a/a/c/ObjectUtils$ICc;
 
 
 # direct methods
@@ -13,11 +13,11 @@
 
     .prologue
     .line 63
-    new-instance v0, Lorg/a/a/c/ObjectUtils$c;
+    new-instance v0, Lorg/a/a/c/ObjectUtils$ICc;
 
-    invoke-direct {v0}, Lorg/a/a/c/ObjectUtils$c;-><init>()V
+    invoke-direct {v0}, Lorg/a/a/c/ObjectUtils$ICc;-><init>()V
 
-    sput-object v0, Lorg/a/a/c/ObjectUtils;->a:Lorg/a/a/c/ObjectUtils$c;
+    sput-object v0, Lorg/a/a/c/ObjectUtils;->a:Lorg/a/a/c/ObjectUtils$ICc;
 
     return-void
 .end method

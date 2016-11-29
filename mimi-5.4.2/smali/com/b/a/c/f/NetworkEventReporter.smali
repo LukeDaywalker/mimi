@@ -7,10 +7,10 @@
 .method public abstract a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/io/InputStream;Lcom/b/a/c/f/ResponseHandler;)Ljava/io/InputStream;
 .end method
 
-.method public abstract a(Lcom/b/a/c/f/NetworkEventReporter$j;)V
+.method public abstract a(Lcom/b/a/c/f/NetworkEventReporter$ICj;)V
 .end method
 
-.method public abstract a(Lcom/b/a/c/f/NetworkEventReporter$k;)V
+.method public abstract a(Lcom/b/a/c/f/NetworkEventReporter$ICk;)V
 .end method
 
 .method public abstract a(Ljava/lang/String;)V

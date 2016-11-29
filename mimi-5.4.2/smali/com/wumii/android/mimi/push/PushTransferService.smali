@@ -45,7 +45,7 @@
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
-    sget-object v1, Lcom/wumii/android/mimi/c/Constants$r;->a:Ljava/lang/String;
+    sget-object v1, Lcom/wumii/android/mimi/c/Constants$ICr;->a:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 

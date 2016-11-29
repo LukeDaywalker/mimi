@@ -251,9 +251,9 @@
 
     .line 114
     :cond_2
-    new-instance v0, Lcom/g/a/InternalAgent$r;
+    new-instance v0, Lcom/g/a/InternalAgent$ICr;
 
-    invoke-direct {v0, p0, p1}, Lcom/g/a/InternalAgent$r;-><init>(Lcom/g/a/InternalAgent;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p1}, Lcom/g/a/InternalAgent$ICr;-><init>(Lcom/g/a/InternalAgent;Landroid/content/Context;)V
 
     invoke-static {v0}, Lcom/g/a/QueuedWork;->a(Ljava/lang/Runnable;)V
     :try_end_0
@@ -443,9 +443,9 @@
 
     .line 139
     :cond_2
-    new-instance v0, Lcom/g/a/InternalAgent$s;
+    new-instance v0, Lcom/g/a/InternalAgent$ICs;
 
-    invoke-direct {v0, p0, p1}, Lcom/g/a/InternalAgent$s;-><init>(Lcom/g/a/InternalAgent;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p1}, Lcom/g/a/InternalAgent$ICs;-><init>(Lcom/g/a/InternalAgent;Landroid/content/Context;)V
 
     invoke-static {v0}, Lcom/g/a/QueuedWork;->a(Ljava/lang/Runnable;)V
     :try_end_0

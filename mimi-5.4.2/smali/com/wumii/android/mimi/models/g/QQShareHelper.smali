@@ -195,9 +195,9 @@
     if-nez v0, :cond_0
 
     .line 90
-    new-instance v0, Lcom/wumii/android/mimi/models/g/QQShareHelper$ah;
+    new-instance v0, Lcom/wumii/android/mimi/models/g/QQShareHelper$ICah;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/g/QQShareHelper$ah;-><init>(Lcom/wumii/android/mimi/models/g/QQShareHelper;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/models/g/QQShareHelper$ICah;-><init>(Lcom/wumii/android/mimi/models/g/QQShareHelper;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/models/g/QQShareHelper;->c:Lcom/tencent/tauth/b;
 

@@ -90,23 +90,23 @@
 
     .prologue
     .line 29
-    new-instance v0, Lcom/b/a/b/StreamingDumpappHandler$m;
+    new-instance v0, Lcom/b/a/b/StreamingDumpappHandler$ICm;
 
     invoke-virtual {p0}, Lcom/b/a/b/StreamingDumpappHandler;->a()Lcom/b/a/b/Dumper;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, p1, v1, p2}, Lcom/b/a/b/StreamingDumpappHandler$m;-><init>(Lcom/b/a/b/StreamingDumpappHandler;Lorg/apache/http/HttpRequest;Lcom/b/a/b/Dumper;Ljava/io/InputStream;)V
+    invoke-direct {v0, p0, p1, v1, p2}, Lcom/b/a/b/StreamingDumpappHandler$ICm;-><init>(Lcom/b/a/b/StreamingDumpappHandler;Lorg/apache/http/HttpRequest;Lcom/b/a/b/Dumper;Ljava/io/InputStream;)V
 
     .line 30
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/b/a/b/StreamingDumpappHandler$m;->setChunked(Z)V
+    invoke-virtual {v0, v1}, Lcom/b/a/b/StreamingDumpappHandler$ICm;->setChunked(Z)V
 
     .line 31
     const-string/jumbo v1, "application/octet-stream"
 
-    invoke-virtual {v0, v1}, Lcom/b/a/b/StreamingDumpappHandler$m;->setContentType(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/b/a/b/StreamingDumpappHandler$ICm;->setContentType(Ljava/lang/String;)V
 
     .line 32
     return-object v0

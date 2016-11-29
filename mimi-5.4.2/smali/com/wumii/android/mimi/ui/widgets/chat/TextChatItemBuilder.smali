@@ -59,7 +59,7 @@
 
     move-result-object v0
 
-    instance-of v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$bi;
+    instance-of v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;
 
     if-nez v0, :cond_1
 
@@ -76,9 +76,9 @@
     move-result-object p2
 
     .line 33
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$bi;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$bi;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;Landroid/view/View;)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder;Landroid/view/View;)V
 
     invoke-virtual {p2, v3, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
@@ -88,7 +88,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$bi;
+    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;
 
     .line 37
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->getChatMsgItem()Lcom/wumii/android/mimi/models/entities/chat/ChatMsgItemBase;
@@ -98,7 +98,7 @@
     check-cast v1, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgText;
 
     .line 38
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$bi;->a(Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$bi;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;->a(Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;)Landroid/widget/TextView;
 
     move-result-object v3
 
@@ -125,14 +125,14 @@
     invoke-direct {v2, v1, v3}, Lcom/wumii/android/mimi/ui/widgets/WMText;-><init>(Ljava/lang/CharSequence;I)V
 
     .line 41
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$bi;->a(Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$bi;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;->a(Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;)Landroid/widget/TextView;
 
     move-result-object v1
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 42
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$bi;->a(Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$bi;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;->a(Lcom/wumii/android/mimi/ui/widgets/chat/TextChatItemBuilder$ICbi;)Landroid/widget/TextView;
 
     move-result-object v0
 

@@ -94,9 +94,9 @@
 
     .prologue
     .line 64
-    new-instance v0, Lc/a/a/a/a/d/EventsHandler$i;
+    new-instance v0, Lc/a/a/a/a/d/EventsHandler$ICi;
 
-    invoke-direct {v0, p0, p1}, Lc/a/a/a/a/d/EventsHandler$i;-><init>(Lc/a/a/a/a/d/EventsHandler;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, p1}, Lc/a/a/a/a/d/EventsHandler$ICi;-><init>(Lc/a/a/a/a/d/EventsHandler;Ljava/lang/Object;)V
 
     invoke-virtual {p0, v0}, Lc/a/a/a/a/d/EventsHandler;->a(Ljava/lang/Runnable;)V
 
@@ -114,9 +114,9 @@
 
     .prologue
     .line 46
-    new-instance v0, Lc/a/a/a/a/d/EventsHandler$h;
+    new-instance v0, Lc/a/a/a/a/d/EventsHandler$ICh;
 
-    invoke-direct {v0, p0, p1, p2}, Lc/a/a/a/a/d/EventsHandler$h;-><init>(Lc/a/a/a/a/d/EventsHandler;Ljava/lang/Object;Z)V
+    invoke-direct {v0, p0, p1, p2}, Lc/a/a/a/a/d/EventsHandler$ICh;-><init>(Lc/a/a/a/a/d/EventsHandler;Ljava/lang/Object;Z)V
 
     invoke-virtual {p0, v0}, Lc/a/a/a/a/d/EventsHandler;->b(Ljava/lang/Runnable;)V
 
@@ -163,9 +163,9 @@
 
     .prologue
     .line 79
-    new-instance v0, Lc/a/a/a/a/d/EventsHandler$j;
+    new-instance v0, Lc/a/a/a/a/d/EventsHandler$ICj;
 
-    invoke-direct {v0, p0}, Lc/a/a/a/a/d/EventsHandler$j;-><init>(Lc/a/a/a/a/d/EventsHandler;)V
+    invoke-direct {v0, p0}, Lc/a/a/a/a/d/EventsHandler$ICj;-><init>(Lc/a/a/a/a/d/EventsHandler;)V
 
     invoke-virtual {p0, v0}, Lc/a/a/a/a/d/EventsHandler;->b(Ljava/lang/Runnable;)V
 
@@ -178,9 +178,9 @@
 
     .prologue
     .line 92
-    new-instance v0, Lc/a/a/a/a/d/EventsHandler$k;
+    new-instance v0, Lc/a/a/a/a/d/EventsHandler$ICk;
 
-    invoke-direct {v0, p0}, Lc/a/a/a/a/d/EventsHandler$k;-><init>(Lc/a/a/a/a/d/EventsHandler;)V
+    invoke-direct {v0, p0}, Lc/a/a/a/a/d/EventsHandler$ICk;-><init>(Lc/a/a/a/a/d/EventsHandler;)V
 
     invoke-virtual {p0, v0}, Lc/a/a/a/a/d/EventsHandler;->b(Ljava/lang/Runnable;)V
 

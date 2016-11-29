@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field private final b:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$az;
+.field private final b:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;
 
 .field private volatile c:Lcom/google/analytics/tracking/android/Dispatcher;
 
@@ -117,22 +117,22 @@
     iput-object p1, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;->d:Lcom/google/analytics/tracking/android/AnalyticsStoreStateListener;
 
     .line 112
-    new-instance v0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ay;
+    new-instance v0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICay;
 
-    invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ay;-><init>(Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;)V
+    invoke-direct {v0, p0}, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICay;-><init>(Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;)V
 
     iput-object v0, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;->h:Lcom/google/analytics/tracking/android/Clock;
 
     .line 118
-    new-instance v0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$az;
+    new-instance v0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;
 
     iget-object v1, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;->e:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;->f:Ljava/lang/String;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$az;-><init>(Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;-><init>(Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;Landroid/content/Context;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;->b:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$az;
+    iput-object v0, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;->b:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;
 
     .line 119
     new-instance v0, Lcom/google/analytics/tracking/android/SimpleNetworkDispatcher;
@@ -163,9 +163,9 @@
     .line 563
     .line 565
     :try_start_0
-    iget-object v0, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;->b:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$az;
+    iget-object v0, p0, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore;->b:Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;
 
-    invoke-virtual {v0}, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$az;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/google/analytics/tracking/android/PersistentAnalyticsStore$ICaz;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
 

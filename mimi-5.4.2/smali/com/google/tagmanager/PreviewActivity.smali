@@ -36,9 +36,9 @@
     .line 74
     const/4 v1, -0x1
 
-    new-instance v2, Lcom/google/tagmanager/PreviewActivity$al;
+    new-instance v2, Lcom/google/tagmanager/PreviewActivity$ICal;
 
-    invoke-direct {v2, p0}, Lcom/google/tagmanager/PreviewActivity$al;-><init>(Lcom/google/tagmanager/PreviewActivity;)V
+    invoke-direct {v2, p0}, Lcom/google/tagmanager/PreviewActivity$ICal;-><init>(Lcom/google/tagmanager/PreviewActivity;)V
 
     invoke-virtual {v0, v1, p3, v2}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 

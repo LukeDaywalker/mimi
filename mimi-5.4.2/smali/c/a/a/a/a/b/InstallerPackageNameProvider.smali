@@ -36,9 +36,9 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 36
-    new-instance v0, Lc/a/a/a/a/b/InstallerPackageNameProvider$ac;
+    new-instance v0, Lc/a/a/a/a/b/InstallerPackageNameProvider$ICac;
 
-    invoke-direct {v0, p0}, Lc/a/a/a/a/b/InstallerPackageNameProvider$ac;-><init>(Lc/a/a/a/a/b/InstallerPackageNameProvider;)V
+    invoke-direct {v0, p0}, Lc/a/a/a/a/b/InstallerPackageNameProvider$ICac;-><init>(Lc/a/a/a/a/b/InstallerPackageNameProvider;)V
 
     iput-object v0, p0, Lc/a/a/a/a/b/InstallerPackageNameProvider;->a:Lc/a/a/a/a/a/ValueLoader;
 

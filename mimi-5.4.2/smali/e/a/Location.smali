@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Le/a/Location;",
-        "Le/a/Location$cu;",
+        "Le/a/Location$ICcu;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Le/a/Location$cu;",
+            "Le/a/Location$ICcu;",
             "Le/a/FieldMetaData;",
             ">;"
         }
@@ -135,9 +135,9 @@
 
     const-class v1, Le/a/StandardScheme;
 
-    new-instance v2, Le/a/Location$cr;
+    new-instance v2, Le/a/Location$ICcr;
 
-    invoke-direct {v2, v3}, Le/a/Location$cr;-><init>(Le/a/Location$cp;)V
+    invoke-direct {v2, v3}, Le/a/Location$ICcr;-><init>(Le/a/Location$ICcp;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -146,21 +146,21 @@
 
     const-class v1, Le/a/TupleScheme;
 
-    new-instance v2, Le/a/Location$ct;
+    new-instance v2, Le/a/Location$ICct;
 
-    invoke-direct {v2, v3}, Le/a/Location$ct;-><init>(Le/a/Location$cp;)V
+    invoke-direct {v2, v3}, Le/a/Location$ICct;-><init>(Le/a/Location$ICcp;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 120
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Le/a/Location$cu;
+    const-class v1, Le/a/Location$ICcu;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 121
-    sget-object v1, Le/a/Location$cu;->a:Le/a/Location$cu;
+    sget-object v1, Le/a/Location$ICcu;->a:Le/a/Location$ICcu;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -175,7 +175,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 123
-    sget-object v1, Le/a/Location$cu;->b:Le/a/Location$cu;
+    sget-object v1, Le/a/Location$ICcu;->b:Le/a/Location$ICcu;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -190,7 +190,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 125
-    sget-object v1, Le/a/Location$cu;->c:Le/a/Location$cu;
+    sget-object v1, Le/a/Location$ICcu;->c:Le/a/Location$ICcu;
 
     new-instance v2, Le/a/FieldMetaData;
 

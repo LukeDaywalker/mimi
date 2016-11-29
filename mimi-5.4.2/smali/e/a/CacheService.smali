@@ -103,9 +103,9 @@
 
     .prologue
     .line 60
-    new-instance v0, Le/a/CacheService$hr;
+    new-instance v0, Le/a/CacheService$IChr;
 
-    invoke-direct {v0, p0}, Le/a/CacheService$hr;-><init>(Le/a/CacheService;)V
+    invoke-direct {v0, p0}, Le/a/CacheService$IChr;-><init>(Le/a/CacheService;)V
 
     invoke-static {v0}, Lcom/g/a/QueuedWork;->b(Ljava/lang/Runnable;)V
 
@@ -118,9 +118,9 @@
 
     .prologue
     .line 40
-    new-instance v0, Le/a/CacheService$hq;
+    new-instance v0, Le/a/CacheService$IChq;
 
-    invoke-direct {v0, p0, p1}, Le/a/CacheService$hq;-><init>(Le/a/CacheService;Le/a/IProtocol;)V
+    invoke-direct {v0, p0, p1}, Le/a/CacheService$IChq;-><init>(Le/a/CacheService;Le/a/IProtocol;)V
 
     invoke-static {v0}, Lcom/g/a/QueuedWork;->b(Ljava/lang/Runnable;)V
 

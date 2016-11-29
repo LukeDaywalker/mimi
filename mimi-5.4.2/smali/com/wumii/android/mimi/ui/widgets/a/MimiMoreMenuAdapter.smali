@@ -17,7 +17,7 @@
     .end annotation
 .end field
 
-.field private c:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ah;
+.field private c:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 
 
 # direct methods
@@ -46,12 +46,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenuAdapter;)Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ah;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenuAdapter;)Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
     .locals 1
 
     .prologue
     .line 17
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenuAdapter;->c:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ah;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenuAdapter;->c:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 
     return-object v0
 .end method
@@ -90,12 +90,12 @@
     return-void
 .end method
 
-.method public a(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ah;)V
+.method public a(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;)V
     .locals 0
 
     .prologue
     .line 31
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenuAdapter;->c:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ah;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenuAdapter;->c:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 
     .line 32
     return-void
@@ -169,9 +169,9 @@
     move-result-object p2
 
     .line 63
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenuAdapter$e;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenuAdapter$ICe;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenuAdapter$e;-><init>(Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenuAdapter;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenuAdapter$ICe;-><init>(Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenuAdapter;)V
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

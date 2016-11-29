@@ -39,9 +39,9 @@
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/BaseContactListAdapter;-><init>(Landroid/content/Context;)V
 
     .line 18
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/d/SearchContactAdapter$f;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/d/SearchContactAdapter$ICf;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/d/SearchContactAdapter$f;-><init>(Lcom/wumii/android/mimi/ui/apdaters/d/SearchContactAdapter;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/d/SearchContactAdapter$ICf;-><init>(Lcom/wumii/android/mimi/ui/apdaters/d/SearchContactAdapter;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/d/SearchContactAdapter;->c:Landroid/view/View$OnClickListener;
 

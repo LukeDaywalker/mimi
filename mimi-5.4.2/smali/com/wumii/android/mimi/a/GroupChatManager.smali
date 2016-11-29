@@ -16,21 +16,21 @@
 
     const-string/jumbo v1, "chat/group/join"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 34
     iget-object v0, p0, Lcom/wumii/android/mimi/a/GroupChatManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat/group/quit"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 35
     iget-object v0, p0, Lcom/wumii/android/mimi/a/GroupChatManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "chat"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 36
     return-void
@@ -443,9 +443,9 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/a/GroupChatManager;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
-    new-instance v1, Lcom/wumii/android/mimi/a/GroupChatManager$aq;
+    new-instance v1, Lcom/wumii/android/mimi/a/GroupChatManager$ICaq;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/a/GroupChatManager$aq;-><init>(Lcom/wumii/android/mimi/a/GroupChatManager;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/a/GroupChatManager$ICaq;-><init>(Lcom/wumii/android/mimi/a/GroupChatManager;)V
 
     const-string/jumbo v2, "cached_chat_sender_roles"
 
@@ -511,7 +511,7 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$i;->b:Lcom/wumii/android/mimi/network/HttpRequest$i;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->b:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v2, "chat/group/join"
 
@@ -519,7 +519,7 @@
 
     move-object v5, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$i;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -534,7 +534,7 @@
     .line 104
     iget-object v0, p0, Lcom/wumii/android/mimi/a/GroupChatManager;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
-    sget-object v1, Lcom/wumii/android/mimi/c/Constants$t;->a:Lcom/fasterxml/jackson/core/type/TypeReference;
+    sget-object v1, Lcom/wumii/android/mimi/c/Constants$ICt;->a:Lcom/fasterxml/jackson/core/type/TypeReference;
 
     const-string/jumbo v2, "as_normal_user_group_ids"
 
@@ -612,7 +612,7 @@
 
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$i;->a:Lcom/wumii/android/mimi/network/HttpRequest$i;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     const-string/jumbo v2, "chat"
 
@@ -620,7 +620,7 @@
 
     move-object v5, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$i;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;)V
 
     invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Lcom/wumii/android/mimi/network/HttpRequest;)V
 
@@ -635,9 +635,9 @@
     .line 84
     iget-object v0, p0, Lcom/wumii/android/mimi/a/GroupChatManager;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
-    new-instance v1, Lcom/wumii/android/mimi/a/GroupChatManager$ap;
+    new-instance v1, Lcom/wumii/android/mimi/a/GroupChatManager$ICap;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/a/GroupChatManager$ap;-><init>(Lcom/wumii/android/mimi/a/GroupChatManager;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/a/GroupChatManager$ICap;-><init>(Lcom/wumii/android/mimi/a/GroupChatManager;)V
 
     const-string/jumbo v2, "cached_chat_sender_roles"
 

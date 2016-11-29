@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private i:Lcom/wumii/android/mimi/a/DiscoverManager$aj;
+.field private i:Lcom/wumii/android/mimi/a/DiscoverManager$ICaj;
 
 
 # direct methods
@@ -40,49 +40,49 @@
 
     const-string/jumbo v1, "secret/topics"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 61
     iget-object v0, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "topic/secrets"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 62
     iget-object v0, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "hot/secrets"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 63
     iget-object v0, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "nearby/secrets"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 64
     iget-object v0, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "circle/secrets"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 65
     iget-object v0, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "subject/secrets"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 66
     iget-object v0, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
 
     const-string/jumbo v1, "premium/secrets"
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/network/HttpProcessor;->a(Ljava/lang/String;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 68
     return-void
@@ -260,7 +260,7 @@
 
     .line 369
     :cond_0
-    sget-object v1, Lcom/wumii/android/mimi/a/DiscoverManager$ai;->a:[I
+    sget-object v1, Lcom/wumii/android/mimi/a/DiscoverManager$ICai;->a:[I
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/FeedModule;->getFeedType()Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -542,7 +542,7 @@
     .line 399
     new-instance v0, Lcom/wumii/android/mimi/network/HttpRequest;
 
-    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$i;->a:Lcom/wumii/android/mimi/network/HttpRequest$i;
+    sget-object v1, Lcom/wumii/android/mimi/network/HttpRequest$ICi;->a:Lcom/wumii/android/mimi/network/HttpRequest$ICi;
 
     move-object v2, p1
 
@@ -554,7 +554,7 @@
 
     move-object v6, p0
 
-    invoke-direct/range {v0 .. v6}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$i;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;Lcom/wumii/android/mimi/network/HttpProcessor$f;)V
+    invoke-direct/range {v0 .. v6}, Lcom/wumii/android/mimi/network/HttpRequest;-><init>(Lcom/wumii/android/mimi/network/HttpRequest$ICi;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/Object;Lcom/wumii/android/mimi/network/HttpProcessor$ICf;)V
 
     .line 400
     iget-object v1, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->a:Lcom/wumii/android/mimi/network/HttpProcessor;
@@ -615,9 +615,9 @@
     .line 418
     iget-object v0, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
-    new-instance v1, Lcom/wumii/android/mimi/a/DiscoverManager$ag;
+    new-instance v1, Lcom/wumii/android/mimi/a/DiscoverManager$ICag;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/a/DiscoverManager$ag;-><init>(Lcom/wumii/android/mimi/a/DiscoverManager;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/a/DiscoverManager$ICag;-><init>(Lcom/wumii/android/mimi/a/DiscoverManager;)V
 
     const-string/jumbo v2, "recent_search_circles"
 
@@ -644,9 +644,9 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
-    new-instance v1, Lcom/wumii/android/mimi/a/DiscoverManager$ah;
+    new-instance v1, Lcom/wumii/android/mimi/a/DiscoverManager$ICah;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/a/DiscoverManager$ah;-><init>(Lcom/wumii/android/mimi/a/DiscoverManager;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/a/DiscoverManager$ICah;-><init>(Lcom/wumii/android/mimi/a/DiscoverManager;)V
 
     const-string/jumbo v2, "recentViewCircles"
 
@@ -667,11 +667,11 @@
 
     .line 423
     :cond_1
-    new-instance v1, Lcom/wumii/android/mimi/a/DiscoverManager$aj;
+    new-instance v1, Lcom/wumii/android/mimi/a/DiscoverManager$ICaj;
 
-    invoke-direct {v1, p0, v0}, Lcom/wumii/android/mimi/a/DiscoverManager$aj;-><init>(Lcom/wumii/android/mimi/a/DiscoverManager;Ljava/util/List;)V
+    invoke-direct {v1, p0, v0}, Lcom/wumii/android/mimi/a/DiscoverManager$ICaj;-><init>(Lcom/wumii/android/mimi/a/DiscoverManager;Ljava/util/List;)V
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->i:Lcom/wumii/android/mimi/a/DiscoverManager$aj;
+    iput-object v1, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->i:Lcom/wumii/android/mimi/a/DiscoverManager$ICaj;
 
     .line 424
     return-void
@@ -799,7 +799,7 @@
 
     invoke-direct {v0, v2, v3, v1, v4}, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;-><init>(ILjava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Lcom/wumii/android/mimi/models/b/FeedEvent;)V
     :try_end_0
-    .catch Lcom/wumii/a/a/JacksonMapper$g; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/a/a/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 144
     :goto_1
@@ -987,7 +987,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/a/DiscoverManager;->a(Lcom/wumii/android/mimi/models/b/FeedEvent;Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Ljava/util/List;Ljava/lang/Long;Ljava/lang/Long;)V
     :try_end_0
-    .catch Lcom/wumii/a/a/JacksonMapper$g; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/a/a/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
 
     move-object v0, v6
 
@@ -1037,7 +1037,7 @@
 
     .prologue
     .line 307
-    sget-object v0, Lcom/wumii/android/mimi/a/DiscoverManager$ai;->a:[I
+    sget-object v0, Lcom/wumii/android/mimi/a/DiscoverManager$ICai;->a:[I
 
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/FeedModule;->getFeedType()Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -1270,7 +1270,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/a/DiscoverManager;->a(Lcom/wumii/android/mimi/models/b/FeedEvent;Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Ljava/util/List;Ljava/lang/Long;Ljava/lang/Long;)V
     :try_end_0
-    .catch Lcom/wumii/a/a/JacksonMapper$g; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/a/a/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
 
     move-object v0, v6
 
@@ -1441,7 +1441,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/a/DiscoverManager;->a(Lcom/wumii/android/mimi/models/b/FeedEvent;Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Ljava/util/List;Ljava/lang/Long;Ljava/lang/Long;)V
     :try_end_0
-    .catch Lcom/wumii/a/a/JacksonMapper$g; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/a/a/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
 
     move-object v0, v6
 
@@ -1608,7 +1608,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/a/DiscoverManager;->a(Lcom/wumii/android/mimi/models/b/FeedEvent;Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Ljava/util/List;Ljava/lang/Long;Ljava/lang/Long;)V
     :try_end_0
-    .catch Lcom/wumii/a/a/JacksonMapper$g; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/a/a/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
 
     move-object v0, v6
 
@@ -1780,7 +1780,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/a/DiscoverManager;->a(Lcom/wumii/android/mimi/models/b/FeedEvent;Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Ljava/util/List;Ljava/lang/Long;Ljava/lang/Long;)V
     :try_end_0
-    .catch Lcom/wumii/a/a/JacksonMapper$g; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/a/a/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
 
     move-object v0, v6
 
@@ -1841,7 +1841,7 @@
 
     .prologue
     .line 411
-    iget-object v0, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->i:Lcom/wumii/android/mimi/a/DiscoverManager$aj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->i:Lcom/wumii/android/mimi/a/DiscoverManager$ICaj;
 
     if-nez v0, :cond_0
 
@@ -1850,9 +1850,9 @@
 
     .line 414
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->i:Lcom/wumii/android/mimi/a/DiscoverManager$aj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->i:Lcom/wumii/android/mimi/a/DiscoverManager$ICaj;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/DiscoverManager$aj;->a()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/DiscoverManager$ICaj;->a()Ljava/util/List;
 
     move-result-object v0
 
@@ -1872,7 +1872,7 @@
 
     .line 430
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->i:Lcom/wumii/android/mimi/a/DiscoverManager$aj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->i:Lcom/wumii/android/mimi/a/DiscoverManager$ICaj;
 
     if-nez v0, :cond_1
 
@@ -1881,16 +1881,16 @@
 
     .line 433
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->i:Lcom/wumii/android/mimi/a/DiscoverManager$aj;
+    iget-object v0, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->i:Lcom/wumii/android/mimi/a/DiscoverManager$ICaj;
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/a/DiscoverManager$aj;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/a/DiscoverManager$ICaj;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     .line 434
     iget-object v0, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->i:Lcom/wumii/android/mimi/a/DiscoverManager$aj;
+    iget-object v1, p0, Lcom/wumii/android/mimi/a/DiscoverManager;->i:Lcom/wumii/android/mimi/a/DiscoverManager$ICaj;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/a/DiscoverManager$aj;->a()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/a/DiscoverManager$ICaj;->a()Ljava/util/List;
 
     move-result-object v1
 

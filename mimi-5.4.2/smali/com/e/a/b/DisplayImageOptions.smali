@@ -44,7 +44,7 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/e/a/b/DisplayImageOptions$f;)V
+.method private constructor <init>(Lcom/e/a/b/DisplayImageOptions$ICf;)V
     .locals 1
 
     .prologue
@@ -52,133 +52,133 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 88
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->a(Lcom/e/a/b/DisplayImageOptions$f;)I
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Lcom/e/a/b/DisplayImageOptions$ICf;)I
 
     move-result v0
 
     iput v0, p0, Lcom/e/a/b/DisplayImageOptions;->a:I
 
     .line 89
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->b(Lcom/e/a/b/DisplayImageOptions$f;)I
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->b(Lcom/e/a/b/DisplayImageOptions$ICf;)I
 
     move-result v0
 
     iput v0, p0, Lcom/e/a/b/DisplayImageOptions;->b:I
 
     .line 90
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->c(Lcom/e/a/b/DisplayImageOptions$f;)I
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->c(Lcom/e/a/b/DisplayImageOptions$ICf;)I
 
     move-result v0
 
     iput v0, p0, Lcom/e/a/b/DisplayImageOptions;->c:I
 
     .line 91
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->d(Lcom/e/a/b/DisplayImageOptions$f;)Landroid/graphics/drawable/Drawable;
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->d(Lcom/e/a/b/DisplayImageOptions$ICf;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/e/a/b/DisplayImageOptions;->d:Landroid/graphics/drawable/Drawable;
 
     .line 92
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->e(Lcom/e/a/b/DisplayImageOptions$f;)Landroid/graphics/drawable/Drawable;
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->e(Lcom/e/a/b/DisplayImageOptions$ICf;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/e/a/b/DisplayImageOptions;->e:Landroid/graphics/drawable/Drawable;
 
     .line 93
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->f(Lcom/e/a/b/DisplayImageOptions$f;)Landroid/graphics/drawable/Drawable;
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->f(Lcom/e/a/b/DisplayImageOptions$ICf;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/e/a/b/DisplayImageOptions;->f:Landroid/graphics/drawable/Drawable;
 
     .line 94
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->g(Lcom/e/a/b/DisplayImageOptions$f;)Z
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->g(Lcom/e/a/b/DisplayImageOptions$ICf;)Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/e/a/b/DisplayImageOptions;->g:Z
 
     .line 95
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->h(Lcom/e/a/b/DisplayImageOptions$f;)Z
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->h(Lcom/e/a/b/DisplayImageOptions$ICf;)Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/e/a/b/DisplayImageOptions;->h:Z
 
     .line 96
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->i(Lcom/e/a/b/DisplayImageOptions$f;)Z
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->i(Lcom/e/a/b/DisplayImageOptions$ICf;)Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/e/a/b/DisplayImageOptions;->i:Z
 
     .line 97
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->j(Lcom/e/a/b/DisplayImageOptions$f;)Lcom/e/a/b/a/ImageScaleType;
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->j(Lcom/e/a/b/DisplayImageOptions$ICf;)Lcom/e/a/b/a/ImageScaleType;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/e/a/b/DisplayImageOptions;->j:Lcom/e/a/b/a/ImageScaleType;
 
     .line 98
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->k(Lcom/e/a/b/DisplayImageOptions$f;)Landroid/graphics/BitmapFactory$Options;
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->k(Lcom/e/a/b/DisplayImageOptions$ICf;)Landroid/graphics/BitmapFactory$Options;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/e/a/b/DisplayImageOptions;->k:Landroid/graphics/BitmapFactory$Options;
 
     .line 99
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->l(Lcom/e/a/b/DisplayImageOptions$f;)I
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->l(Lcom/e/a/b/DisplayImageOptions$ICf;)I
 
     move-result v0
 
     iput v0, p0, Lcom/e/a/b/DisplayImageOptions;->l:I
 
     .line 100
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->m(Lcom/e/a/b/DisplayImageOptions$f;)Z
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->m(Lcom/e/a/b/DisplayImageOptions$ICf;)Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/e/a/b/DisplayImageOptions;->m:Z
 
     .line 101
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->n(Lcom/e/a/b/DisplayImageOptions$f;)Ljava/lang/Object;
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->n(Lcom/e/a/b/DisplayImageOptions$ICf;)Ljava/lang/Object;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/e/a/b/DisplayImageOptions;->n:Ljava/lang/Object;
 
     .line 102
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->o(Lcom/e/a/b/DisplayImageOptions$f;)Lcom/e/a/b/g/BitmapProcessor;
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->o(Lcom/e/a/b/DisplayImageOptions$ICf;)Lcom/e/a/b/g/BitmapProcessor;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/e/a/b/DisplayImageOptions;->o:Lcom/e/a/b/g/BitmapProcessor;
 
     .line 103
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->p(Lcom/e/a/b/DisplayImageOptions$f;)Lcom/e/a/b/g/BitmapProcessor;
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->p(Lcom/e/a/b/DisplayImageOptions$ICf;)Lcom/e/a/b/g/BitmapProcessor;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/e/a/b/DisplayImageOptions;->p:Lcom/e/a/b/g/BitmapProcessor;
 
     .line 104
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->q(Lcom/e/a/b/DisplayImageOptions$f;)Lcom/e/a/b/c/BitmapDisplayer;
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->q(Lcom/e/a/b/DisplayImageOptions$ICf;)Lcom/e/a/b/c/BitmapDisplayer;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/e/a/b/DisplayImageOptions;->q:Lcom/e/a/b/c/BitmapDisplayer;
 
     .line 105
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->r(Lcom/e/a/b/DisplayImageOptions$f;)Landroid/os/Handler;
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->r(Lcom/e/a/b/DisplayImageOptions$ICf;)Landroid/os/Handler;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/e/a/b/DisplayImageOptions;->r:Landroid/os/Handler;
 
     .line 106
-    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$f;->s(Lcom/e/a/b/DisplayImageOptions$f;)Z
+    invoke-static {p1}, Lcom/e/a/b/DisplayImageOptions$ICf;->s(Lcom/e/a/b/DisplayImageOptions$ICf;)Z
 
     move-result v0
 
@@ -188,12 +188,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/e/a/b/DisplayImageOptions$f;Lcom/e/a/b/DisplayImageOptions$e;)V
+.method synthetic constructor <init>(Lcom/e/a/b/DisplayImageOptions$ICf;Lcom/e/a/b/DisplayImageOptions$ICe;)V
     .locals 0
 
     .prologue
     .line 65
-    invoke-direct {p0, p1}, Lcom/e/a/b/DisplayImageOptions;-><init>(Lcom/e/a/b/DisplayImageOptions$f;)V
+    invoke-direct {p0, p1}, Lcom/e/a/b/DisplayImageOptions;-><init>(Lcom/e/a/b/DisplayImageOptions$ICf;)V
 
     return-void
 .end method
@@ -393,11 +393,11 @@
 
     .prologue
     .line 502
-    new-instance v0, Lcom/e/a/b/DisplayImageOptions$f;
+    new-instance v0, Lcom/e/a/b/DisplayImageOptions$ICf;
 
-    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$f;-><init>()V
+    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;-><init>()V
 
-    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$f;->a()Lcom/e/a/b/DisplayImageOptions;
+    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;->a()Lcom/e/a/b/DisplayImageOptions;
 
     move-result-object v0
 

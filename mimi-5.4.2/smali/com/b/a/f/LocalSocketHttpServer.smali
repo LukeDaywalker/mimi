@@ -217,9 +217,9 @@
     invoke-virtual {v2, v3, v1}, Lcom/b/a/f/LocalSocketHttpServerConnection;->a(Landroid/net/LocalSocket;Lorg/apache/http/params/HttpParams;)V
 
     .line 142
-    new-instance v3, Lcom/b/a/f/LocalSocketHttpServer$b;
+    new-instance v3, Lcom/b/a/f/LocalSocketHttpServer$ICb;
 
-    invoke-direct {v3, v0, v2}, Lcom/b/a/f/LocalSocketHttpServer$b;-><init>(Lorg/apache/http/protocol/HttpService;Lorg/apache/http/HttpServerConnection;)V
+    invoke-direct {v3, v0, v2}, Lcom/b/a/f/LocalSocketHttpServer$ICb;-><init>(Lorg/apache/http/protocol/HttpService;Lorg/apache/http/HttpServerConnection;)V
 
     .line 143
     const/4 v2, 0x1

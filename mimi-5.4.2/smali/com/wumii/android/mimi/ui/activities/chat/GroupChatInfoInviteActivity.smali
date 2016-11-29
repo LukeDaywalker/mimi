@@ -166,11 +166,11 @@
     .line 41
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;->p:Lcom/wumii/android/mimi/ui/widgets/share/InviteList;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity$bz;
+    new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity$ICbz;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity$bz;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity$ICbz;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/share/InviteList$f;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/share/InviteList$ICf;)V
 
     goto :goto_0
 .end method

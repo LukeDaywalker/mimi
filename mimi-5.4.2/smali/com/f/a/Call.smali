@@ -54,18 +54,18 @@
 
     .prologue
     .line 200
-    new-instance v0, Lcom/f/a/Call$i;
+    new-instance v0, Lcom/f/a/Call$ICi;
 
     const/4 v1, 0x0
 
     iget-object v2, p0, Lcom/f/a/Call;->b:Lcom/f/a/Request;
 
-    invoke-direct {v0, p0, v1, v2, p1}, Lcom/f/a/Call$i;-><init>(Lcom/f/a/Call;ILcom/f/a/Request;Z)V
+    invoke-direct {v0, p0, v1, v2, p1}, Lcom/f/a/Call$ICi;-><init>(Lcom/f/a/Call;ILcom/f/a/Request;Z)V
 
     .line 201
     iget-object v1, p0, Lcom/f/a/Call;->b:Lcom/f/a/Request;
 
-    invoke-interface {v0, v1}, Lcom/f/a/Interceptor$ag;->a(Lcom/f/a/Request;)Lcom/f/a/Response;
+    invoke-interface {v0, v1}, Lcom/f/a/Interceptor$ICag;->a(Lcom/f/a/Request;)Lcom/f/a/Response;
 
     move-result-object v0
 
@@ -280,7 +280,7 @@
     if-eqz v0, :cond_9
 
     .line 243
-    invoke-virtual {p1}, Lcom/f/a/Request;->g()Lcom/f/a/Request$ap;
+    invoke-virtual {p1}, Lcom/f/a/Request;->g()Lcom/f/a/Request$ICap;
 
     move-result-object v1
 
@@ -299,7 +299,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v3, v2}, Lcom/f/a/Request$ap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v1, v3, v2}, Lcom/f/a/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 250
     :cond_0
@@ -321,16 +321,16 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v0, v2}, Lcom/f/a/Request$ap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v1, v0, v2}, Lcom/f/a/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 253
     const-string/jumbo v0, "Transfer-Encoding"
 
-    invoke-virtual {v1, v0}, Lcom/f/a/Request$ap;->b(Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v1, v0}, Lcom/f/a/Request$ICap;->b(Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 259
     :goto_0
-    invoke-virtual {v1}, Lcom/f/a/Request$ap;->a()Lcom/f/a/Request;
+    invoke-virtual {v1}, Lcom/f/a/Request$ICap;->a()Lcom/f/a/Request;
 
     move-result-object v2
 
@@ -387,12 +387,12 @@
 
     const-string/jumbo v2, "chunked"
 
-    invoke-virtual {v1, v0, v2}, Lcom/f/a/Request$ap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v1, v0, v2}, Lcom/f/a/Request$ICap;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     .line 256
     const-string/jumbo v0, "Content-Length"
 
-    invoke-virtual {v1, v0}, Lcom/f/a/Request$ap;->b(Ljava/lang/String;)Lcom/f/a/Request$ap;
+    invoke-virtual {v1, v0}, Lcom/f/a/Request$ICap;->b(Ljava/lang/String;)Lcom/f/a/Request$ICap;
 
     goto :goto_0
 
@@ -657,13 +657,13 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/f/a/Call$j;
+    new-instance v1, Lcom/f/a/Call$ICj;
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, p0, p1, p2, v2}, Lcom/f/a/Call$j;-><init>(Lcom/f/a/Call;Lcom/f/a/Callback;ZLcom/f/a/Call$h;)V
+    invoke-direct {v1, p0, p1, p2, v2}, Lcom/f/a/Call$ICj;-><init>(Lcom/f/a/Call;Lcom/f/a/Callback;ZLcom/f/a/Call$ICh;)V
 
-    invoke-virtual {v0, v1}, Lcom/f/a/Dispatcher;->a(Lcom/f/a/Call$j;)V
+    invoke-virtual {v0, v1}, Lcom/f/a/Dispatcher;->a(Lcom/f/a/Call$ICj;)V
 
     .line 116
     return-void

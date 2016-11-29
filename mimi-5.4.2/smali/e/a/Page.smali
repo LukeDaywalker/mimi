@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Le/a/Page;",
-        "Le/a/Page$di;",
+        "Le/a/Page$ICdi;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Le/a/Page$di;",
+            "Le/a/Page$ICdi;",
             "Le/a/FieldMetaData;",
             ">;"
         }
@@ -120,9 +120,9 @@
 
     const-class v1, Le/a/StandardScheme;
 
-    new-instance v2, Le/a/Page$df;
+    new-instance v2, Le/a/Page$ICdf;
 
-    invoke-direct {v2, v3}, Le/a/Page$df;-><init>(Le/a/Page$dd;)V
+    invoke-direct {v2, v3}, Le/a/Page$ICdf;-><init>(Le/a/Page$ICdd;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -131,21 +131,21 @@
 
     const-class v1, Le/a/TupleScheme;
 
-    new-instance v2, Le/a/Page$dh;
+    new-instance v2, Le/a/Page$ICdh;
 
-    invoke-direct {v2, v3}, Le/a/Page$dh;-><init>(Le/a/Page$dd;)V
+    invoke-direct {v2, v3}, Le/a/Page$ICdh;-><init>(Le/a/Page$ICdd;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 113
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Le/a/Page$di;
+    const-class v1, Le/a/Page$ICdi;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 114
-    sget-object v1, Le/a/Page$di;->a:Le/a/Page$di;
+    sget-object v1, Le/a/Page$ICdi;->a:Le/a/Page$ICdi;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -160,7 +160,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 116
-    sget-object v1, Le/a/Page$di;->b:Le/a/Page$di;
+    sget-object v1, Le/a/Page$ICdi;->b:Le/a/Page$ICdi;
 
     new-instance v2, Le/a/FieldMetaData;
 

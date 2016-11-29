@@ -332,7 +332,7 @@
     move-exception v0
 
     .line 125
-    instance-of v1, v0, Lcom/wumii/a/a/JacksonMapper$g;
+    instance-of v1, v0, Lcom/wumii/a/a/JacksonMapper$ICg;
 
     if-eqz v1, :cond_3
 
@@ -349,7 +349,7 @@
 
     .line 127
     :cond_3
-    instance-of v1, v0, Lcom/wumii/android/mimi/models/d/HttpHelper$r;
+    instance-of v1, v0, Lcom/wumii/android/mimi/models/d/HttpHelper$ICr;
 
     if-nez v1, :cond_2
 
@@ -464,9 +464,9 @@
     .line 55
     iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->d:Ljava/util/concurrent/ScheduledExecutorService;
 
-    new-instance v1, Lcom/wumii/android/mimi/services/UnreadNotificationService$d;
+    new-instance v1, Lcom/wumii/android/mimi/services/UnreadNotificationService$ICd;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/services/UnreadNotificationService$d;-><init>(Lcom/wumii/android/mimi/services/UnreadNotificationService;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/services/UnreadNotificationService$ICd;-><init>(Lcom/wumii/android/mimi/services/UnreadNotificationService;)V
 
     const-wide/16 v2, 0x0
 
@@ -517,9 +517,9 @@
     :cond_1
     iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->e:Ljava/util/concurrent/ExecutorService;
 
-    new-instance v1, Lcom/wumii/android/mimi/services/UnreadNotificationService$e;
+    new-instance v1, Lcom/wumii/android/mimi/services/UnreadNotificationService$ICe;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/services/UnreadNotificationService$e;-><init>(Lcom/wumii/android/mimi/services/UnreadNotificationService;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/services/UnreadNotificationService$ICe;-><init>(Lcom/wumii/android/mimi/services/UnreadNotificationService;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
 

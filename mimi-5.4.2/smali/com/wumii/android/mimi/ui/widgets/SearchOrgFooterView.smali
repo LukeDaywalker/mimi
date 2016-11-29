@@ -25,7 +25,7 @@
 
 .field private h:Ljava/lang/String;
 
-.field private i:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$be;
+.field private i:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
 
 
 # direct methods
@@ -698,7 +698,7 @@
 
     .prologue
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->i:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$be;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->i:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
 
     if-nez v0, :cond_0
 
@@ -728,11 +728,11 @@
     if-ne v0, v1, :cond_1
 
     .line 88
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->i:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$be;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->i:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->h:Ljava/lang/String;
 
-    invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$be;->a(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;->a(Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -751,9 +751,9 @@
     if-ne v0, v1, :cond_2
 
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->i:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$be;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->i:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
 
-    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$be;->f()V
+    invoke-interface {v0}, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;->f()V
 
     goto :goto_0
 
@@ -772,11 +772,11 @@
     if-ne v0, v1, :cond_3
 
     .line 92
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->i:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$be;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->i:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->h:Ljava/lang/String;
 
-    invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$be;->b(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;->b(Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -791,12 +791,12 @@
     goto :goto_0
 .end method
 
-.method public setOnSearchOrgFooterViewClickListener(Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$be;)V
+.method public setOnSearchOrgFooterViewClickListener(Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;)V
     .locals 0
 
     .prologue
     .line 99
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->i:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$be;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->i:Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView$ICbe;
 
     .line 100
     return-void

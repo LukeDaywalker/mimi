@@ -28,7 +28,7 @@
     .end annotation
 .end field
 
-.field private g:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$y;
+.field private g:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
 
 .field private h:I
 
@@ -219,12 +219,12 @@
 
     .line 95
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->g:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$y;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->g:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
 
     if-eqz v0, :cond_0
 
     .line 96
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->g:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$y;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->g:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->e:Lcom/wumii/android/mimi/ui/widgets/chat/CreateGroupRadio;
 
@@ -232,7 +232,7 @@
 
     move-result v2
 
-    invoke-interface {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$y;->a(Lcom/wumii/android/mimi/ui/widgets/chat/CreateGroupRadio;I)V
+    invoke-interface {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;->a(Lcom/wumii/android/mimi/ui/widgets/chat/CreateGroupRadio;I)V
 
     goto :goto_0
 .end method
@@ -280,18 +280,18 @@
     goto :goto_0
 .end method
 
-.method public setOnClickChangeListener(Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$y;)V
+.method public setOnClickChangeListener(Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;)V
     .locals 0
 
     .prologue
     .line 109
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->g:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$y;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->g:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
 
     .line 110
     return-void
 .end method
 
-.method public setRadios(Ljava/util/List;ILcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$y;)V
+.method public setRadios(Ljava/util/List;ILcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;)V
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -300,7 +300,7 @@
             "<",
             "Ljava/lang/String;",
             ">;I",
-            "Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$y;",
+            "Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;",
             ")V"
         }
     .end annotation
@@ -309,7 +309,7 @@
     const/4 v2, 0x0
 
     .line 43
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->g:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$y;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->g:Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup$ICy;
 
     .line 44
     iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/ExtentedRadioGroup;->h:I

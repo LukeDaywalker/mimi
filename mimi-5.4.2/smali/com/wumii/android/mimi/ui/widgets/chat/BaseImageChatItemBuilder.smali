@@ -78,25 +78,25 @@
     iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;->i:I
 
     .line 46
-    new-instance v0, Lcom/e/a/b/DisplayImageOptions$f;
+    new-instance v0, Lcom/e/a/b/DisplayImageOptions$ICf;
 
-    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$f;-><init>()V
+    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;-><init>()V
 
-    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$f;->b(Z)Lcom/e/a/b/DisplayImageOptions$f;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$f;->c(Z)Lcom/e/a/b/DisplayImageOptions$f;
+    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$ICf;->b(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$f;->d(Z)Lcom/e/a/b/DisplayImageOptions$f;
+    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$ICf;->c(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$ICf;->d(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
 
     move-result-object v0
 
     sget-object v1, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->a(Landroid/graphics/Bitmap$Config;)Lcom/e/a/b/DisplayImageOptions$f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Landroid/graphics/Bitmap$Config;)Lcom/e/a/b/DisplayImageOptions$ICf;
 
     move-result-object v0
 
@@ -106,11 +106,11 @@
 
     invoke-direct {v1, v2}, Lcom/e/a/b/c/RoundedBitmapDisplayer;-><init>(I)V
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->a(Lcom/e/a/b/c/BitmapDisplayer;)Lcom/e/a/b/DisplayImageOptions$f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Lcom/e/a/b/c/BitmapDisplayer;)Lcom/e/a/b/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$f;->a()Lcom/e/a/b/DisplayImageOptions;
+    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;->a()Lcom/e/a/b/DisplayImageOptions;
 
     move-result-object v0
 
@@ -193,7 +193,7 @@
 
     move-result-object v0
 
-    instance-of v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$i;
+    instance-of v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;
 
     if-nez v0, :cond_1
 
@@ -208,9 +208,9 @@
     move-result-object p2
 
     .line 58
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$i;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$i;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;Landroid/view/View;)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder;Landroid/view/View;)V
 
     invoke-virtual {p2, v3, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
@@ -220,7 +220,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$i;
+    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;
 
     .line 62
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->getChatMsgItem()Lcom/wumii/android/mimi/models/entities/chat/ChatMsgItemBase;
@@ -232,7 +232,7 @@
     check-cast v7, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgImgBase;
 
     .line 63
-    iget-object v8, v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$i;->a:Landroid/widget/ImageView;
+    iget-object v8, v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->a:Landroid/widget/ImageView;
 
     .line 65
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->getStatus()I
@@ -240,7 +240,7 @@
     move-result v1
 
     .line 66
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$i;->a(Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$i;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->a(Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;)Landroid/widget/ImageView;
 
     move-result-object v3
 
@@ -293,7 +293,7 @@
     move-result-object v2
 
     .line 76
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$i;->b(Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$i;)Landroid/view/View;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->b(Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;)Landroid/view/View;
 
     move-result-object v0
 
@@ -335,7 +335,7 @@
 
     .line 80
     :cond_3
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$i;->b(Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$i;)Landroid/view/View;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->b(Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;)Landroid/view/View;
 
     move-result-object v0
 

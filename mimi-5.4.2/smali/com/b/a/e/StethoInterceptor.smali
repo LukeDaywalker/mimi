@@ -42,7 +42,7 @@
 
 
 # virtual methods
-.method public a(Lcom/f/a/Interceptor$ag;)Lcom/f/a/Response;
+.method public a(Lcom/f/a/Interceptor$ICag;)Lcom/f/a/Response;
     .locals 9
 
     .prologue
@@ -60,7 +60,7 @@
     move-result-object v1
 
     .line 35
-    invoke-interface {p1}, Lcom/f/a/Interceptor$ag;->b()Lcom/f/a/Request;
+    invoke-interface {p1}, Lcom/f/a/Interceptor$ICag;->b()Lcom/f/a/Request;
 
     move-result-object v3
 
@@ -77,17 +77,17 @@
     if-eqz v4, :cond_0
 
     .line 39
-    new-instance v4, Lcom/b/a/e/StethoInterceptor$c;
+    new-instance v4, Lcom/b/a/e/StethoInterceptor$ICc;
 
-    invoke-direct {v4, v1, v3}, Lcom/b/a/e/StethoInterceptor$c;-><init>(Ljava/lang/String;Lcom/f/a/Request;)V
+    invoke-direct {v4, v1, v3}, Lcom/b/a/e/StethoInterceptor$ICc;-><init>(Ljava/lang/String;Lcom/f/a/Request;)V
 
     .line 40
     iget-object v5, p0, Lcom/b/a/e/StethoInterceptor;->a:Lcom/b/a/c/f/NetworkEventReporter;
 
-    invoke-interface {v5, v4}, Lcom/b/a/c/f/NetworkEventReporter;->a(Lcom/b/a/c/f/NetworkEventReporter$j;)V
+    invoke-interface {v5, v4}, Lcom/b/a/c/f/NetworkEventReporter;->a(Lcom/b/a/c/f/NetworkEventReporter$ICj;)V
 
     .line 41
-    invoke-virtual {v4}, Lcom/b/a/e/StethoInterceptor$c;->g()[B
+    invoke-virtual {v4}, Lcom/b/a/e/StethoInterceptor$ICc;->g()[B
 
     move-result-object v4
 
@@ -102,7 +102,7 @@
     .line 49
     :cond_0
     :try_start_0
-    invoke-interface {p1, v3}, Lcom/f/a/Interceptor$ag;->a(Lcom/f/a/Request;)Lcom/f/a/Response;
+    invoke-interface {p1, v3}, Lcom/f/a/Interceptor$ICag;->a(Lcom/f/a/Request;)Lcom/f/a/Response;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -127,18 +127,18 @@
 
     .line 62
     :cond_1
-    invoke-interface {p1}, Lcom/f/a/Interceptor$ag;->a()Lcom/f/a/Connection;
+    invoke-interface {p1}, Lcom/f/a/Interceptor$ICag;->a()Lcom/f/a/Connection;
 
     move-result-object v0
 
     .line 63
     iget-object v4, p0, Lcom/b/a/e/StethoInterceptor;->a:Lcom/b/a/c/f/NetworkEventReporter;
 
-    new-instance v5, Lcom/b/a/e/StethoInterceptor$d;
+    new-instance v5, Lcom/b/a/e/StethoInterceptor$ICd;
 
-    invoke-direct {v5, v1, v3, v6, v0}, Lcom/b/a/e/StethoInterceptor$d;-><init>(Ljava/lang/String;Lcom/f/a/Request;Lcom/f/a/Response;Lcom/f/a/Connection;)V
+    invoke-direct {v5, v1, v3, v6, v0}, Lcom/b/a/e/StethoInterceptor$ICd;-><init>(Ljava/lang/String;Lcom/f/a/Request;Lcom/f/a/Response;Lcom/f/a/Connection;)V
 
-    invoke-interface {v4, v5}, Lcom/b/a/c/f/NetworkEventReporter;->a(Lcom/b/a/c/f/NetworkEventReporter$k;)V
+    invoke-interface {v4, v5}, Lcom/b/a/c/f/NetworkEventReporter;->a(Lcom/b/a/c/f/NetworkEventReporter$ICk;)V
 
     .line 70
     invoke-virtual {v6}, Lcom/f/a/Response;->h()Lcom/f/a/ResponseBody;
@@ -191,19 +191,19 @@
     if-eqz v0, :cond_4
 
     .line 85
-    invoke-virtual {v6}, Lcom/f/a/Response;->i()Lcom/f/a/Response$au;
+    invoke-virtual {v6}, Lcom/f/a/Response;->i()Lcom/f/a/Response$ICau;
 
     move-result-object v1
 
-    new-instance v2, Lcom/b/a/e/StethoInterceptor$b;
+    new-instance v2, Lcom/b/a/e/StethoInterceptor$ICb;
 
-    invoke-direct {v2, v7, v0}, Lcom/b/a/e/StethoInterceptor$b;-><init>(Lcom/f/a/ResponseBody;Ljava/io/InputStream;)V
+    invoke-direct {v2, v7, v0}, Lcom/b/a/e/StethoInterceptor$ICb;-><init>(Lcom/f/a/ResponseBody;Ljava/io/InputStream;)V
 
-    invoke-virtual {v1, v2}, Lcom/f/a/Response$au;->a(Lcom/f/a/ResponseBody;)Lcom/f/a/Response$au;
+    invoke-virtual {v1, v2}, Lcom/f/a/Response$ICau;->a(Lcom/f/a/ResponseBody;)Lcom/f/a/Response$ICau;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/f/a/Response$au;->a()Lcom/f/a/Response;
+    invoke-virtual {v0}, Lcom/f/a/Response$ICau;->a()Lcom/f/a/Response;
 
     move-result-object v0
 

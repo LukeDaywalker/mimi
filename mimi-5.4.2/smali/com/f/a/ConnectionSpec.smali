@@ -120,14 +120,14 @@
     sput-object v0, Lcom/f/a/ConnectionSpec;->f:[Lcom/f/a/CipherSuite;
 
     .line 55
-    new-instance v0, Lcom/f/a/ConnectionSpec$v;
+    new-instance v0, Lcom/f/a/ConnectionSpec$ICv;
 
-    invoke-direct {v0, v3}, Lcom/f/a/ConnectionSpec$v;-><init>(Z)V
+    invoke-direct {v0, v3}, Lcom/f/a/ConnectionSpec$ICv;-><init>(Z)V
 
     sget-object v1, Lcom/f/a/ConnectionSpec;->f:[Lcom/f/a/CipherSuite;
 
     .line 56
-    invoke-virtual {v0, v1}, Lcom/f/a/ConnectionSpec$v;->a([Lcom/f/a/CipherSuite;)Lcom/f/a/ConnectionSpec$v;
+    invoke-virtual {v0, v1}, Lcom/f/a/ConnectionSpec$ICv;->a([Lcom/f/a/CipherSuite;)Lcom/f/a/ConnectionSpec$ICv;
 
     move-result-object v0
 
@@ -146,28 +146,28 @@
     aput-object v2, v1, v5
 
     .line 57
-    invoke-virtual {v0, v1}, Lcom/f/a/ConnectionSpec$v;->a([Lcom/f/a/TlsVersion;)Lcom/f/a/ConnectionSpec$v;
+    invoke-virtual {v0, v1}, Lcom/f/a/ConnectionSpec$ICv;->a([Lcom/f/a/TlsVersion;)Lcom/f/a/ConnectionSpec$ICv;
 
     move-result-object v0
 
     .line 58
-    invoke-virtual {v0, v3}, Lcom/f/a/ConnectionSpec$v;->a(Z)Lcom/f/a/ConnectionSpec$v;
+    invoke-virtual {v0, v3}, Lcom/f/a/ConnectionSpec$ICv;->a(Z)Lcom/f/a/ConnectionSpec$ICv;
 
     move-result-object v0
 
     .line 59
-    invoke-virtual {v0}, Lcom/f/a/ConnectionSpec$v;->a()Lcom/f/a/ConnectionSpec;
+    invoke-virtual {v0}, Lcom/f/a/ConnectionSpec$ICv;->a()Lcom/f/a/ConnectionSpec;
 
     move-result-object v0
 
     sput-object v0, Lcom/f/a/ConnectionSpec;->a:Lcom/f/a/ConnectionSpec;
 
     .line 62
-    new-instance v0, Lcom/f/a/ConnectionSpec$v;
+    new-instance v0, Lcom/f/a/ConnectionSpec$ICv;
 
     sget-object v1, Lcom/f/a/ConnectionSpec;->a:Lcom/f/a/ConnectionSpec;
 
-    invoke-direct {v0, v1}, Lcom/f/a/ConnectionSpec$v;-><init>(Lcom/f/a/ConnectionSpec;)V
+    invoke-direct {v0, v1}, Lcom/f/a/ConnectionSpec$ICv;-><init>(Lcom/f/a/ConnectionSpec;)V
 
     new-array v1, v3, [Lcom/f/a/TlsVersion;
 
@@ -176,28 +176,28 @@
     aput-object v2, v1, v4
 
     .line 63
-    invoke-virtual {v0, v1}, Lcom/f/a/ConnectionSpec$v;->a([Lcom/f/a/TlsVersion;)Lcom/f/a/ConnectionSpec$v;
+    invoke-virtual {v0, v1}, Lcom/f/a/ConnectionSpec$ICv;->a([Lcom/f/a/TlsVersion;)Lcom/f/a/ConnectionSpec$ICv;
 
     move-result-object v0
 
     .line 64
-    invoke-virtual {v0, v3}, Lcom/f/a/ConnectionSpec$v;->a(Z)Lcom/f/a/ConnectionSpec$v;
+    invoke-virtual {v0, v3}, Lcom/f/a/ConnectionSpec$ICv;->a(Z)Lcom/f/a/ConnectionSpec$ICv;
 
     move-result-object v0
 
     .line 65
-    invoke-virtual {v0}, Lcom/f/a/ConnectionSpec$v;->a()Lcom/f/a/ConnectionSpec;
+    invoke-virtual {v0}, Lcom/f/a/ConnectionSpec$ICv;->a()Lcom/f/a/ConnectionSpec;
 
     move-result-object v0
 
     sput-object v0, Lcom/f/a/ConnectionSpec;->b:Lcom/f/a/ConnectionSpec;
 
     .line 68
-    new-instance v0, Lcom/f/a/ConnectionSpec$v;
+    new-instance v0, Lcom/f/a/ConnectionSpec$ICv;
 
-    invoke-direct {v0, v4}, Lcom/f/a/ConnectionSpec$v;-><init>(Z)V
+    invoke-direct {v0, v4}, Lcom/f/a/ConnectionSpec$ICv;-><init>(Z)V
 
-    invoke-virtual {v0}, Lcom/f/a/ConnectionSpec$v;->a()Lcom/f/a/ConnectionSpec;
+    invoke-virtual {v0}, Lcom/f/a/ConnectionSpec$ICv;->a()Lcom/f/a/ConnectionSpec;
 
     move-result-object v0
 
@@ -206,7 +206,7 @@
     return-void
 .end method
 
-.method private constructor <init>(Lcom/f/a/ConnectionSpec$v;)V
+.method private constructor <init>(Lcom/f/a/ConnectionSpec$ICv;)V
     .locals 1
 
     .prologue
@@ -214,28 +214,28 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 84
-    invoke-static {p1}, Lcom/f/a/ConnectionSpec$v;->a(Lcom/f/a/ConnectionSpec$v;)Z
+    invoke-static {p1}, Lcom/f/a/ConnectionSpec$ICv;->a(Lcom/f/a/ConnectionSpec$ICv;)Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/f/a/ConnectionSpec;->d:Z
 
     .line 85
-    invoke-static {p1}, Lcom/f/a/ConnectionSpec$v;->b(Lcom/f/a/ConnectionSpec$v;)[Ljava/lang/String;
+    invoke-static {p1}, Lcom/f/a/ConnectionSpec$ICv;->b(Lcom/f/a/ConnectionSpec$ICv;)[Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/f/a/ConnectionSpec;->g:[Ljava/lang/String;
 
     .line 86
-    invoke-static {p1}, Lcom/f/a/ConnectionSpec$v;->c(Lcom/f/a/ConnectionSpec$v;)[Ljava/lang/String;
+    invoke-static {p1}, Lcom/f/a/ConnectionSpec$ICv;->c(Lcom/f/a/ConnectionSpec$ICv;)[Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/f/a/ConnectionSpec;->h:[Ljava/lang/String;
 
     .line 87
-    invoke-static {p1}, Lcom/f/a/ConnectionSpec$v;->d(Lcom/f/a/ConnectionSpec$v;)Z
+    invoke-static {p1}, Lcom/f/a/ConnectionSpec$ICv;->d(Lcom/f/a/ConnectionSpec$ICv;)Z
 
     move-result v0
 
@@ -245,12 +245,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/f/a/ConnectionSpec$v;Lcom/f/a/ConnectionSpec$u;)V
+.method synthetic constructor <init>(Lcom/f/a/ConnectionSpec$ICv;Lcom/f/a/ConnectionSpec$ICu;)V
     .locals 0
 
     .prologue
     .line 28
-    invoke-direct {p0, p1}, Lcom/f/a/ConnectionSpec;-><init>(Lcom/f/a/ConnectionSpec$v;)V
+    invoke-direct {p0, p1}, Lcom/f/a/ConnectionSpec;-><init>(Lcom/f/a/ConnectionSpec$ICv;)V
 
     return-void
 .end method
@@ -462,22 +462,22 @@
     check-cast v0, [Ljava/lang/String;
 
     .line 168
-    new-instance v2, Lcom/f/a/ConnectionSpec$v;
+    new-instance v2, Lcom/f/a/ConnectionSpec$ICv;
 
-    invoke-direct {v2, p0}, Lcom/f/a/ConnectionSpec$v;-><init>(Lcom/f/a/ConnectionSpec;)V
+    invoke-direct {v2, p0}, Lcom/f/a/ConnectionSpec$ICv;-><init>(Lcom/f/a/ConnectionSpec;)V
 
     .line 169
-    invoke-virtual {v2, v1}, Lcom/f/a/ConnectionSpec$v;->a([Ljava/lang/String;)Lcom/f/a/ConnectionSpec$v;
+    invoke-virtual {v2, v1}, Lcom/f/a/ConnectionSpec$ICv;->a([Ljava/lang/String;)Lcom/f/a/ConnectionSpec$ICv;
 
     move-result-object v1
 
     .line 170
-    invoke-virtual {v1, v0}, Lcom/f/a/ConnectionSpec$v;->b([Ljava/lang/String;)Lcom/f/a/ConnectionSpec$v;
+    invoke-virtual {v1, v0}, Lcom/f/a/ConnectionSpec$ICv;->b([Ljava/lang/String;)Lcom/f/a/ConnectionSpec$ICv;
 
     move-result-object v0
 
     .line 171
-    invoke-virtual {v0}, Lcom/f/a/ConnectionSpec$v;->a()Lcom/f/a/ConnectionSpec;
+    invoke-virtual {v0}, Lcom/f/a/ConnectionSpec$ICv;->a()Lcom/f/a/ConnectionSpec;
 
     move-result-object v0
 

@@ -62,9 +62,9 @@
 
     .prologue
     .line 51
-    new-instance v0, Lcom/e/a/c/MemoryCacheUtils$h;
+    new-instance v0, Lcom/e/a/c/MemoryCacheUtils$ICh;
 
-    invoke-direct {v0}, Lcom/e/a/c/MemoryCacheUtils$h;-><init>()V
+    invoke-direct {v0}, Lcom/e/a/c/MemoryCacheUtils$ICh;-><init>()V
 
     return-object v0
 .end method

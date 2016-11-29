@@ -15,7 +15,7 @@
         "Le/a/fr",
         "<",
         "Le/a/IdJournal;",
-        "Le/a/IdJournal$be;",
+        "Le/a/IdJournal$ICbe;",
         ">;",
         "Ljava/io/Serializable;",
         "Ljava/lang/Cloneable;"
@@ -29,7 +29,7 @@
         value = {
             "Ljava/util/Map",
             "<",
-            "Le/a/IdJournal$be;",
+            "Le/a/IdJournal$ICbe;",
             "Le/a/FieldMetaData;",
             ">;"
         }
@@ -73,7 +73,7 @@
 
 .field private l:B
 
-.field private m:[Le/a/IdJournal$be;
+.field private m:[Le/a/IdJournal$ICbe;
 
 
 # direct methods
@@ -152,9 +152,9 @@
 
     const-class v1, Le/a/StandardScheme;
 
-    new-instance v2, Le/a/IdJournal$bb;
+    new-instance v2, Le/a/IdJournal$ICbb;
 
-    invoke-direct {v2, v3}, Le/a/IdJournal$bb;-><init>(Le/a/IdJournal$az;)V
+    invoke-direct {v2, v3}, Le/a/IdJournal$ICbb;-><init>(Le/a/IdJournal$ICaz;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -163,21 +163,21 @@
 
     const-class v1, Le/a/TupleScheme;
 
-    new-instance v2, Le/a/IdJournal$bd;
+    new-instance v2, Le/a/IdJournal$ICbd;
 
-    invoke-direct {v2, v3}, Le/a/IdJournal$bd;-><init>(Le/a/IdJournal$az;)V
+    invoke-direct {v2, v3}, Le/a/IdJournal$ICbd;-><init>(Le/a/IdJournal$ICaz;)V
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 124
     new-instance v0, Ljava/util/EnumMap;
 
-    const-class v1, Le/a/IdJournal$be;
+    const-class v1, Le/a/IdJournal$ICbe;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     .line 125
-    sget-object v1, Le/a/IdJournal$be;->a:Le/a/IdJournal$be;
+    sget-object v1, Le/a/IdJournal$ICbe;->a:Le/a/IdJournal$ICbe;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -192,7 +192,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 127
-    sget-object v1, Le/a/IdJournal$be;->b:Le/a/IdJournal$be;
+    sget-object v1, Le/a/IdJournal$ICbe;->b:Le/a/IdJournal$ICbe;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -207,7 +207,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 129
-    sget-object v1, Le/a/IdJournal$be;->c:Le/a/IdJournal$be;
+    sget-object v1, Le/a/IdJournal$ICbe;->c:Le/a/IdJournal$ICbe;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -222,7 +222,7 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 131
-    sget-object v1, Le/a/IdJournal$be;->d:Le/a/IdJournal$be;
+    sget-object v1, Le/a/IdJournal$ICbe;->d:Le/a/IdJournal$ICbe;
 
     new-instance v2, Le/a/FieldMetaData;
 
@@ -269,13 +269,13 @@
     .line 121
     const/4 v0, 0x1
 
-    new-array v0, v0, [Le/a/IdJournal$be;
+    new-array v0, v0, [Le/a/IdJournal$ICbe;
 
-    sget-object v1, Le/a/IdJournal$be;->b:Le/a/IdJournal$be;
+    sget-object v1, Le/a/IdJournal$ICbe;->b:Le/a/IdJournal$ICbe;
 
     aput-object v1, v0, v2
 
-    iput-object v0, p0, Le/a/IdJournal;->m:[Le/a/IdJournal$be;
+    iput-object v0, p0, Le/a/IdJournal;->m:[Le/a/IdJournal$ICbe;
 
     .line 138
     return-void

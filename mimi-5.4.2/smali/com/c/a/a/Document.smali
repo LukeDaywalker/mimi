@@ -14,7 +14,7 @@
 
 .field private d:Ljava/lang/String;
 
-.field private e:Lcom/c/a/a/Sparta$u;
+.field private e:Lcom/c/a/a/Sparta$ICu;
 
 .field private f:Ljava/util/Vector;
 
@@ -36,9 +36,9 @@
     sput-object v0, Lcom/c/a/a/Document;->b:Ljava/lang/Integer;
 
     .line 280
-    new-instance v0, Lcom/c/a/a/Document$h;
+    new-instance v0, Lcom/c/a/a/Document$ICh;
 
-    invoke-direct {v0}, Lcom/c/a/a/Document$h;-><init>()V
+    invoke-direct {v0}, Lcom/c/a/a/Document$ICh;-><init>()V
 
     sput-object v0, Lcom/c/a/a/Document;->a:Ljava/util/Enumeration;
 
@@ -58,11 +58,11 @@
     iput-object v1, p0, Lcom/c/a/a/Document;->c:Lcom/c/a/a/Element;
 
     .line 384
-    invoke-static {}, Lcom/c/a/a/Sparta;->a()Lcom/c/a/a/Sparta$u;
+    invoke-static {}, Lcom/c/a/a/Sparta;->a()Lcom/c/a/a/Sparta$ICu;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/c/a/a/Document;->e:Lcom/c/a/a/Sparta$u;
+    iput-object v0, p0, Lcom/c/a/a/Document;->e:Lcom/c/a/a/Sparta$ICu;
 
     .line 385
     new-instance v0, Ljava/util/Vector;
@@ -96,11 +96,11 @@
     iput-object v1, p0, Lcom/c/a/a/Document;->c:Lcom/c/a/a/Element;
 
     .line 384
-    invoke-static {}, Lcom/c/a/a/Sparta;->a()Lcom/c/a/a/Sparta$u;
+    invoke-static {}, Lcom/c/a/a/Sparta;->a()Lcom/c/a/a/Sparta$ICu;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/c/a/a/Document;->e:Lcom/c/a/a/Sparta$u;
+    iput-object v0, p0, Lcom/c/a/a/Document;->e:Lcom/c/a/a/Sparta$ICu;
 
     .line 385
     new-instance v0, Ljava/util/Vector;
@@ -144,9 +144,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/c/a/a/Document$e;
+    check-cast v0, Lcom/c/a/a/Document$ICe;
 
-    invoke-interface {v0, p0}, Lcom/c/a/a/Document$e;->a(Lcom/c/a/a/Document;)V
+    invoke-interface {v0, p0}, Lcom/c/a/a/Document$ICe;->a(Lcom/c/a/a/Document;)V
 
     goto :goto_0
 

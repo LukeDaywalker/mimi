@@ -39,7 +39,7 @@
     move-result-object v1
 
     .line 30
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$af;->k:Lcom/wumii/android/mimi/c/EventUtils$af;
+    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->k:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -65,7 +65,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$af;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 31
     const-wide/32 v4, 0x7f0b0047
@@ -87,11 +87,11 @@
 
     .prologue
     .line 35
-    new-instance v0, Lcom/wumii/android/mimi/models/g/PromotionShareController$ac;
+    new-instance v0, Lcom/wumii/android/mimi/models/g/PromotionShareController$ICac;
 
-    invoke-direct {v0, p1, p2, p4, p5}, Lcom/wumii/android/mimi/models/g/PromotionShareController$ac;-><init>(Ljava/lang/String;Ljava/lang/String;J)V
+    invoke-direct {v0, p1, p2, p4, p5}, Lcom/wumii/android/mimi/models/g/PromotionShareController$ICac;-><init>(Ljava/lang/String;Ljava/lang/String;J)V
 
-    invoke-static {p0, p3, v0}, Lcom/wumii/android/mimi/models/g/AbsBaseShareController;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/b/BaseShareImageTask$l;)V
+    invoke-static {p0, p3, v0}, Lcom/wumii/android/mimi/models/g/AbsBaseShareController;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/b/BaseShareImageTask$ICl;)V
 
     .line 41
     return-void
@@ -183,11 +183,11 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/models/g/PromotionShareController$ad;
+    new-instance v2, Lcom/wumii/android/mimi/models/g/PromotionShareController$ICad;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/g/PromotionShareController$ad;-><init>(Lcom/wumii/android/mimi/models/g/PromotionShareController;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/g/PromotionShareController$ICad;-><init>(Lcom/wumii/android/mimi/models/g/PromotionShareController;)V
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/c/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/c/ShareUtils$an;)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/c/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/c/ShareUtils$ICan;)V
 
     .line 58
     return-void
@@ -204,11 +204,11 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/models/g/PromotionShareController$ae;
+    new-instance v2, Lcom/wumii/android/mimi/models/g/PromotionShareController$ICae;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/g/PromotionShareController$ae;-><init>(Lcom/wumii/android/mimi/models/g/PromotionShareController;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/models/g/PromotionShareController$ICae;-><init>(Lcom/wumii/android/mimi/models/g/PromotionShareController;)V
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/c/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/c/ShareUtils$an;)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/c/ShareUtils;->a(Landroid/app/Activity;Ljava/lang/String;Lcom/wumii/android/mimi/c/ShareUtils$ICan;)V
 
     .line 73
     return-void

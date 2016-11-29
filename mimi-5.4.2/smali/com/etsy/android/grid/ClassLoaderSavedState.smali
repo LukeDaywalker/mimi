@@ -40,9 +40,9 @@
     sput-object v0, Lcom/etsy/android/grid/ClassLoaderSavedState;->a:Lcom/etsy/android/grid/ClassLoaderSavedState;
 
     .line 82
-    new-instance v0, Lcom/etsy/android/grid/ClassLoaderSavedState$a;
+    new-instance v0, Lcom/etsy/android/grid/ClassLoaderSavedState$ICa;
 
-    invoke-direct {v0}, Lcom/etsy/android/grid/ClassLoaderSavedState$a;-><init>()V
+    invoke-direct {v0}, Lcom/etsy/android/grid/ClassLoaderSavedState$ICa;-><init>()V
 
     sput-object v0, Lcom/etsy/android/grid/ClassLoaderSavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 

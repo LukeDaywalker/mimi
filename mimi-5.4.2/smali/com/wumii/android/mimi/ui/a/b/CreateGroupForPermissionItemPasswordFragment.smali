@@ -228,9 +228,9 @@
     .line 49
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemPasswordFragment;->b:Landroid/widget/EditText;
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemPasswordFragment$ab;
+    new-instance v2, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemPasswordFragment$ICab;
 
-    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemPasswordFragment$ab;-><init>(Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemPasswordFragment;)V
+    invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemPasswordFragment$ICab;-><init>(Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemPasswordFragment;)V
 
     const-wide/16 v4, 0x64
 

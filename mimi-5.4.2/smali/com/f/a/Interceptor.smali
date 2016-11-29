@@ -4,5 +4,5 @@
 
 
 # virtual methods
-.method public abstract a(Lcom/f/a/Interceptor$ag;)Lcom/f/a/Response;
+.method public abstract a(Lcom/f/a/Interceptor$ICag;)Lcom/f/a/Response;
 .end method

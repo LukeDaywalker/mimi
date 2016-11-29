@@ -11,11 +11,11 @@
             "(",
             "Lcom/google/tagmanager/ak",
             "<",
-            "Lcom/google/analytics/b/a/a/TypeSystem$b;",
+            "Lcom/google/analytics/b/a/a/TypeSystem$ICb;",
             ">;)",
             "Lcom/google/tagmanager/ak",
             "<",
-            "Lcom/google/analytics/b/a/a/TypeSystem$b;",
+            "Lcom/google/analytics/b/a/a/TypeSystem$ICb;",
             ">;"
         }
     .end annotation
@@ -27,9 +27,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/analytics/b/a/a/TypeSystem$b;
+    check-cast v0, Lcom/google/analytics/b/a/a/TypeSystem$ICb;
 
-    invoke-static {v0}, Lcom/google/tagmanager/Types;->a(Lcom/google/analytics/b/a/a/TypeSystem$b;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/google/tagmanager/Types;->a(Lcom/google/analytics/b/a/a/TypeSystem$ICb;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -40,7 +40,7 @@
     .line 55
     new-instance v0, Lcom/google/tagmanager/ObjectAndStatic;
 
-    invoke-static {v1}, Lcom/google/tagmanager/Types;->c(Ljava/lang/Object;)Lcom/google/analytics/b/a/a/TypeSystem$b;
+    invoke-static {v1}, Lcom/google/tagmanager/Types;->c(Ljava/lang/Object;)Lcom/google/analytics/b/a/a/TypeSystem$ICb;
 
     move-result-object v1
 
@@ -77,11 +77,11 @@
             "(",
             "Lcom/google/tagmanager/ak",
             "<",
-            "Lcom/google/analytics/b/a/a/TypeSystem$b;",
+            "Lcom/google/analytics/b/a/a/TypeSystem$ICb;",
             ">;I)",
             "Lcom/google/tagmanager/ak",
             "<",
-            "Lcom/google/analytics/b/a/a/TypeSystem$b;",
+            "Lcom/google/analytics/b/a/a/TypeSystem$ICb;",
             ">;"
         }
     .end annotation
@@ -92,9 +92,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/analytics/b/a/a/TypeSystem$b;
+    check-cast v0, Lcom/google/analytics/b/a/a/TypeSystem$ICb;
 
-    invoke-static {v0}, Lcom/google/tagmanager/ValueEscapeUtil;->a(Lcom/google/analytics/b/a/a/TypeSystem$b;)Z
+    invoke-static {v0}, Lcom/google/tagmanager/ValueEscapeUtil;->a(Lcom/google/analytics/b/a/a/TypeSystem$ICb;)Z
 
     move-result v0
 
@@ -160,11 +160,11 @@
             "(",
             "Lcom/google/tagmanager/ak",
             "<",
-            "Lcom/google/analytics/b/a/a/TypeSystem$b;",
+            "Lcom/google/analytics/b/a/a/TypeSystem$ICb;",
             ">;[I)",
             "Lcom/google/tagmanager/ak",
             "<",
-            "Lcom/google/analytics/b/a/a/TypeSystem$b;",
+            "Lcom/google/analytics/b/a/a/TypeSystem$ICb;",
             ">;"
         }
     .end annotation
@@ -218,12 +218,12 @@
     return-object v0
 .end method
 
-.method private static a(Lcom/google/analytics/b/a/a/TypeSystem$b;)Z
+.method private static a(Lcom/google/analytics/b/a/a/TypeSystem$ICb;)Z
     .locals 1
 
     .prologue
     .line 63
-    invoke-static {p0}, Lcom/google/tagmanager/Types;->c(Lcom/google/analytics/b/a/a/TypeSystem$b;)Ljava/lang/Object;
+    invoke-static {p0}, Lcom/google/tagmanager/Types;->c(Lcom/google/analytics/b/a/a/TypeSystem$ICb;)Ljava/lang/Object;
 
     move-result-object v0
 

@@ -6,7 +6,7 @@
 # instance fields
 .field private a:Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$v;
+.field private b:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;
 
 .field private c:Landroid/graphics/drawable/Drawable;
 
@@ -52,9 +52,9 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/ProgressBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 33
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$u;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICu;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$u;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICu;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;)V
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->a:Lcom/wumii/android/mimi/models/d/CountDownTimer;
 
@@ -96,12 +96,12 @@
     return-void
 .end method
 
-.method static synthetic c(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;)Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$v;
+.method static synthetic c(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;)Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;
     .locals 1
 
     .prologue
     .line 13
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->b:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$v;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->b:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;
 
     return-object v0
 .end method
@@ -358,12 +358,12 @@
     return-void
 .end method
 
-.method public setCountdownCallback(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$v;)V
+.method public setCountdownCallback(Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;)V
     .locals 0
 
     .prologue
     .line 81
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->b:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$v;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;->b:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICv;
 
     .line 82
     return-void

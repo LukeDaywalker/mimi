@@ -57,9 +57,9 @@
     :cond_0
     new-instance v0, Ljava/lang/Thread;
 
-    new-instance v1, Lcom/google/tagmanager/SharedPreferencesUtil$bd;
+    new-instance v1, Lcom/google/tagmanager/SharedPreferencesUtil$ICbd;
 
-    invoke-direct {v1, p0}, Lcom/google/tagmanager/SharedPreferencesUtil$bd;-><init>(Landroid/content/SharedPreferences$Editor;)V
+    invoke-direct {v1, p0}, Lcom/google/tagmanager/SharedPreferencesUtil$ICbd;-><init>(Landroid/content/SharedPreferences$Editor;)V
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 

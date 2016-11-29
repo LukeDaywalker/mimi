@@ -220,7 +220,7 @@
     return-void
 .end method
 
-.method public static a(Ljava/util/List;Lcom/f/a/Protocol;)Lcom/f/a/Response$au;
+.method public static a(Ljava/util/List;Lcom/f/a/Protocol;)Lcom/f/a/Response$ICau;
     .locals 12
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -231,7 +231,7 @@
             ">;",
             "Lcom/f/a/Protocol;",
             ")",
-            "Lcom/f/a/Response$au;"
+            "Lcom/f/a/Response$ICau;"
         }
     .end annotation
 
@@ -245,9 +245,9 @@
     const-string/jumbo v1, "HTTP/1.1"
 
     .line 176
-    new-instance v6, Lcom/f/a/Headers$ab;
+    new-instance v6, Lcom/f/a/Headers$ICab;
 
-    invoke-direct {v6}, Lcom/f/a/Headers$ab;-><init>()V
+    invoke-direct {v6}, Lcom/f/a/Headers$ICab;-><init>()V
 
     .line 177
     sget-object v0, Lcom/f/a/a/a/OkHeaders;->d:Ljava/lang/String;
@@ -256,7 +256,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v6, v0, v4}, Lcom/f/a/Headers$ab;->c(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Headers$ab;
+    invoke-virtual {v6, v0, v4}, Lcom/f/a/Headers$ICab;->c(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Headers$ICab;
 
     .line 178
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -375,7 +375,7 @@
 
     move-result-object v10
 
-    invoke-virtual {v6, v10, v1}, Lcom/f/a/Headers$ab;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Headers$ab;
+    invoke-virtual {v6, v10, v1}, Lcom/f/a/Headers$ICab;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/f/a/Headers$ICab;
 
     :cond_3
     move-object v1, v2
@@ -433,35 +433,35 @@
     move-result-object v0
 
     .line 200
-    new-instance v1, Lcom/f/a/Response$au;
+    new-instance v1, Lcom/f/a/Response$ICau;
 
-    invoke-direct {v1}, Lcom/f/a/Response$au;-><init>()V
+    invoke-direct {v1}, Lcom/f/a/Response$ICau;-><init>()V
 
     .line 201
-    invoke-virtual {v1, p1}, Lcom/f/a/Response$au;->a(Lcom/f/a/Protocol;)Lcom/f/a/Response$au;
+    invoke-virtual {v1, p1}, Lcom/f/a/Response$ICau;->a(Lcom/f/a/Protocol;)Lcom/f/a/Response$ICau;
 
     move-result-object v1
 
     iget v2, v0, Lcom/f/a/a/a/StatusLine;->b:I
 
     .line 202
-    invoke-virtual {v1, v2}, Lcom/f/a/Response$au;->a(I)Lcom/f/a/Response$au;
+    invoke-virtual {v1, v2}, Lcom/f/a/Response$ICau;->a(I)Lcom/f/a/Response$ICau;
 
     move-result-object v1
 
     iget-object v0, v0, Lcom/f/a/a/a/StatusLine;->c:Ljava/lang/String;
 
     .line 203
-    invoke-virtual {v1, v0}, Lcom/f/a/Response$au;->a(Ljava/lang/String;)Lcom/f/a/Response$au;
+    invoke-virtual {v1, v0}, Lcom/f/a/Response$ICau;->a(Ljava/lang/String;)Lcom/f/a/Response$ICau;
 
     move-result-object v0
 
     .line 204
-    invoke-virtual {v6}, Lcom/f/a/Headers$ab;->a()Lcom/f/a/Headers;
+    invoke-virtual {v6}, Lcom/f/a/Headers$ICab;->a()Lcom/f/a/Headers;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/f/a/Response$au;->a(Lcom/f/a/Headers;)Lcom/f/a/Response$au;
+    invoke-virtual {v0, v1}, Lcom/f/a/Response$ICau;->a(Lcom/f/a/Headers;)Lcom/f/a/Response$ICau;
 
     move-result-object v0
 
@@ -1050,7 +1050,7 @@
     return-void
 .end method
 
-.method public b()Lcom/f/a/Response$au;
+.method public b()Lcom/f/a/Response$ICau;
     .locals 2
 
     .prologue
@@ -1067,7 +1067,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/f/a/a/a/SpdyTransport;->a(Ljava/util/List;Lcom/f/a/Protocol;)Lcom/f/a/Response$au;
+    invoke-static {v0, v1}, Lcom/f/a/a/a/SpdyTransport;->a(Ljava/util/List;Lcom/f/a/Protocol;)Lcom/f/a/Response$ICau;
 
     move-result-object v0
 

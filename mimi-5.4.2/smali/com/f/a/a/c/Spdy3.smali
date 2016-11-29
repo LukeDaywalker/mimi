@@ -67,9 +67,9 @@
 
     .prologue
     .line 99
-    new-instance v0, Lcom/f/a/a/c/Spdy3$aa;
+    new-instance v0, Lcom/f/a/a/c/Spdy3$ICaa;
 
-    invoke-direct {v0, p1, p2}, Lcom/f/a/a/c/Spdy3$aa;-><init>(Ld/BufferedSource;Z)V
+    invoke-direct {v0, p1, p2}, Lcom/f/a/a/c/Spdy3$ICaa;-><init>(Ld/BufferedSource;Z)V
 
     return-object v0
 .end method
@@ -79,9 +79,9 @@
 
     .prologue
     .line 103
-    new-instance v0, Lcom/f/a/a/c/Spdy3$ab;
+    new-instance v0, Lcom/f/a/a/c/Spdy3$ICab;
 
-    invoke-direct {v0, p1, p2}, Lcom/f/a/a/c/Spdy3$ab;-><init>(Ld/BufferedSink;Z)V
+    invoke-direct {v0, p1, p2}, Lcom/f/a/a/c/Spdy3$ICab;-><init>(Ld/BufferedSink;Z)V
 
     return-object v0
 .end method

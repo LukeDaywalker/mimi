@@ -84,7 +84,7 @@
     :cond_1
     iget-object v1, p0, Lcom/sina/weibo/sdk/api/a/VersionCheckHandler;->a:Ljava/lang/String;
 
-    invoke-static {p1, v1}, Lcom/sina/weibo/sdk/api/a/ApiUtils;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/sina/weibo/sdk/api/a/ApiUtils$b;
+    invoke-static {p1, v1}, Lcom/sina/weibo/sdk/api/a/ApiUtils;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;
 
     move-result-object v1
 
@@ -100,7 +100,7 @@
 
     invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget v4, v1, Lcom/sina/weibo/sdk/api/a/ApiUtils$b;->b:I
+    iget v4, v1, Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;->b:I
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -113,14 +113,14 @@
     invoke-static {v2, v3}, Lcom/sina/weibo/sdk/b/LogUtil;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 98
-    iget v2, v1, Lcom/sina/weibo/sdk/api/a/ApiUtils$b;->b:I
+    iget v2, v1, Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;->b:I
 
     const/16 v3, 0x286f
 
     if-lt v2, v3, :cond_0
 
     .line 103
-    iget v0, v1, Lcom/sina/weibo/sdk/api/a/ApiUtils$b;->b:I
+    iget v0, v1, Lcom/sina/weibo/sdk/api/a/ApiUtils$ICb;->b:I
 
     const/16 v1, 0x2870
 

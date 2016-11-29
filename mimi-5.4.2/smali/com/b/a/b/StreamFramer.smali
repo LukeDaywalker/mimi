@@ -34,13 +34,13 @@
 
     new-instance v1, Ljava/io/BufferedOutputStream;
 
-    new-instance v2, Lcom/b/a/b/StreamFramer$k;
+    new-instance v2, Lcom/b/a/b/StreamFramer$ICk;
 
     iget-object v3, p0, Lcom/b/a/b/StreamFramer;->c:Ljava/io/DataOutputStream;
 
     const/16 v4, 0x31
 
-    invoke-direct {v2, p0, v3, v4}, Lcom/b/a/b/StreamFramer$k;-><init>(Lcom/b/a/b/StreamFramer;Ljava/io/DataOutputStream;B)V
+    invoke-direct {v2, p0, v3, v4}, Lcom/b/a/b/StreamFramer$ICk;-><init>(Lcom/b/a/b/StreamFramer;Ljava/io/DataOutputStream;B)V
 
     invoke-direct {v1, v2}, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;)V
 
@@ -51,13 +51,13 @@
     .line 48
     new-instance v0, Ljava/io/PrintStream;
 
-    new-instance v1, Lcom/b/a/b/StreamFramer$k;
+    new-instance v1, Lcom/b/a/b/StreamFramer$ICk;
 
     iget-object v2, p0, Lcom/b/a/b/StreamFramer;->c:Ljava/io/DataOutputStream;
 
     const/16 v3, 0x32
 
-    invoke-direct {v1, p0, v2, v3}, Lcom/b/a/b/StreamFramer$k;-><init>(Lcom/b/a/b/StreamFramer;Ljava/io/DataOutputStream;B)V
+    invoke-direct {v1, p0, v2, v3}, Lcom/b/a/b/StreamFramer$ICk;-><init>(Lcom/b/a/b/StreamFramer;Ljava/io/DataOutputStream;B)V
 
     invoke-direct {v0, v1}, Ljava/io/PrintStream;-><init>(Ljava/io/OutputStream;)V
 

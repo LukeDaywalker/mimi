@@ -13,9 +13,9 @@
 
     .prologue
     .line 76
-    new-instance v0, Lcom/f/a/a/c/PushObserver$x;
+    new-instance v0, Lcom/f/a/a/c/PushObserver$ICx;
 
-    invoke-direct {v0}, Lcom/f/a/a/c/PushObserver$x;-><init>()V
+    invoke-direct {v0}, Lcom/f/a/a/c/PushObserver$ICx;-><init>()V
 
     sput-object v0, Lcom/f/a/a/c/PushObserver;->a:Lcom/f/a/a/c/PushObserver;
 

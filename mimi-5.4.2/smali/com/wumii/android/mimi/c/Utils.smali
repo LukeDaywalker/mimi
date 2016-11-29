@@ -234,7 +234,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$f;)Landroid/app/AlertDialog;
+.method public static a(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICf;)Landroid/app/AlertDialog;
     .locals 3
 
     .prologue
@@ -269,7 +269,7 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     .line 759
-    invoke-virtual {v1, v0, p3}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->a(Landroid/support/v4/util/SimpleArrayMap;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$f;)V
+    invoke-virtual {v1, v0, p3}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->a(Landroid/support/v4/util/SimpleArrayMap;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICf;)V
 
     .line 760
     invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder;->create()Landroid/app/AlertDialog;
@@ -288,33 +288,33 @@
     const v1, 0x7f0200b2
 
     .line 502
-    new-instance v0, Lcom/e/a/b/DisplayImageOptions$f;
+    new-instance v0, Lcom/e/a/b/DisplayImageOptions$ICf;
 
-    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$f;-><init>()V
+    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;-><init>()V
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->c(I)Lcom/e/a/b/DisplayImageOptions$f;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->a(I)Lcom/e/a/b/DisplayImageOptions$f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->c(I)Lcom/e/a/b/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->b(I)Lcom/e/a/b/DisplayImageOptions$f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(I)Lcom/e/a/b/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$f;->b(Z)Lcom/e/a/b/DisplayImageOptions$f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->b(I)Lcom/e/a/b/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$f;->c(Z)Lcom/e/a/b/DisplayImageOptions$f;
+    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$ICf;->b(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$ICf;->c(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
 
     move-result-object v0
 
     sget-object v1, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->a(Landroid/graphics/Bitmap$Config;)Lcom/e/a/b/DisplayImageOptions$f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Landroid/graphics/Bitmap$Config;)Lcom/e/a/b/DisplayImageOptions$ICf;
 
     move-result-object v0
 
@@ -322,11 +322,11 @@
 
     invoke-direct {v1, p0}, Lcom/e/a/b/c/RoundedBitmapDisplayer;-><init>(I)V
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$f;->a(Lcom/e/a/b/c/BitmapDisplayer;)Lcom/e/a/b/DisplayImageOptions$f;
+    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Lcom/e/a/b/c/BitmapDisplayer;)Lcom/e/a/b/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$f;->a()Lcom/e/a/b/DisplayImageOptions;
+    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;->a()Lcom/e/a/b/DisplayImageOptions;
 
     move-result-object v0
 
@@ -1279,9 +1279,9 @@
 
     move-result-object v2
 
-    new-instance v3, Lcom/wumii/android/mimi/c/Utils$ax;
+    new-instance v3, Lcom/wumii/android/mimi/c/Utils$ICax;
 
-    invoke-direct {v3, p1, v1, v0, p2}, Lcom/wumii/android/mimi/c/Utils$ax;-><init>(Landroid/util/DisplayMetrics;Landroid/view/View;Landroid/view/View;Lcom/wumii/android/mimi/ui/OnKeyboardVisibilityListener;)V
+    invoke-direct {v3, p1, v1, v0, p2}, Lcom/wumii/android/mimi/c/Utils$ICax;-><init>(Landroid/util/DisplayMetrics;Landroid/view/View;Landroid/view/View;Lcom/wumii/android/mimi/ui/OnKeyboardVisibilityListener;)V
 
     invoke-virtual {v2, v3}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
@@ -1440,9 +1440,9 @@
 
     .prologue
     .line 127
-    new-instance v0, Lcom/wumii/android/mimi/c/Utils$aw;
+    new-instance v0, Lcom/wumii/android/mimi/c/Utils$ICaw;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/c/Utils$aw;-><init>(Landroid/view/View;I)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/c/Utils$ICaw;-><init>(Landroid/view/View;I)V
 
     invoke-virtual {p1, v0}, Landroid/view/animation/Animation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 

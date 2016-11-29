@@ -94,9 +94,9 @@
     .line 39
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;->f:Landroid/widget/Button;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView$af;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView$ICaf;
 
-    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView$af;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;)V
+    invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView$ICaf;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/SmallCircleCardView;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

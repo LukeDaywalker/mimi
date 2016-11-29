@@ -9,7 +9,7 @@
 # instance fields
 .field private a:Landroid/view/LayoutInflater;
 
-.field private b:Lcom/wumii/android/mimi/ui/widgets/share/InviteList$f;
+.field private b:Lcom/wumii/android/mimi/ui/widgets/share/InviteList$ICf;
 
 
 # direct methods
@@ -256,12 +256,12 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->b:Lcom/wumii/android/mimi/ui/widgets/share/InviteList$f;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->b:Lcom/wumii/android/mimi/ui/widgets/share/InviteList$ICf;
 
     if-eqz v0, :cond_0
 
     .line 50
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->b:Lcom/wumii/android/mimi/ui/widgets/share/InviteList$f;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->b:Lcom/wumii/android/mimi/ui/widgets/share/InviteList$ICf;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -269,19 +269,19 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/share/InviteMenuItem;
 
-    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/share/InviteList$f;->a(Lcom/wumii/android/mimi/models/entities/share/InviteMenuItem;)V
+    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/share/InviteList$ICf;->a(Lcom/wumii/android/mimi/models/entities/share/InviteMenuItem;)V
 
     .line 52
     :cond_0
     return-void
 .end method
 
-.method public setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/share/InviteList$f;)V
+.method public setItemClickListener(Lcom/wumii/android/mimi/ui/widgets/share/InviteList$ICf;)V
     .locals 0
 
     .prologue
     .line 44
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->b:Lcom/wumii/android/mimi/ui/widgets/share/InviteList$f;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/share/InviteList;->b:Lcom/wumii/android/mimi/ui/widgets/share/InviteList$ICf;
 
     .line 45
     return-void

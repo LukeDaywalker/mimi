@@ -64,16 +64,16 @@
     move-result-object p2
 
     .line 36
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$c;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICc;
 
-    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$c;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICc;-><init>(Landroid/view/View;)V
 
     .line 37
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 42
     :goto_0
-    invoke-virtual {p0, p1, v0}, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$c;)V
+    invoke-virtual {p0, p1, v0}, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICc;)V
 
     .line 44
     return-object p2
@@ -84,10 +84,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$c;
+    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICc;
 
     goto :goto_0
 .end method
 
-.method protected abstract a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$c;)V
+.method protected abstract a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Lcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICc;)V
 .end method

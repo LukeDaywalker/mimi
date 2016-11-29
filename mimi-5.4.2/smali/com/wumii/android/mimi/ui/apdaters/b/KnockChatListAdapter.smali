@@ -120,16 +120,16 @@
     move-result-object p2
 
     .line 85
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter$x;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter$ICx;
 
-    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter$x;-><init>(Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter;Landroid/view/View;)V
+    invoke-direct {v0, p0, p2}, Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter$ICx;-><init>(Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter;Landroid/view/View;)V
 
     .line 86
     invoke-virtual {p2, v4, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 90
     :goto_0
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter$x;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter$ICx;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatSession;)V
 
     .line 91
     return-object p2
@@ -140,7 +140,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter$x;
+    check-cast v0, Lcom/wumii/android/mimi/ui/apdaters/b/KnockChatListAdapter$ICx;
 
     goto :goto_0
 .end method
