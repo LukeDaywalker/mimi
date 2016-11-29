@@ -1,4 +1,4 @@
-.class final Lcom/baidu/android/bbalbs/common/util/DeviceId$a;
+.class final Lcom/baidu/android/bbalbs/common/util/DeviceId$ICa;
 .super Ljava/lang/Object;
 .source "DeviceId.java"
 
@@ -18,16 +18,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 331
-    iput-object p1, p0, Lcom/baidu/android/bbalbs/common/util/DeviceId$a;->a:Ljava/lang/String;
+    iput-object p1, p0, Lcom/baidu/android/bbalbs/common/util/DeviceId$ICa;->a:Ljava/lang/String;
 
     .line 332
-    iput-boolean p2, p0, Lcom/baidu/android/bbalbs/common/util/DeviceId$a;->b:Z
+    iput-boolean p2, p0, Lcom/baidu/android/bbalbs/common/util/DeviceId$ICa;->b:Z
 
     .line 333
     return-void
 .end method
 
-.method static a(Landroid/content/Context;)Lcom/baidu/android/bbalbs/common/util/DeviceId$a;
+.method static a(Landroid/content/Context;)Lcom/baidu/android/bbalbs/common/util/DeviceId$ICa;
     .locals 7
 
     .prologue
@@ -61,7 +61,7 @@
     .line 376
     const-string/jumbo v0, ""
 
-    invoke-static {p0, v0}, Lcom/baidu/android/bbalbs/common/util/DeviceId$a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, v0}, Lcom/baidu/android/bbalbs/common/util/DeviceId$ICa;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -84,12 +84,12 @@
 
     .line 390
     :goto_1
-    new-instance v4, Lcom/baidu/android/bbalbs/common/util/DeviceId$a;
+    new-instance v4, Lcom/baidu/android/bbalbs/common/util/DeviceId$ICa;
 
     if-eqz v1, :cond_0
 
     :goto_2
-    invoke-direct {v4, v0, v2}, Lcom/baidu/android/bbalbs/common/util/DeviceId$a;-><init>(Ljava/lang/String;Z)V
+    invoke-direct {v4, v0, v2}, Lcom/baidu/android/bbalbs/common/util/DeviceId$ICa;-><init>(Ljava/lang/String;Z)V
 
     return-object v4
 
@@ -121,7 +121,7 @@
     .line 387
     const-string/jumbo v0, ""
 
-    invoke-static {p0, v0}, Lcom/baidu/android/bbalbs/common/util/DeviceId$a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, v0}, Lcom/baidu/android/bbalbs/common/util/DeviceId$ICa;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -181,7 +181,7 @@
 
     .line 354
     :goto_0
-    invoke-static {v0}, Lcom/baidu/android/bbalbs/common/util/DeviceId$a;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/baidu/android/bbalbs/common/util/DeviceId$ICa;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

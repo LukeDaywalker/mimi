@@ -26,15 +26,15 @@
     invoke-static {p0, v0}, Lcom/baidu/android/bbalbs/common/util/DeviceId;->a(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 72
-    invoke-static {p0}, Lcom/baidu/android/bbalbs/common/util/DeviceId$a;->a(Landroid/content/Context;)Lcom/baidu/android/bbalbs/common/util/DeviceId$a;
+    invoke-static {p0}, Lcom/baidu/android/bbalbs/common/util/DeviceId$ICa;->a(Landroid/content/Context;)Lcom/baidu/android/bbalbs/common/util/DeviceId$ICa;
 
     move-result-object v0
 
     .line 75
-    iget-object v3, v0, Lcom/baidu/android/bbalbs/common/util/DeviceId$a;->a:Ljava/lang/String;
+    iget-object v3, v0, Lcom/baidu/android/bbalbs/common/util/DeviceId$ICa;->a:Ljava/lang/String;
 
     .line 76
-    iget-boolean v0, v0, Lcom/baidu/android/bbalbs/common/util/DeviceId$a;->b:Z
+    iget-boolean v0, v0, Lcom/baidu/android/bbalbs/common/util/DeviceId$ICa;->b:Z
 
     if-eqz v0, :cond_1
 
@@ -589,12 +589,12 @@
 
     .prologue
     .line 172
-    invoke-static {p0}, Lcom/baidu/android/bbalbs/common/util/DeviceId$a;->a(Landroid/content/Context;)Lcom/baidu/android/bbalbs/common/util/DeviceId$a;
+    invoke-static {p0}, Lcom/baidu/android/bbalbs/common/util/DeviceId$ICa;->a(Landroid/content/Context;)Lcom/baidu/android/bbalbs/common/util/DeviceId$ICa;
 
     move-result-object v0
 
     .line 173
-    iget-object v0, v0, Lcom/baidu/android/bbalbs/common/util/DeviceId$a;->a:Ljava/lang/String;
+    iget-object v0, v0, Lcom/baidu/android/bbalbs/common/util/DeviceId$ICa;->a:Ljava/lang/String;
 
     return-object v0
 .end method
