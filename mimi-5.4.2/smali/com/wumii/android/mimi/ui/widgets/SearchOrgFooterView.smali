@@ -246,7 +246,7 @@
 
     .prologue
     .line 182
-    invoke-static {p1}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;)D
+    invoke-static {p1}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;)D
 
     move-result-wide v0
 
@@ -313,7 +313,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 124
     :goto_0
@@ -323,7 +323,7 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->b:Landroid/view/ViewGroup;
 
-    invoke-static {v0, v5}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v5}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 112
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->h:Ljava/lang/String;
@@ -425,7 +425,7 @@
     move v0, v1
 
     :goto_1
-    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 173
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->f:Landroid/view/ViewGroup;
@@ -433,7 +433,7 @@
     if-eqz p3, :cond_2
 
     :goto_2
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 174
     return-void
@@ -442,7 +442,7 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->b:Landroid/view/ViewGroup;
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 
@@ -498,17 +498,17 @@
     .line 137
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->b:Landroid/view/ViewGroup;
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 138
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->d:Landroid/view/ViewGroup;
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 139
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->f:Landroid/view/ViewGroup;
 
-    invoke-static {v0, v5}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v5}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 141
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/SearchOrgFooterView;->h:Ljava/lang/String;

@@ -3,7 +3,7 @@
 .source "SecretActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/c/UserProfileManager$ICau;
+.implements Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
 
 
 # instance fields
@@ -56,7 +56,7 @@
     .line 1144
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICau;->b:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->af(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/a/SecretManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->af(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/manager/SecretManager;
 
     move-result-object v0
 
@@ -86,18 +86,18 @@
 
     iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICau;->b:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    invoke-static {v5}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->ae(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/models/b/SenderRole;
+    invoke-static {v5}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->ae(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     move-result-object v5
 
-    sget-object v6, Lcom/wumii/android/mimi/models/b/SenderRole;->c:Lcom/wumii/android/mimi/models/b/SenderRole;
+    sget-object v6, Lcom/wumii/android/mimi/models/enum/SenderRole;->c:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     if-eq v5, v6, :cond_0
 
     const/4 v5, 0x1
 
     :goto_0
-    invoke-virtual/range {v0 .. v5}, Lcom/wumii/android/mimi/a/SecretManager;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Comment;Lcom/wumii/android/mimi/models/entities/secret/FeedType;Ljava/lang/String;Z)V
+    invoke-virtual/range {v0 .. v5}, Lcom/wumii/android/mimi/manager/SecretManager;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Comment;Lcom/wumii/android/mimi/models/entities/secret/FeedType;Ljava/lang/String;Z)V
 
     .line 1148
     :goto_1

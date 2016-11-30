@@ -32,7 +32,7 @@
     .line 175
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcc;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->b(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;)Lcom/wumii/android/mimi/b/BlockTask;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->b(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;)Lcom/wumii/android/mimi/task/BlockTask;
 
     move-result-object v0
 
@@ -56,7 +56,7 @@
 
     move-result v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/b/BlockTask;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/chat/BlockType;Z)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/task/BlockTask;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/chat/BlockType;Z)V
 
     .line 176
     return-void

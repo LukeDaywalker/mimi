@@ -202,7 +202,7 @@
 
     const/high16 v3, 0x42700000    # 60.0f
 
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v2
 
@@ -258,7 +258,7 @@
 
     iget v0, v0, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    invoke-static {p1, v0}, Lcom/wumii/android/mimi/c/ImageUtils;->b(Ljava/lang/String;I)Landroid/graphics/Bitmap;
+    invoke-static {p1, v0}, Lcom/wumii/android/mimi/util/ImageUtils;->b(Ljava/lang/String;I)Landroid/graphics/Bitmap;
 
     move-result-object v3
 
@@ -271,7 +271,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {}, Lorg/a/a/b/FileUtils;->a()Ljava/lang/String;
+    invoke-static {}, Lorg/apache/commons/io/FileUtils;->a()Ljava/lang/String;
 
     move-result-object v4
 
@@ -297,7 +297,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/models/d/FileHelper;->c(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/models/helper/FileHelper;->c(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 
@@ -306,7 +306,7 @@
     .line 218
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->D:Ljava/io/File;
 
-    invoke-static {v0}, Lorg/a/a/b/FileUtils;->b(Ljava/io/File;)Ljava/io/FileOutputStream;
+    invoke-static {v0}, Lorg/apache/commons/io/FileUtils;->b(Ljava/io/File;)Ljava/io/FileOutputStream;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -334,7 +334,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     .line 225
-    invoke-static {v2}, Lorg/a/a/b/IOUtils;->a(Ljava/io/OutputStream;)V
+    invoke-static {v2}, Lorg/apache/commons/io/IOUtils;->a(Ljava/io/OutputStream;)V
 
     .line 227
     :goto_2
@@ -360,18 +360,18 @@
     iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->D:Ljava/io/File;
 
     .line 223
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AppealOrganizationActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v3, 0x7f0603a1
 
     const/4 v4, 0x1
 
-    invoke-virtual {v2, v3, v4}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v2, v3, v4}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
     .line 225
-    invoke-static {v0}, Lorg/a/a/b/IOUtils;->a(Ljava/io/OutputStream;)V
+    invoke-static {v0}, Lorg/apache/commons/io/IOUtils;->a(Ljava/io/OutputStream;)V
 
     move-object v0, v1
 
@@ -383,7 +383,7 @@
     move-exception v0
 
     :goto_4
-    invoke-static {v1}, Lorg/a/a/b/IOUtils;->a(Ljava/io/OutputStream;)V
+    invoke-static {v1}, Lorg/apache/commons/io/IOUtils;->a(Ljava/io/OutputStream;)V
 
     throw v0
 
@@ -535,7 +535,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -697,7 +697,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 

@@ -17,7 +17,7 @@
 
 .field private r:Landroid/widget/TextView;
 
-.field private s:Lcom/wumii/android/mimi/models/d/CountDownTimer;
+.field private s:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
 .field private t:Ljava/lang/String;
 
@@ -43,7 +43,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 136
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->q:Landroid/widget/TextView;
@@ -55,7 +55,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 137
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->s:Lcom/wumii/android/mimi/models/d/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->s:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     if-nez v0, :cond_0
 
@@ -64,15 +64,15 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbr;-><init>(Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->s:Lcom/wumii/android/mimi/models/d/CountDownTimer;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->s:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     .line 150
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->s:Lcom/wumii/android/mimi/models/d/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->s:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     const-wide/16 v2, 0x3e8
 
-    invoke-virtual {v0, p1, p2, v2, v3}, Lcom/wumii/android/mimi/models/d/CountDownTimer;->a(JJ)Lcom/wumii/android/mimi/models/d/CountDownTimer;
+    invoke-virtual {v0, p1, p2, v2, v3}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->a(JJ)Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     .line 151
     return-void
@@ -290,7 +290,7 @@
     .line 104
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->s()Lcom/wumii/android/mimi/models/h/a/ChatMessageReportStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->s()Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;
 
     move-result-object v0
 
@@ -298,7 +298,7 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->C:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/h/a/ChatMessageReportStorage;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 110
     :goto_0
@@ -311,7 +311,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 113
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->r:Landroid/widget/TextView;
@@ -336,7 +336,7 @@
     .line 107
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->r()Lcom/wumii/android/mimi/models/h/a/ChatMessageStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->r()Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
 
     move-result-object v0
 
@@ -344,7 +344,7 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->C:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/h/a/ChatMessageStorage;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

@@ -40,11 +40,11 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->o:Ljava/lang/String;
 
     .line 59
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v0
 
-    invoke-static {p1}, Lcom/wumii/android/mimi/c/Utils;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/wumii/android/mimi/util/Utils;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -54,15 +54,15 @@
 
     const/high16 v4, 0x42c80000    # 100.0f
 
-    invoke-static {v3, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v3, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v3
 
-    invoke-static {v3}, Lcom/wumii/android/mimi/c/Utils;->a(I)Lcom/e/a/b/DisplayImageOptions;
+    invoke-static {v3}, Lcom/wumii/android/mimi/util/Utils;->a(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 63
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->q:Landroid/widget/EditText;

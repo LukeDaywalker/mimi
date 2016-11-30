@@ -42,7 +42,7 @@
 
     .line 86
     :pswitch_0
-    new-instance v0, Lcom/wumii/android/mimi/b/RemoveChatsTask;
+    new-instance v0, Lcom/wumii/android/mimi/task/RemoveChatsTask;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdf;->b:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICde;
 
@@ -52,7 +52,7 @@
 
     invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdg;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdf;)V
 
-    invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/b/RemoveChatsTask;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/b/RemoveChatsTask$ICbl;)V
+    invoke-direct {v0, v1, v2}, Lcom/wumii/android/mimi/task/RemoveChatsTask;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/task/RemoveChatsTask$ICbl;)V
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdf;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatSession;
 
@@ -60,7 +60,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/b/RemoveChatsTask;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/task/RemoveChatsTask;->a(Ljava/lang/String;)V
 
     goto :goto_0
 

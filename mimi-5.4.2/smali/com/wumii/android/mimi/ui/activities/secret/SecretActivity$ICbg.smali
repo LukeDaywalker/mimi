@@ -13,7 +13,7 @@
 
     .prologue
     .line 1018
-    invoke-static {}, Lcom/wumii/android/mimi/b/SecretOperationTask$ICbx;->values()[Lcom/wumii/android/mimi/b/SecretOperationTask$ICbx;
+    invoke-static {}, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->values()[Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
     move-result-object v0
 
@@ -26,9 +26,9 @@
     :try_start_0
     sget-object v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbg;->a:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/b/SecretOperationTask$ICbx;->a:Lcom/wumii/android/mimi/b/SecretOperationTask$ICbx;
+    sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->a:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/b/SecretOperationTask$ICbx;->ordinal()I
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->ordinal()I
 
     move-result v1
 
@@ -42,9 +42,9 @@
     :try_start_1
     sget-object v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbg;->a:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/b/SecretOperationTask$ICbx;->d:Lcom/wumii/android/mimi/b/SecretOperationTask$ICbx;
+    sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->d:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/b/SecretOperationTask$ICbx;->ordinal()I
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->ordinal()I
 
     move-result v1
 
@@ -58,9 +58,9 @@
     :try_start_2
     sget-object v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbg;->a:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/b/SecretOperationTask$ICbx;->e:Lcom/wumii/android/mimi/b/SecretOperationTask$ICbx;
+    sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->e:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/b/SecretOperationTask$ICbx;->ordinal()I
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->ordinal()I
 
     move-result v1
 
@@ -74,9 +74,9 @@
     :try_start_3
     sget-object v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbg;->a:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/b/SecretOperationTask$ICbx;->b:Lcom/wumii/android/mimi/b/SecretOperationTask$ICbx;
+    sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->b:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/b/SecretOperationTask$ICbx;->ordinal()I
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->ordinal()I
 
     move-result v1
 
@@ -90,9 +90,9 @@
     :try_start_4
     sget-object v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbg;->a:[I
 
-    sget-object v1, Lcom/wumii/android/mimi/b/SecretOperationTask$ICbx;->c:Lcom/wumii/android/mimi/b/SecretOperationTask$ICbx;
+    sget-object v1, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->c:Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/b/SecretOperationTask$ICbx;->ordinal()I
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/task/SecretOperationTask$ICbx;->ordinal()I
 
     move-result v1
 

@@ -8,7 +8,7 @@
 
 .field private b:Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;
 
-.field private c:Lcom/wumii/android/mimi/c/ContextToast;
+.field private c:Lcom/wumii/android/mimi/util/ContextToast;
 
 
 # direct methods
@@ -41,11 +41,11 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->setCanceledOnTouchOutside(Z)V
 
     .line 136
-    new-instance v0, Lcom/wumii/android/mimi/c/ContextToast;
+    new-instance v0, Lcom/wumii/android/mimi/util/ContextToast;
 
-    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/c/ContextToast;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/util/ContextToast;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity$ICu;->c:Lcom/wumii/android/mimi/c/ContextToast;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity$ICu;->c:Lcom/wumii/android/mimi/util/ContextToast;
 
     .line 137
     return-void
@@ -62,7 +62,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/a/UploadContactManager;->a:Ljava/lang/String;
+    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager;->a:Ljava/lang/String;
 
     invoke-static {v0, v1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -152,13 +152,13 @@
 
     .line 160
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity$ICu;->c:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity$ICu;->c:Lcom/wumii/android/mimi/util/ContextToast;
 
     const-string/jumbo v1, "\u540c\u6b65\u5931\u8d25\uff0c\u8bf7\u91cd\u8bd5"
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Ljava/lang/String;I)V
 
     goto :goto_0
 

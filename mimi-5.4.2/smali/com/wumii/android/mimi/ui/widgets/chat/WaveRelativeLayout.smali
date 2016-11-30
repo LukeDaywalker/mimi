@@ -139,7 +139,7 @@
 
     const/high16 v1, 0x40a00000    # 5.0f
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -537,7 +537,7 @@
     .line 86
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/WaveRelativeLayout;->b:Landroid/widget/ImageView;
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/Utils;->c(Landroid/view/View;)Landroid/graphics/Point;
+    invoke-static {v1}, Lcom/wumii/android/mimi/util/Utils;->c(Landroid/view/View;)Landroid/graphics/Point;
 
     move-result-object v1
 

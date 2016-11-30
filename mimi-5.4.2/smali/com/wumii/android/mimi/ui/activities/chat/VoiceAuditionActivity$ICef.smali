@@ -30,13 +30,13 @@
 
     .prologue
     .line 193
-    invoke-static {}, Lcom/wumii/android/mimi/models/d/AudioManagerHelper;->a()Lcom/wumii/android/mimi/models/d/AudioManagerHelper;
+    invoke-static {}, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->a()Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/AudioManagerHelper;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->a(Z)V
 
     .line 194
     return-void
@@ -47,13 +47,13 @@
 
     .prologue
     .line 188
-    invoke-static {}, Lcom/wumii/android/mimi/models/d/AudioManagerHelper;->a()Lcom/wumii/android/mimi/models/d/AudioManagerHelper;
+    invoke-static {}, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->a()Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/AudioManagerHelper;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->a(Z)V
 
     .line 189
     return-void

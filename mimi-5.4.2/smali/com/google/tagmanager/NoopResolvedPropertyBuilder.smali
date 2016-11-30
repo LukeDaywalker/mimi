@@ -19,7 +19,7 @@
 
 
 # virtual methods
-.method public a(Lcom/google/analytics/b/a/a/TypeSystem$ICb;)Lcom/google/tagmanager/ValueBuilder;
+.method public a(Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;)Lcom/google/tagmanager/ValueBuilder;
     .locals 1
 
     .prologue

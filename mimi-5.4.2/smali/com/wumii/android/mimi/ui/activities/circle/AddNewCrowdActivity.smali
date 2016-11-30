@@ -11,7 +11,7 @@
 
 .field private o:Landroid/widget/EditText;
 
-.field private p:Lcom/wumii/android/mimi/a/CircleManager;
+.field private p:Lcom/wumii/android/mimi/manager/CircleManager;
 
 .field private q:Landroid/view/MenuItem;
 
@@ -135,15 +135,15 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->setContentView(I)V
 
     .line 42
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->i()Lcom/wumii/android/mimi/a/CircleManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->i()Lcom/wumii/android/mimi/manager/CircleManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->p:Lcom/wumii/android/mimi/a/CircleManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->p:Lcom/wumii/android/mimi/manager/CircleManager;
 
     .line 43
     new-instance v0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;
@@ -153,11 +153,11 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->r:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;
 
     .line 44
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->p:Lcom/wumii/android/mimi/a/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->p:Lcom/wumii/android/mimi/manager/CircleManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->r:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/CircleManager;->addObserver(Ljava/util/Observer;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->addObserver(Ljava/util/Observer;)V
 
     .line 46
     const v0, 0x7f0b0058
@@ -266,22 +266,22 @@
     move-result-object v1
 
     .line 66
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    invoke-static {v1}, Lorg/a/a/c/StringUtils;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/apache/commons/long/StringUtils;->b(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
     .line 67
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->p:Lcom/wumii/android/mimi/a/CircleManager;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;->p:Lcom/wumii/android/mimi/manager/CircleManager;
 
-    invoke-virtual {v2, v0, v1}, Lcom/wumii/android/mimi/a/CircleManager;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v0, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 69
     :cond_0
@@ -314,7 +314,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -330,7 +330,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 

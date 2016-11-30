@@ -32,7 +32,7 @@
     .line 502
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICar;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->h()Lcom/wumii/android/mimi/ui/a/b/ChatsFragment;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->h()Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
 
     move-result-object v0
 
@@ -67,7 +67,7 @@
     if-eqz v0, :cond_0
 
     .line 505
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/a/b/ChatsFragment;->c()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->c()V
 
     .line 514
     :cond_0
@@ -102,13 +102,13 @@
     if-eqz v0, :cond_2
 
     .line 510
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/a/b/ChatsFragment;->b()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;->b()V
 
     .line 512
     :cond_2
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->D:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->D:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->a(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     goto :goto_0
 .end method

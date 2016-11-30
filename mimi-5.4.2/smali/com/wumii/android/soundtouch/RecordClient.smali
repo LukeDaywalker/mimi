@@ -349,11 +349,11 @@
     .line 118
     iget-object v0, p0, Lcom/wumii/android/soundtouch/RecordClient;->g:Landroid/media/MediaPlayer;
 
-    invoke-static {}, Lcom/wumii/android/mimi/models/d/AudioManagerHelper;->a()Lcom/wumii/android/mimi/models/d/AudioManagerHelper;
+    invoke-static {}, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->a()Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/d/AudioManagerHelper;->f()I
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->f()I
 
     move-result v1
 

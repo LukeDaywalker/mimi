@@ -37,7 +37,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, p1, v1, v2}, Lcom/wumii/android/mimi/c/ShareUtils;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, v1, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -95,7 +95,7 @@
 
     .prologue
     .line 48
-    invoke-static {}, Lcom/wumii/android/mimi/c/ShareUtils;->b()Ljava/lang/String;
+    invoke-static {}, Lcom/wumii/android/mimi/util/ShareUtils;->b()Ljava/lang/String;
 
     move-result-object v0
 

@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field protected n:Lcom/wumii/android/mimi/a/CircleManager;
+.field protected n:Lcom/wumii/android/mimi/manager/CircleManager;
 
 .field protected o:Ljava/lang/String;
 
 .field private p:Landroid/app/AlertDialog;
 
-.field private q:Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+.field private q:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
 
 # direct methods
@@ -29,29 +29,29 @@
 .method protected abstract b(Ljava/lang/String;)V
 .end method
 
-.method protected i()Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+.method protected i()Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
     .locals 2
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->q:Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->q:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     if-nez v0, :cond_0
 
     .line 67
-    new-instance v0, Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+    new-instance v0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICab;
 
     invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICab;-><init>(Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;)V
 
-    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/models/d/CaptureImageHelper;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/d/CaptureImageHelper$ICc;)V
+    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$ICc;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->q:Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->q:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     .line 74
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->q:Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->q:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     return-object v0
 .end method
@@ -137,11 +137,11 @@
 
     .line 112
     :cond_1
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->i()Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->i()Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2, p3}, Lcom/wumii/android/mimi/models/d/CaptureImageHelper;->a(IILandroid/content/Intent;)Z
+    invoke-virtual {v0, p1, p2, p3}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->a(IILandroid/content/Intent;)Z
 
     move-result v0
 
@@ -196,7 +196,7 @@
     if-eqz p1, :cond_0
 
     .line 45
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->i()Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->i()Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     move-result-object v0
 
@@ -206,22 +206,22 @@
 
     move-result-wide v2
 
-    invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/models/d/CaptureImageHelper;->a(J)V
+    invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->a(J)V
 
     .line 48
     :cond_0
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->i()Lcom/wumii/android/mimi/a/CircleManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->i()Lcom/wumii/android/mimi/manager/CircleManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->n:Lcom/wumii/android/mimi/a/CircleManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->n:Lcom/wumii/android/mimi/manager/CircleManager;
 
     .line 49
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->a(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->a(Ljava/lang/Object;)V
 
     .line 50
     return-void
@@ -235,27 +235,27 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->onDestroy()V
 
     .line 55
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->b(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->b(Ljava/lang/Object;)V
 
     .line 56
     return-void
 .end method
 
-.method public onEvent(Lcom/wumii/android/mimi/models/c/a/RespEventUserProfile;)V
+.method public onEvent(Lcom/wumii/android/mimi/models/event/response/RespEventUserProfile;)V
     .locals 3
 
     .prologue
     .line 121
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventUserProfile;->c()Z
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventUserProfile;->c()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
     .line 122
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventUserProfile;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventUserProfile;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -270,7 +270,7 @@
     :goto_0
     const/4 v2, 0x1
 
-    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Ljava/lang/String;I)V
+    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Ljava/lang/String;I)V
 
     .line 126
     :goto_1
@@ -278,7 +278,7 @@
 
     .line 122
     :cond_0
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventUserProfile;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventUserProfile;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -301,11 +301,11 @@
     .line 62
     const-string/jumbo v0, "captureImageTime"
 
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->i()Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->i()Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/d/CaptureImageHelper;->c()J
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->c()J
 
     move-result-wide v2
 

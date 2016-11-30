@@ -3,7 +3,7 @@
 .source "AssociatedWithWeixinActivity.java"
 
 # interfaces
-.implements Lcom/e/a/b/f/ImageLoadingListener;
+.implements Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
 
 
 # instance fields
@@ -39,7 +39,7 @@
     .prologue
     .line 175
     :try_start_0
-    invoke-static {p1}, Lcom/wumii/android/mimi/models/d/FileHelper;->c(Ljava/lang/String;)Ljava/io/File;
+    invoke-static {p1}, Lcom/wumii/android/mimi/models/helper/FileHelper;->c(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 
@@ -54,7 +54,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {}, Lorg/a/a/b/FileUtils;->a()Ljava/lang/String;
+    invoke-static {}, Lorg/apache/commons/io/FileUtils;->a()Ljava/lang/String;
 
     move-result-object v3
 
@@ -80,12 +80,12 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/models/d/FileHelper;->c(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/models/helper/FileHelper;->c(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v1
 
     .line 177
-    invoke-static {v0, v1}, Lorg/a/a/b/FileUtils;->a(Ljava/io/File;Ljava/io/File;)V
+    invoke-static {v0, v1}, Lorg/apache/commons/io/FileUtils;->a(Ljava/io/File;Ljava/io/File;)V
 
     .line 178
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
@@ -135,12 +135,12 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Landroid/content/Context;II)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     goto :goto_0
 .end method
 
-.method public a(Ljava/lang/String;Landroid/view/View;Lcom/e/a/b/a/FailReason;)V
+.method public a(Ljava/lang/String;Landroid/view/View;Lcom/nostra13/universalimageloader/core/assist/FailReason;)V
     .locals 3
 
     .prologue
@@ -155,7 +155,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Landroid/content/Context;II)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 169
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICb;->a:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;

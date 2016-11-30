@@ -3,7 +3,7 @@
 .source "NearbyUserListActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;
+.implements Lcom/wumii/android/mimi/models/helper/LocationHelper$ICu;
 
 
 # instance fields

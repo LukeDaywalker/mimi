@@ -3,7 +3,7 @@
 .source "GroupChatInfoGuestActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/c/UserProfileManager$ICau;
+.implements Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
 
 
 # instance fields
@@ -90,7 +90,7 @@
 
     move-result-object v5
 
-    invoke-static {v0, v5}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v5}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 

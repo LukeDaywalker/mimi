@@ -3,7 +3,7 @@
 .source "MyCircleActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/b/LoadInvitationTask$ICas;
+.implements Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;
 
 
 # instance fields
@@ -36,11 +36,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/h/CommonStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/CommonStorage;->p()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/storage/CommonStorage;->p()Z
 
     move-result v0
 
@@ -92,7 +92,7 @@
 
     int-to-long v4, v0
 
-    invoke-static {v2, v4, v5}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/content/Context;J)Ljava/lang/String;
+    invoke-static {v2, v4, v5}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/content/Context;J)Ljava/lang/String;
 
     move-result-object v0
 

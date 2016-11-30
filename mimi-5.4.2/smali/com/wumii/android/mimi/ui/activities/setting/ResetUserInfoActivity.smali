@@ -67,7 +67,7 @@
 
     .prologue
     .line 69
-    invoke-static {}, Lcom/wumii/android/mimi/c/UserProfileManager;->a()Lcom/wumii/android/mimi/c/UserProfileManager;
+    invoke-static {}, Lcom/wumii/android/mimi/util/UserProfileManager;->a()Lcom/wumii/android/mimi/util/UserProfileManager;
 
     move-result-object v0
 
@@ -77,7 +77,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$ICau;Z)V
+    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$ICau;Z)V
 
     .line 86
     return-void
@@ -149,13 +149,13 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;->p:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
     .line 65
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;->g()V
@@ -176,13 +176,13 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ResetUserInfoActivity;->p:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
     .line 92
     return-void

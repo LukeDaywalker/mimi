@@ -1,5 +1,5 @@
 .class public Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;
-.super Lcom/wumii/android/mimi/models/g/AbsBaseShareController;
+.super Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 .source "InvitationShareController.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 24
-    invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/g/AbsBaseShareController;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;-><init>(Landroid/app/Activity;)V
 
     .line 25
     return-void
@@ -30,14 +30,14 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, p1, v1, v2}, Lcom/wumii/android/mimi/c/ShareUtils;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, v1, v2}, Lcom/wumii/android/mimi/util/ShareUtils;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public a(ILcom/wumii/android/mimi/models/g/WeixinShareHelper$ICax;)V
+.method public a(ILcom/wumii/android/mimi/models/share/WeixinShareHelper$ICax;)V
     .locals 2
 
     .prologue
@@ -48,9 +48,9 @@
 
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController$ICe;
 
-    invoke-direct {v1, p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController$ICe;-><init>(Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;ILcom/wumii/android/mimi/models/g/WeixinShareHelper$ICax;)V
+    invoke-direct {v1, p0, p1, p2}, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController$ICe;-><init>(Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;ILcom/wumii/android/mimi/models/share/WeixinShareHelper$ICax;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;->a(Ljava/lang/String;Lcom/wumii/android/mimi/b/BaseShareImageTask$ICl;)V
+    invoke-virtual {p0, v0, v1}, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;->a(Ljava/lang/String;Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;)V
 
     .line 71
     return-void
@@ -76,11 +76,11 @@
     .line 30
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;->b:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/h/CommonStorage;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/h/CommonStorage;->b()I
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/storage/CommonStorage;->b()I
 
     move-result v1
 
@@ -214,7 +214,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
@@ -224,7 +224,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 

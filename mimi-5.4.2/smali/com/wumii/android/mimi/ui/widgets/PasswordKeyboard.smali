@@ -52,12 +52,12 @@
     move-result-object v0
 
     .line 50
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
     .line 51
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v3
 
@@ -70,7 +70,7 @@
 
     const/high16 v3, 0x42100000    # 36.0f
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -451,7 +451,7 @@
     const/4 v1, 0x0
 
     :goto_0
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 172
     return-void

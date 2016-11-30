@@ -45,18 +45,18 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ICap;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->c(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)Lcom/wumii/android/mimi/ui/apdaters/b/GroupApplicationChatListAdapter;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->c(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/b/GroupApplicationChatListAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupApplicationChatListAdapter;->notifyDataSetChanged()V
 
     .line 99
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ICaq;->b:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ICap;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ICap;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->d(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)Lcom/wumii/android/mimi/a/ChatManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;->d(Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;)Lcom/wumii/android/mimi/manager/ChatManager;
 
     move-result-object v0
 
@@ -70,7 +70,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/a/ChatManager;->a(Ljava/lang/String;ZLjava/lang/Object;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/manager/ChatManager;->a(Ljava/lang/String;ZLjava/lang/Object;)V
 
     .line 100
     return-void

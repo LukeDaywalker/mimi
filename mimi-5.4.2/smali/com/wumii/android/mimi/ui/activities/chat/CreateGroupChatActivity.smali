@@ -16,13 +16,13 @@
 
 .field private o:I
 
-.field private p:Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment;
+.field private p:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;
 
-.field private q:Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionFragment;
+.field private q:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;
 
-.field private r:Lcom/wumii/android/mimi/ui/a/b/CreateGroupForShareFragment;
+.field private r:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;
 
-.field private s:Lcom/wumii/android/mimi/ui/a/b/CreateGroupBaseFragment;
+.field private s:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;
 
 .field private t:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
 
@@ -104,7 +104,17 @@
     return-void
 .end method
 
-.method private a(Lcom/wumii/android/mimi/ui/a/b/CreateGroupBaseFragment;)V
+.method static synthetic a(Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;)V
+    .locals 0
+
+    .prologue
+    .line 41
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->k()V
+
+    return-void
+.end method
+
+.method private a(Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;)V
     .locals 2
 
     .prologue
@@ -127,7 +137,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p1, v1}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupBaseFragment;->setArguments(Landroid/os/Bundle;)V
+    invoke-virtual {p1, v1}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;->setArguments(Landroid/os/Bundle;)V
 
     .line 206
     const v1, 0x7f0b0054
@@ -143,16 +153,6 @@
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentTransaction;->a()I
 
     .line 209
-    return-void
-.end method
-
-.method static synthetic a(Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;)V
-    .locals 0
-
-    .prologue
-    .line 41
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->k()V
-
     return-void
 .end method
 
@@ -186,7 +186,7 @@
     return-object v0
 .end method
 
-.method private b(I)Lcom/wumii/android/mimi/ui/a/b/CreateGroupBaseFragment;
+.method private b(I)Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;
     .locals 1
 
     .prologue
@@ -201,58 +201,58 @@
 
     .line 218
     :pswitch_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->p:Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->p:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;
 
     if-nez v0, :cond_0
 
     .line 219
-    new-instance v0, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->p:Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->p:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;
 
     .line 221
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->p:Lcom/wumii/android/mimi/ui/a/b/CreateGroupForGroupInfoFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->p:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForGroupInfoFragment;
 
     goto :goto_0
 
     .line 223
     :pswitch_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->q:Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->q:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;
 
     if-nez v0, :cond_1
 
     .line 224
-    new-instance v0, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionFragment;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionFragment;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->q:Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionFragment;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->q:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;
 
     .line 226
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->q:Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->q:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionFragment;
 
     goto :goto_0
 
     .line 228
     :pswitch_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->r:Lcom/wumii/android/mimi/ui/a/b/CreateGroupForShareFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->r:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;
 
     if-nez v0, :cond_2
 
     .line 229
-    new-instance v0, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForShareFragment;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForShareFragment;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->r:Lcom/wumii/android/mimi/ui/a/b/CreateGroupForShareFragment;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->r:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;
 
     .line 231
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->r:Lcom/wumii/android/mimi/ui/a/b/CreateGroupForShareFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->r:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForShareFragment;
 
     goto :goto_0
 
@@ -282,11 +282,11 @@
 
     .line 147
     :pswitch_0
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->g:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->g:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v1, "\u70b9\u51fb\u53d1\u8d77\u7fa4\u804a[\u4e0b\u4e00\u6b65]\u6309\u94ae"
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 148
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->t:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
@@ -322,11 +322,11 @@
 
     .line 161
     :pswitch_1
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->g:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->g:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v1, "\u70b9\u51fb\u53d1\u8d77\u7fa4\u804a[\u53d1\u8d77]\u6309\u94ae"
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 162
     new-instance v0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity$ICae;
@@ -395,25 +395,25 @@
     add-int/lit8 v0, v0, 0x1
 
     .line 195
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->s:Lcom/wumii/android/mimi/ui/a/b/CreateGroupBaseFragment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->s:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupBaseFragment;->a()Z
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;->a()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 196
-    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->b(I)Lcom/wumii/android/mimi/ui/a/b/CreateGroupBaseFragment;
+    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->b(I)Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->s:Lcom/wumii/android/mimi/ui/a/b/CreateGroupBaseFragment;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->s:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;
 
     .line 197
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->s:Lcom/wumii/android/mimi/ui/a/b/CreateGroupBaseFragment;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->s:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;
 
-    invoke-direct {p0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->a(Lcom/wumii/android/mimi/ui/a/b/CreateGroupBaseFragment;)V
+    invoke-direct {p0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->a(Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;)V
 
     .line 198
     iput v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->o:I
@@ -423,14 +423,14 @@
 
 
 # virtual methods
-.method public a(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
+.method public a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
     .locals 2
 
     .prologue
     .line 108
     const-string/jumbo v0, "menuNextStep"
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->a()Ljava/lang/String;
 
     move-result-object v1
 
@@ -581,11 +581,11 @@
     .line 127
     iget v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->o:I
 
-    invoke-direct {p0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->b(I)Lcom/wumii/android/mimi/ui/a/b/CreateGroupBaseFragment;
+    invoke-direct {p0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->b(I)Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->s:Lcom/wumii/android/mimi/ui/a/b/CreateGroupBaseFragment;
+    iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->s:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;
 
     .line 128
     invoke-virtual {v0}, Landroid/support/v4/app/FragmentManager;->d()I
@@ -665,11 +665,11 @@
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;->setId(Ljava/lang/String;)V
 
     .line 81
-    invoke-static {}, Lcom/wumii/android/mimi/c/UserProfileManager;->a()Lcom/wumii/android/mimi/c/UserProfileManager;
+    invoke-static {}, Lcom/wumii/android/mimi/util/UserProfileManager;->a()Lcom/wumii/android/mimi/util/UserProfileManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/c/UserProfileManager;->b()Lcom/wumii/android/mimi/models/entities/profile/UserProfile;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/util/UserProfileManager;->b()Lcom/wumii/android/mimi/models/entities/profile/UserProfile;
 
     .line 82
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->t:Lcom/wumii/android/mimi/models/entities/chat/GroupChatInfo;
@@ -697,16 +697,16 @@
     iput v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->o:I
 
     .line 88
-    invoke-direct {p0, v3}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->b(I)Lcom/wumii/android/mimi/ui/a/b/CreateGroupBaseFragment;
+    invoke-direct {p0, v3}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->b(I)Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->s:Lcom/wumii/android/mimi/ui/a/b/CreateGroupBaseFragment;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->s:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;
 
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->s:Lcom/wumii/android/mimi/ui/a/b/CreateGroupBaseFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->s:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;
 
-    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->a(Lcom/wumii/android/mimi/ui/a/b/CreateGroupBaseFragment;)V
+    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->a(Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;)V
 
     .line 90
     return-void
@@ -717,9 +717,9 @@
 
     .prologue
     .line 94
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->s:Lcom/wumii/android/mimi/ui/a/b/CreateGroupBaseFragment;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->s:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupBaseFragment;->a()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupBaseFragment;->a()Z
 
     move-result v1
 
@@ -740,22 +740,22 @@
     .line 96
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->D:Ljava/lang/String;
 
-    invoke-static {v2, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
+    invoke-static {v2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     .line 98
-    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
+    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     const-string/jumbo v3, "menuNextStep"
 
-    invoke-direct {v2, v3, v0}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;)V
+    invoke-direct {v2, v3, v0}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;)V
 
     .line 99
-    invoke-virtual {v2, v1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->a(Z)V
+    invoke-virtual {v2, v1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->a(Z)V
 
     .line 101
-    invoke-virtual {p0, v2}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->b(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
+    invoke-virtual {p0, v2}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatActivity;->b(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
 
     .line 103
     invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z

@@ -10,7 +10,7 @@
 
 .field private p:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;
 
-.field private q:Lcom/wumii/android/mimi/b/BlockTask;
+.field private q:Lcom/wumii/android/mimi/task/BlockTask;
 
 
 # direct methods
@@ -97,7 +97,7 @@
 
     .prologue
     .line 83
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->j()Lcom/wumii/android/mimi/b/BlockTask;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->j()Lcom/wumii/android/mimi/task/BlockTask;
 
     move-result-object v0
 
@@ -115,7 +115,7 @@
 
     move-result v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/b/BlockTask;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/chat/BlockType;Z)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/task/BlockTask;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/chat/BlockType;Z)V
 
     .line 84
     return-void
@@ -126,7 +126,7 @@
 
     .prologue
     .line 74
-    sget-object v0, Lcom/wumii/android/mimi/b/ChatInfoEditTask$ICt;->d:Lcom/wumii/android/mimi/b/ChatInfoEditTask$ICt;
+    sget-object v0, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->d:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
@@ -142,7 +142,7 @@
 
     const/4 v3, 0x1
 
-    invoke-static {p0, v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/b/ChatInfoEditTask$ICt;Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-static {p0, v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;Ljava/lang/String;Ljava/lang/String;Z)V
 
     .line 75
     return-void
@@ -205,7 +205,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -248,24 +248,24 @@
     .line 87
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/h/a/ChatStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->n:Lcom/wumii/android/mimi/models/entities/chat/SingleChatBase;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatStorage;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
 
     .line 88
     return-void
 .end method
 
-.method protected j()Lcom/wumii/android/mimi/b/BlockTask;
+.method protected j()Lcom/wumii/android/mimi/task/BlockTask;
     .locals 1
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->q:Lcom/wumii/android/mimi/b/BlockTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->q:Lcom/wumii/android/mimi/task/BlockTask;
 
     if-nez v0, :cond_0
 
@@ -274,11 +274,11 @@
 
     invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->q:Lcom/wumii/android/mimi/b/BlockTask;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->q:Lcom/wumii/android/mimi/task/BlockTask;
 
     .line 126
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->q:Lcom/wumii/android/mimi/b/BlockTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->q:Lcom/wumii/android/mimi/task/BlockTask;
 
     return-object v0
 .end method
@@ -300,7 +300,7 @@
     .line 48
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/h/a/ChatStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
     move-result-object v0
 
@@ -314,7 +314,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
 
     move-result-object v0
 

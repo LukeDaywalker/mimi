@@ -189,7 +189,7 @@
     move-result-object v0
 
     .line 157
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -384,7 +384,7 @@
 
     .line 193
     :try_start_0
-    invoke-static {}, Lcom/google/a/a/PhoneNumberUtil;->a()Lcom/google/a/a/PhoneNumberUtil;
+    invoke-static {}, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->a()Lcom/google/i18n/phonenumbers/PhoneNumberUtil;
 
     move-result-object v2
 
@@ -422,9 +422,9 @@
 
     const/4 v4, 0x0
 
-    invoke-virtual {v2, v3, v4}, Lcom/google/a/a/PhoneNumberUtil;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/google/a/a/Phonenumber$ICn;
+    invoke-virtual {v2, v3, v4}, Lcom/google/i18n/phonenumbers/PhoneNumberUtil;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/google/i18n/phonenumbers/Phonenumber$ICn;
     :try_end_0
-    .catch Lcom/google/a/a/NumberParseException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/google/i18n/phonenumbers/NumberParseException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
     .line 205
@@ -479,9 +479,9 @@
     if-ne v0, v5, :cond_0
 
     .line 229
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->t:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->t:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 232
     :cond_0
@@ -507,18 +507,18 @@
     move-result-object v1
 
     .line 234
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
     .line 235
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060385
 
-    invoke-virtual {v0, v1, v4}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v4}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 249
     :goto_0
@@ -533,11 +533,11 @@
     if-nez v2, :cond_2
 
     .line 237
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060388
 
-    invoke-virtual {v0, v1, v4}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v4}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     goto :goto_0
 
@@ -550,11 +550,11 @@
     if-eqz v2, :cond_3
 
     .line 239
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060384
 
-    invoke-virtual {v0, v1, v4}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v4}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     goto :goto_0
 
@@ -569,11 +569,11 @@
     if-ge v2, v3, :cond_4
 
     .line 241
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06039f
 
-    invoke-virtual {v0, v1, v4}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v4}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     goto :goto_0
 
@@ -584,11 +584,11 @@
     if-ne v2, v5, :cond_5
 
     .line 244
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/wumii/android/mimi/a/ManagerCenter;->b()Lcom/wumii/android/mimi/a/AuthenticatorManager;
+    invoke-virtual {v2}, Lcom/wumii/android/mimi/manager/ManagerCenter;->b()Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
     move-result-object v2
 
@@ -616,17 +616,17 @@
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->K:Ljava/lang/String;
 
-    invoke-virtual {v2, p0, v0, v1, v3}, Lcom/wumii/android/mimi/a/AuthenticatorManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, p0, v0, v1, v3}, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 246
     :cond_5
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/wumii/android/mimi/a/ManagerCenter;->b()Lcom/wumii/android/mimi/a/AuthenticatorManager;
+    invoke-virtual {v2}, Lcom/wumii/android/mimi/manager/ManagerCenter;->b()Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
     move-result-object v2
 
@@ -652,7 +652,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v2, p0, v0, v1}, Lcom/wumii/android/mimi/a/AuthenticatorManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, p0, v0, v1}, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -683,9 +683,9 @@
 
     .prologue
     .line 256
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->q:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->q:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 258
     const-string/jumbo v0, "protocol"
@@ -701,9 +701,9 @@
 
     .prologue
     .line 186
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->o:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->o:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 188
     invoke-static {p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->a(Landroid/app/Activity;)V
@@ -727,9 +727,9 @@
     if-ne v0, v1, :cond_0
 
     .line 222
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->s:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->s:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 224
     :cond_0
@@ -816,9 +816,9 @@
     if-ne v0, v1, :cond_0
 
     .line 213
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->r:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->r:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 215
     :cond_0
@@ -964,12 +964,12 @@
     .line 91
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->D:Landroid/widget/TextView;
 
-    invoke-static {v0, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 92
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->E:Landroid/widget/TextView;
 
-    invoke-static {v0, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 93
     const v0, 0x7f060244
@@ -989,7 +989,7 @@
     .line 97
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->C:Landroid/widget/TextView;
 
-    invoke-static {v0, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 98
     const v0, 0x7f0601e8
@@ -1013,7 +1013,7 @@
     iput-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->K:Ljava/lang/String;
 
     .line 101
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -1050,19 +1050,19 @@
     .end packed-switch
 .end method
 
-.method public onEvent(Lcom/wumii/android/mimi/models/c/a/RespEventRequestVerificationCode;)V
+.method public onEvent(Lcom/wumii/android/mimi/models/event/response/RespEventRequestVerificationCode;)V
     .locals 3
 
     .prologue
     .line 268
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventRequestVerificationCode;->c()Z
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventRequestVerificationCode;->c()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 269
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventRequestVerificationCode;->d()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventRequestVerificationCode;->d()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1084,13 +1084,13 @@
 
     .line 271
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AuthenticatorActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603a5
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     goto :goto_0
 .end method
@@ -1103,7 +1103,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onStart()V
 
     .line 144
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->a(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->a(Ljava/lang/Object;)V
 
     .line 145
     return-void
@@ -1117,7 +1117,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onStop()V
 
     .line 150
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->b(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->b(Ljava/lang/Object;)V
 
     .line 151
     return-void

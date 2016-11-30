@@ -47,7 +47,7 @@
     .line 347
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbf;->c:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->a(Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;)Lcom/wumii/android/mimi/c/ContextToast;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->a(Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;)Lcom/wumii/android/mimi/util/ContextToast;
 
     move-result-object v0
 
@@ -55,7 +55,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 355
     :goto_0

@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICl;
-.super Lcom/wumii/android/mimi/b/ProgressAsyncTask;
+.super Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 .source "NearbyInfoSettingActivity.java"
 
 
@@ -16,7 +16,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICl;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;
 
     .line 194
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
 
     .line 195
     return-void
@@ -29,7 +29,7 @@
 
     .prologue
     .line 223
-    invoke-super {p0, p1, p2, p3}, Lcom/wumii/android/mimi/b/ProgressAsyncTask;->a(IILjava/lang/String;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->a(IILjava/lang/String;)V
 
     .line 224
     sget-object v0, Lcom/wumii/mimi/model/domain/mobile/status/MobileErrorCode;->GENDER_ALREADY_SET:Lcom/wumii/mimi/model/domain/mobile/status/MobileErrorCode;
@@ -103,7 +103,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/a/a/JacksonMapper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/jackson/databind/JacksonMapper;
 
     move-result-object v0
 
@@ -113,14 +113,14 @@
 
     const-class v2, Lcom/wumii/android/mimi/network/domain/NearbyUserResp;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/a/a/JacksonMapper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/wumii/android/mimi/network/domain/NearbyUserResp;
 
     .line 208
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICl;->g:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICl;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/NearbyUserResp;->getLoginUser()Lcom/wumii/mimi/model/domain/mobile/MobileNearbyUser;
 
@@ -132,7 +132,7 @@
 
     const-string/jumbo v2, "nearby_login_user"
 
-    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 209
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -152,13 +152,13 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/service/UserService$UserSettings;->setGenderSetted(Z)V
 
     .line 211
-    invoke-static {}, Lcom/wumii/android/mimi/c/UserProfileManager;->a()Lcom/wumii/android/mimi/c/UserProfileManager;
+    invoke-static {}, Lcom/wumii/android/mimi/util/UserProfileManager;->a()Lcom/wumii/android/mimi/util/UserProfileManager;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICl;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;)V
 
     .line 213
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICl;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity;
@@ -199,13 +199,13 @@
 
     .prologue
     .line 238
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICl;->f:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICl;->f:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06039e
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 239
     return-void
@@ -267,11 +267,11 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 202
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICl;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyInfoSettingActivity$ICl;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "nearby/user"
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 

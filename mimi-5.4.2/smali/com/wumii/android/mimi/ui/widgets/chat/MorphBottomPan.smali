@@ -13,7 +13,7 @@
 
 .field private c:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICay;
 
-.field private d:Lcom/e/a/b/DisplayImageOptions;
+.field private d:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
 .field private e:I
 
@@ -33,9 +33,9 @@
 
 .field private m:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-.field private n:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.field private n:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-.field private o:Lcom/wumii/android/mimi/models/b/SenderRole;
+.field private o:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
 
 # direct methods
@@ -85,11 +85,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->n:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->n:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 49
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -102,11 +102,11 @@
 
     move-result v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(I)Lcom/e/a/b/DisplayImageOptions;
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->d:Lcom/e/a/b/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->d:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 50
     new-instance v0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICaw;
@@ -116,11 +116,11 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->m:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->n:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->n:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->m:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
     .line 63
     return-void
@@ -183,7 +183,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v5}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v5}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 124
     :goto_1
@@ -215,7 +215,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v5}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v5}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 134
     :goto_2
@@ -224,7 +224,7 @@
     if-eqz v0, :cond_3
 
     .line 135
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v0
 
@@ -240,9 +240,9 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->d:Lcom/e/a/b/DisplayImageOptions;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->d:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 136
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
@@ -273,10 +273,10 @@
 
     move-result-object v0
 
-    invoke-static {v0, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 121
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v0
 
@@ -288,9 +288,9 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->d:Lcom/e/a/b/DisplayImageOptions;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->d:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     goto :goto_1
 
@@ -302,10 +302,10 @@
 
     move-result-object v0
 
-    invoke-static {v0, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 131
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v0
 
@@ -317,9 +317,9 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->d:Lcom/e/a/b/DisplayImageOptions;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->d:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     goto :goto_2
 .end method
@@ -358,9 +358,9 @@
     const/4 v2, 0x4
 
     .line 175
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->o:Lcom/wumii/android/mimi/models/b/SenderRole;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->o:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
-    sget-object v1, Lcom/wumii/android/mimi/models/b/SenderRole;->a:Lcom/wumii/android/mimi/models/b/SenderRole;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/SenderRole;->a:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     if-ne v0, v1, :cond_1
 
@@ -371,7 +371,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 177
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
@@ -380,7 +380,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 178
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
@@ -389,7 +389,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 188
     :cond_0
@@ -398,9 +398,9 @@
 
     .line 179
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->o:Lcom/wumii/android/mimi/models/b/SenderRole;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->o:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
-    sget-object v1, Lcom/wumii/android/mimi/models/b/SenderRole;->b:Lcom/wumii/android/mimi/models/b/SenderRole;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/SenderRole;->b:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     if-ne v0, v1, :cond_2
 
@@ -411,7 +411,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 181
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
@@ -420,7 +420,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 182
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
@@ -429,15 +429,15 @@
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 
     .line 183
     :cond_2
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->o:Lcom/wumii/android/mimi/models/b/SenderRole;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->o:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
-    sget-object v1, Lcom/wumii/android/mimi/models/b/SenderRole;->c:Lcom/wumii/android/mimi/models/b/SenderRole;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/SenderRole;->c:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     if-ne v0, v1, :cond_0
 
@@ -448,7 +448,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 185
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
@@ -457,7 +457,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 186
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->b:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICax;
@@ -466,7 +466,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 .end method
@@ -481,12 +481,12 @@
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;)Lcom/wumii/android/mimi/models/b/SenderRole;
+.method static synthetic d(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;)Lcom/wumii/android/mimi/models/enum/SenderRole;
     .locals 1
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->o:Lcom/wumii/android/mimi/models/b/SenderRole;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->o:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     return-object v0
 .end method
@@ -589,12 +589,12 @@
     return-void
 .end method
 
-.method public a(Lcom/wumii/android/mimi/models/b/SenderRole;)V
+.method public a(Lcom/wumii/android/mimi/models/enum/SenderRole;)V
     .locals 0
 
     .prologue
     .line 106
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->o:Lcom/wumii/android/mimi/models/b/SenderRole;
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->o:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     .line 107
     return-void
@@ -611,7 +611,7 @@
     return-void
 .end method
 
-.method public a(Ljava/lang/String;ILjava/lang/String;ILcom/wumii/android/mimi/models/entities/profile/NamedUser;Lcom/wumii/android/mimi/models/b/SenderRole;)V
+.method public a(Ljava/lang/String;ILjava/lang/String;ILcom/wumii/android/mimi/models/entities/profile/NamedUser;Lcom/wumii/android/mimi/models/enum/SenderRole;)V
     .locals 0
 
     .prologue
@@ -631,7 +631,7 @@
     iput-object p5, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->k:Lcom/wumii/android/mimi/models/entities/profile/NamedUser;
 
     .line 101
-    iput-object p6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->o:Lcom/wumii/android/mimi/models/b/SenderRole;
+    iput-object p6, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->o:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     .line 102
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->a()V

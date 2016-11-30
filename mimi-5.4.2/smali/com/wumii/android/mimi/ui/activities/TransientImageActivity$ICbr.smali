@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbr;
-.super Lcom/wumii/android/mimi/models/d/CountDownTimer;
+.super Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 .source "TransientImageActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 138
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity$ICbr;->a:Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;
 
-    invoke-direct {p0}, Lcom/wumii/android/mimi/models/d/CountDownTimer;-><init>()V
+    invoke-direct {p0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;-><init>()V
 
     return-void
 .end method

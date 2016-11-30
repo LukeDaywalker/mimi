@@ -43,7 +43,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaj;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->o(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/a/FeedManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->o(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/manager/FeedManager;
 
     move-result-object v0
 
@@ -63,7 +63,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/a/FeedManager;->a(Lcom/wumii/android/mimi/models/entities/secret/Secret;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/manager/FeedManager;->a(Lcom/wumii/android/mimi/models/entities/secret/Secret;Ljava/lang/String;)V
 
     .line 286
     return-void

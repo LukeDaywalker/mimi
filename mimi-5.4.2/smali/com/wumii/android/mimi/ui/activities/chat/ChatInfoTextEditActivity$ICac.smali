@@ -3,7 +3,7 @@
 .source "ChatInfoTextEditActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/b/ChatInfoEditTask$ICs;
+.implements Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICs;
 
 
 # instance fields
@@ -44,11 +44,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/h/a/ChatStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/h/a/ChatStorage;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
 
     .line 185
     new-instance v0, Landroid/content/Intent;

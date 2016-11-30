@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private n:Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemPasswordFragment;
+.field private n:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;
 
 .field private o:Landroid/support/v4/app/Fragment;
 
@@ -93,9 +93,9 @@
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
     .line 39
-    new-instance v1, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemOrgFragment;
+    new-instance v1, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;
 
-    invoke-direct {v1}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemOrgFragment;-><init>()V
+    invoke-direct {v1}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemOrgFragment;-><init>()V
 
     .line 40
     const-string/jumbo v2, "org"
@@ -118,9 +118,9 @@
     invoke-virtual {p0, v3}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->c(Z)V
 
     .line 45
-    new-instance v1, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemGenderFragment;
+    new-instance v1, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;
 
-    invoke-direct {v1}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemGenderFragment;-><init>()V
+    invoke-direct {v1}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemGenderFragment;-><init>()V
 
     goto :goto_0
 
@@ -129,16 +129,16 @@
     invoke-virtual {p0, v3}, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->b(Z)V
 
     .line 49
-    new-instance v1, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemPasswordFragment;
+    new-instance v1, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;
 
-    invoke-direct {v1}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemPasswordFragment;-><init>()V
+    invoke-direct {v1}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;-><init>()V
 
     move-object v0, v1
 
     .line 50
-    check-cast v0, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemPasswordFragment;
+    check-cast v0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->n:Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemPasswordFragment;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->n:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;
 
     goto :goto_0
 
@@ -176,7 +176,7 @@
     .line 64
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->o:Landroid/support/v4/app/Fragment;
 
-    instance-of v0, v0, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemPasswordFragment;
+    instance-of v0, v0, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;
 
     if-eqz v0, :cond_0
 
@@ -188,9 +188,9 @@
     .line 66
     const-string/jumbo v1, "extra_password"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->n:Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemPasswordFragment;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->n:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;
 
-    invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemPasswordFragment;->a()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->a()Ljava/lang/String;
 
     move-result-object v2
 
@@ -199,9 +199,9 @@
     .line 67
     const-string/jumbo v1, "extra_password_hint"
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->n:Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemPasswordFragment;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/CreateGroupChatForPermissionActivity;->n:Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;
 
-    invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/a/b/CreateGroupForPermissionItemPasswordFragment;->b()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/fragments/chat/CreateGroupForPermissionItemPasswordFragment;->b()Ljava/lang/String;
 
     move-result-object v2
 

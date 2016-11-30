@@ -224,7 +224,7 @@
     check-cast v0, Ljava/util/List;
 
     .line 40
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v1
 

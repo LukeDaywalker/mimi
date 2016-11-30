@@ -36,7 +36,7 @@
     .line 113
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICao;->a:Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->j(Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;)Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->j(Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;)Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     move-result-object v0
 
@@ -45,11 +45,11 @@
     .line 114
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICao;->a:Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->j(Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;)Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->j(Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;)Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 117
     :cond_0

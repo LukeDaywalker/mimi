@@ -32,7 +32,7 @@
     .line 73
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICaf;->a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->n:Lcom/wumii/android/mimi/a/CircleManager;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;->n:Lcom/wumii/android/mimi/manager/CircleManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity$ICaf;->a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserInfoActivity;
 
@@ -58,7 +58,7 @@
 
     invoke-direct {v3, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/a/CircleManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Ljava/io/File;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Ljava/io/File;)V
 
     .line 74
     return-void

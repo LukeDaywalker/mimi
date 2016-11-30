@@ -30,15 +30,15 @@
 
     .prologue
     .line 1606
-    new-instance v0, Lcom/wumii/android/mimi/b/GetValidationTypesTask;
+    new-instance v0, Lcom/wumii/android/mimi/task/GetValidationTypesTask;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICba;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/b/GetValidationTypesTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/task/GetValidationTypesTask;-><init>(Landroid/app/Activity;)V
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/b/GetValidationTypesTask;->a(Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/task/GetValidationTypesTask;->a(Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;)V
 
     .line 1607
     return-void

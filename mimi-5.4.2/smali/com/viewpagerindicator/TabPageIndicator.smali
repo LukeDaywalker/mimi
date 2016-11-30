@@ -3,7 +3,7 @@
 .source "TabPageIndicator.java"
 
 # interfaces
-.implements Lcom/viewpagerindicator/c;
+.implements Lcom/viewpagerindicator/ICc;
 
 
 # static fields

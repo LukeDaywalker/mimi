@@ -3,7 +3,7 @@
 .source "CircleSelectorController.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/c/UserProfileManager$ICau;
+.implements Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
 
 
 # instance fields
@@ -59,7 +59,7 @@
 
     invoke-direct {v2, p0, p1}, Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICm;-><init>(Lcom/wumii/android/mimi/ui/widgets/CircleSelectorController$ICl;Lcom/wumii/android/mimi/models/entities/profile/UserProfile;)V
 
-    invoke-static {v1, p1, v2}, Lcom/wumii/android/mimi/c/CircleUtils;->a(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/profile/UserProfile;Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;)Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;
+    invoke-static {v1, p1, v2}, Lcom/wumii/android/mimi/util/CircleUtils;->a(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/profile/UserProfile;Lcom/wumii/android/mimi/ui/widgets/DropDownItemList$ICx;)Lcom/wumii/android/mimi/ui/widgets/DropDownItemList;
 
     move-result-object v1
 

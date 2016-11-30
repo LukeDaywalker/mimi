@@ -40,7 +40,7 @@
 
     .prologue
     .line 661
-    invoke-static {p1}, Lcom/wumii/android/mimi/c/Utils;->c(Landroid/view/View;)Landroid/graphics/Point;
+    invoke-static {p1}, Lcom/wumii/android/mimi/util/Utils;->c(Landroid/view/View;)Landroid/graphics/Point;
 
     move-result-object v0
 
@@ -411,7 +411,7 @@
     .line 733
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICag;->a:Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->E(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/a/FeedManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->E(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/manager/FeedManager;
 
     move-result-object v0
 
@@ -425,7 +425,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, p1}, Lcom/wumii/android/mimi/a/FeedManager;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Comment;)Z
+    invoke-virtual {v0, v1, p1}, Lcom/wumii/android/mimi/manager/FeedManager;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Comment;)Z
 
     .line 734
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICag;->a:Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;
@@ -463,7 +463,7 @@
     .line 739
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICag;->a:Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->E(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/a/FeedManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->E(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/manager/FeedManager;
 
     move-result-object v0
 
@@ -477,7 +477,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, p1}, Lcom/wumii/android/mimi/a/FeedManager;->b(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Comment;)Z
+    invoke-virtual {v0, v1, p1}, Lcom/wumii/android/mimi/manager/FeedManager;->b(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Comment;)Z
 
     .line 740
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICag;->a:Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;

@@ -40,11 +40,11 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/c/AppConfigManager;
+    invoke-static {v1}, Lcom/wumii/android/mimi/util/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/util/AppConfigManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/c/AppConfigManager;->a()Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/util/AppConfigManager;->a()Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     move-result-object v1
 
@@ -82,7 +82,7 @@
 
     .line 62
     :goto_0
-    new-instance v1, Lcom/wumii/android/mimi/models/g/GroupChatShareController;
+    new-instance v1, Lcom/wumii/android/mimi/models/share/GroupChatShareController;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity$ICbz;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoInviteActivity;
 
@@ -92,10 +92,10 @@
 
     move-result-object v3
 
-    invoke-direct {v1, v2, v3}, Lcom/wumii/android/mimi/models/g/GroupChatShareController;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/chat/GroupChat;)V
+    invoke-direct {v1, v2, v3}, Lcom/wumii/android/mimi/models/share/GroupChatShareController;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/chat/GroupChat;)V
 
     .line 63
-    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/g/GroupChatShareController;->a(Lcom/wumii/android/mimi/models/entities/share/ShareAction;)V
+    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/share/GroupChatShareController;->a(Lcom/wumii/android/mimi/models/entities/share/ShareAction;)V
 
     .line 64
     :cond_0

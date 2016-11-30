@@ -14,9 +14,9 @@
 
 .field private d:Ljava/util/concurrent/Executor;
 
-.field private e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+.field private e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
-.field private f:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.field private f:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
 .field private g:Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -85,22 +85,22 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->q()Lcom/wumii/android/mimi/models/d/HttpHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->q()Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     .line 73
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->f:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->f:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 74
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -203,7 +203,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/BooleanUtils;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/BooleanUtils;->b(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -216,13 +216,13 @@
     if-eqz v0, :cond_0
 
     .line 196
-    invoke-static {}, Lcom/wumii/android/mimi/a/UploadContactManager;->a()Lcom/wumii/android/mimi/a/UploadContactManager;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/UploadContactManager;->a()Lcom/wumii/android/mimi/manager/UploadContactManager;
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;->b:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
+    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;->b:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/UploadContactManager;->a(Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/UploadContactManager;->a(Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;)V
 
     goto :goto_0
 .end method
@@ -297,12 +297,12 @@
     const/16 v0, -0x3e9
 
     .line 225
-    instance-of v1, p2, Lcom/wumii/android/mimi/models/d/HttpHelper$ICo;
+    instance-of v1, p2, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICo;
 
     if-eqz v1, :cond_0
 
     .line 226
-    invoke-static {}, Lcom/wumii/android/mimi/c/Utils;->d()V
+    invoke-static {}, Lcom/wumii/android/mimi/util/Utils;->d()V
 
     .line 227
     invoke-static {}, Lcom/wumii/android/mimi/app/MainApplication;->a()Lcom/wumii/android/mimi/app/MainApplication;
@@ -311,7 +311,7 @@
 
     const v1, 0x7f060367
 
-    invoke-static {v0, v1, v6}, Lcom/wumii/android/mimi/c/ContextToast;->a(Landroid/content/Context;II)V
+    invoke-static {v0, v1, v6}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 301
     :goto_0
@@ -324,18 +324,18 @@
     if-eqz v1, :cond_1
 
     .line 232
-    sget-object v1, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->b:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->b:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v3, "HttpProcessor EOF Exception"
 
-    invoke-static {v1, v3}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 235
     :cond_1
     const/16 v3, -0x3ec
 
     .line 239
-    instance-of v1, p2, Lcom/wumii/android/mimi/models/d/HttpHelper$ICq;
+    instance-of v1, p2, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICq;
 
     if-eqz v1, :cond_2
 
@@ -372,7 +372,7 @@
 
     .line 242
     :cond_2
-    instance-of v1, p2, Lcom/wumii/android/mimi/models/d/HttpHelper$ICr;
+    instance-of v1, p2, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;
 
     if-eqz v1, :cond_3
 
@@ -396,7 +396,7 @@
 
     .line 245
     :cond_3
-    instance-of v1, p2, Lcom/wumii/a/a/JacksonMapper$ICg;
+    instance-of v1, p2, Lcom/wumii/jackson/databind/JacksonMapper$ICg;
 
     if-eqz v1, :cond_4
 
@@ -433,17 +433,17 @@
 
     .line 250
     :cond_5
-    instance-of v1, p2, Lcom/wumii/android/mimi/models/d/HttpHelper$ICp;
+    instance-of v1, p2, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;
 
     if-eqz v1, :cond_a
 
     move-object v0, p2
 
     .line 251
-    check-cast v0, Lcom/wumii/android/mimi/models/d/HttpHelper$ICp;
+    check-cast v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;
 
     .line 253
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/HttpHelper$ICp;->b()Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->b()Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v4
 
@@ -510,7 +510,7 @@
     if-ne v3, v4, :cond_8
 
     .line 270
-    iget-object v4, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->f:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v4, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->f:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -518,7 +518,7 @@
 
     const-string/jumbo v6, "update_profile"
 
-    invoke-virtual {v4, v5, v6}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v4, v5, v6}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 273
     :cond_8
@@ -531,7 +531,7 @@
 
     .line 277
     :cond_9
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/HttpHelper$ICp;->c()Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICp;->c()Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 
@@ -616,7 +616,7 @@
     if-eqz v1, :cond_0
 
     .line 313
-    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->f:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->f:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v2, Ljava/lang/String;
 
@@ -624,7 +624,7 @@
 
     const-string/jumbo v4, "bk5"
 
-    invoke-virtual {v0, v2, v3, v4}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v3, v4}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -635,7 +635,7 @@
 
     move-result-object v1
 
-    invoke-static {v1, v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -654,11 +654,11 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/c/AppConfigManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/util/AppConfigManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/AppConfigManager;->b()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/AppConfigManager;->b()V
 
     goto :goto_0
 .end method
@@ -857,9 +857,9 @@
 
     new-instance v1, Lcom/wumii/android/mimi/network/HttpProcessor$ICg;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/network/HttpProcessor;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
-    invoke-direct {v1, p0, v2, p1}, Lcom/wumii/android/mimi/network/HttpProcessor$ICg;-><init>(Lcom/wumii/android/mimi/network/HttpProcessor;Lcom/wumii/android/mimi/models/d/HttpHelper;Lcom/wumii/android/mimi/network/HttpRequest;)V
+    invoke-direct {v1, p0, v2, p1}, Lcom/wumii/android/mimi/network/HttpProcessor$ICg;-><init>(Lcom/wumii/android/mimi/network/HttpProcessor;Lcom/wumii/android/mimi/models/helper/HttpHelper;Lcom/wumii/android/mimi/network/HttpRequest;)V
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/FutureTask;-><init>(Ljava/util/concurrent/Callable;)V
 

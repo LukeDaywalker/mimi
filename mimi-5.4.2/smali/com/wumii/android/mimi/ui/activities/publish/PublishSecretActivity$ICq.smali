@@ -153,7 +153,7 @@
     :cond_4
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICq;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->C(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/c/ContextToast;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->C(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/util/ContextToast;
 
     move-result-object v0
 
@@ -175,7 +175,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, v5}, Lcom/wumii/android/mimi/c/ContextToast;->a(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v5}, Lcom/wumii/android/mimi/util/ContextToast;->a(Ljava/lang/String;I)V
 
     goto :goto_1
 .end method

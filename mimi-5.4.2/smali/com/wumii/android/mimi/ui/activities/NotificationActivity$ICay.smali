@@ -32,11 +32,11 @@
     .line 136
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NotificationActivity$ICay;->a:Lcom/wumii/android/mimi/ui/activities/NotificationActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->b(Lcom/wumii/android/mimi/ui/activities/NotificationActivity;)Lcom/wumii/android/mimi/a/NotificationManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NotificationActivity;->b(Lcom/wumii/android/mimi/ui/activities/NotificationActivity;)Lcom/wumii/android/mimi/manager/NotificationManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/NotificationManager;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/NotificationManager;->a()V
 
     .line 137
     return-void

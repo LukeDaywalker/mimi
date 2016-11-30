@@ -69,7 +69,7 @@
 
     const/16 v2, 0x8
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;Landroid/view/animation/Animation;I)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;Landroid/view/animation/Animation;I)V
 
     .line 623
     return-void
@@ -131,16 +131,16 @@
 
     .prologue
     .line 626
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->c()Lcom/wumii/android/mimi/a/FeedManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->c()Lcom/wumii/android/mimi/manager/FeedManager;
 
     move-result-object v0
 
     .line 627
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/a/FeedManager;->a(Lcom/wumii/android/mimi/models/entities/secret/Secret;)Z
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/manager/FeedManager;->a(Lcom/wumii/android/mimi/models/entities/secret/Secret;)Z
 
     move-result v0
 
@@ -180,16 +180,16 @@
 
     .prologue
     .line 631
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->c()Lcom/wumii/android/mimi/a/FeedManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->c()Lcom/wumii/android/mimi/manager/FeedManager;
 
     move-result-object v0
 
     .line 632
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/a/FeedManager;->b(Lcom/wumii/android/mimi/models/entities/secret/Secret;)Z
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/manager/FeedManager;->b(Lcom/wumii/android/mimi/models/entities/secret/Secret;)Z
 
     move-result v0
 
@@ -258,7 +258,7 @@
 
     invoke-direct {v3, p0, p1}, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICaa;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICz;Lcom/wumii/android/mimi/models/entities/secret/Secret;)V
 
-    invoke-static {v0, v1, v2, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICf;)Landroid/app/AlertDialog;
+    invoke-static {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/widgets/ArrayAlertDialogBuilder$ICf;)Landroid/app/AlertDialog;
 
     move-result-object v0
 

@@ -49,7 +49,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
 
     .line 74
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbd;->a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
@@ -84,7 +84,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->b(Landroid/view/View;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->b(Landroid/view/View;)V
 
     .line 88
     return-void

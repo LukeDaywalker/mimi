@@ -412,12 +412,12 @@
     return-object v1
 .end method
 
-.method public static a(Lcom/wumii/android/mimi/models/b/FeedEvent;Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Ljava/util/List;Ljava/lang/Long;Ljava/lang/Long;)V
+.method public static a(Lcom/wumii/android/mimi/models/enum/FeedEvent;Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Ljava/util/List;Ljava/lang/Long;Ljava/lang/Long;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/wumii/android/mimi/models/b/FeedEvent;",
+            "Lcom/wumii/android/mimi/models/enum/FeedEvent;",
             "Lcom/wumii/android/mimi/models/entities/secret/FeedModule;",
             "Ljava/util/List",
             "<",
@@ -431,11 +431,11 @@
 
     .prologue
     .line 217
-    sget-object v0, Lcom/wumii/android/mimi/models/b/FeedEvent;->c:Lcom/wumii/android/mimi/models/b/FeedEvent;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-eq p0, v0, :cond_0
 
-    sget-object v0, Lcom/wumii/android/mimi/models/b/FeedEvent;->a:Lcom/wumii/android/mimi/models/b/FeedEvent;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-ne p0, v0, :cond_1
 
@@ -452,11 +452,11 @@
 
     .line 221
     :cond_1
-    sget-object v0, Lcom/wumii/android/mimi/models/b/FeedEvent;->b:Lcom/wumii/android/mimi/models/b/FeedEvent;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->b:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-eq p0, v0, :cond_2
 
-    sget-object v0, Lcom/wumii/android/mimi/models/b/FeedEvent;->a:Lcom/wumii/android/mimi/models/b/FeedEvent;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-ne p0, v0, :cond_3
 
@@ -485,18 +485,18 @@
     move-result-object v0
 
     .line 227
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/h/c/FeedModuleStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
 
     move-result-object v1
 
-    invoke-virtual {v1, p1}, Lcom/wumii/android/mimi/models/h/c/FeedModuleStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
+    invoke-virtual {v1, p1}, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
 
     .line 229
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/h/c/FeedStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2, p0}, Lcom/wumii/android/mimi/models/h/c/FeedStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Ljava/util/List;Lcom/wumii/android/mimi/models/b/FeedEvent;)V
+    invoke-virtual {v0, p1, p2, p0}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Ljava/util/List;Lcom/wumii/android/mimi/models/enum/FeedEvent;)V
 
     .line 230
     return-void
@@ -951,7 +951,7 @@
     move-result-object v9
 
     .line 183
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -1117,11 +1117,11 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/h/CommonStorage;
+    invoke-virtual {v4}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lcom/wumii/android/mimi/models/h/CommonStorage;->b()I
+    invoke-virtual {v4}, Lcom/wumii/android/mimi/models/storage/CommonStorage;->b()I
 
     move-result v4
 

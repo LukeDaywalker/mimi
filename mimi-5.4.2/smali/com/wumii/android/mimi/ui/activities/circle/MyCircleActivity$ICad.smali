@@ -74,7 +74,7 @@
     .line 146
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICad;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->a(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)Lcom/wumii/android/mimi/a/CircleManager;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;->a(Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;)Lcom/wumii/android/mimi/manager/CircleManager;
 
     move-result-object v1
 
@@ -84,7 +84,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/a/CircleManager;->e(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->e(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

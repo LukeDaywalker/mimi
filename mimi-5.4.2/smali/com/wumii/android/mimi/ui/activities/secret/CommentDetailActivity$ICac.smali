@@ -59,7 +59,7 @@
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICab;->a:Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->t(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/a/SecretManager;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->t(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/manager/SecretManager;
 
     move-result-object v1
 
@@ -86,7 +86,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    invoke-virtual {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/a/SecretManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Comment;Z)V
+    invoke-virtual {v1, v2, v3, v4, v0}, Lcom/wumii/android/mimi/manager/SecretManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Comment;Z)V
 
     .line 771
     return-void

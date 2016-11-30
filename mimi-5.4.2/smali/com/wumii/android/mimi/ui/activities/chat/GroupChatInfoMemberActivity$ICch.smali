@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;
-.super Lcom/wumii/android/mimi/b/ProgressAsyncTask;
+.super Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 .source "GroupChatInfoMemberActivity.java"
 
 
@@ -20,7 +20,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
 
     .line 214
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
 
     .line 215
     return-void
@@ -57,7 +57,7 @@
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->setChecked(Z)V
 
     .line 256
-    invoke-super {p0, p1, p2, p3}, Lcom/wumii/android/mimi/b/ProgressAsyncTask;->a(IILjava/lang/String;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->a(IILjava/lang/String;)V
 
     .line 257
     return-void
@@ -74,7 +74,7 @@
 
     .prologue
     .line 233
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;->g:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICci;
 
@@ -84,7 +84,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Lcom/fasterxml/jackson/core/type/TypeReference;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Lcom/fasterxml/jackson/core/type/TypeReference;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -114,11 +114,11 @@
 
     .line 240
     :goto_0
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;->g:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-string/jumbo v2, "group_chat_notification"
 
-    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 243
     :cond_1
@@ -137,7 +137,7 @@
     .line 244
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;->i:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/h/a/ChatStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
     move-result-object v0
 
@@ -145,7 +145,7 @@
 
     iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->o:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatStorage;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatBase;)V
 
     .line 245
     return-void
@@ -187,11 +187,11 @@
     const/4 v0, 0x0
 
     .line 249
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;->f:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;->f:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v2, 0x7f06039e
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 250
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
@@ -261,11 +261,11 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 228
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICch;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "chat"
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 

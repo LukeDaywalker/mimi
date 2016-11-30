@@ -25,7 +25,7 @@
 
 .field private j:Lcom/wumii/android/mimi/models/entities/secret/Feed;
 
-.field private k:Lcom/e/a/b/DisplayImageOptions;
+.field private k:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
 
 # direct methods
@@ -169,37 +169,37 @@
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 84
-    new-instance v0, Lcom/e/a/b/DisplayImageOptions$ICf;
+    new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
-    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;-><init>()V
+    invoke-direct {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;-><init>()V
 
-    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$ICf;->b(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$ICf;->c(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v2}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->b(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Lcom/e/a/b/DisplayImageOptions$ICf;->d(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v2}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->c(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->d(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
     sget-object v1, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Landroid/graphics/Bitmap$Config;)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Landroid/graphics/Bitmap$Config;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    sget-object v1, Lcom/e/a/b/a/ImageScaleType;->f:Lcom/e/a/b/a/ImageScaleType;
+    sget-object v1, Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;->f:Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Lcom/e/a/b/a/ImageScaleType;)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Lcom/nostra13/universalimageloader/core/assist/ImageScaleType;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
@@ -207,13 +207,13 @@
 
     invoke-direct {v1, v3}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Landroid/graphics/drawable/Drawable;)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Landroid/graphics/drawable/Drawable;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Lcom/e/a/b/g/BitmapProcessor;)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
@@ -221,15 +221,15 @@
 
     invoke-direct {v1, v3}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->b(Landroid/graphics/drawable/Drawable;)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->b(Landroid/graphics/drawable/Drawable;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;->a()Lcom/e/a/b/DisplayImageOptions;
+    invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a()Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->k:Lcom/e/a/b/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->k:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 95
     return-void
@@ -431,7 +431,7 @@
     const/16 v1, 0x8
 
     :goto_0
-    invoke-static {v2, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 138
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->g:Landroid/widget/TextView;
@@ -475,7 +475,7 @@
 
     .line 146
     :cond_2
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v1
 
@@ -485,13 +485,13 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->f:Landroid/widget/ImageView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->k:Lcom/e/a/b/DisplayImageOptions;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;->k:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     new-instance v4, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICk;
 
     invoke-direct {v4, p0}, Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView$ICk;-><init>(Lcom/wumii/android/mimi/ui/widgets/secret/GuidanceCardView;)V
 
-    invoke-virtual {v1, v0, v2, v3, v4}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;Lcom/e/a/b/f/ImageLoadingListener;)V
+    invoke-virtual {v1, v0, v2, v3, v4}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;)V
 
     goto :goto_1
 .end method

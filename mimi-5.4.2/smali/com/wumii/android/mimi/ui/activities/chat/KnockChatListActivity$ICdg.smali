@@ -3,7 +3,7 @@
 .source "KnockChatListActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/b/RemoveChatsTask$ICbl;
+.implements Lcom/wumii/android/mimi/task/RemoveChatsTask$ICbl;
 
 
 # instance fields
@@ -40,11 +40,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->b(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->b(Ljava/lang/String;)V
 
     .line 90
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdg;->a:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdf;

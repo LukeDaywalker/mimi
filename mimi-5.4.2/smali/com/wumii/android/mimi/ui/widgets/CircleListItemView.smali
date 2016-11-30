@@ -139,7 +139,7 @@
 
     int-to-float v2, v2
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -212,7 +212,7 @@
 
     int-to-float v1, v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -239,7 +239,7 @@
 
     int-to-float v1, v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -283,7 +283,7 @@
 
     int-to-float v2, v2
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
@@ -312,7 +312,7 @@
 
     int-to-float v2, v2
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
@@ -401,7 +401,7 @@
 
     const/high16 v2, 0x40800000    # 4.0f
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
@@ -441,7 +441,7 @@
 
     int-to-float v2, v2
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
@@ -464,7 +464,7 @@
 
     int-to-float v1, v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 

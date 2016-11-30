@@ -10,7 +10,7 @@
 
 .field private p:Z
 
-.field private q:Lcom/wumii/android/mimi/a/CircleManager;
+.field private q:Lcom/wumii/android/mimi/manager/CircleManager;
 
 
 # direct methods
@@ -64,12 +64,12 @@
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;)Lcom/wumii/android/mimi/a/CircleManager;
+.method static synthetic d(Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;)Lcom/wumii/android/mimi/manager/CircleManager;
     .locals 1
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->q:Lcom/wumii/android/mimi/a/CircleManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->q:Lcom/wumii/android/mimi/manager/CircleManager;
 
     return-object v0
 .end method
@@ -135,18 +135,18 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->c(Z)V
 
     .line 42
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->i()Lcom/wumii/android/mimi/a/CircleManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->i()Lcom/wumii/android/mimi/manager/CircleManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->q:Lcom/wumii/android/mimi/a/CircleManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->q:Lcom/wumii/android/mimi/manager/CircleManager;
 
     .line 43
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->a(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->a(Ljava/lang/Object;)V
 
     .line 45
     const v0, 0x7f03003c
@@ -200,7 +200,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setSelection(I)V
 
     .line 63
-    invoke-static {}, Lcom/wumii/android/mimi/c/UserProfileManager;->a()Lcom/wumii/android/mimi/c/UserProfileManager;
+    invoke-static {}, Lcom/wumii/android/mimi/util/UserProfileManager;->a()Lcom/wumii/android/mimi/util/UserProfileManager;
 
     move-result-object v0
 
@@ -210,7 +210,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$ICau;Z)V
+    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$ICau;Z)V
 
     .line 82
     return-void
@@ -224,27 +224,27 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseSaveActionActivity;->onDestroy()V
 
     .line 87
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->b(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->b(Ljava/lang/Object;)V
 
     .line 88
     return-void
 .end method
 
-.method public onEvent(Lcom/wumii/android/mimi/models/c/a/RespEventUserProfile;)V
+.method public onEvent(Lcom/wumii/android/mimi/models/event/response/RespEventUserProfile;)V
     .locals 3
 
     .prologue
     .line 105
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventUserProfile;->c()Z
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventUserProfile;->c()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
     .line 106
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventUserProfile;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventUserProfile;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -259,7 +259,7 @@
     :goto_0
     const/4 v2, 0x1
 
-    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Ljava/lang/String;I)V
+    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Ljava/lang/String;I)V
 
     .line 110
     :goto_1
@@ -267,7 +267,7 @@
 
     .line 106
     :cond_0
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventUserProfile;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventUserProfile;->a()Ljava/lang/String;
 
     move-result-object v0
 

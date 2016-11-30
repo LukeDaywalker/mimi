@@ -1,18 +1,18 @@
 .class public Lcom/baidu/mapapi/favorite/FavoriteManager;
-.super Lcom/baidu/mapapi/a/a/a;
+.super Lcom/baidu/mapapi/a/a/ICa;
 
 
 # static fields
 .field private static a:Lcom/baidu/mapapi/favorite/FavoriteManager;
 
-.field private static b:Lcom/baidu/platform/comapi/favrite/a;
+.field private static b:Lcom/baidu/platform/comapi/favrite/ICa;
 
 
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/baidu/mapapi/a/a/a;-><init>()V
+    invoke-direct {p0}, Lcom/baidu/mapapi/a/a/ICa;-><init>()V
 
     return-void
 .end method
@@ -43,7 +43,7 @@
 
     const/4 v0, 0x0
 
-    sget-object v1, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/a;
+    sget-object v1, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/ICa;
 
     if-nez v1, :cond_1
 
@@ -100,15 +100,15 @@
     goto :goto_0
 
     :cond_5
-    invoke-static {p1}, Lcom/baidu/mapapi/favorite/a;->a(Lcom/baidu/mapapi/favorite/FavoritePoiInfo;)Lcom/baidu/platform/comapi/favrite/FavSyncPoi;
+    invoke-static {p1}, Lcom/baidu/mapapi/favorite/ICa;->a(Lcom/baidu/mapapi/favorite/FavoritePoiInfo;)Lcom/baidu/platform/comapi/favrite/FavSyncPoi;
 
     move-result-object v1
 
-    sget-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/a;
+    sget-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/ICa;
 
     iget-object v2, v1, Lcom/baidu/platform/comapi/favrite/FavSyncPoi;->b:Ljava/lang/String;
 
-    invoke-virtual {v0, v2, v1}, Lcom/baidu/platform/comapi/favrite/a;->a(Ljava/lang/String;Lcom/baidu/platform/comapi/favrite/FavSyncPoi;)I
+    invoke-virtual {v0, v2, v1}, Lcom/baidu/platform/comapi/favrite/ICa;->a(Ljava/lang/String;Lcom/baidu/platform/comapi/favrite/FavSyncPoi;)I
 
     move-result v0
 
@@ -134,7 +134,7 @@
 .method public clearAllFavPois()Z
     .locals 2
 
-    sget-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/a;
+    sget-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/ICa;
 
     if-nez v0, :cond_0
 
@@ -150,9 +150,9 @@
     return v0
 
     :cond_0
-    sget-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/a;
+    sget-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/ICa;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/favrite/a;->c()Z
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/favrite/ICa;->c()Z
 
     move-result v0
 
@@ -164,7 +164,7 @@
 
     const/4 v0, 0x0
 
-    sget-object v1, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/a;
+    sget-object v1, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/ICa;
 
     if-nez v1, :cond_1
 
@@ -189,9 +189,9 @@
 
     if-nez v1, :cond_0
 
-    sget-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/a;
+    sget-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/ICa;
 
-    invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/favrite/a;->a(Ljava/lang/String;)Z
+    invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/favrite/ICa;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -201,17 +201,17 @@
 .method public destroy()V
     .locals 1
 
-    sget-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/a;
+    sget-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/ICa;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/a;
+    sget-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/ICa;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/favrite/a;->b()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/favrite/ICa;->b()V
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/a;
+    sput-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/ICa;
 
     invoke-static {}, Lcom/baidu/mapapi/BMapManager;->destroy()V
 
@@ -233,7 +233,7 @@
 
     const/4 v0, 0x0
 
-    sget-object v1, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/a;
+    sget-object v1, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/ICa;
 
     if-nez v1, :cond_1
 
@@ -248,9 +248,9 @@
     return-object v0
 
     :cond_1
-    sget-object v1, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/a;
+    sget-object v1, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/ICa;
 
-    invoke-virtual {v1}, Lcom/baidu/platform/comapi/favrite/a;->f()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/baidu/platform/comapi/favrite/ICa;->f()Ljava/lang/String;
 
     move-result-object v1
 
@@ -316,7 +316,7 @@
     goto :goto_1
 
     :cond_2
-    invoke-static {v4}, Lcom/baidu/mapapi/favorite/a;->a(Lorg/json/JSONObject;)Lcom/baidu/mapapi/favorite/FavoritePoiInfo;
+    invoke-static {v4}, Lcom/baidu/mapapi/favorite/ICa;->a(Lorg/json/JSONObject;)Lcom/baidu/mapapi/favorite/FavoritePoiInfo;
 
     move-result-object v4
 
@@ -344,7 +344,7 @@
 
     const/4 v0, 0x0
 
-    sget-object v1, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/a;
+    sget-object v1, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/ICa;
 
     if-nez v1, :cond_1
 
@@ -369,15 +369,15 @@
 
     if-nez v1, :cond_0
 
-    sget-object v1, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/a;
+    sget-object v1, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/ICa;
 
-    invoke-virtual {v1, p1}, Lcom/baidu/platform/comapi/favrite/a;->b(Ljava/lang/String;)Lcom/baidu/platform/comapi/favrite/FavSyncPoi;
+    invoke-virtual {v1, p1}, Lcom/baidu/platform/comapi/favrite/ICa;->b(Ljava/lang/String;)Lcom/baidu/platform/comapi/favrite/FavSyncPoi;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    invoke-static {v1}, Lcom/baidu/mapapi/favorite/a;->a(Lcom/baidu/platform/comapi/favrite/FavSyncPoi;)Lcom/baidu/mapapi/favorite/FavoritePoiInfo;
+    invoke-static {v1}, Lcom/baidu/mapapi/favorite/ICa;->a(Lcom/baidu/platform/comapi/favrite/FavSyncPoi;)Lcom/baidu/mapapi/favorite/FavoritePoiInfo;
 
     move-result-object v0
 
@@ -387,15 +387,15 @@
 .method public init()V
     .locals 1
 
-    sget-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/a;
+    sget-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/ICa;
 
     if-nez v0, :cond_0
 
-    invoke-static {}, Lcom/baidu/platform/comapi/favrite/a;->a()Lcom/baidu/platform/comapi/favrite/a;
+    invoke-static {}, Lcom/baidu/platform/comapi/favrite/ICa;->a()Lcom/baidu/platform/comapi/favrite/ICa;
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/a;
+    sput-object v0, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/ICa;
 
     invoke-static {}, Lcom/baidu/mapapi/BMapManager;->init()V
 
@@ -408,7 +408,7 @@
 
     const/4 v0, 0x0
 
-    sget-object v1, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/a;
+    sget-object v1, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/ICa;
 
     if-nez v1, :cond_1
 
@@ -477,13 +477,13 @@
     :cond_5
     iput-object p1, p2, Lcom/baidu/mapapi/favorite/FavoritePoiInfo;->a:Ljava/lang/String;
 
-    invoke-static {p2}, Lcom/baidu/mapapi/favorite/a;->a(Lcom/baidu/mapapi/favorite/FavoritePoiInfo;)Lcom/baidu/platform/comapi/favrite/FavSyncPoi;
+    invoke-static {p2}, Lcom/baidu/mapapi/favorite/ICa;->a(Lcom/baidu/mapapi/favorite/FavoritePoiInfo;)Lcom/baidu/platform/comapi/favrite/FavSyncPoi;
 
     move-result-object v0
 
-    sget-object v1, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/a;
+    sget-object v1, Lcom/baidu/mapapi/favorite/FavoriteManager;->b:Lcom/baidu/platform/comapi/favrite/ICa;
 
-    invoke-virtual {v1, p1, v0}, Lcom/baidu/platform/comapi/favrite/a;->b(Ljava/lang/String;Lcom/baidu/platform/comapi/favrite/FavSyncPoi;)Z
+    invoke-virtual {v1, p1, v0}, Lcom/baidu/platform/comapi/favrite/ICa;->b(Ljava/lang/String;Lcom/baidu/platform/comapi/favrite/FavSyncPoi;)Z
 
     move-result v0
 

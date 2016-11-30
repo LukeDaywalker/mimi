@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;
-.super Lcom/wumii/android/mimi/b/BaseAsyncTask;
+.super Lcom/wumii/android/mimi/task/BaseAsyncTask;
 .source "PublishSecretActivity.java"
 
 
@@ -31,7 +31,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
     .line 784
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/BaseAsyncTask;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/BaseAsyncTask;-><init>(Landroid/content/Context;)V
 
     .line 785
     return-void
@@ -49,7 +49,7 @@
     .line 826
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->I(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/c/ContextToast;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->I(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/util/ContextToast;
 
     move-result-object v0
 
@@ -57,7 +57,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 830
     :goto_0
@@ -128,7 +128,7 @@
     .line 834
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->J(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/c/ContextToast;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->J(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/util/ContextToast;
 
     move-result-object v0
 
@@ -136,7 +136,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 835
     return-void
@@ -159,7 +159,7 @@
 
     .prologue
     .line 851
-    invoke-super {p0}, Lcom/wumii/android/mimi/b/BaseAsyncTask;->f()Z
+    invoke-super {p0}, Lcom/wumii/android/mimi/task/BaseAsyncTask;->f()Z
 
     move-result v0
 
@@ -239,7 +239,7 @@
 
     iget v2, v2, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/ImageUtils;->b(Ljava/lang/String;I)Landroid/graphics/Bitmap;
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/ImageUtils;->b(Ljava/lang/String;I)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
@@ -254,7 +254,7 @@
     :cond_0
     new-instance v2, Ljava/io/File;
 
-    invoke-static {}, Lcom/wumii/android/mimi/models/d/FileHelper;->c()Ljava/io/File;
+    invoke-static {}, Lcom/wumii/android/mimi/models/helper/FileHelper;->c()Ljava/io/File;
 
     move-result-object v3
 
@@ -293,7 +293,7 @@
 
     .line 812
     :try_start_0
-    invoke-static {v2}, Lorg/a/a/b/FileUtils;->b(Ljava/io/File;)Ljava/io/FileOutputStream;
+    invoke-static {v2}, Lorg/apache/commons/io/FileUtils;->b(Ljava/io/File;)Ljava/io/FileOutputStream;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
@@ -329,12 +329,12 @@
     move-object v1, v2
 
     :goto_1
-    invoke-static {v1}, Lorg/a/a/b/IOUtils;->a(Ljava/io/OutputStream;)V
+    invoke-static {v1}, Lorg/apache/commons/io/IOUtils;->a(Ljava/io/OutputStream;)V
 
     throw v0
 
     :cond_1
-    invoke-static {v2}, Lorg/a/a/b/IOUtils;->a(Ljava/io/OutputStream;)V
+    invoke-static {v2}, Lorg/apache/commons/io/IOUtils;->a(Ljava/io/OutputStream;)V
 
     move-object v0, v1
 

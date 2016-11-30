@@ -3,19 +3,19 @@
 .source "InvitationShareController.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/b/BaseShareImageTask$ICl;
+.implements Lcom/wumii/android/mimi/task/BaseShareImageTask$ICl;
 
 
 # instance fields
 .field final synthetic a:I
 
-.field final synthetic b:Lcom/wumii/android/mimi/models/g/WeixinShareHelper$ICax;
+.field final synthetic b:Lcom/wumii/android/mimi/models/share/WeixinShareHelper$ICax;
 
 .field final synthetic c:Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;
 
 
 # direct methods
-.method constructor <init>(Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;ILcom/wumii/android/mimi/models/g/WeixinShareHelper$ICax;)V
+.method constructor <init>(Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;ILcom/wumii/android/mimi/models/share/WeixinShareHelper$ICax;)V
     .locals 0
 
     .prologue
@@ -24,7 +24,7 @@
 
     iput p2, p0, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController$ICe;->a:I
 
-    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController$ICe;->b:Lcom/wumii/android/mimi/models/g/WeixinShareHelper$ICax;
+    iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController$ICe;->b:Lcom/wumii/android/mimi/models/share/WeixinShareHelper$ICax;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,12 +33,12 @@
 
 
 # virtual methods
-.method public a(Ljava/io/File;Lcom/wumii/android/mimi/b/BaseShareImageTask;)V
+.method public a(Ljava/io/File;Lcom/wumii/android/mimi/task/BaseShareImageTask;)V
     .locals 9
 
     .prologue
     .line 68
-    invoke-static {}, Lcom/wumii/android/mimi/models/g/WeixinShareHelper;->a()Lcom/wumii/android/mimi/models/g/WeixinShareHelper;
+    invoke-static {}, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->a()Lcom/wumii/android/mimi/models/share/WeixinShareHelper;
 
     move-result-object v1
 
@@ -58,7 +58,7 @@
 
     const/4 v4, 0x0
 
-    invoke-virtual {p2, p1}, Lcom/wumii/android/mimi/b/BaseShareImageTask;->b(Ljava/io/File;)[B
+    invoke-virtual {p2, p1}, Lcom/wumii/android/mimi/task/BaseShareImageTask;->b(Ljava/io/File;)[B
 
     move-result-object v5
 
@@ -66,9 +66,9 @@
 
     int-to-long v6, v0
 
-    iget-object v8, p0, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController$ICe;->b:Lcom/wumii/android/mimi/models/g/WeixinShareHelper$ICax;
+    iget-object v8, p0, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController$ICe;->b:Lcom/wumii/android/mimi/models/share/WeixinShareHelper$ICax;
 
-    invoke-virtual/range {v1 .. v8}, Lcom/wumii/android/mimi/models/g/WeixinShareHelper;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[BJLcom/wumii/android/mimi/models/g/WeixinShareHelper$ICax;)V
+    invoke-virtual/range {v1 .. v8}, Lcom/wumii/android/mimi/models/share/WeixinShareHelper;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[BJLcom/wumii/android/mimi/models/share/WeixinShareHelper$ICax;)V
 
     .line 69
     return-void

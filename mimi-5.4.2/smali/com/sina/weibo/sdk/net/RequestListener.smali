@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public abstract a(Lcom/sina/weibo/sdk/a/WeiboException;)V
+.method public abstract a(Lcom/sina/weibo/sdk/exception/WeiboException;)V
 .end method
 
 .method public abstract a(Ljava/lang/String;)V

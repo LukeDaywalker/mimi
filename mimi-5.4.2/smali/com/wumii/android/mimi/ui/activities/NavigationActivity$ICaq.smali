@@ -32,7 +32,7 @@
     .line 486
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaq;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->i()Lcom/wumii/android/mimi/ui/a/d/DiscoverFragment;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->i()Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;
 
     move-result-object v0
 
@@ -67,7 +67,7 @@
     if-eqz v0, :cond_0
 
     .line 489
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/a/d/DiscoverFragment;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;->a()V
 
     .line 495
     :cond_0
@@ -76,9 +76,9 @@
 
     .line 492
     :cond_1
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->C:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->C:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->a(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 493
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICaq;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;

@@ -215,10 +215,10 @@
     if-ne v4, v1, :cond_2
 
     .line 78
-    invoke-static {v7, v10}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v7, v10}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 79
-    invoke-static {v8, v5}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v8, v5}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 85
     :goto_1
@@ -239,10 +239,10 @@
 
     .line 81
     :cond_2
-    invoke-static {v7, v5}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v7, v5}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 82
-    invoke-static {v8, v10}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v8, v10}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_1
 

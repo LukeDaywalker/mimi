@@ -58,7 +58,7 @@
 
     invoke-direct {v2, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v2}, Lorg/a/a/b/FileUtils;->d(Ljava/io/File;)Z
+    invoke-static {v2}, Lorg/apache/commons/io/FileUtils;->d(Ljava/io/File;)Z
 
     goto :goto_0
 

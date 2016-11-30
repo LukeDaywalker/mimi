@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICl;
-.super Lcom/wumii/android/mimi/models/e/ChatObserver;
+.super Lcom/wumii/android/mimi/models/observer/ChatObserver;
 .source "BaseChatActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 1064
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICl;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
-    invoke-direct {p0}, Lcom/wumii/android/mimi/models/e/ChatObserver;-><init>()V
+    invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/ChatObserver;-><init>()V
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -80,7 +80,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -103,11 +103,11 @@
     .line 1073
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICl;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
-    invoke-static {}, Lcom/wumii/android/mimi/c/UserProfileManager;->a()Lcom/wumii/android/mimi/c/UserProfileManager;
+    invoke-static {}, Lcom/wumii/android/mimi/util/UserProfileManager;->a()Lcom/wumii/android/mimi/util/UserProfileManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/c/UserProfileManager;->c()Lcom/wumii/android/mimi/models/entities/profile/UserPrivilege;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/util/UserProfileManager;->c()Lcom/wumii/android/mimi/models/entities/profile/UserPrivilege;
 
     move-result-object v1
 
@@ -120,11 +120,11 @@
     :goto_1
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICl;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->v()Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->v()Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->notifyDataSetChanged()V
 
     goto :goto_0
 
@@ -141,13 +141,13 @@
     .line 1075
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICl;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
-    invoke-static {v0, p3}, Lcom/wumii/android/mimi/c/CircleUtils;->a(Landroid/app/Activity;Ljava/lang/String;)V
+    invoke-static {v0, p3}, Lcom/wumii/android/mimi/util/CircleUtils;->a(Landroid/app/Activity;Ljava/lang/String;)V
 
     goto :goto_1
 
     .line 1076
     :cond_3
-    invoke-static {p3}, Lorg/a/a/c/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {p3}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -156,13 +156,13 @@
     .line 1077
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICl;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->i(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)Lcom/wumii/android/mimi/c/ContextToast;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->i(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;)Lcom/wumii/android/mimi/util/ContextToast;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, p3, v1}, Lcom/wumii/android/mimi/c/ContextToast;->a(Ljava/lang/String;I)V
+    invoke-virtual {v0, p3, v1}, Lcom/wumii/android/mimi/util/ContextToast;->a(Ljava/lang/String;I)V
 
     goto :goto_1
 .end method

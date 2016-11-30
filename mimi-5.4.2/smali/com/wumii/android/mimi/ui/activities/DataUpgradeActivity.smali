@@ -185,7 +185,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICq;-><init>(Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;)V
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/ThreadUtils;->a(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/ThreadUtils;->a(Ljava/lang/Runnable;)V
 
     .line 61
     return-void

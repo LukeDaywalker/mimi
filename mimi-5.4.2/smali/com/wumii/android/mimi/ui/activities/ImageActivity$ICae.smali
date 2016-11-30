@@ -3,7 +3,7 @@
 .source "ImageActivity.java"
 
 # interfaces
-.implements Lcom/e/a/b/f/ImageLoadingListener;
+.implements Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
 
 
 # instance fields
@@ -38,7 +38,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 123
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
@@ -49,7 +49,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 124
     return-void
@@ -68,7 +68,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 135
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
@@ -77,7 +77,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 137
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
@@ -88,7 +88,7 @@
     return-void
 .end method
 
-.method public a(Ljava/lang/String;Landroid/view/View;Lcom/e/a/b/a/FailReason;)V
+.method public a(Ljava/lang/String;Landroid/view/View;Lcom/nostra13/universalimageloader/core/assist/FailReason;)V
     .locals 2
 
     .prologue
@@ -101,7 +101,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 129
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
@@ -112,7 +112,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 130
     return-void
@@ -131,7 +131,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 143
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/ImageActivity$ICae;->a:Lcom/wumii/android/mimi/ui/activities/ImageActivity;
@@ -142,7 +142,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 144
     return-void

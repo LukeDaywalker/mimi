@@ -324,7 +324,7 @@
 
     if-eqz p0, :cond_0
 
-    invoke-static {p0}, Lcom/baidu/mapapi/utils/a;->a(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/baidu/mapapi/utils/ICa;->a(Landroid/content/Context;)V
 
     :cond_0
     return-void
@@ -485,7 +485,7 @@
 
     if-lt v2, v3, :cond_b
 
-    invoke-static {p0, p1, v1}, Lcom/baidu/mapapi/utils/a;->a(Lcom/baidu/mapapi/utils/route/RouteParaOption;Landroid/content/Context;I)Z
+    invoke-static {p0, p1, v1}, Lcom/baidu/mapapi/utils/ICa;->a(Lcom/baidu/mapapi/utils/route/RouteParaOption;Landroid/content/Context;I)Z
 
     move-result v0
 
@@ -693,7 +693,7 @@
 
     if-lt v1, v2, :cond_b
 
-    invoke-static {p0, p1, v0}, Lcom/baidu/mapapi/utils/a;->a(Lcom/baidu/mapapi/utils/route/RouteParaOption;Landroid/content/Context;I)Z
+    invoke-static {p0, p1, v0}, Lcom/baidu/mapapi/utils/ICa;->a(Lcom/baidu/mapapi/utils/route/RouteParaOption;Landroid/content/Context;I)Z
 
     move-result v0
 
@@ -903,7 +903,7 @@
 
     if-lt v1, v2, :cond_b
 
-    invoke-static {p0, p1, v3}, Lcom/baidu/mapapi/utils/a;->a(Lcom/baidu/mapapi/utils/route/RouteParaOption;Landroid/content/Context;I)Z
+    invoke-static {p0, p1, v3}, Lcom/baidu/mapapi/utils/ICa;->a(Lcom/baidu/mapapi/utils/route/RouteParaOption;Landroid/content/Context;I)Z
 
     move-result v0
 

@@ -58,11 +58,11 @@
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICw;->a:Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->j(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/c/BottomPanFacade;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->j(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/BottomPanFacade;->b()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->b()Z
 
     move-result v0
 
@@ -86,7 +86,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
 
     .line 251
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICw;->a:Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;

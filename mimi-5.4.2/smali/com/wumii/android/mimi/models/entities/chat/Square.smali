@@ -73,7 +73,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/List;)Ljava/util/List;
+    invoke-static {v1}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v1
 

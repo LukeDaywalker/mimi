@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICt;
-.super Lcom/wumii/android/mimi/b/HttpAsyncTask;
+.super Lcom/wumii/android/mimi/task/HttpAsyncTask;
 .source "PrivacySettingsActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 89
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICs;
 
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/HttpAsyncTask;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/HttpAsyncTask;-><init>(Landroid/content/Context;)V
 
     return-void
 .end method
@@ -27,7 +27,7 @@
 
     .prologue
     .line 98
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICt;->g:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICt;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -39,16 +39,16 @@
 
     const-string/jumbo v2, "last_unlink_date"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 99
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICt;->f:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICt;->f:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603c9
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 100
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICs;
@@ -68,13 +68,13 @@
 
     .prologue
     .line 105
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICt;->f:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICt;->f:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603c8
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 106
     return-void
@@ -97,7 +97,7 @@
 
     .prologue
     .line 93
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICt;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity$ICt;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v1, "unlink"
 
@@ -105,7 +105,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 

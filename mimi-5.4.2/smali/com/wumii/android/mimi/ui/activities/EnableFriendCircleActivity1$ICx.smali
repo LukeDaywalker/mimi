@@ -39,11 +39,11 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/ProgressingDialog;->setCanceledOnTouchOutside(Z)V
 
     .line 140
-    new-instance v0, Lcom/wumii/android/mimi/c/ContextToast;
+    new-instance v0, Lcom/wumii/android/mimi/util/ContextToast;
 
-    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/c/ContextToast;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p2}, Lcom/wumii/android/mimi/util/ContextToast;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p1, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iput-object v0, p1, Lcom/wumii/android/mimi/ui/activities/EnableFriendCircleActivity1;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     .line 141
     return-void
@@ -60,7 +60,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/a/UploadContactManager;->a:Ljava/lang/String;
+    sget-object v1, Lcom/wumii/android/mimi/manager/UploadContactManager;->a:Ljava/lang/String;
 
     invoke-static {v0, v1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 

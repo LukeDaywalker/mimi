@@ -13,7 +13,7 @@
 
 .field private c:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
-.field private d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.field private d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
 .field private e:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
@@ -43,11 +43,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 29
     return-void
@@ -96,7 +96,7 @@
     move-result-object v3
 
     .line 41
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SecretFeedItemBuilder;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v5, Ljava/lang/String;
 
@@ -104,14 +104,14 @@
 
     const/4 v7, 0x0
 
-    invoke-virtual {v2, v5, v6, v7}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v5, v6, v7}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/lang/String;
 
     .line 42
-    invoke-static {v3, v2}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v3, v2}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v2
 

@@ -1,5 +1,5 @@
 .class public Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;
-.super Lcom/wumii/android/mimi/ui/a/BaseMimiFragment;
+.super Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;
 .source "CircleFeedsFragment.java"
 
 
@@ -10,7 +10,7 @@
 # instance fields
 .field protected a:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
-.field protected b:Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener;
+.field protected b:Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener;
 
 .field protected c:Landroid/os/Handler;
 
@@ -34,7 +34,7 @@
 
 .field private r:Ljava/lang/Runnable;
 
-.field private s:Lcom/wumii/android/mimi/a/FeedManager;
+.field private s:Lcom/wumii/android/mimi/manager/FeedManager;
 
 .field private t:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;
 
@@ -48,7 +48,7 @@
 
 .field private y:Z
 
-.field private z:Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
+.field private z:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
 
 # direct methods
@@ -73,7 +73,7 @@
 
     .prologue
     .line 60
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/a/BaseMimiFragment;-><init>()V
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;-><init>()V
 
     .line 78
     new-instance v0, Landroid/os/Handler;
@@ -96,7 +96,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICl;-><init>(Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->z:Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->z:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
     .line 277
     return-void
@@ -412,7 +412,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-static {v1, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v1, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 263
     return-void
@@ -464,7 +464,7 @@
 
     .line 232
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->s:Lcom/wumii/android/mimi/a/FeedManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->s:Lcom/wumii/android/mimi/manager/FeedManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->u:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -472,7 +472,7 @@
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->v:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/a/FeedManager;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;ZLcom/wumii/android/mimi/models/entities/circle/Circle;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/manager/FeedManager;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;ZLcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     goto :goto_0
 .end method
@@ -482,7 +482,7 @@
 
     .prologue
     .line 236
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->s:Lcom/wumii/android/mimi/a/FeedManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->s:Lcom/wumii/android/mimi/manager/FeedManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->u:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
@@ -490,7 +490,7 @@
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->v:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/a/FeedManager;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;ZLcom/wumii/android/mimi/models/entities/circle/Circle;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/manager/FeedManager;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;ZLcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     .line 237
     return-void
@@ -501,13 +501,13 @@
 
     .prologue
     .line 240
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->s:Lcom/wumii/android/mimi/a/FeedManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->s:Lcom/wumii/android/mimi/manager/FeedManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->u:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->v:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/a/FeedManager;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/manager/FeedManager;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     .line 241
     return-void
@@ -556,7 +556,7 @@
 
     .prologue
     .line 148
-    invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/a/BaseMimiFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 150
     new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;
@@ -648,13 +648,13 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->i:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/h/c/FeedStorage;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->e:Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
-    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/h/c/FeedStorage;->b(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)Ljava/util/List;
+    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->b(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)Ljava/util/List;
 
     move-result-object v1
 
@@ -664,15 +664,15 @@
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->f()V
 
     .line 169
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->c()Lcom/wumii/android/mimi/a/FeedManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->c()Lcom/wumii/android/mimi/manager/FeedManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->s:Lcom/wumii/android/mimi/a/FeedManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->s:Lcom/wumii/android/mimi/manager/FeedManager;
 
     .line 170
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->g()Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;
@@ -682,28 +682,28 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->t:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;
 
     .line 171
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->s:Lcom/wumii/android/mimi/a/FeedManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->s:Lcom/wumii/android/mimi/manager/FeedManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->t:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/FeedManager;->addObserver(Ljava/util/Observer;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/FeedManager;->addObserver(Ljava/util/Observer;)V
 
     .line 172
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->i:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/h/c/FeedStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->z:Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->z:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/c/FeedStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
 
     .line 173
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->c()V
 
     .line 174
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->a(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->a(Ljava/lang/Object;)V
 
     .line 175
     return-void
@@ -714,7 +714,7 @@
 
     .prologue
     .line 103
-    invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/a/BaseMimiFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 104
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->getArguments()Landroid/os/Bundle;
@@ -733,7 +733,7 @@
     :goto_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->i:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/h/c/FeedModuleStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
 
     move-result-object v0
 
@@ -741,7 +741,7 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->w:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/h/c/FeedModuleStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
     move-result-object v0
 
@@ -866,34 +866,34 @@
 
     .line 221
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->s:Lcom/wumii/android/mimi/a/FeedManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->s:Lcom/wumii/android/mimi/manager/FeedManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->t:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/FeedManager;->deleteObserver(Ljava/util/Observer;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/FeedManager;->deleteObserver(Ljava/util/Observer;)V
 
     .line 222
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->i:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/h/c/FeedStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->z:Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->z:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/c/FeedStorage;->b(Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->b(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
 
     .line 223
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->b(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->b(Ljava/lang/Object;)V
 
     .line 224
-    invoke-super {p0}, Lcom/wumii/android/mimi/ui/a/BaseMimiFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;->onDestroy()V
 
     .line 225
     return-void
 .end method
 
-.method public onEvent(Lcom/wumii/android/mimi/models/c/a/RespEventUserProfile;)V
+.method public onEvent(Lcom/wumii/android/mimi/models/event/response/RespEventUserProfile;)V
     .locals 3
 
     .prologue
@@ -910,7 +910,7 @@
 
     .line 424
     :cond_0
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventUserProfile;->c()Z
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventUserProfile;->c()Z
 
     move-result v0
 
@@ -925,7 +925,7 @@
 
     .line 429
     :cond_1
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventUserProfile;->b()I
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventUserProfile;->b()I
 
     move-result v0
 
@@ -942,11 +942,11 @@
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventUserProfile;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventUserProfile;->a()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/CircleUtils;->a(Landroid/app/Activity;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/CircleUtils;->a(Landroid/app/Activity;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -956,11 +956,11 @@
 
     move-result-object v1
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventUserProfile;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventUserProfile;->a()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -975,12 +975,12 @@
     :goto_1
     const/4 v2, 0x0
 
-    invoke-static {v1, v0, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Landroid/content/Context;Ljava/lang/String;I)V
+    invoke-static {v1, v0, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;Ljava/lang/String;I)V
 
     goto :goto_0
 
     :cond_3
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventUserProfile;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventUserProfile;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -992,7 +992,7 @@
 
     .prologue
     .line 210
-    invoke-super {p0}, Lcom/wumii/android/mimi/ui/a/BaseMimiFragment;->onResume()V
+    invoke-super {p0}, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;->onResume()V
 
     .line 211
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->d:Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;
@@ -1008,7 +1008,7 @@
 
     .prologue
     .line 124
-    invoke-super {p0, p1, p2}, Lcom/wumii/android/mimi/ui/a/BaseMimiFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/wumii/android/mimi/ui/fragments/BaseMimiFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 125
     const v0, 0x7f0b005b

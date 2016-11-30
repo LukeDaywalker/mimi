@@ -30,9 +30,9 @@
 
     .prologue
     .line 103
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->w:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->w:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 104
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity$ICt;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/VerificationActivity;

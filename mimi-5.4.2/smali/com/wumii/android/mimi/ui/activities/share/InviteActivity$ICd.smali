@@ -3,7 +3,7 @@
 .source "InviteActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/b/LoadInvitationTask$ICas;
+.implements Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;
 
 
 # instance fields

@@ -3,7 +3,7 @@
 .source "SecretActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
+.implements Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
 
 # instance fields
@@ -25,12 +25,12 @@
 
 
 # virtual methods
-.method public a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICe;)V
+.method public a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;)V
     .locals 6
 
     .prologue
     .line 1639
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/h/BaseStorage$ICe;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;->b()Ljava/lang/String;
 
     move-result-object v0
 
@@ -44,7 +44,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -57,7 +57,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->y()Lcom/wumii/android/mimi/models/h/c/CommentStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->y()Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
 
     move-result-object v0
 
@@ -81,7 +81,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/h/c/CommentStorage;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Sort;)Ljava/util/Map;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Sort;)Ljava/util/Map;
 
     move-result-object v0
 

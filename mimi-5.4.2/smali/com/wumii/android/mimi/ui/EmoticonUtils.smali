@@ -332,7 +332,7 @@
     move-result v5
 
     .line 361
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v8
 
@@ -354,7 +354,7 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICq;-><init>(ILandroid/text/SpannableStringBuilder;IIILcom/wumii/android/mimi/ui/EmoticonUtils$ICr;)V
 
-    invoke-virtual {v8, v9, v0}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Lcom/e/a/b/f/ImageLoadingListener;)V
+    invoke-virtual {v8, v9, v0}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;)V
 
     goto/16 :goto_0
 .end method
@@ -364,7 +364,7 @@
 
     .prologue
     .line 329
-    invoke-static {p0}, Lorg/a/a/c/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -420,7 +420,7 @@
 
     .prologue
     .line 222
-    new-instance v4, Lcom/wumii/android/mimi/ui/apdaters/c/EmoticonPagerAdapter;
+    new-instance v4, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -432,17 +432,17 @@
 
     iget v0, v0, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    invoke-direct {v4, p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/c/EmoticonPagerAdapter;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v4, p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;-><init>(Landroid/content/Context;I)V
 
     .line 223
     invoke-static {}, Lcom/wumii/android/mimi/ui/EmoticonUtils;->a()Ljava/util/List;
 
     move-result-object v0
 
-    invoke-virtual {v4, v0}, Lcom/wumii/android/mimi/ui/apdaters/c/EmoticonPagerAdapter;->a(Ljava/util/List;)V
+    invoke-virtual {v4, v0}, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->a(Ljava/util/List;)V
 
     .line 225
-    new-instance v6, Lcom/wumii/android/mimi/ui/apdaters/c/EmoticonPagerAdapter;
+    new-instance v6, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -454,14 +454,14 @@
 
     iget v0, v0, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    invoke-direct {v6, p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/c/EmoticonPagerAdapter;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v6, p0, v0}, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;-><init>(Landroid/content/Context;I)V
 
     .line 226
     invoke-static {}, Lcom/wumii/android/mimi/ui/EmoticonUtils;->b()Ljava/util/List;
 
     move-result-object v0
 
-    invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/ui/apdaters/c/EmoticonPagerAdapter;->a(Ljava/util/List;)V
+    invoke-virtual {v6, v0}, Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;->a(Ljava/util/List;)V
 
     .line 228
     const v0, 0x7f03006c
@@ -482,7 +482,7 @@
     check-cast v3, Landroid/support/v4/view/ViewPager;
 
     .line 231
-    invoke-static {v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;)V
+    invoke-static {v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;)V
 
     .line 233
     invoke-virtual {v3, v4}, Landroid/support/v4/view/ViewPager;->setAdapter(Landroid/support/v4/view/PagerAdapter;)V
@@ -520,7 +520,7 @@
     .line 241
     new-instance v0, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICn;
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICn;-><init>(Landroid/widget/ImageView;Landroid/widget/ImageView;Landroid/support/v4/view/ViewPager;Lcom/wumii/android/mimi/ui/apdaters/c/EmoticonPagerAdapter;Lcom/viewpagerindicator/IconPageIndicator;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICn;-><init>(Landroid/widget/ImageView;Landroid/widget/ImageView;Landroid/support/v4/view/ViewPager;Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;Lcom/viewpagerindicator/IconPageIndicator;)V
 
     invoke-virtual {v2, v0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -529,7 +529,7 @@
 
     move-object v4, v6
 
-    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICo;-><init>(Landroid/widget/ImageView;Landroid/widget/ImageView;Landroid/support/v4/view/ViewPager;Lcom/wumii/android/mimi/ui/apdaters/c/EmoticonPagerAdapter;Lcom/viewpagerindicator/IconPageIndicator;)V
+    invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICo;-><init>(Landroid/widget/ImageView;Landroid/widget/ImageView;Landroid/support/v4/view/ViewPager;Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;Lcom/viewpagerindicator/IconPageIndicator;)V
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -822,14 +822,14 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
     .line 125
     const-string/jumbo v1, "recent_emoticons"
 
-    invoke-virtual {v0, v3, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v3, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 126
     return-void
@@ -859,7 +859,7 @@
     move-result-object v0
 
     .line 178
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;)D
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;)D
 
     move-result-wide v0
 
@@ -892,7 +892,7 @@
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;)D
+    invoke-static {v3}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;)D
 
     move-result-wide v4
 
@@ -950,7 +950,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/models/d/HostHelper;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/wumii/android/mimi/models/helper/HostHelper;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -991,7 +991,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
@@ -1006,7 +1006,7 @@
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-virtual {v0, v2, v3, v4}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Lcom/fasterxml/jackson/core/type/TypeReference;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v3, v4}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Lcom/fasterxml/jackson/core/type/TypeReference;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1076,7 +1076,7 @@
 
     .prologue
     .line 190
-    invoke-static {p0}, Lorg/a/a/c/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v0
 

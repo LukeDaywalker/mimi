@@ -3,7 +3,7 @@
 .source "ModifyNicknameActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/c/UserProfileManager$ICau;
+.implements Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
 
 
 # instance fields
@@ -128,7 +128,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 
@@ -146,7 +146,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 76
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -236,7 +236,7 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;Ljava/util/Date;)Ljava/lang/String;
+    invoke-static {v6, v7}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v6
 

@@ -42,9 +42,9 @@
 
     sput-object v0, Lcom/baidu/mapapi/model/LatLng;->a:Ljava/lang/String;
 
-    new-instance v0, Lcom/baidu/mapapi/model/a;
+    new-instance v0, Lcom/baidu/mapapi/model/ICa;
 
-    invoke-direct {v0}, Lcom/baidu/mapapi/model/a;-><init>()V
+    invoke-direct {v0}, Lcom/baidu/mapapi/model/ICa;-><init>()V
 
     sput-object v0, Lcom/baidu/mapapi/model/LatLng;->CREATOR:Landroid/os/Parcelable$Creator;
 

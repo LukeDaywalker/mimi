@@ -102,7 +102,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->c(Landroid/view/View;)Landroid/graphics/Point;
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->c(Landroid/view/View;)Landroid/graphics/Point;
 
     move-result-object v0
 
@@ -187,7 +187,7 @@
 
     aput-object v0, v5, v6
 
-    invoke-static {v2, v3, v4, v5}, Lcom/wumii/android/mimi/c/ClassUtils;->a(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v2, v3, v4, v5}, Lcom/wumii/android/mimi/util/ClassUtils;->a(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 326
     return v6

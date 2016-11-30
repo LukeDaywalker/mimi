@@ -1,5 +1,5 @@
 .class public Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICy;
-.super Lcom/e/a/b/e/ImageViewAware;
+.super Lcom/nostra13/universalimageloader/core/imageaware/ImageViewAware;
 .source "SecretCardView.java"
 
 
@@ -17,7 +17,7 @@
     const-wide/high16 v4, 0x3ff0000000000000L    # 1.0
 
     .line 778
-    invoke-direct {p0, p1}, Lcom/e/a/b/e/ImageViewAware;-><init>(Landroid/widget/ImageView;)V
+    invoke-direct {p0, p1}, Lcom/nostra13/universalimageloader/core/imageaware/ImageViewAware;-><init>(Landroid/widget/ImageView;)V
 
     .line 779
     iput-wide p2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretCardView$ICy;->c:D

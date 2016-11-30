@@ -3,7 +3,7 @@
 .source "NearbySecretFragment.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;
+.implements Lcom/wumii/android/mimi/models/helper/LocationHelper$ICu;
 
 
 # instance fields
@@ -104,7 +104,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICl;->b:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->f(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/a/DiscoverManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->f(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     move-result-object v0
 
@@ -116,7 +116,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, p1}, Lcom/wumii/android/mimi/a/DiscoverManager;->b(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Lcom/baidu/location/BDLocation;)V
+    invoke-virtual {v0, v1, p1}, Lcom/wumii/android/mimi/manager/DiscoverManager;->b(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Lcom/baidu/location/BDLocation;)V
 
     .line 227
     :goto_0
@@ -128,7 +128,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICl;->b:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->f(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/a/DiscoverManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->f(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     move-result-object v0
 
@@ -140,7 +140,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, p1}, Lcom/wumii/android/mimi/a/DiscoverManager;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Lcom/baidu/location/BDLocation;)V
+    invoke-virtual {v0, v1, p1}, Lcom/wumii/android/mimi/manager/DiscoverManager;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;Lcom/baidu/location/BDLocation;)V
 
     goto :goto_0
 .end method

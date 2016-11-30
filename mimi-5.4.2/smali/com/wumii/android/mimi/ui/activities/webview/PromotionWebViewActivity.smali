@@ -78,14 +78,14 @@
 
 
 # virtual methods
-.method public a(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
+.method public a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
     .locals 2
 
     .prologue
     .line 51
     const-string/jumbo v0, "menuSharePromotion"
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->a()Ljava/lang/String;
 
     move-result-object v1
 

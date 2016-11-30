@@ -106,7 +106,7 @@
 
     aget-object v0, v0, p1
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/a/d/DiscoverSecretFragment;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;)Lcom/wumii/android/mimi/ui/a/d/DiscoverSecretFragment;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;)Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverSecretFragment;
 
     move-result-object v0
 

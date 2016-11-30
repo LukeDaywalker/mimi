@@ -30,7 +30,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcw;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcu;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcu;->a(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcu;)Lcom/wumii/android/mimi/models/d/FileHelper;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcu;->a(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcu;)Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     move-result-object v0
 
@@ -38,7 +38,7 @@
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/FileHelper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -51,7 +51,7 @@
     .line 424
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcw;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcu;
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcu;->a(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcu;)Lcom/wumii/android/mimi/models/d/FileHelper;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcu;->a(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcu;)Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     move-result-object v1
 
@@ -63,7 +63,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/d/FileHelper;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/io/File;
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/io/File;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

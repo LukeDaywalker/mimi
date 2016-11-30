@@ -43,7 +43,7 @@
 
     move-result-object v0
 
-    const-class v1, Lcom/wumii/android/mimi/ui/a/a/SubmitNewPasswordFragment;
+    const-class v1, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;
 
     invoke-virtual {v1}, Ljava/lang/Class;->toString()Ljava/lang/String;
 
@@ -57,7 +57,7 @@
     if-nez v0, :cond_0
 
     .line 67
-    invoke-static {p1, p2}, Lcom/wumii/android/mimi/ui/a/a/SubmitNewPasswordFragment;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/wumii/android/mimi/ui/a/a/SubmitNewPasswordFragment;
+    invoke-static {p1, p2}, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;
 
     move-result-object v0
 
@@ -114,7 +114,7 @@
 
     move-result-object v0
 
-    const-class v1, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;
+    const-class v1, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;
 
     invoke-virtual {v1}, Ljava/lang/Class;->toString()Ljava/lang/String;
 
@@ -128,9 +128,9 @@
     if-nez v0, :cond_0
 
     .line 59
-    new-instance v0, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;
+    new-instance v0, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;-><init>()V
 
     .line 61
     :cond_0
@@ -218,7 +218,7 @@
 
     move-result-object v2
 
-    const-class v3, Lcom/wumii/android/mimi/ui/a/a/VerificationCodeFragment;
+    const-class v3, Lcom/wumii/android/mimi/ui/fragments/authenticator/VerificationCodeFragment;
 
     invoke-virtual {v3}, Ljava/lang/Class;->toString()Ljava/lang/String;
 

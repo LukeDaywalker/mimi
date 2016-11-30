@@ -261,11 +261,11 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/c/AppConfigManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/util/AppConfigManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/AppConfigManager;->a()Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/AppConfigManager;->a()Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     move-result-object v0
 
@@ -378,7 +378,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -387,7 +387,7 @@
     move v0, v1
 
     :goto_2
-    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 565
     invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/TextView;
@@ -398,14 +398,14 @@
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v3}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v3
 
     if-eqz v3, :cond_3
 
     :goto_3
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 577
     :goto_4
@@ -522,14 +522,14 @@
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 575
     invoke-static {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;->e(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICd;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_4
 
@@ -581,21 +581,21 @@
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 479
     invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->c(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/LinearLayout;
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 480
     invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/ProgressBar;
 
     move-result-object v0
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 494
     :goto_0
@@ -616,21 +616,21 @@
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 483
     invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->c(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/LinearLayout;
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 484
     invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/ProgressBar;
 
     move-result-object v0
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 
@@ -649,21 +649,21 @@
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 487
     invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->c(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/LinearLayout;
 
     move-result-object v0
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 488
     invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/ProgressBar;
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 
@@ -673,21 +673,21 @@
 
     move-result-object v0
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 491
     invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->c(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/LinearLayout;
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 492
     invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICf;)Landroid/widget/ProgressBar;
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 .end method
@@ -771,7 +771,7 @@
     move v2, v3
 
     :goto_2
-    invoke-static {v4, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v4, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 457
     invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->d(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/view/View;
@@ -796,7 +796,7 @@
     move v3, v1
 
     :cond_1
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 459
     invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICh;->b()Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICj;
@@ -812,21 +812,21 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 461
     invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->f(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/widget/ImageView;
 
     move-result-object v0
 
-    invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 462
     invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 473
     :goto_3
@@ -876,21 +876,21 @@
 
     move-result-object v0
 
-    invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 465
     invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->f(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/widget/ImageView;
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 466
     invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_3
 
@@ -900,21 +900,21 @@
 
     move-result-object v0
 
-    invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 469
     invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->f(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/widget/ImageView;
 
     move-result-object v0
 
-    invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 470
     invoke-static {p2}, Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;->b(Lcom/wumii/android/mimi/ui/apdaters/secret/CommentListAdapter$ICi;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_3
 .end method
@@ -1697,7 +1697,7 @@
 
     const/high16 v4, 0x42f00000    # 120.0f
 
-    invoke-static {v2, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v2, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v2
 
@@ -3030,7 +3030,7 @@
 
     .prologue
     .line 597
-    invoke-static {p1}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {p1}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -3143,7 +3143,7 @@
     invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     .line 264
-    invoke-static {p1}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {p1}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -3232,7 +3232,7 @@
 
     move-result-object v4
 
-    invoke-static {v1, v4}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v4}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -3428,7 +3428,7 @@
 
     move-result-object v4
 
-    invoke-static {v1, v4}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v4}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v1
 

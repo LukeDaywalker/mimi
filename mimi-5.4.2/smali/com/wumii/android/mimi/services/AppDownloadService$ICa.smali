@@ -93,7 +93,7 @@
     :goto_1
     iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/services/AppDownloadService;->c(Lcom/wumii/android/mimi/services/AppDownloadService;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-static {v0}, Lcom/wumii/android/mimi/services/AppDownloadService;->c(Lcom/wumii/android/mimi/services/AppDownloadService;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
@@ -105,7 +105,7 @@
 
     const-string/jumbo v2, "latest_version_name"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -178,7 +178,7 @@
     .line 78
     iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService$ICa;->a:Lcom/wumii/android/mimi/services/AppDownloadService;
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/content/Context;Landroid/content/Intent;)Z
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/content/Context;Landroid/content/Intent;)Z
 
     move-result v0
 

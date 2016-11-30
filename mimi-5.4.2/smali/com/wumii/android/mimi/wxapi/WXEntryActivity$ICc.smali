@@ -3,7 +3,7 @@
 .source "WXEntryActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/models/g/WeixinShareHelper$ICax;
+.implements Lcom/wumii/android/mimi/models/share/WeixinShareHelper$ICax;
 
 
 # instance fields

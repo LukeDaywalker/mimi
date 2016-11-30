@@ -114,7 +114,7 @@
 
     const-string/jumbo v2, "checkArgs fail, actionUrl is invalid"
 
-    invoke-static {v0, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/sina/weibo/sdk/utils/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     move v0, v1
 
@@ -142,7 +142,7 @@
 
     const-string/jumbo v2, "checkArgs fail, identify is invalid"
 
-    invoke-static {v0, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/sina/weibo/sdk/utils/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     move v0, v1
 
@@ -198,7 +198,7 @@
     move-result-object v0
 
     .line 158
-    invoke-static {v2, v0}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v0}, Lcom/sina/weibo/sdk/utils/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     move v0, v1
 
@@ -231,7 +231,7 @@
 
     const-string/jumbo v2, "checkArgs fail, title is invalid"
 
-    invoke-static {v0, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/sina/weibo/sdk/utils/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     move v0, v1
 
@@ -260,7 +260,7 @@
 
     const-string/jumbo v2, "checkArgs fail, description is invalid"
 
-    invoke-static {v0, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/sina/weibo/sdk/utils/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     move v0, v1
 

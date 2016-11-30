@@ -42,7 +42,7 @@
 
 .field private n:F
 
-.field private o:Lcom/baidu/platform/comapi/map/i;
+.field private o:Lcom/baidu/platform/comapi/map/ICi;
 
 
 # direct methods
@@ -634,11 +634,11 @@
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/TextureMapView;->b:Lcom/baidu/platform/comapi/map/C;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/c;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/ICc;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/c;->v()Lcom/baidu/platform/comapi/map/B;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICc;->v()Lcom/baidu/platform/comapi/map/B;
 
     move-result-object v0
 
@@ -648,11 +648,11 @@
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/TextureMapView;->b:Lcom/baidu/platform/comapi/map/C;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/c;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/ICc;
 
     move-result-object v0
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/c;->b:F
+    iget v0, v0, Lcom/baidu/platform/comapi/map/ICc;->b:F
 
     cmpg-float v0, v3, v0
 
@@ -667,11 +667,11 @@
 
     iget-object v4, p0, Lcom/baidu/mapapi/map/TextureMapView;->b:Lcom/baidu/platform/comapi/map/C;
 
-    invoke-virtual {v4}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/c;
+    invoke-virtual {v4}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/ICc;
 
     move-result-object v4
 
-    iget v4, v4, Lcom/baidu/platform/comapi/map/c;->a:F
+    iget v4, v4, Lcom/baidu/platform/comapi/map/ICc;->a:F
 
     cmpl-float v3, v3, v4
 
@@ -704,17 +704,17 @@
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/TextureMapView;->f:Landroid/widget/ZoomControls;
 
-    new-instance v1, Lcom/baidu/mapapi/map/l;
+    new-instance v1, Lcom/baidu/mapapi/map/ICl;
 
-    invoke-direct {v1, p0}, Lcom/baidu/mapapi/map/l;-><init>(Lcom/baidu/mapapi/map/TextureMapView;)V
+    invoke-direct {v1, p0}, Lcom/baidu/mapapi/map/ICl;-><init>(Lcom/baidu/mapapi/map/TextureMapView;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ZoomControls;->setOnZoomOutClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/TextureMapView;->f:Landroid/widget/ZoomControls;
 
-    new-instance v1, Lcom/baidu/mapapi/map/m;
+    new-instance v1, Lcom/baidu/mapapi/map/ICm;
 
-    invoke-direct {v1, p0}, Lcom/baidu/mapapi/map/m;-><init>(Lcom/baidu/mapapi/map/TextureMapView;)V
+    invoke-direct {v1, p0}, Lcom/baidu/mapapi/map/ICm;-><init>(Lcom/baidu/mapapi/map/TextureMapView;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ZoomControls;->setOnZoomInClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -734,7 +734,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p1, v1}, Lcom/baidu/platform/comapi/map/C;-><init>(Landroid/content/Context;Lcom/baidu/platform/comapi/map/z;)V
+    invoke-direct {v0, p1, v1}, Lcom/baidu/platform/comapi/map/C;-><init>(Landroid/content/Context;Lcom/baidu/platform/comapi/map/ICz;)V
 
     iput-object v0, p0, Lcom/baidu/mapapi/map/TextureMapView;->b:Lcom/baidu/platform/comapi/map/C;
 
@@ -743,32 +743,32 @@
 
     invoke-virtual {p0, v0}, Lcom/baidu/mapapi/map/TextureMapView;->addView(Landroid/view/View;)V
 
-    new-instance v0, Lcom/baidu/mapapi/map/k;
+    new-instance v0, Lcom/baidu/mapapi/map/ICk;
 
-    invoke-direct {v0, p0}, Lcom/baidu/mapapi/map/k;-><init>(Lcom/baidu/mapapi/map/TextureMapView;)V
+    invoke-direct {v0, p0}, Lcom/baidu/mapapi/map/ICk;-><init>(Lcom/baidu/mapapi/map/TextureMapView;)V
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/TextureMapView;->o:Lcom/baidu/platform/comapi/map/i;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/TextureMapView;->o:Lcom/baidu/platform/comapi/map/ICi;
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/TextureMapView;->b:Lcom/baidu/platform/comapi/map/C;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/c;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/ICc;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/TextureMapView;->o:Lcom/baidu/platform/comapi/map/i;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/TextureMapView;->o:Lcom/baidu/platform/comapi/map/ICi;
 
-    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/c;->a(Lcom/baidu/platform/comapi/map/i;)V
+    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICc;->a(Lcom/baidu/platform/comapi/map/ICi;)V
 
     return-void
 
     :cond_0
     new-instance v0, Lcom/baidu/platform/comapi/map/C;
 
-    invoke-virtual {p2}, Lcom/baidu/mapapi/map/BaiduMapOptions;->a()Lcom/baidu/platform/comapi/map/z;
+    invoke-virtual {p2}, Lcom/baidu/mapapi/map/BaiduMapOptions;->a()Lcom/baidu/platform/comapi/map/ICz;
 
     move-result-object v1
 
-    invoke-direct {v0, p1, v1}, Lcom/baidu/platform/comapi/map/C;-><init>(Landroid/content/Context;Lcom/baidu/platform/comapi/map/z;)V
+    invoke-direct {v0, p1, v1}, Lcom/baidu/platform/comapi/map/C;-><init>(Landroid/content/Context;Lcom/baidu/platform/comapi/map/ICz;)V
 
     iput-object v0, p0, Lcom/baidu/mapapi/map/TextureMapView;->b:Lcom/baidu/platform/comapi/map/C;
 
@@ -1396,11 +1396,11 @@
 
     iget-object v5, p0, Lcom/baidu/mapapi/map/TextureMapView;->b:Lcom/baidu/platform/comapi/map/C;
 
-    invoke-virtual {v5}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/c;
+    invoke-virtual {v5}, Lcom/baidu/platform/comapi/map/C;->b()Lcom/baidu/platform/comapi/map/ICc;
 
     move-result-object v5
 
-    invoke-virtual {v5, v1}, Lcom/baidu/platform/comapi/map/c;->a(Lcom/baidu/mapapi/model/inner/GeoPoint;)Landroid/graphics/Point;
+    invoke-virtual {v5, v1}, Lcom/baidu/platform/comapi/map/ICc;->a(Lcom/baidu/mapapi/model/inner/GeoPoint;)Landroid/graphics/Point;
 
     move-result-object v1
 

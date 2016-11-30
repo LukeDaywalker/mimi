@@ -3,7 +3,7 @@
 .source "SecretActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/c/UserProfileManager$ICau;
+.implements Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
 
 
 # instance fields
@@ -42,11 +42,11 @@
     .line 2123
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbf;->c:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->S(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/c/BottomPanFacade;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->S(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/BottomPanFacade;->f()Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->f()Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
 
     move-result-object v0
 
@@ -61,13 +61,13 @@
 
     iget-object v4, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbf;->c:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    invoke-static {v4}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->ae(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/models/b/SenderRole;
+    invoke-static {v4}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->ae(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     move-result-object v6
 
     move v4, v2
 
-    invoke-virtual/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->a(Ljava/lang/String;ILjava/lang/String;ILcom/wumii/android/mimi/models/entities/profile/NamedUser;Lcom/wumii/android/mimi/models/b/SenderRole;)V
+    invoke-virtual/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->a(Ljava/lang/String;ILjava/lang/String;ILcom/wumii/android/mimi/models/entities/profile/NamedUser;Lcom/wumii/android/mimi/models/enum/SenderRole;)V
 
     .line 2125
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbf;->c:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
@@ -77,11 +77,11 @@
     .line 2126
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbf;->c:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->ae(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/models/b/SenderRole;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->ae(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/b/SenderRole;->a:Lcom/wumii/android/mimi/models/b/SenderRole;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/SenderRole;->a:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     if-ne v0, v1, :cond_1
 
@@ -106,11 +106,11 @@
     :cond_1
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbf;->c:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->ae(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/models/b/SenderRole;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->ae(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/b/SenderRole;->b:Lcom/wumii/android/mimi/models/b/SenderRole;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/SenderRole;->b:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     if-ne v0, v1, :cond_2
 
@@ -127,11 +127,11 @@
     :cond_2
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbf;->c:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->ae(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/models/b/SenderRole;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->ae(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/b/SenderRole;->c:Lcom/wumii/android/mimi/models/b/SenderRole;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/SenderRole;->c:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     if-ne v0, v1, :cond_0
 

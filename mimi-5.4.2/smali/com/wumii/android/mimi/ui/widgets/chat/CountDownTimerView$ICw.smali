@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICw;
-.super Lcom/wumii/android/mimi/models/d/CountDownTimer;
+.super Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 .source "CountDownTimerView.java"
 
 
@@ -15,7 +15,7 @@
     .line 31
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView$ICw;->a:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
 
-    invoke-direct {p0}, Lcom/wumii/android/mimi/models/d/CountDownTimer;-><init>()V
+    invoke-direct {p0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;-><init>()V
 
     return-void
 .end method

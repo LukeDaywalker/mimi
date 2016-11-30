@@ -36,7 +36,7 @@
     .line 127
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICap;->a:Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->k(Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;)Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->k(Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;)Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     move-result-object v0
 
@@ -45,17 +45,17 @@
     .line 128
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICap;->a:Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->k(Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;)Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->k(Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;)Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 131
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICap;->b:Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder;->c(Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder;->c(Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
@@ -71,7 +71,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 132
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICap;->b:Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder;

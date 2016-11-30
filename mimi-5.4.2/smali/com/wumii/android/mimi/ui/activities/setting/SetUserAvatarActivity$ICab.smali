@@ -3,7 +3,7 @@
 .source "SetUserAvatarActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/models/d/CaptureImageHelper$ICc;
+.implements Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$ICc;
 
 
 # instance fields

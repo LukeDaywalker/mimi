@@ -196,13 +196,13 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->D()Lcom/wumii/android/mimi/models/h/c/SecretStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->D()Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/models/entities/secret/Feed;->extra:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/c/SecretStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     move-result-object v0
 
@@ -221,13 +221,13 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->E()Lcom/wumii/android/mimi/models/h/SurveyStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->E()Lcom/wumii/android/mimi/models/storage/SurveyStorage;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/models/entities/secret/Feed;->extra:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/SurveyStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     move-result-object v0
 
@@ -352,13 +352,13 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/a/a/JacksonMapper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/jackson/databind/JacksonMapper;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2}, Lcom/wumii/a/a/JacksonMapper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
     :try_end_0
-    .catch Lcom/wumii/a/a/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v0
 
@@ -995,13 +995,13 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/a/a/JacksonMapper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/jackson/databind/JacksonMapper;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/wumii/a/a/JacksonMapper;->a(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/Object;)Ljava/lang/String;
     :try_end_0
-    .catch Lcom/wumii/a/a/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v0
 

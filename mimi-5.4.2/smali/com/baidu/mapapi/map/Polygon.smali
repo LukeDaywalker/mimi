@@ -25,9 +25,9 @@
 
     invoke-direct {p0}, Lcom/baidu/mapapi/map/Overlay;-><init>()V
 
-    sget-object v0, Lcom/baidu/platform/comapi/map/f;->j:Lcom/baidu/platform/comapi/map/f;
+    sget-object v0, Lcom/baidu/platform/comapi/map/ICf;->j:Lcom/baidu/platform/comapi/map/ICf;
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->q:Lcom/baidu/platform/comapi/map/f;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->q:Lcom/baidu/platform/comapi/map/ICf;
 
     return-void
 .end method
@@ -150,9 +150,9 @@
 
     iput p1, p0, Lcom/baidu/mapapi/map/Polygon;->b:I
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->listener:Lcom/baidu/mapapi/map/Overlay$a;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$a;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     return-void
 .end method
@@ -275,9 +275,9 @@
     :cond_5
     iput-object p1, p0, Lcom/baidu/mapapi/map/Polygon;->c:Ljava/util/List;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->listener:Lcom/baidu/mapapi/map/Overlay$a;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$a;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     return-void
 .end method
@@ -287,9 +287,9 @@
 
     iput-object p1, p0, Lcom/baidu/mapapi/map/Polygon;->a:Lcom/baidu/mapapi/map/Stroke;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->listener:Lcom/baidu/mapapi/map/Overlay$a;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Polygon;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$a;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     return-void
 .end method

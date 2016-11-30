@@ -84,7 +84,7 @@
     iput-object p3, p0, Lcom/wumii/android/mimi/models/entities/Contact;->phoneNumber:Ljava/lang/String;
 
     .line 31
-    invoke-static {p2}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p2}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 

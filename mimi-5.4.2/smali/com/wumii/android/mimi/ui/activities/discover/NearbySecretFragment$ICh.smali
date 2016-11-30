@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;
-.super Lcom/wumii/android/mimi/models/e/DiscoverObserver;
+.super Lcom/wumii/android/mimi/models/observer/DiscoverObserver;
 .source "NearbySecretFragment.java"
 
 
@@ -15,7 +15,7 @@
     .line 111
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICh;->a:Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;
 
-    invoke-direct {p0}, Lcom/wumii/android/mimi/models/e/DiscoverObserver;-><init>()V
+    invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/DiscoverObserver;-><init>()V
 
     return-void
 .end method
@@ -45,7 +45,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -95,7 +95,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v3}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v3}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -121,11 +121,11 @@
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;->d(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment;)V
 
     .line 130
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;->getFeedEvent()Lcom/wumii/android/mimi/models/b/FeedEvent;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;->getFeedEvent()Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     move-result-object v0
 
-    sget-object v3, Lcom/wumii/android/mimi/models/b/FeedEvent;->c:Lcom/wumii/android/mimi/models/b/FeedEvent;
+    sget-object v3, Lcom/wumii/android/mimi/models/enum/FeedEvent;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-eq v0, v3, :cond_1
 
@@ -178,7 +178,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -187,7 +187,7 @@
     move v0, v1
 
     :goto_1
-    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 136
     :cond_1
@@ -259,7 +259,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v2}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -299,11 +299,11 @@
     invoke-virtual {v2, v0}, Lcom/wumii/android/mimi/ui/widgets/XListView;->b(Z)V
 
     .line 149
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;->getFeedEvent()Lcom/wumii/android/mimi/models/b/FeedEvent;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;->getFeedEvent()Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     move-result-object v0
 
-    sget-object v2, Lcom/wumii/android/mimi/models/b/FeedEvent;->c:Lcom/wumii/android/mimi/models/b/FeedEvent;
+    sget-object v2, Lcom/wumii/android/mimi/models/enum/FeedEvent;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-eq v0, v2, :cond_3
 
@@ -317,11 +317,11 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->c(Z)Z
 
     .line 151
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;->getFeedEvent()Lcom/wumii/android/mimi/models/b/FeedEvent;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/discover/DiscoverResultData;->getFeedEvent()Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     move-result-object v0
 
-    sget-object v2, Lcom/wumii/android/mimi/models/b/FeedEvent;->a:Lcom/wumii/android/mimi/models/b/FeedEvent;
+    sget-object v2, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-ne v0, v2, :cond_0
 

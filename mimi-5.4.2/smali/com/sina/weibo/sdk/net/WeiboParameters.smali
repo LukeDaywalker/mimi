@@ -215,7 +215,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/sina/weibo/sdk/b/LogUtil;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/sina/weibo/sdk/utils/LogUtil;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_2
     move v1, v2

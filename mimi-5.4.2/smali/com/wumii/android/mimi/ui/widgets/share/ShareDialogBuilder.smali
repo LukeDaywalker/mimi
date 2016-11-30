@@ -34,7 +34,7 @@
     return-void
 .end method
 
-.method private a(Ljava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/models/g/AbsBaseShareController;)V
+.method private a(Ljava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
     .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -44,7 +44,7 @@
             "<",
             "Lcom/wumii/android/mimi/models/entities/share/ShareAction;",
             ">;",
-            "Lcom/wumii/android/mimi/models/g/AbsBaseShareController;",
+            "Lcom/wumii/android/mimi/models/share/AbsBaseShareController;",
             ")V"
         }
     .end annotation
@@ -176,7 +176,7 @@
     .line 134
     new-instance v3, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder$ICh;
 
-    invoke-direct {v3, p0, p3}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder$ICh;-><init>(Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;Lcom/wumii/android/mimi/models/g/AbsBaseShareController;)V
+    invoke-direct {v3, p0, p3}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder$ICh;-><init>(Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
 
     invoke-virtual {v4, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -288,7 +288,7 @@
 
     move-result-object v2
 
-    invoke-direct {p0, v1, v2, v0}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a(Ljava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/models/g/AbsBaseShareController;)V
+    invoke-direct {p0, v1, v2, v0}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a(Ljava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
 
     .line 115
     return-void
@@ -336,7 +336,7 @@
 
     move-result-object v1
 
-    invoke-direct {p0, p2, v1, v0}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a(Ljava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/models/g/AbsBaseShareController;)V
+    invoke-direct {p0, p2, v1, v0}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a(Ljava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
 
     .line 105
     return-void
@@ -347,11 +347,11 @@
 
     .prologue
     .line 44
-    new-instance v0, Lcom/wumii/android/mimi/models/g/CircleShareController;
+    new-instance v0, Lcom/wumii/android/mimi/models/share/CircleShareController;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a:Landroid/app/Activity;
 
-    invoke-direct {v0, v1, p1}, Lcom/wumii/android/mimi/models/g/CircleShareController;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
+    invoke-direct {v0, v1, p1}, Lcom/wumii/android/mimi/models/share/CircleShareController;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     .line 45
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a:Landroid/app/Activity;
@@ -412,7 +412,7 @@
 
     move-result-object v2
 
-    invoke-direct {p0, v1, v2, v0}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a(Ljava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/models/g/AbsBaseShareController;)V
+    invoke-direct {p0, v1, v2, v0}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a(Ljava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
 
     .line 54
     return-void
@@ -423,11 +423,11 @@
 
     .prologue
     .line 71
-    new-instance v0, Lcom/wumii/android/mimi/models/g/GuidenceShareController;
+    new-instance v0, Lcom/wumii/android/mimi/models/share/GuidenceShareController;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a:Landroid/app/Activity;
 
-    invoke-direct {v0, v1, p1}, Lcom/wumii/android/mimi/models/g/GuidenceShareController;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/secret/Guidance;)V
+    invoke-direct {v0, v1, p1}, Lcom/wumii/android/mimi/models/share/GuidenceShareController;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/secret/Guidance;)V
 
     .line 72
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a:Landroid/app/Activity;
@@ -488,7 +488,7 @@
 
     move-result-object v2
 
-    invoke-direct {p0, v1, v2, v0}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a(Ljava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/models/g/AbsBaseShareController;)V
+    invoke-direct {p0, v1, v2, v0}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a(Ljava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
 
     .line 82
     return-void
@@ -499,11 +499,11 @@
 
     .prologue
     .line 57
-    new-instance v0, Lcom/wumii/android/mimi/models/g/PromotionShareController;
+    new-instance v0, Lcom/wumii/android/mimi/models/share/PromotionShareController;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a:Landroid/app/Activity;
 
-    invoke-direct {v0, v1, p1}, Lcom/wumii/android/mimi/models/g/PromotionShareController;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/secret/Promotion;)V
+    invoke-direct {v0, v1, p1}, Lcom/wumii/android/mimi/models/share/PromotionShareController;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/entities/secret/Promotion;)V
 
     .line 58
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a:Landroid/app/Activity;
@@ -564,7 +564,7 @@
 
     move-result-object v2
 
-    invoke-direct {p0, v1, v2, v0}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a(Ljava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/models/g/AbsBaseShareController;)V
+    invoke-direct {p0, v1, v2, v0}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a(Ljava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
 
     .line 68
     return-void
@@ -575,9 +575,9 @@
 
     .prologue
     .line 85
-    new-instance v0, Lcom/wumii/android/mimi/models/g/SecretShareController;
+    new-instance v0, Lcom/wumii/android/mimi/models/share/SecretShareController;
 
-    invoke-direct {v0, p4, p2, p3}, Lcom/wumii/android/mimi/models/g/SecretShareController;-><init>(Lcom/wumii/android/mimi/models/entities/secret/Secret;Landroid/app/Activity;Landroid/graphics/Bitmap;)V
+    invoke-direct {v0, p4, p2, p3}, Lcom/wumii/android/mimi/models/share/SecretShareController;-><init>(Lcom/wumii/android/mimi/models/entities/secret/Secret;Landroid/app/Activity;Landroid/graphics/Bitmap;)V
 
     .line 86
     const/4 v1, 0x7
@@ -630,7 +630,7 @@
 
     move-result-object v1
 
-    invoke-direct {p0, p1, v1, v0}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a(Ljava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/models/g/AbsBaseShareController;)V
+    invoke-direct {p0, p1, v1, v0}, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;->a(Ljava/lang/String;Ljava/util/List;Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
 
     .line 95
     return-void

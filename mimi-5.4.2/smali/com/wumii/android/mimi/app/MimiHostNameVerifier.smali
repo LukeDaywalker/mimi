@@ -81,13 +81,13 @@
     check-cast v0, Lcom/wumii/android/mimi/network/server/Server;
 
     .line 40
-    sget-object v2, Lcom/f/a/a/d/OkHostnameVerifier;->a:Lcom/f/a/a/d/OkHostnameVerifier;
+    sget-object v2, Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;->a:Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/server/Server;->getDomain()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {v2, v0, p1}, Lcom/f/a/a/d/OkHostnameVerifier;->a(Ljava/lang/String;Ljava/security/cert/X509Certificate;)Z
+    invoke-virtual {v2, v0, p1}, Lcom/squareup/okhttp/internal/tls/OkHostnameVerifier;->a(Ljava/lang/String;Ljava/security/cert/X509Certificate;)Z
 
     move-result v0
 

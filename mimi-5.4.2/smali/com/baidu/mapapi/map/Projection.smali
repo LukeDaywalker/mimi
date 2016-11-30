@@ -3,16 +3,16 @@
 
 
 # instance fields
-.field private a:Lcom/baidu/platform/comapi/map/c;
+.field private a:Lcom/baidu/platform/comapi/map/ICc;
 
 
 # direct methods
-.method constructor <init>(Lcom/baidu/platform/comapi/map/c;)V
+.method constructor <init>(Lcom/baidu/platform/comapi/map/ICc;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/baidu/mapapi/map/Projection;->a:Lcom/baidu/platform/comapi/map/c;
+    iput-object p1, p0, Lcom/baidu/mapapi/map/Projection;->a:Lcom/baidu/platform/comapi/map/ICc;
 
     return-void
 .end method
@@ -24,13 +24,13 @@
 
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Projection;->a:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Projection;->a:Lcom/baidu/platform/comapi/map/ICc;
 
     iget v1, p1, Landroid/graphics/Point;->x:I
 
     iget v2, p1, Landroid/graphics/Point;->y:I
 
-    invoke-virtual {v0, v1, v2}, Lcom/baidu/platform/comapi/map/c;->b(II)Lcom/baidu/mapapi/model/inner/GeoPoint;
+    invoke-virtual {v0, v1, v2}, Lcom/baidu/platform/comapi/map/ICc;->b(II)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
     move-result-object v0
 
@@ -62,9 +62,9 @@
     :cond_0
     float-to-double v0, p1
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/Projection;->a:Lcom/baidu/platform/comapi/map/c;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/Projection;->a:Lcom/baidu/platform/comapi/map/ICc;
 
-    invoke-virtual {v2}, Lcom/baidu/platform/comapi/map/c;->z()D
+    invoke-virtual {v2}, Lcom/baidu/platform/comapi/map/ICc;->z()D
 
     move-result-wide v2
 
@@ -138,9 +138,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/Projection;->a:Lcom/baidu/platform/comapi/map/c;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/Projection;->a:Lcom/baidu/platform/comapi/map/ICc;
 
-    invoke-virtual {v1, v0}, Lcom/baidu/platform/comapi/map/c;->a(Lcom/baidu/mapapi/model/inner/GeoPoint;)Landroid/graphics/Point;
+    invoke-virtual {v1, v0}, Lcom/baidu/platform/comapi/map/ICc;->a(Lcom/baidu/mapapi/model/inner/GeoPoint;)Landroid/graphics/Point;
 
     move-result-object v0
 

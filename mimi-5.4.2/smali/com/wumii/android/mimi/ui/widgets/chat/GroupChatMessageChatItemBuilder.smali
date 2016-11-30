@@ -78,7 +78,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 26
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v1
 
@@ -88,9 +88,9 @@
 
     iget-object v3, p3, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->c:Landroid/widget/ImageView;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;->e:Lcom/e/a/b/DisplayImageOptions;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMessageChatItemBuilder;->e:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-    invoke-virtual {v1, v2, v3, v4}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v1, v2, v3, v4}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 28
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/chat/ChatMsgGroupChat;->getChatId()Ljava/lang/String;

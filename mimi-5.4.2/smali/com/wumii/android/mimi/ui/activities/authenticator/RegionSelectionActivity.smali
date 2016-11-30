@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private C:Lcom/wumii/android/mimi/b/LoadCountriesTask;
+.field private C:Lcom/wumii/android/mimi/task/LoadCountriesTask;
 
 .field private D:Lcom/wumii/android/mimi/ui/widgets/MimiSearchView$ICal;
 
@@ -47,7 +47,7 @@
 
 .field private s:Landroid/widget/ListView;
 
-.field private t:Lcom/wumii/android/mimi/ui/apdaters/a/SearchRegionAdapter;
+.field private t:Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;
 
 
 # direct methods
@@ -168,12 +168,12 @@
     return-object v0
 .end method
 
-.method static synthetic f(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)Lcom/wumii/android/mimi/ui/apdaters/a/SearchRegionAdapter;
+.method static synthetic f(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;
     .locals 1
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/a/SearchRegionAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;
 
     return-object v0
 .end method
@@ -249,16 +249,16 @@
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 119
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/a/SearchRegionAdapter;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/a/SearchRegionAdapter;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/a/SearchRegionAdapter;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;
 
     .line 120
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->s:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/a/SearchRegionAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -268,14 +268,14 @@
 
 
 # virtual methods
-.method public a(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
+.method public a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
     .locals 2
 
     .prologue
     .line 177
     const-string/jumbo v0, "menuSearch"
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->a()Ljava/lang/String;
 
     move-result-object v1
 
@@ -310,24 +310,24 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 186
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/a/SearchRegionAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->t:Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->q:Ljava/util/List;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/a/SearchRegionAdapter;->a(Ljava/util/List;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;->a(Ljava/util/List;)V
 
     goto :goto_0
 .end method
 
-.method public g()Lcom/wumii/android/mimi/b/LoadCountriesTask;
+.method public g()Lcom/wumii/android/mimi/task/LoadCountriesTask;
     .locals 1
 
     .prologue
     .line 124
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->C:Lcom/wumii/android/mimi/b/LoadCountriesTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->C:Lcom/wumii/android/mimi/task/LoadCountriesTask;
 
     if-nez v0, :cond_0
 
@@ -336,11 +336,11 @@
 
     invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->C:Lcom/wumii/android/mimi/b/LoadCountriesTask;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->C:Lcom/wumii/android/mimi/task/LoadCountriesTask;
 
     .line 143
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->C:Lcom/wumii/android/mimi/b/LoadCountriesTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->C:Lcom/wumii/android/mimi/task/LoadCountriesTask;
 
     return-object v0
 .end method
@@ -388,11 +388,11 @@
     invoke-virtual {v0, v1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
     .line 98
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->g()Lcom/wumii/android/mimi/b/LoadCountriesTask;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->g()Lcom/wumii/android/mimi/task/LoadCountriesTask;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/b/LoadCountriesTask;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/task/LoadCountriesTask;->j()V
 
     .line 99
     return-void
@@ -426,14 +426,14 @@
 
     .prologue
     .line 192
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->C:Lcom/wumii/android/mimi/b/LoadCountriesTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->C:Lcom/wumii/android/mimi/task/LoadCountriesTask;
 
     if-eqz v0, :cond_0
 
     .line 193
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->C:Lcom/wumii/android/mimi/b/LoadCountriesTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->C:Lcom/wumii/android/mimi/task/LoadCountriesTask;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/b/LoadCountriesTask;->f()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/task/LoadCountriesTask;->f()Z
 
     .line 195
     :cond_0

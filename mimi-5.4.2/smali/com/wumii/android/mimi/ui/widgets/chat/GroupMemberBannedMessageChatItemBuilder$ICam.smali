@@ -3,7 +3,7 @@
 .source "GroupMemberBannedMessageChatItemBuilder.java"
 
 # interfaces
-.implements Lcom/e/a/b/f/ImageLoadingListener;
+.implements Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
 
 
 # instance fields
@@ -56,7 +56,7 @@
     const/4 v3, 0x0
 
     .line 95
-    new-instance v0, Lcom/e/a/b/c/RoundedBitmapDisplayer$ICd;
+    new-instance v0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder$ICam;->e:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;
 
@@ -64,7 +64,7 @@
 
     move-result v1
 
-    invoke-direct {v0, p3, v1, v3}, Lcom/e/a/b/c/RoundedBitmapDisplayer$ICd;-><init>(Landroid/graphics/Bitmap;II)V
+    invoke-direct {v0, p3, v1, v3}, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;-><init>(Landroid/graphics/Bitmap;II)V
 
     .line 96
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder$ICam;->e:Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;
@@ -79,7 +79,7 @@
 
     move-result v2
 
-    invoke-virtual {v0, v3, v3, v1, v2}, Lcom/e/a/b/c/RoundedBitmapDisplayer$ICd;->setBounds(IIII)V
+    invoke-virtual {v0, v3, v3, v1, v2}, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$ICd;->setBounds(IIII)V
 
     .line 97
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder$ICam;->a:Landroid/text/SpannableStringBuilder;
@@ -125,7 +125,7 @@
     return-void
 .end method
 
-.method public a(Ljava/lang/String;Landroid/view/View;Lcom/e/a/b/a/FailReason;)V
+.method public a(Ljava/lang/String;Landroid/view/View;Lcom/nostra13/universalimageloader/core/assist/FailReason;)V
     .locals 0
 
     .prologue

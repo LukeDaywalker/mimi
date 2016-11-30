@@ -32,7 +32,7 @@
     .line 35
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;->a(Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;->a(Lcom/wumii/android/mimi/ui/activities/webview/WeixinPromotionWebViewActivity;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
@@ -44,7 +44,7 @@
 
     const-string/jumbo v2, "unread_new_red_envelope_count"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 36
     return-void

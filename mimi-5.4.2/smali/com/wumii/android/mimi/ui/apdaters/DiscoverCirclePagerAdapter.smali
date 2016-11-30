@@ -40,7 +40,7 @@
 
     aget-object v0, v0, p1
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/a/d/DiscoverCircleFragment;->a(Lcom/wumii/android/mimi/models/entities/discover/RecommendType;)Lcom/wumii/android/mimi/ui/a/d/DiscoverCircleFragment;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;->a(Lcom/wumii/android/mimi/models/entities/discover/RecommendType;)Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverCircleFragment;
 
     move-result-object v0
 

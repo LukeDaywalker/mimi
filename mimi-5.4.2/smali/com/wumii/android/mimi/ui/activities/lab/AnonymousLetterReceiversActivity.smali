@@ -35,14 +35,14 @@
 
 
 # virtual methods
-.method public a(Lcom/wumii/android/mimi/models/entities/ContactSectionMap;)Lcom/wumii/android/mimi/ui/apdaters/d/ExtendContactSectionedAdapter;
+.method public a(Lcom/wumii/android/mimi/models/entities/ContactSectionMap;)Lcom/wumii/android/mimi/ui/apdaters/share/ExtendContactSectionedAdapter;
     .locals 1
 
     .prologue
     .line 24
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/d/ExtendContactSectionedAdapter;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/share/ExtendContactSectionedAdapter;
 
-    invoke-direct {v0, p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/d/ExtendContactSectionedAdapter;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/ContactSectionMap;)V
+    invoke-direct {v0, p0, p1}, Lcom/wumii/android/mimi/ui/apdaters/share/ExtendContactSectionedAdapter;-><init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/ContactSectionMap;)V
 
     return-object v0
 .end method
@@ -52,7 +52,7 @@
 
     .prologue
     .line 15
-    invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/ui/activities/lab/AnonymousLetterReceiversActivity;->a(Lcom/wumii/android/mimi/models/entities/ContactSectionMap;)Lcom/wumii/android/mimi/ui/apdaters/d/ExtendContactSectionedAdapter;
+    invoke-virtual {p0, p1}, Lcom/wumii/android/mimi/ui/activities/lab/AnonymousLetterReceiversActivity;->a(Lcom/wumii/android/mimi/models/entities/ContactSectionMap;)Lcom/wumii/android/mimi/ui/apdaters/share/ExtendContactSectionedAdapter;
 
     move-result-object v0
 
@@ -94,14 +94,14 @@
     return-void
 .end method
 
-.method protected g()Lcom/wumii/android/mimi/ui/apdaters/d/ExtandSearchContactListAdapter;
+.method protected g()Lcom/wumii/android/mimi/ui/apdaters/share/ExtandSearchContactListAdapter;
     .locals 1
 
     .prologue
     .line 29
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/d/ExtandSearchContactListAdapter;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/share/ExtandSearchContactListAdapter;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/d/ExtandSearchContactListAdapter;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/share/ExtandSearchContactListAdapter;-><init>(Landroid/content/Context;)V
 
     return-object v0
 .end method
@@ -121,7 +121,7 @@
 
     .prologue
     .line 15
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/lab/AnonymousLetterReceiversActivity;->g()Lcom/wumii/android/mimi/ui/apdaters/d/ExtandSearchContactListAdapter;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/lab/AnonymousLetterReceiversActivity;->g()Lcom/wumii/android/mimi/ui/apdaters/share/ExtandSearchContactListAdapter;
 
     move-result-object v0
 

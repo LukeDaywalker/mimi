@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field private b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.field private b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-.field private c:Lcom/wumii/android/mimi/models/d/NotificationCountHelper;
+.field private c:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
 .field private d:Lcom/wumii/android/mimi/push/PushReportService;
 
@@ -219,7 +219,7 @@
     if-ne v0, v3, :cond_1
 
     .line 124
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -227,7 +227,7 @@
 
     const-string/jumbo v2, "update_profile"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 270
     :cond_0
@@ -273,11 +273,11 @@
     if-ne v0, v3, :cond_2
 
     .line 129
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->e()Lcom/wumii/android/mimi/a/ChatManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->e()Lcom/wumii/android/mimi/manager/ChatManager;
 
     move-result-object v0
 
@@ -293,7 +293,7 @@
 
     move-result v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/a/ChatManager;->a(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/manager/ChatManager;->a(Ljava/lang/String;I)V
 
     goto :goto_1
 
@@ -311,7 +311,7 @@
     move-result v0
 
     .line 135
-    new-instance v1, Lcom/wumii/android/mimi/b/GetSummonsInfoTask;
+    new-instance v1, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;
 
     const-string/jumbo v2, "MID"
 
@@ -319,9 +319,9 @@
 
     move-result-object v2
 
-    invoke-direct {v1, p1, v2, v0}, Lcom/wumii/android/mimi/b/GetSummonsInfoTask;-><init>(Landroid/content/Context;Ljava/lang/String;Z)V
+    invoke-direct {v1, p1, v2, v0}, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;-><init>(Landroid/content/Context;Ljava/lang/String;Z)V
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/b/GetSummonsInfoTask;->j()V
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/task/GetSummonsInfoTask;->j()V
 
     goto :goto_1
 
@@ -332,11 +332,11 @@
     if-ne v0, v3, :cond_4
 
     .line 140
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->e()Lcom/wumii/android/mimi/a/ChatManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->e()Lcom/wumii/android/mimi/manager/ChatManager;
 
     move-result-object v0
 
@@ -358,7 +358,7 @@
 
     move-result-wide v4
 
-    invoke-virtual {v0, v1, v2, v4, v5}, Lcom/wumii/android/mimi/a/ChatManager;->a(Ljava/lang/String;Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v2, v4, v5}, Lcom/wumii/android/mimi/manager/ChatManager;->a(Ljava/lang/String;Ljava/lang/String;J)V
 
     goto :goto_1
 
@@ -369,11 +369,11 @@
     if-ne v0, v3, :cond_5
 
     .line 145
-    new-instance v0, Lcom/wumii/android/mimi/b/GetPushConfTask;
+    new-instance v0, Lcom/wumii/android/mimi/task/GetPushConfTask;
 
-    invoke-direct {v0, p1}, Lcom/wumii/android/mimi/b/GetPushConfTask;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/wumii/android/mimi/task/GetPushConfTask;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/b/GetPushConfTask;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/task/GetPushConfTask;->j()V
 
     goto/16 :goto_1
 
@@ -387,7 +387,7 @@
     if-nez v6, :cond_6
 
     .line 151
-    invoke-static {}, Lcom/wumii/android/mimi/c/Utils;->d()V
+    invoke-static {}, Lcom/wumii/android/mimi/util/Utils;->d()V
 
     .line 152
     invoke-static {}, Lcom/wumii/android/mimi/app/MainApplication;->a()Lcom/wumii/android/mimi/app/MainApplication;
@@ -396,7 +396,7 @@
 
     const v1, 0x7f060367
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Landroid/content/Context;II)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     goto/16 :goto_1
 
@@ -435,7 +435,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->e()Lcom/wumii/android/mimi/models/d/NotificationHelper;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->e()Lcom/wumii/android/mimi/models/helper/NotificationHelper;
 
     move-result-object v1
 
@@ -451,7 +451,7 @@
 
     long-to-int v3, v4
 
-    invoke-virtual {v1, p1, v0, v2, v3}, Lcom/wumii/android/mimi/models/d/NotificationHelper;->a(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/String;I)V
+    invoke-virtual {v1, p1, v0, v2, v3}, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->a(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/String;I)V
 
     goto/16 :goto_1
 
@@ -493,15 +493,15 @@
     move-result-object v0
 
     .line 174
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/a/ManagerCenter;->e()Lcom/wumii/android/mimi/a/ChatManager;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/manager/ManagerCenter;->e()Lcom/wumii/android/mimi/manager/ChatManager;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/a/ChatManager;->h(Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/manager/ChatManager;->h(Ljava/lang/String;)V
 
     goto/16 :goto_1
 
@@ -538,11 +538,11 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->r()Lcom/wumii/android/mimi/models/h/a/ChatMessageStorage;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->r()Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/models/h/a/ChatMessageStorage;->a(Ljava/lang/String;Ljava/util/Set;)V
+    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;->a(Ljava/lang/String;Ljava/util/Set;)V
 
     goto/16 :goto_1
 
@@ -595,7 +595,7 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 198
-    sget-object v1, Lcom/wumii/android/mimi/c/Constants$ICr;->e:Ljava/lang/String;
+    sget-object v1, Lcom/wumii/android/mimi/util/Constants$ICr;->e:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
@@ -912,7 +912,7 @@
 
     move-result-object v3
 
-    invoke-static {v1, v3}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v3}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v3
 
@@ -920,7 +920,7 @@
 
     .line 247
     :cond_18
-    iget-object v3, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v3, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -928,7 +928,7 @@
 
     const-string/jumbo v8, "update_profile"
 
-    invoke-virtual {v3, v7, v8}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v3, v7, v8}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 249
     :cond_19
@@ -1012,7 +1012,7 @@
     invoke-virtual {v3, v7, v8}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 266
-    iget-object v7, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->c:Lcom/wumii/android/mimi/models/d/NotificationCountHelper;
+    iget-object v7, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->c:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/models/entities/push/PushType;->name()Ljava/lang/String;
 
@@ -1022,7 +1022,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v7, v0, v1, v8}, Lcom/wumii/android/mimi/models/d/NotificationCountHelper;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V
+    invoke-virtual {v7, v0, v1, v8}, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V
 
     .line 267
     iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->d:Lcom/wumii/android/mimi/push/PushReportService;
@@ -1034,7 +1034,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->e()Lcom/wumii/android/mimi/models/d/NotificationHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->e()Lcom/wumii/android/mimi/models/helper/NotificationHelper;
 
     move-result-object v0
 
@@ -1044,7 +1044,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, p1, v3, v1, v6}, Lcom/wumii/android/mimi/models/d/NotificationHelper;->a(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/String;I)V
+    invoke-virtual {v0, p1, v3, v1, v6}, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->a(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/String;I)V
 
     goto/16 :goto_1
 .end method
@@ -1117,11 +1117,11 @@
     .line 304
     :cond_1
     :goto_1
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->e()Lcom/wumii/android/mimi/a/ChatManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->e()Lcom/wumii/android/mimi/manager/ChatManager;
 
     move-result-object v0
 
@@ -1131,7 +1131,7 @@
     if-ne p3, v1, :cond_6
 
     .line 306
-    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/a/ChatManager;->d(Ljava/lang/String;)V
+    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/manager/ChatManager;->d(Ljava/lang/String;)V
 
     .line 310
     :cond_2
@@ -1199,7 +1199,7 @@
 
     move-object v6, p4
 
-    invoke-virtual/range {v0 .. v6}, Lcom/wumii/android/mimi/a/ChatManager;->a(Lcom/wumii/android/mimi/models/entities/push/PushType;Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/chat/ChatType;ZLjava/lang/String;)V
+    invoke-virtual/range {v0 .. v6}, Lcom/wumii/android/mimi/manager/ChatManager;->a(Lcom/wumii/android/mimi/models/entities/push/PushType;Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/chat/ChatType;ZLjava/lang/String;)V
 
     goto :goto_2
 .end method
@@ -1211,7 +1211,7 @@
     const/4 v1, 0x1
 
     .line 273
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v2, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -1221,7 +1221,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v0, v2, v3, v4}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v3, v4}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1233,7 +1233,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v2, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -1241,7 +1241,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0, v2, p1, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, p1, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1286,25 +1286,25 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->o()Lcom/wumii/android/mimi/models/d/NotificationCountHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->o()Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->c:Lcom/wumii/android/mimi/models/d/NotificationCountHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->c:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
     .line 63
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/MessageReceiver;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 65
-    sget-object v0, Lcom/wumii/android/mimi/c/Constants$ICr;->a:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->a:Ljava/lang/String;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -1374,7 +1374,7 @@
 
     .line 81
     :goto_1
-    invoke-static {}, Lcom/wumii/android/mimi/a/NetworkTrafficMonitor;->a()Lcom/wumii/android/mimi/a/NetworkTrafficMonitor;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor;->a()Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor;
 
     move-result-object v1
 
@@ -1382,7 +1382,7 @@
 
     int-to-long v2, v0
 
-    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/a/NetworkTrafficMonitor;->a(J)V
+    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor;->a(J)V
 
     .line 84
     :cond_1

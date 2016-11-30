@@ -18,7 +18,7 @@
         value = {
             "Ljava/util/List",
             "<",
-            "Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;",
+            "Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;",
             ">;"
         }
     .end annotation
@@ -40,11 +40,11 @@
 
 .field private g:Z
 
-.field private h:Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
+.field private h:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
-.field private i:Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;
+.field private i:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
-.field private j:Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
+.field private j:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
 
 # direct methods
@@ -79,14 +79,14 @@
     return-void
 .end method
 
-.method private a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
+.method private a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
     .locals 2
 
     .prologue
     const/4 v1, 0x0
 
     .line 261
-    invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->d()Z
+    invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->d()Z
 
     move-result v0
 
@@ -100,7 +100,7 @@
 
     .line 268
     :goto_0
-    invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->d()Z
+    invoke-virtual {p2}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->d()Z
 
     move-result v0
 
@@ -129,14 +129,14 @@
     return v0
 .end method
 
-.method private d(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)Landroid/view/View;
+.method private d(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)Landroid/view/View;
     .locals 4
 
     .prologue
     const/4 v3, 0x0
 
     .line 236
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->b()I
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->b()I
 
     move-result v0
 
@@ -164,7 +164,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 238
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->c()Ljava/lang/CharSequence;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->c()Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -197,7 +197,7 @@
     check-cast v0, Landroid/widget/ImageView;
 
     .line 242
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->b()I
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->b()I
 
     move-result v1
 
@@ -206,14 +206,14 @@
     goto :goto_0
 .end method
 
-.method private e(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
+.method private e(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
     .locals 4
 
     .prologue
     .line 248
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->d:Ljava/util/List;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -246,17 +246,17 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
+    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->a()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->a()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v0, v3}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v3}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -330,7 +330,7 @@
     const/16 v0, 0x8
 
     :goto_0
-    invoke-static {v1, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v1, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 83
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->c:Lcom/wumii/android/mimi/ui/ActionBarViewHolder;
@@ -363,21 +363,21 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->e:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
     if-eqz v0, :cond_0
 
     .line 124
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;->a(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->a(Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;)V
 
     .line 126
     :cond_0
     return-void
 .end method
 
-.method public a(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
+.method public a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
     .locals 1
 
     .prologue
@@ -435,11 +435,11 @@
 
     .prologue
     .line 175
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
-    invoke-direct {v0, p1, p2, p3}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;-><init>(Ljava/lang/String;ILjava/lang/CharSequence;)V
+    invoke-direct {v0, p1, p2, p3}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;-><init>(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
-    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->a(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
+    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
 
     .line 176
     return-void
@@ -468,25 +468,25 @@
     invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->setHint(Ljava/lang/String;)V
 
     .line 214
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->h:Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->h:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     if-nez v0, :cond_0
 
     .line 215
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     const-string/jumbo v1, "menuSearch"
 
     const v2, 0x7f0200fe
 
-    invoke-direct {v0, v1, v2, p1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;-><init>(Ljava/lang/String;ILjava/lang/CharSequence;)V
+    invoke-direct {v0, v1, v2, p1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;-><init>(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->h:Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->h:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     .line 216
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->h:Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->h:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
-    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->a(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
+    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
 
     .line 218
     :cond_0
@@ -521,7 +521,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 108
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->c:Lcom/wumii/android/mimi/ui/ActionBarViewHolder;
@@ -532,13 +532,13 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 109
     return-void
 .end method
 
-.method public b(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
+.method public b(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
     .locals 3
 
     .prologue
@@ -560,7 +560,7 @@
     :cond_1
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->f:Ljava/util/Map;
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->a()Ljava/lang/String;
 
     move-result-object v1
 
@@ -574,7 +574,7 @@
     if-eqz v0, :cond_0
 
     .line 198
-    invoke-direct {p0, p1}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->e(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
+    invoke-direct {p0, p1}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->e(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
 
     .line 200
     instance-of v1, v0, Landroid/widget/ImageView;
@@ -586,7 +586,7 @@
     .line 201
     check-cast v1, Landroid/widget/ImageView;
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->b()I
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->b()I
 
     move-result v2
 
@@ -595,7 +595,7 @@
     .line 206
     :cond_2
     :goto_1
-    invoke-direct {p0, v0, p1}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
+    invoke-direct {p0, v0, p1}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
 
     goto :goto_0
 
@@ -610,7 +610,7 @@
     .line 203
     check-cast v1, Landroid/widget/TextView;
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->c()Ljava/lang/CharSequence;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->c()Ljava/lang/CharSequence;
 
     move-result-object v2
 
@@ -639,7 +639,7 @@
 
     move-result-object v1
 
-    invoke-static {p1}, Lorg/a/a/c/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -648,7 +648,7 @@
     const/16 v0, 0x8
 
     :goto_0
-    invoke-static {v1, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v1, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 74
     return-void
@@ -678,7 +678,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 115
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->c:Lcom/wumii/android/mimi/ui/ActionBarViewHolder;
@@ -687,7 +687,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 116
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->b:Landroid/view/inputmethod/InputMethodManager;
@@ -702,23 +702,23 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
 
     .line 117
     return-void
 .end method
 
-.method public c(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
+.method public c(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
     .locals 5
 
     .prologue
     .line 222
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->j:Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->j:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     if-nez v0, :cond_0
 
     .line 223
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     const-string/jumbo v1, "menuMore"
 
@@ -732,35 +732,35 @@
 
     move-result-object v3
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;-><init>(Ljava/lang/String;ILjava/lang/CharSequence;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;-><init>(Ljava/lang/String;ILjava/lang/CharSequence;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->j:Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->j:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     .line 226
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->j:Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->j:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
-    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->a(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
+    invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
 
     .line 228
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
     if-nez v0, :cond_1
 
     .line 229
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->a:Landroid/content/Context;
 
-    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
     .line 232
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;->a(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
 
     .line 233
     return-void
@@ -773,7 +773,7 @@
     .line 145
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->d:Ljava/util/List;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -802,20 +802,20 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
+    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     .line 148
-    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->d(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)Landroid/view/View;
+    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->d(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)Landroid/view/View;
 
     move-result-object v2
 
     .line 149
-    invoke-direct {p0, v2, v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
+    invoke-direct {p0, v2, v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
 
     .line 150
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->f:Ljava/util/Map;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -834,20 +834,20 @@
 
     .line 156
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
     if-eqz v0, :cond_1
 
     .line 157
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;->b()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->b()V
 
     .line 160
     :cond_1
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->d:Ljava/util/List;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -871,7 +871,7 @@
     .line 164
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->d:Ljava/util/List;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -893,14 +893,14 @@
 
     .line 169
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
     if-eqz v0, :cond_1
 
     .line 170
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->a()V
 
     .line 172
     :cond_1
@@ -926,16 +926,16 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;
+    check-cast v0, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;
 
     .line 131
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
     if-eqz v1, :cond_0
 
     const-string/jumbo v1, "menuMore"
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->a()Ljava/lang/String;
 
     move-result-object v2
 
@@ -946,15 +946,15 @@
     if-eqz v1, :cond_0
 
     .line 132
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->i:Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;
 
-    invoke-virtual {v1, p1}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMoreMenu;->a(Landroid/view/View;)V
+    invoke-virtual {v1, p1}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMoreMenu;->a(Landroid/view/View;)V
 
     .line 135
     :cond_0
     const-string/jumbo v1, "menuSearch"
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;->a()Ljava/lang/String;
 
     move-result-object v2
 
@@ -976,7 +976,7 @@
     .line 140
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar;->e:Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;
 
-    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;->a(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
+    invoke-interface {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/MimiActionBar$ICah;->a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
 
     .line 142
     :cond_2

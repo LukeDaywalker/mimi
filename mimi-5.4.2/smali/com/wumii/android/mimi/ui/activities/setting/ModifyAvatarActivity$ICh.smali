@@ -3,7 +3,7 @@
 .source "ModifyAvatarActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/c/UserProfileManager$ICau;
+.implements Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
 
 
 # instance fields
@@ -63,11 +63,11 @@
 
     const/16 v3, 0x8
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 53
     :goto_1
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v0
 
@@ -93,15 +93,15 @@
 
     const/high16 v6, 0x42c80000    # 100.0f
 
-    invoke-static {v5, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v5, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v5
 
-    invoke-static {v5}, Lcom/wumii/android/mimi/c/Utils;->a(I)Lcom/e/a/b/DisplayImageOptions;
+    invoke-static {v5}, Lcom/wumii/android/mimi/util/Utils;->a(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v5
 
-    invoke-virtual {v0, v3, v4, v5}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v0, v3, v4, v5}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 57
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/profile/UserProfile;->getCanUpdateAvatarTime()Ljava/util/Date;
@@ -174,7 +174,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 48
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -294,7 +294,7 @@
 
     move-result-object v8
 
-    invoke-static {v7, v8}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;Ljava/util/Date;)Ljava/lang/String;
+    invoke-static {v7, v8}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v7
 

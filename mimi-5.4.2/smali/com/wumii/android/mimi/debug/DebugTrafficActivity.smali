@@ -169,13 +169,13 @@
     .line 76
     iget-object v1, p0, Lcom/wumii/android/mimi/debug/DebugTrafficActivity;->o:Landroid/util/DisplayMetrics;
 
-    invoke-static {v1, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v1, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
     iget-object v2, p0, Lcom/wumii/android/mimi/debug/DebugTrafficActivity;->o:Landroid/util/DisplayMetrics;
 
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v2
 
@@ -256,11 +256,11 @@
     invoke-direct {p0, v0}, Lcom/wumii/android/mimi/debug/DebugTrafficActivity;->b(Ljava/lang/String;)V
 
     .line 55
-    invoke-static {}, Lcom/wumii/android/mimi/a/NetworkTrafficMonitor;->a()Lcom/wumii/android/mimi/a/NetworkTrafficMonitor;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor;->a()Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/NetworkTrafficMonitor;->b()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor;->b()Ljava/util/List;
 
     move-result-object v2
 
@@ -281,7 +281,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/a/NetworkTrafficMonitor$ICaw;
+    check-cast v0, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;
 
     .line 59
     new-instance v3, Ljava/lang/StringBuilder;
@@ -294,7 +294,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/NetworkTrafficMonitor$ICaw;->b()I
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->b()I
 
     move-result v4
 
@@ -308,7 +308,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/NetworkTrafficMonitor$ICaw;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->a()Ljava/lang/String;
 
     move-result-object v4
 
@@ -322,7 +322,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/NetworkTrafficMonitor$ICaw;->c()J
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/NetworkTrafficMonitor$ICaw;->c()J
 
     move-result-wide v4
 

@@ -66,7 +66,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/Utils;->c(Ljava/lang/String;)Z
+    invoke-static {v1}, Lcom/wumii/android/mimi/util/Utils;->c(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -77,7 +77,7 @@
 
     const/16 v2, 0x8
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 37
     :goto_0
@@ -97,7 +97,7 @@
 
     .line 33
     :cond_0
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v1
 
@@ -107,16 +107,16 @@
 
     iget-object v3, p3, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->c:Landroid/widget/ImageView;
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;->e:Lcom/e/a/b/DisplayImageOptions;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SecretMessageChatItemBuilder;->e:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-    invoke-virtual {v1, v2, v3, v4}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v1, v2, v3, v4}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 34
     iget-object v1, p3, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder$ICk;->c:Landroid/widget/ImageView;
 
     const/4 v2, 0x0
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 .end method

@@ -385,7 +385,7 @@
     .line 171
     :cond_1
     :try_start_2
-    sget-object v0, Lcom/wumii/android/mimi/c/Constants$ICr;->c:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->c:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -402,7 +402,7 @@
 
     .line 175
     :cond_2
-    sget-object v0, Lcom/wumii/android/mimi/c/Constants$ICr;->d:Ljava/lang/String;
+    sget-object v0, Lcom/wumii/android/mimi/util/Constants$ICr;->d:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1149,13 +1149,13 @@
     .line 306
     iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/h/GlobalStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/storage/GlobalStorage;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/GlobalStorage;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/GlobalStorage;->a(Z)V
 
     .line 308
     invoke-virtual {p0}, Lcom/wumii/android/mimi/push/PushService;->stopSelf()V
@@ -1339,7 +1339,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/d/FileHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     move-result-object v0
 
@@ -1347,7 +1347,7 @@
 
     const-class v3, Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
-    invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/models/d/FileHelper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1858,11 +1858,11 @@
     .line 542
     iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->n()Lcom/wumii/android/mimi/models/d/NetworkHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->n()Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/NetworkHelper;->a()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/NetworkHelper;->a()Z
 
     move-result v0
 
@@ -1983,11 +1983,11 @@
     :try_start_0
     iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/h/GlobalStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/storage/GlobalStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/GlobalStorage;->c()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/storage/GlobalStorage;->c()Z
 
     move-result v0
 
@@ -1997,13 +1997,13 @@
     .line 592
     iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/h/GlobalStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/storage/GlobalStorage;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/GlobalStorage;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/GlobalStorage;->a(Z)V
 
     .line 595
     :cond_0
@@ -2215,11 +2215,11 @@
     .line 671
     iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->n()Lcom/wumii/android/mimi/models/d/NetworkHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->n()Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/NetworkHelper;->a()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/NetworkHelper;->a()Z
 
     move-result v0
 
@@ -2854,11 +2854,11 @@
     :try_start_0
     iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->n()Lcom/wumii/android/mimi/models/d/NetworkHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->n()Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/NetworkHelper;->a()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/NetworkHelper;->a()Z
 
     move-result v0
 
@@ -3120,11 +3120,11 @@
     .line 370
     iget-object v0, p0, Lcom/wumii/android/mimi/push/PushService;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/h/GlobalStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->I()Lcom/wumii/android/mimi/models/storage/GlobalStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/GlobalStorage;->c()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/storage/GlobalStorage;->c()Z
 
     move-result v0
 

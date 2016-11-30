@@ -56,11 +56,11 @@
     :goto_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICu;->a:Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->j(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/c/BottomPanFacade;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->j(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/BottomPanFacade;->b()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->b()Z
 
     move-result v0
 

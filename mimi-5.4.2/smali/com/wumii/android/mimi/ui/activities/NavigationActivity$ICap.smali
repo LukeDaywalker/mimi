@@ -32,7 +32,7 @@
     .line 471
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICap;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->g()Lcom/wumii/android/mimi/ui/a/f/FeedsFragment;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->g()Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
 
     move-result-object v0
 
@@ -69,7 +69,7 @@
     .line 474
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/a/f/FeedsFragment;->a(I)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;->a(I)V
 
     .line 479
     :cond_0

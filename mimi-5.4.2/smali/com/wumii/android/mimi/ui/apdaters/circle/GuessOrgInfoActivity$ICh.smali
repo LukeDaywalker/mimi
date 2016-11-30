@@ -48,7 +48,7 @@
     .line 67
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity$ICh;->a:Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->b(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;)Lcom/wumii/android/mimi/a/CircleManager;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->b(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;)Lcom/wumii/android/mimi/manager/CircleManager;
 
     move-result-object v1
 
@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/a/CircleManager;->b(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/manager/CircleManager;->b(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;)V
 
     .line 69
     :cond_0

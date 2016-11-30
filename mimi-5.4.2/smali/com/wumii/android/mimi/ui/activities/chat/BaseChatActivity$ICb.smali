@@ -54,13 +54,13 @@
     :pswitch_1
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICb;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->v()Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->v()Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICb;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->b(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
 
     goto :goto_0
 

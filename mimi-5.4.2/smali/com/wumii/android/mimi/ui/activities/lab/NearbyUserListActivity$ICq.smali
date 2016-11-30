@@ -36,7 +36,7 @@
     .line 100
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICq;->b:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->d(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;)Lcom/wumii/android/mimi/models/d/LocationHelper;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->d(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;)Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
     move-result-object v0
 
@@ -44,7 +44,7 @@
 
     invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICr;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICq;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/LocationHelper;->a(Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/LocationHelper;->a(Lcom/wumii/android/mimi/models/helper/LocationHelper$ICu;)V
 
     .line 126
     return-void

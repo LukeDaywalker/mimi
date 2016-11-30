@@ -55,7 +55,7 @@
 
     const-string/jumbo v2, "checkArgs fail, toUserName is invalid"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
     return v0
@@ -79,7 +79,7 @@
 
     const-string/jumbo v2, "ext msg is not null, while the length exceed 1024 bytes"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 

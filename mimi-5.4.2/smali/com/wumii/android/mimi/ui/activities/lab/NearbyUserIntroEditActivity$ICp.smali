@@ -3,7 +3,7 @@
 .source "NearbyUserIntroEditActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/b/AppealLegalityTask$ICc;
+.implements Lcom/wumii/android/mimi/task/AppealLegalityTask$ICc;
 
 
 # instance fields

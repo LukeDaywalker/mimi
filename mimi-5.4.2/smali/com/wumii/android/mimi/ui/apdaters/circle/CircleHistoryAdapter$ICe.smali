@@ -146,12 +146,12 @@
     .line 145
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICe;->c:Landroid/view/View;
 
-    invoke-static {v0, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 146
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICe;->d:Landroid/view/View;
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 151
     :goto_1
@@ -213,12 +213,12 @@
     :cond_3
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICe;->c:Landroid/view/View;
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 149
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/CircleHistoryAdapter$ICe;->d:Landroid/view/View;
 
-    invoke-static {v0, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_1
 .end method

@@ -43,7 +43,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->s()Lcom/wumii/android/mimi/models/h/a/ChatMessageReportStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->s()Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;
 
     move-result-object v0
 
@@ -59,7 +59,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/h/a/ChatMessageReportStorage;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 93
     :goto_0
@@ -76,7 +76,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/TransientImageActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->r()Lcom/wumii/android/mimi/models/h/a/ChatMessageStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->r()Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
 
     move-result-object v0
 
@@ -92,7 +92,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/h/a/ChatMessageStorage;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

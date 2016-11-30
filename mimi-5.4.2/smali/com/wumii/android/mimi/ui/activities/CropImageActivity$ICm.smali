@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;
-.super Lcom/wumii/android/mimi/b/BaseAsyncTask;
+.super Lcom/wumii/android/mimi/task/BaseAsyncTask;
 .source "CropImageActivity.java"
 
 
@@ -29,7 +29,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
     .line 94
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/BaseAsyncTask;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/BaseAsyncTask;-><init>(Landroid/content/Context;)V
 
     .line 95
     return-void
@@ -51,7 +51,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Landroid/content/Context;II)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 118
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
@@ -126,7 +126,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Landroid/content/Context;II)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 129
     :cond_0
@@ -198,7 +198,7 @@
 
     iget v1, v1, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/ImageUtils;->b(Ljava/lang/String;I)Landroid/graphics/Bitmap;
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/ImageUtils;->b(Ljava/lang/String;I)Landroid/graphics/Bitmap;
 
     move-result-object v0
 

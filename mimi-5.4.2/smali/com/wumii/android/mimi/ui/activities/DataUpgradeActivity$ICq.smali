@@ -30,7 +30,7 @@
 
     .prologue
     .line 55
-    invoke-static {}, Lcom/wumii/android/mimi/c/FileUpgradeUtils;->b()V
+    invoke-static {}, Lcom/wumii/android/mimi/util/FileUpgradeUtils;->b()V
 
     .line 57
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity$ICq;->a:Lcom/wumii/android/mimi/ui/activities/DataUpgradeActivity;

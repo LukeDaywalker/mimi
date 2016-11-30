@@ -3,7 +3,7 @@
 .source "ImageActivity.java"
 
 # interfaces
-.implements Lcom/e/a/b/f/ImageLoadingProgressListener;
+.implements Lcom/nostra13/universalimageloader/core/listener/ImageLoadingProgressListener;
 
 
 # instance fields

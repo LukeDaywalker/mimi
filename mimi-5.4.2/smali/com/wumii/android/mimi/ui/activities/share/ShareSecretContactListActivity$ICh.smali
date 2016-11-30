@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity$ICh;
-.super Lcom/wumii/android/mimi/b/ShareSecretToContactTask;
+.super Lcom/wumii/android/mimi/task/ShareSecretToContactTask;
 .source "ShareSecretContactListActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 71
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity$ICh;->a:Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;
 
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/ShareSecretToContactTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ShareSecretToContactTask;-><init>(Landroid/app/Activity;)V
 
     return-void
 .end method
@@ -36,11 +36,11 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity$ICh;->a:Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;
 
-    invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->a(Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;)Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;
+    invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->a(Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;)Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/apdaters/d/MultiSelectContactSectionedAdapter;->f()I
+    invoke-virtual {v2}, Lcom/wumii/android/mimi/ui/apdaters/share/MultiSelectContactSectionedAdapter;->f()I
 
     move-result v2
 
@@ -59,15 +59,15 @@
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/share/ShareSecretContactListActivity;->finish()V
 
     .line 80
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->e()Lcom/wumii/android/mimi/a/ChatManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->e()Lcom/wumii/android/mimi/manager/ChatManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ChatManager;->f()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ChatManager;->f()V
 
     .line 81
     return-void

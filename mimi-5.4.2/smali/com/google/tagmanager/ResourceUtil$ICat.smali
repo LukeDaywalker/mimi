@@ -10,13 +10,13 @@
             "Ljava/util/Map",
             "<",
             "Ljava/lang/String;",
-            "Lcom/google/analytics/b/a/a/TypeSystem$ICb;",
+            "Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private final b:Lcom/google/analytics/b/a/a/TypeSystem$ICb;
+.field private final b:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
 
 # virtual methods
@@ -28,7 +28,7 @@
             "Ljava/util/Map",
             "<",
             "Ljava/lang/String;",
-            "Lcom/google/analytics/b/a/a/TypeSystem$ICb;",
+            "Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;",
             ">;"
         }
     .end annotation
@@ -44,7 +44,7 @@
     return-object v0
 .end method
 
-.method public a(Ljava/lang/String;Lcom/google/analytics/b/a/a/TypeSystem$ICb;)V
+.method public a(Ljava/lang/String;Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;)V
     .locals 1
 
     .prologue
@@ -57,12 +57,12 @@
     return-void
 .end method
 
-.method public b()Lcom/google/analytics/b/a/a/TypeSystem$ICb;
+.method public b()Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
     .locals 1
 
     .prologue
     .line 108
-    iget-object v0, p0, Lcom/google/tagmanager/ResourceUtil$ICat;->b:Lcom/google/analytics/b/a/a/TypeSystem$ICb;
+    iget-object v0, p0, Lcom/google/tagmanager/ResourceUtil$ICat;->b:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     return-object v0
 .end method
@@ -96,7 +96,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/tagmanager/ResourceUtil$ICat;->b:Lcom/google/analytics/b/a/a/TypeSystem$ICb;
+    iget-object v1, p0, Lcom/google/tagmanager/ResourceUtil$ICat;->b:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

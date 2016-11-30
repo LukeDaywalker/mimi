@@ -129,7 +129,7 @@
 
     const-string/jumbo v2, "checkArgs fail, textObject is invalid"
 
-    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/utils/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 100
     :goto_0
@@ -154,7 +154,7 @@
 
     const-string/jumbo v2, "checkArgs fail, imageObject is invalid"
 
-    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/utils/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -177,7 +177,7 @@
 
     const-string/jumbo v2, "checkArgs fail, mediaObject is invalid"
 
-    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/utils/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -200,7 +200,7 @@
 
     const-string/jumbo v2, "checkArgs fail, textObject and imageObject and mediaObject is null"
 
-    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/utils/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 

@@ -3,7 +3,7 @@
 .source "GuessOrgInfoActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;
+.implements Lcom/wumii/android/mimi/models/helper/LocationHelper$ICu;
 
 
 # instance fields
@@ -36,13 +36,13 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity$ICj;->a:Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->b(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;)Lcom/wumii/android/mimi/a/CircleManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->b(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;)Lcom/wumii/android/mimi/manager/CircleManager;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v2, v2, v2, v1}, Lcom/wumii/android/mimi/a/CircleManager;->a(Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;Z)V
+    invoke-virtual {v0, v2, v2, v2, v1}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;Z)V
 
     .line 99
     return-void
@@ -57,7 +57,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity$ICj;->a:Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->b(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;)Lcom/wumii/android/mimi/a/CircleManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->b(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;)Lcom/wumii/android/mimi/manager/CircleManager;
 
     move-result-object v0
 
@@ -83,7 +83,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/a/CircleManager;->a(Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;Z)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;Z)V
 
     .line 94
     return-void

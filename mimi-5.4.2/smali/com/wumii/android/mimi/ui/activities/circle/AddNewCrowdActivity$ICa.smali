@@ -1,5 +1,5 @@
 .class public Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;
-.super Lcom/wumii/android/mimi/models/e/CircleObserver;
+.super Lcom/wumii/android/mimi/models/observer/CircleObserver;
 .source "AddNewCrowdActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 86
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;
 
-    invoke-direct {p0}, Lcom/wumii/android/mimi/models/e/CircleObserver;-><init>()V
+    invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/CircleObserver;-><init>()V
 
     return-void
 .end method
@@ -33,7 +33,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Landroid/content/Context;II)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 90
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity$ICa;->a:Lcom/wumii/android/mimi/ui/activities/circle/AddNewCrowdActivity;
@@ -55,7 +55,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -72,7 +72,7 @@
     :goto_0
     const/4 v2, 0x0
 
-    invoke-static {v1, v0, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Landroid/content/Context;Ljava/lang/String;I)V
+    invoke-static {v1, v0, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;Ljava/lang/String;I)V
 
     .line 96
     return-void

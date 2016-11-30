@@ -10,9 +10,9 @@
 # instance fields
 .field private b:Lcom/wumii/android/mimi/models/service/ActivityService;
 
-.field private c:Lcom/wumii/android/mimi/models/d/FileHelper;
+.field private c:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-.field private d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.field private d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
 .field private e:Lcom/wumii/android/mimi/models/service/UserService$AppUserInfo;
 
@@ -48,22 +48,22 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/d/FileHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->c:Lcom/wumii/android/mimi/models/d/FileHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->c:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 44
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 45
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -89,36 +89,36 @@
     const/4 v2, 0x0
 
     .line 49
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->c:Lcom/wumii/android/mimi/models/d/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->c:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/d/FileHelper;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;)V
 
     .line 51
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/h/CommonStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/CommonStorage;->b(Z)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/CommonStorage;->b(Z)V
 
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-string/jumbo v1, "app_user_info"
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/String;)V
 
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-string/jumbo v1, "lock_password"
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/String;)V
 
     .line 55
     iput-object v2, p0, Lcom/wumii/android/mimi/models/service/UserService;->e:Lcom/wumii/android/mimi/models/service/UserService$AppUserInfo;
@@ -127,19 +127,19 @@
     iput-object v2, p0, Lcom/wumii/android/mimi/models/service/UserService;->f:Lcom/wumii/android/mimi/models/service/UserService$UserSettings;
 
     .line 58
-    invoke-static {}, Lcom/wumii/android/mimi/models/d/NotificationHelper;->a()V
+    invoke-static {}, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->a()V
 
     .line 60
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->p()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->p()V
 
     .line 62
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a()V
 
     .line 64
     iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->b:Lcom/wumii/android/mimi/models/service/ActivityService;
@@ -183,13 +183,13 @@
 
     .line 90
     :try_start_0
-    iget-object v4, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v4, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v5
 
-    invoke-virtual {v5}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/a/a/JacksonMapper;
+    invoke-virtual {v5}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/jackson/databind/JacksonMapper;
 
     move-result-object v5
 
@@ -199,7 +199,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v5, p1, v6, v7}, Lcom/wumii/a/a/JacksonMapper;->a(Lcom/fasterxml/jackson/databind/JsonNode;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v5, p1, v6, v7}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Lcom/fasterxml/jackson/databind/JsonNode;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -207,9 +207,9 @@
 
     move-result-object v0
 
-    invoke-virtual {v4, v5, v0}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v4, v5, v0}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
     :try_end_0
-    .catch Lcom/wumii/a/a/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/wumii/jackson/databind/JacksonMapper$ICg; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 87
     :cond_0
@@ -227,7 +227,7 @@
     .line 92
     sget-object v4, Lcom/wumii/android/mimi/models/service/UserService;->a:Lorg/slf4j/Logger;
 
-    invoke-virtual {v0}, Lcom/wumii/a/a/JacksonMapper$ICg;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/wumii/jackson/databind/JacksonMapper$ICg;->toString()Ljava/lang/String;
 
     move-result-object v5
 
@@ -240,16 +240,16 @@
     return-void
 .end method
 
-.method public a(Lcom/wumii/android/mimi/models/b/SenderRole;)V
+.method public a(Lcom/wumii/android/mimi/models/enum/SenderRole;)V
     .locals 2
 
     .prologue
     .line 138
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-string/jumbo v1, "cached_default_sender_role"
 
-    invoke-virtual {v0, p1, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, p1, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 139
     return-void
@@ -260,21 +260,21 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->c:Lcom/wumii/android/mimi/models/d/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->c:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     # getter for: Lcom/wumii/android/mimi/models/service/UserService$AppUserInfo;->phoneNumber:Ljava/lang/String;
     invoke-static {p1}, Lcom/wumii/android/mimi/models/service/UserService$AppUserInfo;->access$000(Lcom/wumii/android/mimi/models/service/UserService$AppUserInfo;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/FileHelper;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;)V
 
     .line 73
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-string/jumbo v1, "app_user_info"
 
-    invoke-virtual {v0, p1, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, p1, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 74
     iput-object p1, p0, Lcom/wumii/android/mimi/models/service/UserService;->e:Lcom/wumii/android/mimi/models/service/UserService$AppUserInfo;
@@ -302,7 +302,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -350,7 +350,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -373,7 +373,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->c:Lcom/wumii/android/mimi/models/d/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->c:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/models/service/UserService;->e:Lcom/wumii/android/mimi/models/service/UserService$AppUserInfo;
 
@@ -382,16 +382,16 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/FileHelper;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;)V
 
     .line 79
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/models/service/UserService;->e:Lcom/wumii/android/mimi/models/service/UserService$AppUserInfo;
 
     const-string/jumbo v2, "app_user_info"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 80
     return-void
@@ -420,7 +420,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -446,7 +446,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -493,7 +493,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -516,13 +516,13 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/models/service/UserService;->f:Lcom/wumii/android/mimi/models/service/UserService$UserSettings;
 
     const-string/jumbo v2, "user_settings"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 84
     return-void
@@ -603,7 +603,7 @@
     if-nez v0, :cond_0
 
     .line 119
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v1, Lcom/wumii/android/mimi/models/service/UserService$AppUserInfo;
 
@@ -611,7 +611,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -634,7 +634,7 @@
     if-eqz v0, :cond_1
 
     .line 123
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->c:Lcom/wumii/android/mimi/models/d/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->c:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/models/service/UserService;->e:Lcom/wumii/android/mimi/models/service/UserService$AppUserInfo;
 
@@ -643,7 +643,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/FileHelper;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;)V
 
     .line 126
     :cond_1
@@ -652,35 +652,35 @@
     return-object v0
 .end method
 
-.method public g()Lcom/wumii/android/mimi/models/b/SenderRole;
+.method public g()Lcom/wumii/android/mimi/models/enum/SenderRole;
     .locals 4
 
     .prologue
     .line 130
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    const-class v1, Lcom/wumii/android/mimi/models/b/SenderRole;
+    const-class v1, Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     const-string/jumbo v2, "cached_default_sender_role"
 
-    sget-object v3, Lcom/wumii/android/mimi/models/b/SenderRole;->b:Lcom/wumii/android/mimi/models/b/SenderRole;
+    sget-object v3, Lcom/wumii/android/mimi/models/enum/SenderRole;->b:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/wumii/android/mimi/models/b/SenderRole;
+    check-cast v0, Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     .line 131
-    sget-object v1, Lcom/wumii/android/mimi/models/b/SenderRole;->c:Lcom/wumii/android/mimi/models/b/SenderRole;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/SenderRole;->c:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     if-ne v0, v1, :cond_0
 
-    invoke-static {}, Lcom/wumii/android/mimi/c/UserProfileManager;->a()Lcom/wumii/android/mimi/c/UserProfileManager;
+    invoke-static {}, Lcom/wumii/android/mimi/util/UserProfileManager;->a()Lcom/wumii/android/mimi/util/UserProfileManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/c/UserProfileManager;->b()Lcom/wumii/android/mimi/models/entities/profile/UserProfile;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/util/UserProfileManager;->b()Lcom/wumii/android/mimi/models/entities/profile/UserProfile;
 
     move-result-object v1
 
@@ -691,7 +691,7 @@
     if-nez v1, :cond_0
 
     .line 132
-    sget-object v0, Lcom/wumii/android/mimi/models/b/SenderRole;->b:Lcom/wumii/android/mimi/models/b/SenderRole;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/SenderRole;->b:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     .line 134
     :cond_0
@@ -709,7 +709,7 @@
 
     .line 171
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/service/UserService;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v1, Lcom/wumii/android/mimi/models/service/UserService$UserSettings;
 
@@ -717,7 +717,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 

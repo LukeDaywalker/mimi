@@ -86,7 +86,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/ICa;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     new-instance v0, Lcom/tencent/mm/sdk/openapi/WXApiImplV10;
 

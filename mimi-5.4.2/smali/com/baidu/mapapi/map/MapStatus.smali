@@ -177,9 +177,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$a;
+    iget-object v7, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$ICa;
 
-    iget-object v7, v7, Lcom/baidu/platform/comapi/map/B$a;->e:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v7, v7, Lcom/baidu/platform/comapi/map/B$ICa;->e:Lcom/baidu/mapapi/model/inner/Point;
 
     iget v7, v7, Lcom/baidu/mapapi/model/inner/Point;->y:I
 
@@ -189,9 +189,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$a;
+    iget-object v7, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$ICa;
 
-    iget-object v7, v7, Lcom/baidu/platform/comapi/map/B$a;->e:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v7, v7, Lcom/baidu/platform/comapi/map/B$ICa;->e:Lcom/baidu/mapapi/model/inner/Point;
 
     iget v7, v7, Lcom/baidu/mapapi/model/inner/Point;->x:I
 
@@ -213,9 +213,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$a;
+    iget-object v13, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$ICa;
 
-    iget-object v13, v13, Lcom/baidu/platform/comapi/map/B$a;->f:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v13, v13, Lcom/baidu/platform/comapi/map/B$ICa;->f:Lcom/baidu/mapapi/model/inner/Point;
 
     iget v13, v13, Lcom/baidu/mapapi/model/inner/Point;->y:I
 
@@ -225,9 +225,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$a;
+    iget-object v13, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$ICa;
 
-    iget-object v13, v13, Lcom/baidu/platform/comapi/map/B$a;->f:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v13, v13, Lcom/baidu/platform/comapi/map/B$ICa;->f:Lcom/baidu/mapapi/model/inner/Point;
 
     iget v13, v13, Lcom/baidu/mapapi/model/inner/Point;->x:I
 
@@ -249,13 +249,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$a;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$ICa;
 
     move-object/from16 v18, v0
 
     move-object/from16 v0, v18
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$a;->h:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->h:Lcom/baidu/mapapi/model/inner/Point;
 
     move-object/from16 v18, v0
 
@@ -273,13 +273,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$a;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$ICa;
 
     move-object/from16 v20, v0
 
     move-object/from16 v0, v20
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$a;->h:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->h:Lcom/baidu/mapapi/model/inner/Point;
 
     move-object/from16 v20, v0
 
@@ -309,13 +309,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$a;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$ICa;
 
     move-object/from16 v19, v0
 
     move-object/from16 v0, v19
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$a;->g:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->g:Lcom/baidu/mapapi/model/inner/Point;
 
     move-object/from16 v19, v0
 
@@ -333,13 +333,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$a;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->k:Lcom/baidu/platform/comapi/map/B$ICa;
 
     move-object/from16 v19, v0
 
     move-object/from16 v0, v19
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$a;->g:Lcom/baidu/mapapi/model/inner/Point;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B$ICa;->g:Lcom/baidu/mapapi/model/inner/Point;
 
     move-object/from16 v19, v0
 

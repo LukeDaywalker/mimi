@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$ICaa;
-.super Lcom/wumii/android/mimi/b/ProgressAsyncTask;
+.super Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 .source "SendAnonymousLetterActivity.java"
 
 
@@ -22,7 +22,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;
 
     .line 151
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
 
     .line 152
     return-void
@@ -75,13 +75,13 @@
 
     .prologue
     .line 178
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$ICaa;->f:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$ICaa;->f:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603b5
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 179
     return-void
@@ -130,11 +130,11 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 160
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$ICaa;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity$ICaa;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "chat/message"
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 

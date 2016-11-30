@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICw;
-.super Lcom/wumii/android/mimi/b/HttpAsyncTask;
+.super Lcom/wumii/android/mimi/task/HttpAsyncTask;
 .source "PushNotificationActivity.java"
 
 
@@ -18,7 +18,7 @@
     .line 258
     const/4 v0, 0x1
 
-    invoke-direct {p0, p2, v0}, Lcom/wumii/android/mimi/b/HttpAsyncTask;-><init>(Landroid/content/Context;Z)V
+    invoke-direct {p0, p2, v0}, Lcom/wumii/android/mimi/task/HttpAsyncTask;-><init>(Landroid/content/Context;Z)V
 
     .line 259
     return-void
@@ -102,7 +102,7 @@
 
     .prologue
     .line 269
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICw;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICw;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v1, "settings"
 
@@ -110,7 +110,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 

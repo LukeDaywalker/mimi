@@ -6,7 +6,7 @@
 # instance fields
 .field private final a:Lcom/google/tagmanager/TagManager;
 
-.field private b:Lcom/google/analytics/a/b/Serving$ICj;
+.field private b:Lcom/google/analytics/containertag/proto/Serving$ICj;
 
 .field private c:Lcom/google/tagmanager/Container$ICe;
 
@@ -326,9 +326,9 @@
     .line 633
     iget-object v0, p0, Lcom/google/tagmanager/Container;->c:Lcom/google/tagmanager/Container$ICe;
 
-    iget-object v1, p0, Lcom/google/tagmanager/Container;->b:Lcom/google/analytics/a/b/Serving$ICj;
+    iget-object v1, p0, Lcom/google/tagmanager/Container;->b:Lcom/google/analytics/containertag/proto/Serving$ICj;
 
-    iget-object v1, v1, Lcom/google/analytics/a/b/Serving$ICj;->d:Ljava/lang/String;
+    iget-object v1, v1, Lcom/google/analytics/containertag/proto/Serving$ICj;->d:Ljava/lang/String;
 
     invoke-interface {v0, p1, p2, v1}, Lcom/google/tagmanager/Container$ICe;->a(JLjava/lang/String;)V
     :try_end_0

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.field private a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
 .field private final b:I
 
@@ -32,11 +32,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder;->a:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 96
     invoke-static {p1}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->a(Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;)I
@@ -74,18 +74,18 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder;->f:Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;
 
     .line 102
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->f(Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;)Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->f(Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;)Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 103
-    invoke-static {p1}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->f(Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;)Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    invoke-static {p1}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->f(Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;)Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 106
     :cond_0
@@ -181,12 +181,12 @@
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.method static synthetic c(Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
     .locals 1
 
     .prologue
     .line 16
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder;->a:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     return-object v0
 .end method

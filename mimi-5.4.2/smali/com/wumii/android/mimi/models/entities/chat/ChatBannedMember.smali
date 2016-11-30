@@ -77,9 +77,9 @@
     invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
 
     .line 54
-    new-instance v8, Lcom/wumii/android/mimi/models/f/a/MobileChatMessageParserFactory;
+    new-instance v8, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserFactory;
 
-    invoke-direct {v8}, Lcom/wumii/android/mimi/models/f/a/MobileChatMessageParserFactory;-><init>()V
+    invoke-direct {v8}, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserFactory;-><init>()V
 
     .line 57
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -106,7 +106,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v8, v0}, Lcom/wumii/android/mimi/models/f/a/MobileChatMessageParserFactory;->a(Lcom/wumii/mimi/model/domain/mobile/MobileChatMessage;)Lcom/wumii/android/mimi/models/f/a/MobileChatMessageParserBase;
+    invoke-virtual {v8, v0}, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserFactory;->a(Lcom/wumii/mimi/model/domain/mobile/MobileChatMessage;)Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserBase;
 
     move-result-object v0
 
@@ -114,7 +114,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/models/f/a/MobileChatMessageParserBase;->a(Lcom/wumii/mimi/model/domain/mobile/MobileChatMessage;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+    invoke-virtual {v0, v1, p0}, Lcom/wumii/android/mimi/models/parser/mobile/MobileChatMessageParserBase;->a(Lcom/wumii/mimi/model/domain/mobile/MobileChatMessage;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     move-result-object v5
 

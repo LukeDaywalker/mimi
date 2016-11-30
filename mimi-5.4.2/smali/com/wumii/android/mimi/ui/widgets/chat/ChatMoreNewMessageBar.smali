@@ -8,7 +8,7 @@
 
 .field private b:Landroid/widget/TextView;
 
-.field private c:Lcom/e/a/b/DisplayImageOptions;
+.field private c:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
 
 # direct methods
@@ -74,7 +74,7 @@
     invoke-virtual {p0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreNewMessageBar;->setGravity(I)V
 
     .line 52
-    invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
@@ -109,7 +109,7 @@
     .line 61
     const/high16 v1, 0x41e00000    # 28.0f
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
@@ -171,7 +171,7 @@
     invoke-direct {v2, v7, v3}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
     .line 73
-    invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -188,11 +188,11 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreNewMessageBar;->addView(Landroid/view/View;)V
 
     .line 77
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/Utils;->a(I)Lcom/e/a/b/DisplayImageOptions;
+    invoke-static {v1}, Lcom/wumii/android/mimi/util/Utils;->a(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreNewMessageBar;->c:Lcom/e/a/b/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreNewMessageBar;->c:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 78
     return-void
@@ -354,7 +354,7 @@
     invoke-static {v1, v0}, Lcom/wumii/android/mimi/ui/EmoticonUtils;->a(Landroid/widget/TextView;Ljava/lang/CharSequence;)V
 
     .line 107
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v0
 
@@ -368,9 +368,9 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreNewMessageBar;->a:Landroid/widget/ImageView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreNewMessageBar;->c:Lcom/e/a/b/DisplayImageOptions;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatMoreNewMessageBar;->c:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 109
     const/4 v0, 0x0

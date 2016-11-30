@@ -32,7 +32,7 @@
     .line 113
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->e(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->e(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
@@ -42,7 +42,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -64,7 +64,7 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->f(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;)Lcom/wumii/android/mimi/b/LoadInvitationTask;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->f(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;)Lcom/wumii/android/mimi/task/LoadInvitationTask;
 
     move-result-object v0
 
@@ -72,7 +72,7 @@
 
     invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICd;-><init>(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICc;Lcom/wumii/android/mimi/models/entities/share/InviteMenuItem;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/b/LoadInvitationTask;->a(Lcom/wumii/android/mimi/b/LoadInvitationTask$ICas;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/task/LoadInvitationTask;->a(Lcom/wumii/android/mimi/task/LoadInvitationTask$ICas;)V
 
     goto :goto_0
 .end method

@@ -66,7 +66,7 @@
 .method public static despatchMessage(IIIJ)V
     .locals 1
 
-    invoke-static {p0, p1, p2, p3, p4}, Lcom/baidu/platform/comjni/engine/a;->a(IIIJ)V
+    invoke-static {p0, p1, p2, p3, p4}, Lcom/baidu/platform/comjni/engine/ICa;->a(IIIJ)V
 
     return-void
 .end method

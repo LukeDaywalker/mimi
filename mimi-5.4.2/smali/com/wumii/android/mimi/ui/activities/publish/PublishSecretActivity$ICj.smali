@@ -73,7 +73,7 @@
     .line 295
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICj;->b:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/b/PublishImageBottomPan;
+    new-instance v1, Lcom/wumii/android/mimi/ui/widgets/publish/PublishImageBottomPan;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICj;->b:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
@@ -89,9 +89,9 @@
 
     move-result-object v4
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/wumii/android/mimi/ui/widgets/b/PublishImageBottomPan;-><init>(Landroid/content/Context;Landroid/view/ViewGroup;Landroid/widget/ImageView;)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/wumii/android/mimi/ui/widgets/publish/PublishImageBottomPan;-><init>(Landroid/content/Context;Landroid/view/ViewGroup;Landroid/widget/ImageView;)V
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->a(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;Lcom/wumii/android/mimi/ui/widgets/b/PublishImageBottomPan;)Lcom/wumii/android/mimi/ui/widgets/b/PublishImageBottomPan;
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->a(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;Lcom/wumii/android/mimi/ui/widgets/publish/PublishImageBottomPan;)Lcom/wumii/android/mimi/ui/widgets/publish/PublishImageBottomPan;
 
     .line 297
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICj;->b:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
@@ -100,7 +100,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->ah:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ah:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
 
@@ -117,7 +117,7 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/b/PublishEmoticonBottomPan;
+    new-instance v2, Lcom/wumii/android/mimi/ui/widgets/publish/PublishEmoticonBottomPan;
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICj;->b:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
@@ -127,7 +127,7 @@
 
     move-result-object v4
 
-    invoke-direct {v2, v3, v4}, Lcom/wumii/android/mimi/ui/widgets/b/PublishEmoticonBottomPan;-><init>(Landroid/content/Context;Landroid/view/ViewGroup;)V
+    invoke-direct {v2, v3, v4}, Lcom/wumii/android/mimi/ui/widgets/publish/PublishEmoticonBottomPan;-><init>(Landroid/content/Context;Landroid/view/ViewGroup;)V
 
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/BottomPanController;->a(Landroid/view/View;Lcom/wumii/android/mimi/ui/widgets/BaseBottomPan;)V
 
@@ -146,7 +146,7 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICj;->b:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
-    invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->j(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/ui/widgets/b/PublishImageBottomPan;
+    invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->j(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/ui/widgets/publish/PublishImageBottomPan;
 
     move-result-object v2
 
@@ -280,11 +280,11 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->C()Lcom/wumii/android/mimi/models/h/DraftStorage;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->C()Lcom/wumii/android/mimi/models/storage/DraftStorage;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/h/DraftStorage;->a()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/storage/DraftStorage;->a()Ljava/lang/String;
 
     move-result-object v1
 

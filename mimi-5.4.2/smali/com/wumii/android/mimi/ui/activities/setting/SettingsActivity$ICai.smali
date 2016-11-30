@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICai;
-.super Lcom/wumii/android/mimi/b/ProgressAsyncTask;
+.super Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 .source "SettingsActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 182
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICai;->a:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;
 
-    invoke-direct {p0, p2, p3}, Lcom/wumii/android/mimi/b/ProgressAsyncTask;-><init>(Landroid/app/Activity;I)V
+    invoke-direct {p0, p2, p3}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;I)V
 
     return-void
 .end method
@@ -27,7 +27,7 @@
 
     .prologue
     .line 202
-    invoke-static {}, Lcom/wumii/android/mimi/c/Utils;->d()V
+    invoke-static {}, Lcom/wumii/android/mimi/util/Utils;->d()V
 
     .line 203
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICai;->a:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;
@@ -67,7 +67,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICah;->a:Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->b(Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;)Lcom/wumii/android/mimi/models/d/FileHelper;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->b(Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;)Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     move-result-object v0
 
@@ -75,7 +75,7 @@
 
     const-class v3, Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
-    invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/models/d/FileHelper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -104,11 +104,11 @@
     .line 197
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICai;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity$ICai;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "logout"
 
-    invoke-virtual {v0, v2, v1}, Lcom/wumii/android/mimi/models/d/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v0, v2, v1}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 

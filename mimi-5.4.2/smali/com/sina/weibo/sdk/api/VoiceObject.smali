@@ -134,7 +134,7 @@
 
     const-string/jumbo v2, "checkArgs fail, dataUrl is invalid"
 
-    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/utils/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -157,7 +157,7 @@
 
     const-string/jumbo v2, "checkArgs fail, dataHdUrl is invalid"
 
-    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/utils/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -172,7 +172,7 @@
 
     const-string/jumbo v2, "checkArgs fail, duration is invalid"
 
-    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/b/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/sina/weibo/sdk/utils/LogUtil;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 

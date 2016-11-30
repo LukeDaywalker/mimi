@@ -6,7 +6,7 @@
 # instance fields
 .field private a:Landroid/content/Context;
 
-.field private b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.field private b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
 .field private c:Landroid/widget/TextView;
 
@@ -24,7 +24,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/d/PreferencesHelper;Landroid/widget/TextView;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/helper/PreferencesHelper;Landroid/widget/TextView;)V
     .locals 3
 
     .prologue
@@ -35,7 +35,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->a:Landroid/content/Context;
 
     .line 34
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 35
     iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->c:Landroid/widget/TextView;
@@ -51,7 +51,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p2, v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p2, v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -170,7 +170,7 @@
     if-eqz v0, :cond_0
 
     .line 74
-    invoke-static {}, Lcom/wumii/android/mimi/c/ThreadUtils;->a()Landroid/os/Handler;
+    invoke-static {}, Lcom/wumii/android/mimi/util/ThreadUtils;->a()Landroid/os/Handler;
 
     move-result-object v0
 
@@ -183,7 +183,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 80
     :goto_0
@@ -227,14 +227,14 @@
     :goto_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->i:Ljava/lang/Runnable;
 
-    invoke-static {v0, p1, p2}, Lcom/wumii/android/mimi/c/ThreadUtils;->a(Ljava/lang/Runnable;J)V
+    invoke-static {v0, p1, p2}, Lcom/wumii/android/mimi/util/ThreadUtils;->a(Ljava/lang/Runnable;J)V
 
     .line 98
     return-void
 
     .line 94
     :cond_0
-    invoke-static {}, Lcom/wumii/android/mimi/c/ThreadUtils;->a()Landroid/os/Handler;
+    invoke-static {}, Lcom/wumii/android/mimi/util/ThreadUtils;->a()Landroid/os/Handler;
 
     move-result-object v0
 
@@ -253,7 +253,7 @@
     iput-boolean p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->d:Z
 
     .line 46
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -261,7 +261,7 @@
 
     const-string/jumbo v2, "chat_voice_mode"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 47
     return-void
@@ -365,7 +365,7 @@
 
     const/4 v1, 0x4
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 104
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->c:Landroid/widget/TextView;

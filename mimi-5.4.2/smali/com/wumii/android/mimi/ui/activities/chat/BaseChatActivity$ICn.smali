@@ -3,7 +3,7 @@
 .source "BaseChatActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
+.implements Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
 
 # instance fields
@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method public a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICe;)V
+.method public a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;)V
     .locals 3
 
     .prologue
@@ -48,11 +48,11 @@
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/h/BaseStorage$ICe;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;->b()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -61,7 +61,7 @@
     .line 1100
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICn;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->v()Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->v()Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;
 
     move-result-object v0
 
@@ -71,7 +71,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->r()Lcom/wumii/android/mimi/models/h/a/ChatMessageStorage;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->r()Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
 
     move-result-object v1
 
@@ -85,11 +85,11 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/h/a/ChatMessageStorage;->d(Ljava/lang/String;)Ljava/util/List;
+    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;->d(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter;->a(Ljava/util/List;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->a(Ljava/util/List;)V
 
     .line 1102
     :cond_0

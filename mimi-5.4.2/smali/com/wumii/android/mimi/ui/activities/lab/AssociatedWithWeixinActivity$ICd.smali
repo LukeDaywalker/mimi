@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;
-.super Lcom/wumii/android/mimi/b/ProgressAsyncTask;
+.super Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 .source "AssociatedWithWeixinActivity.java"
 
 
@@ -18,7 +18,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->a:Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;
 
     .line 259
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
 
     .line 260
     return-void
@@ -45,16 +45,16 @@
 
     .prologue
     .line 307
-    invoke-super {p0, p1}, Lcom/wumii/android/mimi/b/ProgressAsyncTask;->c(Ljava/lang/Exception;)V
+    invoke-super {p0, p1}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->c(Ljava/lang/Exception;)V
 
     .line 308
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->f:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->f:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06037a
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 309
     return-void
@@ -79,7 +79,7 @@
     const/4 v1, 0x0
 
     .line 270
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -107,7 +107,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 
@@ -156,7 +156,7 @@
     move-result-object v5
 
     .line 279
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICd;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -186,7 +186,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v0, v6}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v0, v6}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 

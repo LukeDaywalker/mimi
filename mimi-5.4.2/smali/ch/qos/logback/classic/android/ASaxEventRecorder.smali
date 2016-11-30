@@ -382,9 +382,9 @@
 
     :cond_0
     :try_start_0
-    new-instance v1, La/a/a/a/a;
+    new-instance v1, La/a/a/a/ICa;
 
-    invoke-direct {v1, v0}, La/a/a/a/a;-><init>(Ljava/io/InputStream;)V
+    invoke-direct {v1, v0}, La/a/a/a/ICa;-><init>(Ljava/io/InputStream;)V
 
     const/4 v0, 0x0
 
@@ -392,7 +392,7 @@
 
     :cond_1
     :goto_0
-    invoke-virtual {v1}, La/a/a/a/a;->next()I
+    invoke-virtual {v1}, La/a/a/a/ICa;->next()I
 
     move-result v0
 

@@ -76,7 +76,7 @@
 
     move-result-object v0
 
-    invoke-static {}, Lcom/wumii/android/mimi/c/Constants;->a()Ljava/lang/String;
+    invoke-static {}, Lcom/wumii/android/mimi/util/Constants;->a()Ljava/lang/String;
 
     move-result-object v1
 
@@ -90,13 +90,13 @@
 
     iget-object v4, v4, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICn;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
-    invoke-static {v4}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->r(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/models/b/SenderRole;
+    invoke-static {v4}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->r(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     move-result-object v6
 
     move v4, v2
 
-    invoke-virtual/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->a(Ljava/lang/String;ILjava/lang/String;ILcom/wumii/android/mimi/models/entities/profile/NamedUser;Lcom/wumii/android/mimi/models/b/SenderRole;)V
+    invoke-virtual/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->a(Ljava/lang/String;ILjava/lang/String;ILcom/wumii/android/mimi/models/entities/profile/NamedUser;Lcom/wumii/android/mimi/models/enum/SenderRole;)V
 
     .line 384
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICo;->b:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICn;
@@ -143,7 +143,7 @@
 
     const/high16 v4, 0x43480000    # 200.0f
 
-    invoke-static {v3, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v3, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v3
 

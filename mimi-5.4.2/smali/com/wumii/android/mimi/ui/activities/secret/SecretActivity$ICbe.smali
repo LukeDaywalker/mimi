@@ -3,7 +3,7 @@
 .source "SecretActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
+.implements Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
 
 # instance fields
@@ -25,12 +25,12 @@
 
 
 # virtual methods
-.method public a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICe;)V
+.method public a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;)V
     .locals 3
 
     .prologue
     .line 1665
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/h/BaseStorage$ICe;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;->b()Ljava/lang/String;
 
     move-result-object v0
 
@@ -44,7 +44,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -56,11 +56,11 @@
 
     .line 1669
     :cond_0
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/h/BaseStorage$ICe;->a()Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;->a()Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;->b:Lcom/wumii/android/mimi/models/h/BaseStorage$ICc;
+    sget-object v1, Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;->b:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICc;
 
     if-ne v0, v1, :cond_1
 
@@ -81,7 +81,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->D()Lcom/wumii/android/mimi/models/h/c/SecretStorage;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->D()Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;
 
     move-result-object v1
 
@@ -95,7 +95,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/h/c/SecretStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     move-result-object v1
 

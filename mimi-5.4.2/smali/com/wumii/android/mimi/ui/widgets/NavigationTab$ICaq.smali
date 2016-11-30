@@ -67,7 +67,7 @@
 
     const v5, 0x7f0200ec
 
-    const-class v6, Lcom/wumii/android/mimi/ui/a/f/FeedsFragment;
+    const-class v6, Lcom/wumii/android/mimi/ui/fragments/secret/FeedsFragment;
 
     invoke-direct/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/widgets/NavigationTab$ICaq;-><init>(Ljava/lang/String;IIIILjava/lang/Class;)V
 
@@ -84,7 +84,7 @@
 
     const v8, 0x7f0200e9
 
-    const-class v9, Lcom/wumii/android/mimi/ui/a/d/DiscoverFragment;
+    const-class v9, Lcom/wumii/android/mimi/ui/fragments/discover/DiscoverFragment;
 
     move v5, v10
 
@@ -103,7 +103,7 @@
 
     const v8, 0x7f0200e6
 
-    const-class v9, Lcom/wumii/android/mimi/ui/a/b/ChatsFragment;
+    const-class v9, Lcom/wumii/android/mimi/ui/fragments/chat/ChatsFragment;
 
     move v5, v11
 
@@ -122,7 +122,7 @@
 
     const v8, 0x7f0200ef
 
-    const-class v9, Lcom/wumii/android/mimi/ui/a/d/MineFragment;
+    const-class v9, Lcom/wumii/android/mimi/ui/fragments/discover/MineFragment;
 
     move v5, v12
 

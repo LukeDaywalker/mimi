@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity$ICm;
-.super Lcom/wumii/android/mimi/b/ProgressAsyncTask;
+.super Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 .source "NearbySingleChatInfoActivity.java"
 
 
@@ -18,7 +18,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;
 
     .line 92
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
 
     .line 93
     return-void
@@ -55,7 +55,7 @@
     invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemCheckBox;->setChecked(Z)V
 
     .line 122
-    invoke-super {p0, p1, p2, p3}, Lcom/wumii/android/mimi/b/ProgressAsyncTask;->a(IILjava/lang/String;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->a(IILjava/lang/String;)V
 
     .line 123
     return-void
@@ -112,11 +112,11 @@
     const/4 v0, 0x0
 
     .line 115
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity$ICm;->f:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity$ICm;->f:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v2, 0x7f06039e
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 116
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity;
@@ -179,11 +179,11 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 104
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity$ICm;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbySingleChatInfoActivity$ICm;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "nearby/user"
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 

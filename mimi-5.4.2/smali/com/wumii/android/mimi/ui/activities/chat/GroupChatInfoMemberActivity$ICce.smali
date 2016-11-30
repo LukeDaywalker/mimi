@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICce;
-.super Lcom/wumii/android/mimi/b/BlockTask;
+.super Lcom/wumii/android/mimi/task/BlockTask;
 .source "GroupChatInfoMemberActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 304
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICce;->q:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
 
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/BlockTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/BlockTask;-><init>(Landroid/app/Activity;)V
 
     return-void
 .end method
@@ -27,7 +27,7 @@
 
     .prologue
     .line 314
-    invoke-super {p0, p1, p2, p3}, Lcom/wumii/android/mimi/b/BlockTask;->a(IILjava/lang/String;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/wumii/android/mimi/task/BlockTask;->a(IILjava/lang/String;)V
 
     .line 315
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICce;->q:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;
@@ -85,7 +85,7 @@
 
     .prologue
     .line 307
-    invoke-super {p0, p1}, Lcom/wumii/android/mimi/b/BlockTask;->c(Ljava/lang/Exception;)V
+    invoke-super {p0, p1}, Lcom/wumii/android/mimi/task/BlockTask;->c(Ljava/lang/Exception;)V
 
     .line 308
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICce;->q:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;

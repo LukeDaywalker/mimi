@@ -161,7 +161,7 @@
 
     move-result-object v0
 
-    invoke-static {v3, v0}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v0}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     move-object v0, v1
 
@@ -184,7 +184,7 @@
 
     const-string/jumbo v1, "pathNewToOld fail, newPath is null"
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
     return-object p0
@@ -217,7 +217,7 @@
 
     const-string/jumbo v1, "pathOldToNew fail, oldPath is null"
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
     return-object p0

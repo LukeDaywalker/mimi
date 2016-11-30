@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity$ICk;
-.super Lcom/wumii/android/mimi/models/e/ChatObserver;
+.super Lcom/wumii/android/mimi/models/observer/ChatObserver;
 .source "ShareToChatActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 299
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity$ICk;->a:Lcom/wumii/android/mimi/ui/activities/share/ShareToChatActivity;
 
-    invoke-direct {p0}, Lcom/wumii/android/mimi/models/e/ChatObserver;-><init>()V
+    invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/ChatObserver;-><init>()V
 
     return-void
 .end method

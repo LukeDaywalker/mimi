@@ -8,7 +8,7 @@
         value = {
             "Landroid/util/LongSparseArray",
             "<",
-            "Lcom/baidu/platform/comjni/map/basemap/b;",
+            "Lcom/baidu/platform/comjni/map/basemap/ICb;",
             ">;"
         }
     .end annotation
@@ -58,11 +58,11 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/platform/comjni/map/basemap/b;
+    check-cast v0, Lcom/baidu/platform/comjni/map/basemap/ICb;
 
     if-eqz v0, :cond_0
 
-    invoke-interface {v0, p1, p2}, Lcom/baidu/platform/comjni/map/basemap/b;->a(J)Z
+    invoke-interface {v0, p1, p2}, Lcom/baidu/platform/comjni/map/basemap/ICb;->a(J)Z
 
     move-result v4
 
@@ -76,7 +76,7 @@
 
     move-object v5, p4
 
-    invoke-interface/range {v0 .. v5}, Lcom/baidu/platform/comjni/map/basemap/b;->a(Landroid/os/Bundle;JILandroid/os/Bundle;)I
+    invoke-interface/range {v0 .. v5}, Lcom/baidu/platform/comjni/map/basemap/ICb;->a(Landroid/os/Bundle;JILandroid/os/Bundle;)I
 
     move-result v0
 
@@ -96,7 +96,7 @@
     goto :goto_1
 .end method
 
-.method public static addLayerDataInterface(JLcom/baidu/platform/comjni/map/basemap/b;)V
+.method public static addLayerDataInterface(JLcom/baidu/platform/comjni/map/basemap/ICb;)V
     .locals 2
 
     sget-object v0, Lcom/baidu/platform/comjni/map/basemap/BaseMapCallback;->a:Landroid/util/LongSparseArray;

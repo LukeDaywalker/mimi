@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;
-.super Lcom/wumii/android/mimi/b/ProgressAsyncTask;
+.super Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 .source "ForgotPasswordActivity.java"
 
 
@@ -22,7 +22,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity;
 
     .line 93
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
 
     .line 94
     return-void
@@ -115,7 +115,7 @@
 
     iget-object v6, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;->d:Ljava/lang/String;
 
-    invoke-static {v6}, Lcom/wumii/android/mimi/c/Utils;->g(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v6}, Lcom/wumii/android/mimi/util/Utils;->g(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -160,7 +160,7 @@
 
     .line 132
     :cond_0
-    invoke-super {p0, p1, p2, p3}, Lcom/wumii/android/mimi/b/ProgressAsyncTask;->a(IILjava/lang/String;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->a(IILjava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -192,7 +192,7 @@
 
     move-result-object v2
 
-    const-class v3, Lcom/wumii/android/mimi/ui/a/a/SubmitNewPasswordFragment;
+    const-class v3, Lcom/wumii/android/mimi/ui/fragments/authenticator/SubmitNewPasswordFragment;
 
     invoke-virtual {v3}, Ljava/lang/Class;->toString()Ljava/lang/String;
 
@@ -228,7 +228,7 @@
     iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;->r:Ljava/lang/String;
 
     .line 100
-    invoke-super {p0}, Lcom/wumii/android/mimi/b/ProgressAsyncTask;->j()V
+    invoke-super {p0}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->j()V
 
     .line 101
     return-void
@@ -270,11 +270,11 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 108
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ForgotPasswordActivity$ICj;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "forgot/v2"
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 

@@ -247,7 +247,7 @@
     move v0, v1
 
     :goto_0
-    invoke-static {v4, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v4, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 95
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;->b:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;
@@ -261,7 +261,7 @@
     move v0, v2
 
     :goto_1
-    invoke-static {v4, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v4, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 96
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;->b:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;
@@ -273,7 +273,7 @@
     if-eqz v3, :cond_4
 
     :goto_2
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 98
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;->b:Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbv;
@@ -333,7 +333,7 @@
     if-nez v0, :cond_0
 
     .line 104
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v0
 
@@ -355,7 +355,7 @@
 
     invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView$ICbs;-><init>(Lcom/wumii/android/mimi/ui/widgets/SurveyOptionView;)V
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/f/ImageLoadingListener;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;)V
 
     .line 124
     :cond_0

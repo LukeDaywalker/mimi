@@ -3,7 +3,7 @@
 .source "SearchImageAdapter.java"
 
 # interfaces
-.implements Lcom/e/a/b/f/ImageLoadingProgressListener;
+.implements Lcom/nostra13/universalimageloader/core/listener/ImageLoadingProgressListener;
 
 
 # instance fields
@@ -42,7 +42,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 116
     return-void

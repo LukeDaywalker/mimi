@@ -47,7 +47,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/a/a/JacksonMapper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/jackson/databind/JacksonMapper;
 
     move-result-object v0
 
@@ -55,7 +55,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, p1, v1}, Lcom/wumii/a/a/JacksonMapper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v1}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -83,7 +83,7 @@
     .line 34
     iget-object v1, p0, Lcom/wumii/android/mimi/models/entities/chat/ChatSessionItemBase;->logger:Lorg/slf4j/Logger;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/Throwable;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/Throwable;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -102,11 +102,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/a/a/JacksonMapper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/jackson/databind/JacksonMapper;
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Lcom/wumii/a/a/JacksonMapper;->a(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v0, p0}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/Object;)Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -123,7 +123,7 @@
     .line 21
     iget-object v1, p0, Lcom/wumii/android/mimi/models/entities/chat/ChatSessionItemBase;->logger:Lorg/slf4j/Logger;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/Throwable;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/Throwable;)Ljava/lang/String;
 
     move-result-object v0
 

@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/push/PushService$ICk;
-.super Lcom/wumii/android/mimi/b/SafeAsyncTask;
+.super Lcom/wumii/android/mimi/task/SafeAsyncTask;
 .source "PushService.java"
 
 
@@ -30,7 +30,7 @@
 
     iput-boolean p2, p0, Lcom/wumii/android/mimi/push/PushService$ICk;->a:Z
 
-    invoke-direct {p0}, Lcom/wumii/android/mimi/b/SafeAsyncTask;-><init>()V
+    invoke-direct {p0}, Lcom/wumii/android/mimi/task/SafeAsyncTask;-><init>()V
 
     return-void
 .end method

@@ -75,7 +75,7 @@
 
     invoke-direct {v0, p0, p6}, Lcom/wumii/android/mimi/ui/BottomPanController$ICj;-><init>(Lcom/wumii/android/mimi/ui/BottomPanController;Landroid/view/ViewGroup;)V
 
-    invoke-static {p1, p3, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/OnKeyboardVisibilityListener;)V
+    invoke-static {p1, p3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/OnKeyboardVisibilityListener;)V
 
     .line 79
     return-void
@@ -184,7 +184,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
 
     .line 138
     return-void
@@ -358,21 +358,21 @@
     .line 102
     if-eqz v0, :cond_0
 
-    instance-of v1, v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    instance-of v1, v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     if-eqz v1, :cond_0
 
     .line 103
-    check-cast v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    check-cast v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    sget-object v1, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->ah:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v1, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ah:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     if-ne v0, v1, :cond_0
 
     .line 104
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->ah:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->ah:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->a(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 108
     :cond_0

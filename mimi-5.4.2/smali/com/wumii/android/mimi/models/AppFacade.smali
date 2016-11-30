@@ -8,27 +8,27 @@
 
 
 # instance fields
-.field private b:Lcom/wumii/a/a/JacksonMapper;
+.field private b:Lcom/wumii/jackson/databind/JacksonMapper;
 
 .field private c:Lcom/wumii/android/mimi/models/service/UserService;
 
-.field private d:Lcom/wumii/android/mimi/models/d/FileHelper;
+.field private d:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-.field private e:Lcom/wumii/android/mimi/models/d/HostHelper;
+.field private e:Lcom/wumii/android/mimi/models/helper/HostHelper;
 
 .field private f:Lcom/wumii/android/mimi/models/service/ApplicationInfoService;
 
-.field private g:Lcom/wumii/android/mimi/models/d/LocationHelper;
+.field private g:Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
-.field private h:Lcom/wumii/android/mimi/models/d/NetworkHelper;
+.field private h:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
-.field private i:Lcom/wumii/android/mimi/models/d/NotificationCountHelper;
+.field private i:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
-.field private j:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.field private j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-.field private k:Lcom/wumii/android/mimi/models/d/HttpHelper;
+.field private k:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
-.field private l:Lcom/wumii/android/mimi/models/d/NotificationHelper;
+.field private l:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
 
 .field private m:Lcom/wumii/android/mimi/push/PushReportService;
 
@@ -40,11 +40,11 @@
 
 .field private q:Ljava/lang/String;
 
-.field private r:Lcom/wumii/android/mimi/a/AccountManager;
+.field private r:Lcom/wumii/android/mimi/manager/AccountManager;
 
-.field private s:Lcom/wumii/android/mimi/models/h/GlobalStorage;
+.field private s:Lcom/wumii/android/mimi/models/storage/GlobalStorage;
 
-.field private t:Lcom/wumii/android/mimi/models/h/TagStorage;
+.field private t:Lcom/wumii/android/mimi/models/storage/TagStorage;
 
 
 # direct methods
@@ -126,176 +126,176 @@
 
 
 # virtual methods
-.method public A()Lcom/wumii/android/mimi/models/h/c/FeedModuleStorage;
+.method public A()Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
     .locals 1
 
     .prologue
     .line 261
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/a/AccountManager;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/manager/AccountManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AccountManager;->k()Lcom/wumii/android/mimi/models/h/c/FeedModuleStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->k()Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public B()Lcom/wumii/android/mimi/models/h/b/NotificationStorage;
+.method public B()Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
     .locals 1
 
     .prologue
     .line 265
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/a/AccountManager;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/manager/AccountManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AccountManager;->l()Lcom/wumii/android/mimi/models/h/b/NotificationStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->l()Lcom/wumii/android/mimi/models/storage/notification/NotificationStorage;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public C()Lcom/wumii/android/mimi/models/h/DraftStorage;
+.method public C()Lcom/wumii/android/mimi/models/storage/DraftStorage;
     .locals 1
 
     .prologue
     .line 269
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/a/AccountManager;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/manager/AccountManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AccountManager;->m()Lcom/wumii/android/mimi/models/h/DraftStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->m()Lcom/wumii/android/mimi/models/storage/DraftStorage;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public D()Lcom/wumii/android/mimi/models/h/c/SecretStorage;
+.method public D()Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;
     .locals 1
 
     .prologue
     .line 273
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/a/AccountManager;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/manager/AccountManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AccountManager;->n()Lcom/wumii/android/mimi/models/h/c/SecretStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->n()Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public E()Lcom/wumii/android/mimi/models/h/SurveyStorage;
+.method public E()Lcom/wumii/android/mimi/models/storage/SurveyStorage;
     .locals 1
 
     .prologue
     .line 277
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/a/AccountManager;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/manager/AccountManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AccountManager;->o()Lcom/wumii/android/mimi/models/h/SurveyStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->o()Lcom/wumii/android/mimi/models/storage/SurveyStorage;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public F()Lcom/wumii/android/mimi/models/h/CircleStorage;
+.method public F()Lcom/wumii/android/mimi/models/storage/CircleStorage;
     .locals 1
 
     .prologue
     .line 281
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/a/AccountManager;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/manager/AccountManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AccountManager;->r()Lcom/wumii/android/mimi/models/h/CircleStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->r()Lcom/wumii/android/mimi/models/storage/CircleStorage;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public G()Lcom/wumii/android/mimi/models/h/c/FeedStorage;
+.method public G()Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
     .locals 1
 
     .prologue
     .line 285
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/a/AccountManager;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/manager/AccountManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AccountManager;->p()Lcom/wumii/android/mimi/models/h/c/FeedStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->p()Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public H()Lcom/wumii/android/mimi/models/h/CommonStorage;
+.method public H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
     .locals 1
 
     .prologue
     .line 289
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/a/AccountManager;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/manager/AccountManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AccountManager;->q()Lcom/wumii/android/mimi/models/h/CommonStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->q()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public I()Lcom/wumii/android/mimi/models/h/GlobalStorage;
+.method public I()Lcom/wumii/android/mimi/models/storage/GlobalStorage;
     .locals 1
 
     .prologue
     .line 293
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->s:Lcom/wumii/android/mimi/models/h/GlobalStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->s:Lcom/wumii/android/mimi/models/storage/GlobalStorage;
 
     if-nez v0, :cond_0
 
     .line 294
-    new-instance v0, Lcom/wumii/android/mimi/models/h/GlobalStorage;
+    new-instance v0, Lcom/wumii/android/mimi/models/storage/GlobalStorage;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/models/h/GlobalStorage;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/models/storage/GlobalStorage;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->s:Lcom/wumii/android/mimi/models/h/GlobalStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->s:Lcom/wumii/android/mimi/models/storage/GlobalStorage;
 
     .line 296
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->s:Lcom/wumii/android/mimi/models/h/GlobalStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->s:Lcom/wumii/android/mimi/models/storage/GlobalStorage;
 
     return-object v0
 .end method
 
-.method public J()Lcom/wumii/android/mimi/models/h/TagStorage;
+.method public J()Lcom/wumii/android/mimi/models/storage/TagStorage;
     .locals 1
 
     .prologue
     .line 300
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->t:Lcom/wumii/android/mimi/models/h/TagStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->t:Lcom/wumii/android/mimi/models/storage/TagStorage;
 
     if-nez v0, :cond_0
 
     .line 301
-    new-instance v0, Lcom/wumii/android/mimi/models/h/TagStorage;
+    new-instance v0, Lcom/wumii/android/mimi/models/storage/TagStorage;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/models/h/TagStorage;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/models/storage/TagStorage;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->t:Lcom/wumii/android/mimi/models/h/TagStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->t:Lcom/wumii/android/mimi/models/storage/TagStorage;
 
     .line 303
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->t:Lcom/wumii/android/mimi/models/h/TagStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->t:Lcom/wumii/android/mimi/models/storage/TagStorage;
 
     return-object v0
 .end method
@@ -305,7 +305,7 @@
 
     .prologue
     .line 83
-    invoke-static {p1}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -320,7 +320,7 @@
     :cond_1
     iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->q:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, p1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -330,46 +330,46 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/models/AppFacade;->q:Ljava/lang/String;
 
     .line 89
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->r:Lcom/wumii/android/mimi/a/AccountManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->r:Lcom/wumii/android/mimi/manager/AccountManager;
 
     if-eqz v0, :cond_0
 
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->r:Lcom/wumii/android/mimi/a/AccountManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->r:Lcom/wumii/android/mimi/manager/AccountManager;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AccountManager;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->a()V
 
     .line 91
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->r:Lcom/wumii/android/mimi/a/AccountManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->r:Lcom/wumii/android/mimi/manager/AccountManager;
 
     goto :goto_0
 .end method
 
-.method public b()Lcom/wumii/android/mimi/a/AccountManager;
+.method public b()Lcom/wumii/android/mimi/manager/AccountManager;
     .locals 2
 
     .prologue
     .line 107
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->r:Lcom/wumii/android/mimi/a/AccountManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->r:Lcom/wumii/android/mimi/manager/AccountManager;
 
     if-nez v0, :cond_0
 
     .line 108
-    new-instance v0, Lcom/wumii/android/mimi/a/AccountManager;
+    new-instance v0, Lcom/wumii/android/mimi/manager/AccountManager;
 
     invoke-direct {p0}, Lcom/wumii/android/mimi/models/AppFacade;->K()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/a/AccountManager;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/manager/AccountManager;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->r:Lcom/wumii/android/mimi/a/AccountManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->r:Lcom/wumii/android/mimi/manager/AccountManager;
 
     .line 110
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->r:Lcom/wumii/android/mimi/a/AccountManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->r:Lcom/wumii/android/mimi/manager/AccountManager;
 
     return-object v0
 .end method
@@ -420,25 +420,25 @@
     return-object v0
 .end method
 
-.method public e()Lcom/wumii/android/mimi/models/d/NotificationHelper;
+.method public e()Lcom/wumii/android/mimi/models/helper/NotificationHelper;
     .locals 1
 
     .prologue
     .line 128
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->l:Lcom/wumii/android/mimi/models/d/NotificationHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->l:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
 
     if-nez v0, :cond_0
 
     .line 129
-    new-instance v0, Lcom/wumii/android/mimi/models/d/NotificationHelper;
+    new-instance v0, Lcom/wumii/android/mimi/models/helper/NotificationHelper;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/models/d/NotificationHelper;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/models/helper/NotificationHelper;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->l:Lcom/wumii/android/mimi/models/d/NotificationHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->l:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
 
     .line 131
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->l:Lcom/wumii/android/mimi/models/d/NotificationHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->l:Lcom/wumii/android/mimi/models/helper/NotificationHelper;
 
     return-object v0
 .end method
@@ -512,52 +512,52 @@
     return-object v0
 .end method
 
-.method public i()Lcom/wumii/a/a/JacksonMapper;
+.method public i()Lcom/wumii/jackson/databind/JacksonMapper;
     .locals 3
 
     .prologue
     .line 156
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->b:Lcom/wumii/a/a/JacksonMapper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->b:Lcom/wumii/jackson/databind/JacksonMapper;
 
     if-nez v0, :cond_0
 
     .line 159
-    new-instance v0, Lcom/wumii/a/a/JacksonMapper;
+    new-instance v0, Lcom/wumii/jackson/databind/JacksonMapper;
 
     const/4 v1, 0x0
 
     const/4 v2, 0x1
 
-    invoke-direct {v0, v1, v2}, Lcom/wumii/a/a/JacksonMapper;-><init>(ZZ)V
+    invoke-direct {v0, v1, v2}, Lcom/wumii/jackson/databind/JacksonMapper;-><init>(ZZ)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->b:Lcom/wumii/a/a/JacksonMapper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->b:Lcom/wumii/jackson/databind/JacksonMapper;
 
     .line 161
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->b:Lcom/wumii/a/a/JacksonMapper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->b:Lcom/wumii/jackson/databind/JacksonMapper;
 
     return-object v0
 .end method
 
-.method public j()Lcom/wumii/android/mimi/models/d/FileHelper;
+.method public j()Lcom/wumii/android/mimi/models/helper/FileHelper;
     .locals 1
 
     .prologue
     .line 165
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->d:Lcom/wumii/android/mimi/models/d/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->d:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     if-nez v0, :cond_0
 
     .line 166
-    new-instance v0, Lcom/wumii/android/mimi/models/d/FileHelper;
+    new-instance v0, Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/models/d/FileHelper;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/models/helper/FileHelper;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->d:Lcom/wumii/android/mimi/models/d/FileHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->d:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 168
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->d:Lcom/wumii/android/mimi/models/d/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->d:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     return-object v0
 .end method
@@ -585,127 +585,127 @@
     return-object v0
 .end method
 
-.method public l()Lcom/wumii/android/mimi/models/d/HostHelper;
+.method public l()Lcom/wumii/android/mimi/models/helper/HostHelper;
     .locals 1
 
     .prologue
     .line 179
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->e:Lcom/wumii/android/mimi/models/d/HostHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->e:Lcom/wumii/android/mimi/models/helper/HostHelper;
 
     if-nez v0, :cond_0
 
     .line 180
-    new-instance v0, Lcom/wumii/android/mimi/models/d/HostHelper;
+    new-instance v0, Lcom/wumii/android/mimi/models/helper/HostHelper;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/models/d/HostHelper;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/models/helper/HostHelper;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->e:Lcom/wumii/android/mimi/models/d/HostHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->e:Lcom/wumii/android/mimi/models/helper/HostHelper;
 
     .line 182
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->e:Lcom/wumii/android/mimi/models/d/HostHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->e:Lcom/wumii/android/mimi/models/helper/HostHelper;
 
     return-object v0
 .end method
 
-.method public m()Lcom/wumii/android/mimi/models/d/LocationHelper;
+.method public m()Lcom/wumii/android/mimi/models/helper/LocationHelper;
     .locals 1
 
     .prologue
     .line 186
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->g:Lcom/wumii/android/mimi/models/d/LocationHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->g:Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
     if-nez v0, :cond_0
 
     .line 187
-    new-instance v0, Lcom/wumii/android/mimi/models/d/LocationHelper;
+    new-instance v0, Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/models/d/LocationHelper;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/models/helper/LocationHelper;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->g:Lcom/wumii/android/mimi/models/d/LocationHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->g:Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
     .line 189
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->g:Lcom/wumii/android/mimi/models/d/LocationHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->g:Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
     return-object v0
 .end method
 
-.method public n()Lcom/wumii/android/mimi/models/d/NetworkHelper;
+.method public n()Lcom/wumii/android/mimi/models/helper/NetworkHelper;
     .locals 1
 
     .prologue
     .line 193
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->h:Lcom/wumii/android/mimi/models/d/NetworkHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->h:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     if-nez v0, :cond_0
 
     .line 194
-    new-instance v0, Lcom/wumii/android/mimi/models/d/NetworkHelper;
+    new-instance v0, Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/models/d/NetworkHelper;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/models/helper/NetworkHelper;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->h:Lcom/wumii/android/mimi/models/d/NetworkHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->h:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     .line 196
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->h:Lcom/wumii/android/mimi/models/d/NetworkHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->h:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     return-object v0
 .end method
 
-.method public o()Lcom/wumii/android/mimi/models/d/NotificationCountHelper;
+.method public o()Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
     .locals 1
 
     .prologue
     .line 200
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->i:Lcom/wumii/android/mimi/models/d/NotificationCountHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->i:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
     if-nez v0, :cond_0
 
     .line 201
-    new-instance v0, Lcom/wumii/android/mimi/models/d/NotificationCountHelper;
+    new-instance v0, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/models/d/NotificationCountHelper;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->i:Lcom/wumii/android/mimi/models/d/NotificationCountHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->i:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
     .line 203
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->i:Lcom/wumii/android/mimi/models/d/NotificationCountHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->i:Lcom/wumii/android/mimi/models/helper/NotificationCountHelper;
 
     return-object v0
 .end method
 
-.method public p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.method public p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
     .locals 1
 
     .prologue
     .line 207
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->j:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     if-nez v0, :cond_0
 
     .line 208
-    new-instance v0, Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    new-instance v0, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    invoke-direct {v0}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;-><init>()V
+    invoke-direct {v0}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;-><init>()V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->j:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 210
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->j:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->j:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     return-object v0
 .end method
 
-.method public q()Lcom/wumii/android/mimi/models/d/HttpHelper;
+.method public q()Lcom/wumii/android/mimi/models/helper/HttpHelper;
     .locals 3
 
     .prologue
     .line 214
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->k:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->k:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     if-nez v0, :cond_0
 
@@ -723,7 +723,7 @@
     move-result-object v0
 
     .line 216
-    new-instance v1, Lcom/wumii/android/mimi/models/d/HttpHelper;
+    new-instance v1, Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->k()Lcom/wumii/android/mimi/models/service/ApplicationInfoService;
 
@@ -739,155 +739,155 @@
 
     move-result-object v0
 
-    invoke-direct {v1, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;-><init>(Ljava/util/Map;)V
+    invoke-direct {v1, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;-><init>(Ljava/util/Map;)V
 
-    iput-object v1, p0, Lcom/wumii/android/mimi/models/AppFacade;->k:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iput-object v1, p0, Lcom/wumii/android/mimi/models/AppFacade;->k:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     .line 218
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->k:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/models/AppFacade;->k:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     return-object v0
 .end method
 
-.method public r()Lcom/wumii/android/mimi/models/h/a/ChatMessageStorage;
+.method public r()Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
     .locals 1
 
     .prologue
     .line 225
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/a/AccountManager;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/manager/AccountManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AccountManager;->b()Lcom/wumii/android/mimi/models/h/a/ChatMessageStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->b()Lcom/wumii/android/mimi/models/storage/chat/ChatMessageStorage;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public s()Lcom/wumii/android/mimi/models/h/a/ChatMessageReportStorage;
+.method public s()Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;
     .locals 1
 
     .prologue
     .line 229
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/a/AccountManager;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/manager/AccountManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AccountManager;->c()Lcom/wumii/android/mimi/models/h/a/ChatMessageReportStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->c()Lcom/wumii/android/mimi/models/storage/chat/ChatMessageReportStorage;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public t()Lcom/wumii/android/mimi/models/h/a/ChatBannedMemberStorage;
+.method public t()Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;
     .locals 1
 
     .prologue
     .line 233
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/a/AccountManager;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/manager/AccountManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AccountManager;->d()Lcom/wumii/android/mimi/models/h/a/ChatBannedMemberStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->d()Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public u()Lcom/wumii/android/mimi/models/h/SysNotificationStorage;
+.method public u()Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
     .locals 1
 
     .prologue
     .line 237
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/a/AccountManager;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/manager/AccountManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AccountManager;->e()Lcom/wumii/android/mimi/models/h/SysNotificationStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->e()Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public v()Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;
+.method public v()Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
     .locals 1
 
     .prologue
     .line 241
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/a/AccountManager;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/manager/AccountManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AccountManager;->f()Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->f()Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public w()Lcom/wumii/android/mimi/models/h/a/ChatStorage;
+.method public w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
     .locals 1
 
     .prologue
     .line 245
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/a/AccountManager;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/manager/AccountManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AccountManager;->g()Lcom/wumii/android/mimi/models/h/a/ChatStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->g()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public x()Lcom/wumii/android/mimi/models/h/DiscoverTopicStorage;
+.method public x()Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;
     .locals 1
 
     .prologue
     .line 249
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/a/AccountManager;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/manager/AccountManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AccountManager;->h()Lcom/wumii/android/mimi/models/h/DiscoverTopicStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->h()Lcom/wumii/android/mimi/models/storage/DiscoverTopicStorage;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public y()Lcom/wumii/android/mimi/models/h/c/CommentStorage;
+.method public y()Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
     .locals 1
 
     .prologue
     .line 253
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/a/AccountManager;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/manager/AccountManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AccountManager;->i()Lcom/wumii/android/mimi/models/h/c/CommentStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->i()Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public z()Lcom/wumii/android/mimi/models/h/c/AuthorCommentStorage;
+.method public z()Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;
     .locals 1
 
     .prologue
     .line 257
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/a/AccountManager;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/models/AppFacade;->b()Lcom/wumii/android/mimi/manager/AccountManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AccountManager;->j()Lcom/wumii/android/mimi/models/h/c/AuthorCommentStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AccountManager;->j()Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;
 
     move-result-object v0
 

@@ -11,7 +11,7 @@
 
 .field private D:Landroid/widget/EditText;
 
-.field private E:Lcom/wumii/android/mimi/b/ChangePnoTask;
+.field private E:Lcom/wumii/android/mimi/task/ChangePnoTask;
 
 .field private n:Landroid/widget/Button;
 
@@ -142,11 +142,11 @@
     if-nez v0, :cond_0
 
     .line 165
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060388
 
-    invoke-virtual {v0, v1, v4}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v4}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 175
     :goto_0
@@ -164,18 +164,18 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 167
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060386
 
-    invoke-virtual {v0, v1, v4}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v4}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     goto :goto_0
 
@@ -191,18 +191,18 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
     .line 169
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060384
 
-    invoke-virtual {v0, v1, v4}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v4}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     goto :goto_0
 
@@ -223,17 +223,17 @@
     if-ge v0, v1, :cond_3
 
     .line 171
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06039f
 
-    invoke-virtual {v0, v1, v4}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v4}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     goto :goto_0
 
     .line 173
     :cond_3
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->k()Lcom/wumii/android/mimi/b/ChangePnoTask;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->k()Lcom/wumii/android/mimi/task/ChangePnoTask;
 
     move-result-object v0
 
@@ -293,7 +293,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/b/ChangePnoTask;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/task/ChangePnoTask;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 
     goto/16 :goto_0
 .end method
@@ -536,11 +536,11 @@
     .line 132
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/h/CommonStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/CommonStorage;->i()J
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/storage/CommonStorage;->i()J
 
     move-result-wide v0
 
@@ -626,13 +626,13 @@
     if-nez v0, :cond_0
 
     .line 180
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060388
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 185
     :goto_0
@@ -640,11 +640,11 @@
 
     .line 184
     :cond_0
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->b()Lcom/wumii/android/mimi/a/AuthenticatorManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->b()Lcom/wumii/android/mimi/manager/AuthenticatorManager;
 
     move-result-object v0
 
@@ -658,17 +658,17 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, p0, v1}, Lcom/wumii/android/mimi/a/AuthenticatorManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;)V
+    invoke-virtual {v0, p0, v1}, Lcom/wumii/android/mimi/manager/AuthenticatorManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
 
-.method private k()Lcom/wumii/android/mimi/b/ChangePnoTask;
+.method private k()Lcom/wumii/android/mimi/task/ChangePnoTask;
     .locals 1
 
     .prologue
     .line 188
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->E:Lcom/wumii/android/mimi/b/ChangePnoTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->E:Lcom/wumii/android/mimi/task/ChangePnoTask;
 
     if-nez v0, :cond_0
 
@@ -677,11 +677,11 @@
 
     invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;-><init>(Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->E:Lcom/wumii/android/mimi/b/ChangePnoTask;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->E:Lcom/wumii/android/mimi/task/ChangePnoTask;
 
     .line 215
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->E:Lcom/wumii/android/mimi/b/ChangePnoTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->E:Lcom/wumii/android/mimi/task/ChangePnoTask;
 
     return-object v0
 .end method
@@ -784,25 +784,25 @@
     return-void
 .end method
 
-.method public onEvent(Lcom/wumii/android/mimi/models/c/a/RespEventRequestVerificationCode;)V
+.method public onEvent(Lcom/wumii/android/mimi/models/event/response/RespEventRequestVerificationCode;)V
     .locals 4
 
     .prologue
     const/4 v2, 0x0
 
     .line 225
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventRequestVerificationCode;->c()Z
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventRequestVerificationCode;->c()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 226
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603a6
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 227
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->C:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownTimerView;
@@ -814,11 +814,11 @@
     .line 228
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/h/CommonStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/CommonStorage;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/storage/CommonStorage;->j()V
 
     .line 232
     :goto_0
@@ -826,11 +826,11 @@
 
     .line 230
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603a5
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     goto :goto_0
 .end method
@@ -843,7 +843,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onStart()V
 
     .line 67
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->a(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->a(Ljava/lang/Object;)V
 
     .line 68
     return-void
@@ -857,7 +857,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onStop()V
 
     .line 73
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->b(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->b(Ljava/lang/Object;)V
 
     .line 74
     return-void

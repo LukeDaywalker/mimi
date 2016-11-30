@@ -18,7 +18,7 @@
 
 .field private r:Landroid/widget/TextView;
 
-.field private s:Lcom/wumii/android/mimi/models/d/LocationHelper;
+.field private s:Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
 .field private t:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity$ICw;
 
@@ -84,7 +84,7 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->p:Landroid/view/View;
 
-    invoke-static {v0, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 202
     const v0, 0x7f060289
@@ -106,7 +106,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -221,11 +221,11 @@
 
     .prologue
     .line 215
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-string/jumbo v1, "nearby_login_user"
 
-    invoke-virtual {v0, p3, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, p3, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 216
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->D:Lcom/wumii/android/mimi/ui/apdaters/NearbyUserListAdapter;
@@ -327,12 +327,12 @@
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;)Lcom/wumii/android/mimi/models/d/LocationHelper;
+.method static synthetic d(Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;)Lcom/wumii/android/mimi/models/helper/LocationHelper;
     .locals 1
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->s:Lcom/wumii/android/mimi/models/d/LocationHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->s:Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
     return-object v0
 .end method
@@ -557,7 +557,7 @@
     if-ne p1, v0, :cond_0
 
     .line 176
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v1, Lcom/wumii/android/mimi/models/entities/NearbyUser;
 
@@ -565,7 +565,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -611,11 +611,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->m()Lcom/wumii/android/mimi/models/d/LocationHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->m()Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->s:Lcom/wumii/android/mimi/models/d/LocationHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->s:Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
     .line 84
     sget-object v0, Lcom/wumii/android/mimi/models/entities/circle/GenderType;->UNKNOW:Lcom/wumii/android/mimi/models/entities/circle/GenderType;

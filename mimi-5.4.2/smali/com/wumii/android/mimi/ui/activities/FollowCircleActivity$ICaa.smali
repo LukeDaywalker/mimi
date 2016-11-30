@@ -32,11 +32,11 @@
     .line 94
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->a(Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;)Lcom/wumii/android/mimi/a/CircleManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;->a(Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;)Lcom/wumii/android/mimi/manager/CircleManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/CircleManager;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/CircleManager;->a()V
 
     .line 95
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;
@@ -47,7 +47,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 96
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/FollowCircleActivity;
@@ -58,7 +58,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 97
     return-void

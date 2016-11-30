@@ -45,28 +45,28 @@
     if-nez v0, :cond_0
 
     .line 112
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->l:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->l:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 115
     :cond_0
-    invoke-static {}, Lcom/wumii/android/mimi/models/d/VoiceFileManager;->a()Lcom/wumii/android/mimi/models/d/VoiceFileManager;
+    invoke-static {}, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->a()Lcom/wumii/android/mimi/models/helper/VoiceFileManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/VoiceFileManager;->b()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/VoiceFileManager;->b()V
 
     .line 116
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->k()Lcom/wumii/android/mimi/a/AppEventManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->k()Lcom/wumii/android/mimi/manager/AppEventManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/AppEventManager;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/AppEventManager;->a()V
 
     .line 117
     return-void

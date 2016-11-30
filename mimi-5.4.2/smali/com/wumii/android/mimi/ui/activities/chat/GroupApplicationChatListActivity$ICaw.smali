@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ICaw;
-.super Lcom/wumii/android/mimi/b/HttpAsyncTask;
+.super Lcom/wumii/android/mimi/task/HttpAsyncTask;
 .source "GroupApplicationChatListActivity.java"
 
 
@@ -16,7 +16,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ICaw;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity;
 
     .line 242
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/HttpAsyncTask;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/HttpAsyncTask;-><init>(Landroid/content/Context;)V
 
     .line 243
     return-void
@@ -33,7 +33,7 @@
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ICaw;->i:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/a/a/JacksonMapper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/jackson/databind/JacksonMapper;
 
     move-result-object v0
 
@@ -43,7 +43,7 @@
 
     const-class v3, Lcom/wumii/android/mimi/network/domain/NotifyGroupApplicationSettingResp;
 
-    invoke-virtual {v0, v2, v3}, Lcom/wumii/a/a/JacksonMapper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v3}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -81,7 +81,7 @@
 
     .prologue
     .line 247
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ICaw;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatListActivity$ICaw;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v1, "settings"
 
@@ -89,7 +89,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 

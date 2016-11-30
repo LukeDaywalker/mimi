@@ -92,7 +92,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -115,7 +115,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -191,7 +191,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->z()Lcom/wumii/android/mimi/models/h/c/AuthorCommentStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->z()Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;
 
     move-result-object v0
 
@@ -205,7 +205,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/c/AuthorCommentStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/Sort;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/Sort;
 
     move-result-object v0
 
@@ -219,7 +219,7 @@
     :goto_1
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbo;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->o(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/a/FeedManager;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->o(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/manager/FeedManager;
 
     move-result-object v1
 
@@ -233,7 +233,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/a/FeedManager;->b(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Sort;)V
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/manager/FeedManager;->b(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Sort;)V
 
     goto :goto_0
 
@@ -265,7 +265,7 @@
     :goto_2
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbo;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->o(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/a/FeedManager;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->o(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/manager/FeedManager;
 
     move-result-object v1
 
@@ -279,7 +279,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/a/FeedManager;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Sort;)V
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/manager/FeedManager;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Sort;)V
 
     goto/16 :goto_0
 

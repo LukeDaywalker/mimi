@@ -219,7 +219,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->e(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->e(Ljava/lang/String;)V
 
     .line 217
     return-void

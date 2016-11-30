@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICu;
-.super Lcom/wumii/android/mimi/models/d/CountDownTimer;
+.super Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 .source "CountDownProgressBar.java"
 
 
@@ -15,7 +15,7 @@
     .line 33
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar$ICu;->a:Lcom/wumii/android/mimi/ui/widgets/chat/CountDownProgressBar;
 
-    invoke-direct {p0}, Lcom/wumii/android/mimi/models/d/CountDownTimer;-><init>()V
+    invoke-direct {p0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;-><init>()V
 
     return-void
 .end method

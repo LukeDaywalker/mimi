@@ -3,7 +3,7 @@
 .source "GroupChatSquareActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/b/SyncQuotaTask$ICch;
+.implements Lcom/wumii/android/mimi/task/SyncQuotaTask$ICch;
 
 
 # instance fields

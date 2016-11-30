@@ -142,7 +142,7 @@
 
     const/high16 v5, 0x420c0000    # 35.0f
 
-    invoke-static {v4, v5}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v4, v5}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v4
 
@@ -162,7 +162,7 @@
 
     const/high16 v6, 0x40400000    # 3.0f
 
-    invoke-static {v5, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v5, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v5
 

@@ -46,9 +46,9 @@
 
     invoke-direct {p0}, Lcom/baidu/mapapi/map/Overlay;-><init>()V
 
-    sget-object v0, Lcom/baidu/platform/comapi/map/f;->d:Lcom/baidu/platform/comapi/map/f;
+    sget-object v0, Lcom/baidu/platform/comapi/map/ICf;->d:Lcom/baidu/platform/comapi/map/ICf;
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlay;->q:Lcom/baidu/platform/comapi/map/f;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlay;->q:Lcom/baidu/platform/comapi/map/ICf;
 
     return-void
 .end method
@@ -365,9 +365,9 @@
 
     iput p2, p0, Lcom/baidu/mapapi/map/GroundOverlay;->g:F
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlay;->listener:Lcom/baidu/mapapi/map/Overlay$a;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlay;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$a;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     goto :goto_0
 .end method
@@ -383,9 +383,9 @@
 
     iput-wide v0, p0, Lcom/baidu/mapapi/map/GroundOverlay;->e:D
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlay;->listener:Lcom/baidu/mapapi/map/Overlay$a;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlay;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$a;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     return-void
 .end method
@@ -401,9 +401,9 @@
 
     iput-wide v0, p0, Lcom/baidu/mapapi/map/GroundOverlay;->e:D
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlay;->listener:Lcom/baidu/mapapi/map/Overlay$a;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlay;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$a;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     return-void
 .end method
@@ -424,9 +424,9 @@
     :cond_0
     iput-object p1, p0, Lcom/baidu/mapapi/map/GroundOverlay;->b:Lcom/baidu/mapapi/map/BitmapDescriptor;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlay;->listener:Lcom/baidu/mapapi/map/Overlay$a;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlay;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$a;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     return-void
 .end method
@@ -451,9 +451,9 @@
 
     iput-object p1, p0, Lcom/baidu/mapapi/map/GroundOverlay;->c:Lcom/baidu/mapapi/model/LatLng;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlay;->listener:Lcom/baidu/mapapi/map/Overlay$a;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlay;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$a;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     return-void
 .end method
@@ -478,9 +478,9 @@
 
     iput-object p1, p0, Lcom/baidu/mapapi/map/GroundOverlay;->h:Lcom/baidu/mapapi/model/LatLngBounds;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlay;->listener:Lcom/baidu/mapapi/map/Overlay$a;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlay;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$a;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     return-void
 .end method
@@ -507,9 +507,9 @@
     :cond_1
     iput p1, p0, Lcom/baidu/mapapi/map/GroundOverlay;->i:F
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlay;->listener:Lcom/baidu/mapapi/map/Overlay$a;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/GroundOverlay;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$a;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     goto :goto_0
 .end method

@@ -37,7 +37,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService$ICf;->b:Lcom/wumii/android/mimi/push/PushReportService;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/push/PushReportService;->a(Lcom/wumii/android/mimi/push/PushReportService;)Lcom/wumii/android/mimi/models/d/FileHelper;
+    invoke-static {v0}, Lcom/wumii/android/mimi/push/PushReportService;->a(Lcom/wumii/android/mimi/push/PushReportService;)Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     move-result-object v0
 
@@ -45,7 +45,7 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/push/PushReportService$ICf;->a:Ljava/util/Set;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/FileHelper;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/io/File;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/io/File;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

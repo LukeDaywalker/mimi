@@ -134,13 +134,13 @@
     .line 49
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->u()Lcom/wumii/android/mimi/models/h/SysNotificationStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->u()Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
 
     move-result-object v0
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationDetailActivity;->o:Ljava/lang/String;
 
-    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/h/SysNotificationStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/SysNotification;
+    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/SysNotification;
 
     move-result-object v0
 
@@ -168,7 +168,7 @@
 
     const-string/jumbo v3, "<br/>"
 
-    invoke-static {v0, v2, v3}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v2, v3}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 

@@ -6,7 +6,7 @@
 # static fields
 .field private static final a:Lorg/slf4j/Logger;
 
-.field private static b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.field private static b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
 .field private static c:Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -38,11 +38,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    sput-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 32
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
@@ -209,7 +209,7 @@
 
     if-ne v0, v2, :cond_0
 
-    sget-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    sget-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v2, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -219,7 +219,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v0, v2, v3, v4}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v3, v4}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -537,11 +537,11 @@
     .line 65
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->d:Landroid/app/Activity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/c/AppConfigManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/util/AppConfigManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/AppConfigManager;->a()Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/AppConfigManager;->a()Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     move-result-object v0
 
@@ -596,7 +596,7 @@
 
     if-eqz v0, :cond_3
 
-    sget-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    sget-object v0, Lcom/wumii/android/mimi/ui/AbsCircleSelectorListener;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v2, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -606,7 +606,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v0, v2, v3, v4}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v3, v4}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 

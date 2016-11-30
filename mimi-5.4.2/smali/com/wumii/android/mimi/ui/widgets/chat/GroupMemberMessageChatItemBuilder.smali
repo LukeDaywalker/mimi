@@ -20,7 +20,7 @@
 
 .field private b:Landroid/view/LayoutInflater;
 
-.field private c:Lcom/e/a/b/DisplayImageOptions;
+.field private c:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
 .field private d:Landroid/content/Context;
 
@@ -55,11 +55,11 @@
     move-result v0
 
     .line 36
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(I)Lcom/e/a/b/DisplayImageOptions;
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->c:Lcom/e/a/b/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->c:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 37
     return-void
@@ -188,28 +188,28 @@
 
     move-result-object v0
 
-    invoke-static {v0, v7}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v7}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 52
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->b(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/ImageView;
 
     move-result-object v0
 
-    invoke-static {v0, v7}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v7}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 53
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    invoke-static {v0, v7}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v7}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 54
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->d(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/ImageView;
 
     move-result-object v0
 
-    invoke-static {v0, v7}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v7}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 56
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->isGroupMember()Z
@@ -262,7 +262,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 71
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->b(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/ImageView;
@@ -271,10 +271,10 @@
 
     .line 96
     :goto_2
-    invoke-static {v2, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 97
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v3
 
@@ -282,9 +282,9 @@
 
     move-result-object v0
 
-    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->c:Lcom/e/a/b/DisplayImageOptions;
+    iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder;->c:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-    invoke-virtual {v3, v0, v2, v4}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v3, v0, v2, v4}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 100
     :cond_1
@@ -310,7 +310,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 107
     :goto_3
@@ -374,7 +374,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_1
 
@@ -451,14 +451,14 @@
 
     move-result-object v2
 
-    invoke-static {v2, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 80
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->c(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/TextView;
 
     move-result-object v2
 
-    invoke-static {v2, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 81
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->b(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/ImageView;
@@ -499,7 +499,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 85
     invoke-static {v1}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;->b(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberMessageChatItemBuilder$ICap;)Landroid/widget/ImageView;
@@ -535,7 +535,7 @@
 
     move-result-object v3
 
-    invoke-static {v3, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v3, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto/16 :goto_2
 
@@ -562,7 +562,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v7}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v7}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto/16 :goto_3
 .end method

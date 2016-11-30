@@ -1,5 +1,5 @@
 .class public Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;
-.super Lcom/wumii/android/mimi/b/HttpAsyncTask;
+.super Lcom/wumii/android/mimi/task/HttpAsyncTask;
 .source "GroupApplicationChatActivity.java"
 
 
@@ -17,7 +17,7 @@
 
     .prologue
     .line 498
-    invoke-direct {p0, p1}, Lcom/wumii/android/mimi/b/HttpAsyncTask;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/wumii/android/mimi/task/HttpAsyncTask;-><init>(Landroid/content/Context;)V
 
     .line 499
     return-void
@@ -123,11 +123,11 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 507
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICan;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "chat/group/application"
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 

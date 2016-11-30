@@ -104,7 +104,7 @@
     move-result v0
 
     .line 106
-    invoke-static {v1, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
+    invoke-static {v1, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -165,7 +165,7 @@
     move-result-object v0
 
     .line 135
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;)D
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;)D
 
     move-result-wide v2
 
@@ -246,7 +246,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -254,7 +254,7 @@
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/SendAnonymousLetterActivity;->r:Ljava/lang/String;
 
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 

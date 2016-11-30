@@ -5,7 +5,7 @@
 .implements Landroid/view/GestureDetector$OnDoubleTapListener;
 .implements Landroid/view/GestureDetector$OnGestureListener;
 .implements Landroid/view/TextureView$SurfaceTextureListener;
-.implements Lcom/baidu/platform/comapi/map/j$a;
+.implements Lcom/baidu/platform/comapi/map/ICj$ICa;
 
 
 # annotations
@@ -27,35 +27,35 @@
 
 .field private d:Landroid/os/Handler;
 
-.field private e:Lcom/baidu/platform/comapi/map/j;
+.field private e:Lcom/baidu/platform/comapi/map/ICj;
 
-.field private f:Lcom/baidu/platform/comapi/map/c;
+.field private f:Lcom/baidu/platform/comapi/map/ICc;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/baidu/platform/comapi/map/z;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/baidu/platform/comapi/map/ICz;)V
     .locals 1
 
     invoke-direct {p0, p1}, Landroid/view/TextureView;-><init>(Landroid/content/Context;)V
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/j;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/ICj;
 
-    invoke-direct {p0, p1, p2}, Lcom/baidu/platform/comapi/map/C;->a(Landroid/content/Context;Lcom/baidu/platform/comapi/map/z;)V
+    invoke-direct {p0, p1, p2}, Lcom/baidu/platform/comapi/map/C;->a(Landroid/content/Context;Lcom/baidu/platform/comapi/map/ICz;)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/baidu/platform/comapi/map/C;)Lcom/baidu/platform/comapi/map/c;
+.method static synthetic a(Lcom/baidu/platform/comapi/map/C;)Lcom/baidu/platform/comapi/map/ICc;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     return-object v0
 .end method
 
-.method private a(Landroid/content/Context;Lcom/baidu/platform/comapi/map/z;)V
+.method private a(Landroid/content/Context;Lcom/baidu/platform/comapi/map/ICz;)V
     .locals 2
 
     invoke-virtual {p0, p0}, Lcom/baidu/platform/comapi/map/C;->setSurfaceTextureListener(Landroid/view/TextureView$SurfaceTextureListener;)V
@@ -79,48 +79,48 @@
 
     invoke-static {p1}, Lcom/baidu/mapapi/common/EnvironmentUtilities;->initAppDirectory(Landroid/content/Context;)V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     if-nez v0, :cond_1
 
-    new-instance v0, Lcom/baidu/platform/comapi/map/c;
+    new-instance v0, Lcom/baidu/platform/comapi/map/ICc;
 
-    invoke-direct {v0, p1}, Lcom/baidu/platform/comapi/map/c;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/baidu/platform/comapi/map/ICc;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/c;->a()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICc;->a()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/c;->b()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICc;->b()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    invoke-virtual {v0, p2}, Lcom/baidu/platform/comapi/map/c;->a(Lcom/baidu/platform/comapi/map/z;)V
+    invoke-virtual {v0, p2}, Lcom/baidu/platform/comapi/map/ICc;->a(Lcom/baidu/platform/comapi/map/ICz;)V
 
     invoke-direct {p0}, Lcom/baidu/platform/comapi/map/C;->f()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     iget-object v1, p0, Lcom/baidu/platform/comapi/map/C;->d:Landroid/os/Handler;
 
-    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/c;->a(Landroid/os/Handler;)V
+    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICc;->a(Landroid/os/Handler;)V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/c;->e()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICc;->e()V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/baidu/platform/comapi/map/C;)Lcom/baidu/platform/comapi/map/j;
+.method static synthetic b(Lcom/baidu/platform/comapi/map/C;)Lcom/baidu/platform/comapi/map/ICj;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/j;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/ICj;
 
     return-object v0
 .end method
@@ -142,9 +142,9 @@
 .method public a()I
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-wide v0, v0, Lcom/baidu/platform/comapi/map/c;->g:J
+    iget-wide v0, v0, Lcom/baidu/platform/comapi/map/ICc;->g:J
 
     invoke-static {v0, v1}, Lcom/baidu/platform/comapi/map/MapRenderer;->nativeRender(J)I
 
@@ -158,9 +158,9 @@
 
     const/4 v6, 0x0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->f:Lcom/baidu/platform/comjni/map/basemap/a;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->f:Lcom/baidu/platform/comjni/map/basemap/ICa;
 
     if-nez v0, :cond_1
 
@@ -253,19 +253,19 @@
     if-le v0, v4, :cond_6
 
     :cond_4
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->f:Lcom/baidu/platform/comjni/map/basemap/a;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->f:Lcom/baidu/platform/comjni/map/basemap/ICa;
 
-    invoke-virtual {v0, p1, v6}, Lcom/baidu/platform/comjni/map/basemap/a;->a(Ljava/lang/String;Landroid/os/Bundle;)V
+    invoke-virtual {v0, p1, v6}, Lcom/baidu/platform/comjni/map/basemap/ICa;->a(Ljava/lang/String;Landroid/os/Bundle;)V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/j;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/ICj;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/j;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/ICj;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/j;->a()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICj;->a()V
 
     goto :goto_0
 
@@ -303,44 +303,44 @@
 
     invoke-virtual {v4, v0, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->f:Lcom/baidu/platform/comjni/map/basemap/a;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->f:Lcom/baidu/platform/comjni/map/basemap/ICa;
 
-    invoke-virtual {v0, p1, v4}, Lcom/baidu/platform/comjni/map/basemap/a;->a(Ljava/lang/String;Landroid/os/Bundle;)V
+    invoke-virtual {v0, p1, v4}, Lcom/baidu/platform/comjni/map/basemap/ICa;->a(Ljava/lang/String;Landroid/os/Bundle;)V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/j;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/ICj;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/j;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/ICj;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/j;->a()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICj;->a()V
 
     goto/16 :goto_0
 
     :cond_7
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->f:Lcom/baidu/platform/comjni/map/basemap/a;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->f:Lcom/baidu/platform/comjni/map/basemap/ICa;
 
-    invoke-virtual {v0, p1, v6}, Lcom/baidu/platform/comjni/map/basemap/a;->a(Ljava/lang/String;Landroid/os/Bundle;)V
+    invoke-virtual {v0, p1, v6}, Lcom/baidu/platform/comjni/map/basemap/ICa;->a(Ljava/lang/String;Landroid/os/Bundle;)V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/j;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/ICj;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/j;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/ICj;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/j;->a()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICj;->a()V
 
     goto/16 :goto_0
 .end method
 
-.method public b()Lcom/baidu/platform/comapi/map/c;
+.method public b()Lcom/baidu/platform/comapi/map/ICc;
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     return-object v0
 .end method
@@ -348,9 +348,9 @@
 .method public c()V
     .locals 2
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->e:Ljava/util/List;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->e:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -367,38 +367,38 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/platform/comapi/map/i;
+    check-cast v0, Lcom/baidu/platform/comapi/map/ICi;
 
-    invoke-interface {v0}, Lcom/baidu/platform/comapi/map/i;->c()V
+    invoke-interface {v0}, Lcom/baidu/platform/comapi/map/ICi;->c()V
 
     goto :goto_0
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->f:Lcom/baidu/platform/comjni/map/basemap/a;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->f:Lcom/baidu/platform/comjni/map/basemap/ICa;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comjni/map/basemap/a;->f()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comjni/map/basemap/ICa;->f()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->f:Lcom/baidu/platform/comjni/map/basemap/a;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->f:Lcom/baidu/platform/comjni/map/basemap/ICa;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comjni/map/basemap/a;->e()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comjni/map/basemap/ICa;->e()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->f:Lcom/baidu/platform/comjni/map/basemap/a;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->f:Lcom/baidu/platform/comjni/map/basemap/ICa;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comjni/map/basemap/a;->l()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comjni/map/basemap/ICa;->l()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/j;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/ICj;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/j;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/ICj;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/j;->a()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICj;->a()V
 
     :cond_1
     return-void
@@ -407,19 +407,19 @@
 .method public d()V
     .locals 1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->f:Lcom/baidu/platform/comjni/map/basemap/a;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->f:Lcom/baidu/platform/comjni/map/basemap/ICa;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comjni/map/basemap/a;->d()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comjni/map/basemap/ICa;->d()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/j;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/ICj;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/j;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/ICj;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/j;->b()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICj;->b()V
 
     :cond_0
     return-void
@@ -430,20 +430,20 @@
 
     const/4 v2, 0x0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/j;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/ICj;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/j;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/ICj;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/j;->c()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICj;->c()V
 
-    iput-object v2, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/j;
+    iput-object v2, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/ICj;
 
     :cond_0
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->e:Ljava/util/List;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->e:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -460,28 +460,28 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/platform/comapi/map/i;
+    check-cast v0, Lcom/baidu/platform/comapi/map/ICi;
 
-    invoke-interface {v0}, Lcom/baidu/platform/comapi/map/i;->e()V
+    invoke-interface {v0}, Lcom/baidu/platform/comapi/map/ICi;->e()V
 
     goto :goto_0
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     iget-object v1, p0, Lcom/baidu/platform/comapi/map/C;->d:Landroid/os/Handler;
 
-    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/c;->b(Landroid/os/Handler;)V
+    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICc;->b(Landroid/os/Handler;)V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/c;->D()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICc;->D()V
 
-    iput-object v2, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iput-object v2, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     :cond_2
     return-void
@@ -494,19 +494,19 @@
 
     const/4 v2, 0x0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->f:Lcom/baidu/platform/comjni/map/basemap/a;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->f:Lcom/baidu/platform/comjni/map/basemap/ICa;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-boolean v0, v0, Lcom/baidu/platform/comapi/map/c;->h:Z
+    iget-boolean v0, v0, Lcom/baidu/platform/comapi/map/ICc;->h:Z
 
     if-nez v0, :cond_1
 
@@ -517,7 +517,7 @@
     return v0
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -531,15 +531,15 @@
 
     float-to-int v4, v4
 
-    invoke-virtual {v0, v3, v4}, Lcom/baidu/platform/comapi/map/c;->b(II)Lcom/baidu/mapapi/model/inner/GeoPoint;
+    invoke-virtual {v0, v3, v4}, Lcom/baidu/platform/comapi/map/ICc;->b(II)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
     move-result-object v3
 
     if-eqz v3, :cond_4
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->e:Ljava/util/List;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->e:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -556,22 +556,22 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/platform/comapi/map/i;
+    check-cast v0, Lcom/baidu/platform/comapi/map/ICi;
 
-    invoke-interface {v0, v3}, Lcom/baidu/platform/comapi/map/i;->b(Lcom/baidu/mapapi/model/inner/GeoPoint;)V
+    invoke-interface {v0, v3}, Lcom/baidu/platform/comapi/map/ICi;->b(Lcom/baidu/mapapi/model/inner/GeoPoint;)V
 
     goto :goto_1
 
     :cond_2
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-boolean v0, v0, Lcom/baidu/platform/comapi/map/c;->d:Z
+    iget-boolean v0, v0, Lcom/baidu/platform/comapi/map/ICc;->d:Z
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/c;->v()Lcom/baidu/platform/comapi/map/B;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICc;->v()Lcom/baidu/platform/comapi/map/B;
 
     move-result-object v0
 
@@ -595,19 +595,19 @@
 
     iput-wide v2, v0, Lcom/baidu/platform/comapi/map/B;->e:D
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     const/16 v3, 0x12c
 
-    invoke-virtual {v2, v0, v3}, Lcom/baidu/platform/comapi/map/c;->a(Lcom/baidu/platform/comapi/map/B;I)V
+    invoke-virtual {v2, v0, v3}, Lcom/baidu/platform/comapi/map/ICc;->a(Lcom/baidu/platform/comapi/map/B;I)V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
 
-    sput-wide v2, Lcom/baidu/platform/comapi/map/c;->j:J
+    sput-wide v2, Lcom/baidu/platform/comapi/map/ICc;->j:J
 
     move v0, v1
 
@@ -647,19 +647,19 @@
 
     const/4 v0, 0x0
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v2, v2, Lcom/baidu/platform/comapi/map/c;->f:Lcom/baidu/platform/comjni/map/basemap/a;
+    iget-object v2, v2, Lcom/baidu/platform/comapi/map/ICc;->f:Lcom/baidu/platform/comjni/map/basemap/ICa;
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-boolean v2, v2, Lcom/baidu/platform/comapi/map/c;->h:Z
+    iget-boolean v2, v2, Lcom/baidu/platform/comapi/map/ICc;->h:Z
 
     if-nez v2, :cond_2
 
@@ -671,9 +671,9 @@
     return v0
 
     :cond_2
-    iget-object v2, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-boolean v2, v2, Lcom/baidu/platform/comapi/map/c;->c:Z
+    iget-boolean v2, v2, Lcom/baidu/platform/comapi/map/ICc;->c:Z
 
     if-eqz v2, :cond_1
 
@@ -697,11 +697,11 @@
 
     if-lez v3, :cond_1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/c;->t()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICc;->t()V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     const/16 v3, 0x22
 
@@ -727,11 +727,11 @@
 
     or-int/2addr v4, v5
 
-    invoke-virtual {v0, v3, v2, v4}, Lcom/baidu/platform/comapi/map/c;->a(III)I
+    invoke-virtual {v0, v3, v2, v4}, Lcom/baidu/platform/comapi/map/ICc;->a(III)I
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/c;->C()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICc;->C()V
 
     move v0, v1
 
@@ -741,19 +741,19 @@
 .method public onLongPress(Landroid/view/MotionEvent;)V
     .locals 6
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->f:Lcom/baidu/platform/comjni/map/basemap/a;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->f:Lcom/baidu/platform/comjni/map/basemap/ICa;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-boolean v0, v0, Lcom/baidu/platform/comapi/map/c;->h:Z
+    iget-boolean v0, v0, Lcom/baidu/platform/comapi/map/ICc;->h:Z
 
     if-nez v0, :cond_1
 
@@ -761,9 +761,9 @@
     return-void
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->f:Lcom/baidu/platform/comjni/map/basemap/a;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->f:Lcom/baidu/platform/comjni/map/basemap/ICa;
 
     const/4 v1, -0x1
 
@@ -779,11 +779,11 @@
 
     float-to-int v3, v3
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget v4, v4, Lcom/baidu/platform/comapi/map/c;->i:I
+    iget v4, v4, Lcom/baidu/platform/comapi/map/ICc;->i:I
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/baidu/platform/comjni/map/basemap/a;->a(IIII)Ljava/lang/String;
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/baidu/platform/comjni/map/basemap/ICa;->a(IIII)Ljava/lang/String;
 
     move-result-object v1
 
@@ -797,9 +797,9 @@
 
     if-nez v0, :cond_3
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->e:Ljava/util/List;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->e:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -816,24 +816,24 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/platform/comapi/map/i;
+    check-cast v0, Lcom/baidu/platform/comapi/map/ICi;
 
-    invoke-interface {v0, v1}, Lcom/baidu/platform/comapi/map/i;->b(Ljava/lang/String;)Z
+    invoke-interface {v0, v1}, Lcom/baidu/platform/comapi/map/ICi;->b(Ljava/lang/String;)Z
 
     move-result v3
 
     if-eqz v3, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     const/4 v3, 0x1
 
-    iput-boolean v3, v0, Lcom/baidu/platform/comapi/map/c;->m:Z
+    iput-boolean v3, v0, Lcom/baidu/platform/comapi/map/ICc;->m:Z
 
     goto :goto_0
 
     :cond_2
-    iget-object v3, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v3, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -847,18 +847,18 @@
 
     float-to-int v5, v5
 
-    invoke-virtual {v3, v4, v5}, Lcom/baidu/platform/comapi/map/c;->b(II)Lcom/baidu/mapapi/model/inner/GeoPoint;
+    invoke-virtual {v3, v4, v5}, Lcom/baidu/platform/comapi/map/ICc;->b(II)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
     move-result-object v3
 
-    invoke-interface {v0, v3}, Lcom/baidu/platform/comapi/map/i;->c(Lcom/baidu/mapapi/model/inner/GeoPoint;)V
+    invoke-interface {v0, v3}, Lcom/baidu/platform/comapi/map/ICi;->c(Lcom/baidu/mapapi/model/inner/GeoPoint;)V
 
     goto :goto_0
 
     :cond_3
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->e:Ljava/util/List;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->e:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -875,9 +875,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/platform/comapi/map/i;
+    check-cast v0, Lcom/baidu/platform/comapi/map/ICi;
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -891,11 +891,11 @@
 
     float-to-int v4, v4
 
-    invoke-virtual {v2, v3, v4}, Lcom/baidu/platform/comapi/map/c;->b(II)Lcom/baidu/mapapi/model/inner/GeoPoint;
+    invoke-virtual {v2, v3, v4}, Lcom/baidu/platform/comapi/map/ICc;->b(II)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
     move-result-object v2
 
-    invoke-interface {v0, v2}, Lcom/baidu/platform/comapi/map/i;->c(Lcom/baidu/mapapi/model/inner/GeoPoint;)V
+    invoke-interface {v0, v2}, Lcom/baidu/platform/comapi/map/ICi;->c(Lcom/baidu/mapapi/model/inner/GeoPoint;)V
 
     goto :goto_1
 .end method
@@ -919,19 +919,19 @@
 
     const/4 v5, 0x1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->f:Lcom/baidu/platform/comjni/map/basemap/a;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->f:Lcom/baidu/platform/comjni/map/basemap/ICa;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-boolean v0, v0, Lcom/baidu/platform/comapi/map/c;->h:Z
+    iget-boolean v0, v0, Lcom/baidu/platform/comapi/map/ICc;->h:Z
 
     if-nez v0, :cond_1
 
@@ -939,9 +939,9 @@
     return v5
 
     :cond_1
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->f:Lcom/baidu/platform/comjni/map/basemap/a;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->f:Lcom/baidu/platform/comjni/map/basemap/ICa;
 
     const/4 v1, -0x1
 
@@ -957,11 +957,11 @@
 
     float-to-int v3, v3
 
-    iget-object v4, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v4, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget v4, v4, Lcom/baidu/platform/comapi/map/c;->i:I
+    iget v4, v4, Lcom/baidu/platform/comapi/map/ICc;->i:I
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/baidu/platform/comjni/map/basemap/a;->a(IIII)Ljava/lang/String;
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/baidu/platform/comjni/map/basemap/ICa;->a(IIII)Ljava/lang/String;
 
     move-result-object v1
 
@@ -975,9 +975,9 @@
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->e:Ljava/util/List;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->e:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -994,16 +994,16 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/platform/comapi/map/i;
+    check-cast v0, Lcom/baidu/platform/comapi/map/ICi;
 
-    invoke-interface {v0, v1}, Lcom/baidu/platform/comapi/map/i;->a(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Lcom/baidu/platform/comapi/map/ICi;->a(Ljava/lang/String;)V
 
     goto :goto_0
 
     :cond_2
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->e:Ljava/util/List;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->e:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1020,9 +1020,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/platform/comapi/map/i;
+    check-cast v0, Lcom/baidu/platform/comapi/map/ICi;
 
-    iget-object v2, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v2, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -1036,11 +1036,11 @@
 
     float-to-int v4, v4
 
-    invoke-virtual {v2, v3, v4}, Lcom/baidu/platform/comapi/map/c;->b(II)Lcom/baidu/mapapi/model/inner/GeoPoint;
+    invoke-virtual {v2, v3, v4}, Lcom/baidu/platform/comapi/map/ICc;->b(II)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
     move-result-object v2
 
-    invoke-interface {v0, v2}, Lcom/baidu/platform/comapi/map/i;->a(Lcom/baidu/mapapi/model/inner/GeoPoint;)V
+    invoke-interface {v0, v2}, Lcom/baidu/platform/comapi/map/ICi;->a(Lcom/baidu/mapapi/model/inner/GeoPoint;)V
 
     goto :goto_1
 .end method
@@ -1060,7 +1060,7 @@
 
     const/4 v4, -0x1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     if-nez v0, :cond_0
 
@@ -1068,7 +1068,7 @@
     return-void
 
     :cond_0
-    new-instance v0, Lcom/baidu/platform/comapi/map/j;
+    new-instance v0, Lcom/baidu/platform/comapi/map/ICj;
 
     new-instance v1, Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -1076,21 +1076,21 @@
 
     invoke-direct {v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
-    invoke-direct {v0, p1, p0, v1, p0}, Lcom/baidu/platform/comapi/map/j;-><init>(Landroid/graphics/SurfaceTexture;Lcom/baidu/platform/comapi/map/j$a;Ljava/util/concurrent/atomic/AtomicBoolean;Lcom/baidu/platform/comapi/map/C;)V
+    invoke-direct {v0, p1, p0, v1, p0}, Lcom/baidu/platform/comapi/map/ICj;-><init>(Landroid/graphics/SurfaceTexture;Lcom/baidu/platform/comapi/map/ICj$ICa;Ljava/util/concurrent/atomic/AtomicBoolean;Lcom/baidu/platform/comapi/map/C;)V
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/j;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/ICj;
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/j;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/ICj;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/j;->start()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICj;->start()V
 
     sput p2, Lcom/baidu/platform/comapi/map/C;->a:I
 
     sput p3, Lcom/baidu/platform/comapi/map/C;->b:I
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/c;->v()Lcom/baidu/platform/comapi/map/B;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/map/ICc;->v()Lcom/baidu/platform/comapi/map/B;
 
     move-result-object v0
 
@@ -1104,13 +1104,13 @@
 
     iget v1, v0, Lcom/baidu/platform/comapi/map/B;->f:I
 
-    iget-object v2, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$b;
+    iget-object v2, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v2, v2, Lcom/baidu/platform/comapi/map/B$b;->a:I
+    iget v2, v2, Lcom/baidu/platform/comapi/map/B$ICb;->a:I
 
-    iget-object v3, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$b;
+    iget-object v3, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v3, v3, Lcom/baidu/platform/comapi/map/B$b;->b:I
+    iget v3, v3, Lcom/baidu/platform/comapi/map/B$ICb;->b:I
 
     sub-int/2addr v2, v3
 
@@ -1132,13 +1132,13 @@
 
     iget v1, v0, Lcom/baidu/platform/comapi/map/B;->g:I
 
-    iget-object v2, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$b;
+    iget-object v2, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v2, v2, Lcom/baidu/platform/comapi/map/B$b;->d:I
+    iget v2, v2, Lcom/baidu/platform/comapi/map/B$ICb;->d:I
 
-    iget-object v3, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$b;
+    iget-object v3, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v3, v3, Lcom/baidu/platform/comapi/map/B$b;->c:I
+    iget v3, v3, Lcom/baidu/platform/comapi/map/B$ICb;->c:I
 
     sub-int/2addr v2, v3
 
@@ -1150,33 +1150,33 @@
     iput v4, v0, Lcom/baidu/platform/comapi/map/B;->g:I
 
     :cond_4
-    iget-object v1, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$b;
+    iget-object v1, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iput v5, v1, Lcom/baidu/platform/comapi/map/B$b;->a:I
+    iput v5, v1, Lcom/baidu/platform/comapi/map/B$ICb;->a:I
 
-    iget-object v1, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$b;
+    iget-object v1, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iput v5, v1, Lcom/baidu/platform/comapi/map/B$b;->c:I
+    iput v5, v1, Lcom/baidu/platform/comapi/map/B$ICb;->c:I
 
-    iget-object v1, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$b;
+    iget-object v1, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iput p3, v1, Lcom/baidu/platform/comapi/map/B$b;->d:I
+    iput p3, v1, Lcom/baidu/platform/comapi/map/B$ICb;->d:I
 
-    iget-object v1, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$b;
+    iget-object v1, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iput p2, v1, Lcom/baidu/platform/comapi/map/B$b;->b:I
+    iput p2, v1, Lcom/baidu/platform/comapi/map/B$ICb;->b:I
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    invoke-virtual {v1, v0}, Lcom/baidu/platform/comapi/map/c;->a(Lcom/baidu/platform/comapi/map/B;)V
+    invoke-virtual {v1, v0}, Lcom/baidu/platform/comapi/map/ICc;->a(Lcom/baidu/platform/comapi/map/B;)V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     sget v1, Lcom/baidu/platform/comapi/map/C;->a:I
 
     sget v2, Lcom/baidu/platform/comapi/map/C;->b:I
 
-    invoke-virtual {v0, v1, v2}, Lcom/baidu/platform/comapi/map/c;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/baidu/platform/comapi/map/ICc;->a(II)V
 
     goto :goto_0
 .end method
@@ -1186,7 +1186,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/j;
+    iput-object v0, p0, Lcom/baidu/platform/comapi/map/C;->e:Lcom/baidu/platform/comapi/map/ICj;
 
     const/4 v0, 0x1
 
@@ -1196,7 +1196,7 @@
 .method public onSurfaceTextureSizeChanged(Landroid/graphics/SurfaceTexture;II)V
     .locals 3
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     if-nez v0, :cond_0
 
@@ -1208,17 +1208,17 @@
 
     sput p3, Lcom/baidu/platform/comapi/map/C;->b:I
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     sget v1, Lcom/baidu/platform/comapi/map/C;->a:I
 
     sget v2, Lcom/baidu/platform/comapi/map/C;->b:I
 
-    invoke-virtual {v0, v1, v2}, Lcom/baidu/platform/comapi/map/c;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/baidu/platform/comapi/map/ICc;->a(II)V
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-wide v0, v0, Lcom/baidu/platform/comapi/map/c;->g:J
+    iget-wide v0, v0, Lcom/baidu/platform/comapi/map/ICc;->g:J
 
     invoke-static {v0, v1, p2, p3}, Lcom/baidu/platform/comapi/map/MapRenderer;->nativeResize(JII)V
 
@@ -1236,13 +1236,13 @@
 
     const/4 v1, 0x1
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->f:Lcom/baidu/platform/comjni/map/basemap/a;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->f:Lcom/baidu/platform/comjni/map/basemap/ICa;
 
     if-nez v0, :cond_1
 
@@ -1255,9 +1255,9 @@
     :cond_1
     invoke-super {p0, p1}, Landroid/view/TextureView;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/c;->e:Ljava/util/List;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/ICc;->e:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1274,9 +1274,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/platform/comapi/map/i;
+    check-cast v0, Lcom/baidu/platform/comapi/map/ICi;
 
-    invoke-interface {v0, p1}, Lcom/baidu/platform/comapi/map/i;->a(Landroid/view/MotionEvent;)V
+    invoke-interface {v0, p1}, Lcom/baidu/platform/comapi/map/ICi;->a(Landroid/view/MotionEvent;)V
 
     goto :goto_1
 
@@ -1294,9 +1294,9 @@
     goto :goto_0
 
     :cond_3
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/c;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/C;->f:Lcom/baidu/platform/comapi/map/ICc;
 
-    invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/c;->a(Landroid/view/MotionEvent;)Z
+    invoke-virtual {v0, p1}, Lcom/baidu/platform/comapi/map/ICc;->a(Landroid/view/MotionEvent;)Z
 
     move-result v0
 

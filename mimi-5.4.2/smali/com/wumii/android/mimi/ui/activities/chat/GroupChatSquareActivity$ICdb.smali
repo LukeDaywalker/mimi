@@ -56,7 +56,7 @@
     .line 170
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICdb;->b:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->b(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->b(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
@@ -66,7 +66,7 @@
 
     const-string/jumbo v2, "unread_new_friend_group_chat_count"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 174
     :cond_0
@@ -99,7 +99,7 @@
     .line 172
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICdb;->b:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->c(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;->c(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
@@ -109,7 +109,7 @@
 
     const-string/jumbo v2, "unread_new_organization_group_chat_count"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

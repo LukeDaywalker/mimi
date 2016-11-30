@@ -10,7 +10,7 @@
 
 .field private p:Landroid/view/MenuItem;
 
-.field private q:Lcom/wumii/android/mimi/b/SendFeedbackTask;
+.field private q:Lcom/wumii/android/mimi/task/SendFeedbackTask;
 
 
 # direct methods
@@ -121,25 +121,25 @@
     return-void
 .end method
 
-.method private h()Lcom/wumii/android/mimi/b/SendFeedbackTask;
+.method private h()Lcom/wumii/android/mimi/task/SendFeedbackTask;
     .locals 1
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->q:Lcom/wumii/android/mimi/b/SendFeedbackTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->q:Lcom/wumii/android/mimi/task/SendFeedbackTask;
 
     if-nez v0, :cond_0
 
     .line 67
-    new-instance v0, Lcom/wumii/android/mimi/b/SendFeedbackTask;
+    new-instance v0, Lcom/wumii/android/mimi/task/SendFeedbackTask;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/b/SendFeedbackTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/task/SendFeedbackTask;-><init>(Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->q:Lcom/wumii/android/mimi/b/SendFeedbackTask;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->q:Lcom/wumii/android/mimi/task/SendFeedbackTask;
 
     .line 69
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->q:Lcom/wumii/android/mimi/b/SendFeedbackTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->q:Lcom/wumii/android/mimi/task/SendFeedbackTask;
 
     return-object v0
 .end method
@@ -221,7 +221,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -267,7 +267,7 @@
     move-result-object v0
 
     .line 86
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->h()Lcom/wumii/android/mimi/b/SendFeedbackTask;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/setting/FeedbackActivity;->h()Lcom/wumii/android/mimi/task/SendFeedbackTask;
 
     move-result-object v1
 
@@ -309,7 +309,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/b/SendFeedbackTask;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/task/SendFeedbackTask;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 87
     const/4 v0, 0x1

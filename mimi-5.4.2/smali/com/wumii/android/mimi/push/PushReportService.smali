@@ -12,7 +12,7 @@
 
 .field private c:Lcom/wumii/android/mimi/push/PushReportService$ICg;
 
-.field private d:Lcom/wumii/android/mimi/b/PushClickReportTask;
+.field private d:Lcom/wumii/android/mimi/task/PushClickReportTask;
 
 .field private e:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
@@ -27,7 +27,7 @@
 
 .field private f:J
 
-.field private g:Lcom/wumii/android/mimi/models/d/FileHelper;
+.field private g:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
 
 # direct methods
@@ -71,11 +71,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/d/FileHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->g:Lcom/wumii/android/mimi/models/d/FileHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->g:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 46
     return-void
@@ -91,12 +91,12 @@
     return-wide p1
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/push/PushReportService;)Lcom/wumii/android/mimi/models/d/FileHelper;
+.method static synthetic a(Lcom/wumii/android/mimi/push/PushReportService;)Lcom/wumii/android/mimi/models/helper/FileHelper;
     .locals 1
 
     .prologue
     .line 26
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->g:Lcom/wumii/android/mimi/models/d/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->g:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     return-object v0
 .end method
@@ -143,7 +143,7 @@
 
     .line 55
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->g:Lcom/wumii/android/mimi/models/d/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->g:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     const-string/jumbo v1, "push_reports"
 
@@ -151,7 +151,7 @@
 
     invoke-direct {v2, p0}, Lcom/wumii/android/mimi/push/PushReportService$ICe;-><init>(Lcom/wumii/android/mimi/push/PushReportService;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/FileHelper;->a(Ljava/lang/String;Lcom/fasterxml/jackson/core/type/TypeReference;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Lcom/fasterxml/jackson/core/type/TypeReference;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -217,7 +217,7 @@
 
     invoke-direct {v1, p0, v0}, Lcom/wumii/android/mimi/push/PushReportService$ICf;-><init>(Lcom/wumii/android/mimi/push/PushReportService;Ljava/util/Set;)V
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/ThreadUtils;->a(Ljava/lang/Runnable;)V
+    invoke-static {v1}, Lcom/wumii/android/mimi/util/ThreadUtils;->a(Ljava/lang/Runnable;)V
 
     .line 108
     return-void
@@ -248,27 +248,27 @@
     return-object v0
 .end method
 
-.method private f()Lcom/wumii/android/mimi/b/PushClickReportTask;
+.method private f()Lcom/wumii/android/mimi/task/PushClickReportTask;
     .locals 2
 
     .prologue
     .line 118
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->d:Lcom/wumii/android/mimi/b/PushClickReportTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->d:Lcom/wumii/android/mimi/task/PushClickReportTask;
 
     if-nez v0, :cond_0
 
     .line 119
-    new-instance v0, Lcom/wumii/android/mimi/b/PushClickReportTask;
+    new-instance v0, Lcom/wumii/android/mimi/task/PushClickReportTask;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/push/PushReportService;->b:Landroid/content/Context;
 
-    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/b/PushClickReportTask;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/task/PushClickReportTask;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->d:Lcom/wumii/android/mimi/b/PushClickReportTask;
+    iput-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->d:Lcom/wumii/android/mimi/task/PushClickReportTask;
 
     .line 121
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->d:Lcom/wumii/android/mimi/b/PushClickReportTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/push/PushReportService;->d:Lcom/wumii/android/mimi/task/PushClickReportTask;
 
     return-object v0
 .end method
@@ -307,11 +307,11 @@
 
     .line 92
     :cond_0
-    invoke-direct {p0}, Lcom/wumii/android/mimi/push/PushReportService;->f()Lcom/wumii/android/mimi/b/PushClickReportTask;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/push/PushReportService;->f()Lcom/wumii/android/mimi/task/PushClickReportTask;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/b/PushClickReportTask;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/task/PushClickReportTask;->a(Ljava/lang/String;)V
 
     .line 93
     invoke-virtual {p0}, Lcom/wumii/android/mimi/push/PushReportService;->a()V

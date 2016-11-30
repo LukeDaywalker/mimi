@@ -31,11 +31,11 @@
 
     .prologue
     .line 238
-    new-instance v0, Lcom/wumii/android/mimi/b/SyncQuotaTask;
+    new-instance v0, Lcom/wumii/android/mimi/task/SyncQuotaTask;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICdc;->b:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity;
 
-    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/b/SyncQuotaTask;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/task/SyncQuotaTask;-><init>(Landroid/content/Context;)V
 
     iget-boolean v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICdc;->a:Z
 
@@ -43,7 +43,7 @@
 
     invoke-direct {v2, p0, p2}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICdd;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatSquareActivity$ICdc;Lcom/wumii/android/mimi/ui/widgets/CircleSelectorType;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/b/SyncQuotaTask;->a(ZLcom/wumii/android/mimi/b/SyncQuotaTask$ICch;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/task/SyncQuotaTask;->a(ZLcom/wumii/android/mimi/task/SyncQuotaTask$ICch;)V
 
     .line 244
     return-void

@@ -14,7 +14,7 @@
 .method public static getBaiduMapToken()Ljava/lang/String;
     .locals 1
 
-    invoke-static {}, Lcom/baidu/platform/comjni/tools/a;->a()Ljava/lang/String;
+    invoke-static {}, Lcom/baidu/platform/comjni/tools/ICa;->a()Ljava/lang/String;
 
     move-result-object v0
 

@@ -35,7 +35,7 @@
 
     const/4 v1, 0x4
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 166
     return-void
@@ -103,11 +103,11 @@
     :cond_1
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICq;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->f(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)Lcom/wumii/android/mimi/ui/apdaters/a/SearchRegionAdapter;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;->f(Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;)Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/a/SearchRegionAdapter;->a(Ljava/util/List;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/authenticator/SearchRegionAdapter;->a(Ljava/util/List;)V
 
     .line 161
     return-void

@@ -61,7 +61,7 @@
 
     const-string/jumbo v2, "checkArgs fail, invalid appId"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
     return v0
@@ -84,7 +84,7 @@
 
     const-string/jumbo v2, "checkArgs fail, invalid partnerId"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -106,7 +106,7 @@
 
     const-string/jumbo v2, "checkArgs fail, invalid prepayId"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -128,7 +128,7 @@
 
     const-string/jumbo v2, "checkArgs fail, invalid nonceStr"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -150,7 +150,7 @@
 
     const-string/jumbo v2, "checkArgs fail, invalid timeStamp"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -172,7 +172,7 @@
 
     const-string/jumbo v2, "checkArgs fail, invalid packageValue"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -194,7 +194,7 @@
 
     const-string/jumbo v2, "checkArgs fail, invalid sign"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -217,7 +217,7 @@
 
     const-string/jumbo v2, "checkArgs fail, extData length too long"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 

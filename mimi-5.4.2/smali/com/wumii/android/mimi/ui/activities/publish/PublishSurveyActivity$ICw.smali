@@ -3,7 +3,7 @@
 .source "PublishSurveyActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/b/ProcessImageTask$ICax;
+.implements Lcom/wumii/android/mimi/task/ProcessImageTask$ICax;
 
 
 # instance fields

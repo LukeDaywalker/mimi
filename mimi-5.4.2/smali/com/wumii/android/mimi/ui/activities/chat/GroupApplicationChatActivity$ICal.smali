@@ -32,7 +32,7 @@
     .line 455
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;->N:Lcom/wumii/android/mimi/a/ChatManager;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;->N:Lcom/wumii/android/mimi/manager/ChatManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
 
@@ -62,14 +62,14 @@
 
     move-result-object v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/a/ChatManager;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/ScopedUser;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/manager/ChatManager;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/ScopedUser;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
     move-result-object v0
 
     .line 456
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;->N:Lcom/wumii/android/mimi/a/ChatManager;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;->N:Lcom/wumii/android/mimi/manager/ChatManager;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupApplicationChatActivity;
 
@@ -77,7 +77,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/a/ChatManager;->a(Ljava/util/Map;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/manager/ChatManager;->a(Ljava/util/Map;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
 
     .line 457
     return-void

@@ -32,7 +32,7 @@
     .line 629
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbi;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->o(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/a/FeedManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->o(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/manager/FeedManager;
 
     move-result-object v0
 
@@ -48,7 +48,7 @@
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;->DOWN:Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/a/FeedManager;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/manager/FeedManager;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/LoadPageCommentDirection;)V
 
     .line 630
     return-void
@@ -80,7 +80,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
 
     .line 636
     return-void

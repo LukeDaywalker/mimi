@@ -14,11 +14,11 @@
 .method public static destroy()V
     .locals 1
 
-    invoke-static {}, Lcom/baidu/platform/comapi/a;->a()Lcom/baidu/platform/comapi/a;
+    invoke-static {}, Lcom/baidu/platform/comapi/ICa;->a()Lcom/baidu/platform/comapi/ICa;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/a;->d()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/ICa;->d()V
 
     return-void
 .end method
@@ -26,11 +26,11 @@
 .method public static getContext()Landroid/content/Context;
     .locals 1
 
-    invoke-static {}, Lcom/baidu/platform/comapi/a;->a()Lcom/baidu/platform/comapi/a;
+    invoke-static {}, Lcom/baidu/platform/comapi/ICa;->a()Lcom/baidu/platform/comapi/ICa;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/a;->e()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/ICa;->e()Landroid/content/Context;
 
     move-result-object v0
 
@@ -40,11 +40,11 @@
 .method public static init()V
     .locals 1
 
-    invoke-static {}, Lcom/baidu/platform/comapi/a;->a()Lcom/baidu/platform/comapi/a;
+    invoke-static {}, Lcom/baidu/platform/comapi/ICa;->a()Lcom/baidu/platform/comapi/ICa;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/a;->b()V
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/ICa;->b()V
 
     return-void
 .end method

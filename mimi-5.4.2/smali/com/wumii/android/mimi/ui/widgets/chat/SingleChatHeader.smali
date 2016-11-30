@@ -262,7 +262,7 @@
 
     const/high16 v3, 0x41800000    # 16.0f
 
-    invoke-static {v1, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v1, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
@@ -409,25 +409,25 @@
     const/4 v3, 0x0
 
     .line 101
-    new-instance v0, Lcom/e/a/b/DisplayImageOptions$ICf;
+    new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
-    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;-><init>()V
+    invoke-direct {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;-><init>()V
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->b(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->b(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->c(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->c(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
     sget-object v1, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Landroid/graphics/Bitmap$Config;)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Landroid/graphics/Bitmap$Config;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    new-instance v1, Lcom/e/a/b/c/RoundedBitmapDisplayer;
+    new-instance v1, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->a:Landroid/content/Context;
 
@@ -441,13 +441,13 @@
 
     move-result v2
 
-    invoke-direct {v1, v2}, Lcom/e/a/b/c/RoundedBitmapDisplayer;-><init>(I)V
+    invoke-direct {v1, v2}, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;-><init>(I)V
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Lcom/e/a/b/c/BitmapDisplayer;)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;->a()Lcom/e/a/b/DisplayImageOptions;
+    invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a()Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v4
 
@@ -488,29 +488,29 @@
     move-result-object v5
 
     .line 113
-    invoke-static {v5}, Lcom/wumii/android/mimi/c/Utils;->c(Ljava/lang/String;)Z
+    invoke-static {v5}, Lcom/wumii/android/mimi/util/Utils;->c(Ljava/lang/String;)Z
 
     move-result v6
 
     if-nez v6, :cond_0
 
     .line 114
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v6
 
-    invoke-virtual {v6, v5, v2, v4}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v6, v5, v2, v4}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 116
     :cond_0
-    invoke-static {v5}, Lcom/wumii/android/mimi/c/Utils;->c(Ljava/lang/String;)Z
+    invoke-static {v5}, Lcom/wumii/android/mimi/util/Utils;->c(Ljava/lang/String;)Z
 
     move-result v4
 
     if-nez v4, :cond_1
 
     :goto_0
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 118
     invoke-virtual {p2}, Lcom/wumii/android/mimi/models/entities/secret/Secret;->getContent()Ljava/lang/String;
@@ -621,7 +621,7 @@
     .line 94
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->e:Landroid/widget/FrameLayout;
 
-    invoke-static {v0, v5}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v5}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 97
     :cond_1
@@ -638,7 +638,7 @@
     .line 71
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SingleChatHeader;->f:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/h/a/ChatStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
     move-result-object v0
 
@@ -648,7 +648,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
 
     move-result-object v0
 

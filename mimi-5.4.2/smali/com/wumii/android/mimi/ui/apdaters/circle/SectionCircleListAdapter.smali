@@ -224,7 +224,7 @@
     const/16 v3, 0x8
 
     :cond_1
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 104
     invoke-virtual {p3, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V

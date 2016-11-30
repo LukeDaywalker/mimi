@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICan;
-.super Lcom/wumii/android/mimi/b/DeleteOrgTask;
+.super Lcom/wumii/android/mimi/task/DeleteOrgTask;
 .source "OrgDetailActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 179
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICan;->a:Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity$ICam;
 
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/DeleteOrgTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/DeleteOrgTask;-><init>(Landroid/app/Activity;)V
 
     return-void
 .end method
@@ -27,7 +27,7 @@
 
     .prologue
     .line 182
-    invoke-static {}, Lcom/wumii/android/mimi/c/UserProfileManager;->a()Lcom/wumii/android/mimi/c/UserProfileManager;
+    invoke-static {}, Lcom/wumii/android/mimi/util/UserProfileManager;->a()Lcom/wumii/android/mimi/util/UserProfileManager;
 
     move-result-object v0
 
@@ -41,7 +41,7 @@
 
     const/4 v3, 0x1
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$ICau;Z)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$ICau;Z)V
 
     .line 188
     return-void

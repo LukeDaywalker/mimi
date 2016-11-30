@@ -53,12 +53,12 @@
     .line 115
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICv;->g:Landroid/widget/ImageView;
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 116
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICv;->h:Landroid/view/View;
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 117
     return-void
@@ -205,7 +205,7 @@
     move-result-object v0
 
     .line 145
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v1
 
@@ -231,7 +231,7 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICv;->g:Landroid/widget/ImageView;
 
-    invoke-virtual {v1, v0, v2}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
+    invoke-virtual {v1, v0, v2}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
 
     .line 146
     return-void

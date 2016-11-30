@@ -3,7 +3,7 @@
 .source "LocationValidationActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;
+.implements Lcom/wumii/android/mimi/models/helper/LocationHelper$ICu;
 
 
 # instance fields
@@ -222,7 +222,7 @@
     .line 180
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->i(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/a/OrgValidationManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->i(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/manager/OrgValidationManager;
 
     move-result-object v0
 
@@ -244,7 +244,7 @@
 
     move-result-wide v4
 
-    invoke-virtual/range {v0 .. v5}, Lcom/wumii/android/mimi/a/OrgValidationManager;->a(Ljava/lang/String;DD)V
+    invoke-virtual/range {v0 .. v5}, Lcom/wumii/android/mimi/manager/OrgValidationManager;->a(Ljava/lang/String;DD)V
 
     .line 181
     return-void

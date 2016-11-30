@@ -3,7 +3,7 @@
 .source "BaseSetKnockQuestionActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/c/AppConfigManager$ICb;
+.implements Lcom/wumii/android/mimi/util/AppConfigManager$ICb;
 
 
 # instance fields
@@ -47,7 +47,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->p:Ljava/util/List;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -66,7 +66,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lorg/a/a/c/a/RandomUtils;->a(I)I
+    invoke-static {v0}, Lorg/apache/commons/long/math/RandomUtils;->a(I)I
 
     move-result v0
 

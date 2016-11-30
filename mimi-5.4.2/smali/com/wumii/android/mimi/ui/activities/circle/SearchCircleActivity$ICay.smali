@@ -38,7 +38,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICax;->a:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->g(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)Lcom/wumii/android/mimi/a/CircleManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->g(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)Lcom/wumii/android/mimi/manager/CircleManager;
 
     move-result-object v1
 
@@ -57,7 +57,7 @@
     :goto_0
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICay;->a:Ljava/lang/String;
 
-    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/a/CircleManager;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/manager/CircleManager;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 215
     return-void

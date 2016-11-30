@@ -3,7 +3,7 @@
 .source "SecretHeaderCardView.java"
 
 # interfaces
-.implements Lcom/e/a/b/f/ImageLoadingListener;
+.implements Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
 
 
 # instance fields
@@ -52,20 +52,20 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->i:Landroid/view/View;
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 100
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->c:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->h:Landroid/view/View;
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 101
     return-void
 .end method
 
-.method public a(Ljava/lang/String;Landroid/view/View;Lcom/e/a/b/a/FailReason;)V
+.method public a(Ljava/lang/String;Landroid/view/View;Lcom/nostra13/universalimageloader/core/assist/FailReason;)V
     .locals 2
 
     .prologue
@@ -76,7 +76,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 87
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->c:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;
@@ -85,7 +85,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 88
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView$ICac;->c:Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;

@@ -36,13 +36,13 @@
     .line 174
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICaw;->b:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->e(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)Lcom/wumii/android/mimi/a/DiscoverManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->e(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICaw;->a:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/DiscoverManager;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/DiscoverManager;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)V
 
     .line 175
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICaw;->b:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
@@ -53,11 +53,11 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICaw;->b:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->e(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)Lcom/wumii/android/mimi/a/DiscoverManager;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->e(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/a/DiscoverManager;->a()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/manager/DiscoverManager;->a()Ljava/util/List;
 
     move-result-object v1
 

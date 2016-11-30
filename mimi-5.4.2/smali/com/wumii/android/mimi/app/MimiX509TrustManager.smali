@@ -234,7 +234,7 @@
     :cond_1
     const-string/jumbo v0, "RSA"
 
-    invoke-static {p2, v0}, Lorg/a/a/c/StringUtils;->d(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p2, v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 

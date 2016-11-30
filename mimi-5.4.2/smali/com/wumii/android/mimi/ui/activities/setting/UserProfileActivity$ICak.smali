@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICak;
-.super Lcom/wumii/android/mimi/b/SetUserProfileTask;
+.super Lcom/wumii/android/mimi/task/SetUserProfileTask;
 .source "UserProfileActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 153
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;
 
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/SetUserProfileTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/SetUserProfileTask;-><init>(Landroid/app/Activity;)V
 
     return-void
 .end method
@@ -27,7 +27,7 @@
 
     .prologue
     .line 156
-    invoke-super {p0, p1, p2}, Lcom/wumii/android/mimi/b/SetUserProfileTask;->a(Lcom/fasterxml/jackson/databind/JsonNode;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    invoke-super {p0, p1, p2}, Lcom/wumii/android/mimi/task/SetUserProfileTask;->a(Lcom/fasterxml/jackson/databind/JsonNode;Lcom/fasterxml/jackson/databind/JsonNode;)V
 
     .line 157
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity$ICak;->a:Lcom/wumii/android/mimi/ui/activities/setting/UserProfileActivity;

@@ -27,11 +27,11 @@
 
     .prologue
     .line 154
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->n()Lcom/wumii/android/mimi/a/SurveyManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->n()Lcom/wumii/android/mimi/manager/SurveyManager;
 
     move-result-object v1
 
@@ -47,7 +47,7 @@
 
     iget-object v2, v2, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->e:Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
-    invoke-virtual {v1, v0, p1, v2}, Lcom/wumii/android/mimi/a/SurveyManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
+    invoke-virtual {v1, v0, p1, v2}, Lcom/wumii/android/mimi/manager/SurveyManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
 
     .line 155
     return-void

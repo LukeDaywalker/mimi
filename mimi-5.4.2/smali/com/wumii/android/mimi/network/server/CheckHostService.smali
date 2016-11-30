@@ -67,7 +67,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->q()Lcom/wumii/android/mimi/models/d/HttpHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->q()Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     move-result-object v0
 
@@ -75,7 +75,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, p2}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v1, p2}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/lang/String;Z)Z
 
     move-result v0
 

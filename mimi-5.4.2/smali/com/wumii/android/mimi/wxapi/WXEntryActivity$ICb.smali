@@ -43,7 +43,7 @@
 
     invoke-direct {v2, p0}, Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICc;-><init>(Lcom/wumii/android/mimi/wxapi/WXEntryActivity$ICb;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;->a(ILcom/wumii/android/mimi/models/g/WeixinShareHelper$ICax;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/share/InvitationShareController;->a(ILcom/wumii/android/mimi/models/share/WeixinShareHelper$ICax;)V
 
     .line 129
     return-void

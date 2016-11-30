@@ -3,7 +3,7 @@
 .source "PublishSecretActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/b/BeginnerPostSecretDialog$ICf;
+.implements Lcom/wumii/android/mimi/ui/widgets/publish/BeginnerPostSecretDialog$ICf;
 
 
 # instance fields
@@ -63,7 +63,7 @@
     .line 360
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->p(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/c/ContextToast;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;->p(Lcom/wumii/android/mimi/ui/activities/publish/PublishSecretActivity;)Lcom/wumii/android/mimi/util/ContextToast;
 
     move-result-object v0
 
@@ -71,7 +71,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 361
     return-void

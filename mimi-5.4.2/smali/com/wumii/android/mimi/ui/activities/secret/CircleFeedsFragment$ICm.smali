@@ -1,5 +1,5 @@
 .class public Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;
-.super Lcom/wumii/android/mimi/models/e/a/FeedObserver;
+.super Lcom/wumii/android/mimi/models/observer/secret/FeedObserver;
 .source "CircleFeedsFragment.java"
 
 
@@ -15,7 +15,7 @@
     .line 277
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;
 
-    invoke-direct {p0}, Lcom/wumii/android/mimi/models/e/a/FeedObserver;-><init>()V
+    invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/secret/FeedObserver;-><init>()V
 
     return-void
 .end method
@@ -42,7 +42,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/h/c/FeedStorage;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 
     move-result-object v1
 
@@ -50,7 +50,7 @@
 
     iget-object v2, v2, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->e:Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
-    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/h/c/FeedStorage;->b(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)Ljava/util/List;
+    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->b(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)Ljava/util/List;
 
     move-result-object v1
 
@@ -138,11 +138,11 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;->c()V
 
     .line 296
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/FeedResult;->getFeedEvent()Lcom/wumii/android/mimi/models/b/FeedEvent;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/FeedResult;->getFeedEvent()Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/b/FeedEvent;->c:Lcom/wumii/android/mimi/models/b/FeedEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-eq v0, v1, :cond_a
 
@@ -183,7 +183,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v1}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v1
 
@@ -339,7 +339,7 @@
 
     const/high16 v1, 0x42c80000    # 100.0f
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -369,11 +369,11 @@
     .line 316
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;
 
-    new-instance v4, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;
+    new-instance v4, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;
 
-    sget-object v5, Lcom/etiennelawlor/quickreturn/library/a/QuickReturnViewType;->a:Lcom/etiennelawlor/quickreturn/library/a/QuickReturnViewType;
+    sget-object v5, Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;->a:Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;
 
-    invoke-direct {v4, v5}, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;-><init>(Lcom/etiennelawlor/quickreturn/library/a/QuickReturnViewType;)V
+    invoke-direct {v4, v5}, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;-><init>(Lcom/etiennelawlor/quickreturn/library/enums/QuickReturnViewType;)V
 
     iget-object v5, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;
 
@@ -381,21 +381,21 @@
 
     move-result-object v5
 
-    invoke-virtual {v4, v5}, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;->a(Landroid/view/View;)Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;
+    invoke-virtual {v4, v5}, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->a(Landroid/view/View;)Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;
 
     move-result-object v4
 
     neg-int v0, v0
 
-    invoke-virtual {v4, v0}, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;->a(I)Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;
+    invoke-virtual {v4, v0}, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->a(I)Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener$ICc;->a()Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener;
+    invoke-virtual {v0}, Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener$ICc;->a()Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener;
 
     move-result-object v0
 
-    iput-object v0, v1, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->b:Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener;
+    iput-object v0, v1, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->b:Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener;
 
     .line 320
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;
@@ -404,7 +404,7 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment$ICm;->a:Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;
 
-    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->b:Lcom/etiennelawlor/quickreturn/library/b/QuickReturnListViewOnScrollListener;
+    iget-object v1, v1, Lcom/wumii/android/mimi/ui/activities/secret/CircleFeedsFragment;->b:Lcom/etiennelawlor/quickreturn/library/listeners/QuickReturnListViewOnScrollListener;
 
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->setOnScrollListener(Landroid/widget/AbsListView$OnScrollListener;)V
 
@@ -730,7 +730,7 @@
     if-eqz v1, :cond_e
 
     :goto_7
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_5
 
@@ -777,7 +777,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -794,7 +794,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Landroid/content/Context;Ljava/lang/String;I)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;Ljava/lang/String;I)V
 
     .line 401
     :cond_2
@@ -807,11 +807,11 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/XListView;->a(Z)V
 
     .line 402
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/FeedResult;->getFeedEvent()Lcom/wumii/android/mimi/models/b/FeedEvent;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/FeedResult;->getFeedEvent()Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/b/FeedEvent;->c:Lcom/wumii/android/mimi/models/b/FeedEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->c:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-eq v0, v1, :cond_3
 
@@ -823,11 +823,11 @@
     invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/ui/widgets/XListView;->c(Z)Z
 
     .line 404
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/FeedResult;->getFeedEvent()Lcom/wumii/android/mimi/models/b/FeedEvent;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/secret/FeedResult;->getFeedEvent()Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     move-result-object v0
 
-    sget-object v1, Lcom/wumii/android/mimi/models/b/FeedEvent;->a:Lcom/wumii/android/mimi/models/b/FeedEvent;
+    sget-object v1, Lcom/wumii/android/mimi/models/enum/FeedEvent;->a:Lcom/wumii/android/mimi/models/enum/FeedEvent;
 
     if-ne v0, v1, :cond_0
 

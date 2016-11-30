@@ -38,7 +38,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->m()Lcom/wumii/android/mimi/models/d/LocationHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->m()Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
     move-result-object v0
 
@@ -46,7 +46,7 @@
 
     invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICm;-><init>(Lcom/wumii/android/mimi/ui/activities/discover/NearbySecretFragment$ICl;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/LocationHelper;->a(Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/LocationHelper;->a(Lcom/wumii/android/mimi/models/helper/LocationHelper$ICu;)V
 
     .line 247
     return-void

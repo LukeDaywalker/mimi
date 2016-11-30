@@ -234,7 +234,7 @@
 
     const/high16 v2, 0x41a00000    # 20.0f
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v2
 
@@ -246,7 +246,7 @@
     .line 93
     const/high16 v2, 0x41200000    # 10.0f
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v2
 
@@ -256,7 +256,7 @@
     .line 96
     const/high16 v3, 0x42000000    # 32.0f
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -410,7 +410,7 @@
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 174
-    invoke-static {v1, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v1, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 164
     add-int/lit8 v0, v3, 0x1
@@ -449,7 +449,7 @@
     .line 180
     const/16 v3, 0x8
 
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 178
     add-int/lit8 v0, v0, 0x1
@@ -597,7 +597,7 @@
     .line 151
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->g:Landroid/widget/ImageView;
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 156
     :goto_3
@@ -615,7 +615,7 @@
     move v0, v1
 
     :goto_4
-    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 159
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/CircleTagsCardView;->i:Landroid/view/View;
@@ -623,7 +623,7 @@
     if-eqz p2, :cond_6
 
     :goto_5
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 160
     return-void
@@ -654,7 +654,7 @@
 
     const/4 v3, 0x4
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_3
 

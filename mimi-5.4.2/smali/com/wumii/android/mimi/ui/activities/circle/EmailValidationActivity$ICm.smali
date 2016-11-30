@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity$ICm;
-.super Lcom/wumii/android/mimi/models/e/OrgValidationObserver;
+.super Lcom/wumii/android/mimi/models/observer/OrgValidationObserver;
 .source "EmailValidationActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 69
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;
 
-    invoke-direct {p0}, Lcom/wumii/android/mimi/models/e/OrgValidationObserver;-><init>()V
+    invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/OrgValidationObserver;-><init>()V
 
     return-void
 .end method
@@ -27,7 +27,7 @@
 
     .prologue
     .line 73
-    invoke-super {p0, p1}, Lcom/wumii/android/mimi/models/e/OrgValidationObserver;->c(Lcom/wumii/android/mimi/models/entities/circle/OrgValidationResult;)V
+    invoke-super {p0, p1}, Lcom/wumii/android/mimi/models/observer/OrgValidationObserver;->c(Lcom/wumii/android/mimi/models/entities/circle/OrgValidationResult;)V
 
     .line 74
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/circle/OrgValidationResult;->getStatusCode()I
@@ -75,7 +75,7 @@
     .line 77
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->c(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;)Lcom/wumii/android/mimi/c/ContextToast;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;->c(Lcom/wumii/android/mimi/ui/activities/circle/EmailValidationActivity;)Lcom/wumii/android/mimi/util/ContextToast;
 
     move-result-object v1
 
@@ -83,7 +83,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -100,7 +100,7 @@
     :goto_1
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Ljava/lang/String;I)V
+    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Ljava/lang/String;I)V
 
     goto :goto_0
 

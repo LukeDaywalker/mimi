@@ -61,17 +61,17 @@
     .line 418
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICao;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->b(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)Lcom/wumii/android/mimi/a/ChatManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->b(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)Lcom/wumii/android/mimi/manager/ChatManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ChatManager;->c()I
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ChatManager;->c()I
 
     move-result v1
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICao;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
@@ -81,7 +81,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0, v2, p2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, p2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -96,11 +96,11 @@
     .line 419
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICao;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->b(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)Lcom/wumii/android/mimi/a/ChatManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->b(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)Lcom/wumii/android/mimi/manager/ChatManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ChatManager;->f()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ChatManager;->f()V
 
     goto :goto_0
 
@@ -203,7 +203,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
     move-result-object v1
 
@@ -211,7 +211,7 @@
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICao;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v3, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
@@ -221,7 +221,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v0, v3, p2, v4}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v3, p2, v4}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -231,16 +231,16 @@
 
     move-result-wide v4
 
-    invoke-virtual {v1, v2, v4, v5}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(Ljava/lang/String;J)V
+    invoke-virtual {v1, v2, v4, v5}, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->a(Ljava/lang/String;J)V
 
     .line 433
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICao;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->b(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)Lcom/wumii/android/mimi/a/ChatManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->b(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;)Lcom/wumii/android/mimi/manager/ChatManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ChatManager;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ChatManager;->a()V
 
     goto/16 :goto_0
 
@@ -256,7 +256,7 @@
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICao;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -268,7 +268,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -281,13 +281,13 @@
     if-eqz v0, :cond_0
 
     .line 435
-    invoke-static {}, Lcom/wumii/android/mimi/c/UserProfileManager;->a()Lcom/wumii/android/mimi/c/UserProfileManager;
+    invoke-static {}, Lcom/wumii/android/mimi/util/UserProfileManager;->a()Lcom/wumii/android/mimi/util/UserProfileManager;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICao;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;)V
 
     goto/16 :goto_0
 .end method

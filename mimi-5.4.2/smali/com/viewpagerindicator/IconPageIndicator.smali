@@ -3,7 +3,7 @@
 .source "IconPageIndicator.java"
 
 # interfaces
-.implements Lcom/viewpagerindicator/c;
+.implements Lcom/viewpagerindicator/ICc;
 
 
 # instance fields

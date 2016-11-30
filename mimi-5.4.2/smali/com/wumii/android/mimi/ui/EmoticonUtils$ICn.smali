@@ -13,13 +13,13 @@
 
 .field final synthetic c:Landroid/support/v4/view/ViewPager;
 
-.field final synthetic d:Lcom/wumii/android/mimi/ui/apdaters/c/EmoticonPagerAdapter;
+.field final synthetic d:Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;
 
 .field final synthetic e:Lcom/viewpagerindicator/IconPageIndicator;
 
 
 # direct methods
-.method constructor <init>(Landroid/widget/ImageView;Landroid/widget/ImageView;Landroid/support/v4/view/ViewPager;Lcom/wumii/android/mimi/ui/apdaters/c/EmoticonPagerAdapter;Lcom/viewpagerindicator/IconPageIndicator;)V
+.method constructor <init>(Landroid/widget/ImageView;Landroid/widget/ImageView;Landroid/support/v4/view/ViewPager;Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;Lcom/viewpagerindicator/IconPageIndicator;)V
     .locals 0
 
     .prologue
@@ -30,7 +30,7 @@
 
     iput-object p3, p0, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICn;->c:Landroid/support/v4/view/ViewPager;
 
-    iput-object p4, p0, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICn;->d:Lcom/wumii/android/mimi/ui/apdaters/c/EmoticonPagerAdapter;
+    iput-object p4, p0, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICn;->d:Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;
 
     iput-object p5, p0, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICn;->e:Lcom/viewpagerindicator/IconPageIndicator;
 
@@ -62,7 +62,7 @@
     .line 247
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICn;->c:Landroid/support/v4/view/ViewPager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICn;->d:Lcom/wumii/android/mimi/ui/apdaters/c/EmoticonPagerAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/EmoticonUtils$ICn;->d:Lcom/wumii/android/mimi/ui/apdaters/publish/EmoticonPagerAdapter;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPager;->setAdapter(Landroid/support/v4/view/PagerAdapter;)V
 

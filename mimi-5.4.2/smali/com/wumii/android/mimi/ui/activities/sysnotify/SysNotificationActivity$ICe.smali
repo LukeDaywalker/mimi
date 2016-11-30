@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICe;
-.super Lcom/wumii/android/mimi/b/HttpAsyncTask;
+.super Lcom/wumii/android/mimi/task/HttpAsyncTask;
 .source "SysNotificationActivity.java"
 
 
@@ -16,7 +16,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;
 
     .line 161
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/HttpAsyncTask;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/HttpAsyncTask;-><init>(Landroid/content/Context;)V
 
     .line 162
     return-void
@@ -41,7 +41,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/a/a/JacksonMapper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/jackson/databind/JacksonMapper;
 
     move-result-object v0
 
@@ -51,7 +51,7 @@
 
     const-class v2, Lcom/wumii/android/mimi/network/domain/SysNotificationsResp;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/a/a/JacksonMapper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -60,7 +60,7 @@
     .line 179
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICe;->i:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->u()Lcom/wumii/android/mimi/models/h/SysNotificationStorage;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->u()Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
 
     move-result-object v1
 
@@ -72,7 +72,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/h/SysNotificationStorage;->a(Ljava/util/List;)V
+    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;->a(Ljava/util/List;)V
 
     goto :goto_0
 .end method
@@ -110,11 +110,11 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 169
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICe;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICe;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "sys_notifications"
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 

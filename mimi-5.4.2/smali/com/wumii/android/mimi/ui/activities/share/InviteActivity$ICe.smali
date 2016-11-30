@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICe;
-.super Lcom/wumii/android/mimi/b/LoadInvitationTask;
+.super Lcom/wumii/android/mimi/task/LoadInvitationTask;
 .source "InviteActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 176
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
 
-    invoke-direct {p0, p2, p3}, Lcom/wumii/android/mimi/b/LoadInvitationTask;-><init>(Landroid/content/Context;Z)V
+    invoke-direct {p0, p2, p3}, Lcom/wumii/android/mimi/task/LoadInvitationTask;-><init>(Landroid/content/Context;Z)V
 
     return-void
 .end method
@@ -27,7 +27,7 @@
 
     .prologue
     .line 185
-    invoke-super {p0}, Lcom/wumii/android/mimi/b/LoadInvitationTask;->b()V
+    invoke-super {p0}, Lcom/wumii/android/mimi/task/LoadInvitationTask;->b()V
 
     .line 186
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
@@ -45,7 +45,7 @@
 
     .prologue
     .line 179
-    invoke-super {p0}, Lcom/wumii/android/mimi/b/LoadInvitationTask;->f_()V
+    invoke-super {p0}, Lcom/wumii/android/mimi/task/LoadInvitationTask;->f_()V
 
     .line 180
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICe;->a:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;

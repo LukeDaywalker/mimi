@@ -80,13 +80,13 @@
     .line 234
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICv;->c:Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->a(Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-static {v1}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->a(Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICv;->b:Ljava/lang/String;
 
-    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 235
     return-void

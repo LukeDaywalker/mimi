@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected e:Lcom/e/a/b/DisplayImageOptions;
+.field protected e:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
 .field private f:Landroid/view/LayoutInflater;
 
@@ -27,25 +27,25 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder;->f:Landroid/view/LayoutInflater;
 
     .line 25
-    new-instance v0, Lcom/e/a/b/DisplayImageOptions$ICf;
+    new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
-    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;-><init>()V
+    invoke-direct {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;-><init>()V
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->b(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->b(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->c(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->c(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
     sget-object v1, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Landroid/graphics/Bitmap$Config;)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Landroid/graphics/Bitmap$Config;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    new-instance v1, Lcom/e/a/b/c/RoundedBitmapDisplayer;
+    new-instance v1, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -57,17 +57,17 @@
 
     move-result v2
 
-    invoke-direct {v1, v2}, Lcom/e/a/b/c/RoundedBitmapDisplayer;-><init>(I)V
+    invoke-direct {v1, v2}, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;-><init>(I)V
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Lcom/e/a/b/c/BitmapDisplayer;)Lcom/e/a/b/DisplayImageOptions$ICf;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;->a()Lcom/e/a/b/DisplayImageOptions;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder;->e:Lcom/e/a/b/DisplayImageOptions;
+    invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a()Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseShareChatItemBuilder;->e:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 31
     return-void

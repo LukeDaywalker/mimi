@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;
-.super Lcom/wumii/android/mimi/b/HttpAsyncTask;
+.super Lcom/wumii/android/mimi/task/HttpAsyncTask;
 .source "NavigationActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 922
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;->a:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    invoke-direct {p0, p2, p3}, Lcom/wumii/android/mimi/b/HttpAsyncTask;-><init>(Landroid/content/Context;Z)V
+    invoke-direct {p0, p2, p3}, Lcom/wumii/android/mimi/task/HttpAsyncTask;-><init>(Landroid/content/Context;Z)V
 
     return-void
 .end method
@@ -39,7 +39,7 @@
 
     .prologue
     .line 925
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICal;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v1, "guidance/newbie"
 
@@ -47,7 +47,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 
@@ -61,7 +61,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/a/a/JacksonMapper;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/jackson/databind/JacksonMapper;
 
     move-result-object v1
 
@@ -71,7 +71,7 @@
 
     const-class v2, Lcom/wumii/android/mimi/network/domain/GuidanceNewbieResp;
 
-    invoke-virtual {v1, v0, v2}, Lcom/wumii/a/a/JacksonMapper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v1, v0, v2}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -103,7 +103,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 

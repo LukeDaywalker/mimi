@@ -1,5 +1,5 @@
 .class public Lcom/baidu/mapapi/map/WeightedLatLng;
-.super Lcom/baidu/mapapi/map/j$a;
+.super Lcom/baidu/mapapi/map/ICj$ICa;
 
 
 # static fields
@@ -28,7 +28,7 @@
 .method public constructor <init>(Lcom/baidu/mapapi/model/LatLng;D)V
     .locals 6
 
-    invoke-direct {p0}, Lcom/baidu/mapapi/map/j$a;-><init>()V
+    invoke-direct {p0}, Lcom/baidu/mapapi/map/ICj$ICa;-><init>()V
 
     if-nez p1, :cond_0
 

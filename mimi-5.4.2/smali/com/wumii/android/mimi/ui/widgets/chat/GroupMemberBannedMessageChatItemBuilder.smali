@@ -198,7 +198,7 @@
     move-result v4
 
     .line 83
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v8
 
@@ -214,7 +214,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder$ICam;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/GroupMemberBannedMessageChatItemBuilder;Landroid/text/SpannableStringBuilder;IILcom/wumii/android/mimi/ui/widgets/chat/AbsSystemMessageChatItemBuilder$ICc;)V
 
-    invoke-virtual {v8, v9, v0}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Lcom/e/a/b/f/ImageLoadingListener;)V
+    invoke-virtual {v8, v9, v0}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;)V
 
     goto :goto_2
 

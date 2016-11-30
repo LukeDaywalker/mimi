@@ -185,7 +185,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -228,7 +228,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -250,13 +250,13 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->p:Lcom/wumii/android/mimi/a/DiscoverManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->p:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->k()Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/DiscoverManager;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/DiscoverManager;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
 
     .line 98
     return-void
@@ -267,13 +267,13 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->p:Lcom/wumii/android/mimi/a/DiscoverManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->p:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->k()Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/DiscoverManager;->b(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/DiscoverManager;->b(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
 
     .line 103
     return-void
@@ -284,13 +284,13 @@
 
     .prologue
     .line 107
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->p:Lcom/wumii/android/mimi/a/DiscoverManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->p:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->k()Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/DiscoverManager;->c(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/DiscoverManager;->c(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
 
     .line 108
     return-void
@@ -313,7 +313,7 @@
     .line 142
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/h/c/FeedModuleStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
 
     move-result-object v0
 
@@ -321,7 +321,7 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->t:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/h/c/FeedModuleStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
     move-result-object v0
 
@@ -339,13 +339,13 @@
     if-nez p1, :cond_0
 
     .line 149
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->p:Lcom/wumii/android/mimi/a/DiscoverManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->p:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/discover/SubjectSecretListActivity;->k()Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/DiscoverManager;->b(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/DiscoverManager;->b(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)V
 
     .line 151
     :cond_0

@@ -8,15 +8,15 @@
 
 .field protected o:Lcom/wumii/android/mimi/ui/apdaters/secret/FeedAdapter;
 
-.field protected p:Lcom/wumii/android/mimi/a/DiscoverManager;
+.field protected p:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
 .field protected q:Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
 .field private r:Landroid/view/View;
 
-.field private final s:Lcom/wumii/android/mimi/models/e/DiscoverObserver;
+.field private final s:Lcom/wumii/android/mimi/models/observer/DiscoverObserver;
 
-.field private t:Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
+.field private t:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
 
 # direct methods
@@ -32,14 +32,14 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICa;-><init>(Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->s:Lcom/wumii/android/mimi/models/e/DiscoverObserver;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->s:Lcom/wumii/android/mimi/models/observer/DiscoverObserver;
 
     .line 235
     new-instance v0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICe;
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity$ICe;-><init>(Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->t:Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->t:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
     return-void
 .end method
@@ -219,7 +219,7 @@
     .line 109
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/h/c/FeedModuleStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->A()Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;
 
     move-result-object v1
 
@@ -245,7 +245,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/models/h/c/FeedModuleStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
+    invoke-virtual {v1, v0, v2}, Lcom/wumii/android/mimi/models/storage/secret/FeedModuleStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/FeedType;Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/FeedModule;
 
     move-result-object v0
 
@@ -261,22 +261,22 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->n:Lcom/wumii/android/mimi/ui/widgets/XListView;
 
     .line 112
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->d()Lcom/wumii/android/mimi/a/DiscoverManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->d()Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->p:Lcom/wumii/android/mimi/a/DiscoverManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->p:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
     .line 113
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->p:Lcom/wumii/android/mimi/a/DiscoverManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->p:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->s:Lcom/wumii/android/mimi/models/e/DiscoverObserver;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->s:Lcom/wumii/android/mimi/models/observer/DiscoverObserver;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/DiscoverManager;->addObserver(Ljava/util/Observer;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/DiscoverManager;->addObserver(Ljava/util/Observer;)V
 
     .line 114
     invoke-virtual {p0, v4}, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->findViewById(I)Landroid/view/View;
@@ -351,13 +351,13 @@
     .line 159
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/h/c/FeedStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->t:Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->t:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/c/FeedStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
 
     .line 160
     return-void
@@ -386,22 +386,22 @@
 
     .line 188
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->p:Lcom/wumii/android/mimi/a/DiscoverManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->p:Lcom/wumii/android/mimi/manager/DiscoverManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->s:Lcom/wumii/android/mimi/models/e/DiscoverObserver;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->s:Lcom/wumii/android/mimi/models/observer/DiscoverObserver;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/DiscoverManager;->deleteObserver(Ljava/util/Observer;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/DiscoverManager;->deleteObserver(Ljava/util/Observer;)V
 
     .line 190
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/h/c/FeedStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->t:Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/discover/BaseDiscoverSecretListActivity;->t:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/c/FeedStorage;->b(Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->b(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
 
     .line 191
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onDestroy()V

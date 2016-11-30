@@ -42,7 +42,7 @@
     .line 191
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICax;->a:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->g(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)Lcom/wumii/android/mimi/a/CircleManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->g(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)Lcom/wumii/android/mimi/manager/CircleManager;
 
     move-result-object v1
 
@@ -57,7 +57,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-virtual {v1, v0, p1}, Lcom/wumii/android/mimi/a/CircleManager;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v0, p1}, Lcom/wumii/android/mimi/manager/CircleManager;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 193
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICax;->a:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
@@ -85,7 +85,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
+    invoke-static {v1, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
 
     .line 195
     return-void
@@ -118,7 +118,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 223
     return-void
@@ -133,7 +133,7 @@
     const/16 v1, 0x8
 
     .line 199
-    invoke-static {p1}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -146,16 +146,16 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 202
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICax;->a:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->g(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)Lcom/wumii/android/mimi/a/CircleManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;->g(Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;)Lcom/wumii/android/mimi/manager/CircleManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/CircleManager;->d()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/CircleManager;->d()V
 
     .line 203
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICax;->a:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
@@ -164,7 +164,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 204
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICax;->a:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
@@ -173,7 +173,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 205
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICax;->a:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
@@ -182,7 +182,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 206
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICax;->a:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
@@ -191,7 +191,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 207
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICax;->a:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
@@ -200,7 +200,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 218
     :goto_0
@@ -214,7 +214,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 210
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity$ICax;->a:Lcom/wumii/android/mimi/ui/activities/circle/SearchCircleActivity;
@@ -223,10 +223,10 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 211
-    invoke-static {}, Lcom/wumii/android/mimi/c/ThreadUtils;->a()Landroid/os/Handler;
+    invoke-static {}, Lcom/wumii/android/mimi/util/ThreadUtils;->a()Landroid/os/Handler;
 
     move-result-object v0
 

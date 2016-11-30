@@ -1,5 +1,5 @@
 .class public Lcom/baidu/platform/comapi/map/G;
-.super Lcom/baidu/platform/comapi/map/b;
+.super Lcom/baidu/platform/comapi/map/ICb;
 
 
 # static fields
@@ -32,7 +32,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/baidu/platform/comapi/map/b;-><init>()V
+    invoke-direct {p0}, Lcom/baidu/platform/comapi/map/ICb;-><init>()V
 
     return-void
 .end method

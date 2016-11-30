@@ -885,7 +885,7 @@
     if-eqz p1, :cond_0
 
     .line 192
-    invoke-static {}, Lcom/wumii/android/mimi/c/Utils;->a()Ljava/util/Date;
+    invoke-static {}, Lcom/wumii/android/mimi/util/Utils;->a()Ljava/util/Date;
 
     move-result-object v1
 

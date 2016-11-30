@@ -3,7 +3,7 @@
 .source "GroupChatInfoOwnerActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/c/UserProfileManager$ICau;
+.implements Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
 
 
 # instance fields
@@ -190,7 +190,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/a/a/c/BooleanUtils;->a(Ljava/lang/Boolean;)Z
+    invoke-static {v1}, Lorg/apache/commons/long/BooleanUtils;->a(Ljava/lang/Boolean;)Z
 
     move-result v1
 

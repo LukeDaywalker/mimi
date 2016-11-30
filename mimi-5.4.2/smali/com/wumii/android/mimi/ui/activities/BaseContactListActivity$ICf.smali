@@ -3,7 +3,7 @@
 .source "BaseContactListActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/b/ReadContactsTask$ICbh;
+.implements Lcom/wumii/android/mimi/task/ReadContactsTask$ICbh;
 
 
 # instance fields
@@ -56,7 +56,7 @@
 
     .prologue
     .line 243
-    invoke-static {p1}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {p1}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 

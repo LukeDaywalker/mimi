@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field protected a:Lcom/wumii/android/mimi/models/d/NetworkHelper;
+.field protected a:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
 .field private b:Landroid/content/BroadcastReceiver;
 
@@ -26,11 +26,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->n()Lcom/wumii/android/mimi/models/d/NetworkHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->n()Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/network/NetworkManager;->a:Lcom/wumii/android/mimi/models/d/NetworkHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/network/NetworkManager;->a:Lcom/wumii/android/mimi/models/helper/NetworkHelper;
 
     .line 25
     new-instance v0, Lcom/wumii/android/mimi/network/NetworkManager$ICk;

@@ -15,7 +15,7 @@
 
 .field static f:I
 
-.field private static g:Lcom/baidu/platform/comapi/util/e;
+.field private static g:Lcom/baidu/platform/comapi/util/ICe;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/e;
+    sput-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/ICe;
 
     return-void
 .end method
@@ -133,19 +133,19 @@
 .method public static initAppDirectory(Landroid/content/Context;)V
     .locals 2
 
-    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/e;
+    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/ICe;
 
     if-nez v0, :cond_0
 
-    invoke-static {}, Lcom/baidu/platform/comapi/util/e;->a()Lcom/baidu/platform/comapi/util/e;
+    invoke-static {}, Lcom/baidu/platform/comapi/util/ICe;->a()Lcom/baidu/platform/comapi/util/ICe;
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/e;
+    sput-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/ICe;
 
-    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/e;
+    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/ICe;
 
-    invoke-virtual {v0, p0}, Lcom/baidu/platform/comapi/util/e;->a(Landroid/content/Context;)V
+    invoke-virtual {v0, p0}, Lcom/baidu/platform/comapi/util/ICe;->a(Landroid/content/Context;)V
 
     :cond_0
     sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->a:Ljava/lang/String;
@@ -201,13 +201,13 @@
     sput-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->b:Ljava/lang/String;
 
     :goto_0
-    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/e;
+    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/ICe;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/util/e;->b()Lcom/baidu/platform/comapi/util/d;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/util/ICe;->b()Lcom/baidu/platform/comapi/util/ICd;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/util/d;->d()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/util/ICd;->d()Ljava/lang/String;
 
     move-result-object v0
 
@@ -228,25 +228,25 @@
     return-void
 
     :cond_1
-    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/e;
+    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/ICe;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/util/e;->b()Lcom/baidu/platform/comapi/util/d;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/util/ICe;->b()Lcom/baidu/platform/comapi/util/ICd;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/util/d;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/util/ICd;->a()Ljava/lang/String;
 
     move-result-object v0
 
     sput-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->a:Ljava/lang/String;
 
-    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/e;
+    sget-object v0, Lcom/baidu/mapapi/common/EnvironmentUtilities;->g:Lcom/baidu/platform/comapi/util/ICe;
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/util/e;->b()Lcom/baidu/platform/comapi/util/d;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/util/ICe;->b()Lcom/baidu/platform/comapi/util/ICd;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/baidu/platform/comapi/util/d;->c()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/baidu/platform/comapi/util/ICd;->c()Ljava/lang/String;
 
     move-result-object v0
 

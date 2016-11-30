@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;
-.super Lcom/wumii/android/mimi/b/HttpAsyncTask;
+.super Lcom/wumii/android/mimi/task/HttpAsyncTask;
 .source "SearchImageActivity.java"
 
 
@@ -38,7 +38,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
     .line 152
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/HttpAsyncTask;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/HttpAsyncTask;-><init>(Landroid/content/Context;)V
 
     .line 145
     iput v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->t:I
@@ -296,13 +296,13 @@
 
     .line 286
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     const-string/jumbo v3, "offset"
 
-    invoke-virtual {v0, p1, v2, v3}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Lcom/fasterxml/jackson/databind/JsonNode;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v2, v3}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Lcom/fasterxml/jackson/databind/JsonNode;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -333,7 +333,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/a/a/JacksonMapper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/jackson/databind/JacksonMapper;
 
     move-result-object v0
 
@@ -343,7 +343,7 @@
 
     const-class v3, Lcom/wumii/android/mimi/network/domain/ImageSearchResp;
 
-    invoke-virtual {v0, v2, v3}, Lcom/wumii/a/a/JacksonMapper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v3}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -360,7 +360,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v2}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v2
 
@@ -388,7 +388,7 @@
     :cond_3
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->j:Landroid/widget/TextView;
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 
@@ -396,7 +396,7 @@
     :cond_4
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->r:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
-    invoke-static {v2, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 300
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->v:Lcom/wumii/android/mimi/models/entities/LoadMode;
@@ -474,7 +474,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 239
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->r:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
@@ -566,11 +566,11 @@
     const-string/jumbo v2, "image/search"
 
     .line 258
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
-    invoke-virtual {v3, v2, v1}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v3, v2, v1}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v3
 
@@ -582,25 +582,25 @@
 
     const-string/jumbo v5, "fetchUrl"
 
-    invoke-virtual {v0, v3, v4, v5}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Lcom/fasterxml/jackson/databind/JsonNode;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v3, v4, v5}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Lcom/fasterxml/jackson/databind/JsonNode;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
     .line 259
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v4, "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36"
 
-    invoke-virtual {v3, v0, v4}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v3, v0, v4}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 260
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
-    invoke-virtual {v3, v2, v1, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v3, v2, v1, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 
@@ -633,13 +633,13 @@
 
     .line 277
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->f:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->f:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0602ff
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     goto :goto_0
 .end method
@@ -649,7 +649,7 @@
 
     .prologue
     .line 265
-    invoke-super {p0, p1}, Lcom/wumii/android/mimi/b/HttpAsyncTask;->e(Ljava/lang/Exception;)V
+    invoke-super {p0, p1}, Lcom/wumii/android/mimi/task/HttpAsyncTask;->e(Ljava/lang/Exception;)V
 
     .line 266
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->v:Lcom/wumii/android/mimi/models/entities/LoadMode;
@@ -663,7 +663,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 269
     :cond_0
@@ -681,7 +681,7 @@
     .line 223
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->q:Landroid/view/View;
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 224
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->v:Lcom/wumii/android/mimi/models/entities/LoadMode;
@@ -693,22 +693,22 @@
     .line 225
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->d:Landroid/widget/ProgressBar;
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 226
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->r:Lcom/wumii/android/mimi/ui/widgets/PagedStaggeredGridView;
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 227
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->j:Landroid/widget/TextView;
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 228
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->k:Landroid/widget/ImageView;
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 230
     :cond_0
@@ -729,7 +729,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 178
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbg;->s:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter;

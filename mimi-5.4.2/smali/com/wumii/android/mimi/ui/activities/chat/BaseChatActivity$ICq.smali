@@ -3,7 +3,7 @@
 .source "BaseChatActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/c/AppConfigManager$ICb;
+.implements Lcom/wumii/android/mimi/util/AppConfigManager$ICb;
 
 
 # instance fields
@@ -56,7 +56,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->s:Landroid/widget/ImageButton;
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 502
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
@@ -65,7 +65,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->C:Landroid/widget/ImageView;
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 511
     :goto_0
@@ -79,7 +79,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->s:Landroid/widget/ImageButton;
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 505
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
@@ -88,7 +88,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->C:Landroid/widget/ImageView;
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 
@@ -100,7 +100,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->s:Landroid/widget/ImageButton;
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 509
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;
@@ -109,7 +109,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->C:Landroid/widget/ImageView;
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 .end method

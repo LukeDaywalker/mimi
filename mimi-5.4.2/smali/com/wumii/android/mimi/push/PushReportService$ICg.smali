@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/push/PushReportService$ICg;
-.super Lcom/wumii/android/mimi/b/HttpAsyncTask;
+.super Lcom/wumii/android/mimi/task/HttpAsyncTask;
 .source "PushReportService.java"
 
 
@@ -29,7 +29,7 @@
     .line 129
     const/4 v0, 0x1
 
-    invoke-direct {p0, p2, v0}, Lcom/wumii/android/mimi/b/HttpAsyncTask;-><init>(Landroid/content/Context;Z)V
+    invoke-direct {p0, p2, v0}, Lcom/wumii/android/mimi/task/HttpAsyncTask;-><init>(Landroid/content/Context;Z)V
 
     .line 126
     new-instance v0, Ljava/util/HashSet;
@@ -129,7 +129,7 @@
 
     const-string/jumbo v5, ","
 
-    invoke-static {v1, v5}, Lorg/a/a/c/StringUtils;->a([Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v5}, Lorg/apache/commons/long/StringUtils;->a([Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -144,7 +144,7 @@
 
     const-string/jumbo v4, ","
 
-    invoke-static {v2, v4}, Lorg/a/a/c/StringUtils;->a([Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v4}, Lorg/apache/commons/long/StringUtils;->a([Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -159,18 +159,18 @@
 
     const-string/jumbo v3, ","
 
-    invoke-static {v2, v3}, Lorg/a/a/c/StringUtils;->a([Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v3}, Lorg/apache/commons/long/StringUtils;->a([Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 158
-    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/push/PushReportService$ICg;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "push/report"
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 
@@ -224,7 +224,7 @@
 
     .prologue
     .line 133
-    invoke-static {p1}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {p1}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -268,7 +268,7 @@
     invoke-interface {v0, p1}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 
     .line 140
-    invoke-super {p0}, Lcom/wumii/android/mimi/b/HttpAsyncTask;->j()V
+    invoke-super {p0}, Lcom/wumii/android/mimi/task/HttpAsyncTask;->j()V
 
     goto :goto_0
 .end method

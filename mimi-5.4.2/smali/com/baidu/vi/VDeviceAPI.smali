@@ -32,7 +32,7 @@
 .method public static getAppVersion()Ljava/lang/String;
     .locals 3
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -43,7 +43,7 @@
     iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
     :try_start_0
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v1
 
@@ -75,7 +75,7 @@
 .method public static getAvailableMemory()J
     .locals 4
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -119,7 +119,7 @@
 .method public static getCellId()Ljava/lang/String;
     .locals 3
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -182,7 +182,7 @@
 .method public static getCurrentNetworkType()I
     .locals 2
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -285,7 +285,7 @@
 .method public static getImei()Ljava/lang/String;
     .locals 2
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -315,7 +315,7 @@
 .method public static getImsi()Ljava/lang/String;
     .locals 2
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -345,7 +345,7 @@
 .method public static getLac()Ljava/lang/String;
     .locals 3
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -408,7 +408,7 @@
 .method public static getModuleFileName()Ljava/lang/String;
     .locals 1
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -423,12 +423,12 @@
     return-object v0
 .end method
 
-.method public static getNetworkInfo(I)Lcom/baidu/vi/c;
+.method public static getNetworkInfo(I)Lcom/baidu/vi/ICc;
     .locals 3
 
     const/4 v1, 0x0
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -447,9 +447,9 @@
     :goto_0
     if-eqz v2, :cond_0
 
-    new-instance v0, Lcom/baidu/vi/c;
+    new-instance v0, Lcom/baidu/vi/ICc;
 
-    invoke-direct {v0, v2}, Lcom/baidu/vi/c;-><init>(Landroid/net/NetworkInfo;)V
+    invoke-direct {v0, v2}, Lcom/baidu/vi/ICc;-><init>(Landroid/net/NetworkInfo;)V
 
     :goto_1
     return-object v0
@@ -501,7 +501,7 @@
 
     const/4 v0, -0x1
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v1
 
@@ -554,7 +554,7 @@
 .method public static getScreenDensity()F
     .locals 3
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -570,7 +570,7 @@
 
     invoke-direct {v1}, Landroid/util/DisplayMetrics;-><init>()V
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -599,7 +599,7 @@
 .method public static getScreenDensityDpi()I
     .locals 3
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -615,7 +615,7 @@
 
     invoke-direct {v1}, Landroid/util/DisplayMetrics;-><init>()V
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -738,7 +738,7 @@
 .method public static getSystemMetricsX()F
     .locals 3
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -754,7 +754,7 @@
 
     invoke-direct {v1}, Landroid/util/DisplayMetrics;-><init>()V
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -785,7 +785,7 @@
 .method public static getSystemMetricsY()F
     .locals 3
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -801,7 +801,7 @@
 
     invoke-direct {v1}, Landroid/util/DisplayMetrics;-><init>()V
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -926,7 +926,7 @@
 .method public static getWifiHotpot()[Landroid/net/wifi/ScanResult;
     .locals 2
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -962,7 +962,7 @@
 .method public static isWifiConnected()Z
     .locals 2
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -1026,7 +1026,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v1
 
@@ -1051,7 +1051,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v1
 
@@ -1148,7 +1148,7 @@
 
     invoke-virtual {v1, v0}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -1201,7 +1201,7 @@
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v1
 
@@ -1215,9 +1215,9 @@
 
     invoke-static {}, Lcom/baidu/vi/VDeviceAPI;->unsetNetworkChangedCallback()V
 
-    new-instance v0, Lcom/baidu/vi/a;
+    new-instance v0, Lcom/baidu/vi/ICa;
 
-    invoke-direct {v0}, Lcom/baidu/vi/a;-><init>()V
+    invoke-direct {v0}, Lcom/baidu/vi/ICa;-><init>()V
 
     sput-object v0, Lcom/baidu/vi/VDeviceAPI;->b:Landroid/content/BroadcastReceiver;
 
@@ -1227,7 +1227,7 @@
 
     invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v1
 
@@ -1247,7 +1247,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 
@@ -1323,7 +1323,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v1
 
@@ -1339,7 +1339,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-static {}, Lcom/baidu/vi/b;->a()Landroid/content/Context;
+    invoke-static {}, Lcom/baidu/vi/ICb;->a()Landroid/content/Context;
 
     move-result-object v0
 

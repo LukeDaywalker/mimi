@@ -301,11 +301,11 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->q()Lcom/wumii/android/mimi/models/d/HttpHelper;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->q()Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a()Ljava/util/Map;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a()Ljava/util/Map;
 
     move-result-object v1
 
@@ -604,11 +604,11 @@
 
     .line 159
     :cond_0
-    sget-object v2, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->f:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v2, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->f:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v3, "Cookie\u4e3anull"
 
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 161
     :cond_1
@@ -616,9 +616,9 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->l()Lcom/wumii/android/mimi/models/d/HostHelper;
+    invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->l()Lcom/wumii/android/mimi/models/helper/HostHelper;
 
-    invoke-static {}, Lcom/wumii/android/mimi/models/d/HostHelper;->a()Ljava/lang/String;
+    invoke-static {}, Lcom/wumii/android/mimi/models/helper/HostHelper;->a()Ljava/lang/String;
 
     move-result-object v2
 
@@ -681,11 +681,11 @@
     invoke-interface {v1, v2, v0}, Lorg/slf4j/Logger;->error(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 171
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->f:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->f:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v1, "WebView\u8bbe\u7f6eCookie\u5931\u8d25"
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

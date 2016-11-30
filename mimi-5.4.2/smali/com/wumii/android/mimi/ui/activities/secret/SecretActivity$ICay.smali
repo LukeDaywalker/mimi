@@ -152,7 +152,7 @@
     if-eqz v3, :cond_0
 
     .line 1481
-    invoke-static {v4}, Lcom/wumii/android/mimi/c/Utils;->c(Landroid/view/View;)Landroid/graphics/Point;
+    invoke-static {v4}, Lcom/wumii/android/mimi/util/Utils;->c(Landroid/view/View;)Landroid/graphics/Point;
 
     move-result-object v0
 
@@ -179,7 +179,7 @@
     sub-int/2addr v0, v1
 
     .line 1484
-    invoke-static {}, Lcom/wumii/android/mimi/c/Utils;->b()Z
+    invoke-static {}, Lcom/wumii/android/mimi/util/Utils;->b()Z
 
     move-result v1
 
@@ -272,7 +272,7 @@
     invoke-virtual {v6, v7}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 1502
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v4
 
@@ -296,11 +296,11 @@
 
     move-result v7
 
-    invoke-static {v7}, Lcom/wumii/android/mimi/c/Utils;->a(I)Lcom/e/a/b/DisplayImageOptions;
+    invoke-static {v7}, Lcom/wumii/android/mimi/util/Utils;->a(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v7
 
-    invoke-virtual {v4, v3, v6, v7}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v4, v3, v6, v7}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 1505
     invoke-virtual {v1, v6}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
@@ -352,7 +352,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;Landroid/view/animation/Animation;I)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;Landroid/view/animation/Animation;I)V
 
     .line 1515
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICay;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
@@ -361,13 +361,13 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/h/CommonStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
     move-result-object v0
 
     const/4 v1, 0x5
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/CommonStorage;->c(I)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/CommonStorage;->c(I)V
 
     .line 1517
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICay;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;

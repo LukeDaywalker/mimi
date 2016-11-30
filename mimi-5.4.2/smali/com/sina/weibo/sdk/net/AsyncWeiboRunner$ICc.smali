@@ -86,7 +86,7 @@
 
     invoke-direct {v0, v1}, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;-><init>(Ljava/lang/Object;)V
     :try_end_0
-    .catch Lcom/sina/weibo/sdk/a/WeiboException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/sina/weibo/sdk/exception/WeiboException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 125
     :goto_0
@@ -101,7 +101,7 @@
     .line 125
     new-instance v0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;
 
-    invoke-direct {v0, v1}, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;-><init>(Lcom/sina/weibo/sdk/a/WeiboException;)V
+    invoke-direct {v0, v1}, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;-><init>(Lcom/sina/weibo/sdk/exception/WeiboException;)V
 
     goto :goto_0
 .end method
@@ -120,7 +120,7 @@
 
     .prologue
     .line 135
-    invoke-virtual {p1}, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;->b()Lcom/sina/weibo/sdk/a/WeiboException;
+    invoke-virtual {p1}, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;->b()Lcom/sina/weibo/sdk/exception/WeiboException;
 
     move-result-object v0
 
@@ -130,7 +130,7 @@
     .line 137
     iget-object v1, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICc;->d:Lcom/sina/weibo/sdk/net/RequestListener;
 
-    invoke-interface {v1, v0}, Lcom/sina/weibo/sdk/net/RequestListener;->a(Lcom/sina/weibo/sdk/a/WeiboException;)V
+    invoke-interface {v1, v0}, Lcom/sina/weibo/sdk/net/RequestListener;->a(Lcom/sina/weibo/sdk/exception/WeiboException;)V
 
     .line 141
     :goto_0

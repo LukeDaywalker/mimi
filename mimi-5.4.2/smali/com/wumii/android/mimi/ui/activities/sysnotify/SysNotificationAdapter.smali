@@ -183,7 +183,7 @@
 
     invoke-direct {v3, v4, v5}, Ljava/util/Date;-><init>(J)V
 
-    invoke-static {v3}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Date;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -203,7 +203,7 @@
     const/16 v0, 0x8
 
     :goto_1
-    invoke-static {v2, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 67
     return-object p2

@@ -18,7 +18,7 @@
         value = {
             "Landroid/util/SparseArray",
             "<",
-            "Lvi/com/gdi/bgl/android/java/a;",
+            "Lvi/com/gdi/bgl/android/java/ICa;",
             ">;"
         }
     .end annotation
@@ -119,13 +119,13 @@
 
     move-result-object v2
 
-    check-cast v2, Lvi/com/gdi/bgl/android/java/a;
+    check-cast v2, Lvi/com/gdi/bgl/android/java/ICa;
 
     if-eqz v2, :cond_0
 
     sget-object v3, Lvi/com/gdi/bgl/android/java/EnvDrawText;->pt:Landroid/graphics/Paint;
 
-    iget-object v2, v2, Lvi/com/gdi/bgl/android/java/a;->a:Landroid/graphics/Typeface;
+    iget-object v2, v2, Lvi/com/gdi/bgl/android/java/ICa;->a:Landroid/graphics/Typeface;
 
     invoke-virtual {v3, v2}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
@@ -1144,21 +1144,21 @@
 
     move-result-object v0
 
-    check-cast v0, Lvi/com/gdi/bgl/android/java/a;
+    check-cast v0, Lvi/com/gdi/bgl/android/java/ICa;
 
     if-nez v0, :cond_3
 
-    new-instance v0, Lvi/com/gdi/bgl/android/java/a;
+    new-instance v0, Lvi/com/gdi/bgl/android/java/ICa;
 
-    invoke-direct {v0}, Lvi/com/gdi/bgl/android/java/a;-><init>()V
+    invoke-direct {v0}, Lvi/com/gdi/bgl/android/java/ICa;-><init>()V
 
-    iput-object p1, v0, Lvi/com/gdi/bgl/android/java/a;->a:Landroid/graphics/Typeface;
+    iput-object p1, v0, Lvi/com/gdi/bgl/android/java/ICa;->a:Landroid/graphics/Typeface;
 
-    iget v2, v0, Lvi/com/gdi/bgl/android/java/a;->b:I
+    iget v2, v0, Lvi/com/gdi/bgl/android/java/ICa;->b:I
 
     add-int/lit8 v2, v2, 0x1
 
-    iput v2, v0, Lvi/com/gdi/bgl/android/java/a;->b:I
+    iput v2, v0, Lvi/com/gdi/bgl/android/java/ICa;->b:I
 
     sget-object v2, Lvi/com/gdi/bgl/android/java/EnvDrawText;->fontCache:Landroid/util/SparseArray;
 
@@ -1177,11 +1177,11 @@
 
     :cond_3
     :try_start_1
-    iget v2, v0, Lvi/com/gdi/bgl/android/java/a;->b:I
+    iget v2, v0, Lvi/com/gdi/bgl/android/java/ICa;->b:I
 
     add-int/lit8 v2, v2, 0x1
 
-    iput v2, v0, Lvi/com/gdi/bgl/android/java/a;->b:I
+    iput v2, v0, Lvi/com/gdi/bgl/android/java/ICa;->b:I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -1202,7 +1202,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lvi/com/gdi/bgl/android/java/a;
+    check-cast v0, Lvi/com/gdi/bgl/android/java/ICa;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1216,13 +1216,13 @@
 
     :cond_1
     :try_start_1
-    iget v2, v0, Lvi/com/gdi/bgl/android/java/a;->b:I
+    iget v2, v0, Lvi/com/gdi/bgl/android/java/ICa;->b:I
 
     add-int/lit8 v2, v2, -0x1
 
-    iput v2, v0, Lvi/com/gdi/bgl/android/java/a;->b:I
+    iput v2, v0, Lvi/com/gdi/bgl/android/java/ICa;->b:I
 
-    iget v0, v0, Lvi/com/gdi/bgl/android/java/a;->b:I
+    iget v0, v0, Lvi/com/gdi/bgl/android/java/ICa;->b:I
 
     if-nez v0, :cond_0
 

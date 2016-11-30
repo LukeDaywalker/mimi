@@ -30,11 +30,11 @@
 
     .prologue
     .line 292
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->d:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->d:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
     const-string/jumbo v1, "\u70b9\u51fb[\u53bb\u8865\u5145]\u6309\u94ae"
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/EventUtils;->b(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/EventUtils;->b(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;)V
 
     .line 293
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICbt;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;

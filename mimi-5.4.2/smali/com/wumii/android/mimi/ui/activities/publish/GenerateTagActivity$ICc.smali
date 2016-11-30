@@ -102,13 +102,13 @@
     .line 117
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->h(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)Lcom/wumii/android/mimi/c/ContextToast;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->h(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)Lcom/wumii/android/mimi/util/ContextToast;
 
     move-result-object v0
 
     const v1, 0x7f0603c5
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 131
     :cond_0
@@ -162,13 +162,13 @@
     .line 129
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICc;->a:Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->i(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)Lcom/wumii/android/mimi/c/ContextToast;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->i(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)Lcom/wumii/android/mimi/util/ContextToast;
 
     move-result-object v0
 
     const v1, 0x7f0603c6
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     goto :goto_0
 .end method

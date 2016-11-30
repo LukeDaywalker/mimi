@@ -19,11 +19,11 @@
     .end annotation
 .end field
 
-.field private static d:Lcom/baidu/lbsapi/auth/i;
+.field private static d:Lcom/baidu/lbsapi/auth/ICi;
 
-.field private static e:Lcom/baidu/lbsapi/auth/n;
+.field private static e:Lcom/baidu/lbsapi/auth/ICn;
 
-.field private static f:Lcom/baidu/platform/comapi/util/PermissionCheck$c;
+.field private static f:Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;
 
 
 # direct methods
@@ -40,11 +40,11 @@
 
     sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->a:Ljava/lang/String;
 
-    sput-object v1, Lcom/baidu/platform/comapi/util/PermissionCheck;->d:Lcom/baidu/lbsapi/auth/i;
+    sput-object v1, Lcom/baidu/platform/comapi/util/PermissionCheck;->d:Lcom/baidu/lbsapi/auth/ICi;
 
-    sput-object v1, Lcom/baidu/platform/comapi/util/PermissionCheck;->e:Lcom/baidu/lbsapi/auth/n;
+    sput-object v1, Lcom/baidu/platform/comapi/util/PermissionCheck;->e:Lcom/baidu/lbsapi/auth/ICn;
 
-    sput-object v1, Lcom/baidu/platform/comapi/util/PermissionCheck;->f:Lcom/baidu/platform/comapi/util/PermissionCheck$c;
+    sput-object v1, Lcom/baidu/platform/comapi/util/PermissionCheck;->f:Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;
 
     return-void
 .end method
@@ -57,10 +57,10 @@
     return-void
 .end method
 
-.method static synthetic a()Lcom/baidu/platform/comapi/util/PermissionCheck$c;
+.method static synthetic a()Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;
     .locals 1
 
-    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->f:Lcom/baidu/platform/comapi/util/PermissionCheck$c;
+    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->f:Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;
 
     return-object v0
 .end method
@@ -70,11 +70,11 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->f:Lcom/baidu/platform/comapi/util/PermissionCheck$c;
+    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->f:Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;
 
     sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->b:Landroid/content/Context;
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->e:Lcom/baidu/lbsapi/auth/n;
+    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->e:Lcom/baidu/lbsapi/auth/ICn;
 
     return-void
 .end method
@@ -101,30 +101,30 @@
     sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
 
     :cond_0
-    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->d:Lcom/baidu/lbsapi/auth/i;
+    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->d:Lcom/baidu/lbsapi/auth/ICi;
 
     if-nez v0, :cond_1
 
     sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->b:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/baidu/lbsapi/auth/i;->a(Landroid/content/Context;)Lcom/baidu/lbsapi/auth/i;
+    invoke-static {v0}, Lcom/baidu/lbsapi/auth/ICi;->a(Landroid/content/Context;)Lcom/baidu/lbsapi/auth/ICi;
 
     move-result-object v0
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->d:Lcom/baidu/lbsapi/auth/i;
+    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->d:Lcom/baidu/lbsapi/auth/ICi;
 
     :cond_1
-    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->e:Lcom/baidu/lbsapi/auth/n;
+    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->e:Lcom/baidu/lbsapi/auth/ICn;
 
     if-nez v0, :cond_2
 
-    new-instance v0, Lcom/baidu/platform/comapi/util/PermissionCheck$a;
+    new-instance v0, Lcom/baidu/platform/comapi/util/PermissionCheck$ICa;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/baidu/platform/comapi/util/PermissionCheck$a;-><init>(Lcom/baidu/platform/comapi/util/PermissionCheck$1;)V
+    invoke-direct {v0, v1}, Lcom/baidu/platform/comapi/util/PermissionCheck$ICa;-><init>(Lcom/baidu/platform/comapi/util/PermissionCheck$1;)V
 
-    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->e:Lcom/baidu/lbsapi/auth/n;
+    sput-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->e:Lcom/baidu/lbsapi/auth/ICn;
 
     :cond_2
     const-string/jumbo v0, ""
@@ -179,7 +179,7 @@
 
     sget-object v3, Lcom/baidu/platform/comapi/util/PermissionCheck;->b:Landroid/content/Context;
 
-    invoke-static {v3}, Lcom/baidu/platform/comapi/util/a;->a(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/baidu/platform/comapi/util/ICa;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -193,7 +193,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-static {}, Lcom/baidu/platform/comapi/util/f;->a()Landroid/os/Bundle;
+    invoke-static {}, Lcom/baidu/platform/comapi/util/ICf;->a()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -443,11 +443,11 @@
     monitor-enter v1
 
     :try_start_0
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->d:Lcom/baidu/lbsapi/auth/i;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->d:Lcom/baidu/lbsapi/auth/ICi;
 
     if-eqz v2, :cond_0
 
-    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->e:Lcom/baidu/lbsapi/auth/n;
+    sget-object v2, Lcom/baidu/platform/comapi/util/PermissionCheck;->e:Lcom/baidu/lbsapi/auth/ICn;
 
     if-eqz v2, :cond_0
 
@@ -465,7 +465,7 @@
 
     :cond_1
     :try_start_1
-    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->d:Lcom/baidu/lbsapi/auth/i;
+    sget-object v0, Lcom/baidu/platform/comapi/util/PermissionCheck;->d:Lcom/baidu/lbsapi/auth/ICi;
 
     const/4 v2, 0x0
 
@@ -473,9 +473,9 @@
 
     sget-object v4, Lcom/baidu/platform/comapi/util/PermissionCheck;->c:Ljava/util/Hashtable;
 
-    sget-object v5, Lcom/baidu/platform/comapi/util/PermissionCheck;->e:Lcom/baidu/lbsapi/auth/n;
+    sget-object v5, Lcom/baidu/platform/comapi/util/PermissionCheck;->e:Lcom/baidu/lbsapi/auth/ICn;
 
-    invoke-virtual {v0, v2, v3, v4, v5}, Lcom/baidu/lbsapi/auth/i;->a(ZLjava/lang/String;Ljava/util/Hashtable;Lcom/baidu/lbsapi/auth/n;)I
+    invoke-virtual {v0, v2, v3, v4, v5}, Lcom/baidu/lbsapi/auth/ICi;->a(ZLjava/lang/String;Ljava/util/Hashtable;Lcom/baidu/lbsapi/auth/ICn;)I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -491,10 +491,10 @@
     throw v0
 .end method
 
-.method public static setPermissionCheckResultListener(Lcom/baidu/platform/comapi/util/PermissionCheck$c;)V
+.method public static setPermissionCheckResultListener(Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;)V
     .locals 0
 
-    sput-object p0, Lcom/baidu/platform/comapi/util/PermissionCheck;->f:Lcom/baidu/platform/comapi/util/PermissionCheck$c;
+    sput-object p0, Lcom/baidu/platform/comapi/util/PermissionCheck;->f:Lcom/baidu/platform/comapi/util/PermissionCheck$ICc;
 
     return-void
 .end method

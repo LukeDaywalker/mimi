@@ -23,7 +23,7 @@
 
 .field private s:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
-.field private t:Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;
+.field private t:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;
 
 
 # direct methods
@@ -134,7 +134,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-static {v1, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v1, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 183
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->o:Lcom/wumii/android/mimi/ui/widgets/SectionListView;
@@ -151,25 +151,25 @@
     goto :goto_0
 .end method
 
-.method private i()Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;
+.method private i()Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;
     .locals 1
 
     .prologue
     .line 138
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->t:Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->t:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;
 
     if-nez v0, :cond_0
 
     .line 139
-    new-instance v0, Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;
+    new-instance v0, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;-><init>(Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->t:Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->t:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;
 
     .line 141
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->t:Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->t:Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;
 
     return-object v0
 .end method
@@ -368,7 +368,7 @@
 
     .prologue
     .line 113
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->i()Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->i()Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;
 
     move-result-object v0
 
@@ -394,7 +394,7 @@
 
     invoke-direct {v4, p0}, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity$ICdr;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;)V
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/b/UpdateGroupInfoTask;->a(Lcom/wumii/android/mimi/models/entities/chat/GroupChat;ZLjava/lang/String;Lcom/wumii/android/mimi/b/UpdateGroupInfoTask$ICcj;)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/task/UpdateGroupInfoTask;->a(Lcom/wumii/android/mimi/models/entities/chat/GroupChat;ZLjava/lang/String;Lcom/wumii/android/mimi/task/UpdateGroupInfoTask$ICcj;)V
 
     .line 124
     return-void
@@ -487,7 +487,7 @@
 
     const/high16 v2, 0x42b00000    # 88.0f
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
@@ -562,7 +562,7 @@
     .line 101
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/h/a/ChatStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
     move-result-object v0
 
@@ -576,7 +576,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
 
     move-result-object v0
 
@@ -624,7 +624,7 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetGroupChatPermissionActivity;->s:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/ChatInfoUtils;->a(Landroid/content/res/Resources;Lcom/wumii/android/mimi/models/entities/chat/GroupChat;)Ljava/lang/String;
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/ChatInfoUtils;->a(Landroid/content/res/Resources;Lcom/wumii/android/mimi/models/entities/chat/GroupChat;)Ljava/lang/String;
 
     move-result-object v1
 

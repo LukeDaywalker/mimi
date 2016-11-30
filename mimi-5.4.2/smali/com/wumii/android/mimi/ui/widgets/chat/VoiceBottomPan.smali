@@ -9,7 +9,7 @@
 # instance fields
 .field private a:Landroid/content/Context;
 
-.field private b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.field private b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
 .field private c:Landroid/widget/RelativeLayout;
 
@@ -23,7 +23,7 @@
 
 .field private h:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
 
-.field private i:Lcom/wumii/android/mimi/models/d/CountDownTimer;
+.field private i:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
 .field private j:J
 
@@ -45,7 +45,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/d/PreferencesHelper;Lcom/wumii/android/soundtouch/RecordClient;Lcom/wumii/android/mimi/ui/OnVoiceRecListener;Landroid/view/ViewGroup;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/wumii/android/mimi/models/helper/PreferencesHelper;Lcom/wumii/android/soundtouch/RecordClient;Lcom/wumii/android/mimi/ui/OnVoiceRecListener;Landroid/view/ViewGroup;)V
     .locals 5
 
     .prologue
@@ -66,7 +66,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->a:Landroid/content/Context;
 
     .line 132
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 133
     iput-object p3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->e:Lcom/wumii/android/soundtouch/RecordClient;
@@ -243,7 +243,7 @@
 
     .prologue
     .line 401
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -253,7 +253,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, p1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -266,7 +266,7 @@
     if-nez v0, :cond_0
 
     .line 402
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const/4 v1, 0x1
 
@@ -274,7 +274,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, p1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, p1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 404
     invoke-virtual {p0, p2}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->a(I)V
@@ -312,7 +312,7 @@
 
     .line 209
     :cond_1
-    invoke-static {p1}, Lcom/wumii/android/mimi/c/Utils;->c(Landroid/view/View;)Landroid/graphics/Point;
+    invoke-static {p1}, Lcom/wumii/android/mimi/util/Utils;->c(Landroid/view/View;)Landroid/graphics/Point;
 
     move-result-object v0
 
@@ -329,7 +329,7 @@
     :pswitch_0
     iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->l:I
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(II)Z
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(II)Z
 
     move-result v0
 
@@ -390,13 +390,13 @@
     invoke-virtual {v0, v2}, Lcom/wumii/android/soundtouch/RecordClient;->a(Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;)V
 
     .line 231
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->e()Lcom/wumii/android/mimi/models/d/CountDownTimer;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->e()Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     move-result-object v0
 
     const-wide/32 v2, 0xea60
 
-    invoke-virtual {v0, v2, v3, v10, v11}, Lcom/wumii/android/mimi/models/d/CountDownTimer;->a(JJ)Lcom/wumii/android/mimi/models/d/CountDownTimer;
+    invoke-virtual {v0, v2, v3, v10, v11}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->a(JJ)Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     .line 233
     new-instance v0, Landroid/os/Handler;
@@ -415,7 +415,7 @@
     :pswitch_1
     iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->l:I
 
-    invoke-static {v0, v4}, Lcom/wumii/android/mimi/c/Utils;->a(II)Z
+    invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(II)Z
 
     move-result v0
 
@@ -425,11 +425,11 @@
     invoke-direct {p0, v3}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b(I)V
 
     .line 249
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->e()Lcom/wumii/android/mimi/models/d/CountDownTimer;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->e()Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/CountDownTimer;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;->a()V
 
     .line 250
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->h:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
@@ -502,7 +502,7 @@
 
     invoke-direct {v4, p0, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbn;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;Z)V
 
-    invoke-static {v4, v8, v9}, Lcom/wumii/android/mimi/c/ThreadUtils;->a(Ljava/lang/Runnable;J)V
+    invoke-static {v4, v8, v9}, Lcom/wumii/android/mimi/util/ThreadUtils;->a(Ljava/lang/Runnable;J)V
 
     .line 272
     const-wide/16 v4, 0x0
@@ -546,7 +546,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbo;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;)V
 
-    invoke-static {v0, v2, v3}, Lcom/wumii/android/mimi/c/ThreadUtils;->a(Ljava/lang/Runnable;J)V
+    invoke-static {v0, v2, v3}, Lcom/wumii/android/mimi/util/ThreadUtils;->a(Ljava/lang/Runnable;J)V
 
     goto/16 :goto_0
 
@@ -560,7 +560,7 @@
     :pswitch_2
     iget v2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->l:I
 
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/Utils;->a(II)Z
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/util/Utils;->a(II)Z
 
     move-result v2
 
@@ -570,7 +570,7 @@
 
     const/4 v4, 0x4
 
-    invoke-static {v2, v4}, Lcom/wumii/android/mimi/c/Utils;->a(II)Z
+    invoke-static {v2, v4}, Lcom/wumii/android/mimi/util/Utils;->a(II)Z
 
     move-result v2
 
@@ -760,11 +760,11 @@
 
     .prologue
     .line 364
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/b/VoiceAuditionOptionsAdapter;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->a:Landroid/content/Context;
 
-    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/b/VoiceAuditionOptionsAdapter;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;-><init>(Landroid/content/Context;)V
 
     .line 365
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->h:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbu;
@@ -784,12 +784,12 @@
 
     new-instance v2, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;
 
-    invoke-direct {v2, p0, v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;Lcom/wumii/android/mimi/ui/apdaters/b/VoiceAuditionOptionsAdapter;)V
+    invoke-direct {v2, p0, v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;)V
 
     invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceAuditionOptionsGallery;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 396
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
@@ -801,7 +801,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -824,12 +824,12 @@
     return-void
 .end method
 
-.method private e()Lcom/wumii/android/mimi/models/d/CountDownTimer;
+.method private e()Lcom/wumii/android/mimi/models/helper/CountDownTimer;
     .locals 1
 
     .prologue
     .line 413
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->i:Lcom/wumii/android/mimi/models/d/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->i:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     if-nez v0, :cond_0
 
@@ -838,11 +838,11 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbs;-><init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->i:Lcom/wumii/android/mimi/models/d/CountDownTimer;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->i:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     .line 433
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->i:Lcom/wumii/android/mimi/models/d/CountDownTimer;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->i:Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 
     return-object v0
 .end method
@@ -891,12 +891,12 @@
     return-void
 .end method
 
-.method static synthetic g(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.method static synthetic g(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
     .locals 1
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->b:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     return-object v0
 .end method

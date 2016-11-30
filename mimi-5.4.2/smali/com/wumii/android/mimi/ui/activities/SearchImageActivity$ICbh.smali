@@ -52,7 +52,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/models/d/FileHelper;->c(Ljava/lang/String;)Ljava/io/File;
+    invoke-static {v1}, Lcom/wumii/android/mimi/models/helper/FileHelper;->c(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v1
 

@@ -32,7 +32,7 @@
     .line 250
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity$ICbn;->a:Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->g(Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;)Lcom/wumii/android/mimi/a/TagManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;->g(Lcom/wumii/android/mimi/ui/activities/TagSecretListActivity;)Lcom/wumii/android/mimi/manager/TagManager;
 
     move-result-object v0
 
@@ -66,7 +66,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/a/TagManager;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/manager/TagManager;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 251
     return-void

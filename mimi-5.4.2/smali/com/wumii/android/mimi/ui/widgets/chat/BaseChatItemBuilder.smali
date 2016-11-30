@@ -23,7 +23,7 @@
 
 .field private h:I
 
-.field private i:Lcom/e/a/b/DisplayImageOptions;
+.field private i:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
 .field private j:Landroid/view/View$OnClickListener;
 
@@ -72,7 +72,7 @@
     .line 57
     const/high16 v0, 0x40800000    # 4.0f
 
-    invoke-static {p2, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {p2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -81,7 +81,7 @@
     .line 58
     const/high16 v0, 0x41000000    # 8.0f
 
-    invoke-static {p2, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {p2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -90,7 +90,7 @@
     .line 59
     const/high16 v0, 0x41200000    # 10.0f
 
-    invoke-static {p2, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {p2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -99,7 +99,7 @@
     .line 62
     const/high16 v0, 0x41400000    # 12.0f
 
-    invoke-static {p2, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {p2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -139,11 +139,11 @@
     iput v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->c:I
 
     .line 68
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/Utils;->a(I)Lcom/e/a/b/DisplayImageOptions;
+    invoke-static {v1}, Lcom/wumii/android/mimi/util/Utils;->a(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->i:Lcom/e/a/b/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->i:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 69
     return-void
@@ -553,7 +553,7 @@
     if-eqz v1, :cond_1
 
     .line 90
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v1
 
@@ -565,9 +565,9 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->i:Lcom/e/a/b/DisplayImageOptions;
+    iget-object v7, p0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->i:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-    invoke-virtual {v1, v5, v6, v7}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v1, v5, v6, v7}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 92
     :cond_1
@@ -584,7 +584,7 @@
     move v1, v2
 
     :goto_1
-    invoke-static {v5, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v5, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 93
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICg;->d(Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICg;)Landroid/widget/TextView;
@@ -619,7 +619,7 @@
     move v1, v3
 
     :goto_2
-    invoke-static {v4, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v4, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 99
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->isLikedByCurUser()Z
@@ -630,7 +630,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/a/a/c/BooleanUtils;->a(Ljava/lang/Boolean;)Z
+    invoke-static {v1}, Lorg/apache/commons/long/BooleanUtils;->a(Ljava/lang/Boolean;)Z
 
     move-result v1
 
@@ -680,7 +680,7 @@
     move v1, v3
 
     :goto_4
-    invoke-static {v6, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v6, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 104
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICg;->f(Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICg;)Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICe;
@@ -696,7 +696,7 @@
     move v1, v3
 
     :goto_5
-    invoke-static {v6, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v6, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 106
     invoke-virtual {p0, p1, v0}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICg;)V
@@ -716,14 +716,14 @@
 
     move-result-object v5
 
-    invoke-static {v4, v5}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v4, v5}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v4
 
     if-eqz v4, :cond_9
 
     :goto_6
-    invoke-static {v1, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v1, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 110
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICg;->h(Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICg;)Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;
@@ -890,7 +890,7 @@
     move v0, v1
 
     :goto_0
-    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 126
     iget-object v0, p2, Lcom/wumii/android/mimi/ui/widgets/chat/BaseChatItemBuilder$ICf;->b:Landroid/widget/ProgressBar;
@@ -910,7 +910,7 @@
     if-ne v3, v4, :cond_2
 
     :goto_1
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 128
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;->isFromLoginUser()Z
@@ -972,7 +972,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 140
     :goto_0
@@ -986,7 +986,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 .end method

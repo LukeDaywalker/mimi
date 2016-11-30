@@ -112,7 +112,7 @@
 
     aput-object p0, v0, v4
 
-    invoke-static {v0}, Lorg/a/a/b/FileUtils;->a([Ljava/lang/String;)Ljava/io/File;
+    invoke-static {v0}, Lorg/apache/commons/io/FileUtils;->a([Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 
@@ -133,12 +133,12 @@
 
     aput-object v3, v2, v4
 
-    invoke-static {v2}, Lorg/a/a/b/FileUtils;->a([Ljava/lang/String;)Ljava/io/File;
+    invoke-static {v2}, Lorg/apache/commons/io/FileUtils;->a([Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v2
 
     .line 62
-    invoke-static {v2}, Lorg/a/a/b/FileUtils;->d(Ljava/io/File;)Z
+    invoke-static {v2}, Lorg/apache/commons/io/FileUtils;->d(Ljava/io/File;)Z
 
     .line 64
     invoke-virtual {v0}, Ljava/io/File;->length()J
@@ -238,13 +238,13 @@
     invoke-static {}, Lcom/hikvh/media/amr/AmrEncoder;->exit()V
 
     .line 94
-    invoke-static {v3}, Lorg/a/a/b/IOUtils;->a(Ljava/io/InputStream;)V
+    invoke-static {v3}, Lorg/apache/commons/io/IOUtils;->a(Ljava/io/InputStream;)V
 
     .line 95
-    invoke-static {v2}, Lorg/a/a/b/IOUtils;->a(Ljava/io/OutputStream;)V
+    invoke-static {v2}, Lorg/apache/commons/io/IOUtils;->a(Ljava/io/OutputStream;)V
 
     .line 97
-    invoke-static {v1, p0}, Lcom/wumii/android/mimi/models/d/FileHelper;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, p0}, Lcom/wumii/android/mimi/models/helper/FileHelper;->b(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -288,7 +288,7 @@
     .line 86
     :cond_2
     :try_start_1
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a([B)[S
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a([B)[S
 
     move-result-object v0
 

@@ -11,7 +11,7 @@
     return-void
 .end method
 
-.method public static getSearchRecordFromLocalCityInfo(Lcom/baidu/platform/comapi/map/q;)Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;
+.method public static getSearchRecordFromLocalCityInfo(Lcom/baidu/platform/comapi/map/ICq;)Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;
     .locals 6
 
     if-nez p0, :cond_0
@@ -26,21 +26,21 @@
 
     invoke-direct {v2}, Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;-><init>()V
 
-    iget v0, p0, Lcom/baidu/platform/comapi/map/q;->a:I
+    iget v0, p0, Lcom/baidu/platform/comapi/map/ICq;->a:I
 
     iput v0, v2, Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;->cityID:I
 
-    iget-object v0, p0, Lcom/baidu/platform/comapi/map/q;->b:Ljava/lang/String;
+    iget-object v0, p0, Lcom/baidu/platform/comapi/map/ICq;->b:Ljava/lang/String;
 
     iput-object v0, v2, Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;->cityName:Ljava/lang/String;
 
-    iget v0, p0, Lcom/baidu/platform/comapi/map/q;->d:I
+    iget v0, p0, Lcom/baidu/platform/comapi/map/ICq;->d:I
 
     iput v0, v2, Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;->cityType:I
 
     const/4 v0, 0x0
 
-    invoke-virtual {p0}, Lcom/baidu/platform/comapi/map/q;->a()Ljava/util/ArrayList;
+    invoke-virtual {p0}, Lcom/baidu/platform/comapi/map/ICq;->a()Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -50,7 +50,7 @@
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-virtual {p0}, Lcom/baidu/platform/comapi/map/q;->a()Ljava/util/ArrayList;
+    invoke-virtual {p0}, Lcom/baidu/platform/comapi/map/ICq;->a()Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -71,15 +71,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/platform/comapi/map/q;
+    check-cast v0, Lcom/baidu/platform/comapi/map/ICq;
 
-    invoke-static {v0}, Lcom/baidu/mapapi/map/offline/OfflineMapUtil;->getSearchRecordFromLocalCityInfo(Lcom/baidu/platform/comapi/map/q;)Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;
+    invoke-static {v0}, Lcom/baidu/mapapi/map/offline/OfflineMapUtil;->getSearchRecordFromLocalCityInfo(Lcom/baidu/platform/comapi/map/ICq;)Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;
 
     move-result-object v5
 
     invoke-virtual {v3, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/q;->c:I
+    iget v0, v0, Lcom/baidu/platform/comapi/map/ICq;->c:I
 
     add-int/2addr v0, v1
 
@@ -107,14 +107,14 @@
     goto :goto_0
 
     :cond_3
-    iget v0, p0, Lcom/baidu/platform/comapi/map/q;->c:I
+    iget v0, p0, Lcom/baidu/platform/comapi/map/ICq;->c:I
 
     iput v0, v2, Lcom/baidu/mapapi/map/offline/MKOLSearchRecord;->size:I
 
     goto :goto_2
 .end method
 
-.method public static getUpdatElementFromLocalMapElement(Lcom/baidu/platform/comapi/map/t;)Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;
+.method public static getUpdatElementFromLocalMapElement(Lcom/baidu/platform/comapi/map/ICt;)Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;
     .locals 3
 
     if-nez p0, :cond_0
@@ -129,19 +129,19 @@
 
     invoke-direct {v0}, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;-><init>()V
 
-    iget v1, p0, Lcom/baidu/platform/comapi/map/t;->a:I
+    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->a:I
 
     iput v1, v0, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;->cityID:I
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/map/t;->b:Ljava/lang/String;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICt;->b:Ljava/lang/String;
 
     iput-object v1, v0, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;->cityName:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/map/t;->g:Lcom/baidu/mapapi/model/inner/GeoPoint;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICt;->g:Lcom/baidu/mapapi/model/inner/GeoPoint;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/baidu/platform/comapi/map/t;->g:Lcom/baidu/mapapi/model/inner/GeoPoint;
+    iget-object v1, p0, Lcom/baidu/platform/comapi/map/ICt;->g:Lcom/baidu/mapapi/model/inner/GeoPoint;
 
     invoke-static {v1}, Lcom/baidu/mapapi/model/CoordUtil;->mc2ll(Lcom/baidu/mapapi/model/inner/GeoPoint;)Lcom/baidu/mapapi/model/LatLng;
 
@@ -150,45 +150,45 @@
     iput-object v1, v0, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;->geoPt:Lcom/baidu/mapapi/model/LatLng;
 
     :cond_1
-    iget v1, p0, Lcom/baidu/platform/comapi/map/t;->e:I
+    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->e:I
 
     iput v1, v0, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;->level:I
 
-    iget v1, p0, Lcom/baidu/platform/comapi/map/t;->i:I
+    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->i:I
 
     iput v1, v0, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;->ratio:I
 
-    iget v1, p0, Lcom/baidu/platform/comapi/map/t;->h:I
+    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->h:I
 
     iput v1, v0, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;->serversize:I
 
-    iget v1, p0, Lcom/baidu/platform/comapi/map/t;->i:I
+    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->i:I
 
     const/16 v2, 0x64
 
     if-ne v1, v2, :cond_2
 
-    iget v1, p0, Lcom/baidu/platform/comapi/map/t;->h:I
+    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->h:I
 
     iput v1, v0, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;->size:I
 
     :goto_1
-    iget v1, p0, Lcom/baidu/platform/comapi/map/t;->l:I
+    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->l:I
 
     iput v1, v0, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;->status:I
 
-    iget-boolean v1, p0, Lcom/baidu/platform/comapi/map/t;->j:Z
+    iget-boolean v1, p0, Lcom/baidu/platform/comapi/map/ICt;->j:Z
 
     iput-boolean v1, v0, Lcom/baidu/mapapi/map/offline/MKOLUpdateElement;->update:Z
 
     goto :goto_0
 
     :cond_2
-    iget v1, p0, Lcom/baidu/platform/comapi/map/t;->h:I
+    iget v1, p0, Lcom/baidu/platform/comapi/map/ICt;->h:I
 
     div-int/lit8 v1, v1, 0x64
 
-    iget v2, p0, Lcom/baidu/platform/comapi/map/t;->i:I
+    iget v2, p0, Lcom/baidu/platform/comapi/map/ICt;->i:I
 
     mul-int/2addr v1, v2
 

@@ -10,9 +10,9 @@
 # instance fields
 .field private b:Landroid/app/NotificationManager;
 
-.field private c:Lcom/wumii/android/mimi/models/d/HttpHelper;
+.field private c:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
-.field private d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.field private d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
 .field private e:Landroid/support/v4/app/NotificationCompat$Builder;
 
@@ -180,12 +180,12 @@
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/wumii/android/mimi/services/AppDownloadService;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.method static synthetic c(Lcom/wumii/android/mimi/services/AppDownloadService;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
     .locals 1
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     return-object v0
 .end method
@@ -200,12 +200,12 @@
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/wumii/android/mimi/services/AppDownloadService;)Lcom/wumii/android/mimi/models/d/HttpHelper;
+.method static synthetic e(Lcom/wumii/android/mimi/services/AppDownloadService;)Lcom/wumii/android/mimi/models/helper/HttpHelper;
     .locals 1
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->c:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->c:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     return-object v0
 .end method
@@ -261,22 +261,22 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->d:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->d:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 98
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->q()Lcom/wumii/android/mimi/models/d/HttpHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->q()Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->c:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/services/AppDownloadService;->c:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     .line 99
     invoke-static {}, Lcom/wumii/android/mimi/app/MainApplication;->a()Lcom/wumii/android/mimi/app/MainApplication;
@@ -367,7 +367,7 @@
 
     move-result-object v1
 
-    invoke-static {v1, v0}, Lcom/wumii/android/mimi/models/d/FileHelper;->b(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
+    invoke-static {v1, v0}, Lcom/wumii/android/mimi/models/helper/FileHelper;->b(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 

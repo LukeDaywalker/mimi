@@ -218,7 +218,7 @@
     .line 104
     iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
-    invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 115
     :goto_3
@@ -285,7 +285,7 @@
     .line 108
     iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
-    invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 109
     iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
@@ -316,7 +316,7 @@
 
     const/16 v3, 0x8
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_3
 
@@ -343,7 +343,7 @@
     .line 120
     iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
 
-    invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 121
     iget-object v0, v2, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter$ICo;->b:Landroid/widget/TextView;
@@ -503,7 +503,7 @@
 
     move-result v4
 
-    invoke-static {v3, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
+    invoke-static {v3, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
 
     move-result-object v3
 
@@ -522,7 +522,7 @@
 
     move-result v4
 
-    invoke-static {v3, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
+    invoke-static {v3, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
 
     move-result-object v3
 
@@ -541,7 +541,7 @@
 
     move-result v4
 
-    invoke-static {v3, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
+    invoke-static {v3, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
 
     move-result-object v3
 
@@ -611,7 +611,7 @@
 
     move-result v5
 
-    invoke-static {v4, v5}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
+    invoke-static {v4, v5}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -628,7 +628,7 @@
 
     move-result v4
 
-    invoke-static {v3, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
+    invoke-static {v3, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
 
     move-result-object v3
 

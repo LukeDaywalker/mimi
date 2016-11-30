@@ -1,5 +1,5 @@
 .class public Lcom/wumii/android/mimi/models/entities/circle/CircleDao;
-.super Lcom/wumii/android/mimi/models/a/AbsDao;
+.super Lcom/wumii/android/mimi/models/dao/AbsDao;
 .source "CircleDao.java"
 
 
@@ -23,7 +23,7 @@
 
     .prologue
     .line 29
-    invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/a/AbsDao;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/wumii/android/mimi/models/dao/AbsDao;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 30
     return-void
@@ -400,11 +400,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/h/c/FeedStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->G()Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/h/c/FeedStorage;->b(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)Ljava/util/List;
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/models/storage/secret/FeedStorage;->b(Lcom/wumii/android/mimi/models/entities/secret/FeedModule;)Ljava/util/List;
 
     move-result-object v0
 
@@ -487,7 +487,7 @@
 
     .line 67
     :cond_1
-    invoke-static {v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/database/Cursor;)V
+    invoke-static {v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/database/Cursor;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -595,7 +595,7 @@
 
     .line 87
     :cond_1
-    invoke-static {v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/database/Cursor;)V
+    invoke-static {v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/database/Cursor;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

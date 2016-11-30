@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;
-.super Lcom/wumii/android/mimi/b/BlockTask;
+.super Lcom/wumii/android/mimi/task/BlockTask;
 .source "AbsSingleChatInfoActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 98
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->q:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;
 
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/BlockTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/BlockTask;-><init>(Landroid/app/Activity;)V
 
     return-void
 .end method
@@ -34,7 +34,7 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;->a(Lcom/wumii/android/mimi/models/entities/chat/BlockType;)V
 
     .line 122
-    invoke-super {p0, p1, p2, p3}, Lcom/wumii/android/mimi/b/BlockTask;->a(IILjava/lang/String;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/wumii/android/mimi/task/BlockTask;->a(IILjava/lang/String;)V
 
     .line 123
     return-void
@@ -129,7 +129,7 @@
 
     .prologue
     .line 115
-    invoke-super {p0, p1}, Lcom/wumii/android/mimi/b/BlockTask;->c(Ljava/lang/Exception;)V
+    invoke-super {p0, p1}, Lcom/wumii/android/mimi/task/BlockTask;->c(Ljava/lang/Exception;)V
 
     .line 116
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity$ICa;->q:Lcom/wumii/android/mimi/ui/activities/chat/AbsSingleChatInfoActivity;

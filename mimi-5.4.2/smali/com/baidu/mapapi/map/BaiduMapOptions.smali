@@ -75,12 +75,12 @@
 
 
 # virtual methods
-.method a()Lcom/baidu/platform/comapi/map/z;
+.method a()Lcom/baidu/platform/comapi/map/ICz;
     .locals 2
 
-    new-instance v0, Lcom/baidu/platform/comapi/map/z;
+    new-instance v0, Lcom/baidu/platform/comapi/map/ICz;
 
-    invoke-direct {v0}, Lcom/baidu/platform/comapi/map/z;-><init>()V
+    invoke-direct {v0}, Lcom/baidu/platform/comapi/map/ICz;-><init>()V
 
     iget-object v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->a:Lcom/baidu/mapapi/map/MapStatus;
 
@@ -88,43 +88,43 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/z;->a(Lcom/baidu/platform/comapi/map/B;)Lcom/baidu/platform/comapi/map/z;
+    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICz;->a(Lcom/baidu/platform/comapi/map/B;)Lcom/baidu/platform/comapi/map/ICz;
 
     move-result-object v0
 
     iget-boolean v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->b:Z
 
-    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/z;->a(Z)Lcom/baidu/platform/comapi/map/z;
+    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICz;->a(Z)Lcom/baidu/platform/comapi/map/ICz;
 
     move-result-object v0
 
     iget v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->c:I
 
-    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/z;->a(I)Lcom/baidu/platform/comapi/map/z;
+    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICz;->a(I)Lcom/baidu/platform/comapi/map/ICz;
 
     move-result-object v0
 
     iget-boolean v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->d:Z
 
-    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/z;->b(Z)Lcom/baidu/platform/comapi/map/z;
+    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICz;->b(Z)Lcom/baidu/platform/comapi/map/ICz;
 
     move-result-object v0
 
     iget-boolean v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->e:Z
 
-    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/z;->c(Z)Lcom/baidu/platform/comapi/map/z;
+    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICz;->c(Z)Lcom/baidu/platform/comapi/map/ICz;
 
     move-result-object v0
 
     iget-boolean v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->f:Z
 
-    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/z;->d(Z)Lcom/baidu/platform/comapi/map/z;
+    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICz;->d(Z)Lcom/baidu/platform/comapi/map/ICz;
 
     move-result-object v0
 
     iget-boolean v1, p0, Lcom/baidu/mapapi/map/BaiduMapOptions;->g:Z
 
-    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/z;->e(Z)Lcom/baidu/platform/comapi/map/z;
+    invoke-virtual {v0, v1}, Lcom/baidu/platform/comapi/map/ICz;->e(Z)Lcom/baidu/platform/comapi/map/ICz;
 
     move-result-object v0
 

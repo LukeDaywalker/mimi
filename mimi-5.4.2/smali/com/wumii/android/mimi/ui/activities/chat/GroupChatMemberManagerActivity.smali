@@ -12,7 +12,7 @@
 
 .field private p:Lcom/wumii/android/mimi/ui/widgets/CustomTabPageIndicator;
 
-.field private q:Lcom/wumii/android/mimi/ui/apdaters/b/GroupChatMemberManagerPagerAdapter;
+.field private q:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberManagerPagerAdapter;
 
 .field private r:Lcom/wumii/android/mimi/ui/apdaters/CustomTabAdapter;
 
@@ -100,7 +100,7 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatMemberManagerActivity;->o:Landroid/support/v4/view/ViewPager;
 
     .line 56
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/b/GroupChatMemberManagerPagerAdapter;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberManagerPagerAdapter;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatMemberManagerActivity;->f()Landroid/support/v4/app/FragmentManager;
 
@@ -112,14 +112,14 @@
 
     move-result v2
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/b/GroupChatMemberManagerPagerAdapter;-><init>(Landroid/content/Context;Landroid/support/v4/app/FragmentManager;I)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberManagerPagerAdapter;-><init>(Landroid/content/Context;Landroid/support/v4/app/FragmentManager;I)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatMemberManagerActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/b/GroupChatMemberManagerPagerAdapter;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatMemberManagerActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberManagerPagerAdapter;
 
     .line 57
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatMemberManagerActivity;->o:Landroid/support/v4/view/ViewPager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatMemberManagerActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/b/GroupChatMemberManagerPagerAdapter;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatMemberManagerActivity;->q:Lcom/wumii/android/mimi/ui/apdaters/chat/GroupChatMemberManagerPagerAdapter;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPager;->setAdapter(Landroid/support/v4/view/PagerAdapter;)V
 
@@ -241,7 +241,7 @@
     .line 42
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatMemberManagerActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/h/a/ChatStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
     move-result-object v0
 
@@ -255,7 +255,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
 
     move-result-object v0
 
@@ -308,7 +308,7 @@
     .line 80
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatMemberManagerActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->t()Lcom/wumii/android/mimi/models/h/a/ChatBannedMemberStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->t()Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;
 
     move-result-object v0
 
@@ -318,7 +318,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/a/ChatBannedMemberStorage;->b(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/chat/ChatBannedMemberStorage;->b(Ljava/lang/String;)V
 
     .line 81
     return-void

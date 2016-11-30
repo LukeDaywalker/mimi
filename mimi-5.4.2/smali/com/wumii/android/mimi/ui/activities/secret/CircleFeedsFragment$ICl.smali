@@ -3,7 +3,7 @@
 .source "CircleFeedsFragment.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
+.implements Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
 
 # instance fields
@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method public a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICe;)V
+.method public a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICe;)V
     .locals 2
 
     .prologue

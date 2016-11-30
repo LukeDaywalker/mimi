@@ -18,7 +18,7 @@
 
 .field private s:Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICd;
 
-.field private t:Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
+.field private t:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
 
 # direct methods
@@ -50,7 +50,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity$ICc;-><init>(Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->t:Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->t:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
     return-void
 .end method
@@ -329,7 +329,7 @@
     .line 61
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->o:Landroid/widget/ListView;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;)V
 
     .line 63
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->o:Landroid/widget/ListView;
@@ -343,7 +343,7 @@
     .line 73
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->v()Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;
 
     move-result-object v0
 
@@ -351,27 +351,27 @@
 
     const-wide/16 v2, 0x0
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/h/a/ChatSessionStorage;->a(Ljava/lang/String;J)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/storage/chat/ChatSessionStorage;->a(Ljava/lang/String;J)V
 
     .line 74
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->u()Lcom/wumii/android/mimi/models/h/SysNotificationStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->u()Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->t:Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->t:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/SysNotificationStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
 
     .line 76
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->u()Lcom/wumii/android/mimi/models/h/SysNotificationStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->u()Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/SysNotificationStorage;->a()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;->a()Ljava/util/List;
 
     move-result-object v0
 
@@ -450,20 +450,20 @@
 
     .prologue
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->t:Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->t:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
     if-eqz v0, :cond_0
 
     .line 83
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->u()Lcom/wumii/android/mimi/models/h/SysNotificationStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->u()Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->t:Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/sysnotify/SysNotificationActivity;->t:Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/SysNotificationStorage;->b(Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/SysNotificationStorage;->b(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
 
     .line 86
     :cond_0

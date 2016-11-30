@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICan;
-.super Lcom/wumii/android/mimi/b/BlockSecretChatTask;
+.super Lcom/wumii/android/mimi/task/BlockSecretChatTask;
 .source "SecretActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 914
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICan;->d:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/BlockSecretChatTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/BlockSecretChatTask;-><init>(Landroid/app/Activity;)V
 
     return-void
 .end method
@@ -58,7 +58,7 @@
     .line 919
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICan;->i:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->D()Lcom/wumii/android/mimi/models/h/c/SecretStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->D()Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;
 
     move-result-object v0
 
@@ -68,7 +68,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/c/SecretStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/Secret;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;->a(Lcom/wumii/android/mimi/models/entities/secret/Secret;)V
 
     .line 920
     return-void

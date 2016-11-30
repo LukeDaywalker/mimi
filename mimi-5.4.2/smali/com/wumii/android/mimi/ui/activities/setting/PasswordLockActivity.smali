@@ -24,7 +24,7 @@
 
 .field private r:Landroid/util/DisplayMetrics;
 
-.field private s:Lcom/wumii/android/mimi/models/d/FileHelper;
+.field private s:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
 .field private t:Landroid/os/Handler;
 
@@ -253,12 +253,12 @@
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;)Lcom/wumii/android/mimi/models/d/FileHelper;
+.method static synthetic d(Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;)Lcom/wumii/android/mimi/models/helper/FileHelper;
     .locals 1
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->s:Lcom/wumii/android/mimi/models/d/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->s:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     return-object v0
 .end method
@@ -440,18 +440,18 @@
     :cond_1
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->C:Ljava/lang/String;
 
-    invoke-static {p1, v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
     .line 192
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-string/jumbo v1, "lock_password"
 
-    invoke-virtual {v0, p1, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, p1, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 193
     invoke-virtual {p0, v6}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->setResult(I)V
@@ -484,31 +484,31 @@
     if-ne v0, v1, :cond_5
 
     .line 202
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v1, Ljava/lang/String;
 
     const-string/jumbo v2, "lock_password"
 
-    invoke-virtual {v0, v1, v2, v5}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v5}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
     .line 203
-    invoke-static {p1, v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
     .line 204
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-string/jumbo v1, "lock_password"
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/String;)V
 
     .line 205
     invoke-virtual {p0, v6}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->setResult(I)V
@@ -538,20 +538,20 @@
     if-ne v0, v1, :cond_7
 
     .line 212
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v1, Ljava/lang/String;
 
     const-string/jumbo v2, "lock_password"
 
-    invoke-virtual {v0, v1, v2, v5}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v5}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
     .line 213
-    invoke-static {p1, v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -592,20 +592,20 @@
     if-ne v0, v1, :cond_0
 
     .line 223
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v1, Ljava/lang/String;
 
     const-string/jumbo v2, "lock_password"
 
-    invoke-virtual {v0, v1, v2, v5}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v5}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
     .line 224
-    invoke-static {p1, v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -745,11 +745,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/d/FileHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->s:Lcom/wumii/android/mimi/models/d/FileHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->s:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 92
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->getResources()Landroid/content/res/Resources;

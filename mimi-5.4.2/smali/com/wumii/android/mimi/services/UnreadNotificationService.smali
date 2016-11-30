@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field private b:Lcom/wumii/android/mimi/models/d/HttpHelper;
+.field private b:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
-.field private c:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.field private c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
 .field private d:Ljava/util/concurrent/ScheduledExecutorService;
 
@@ -55,22 +55,22 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     .line 43
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->q()Lcom/wumii/android/mimi/models/d/HttpHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->q()Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->b:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->b:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     .line 44
     return-void
@@ -102,7 +102,7 @@
     .prologue
     .line 96
     :try_start_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->b:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->b:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v1, "unread/count"
 
@@ -110,7 +110,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 
@@ -126,7 +126,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/a/a/JacksonMapper;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->i()Lcom/wumii/jackson/databind/JacksonMapper;
 
     move-result-object v1
 
@@ -136,14 +136,14 @@
 
     const-class v2, Lcom/wumii/android/mimi/network/domain/UnreadCountResp;
 
-    invoke-virtual {v1, v0, v2}, Lcom/wumii/a/a/JacksonMapper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v1, v0, v2}, Lcom/wumii/jackson/databind/JacksonMapper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/wumii/android/mimi/network/domain/UnreadCountResp;
 
     .line 102
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/UnreadCountResp;->getChatPreview()J
 
@@ -155,10 +155,10 @@
 
     const-string/jumbo v3, "unread_chat_message_count_from_service"
 
-    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 103
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/UnreadCountResp;->getNotification()J
 
@@ -170,10 +170,10 @@
 
     const-string/jumbo v3, "unread_notification_count"
 
-    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 104
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/UnreadCountResp;->getNewFriendGroupChatCount()J
 
@@ -185,10 +185,10 @@
 
     const-string/jumbo v3, "unread_new_friend_group_chat_count"
 
-    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 105
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/UnreadCountResp;->getNewOrganizationGroupChatCount()J
 
@@ -200,10 +200,10 @@
 
     const-string/jumbo v3, "unread_new_organization_group_chat_count"
 
-    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 106
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/UnreadCountResp;->getNewCrowdGroupChatCount()J
 
@@ -215,10 +215,10 @@
 
     const-string/jumbo v3, "unread_new_crowd_croup_chat_count"
 
-    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 107
-    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/UnreadCountResp;->getNewJoinableCircleCount()J
 
@@ -230,7 +230,7 @@
 
     const-string/jumbo v3, "unread_new_joinable_circle_count"
 
-    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 109
     invoke-virtual {v0}, Lcom/wumii/android/mimi/network/domain/UnreadCountResp;->getUserProfileUpdated()Ljava/lang/Boolean;
@@ -249,7 +249,7 @@
     move-result v1
 
     .line 111
-    iget-object v2, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -257,7 +257,7 @@
 
     const-string/jumbo v3, "update_profile"
 
-    invoke-virtual {v2, v1, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v2, v1, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 114
     :cond_0
@@ -310,7 +310,7 @@
 
     .line 120
     :cond_1
-    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/services/UnreadNotificationService;->c:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -318,7 +318,7 @@
 
     const-string/jumbo v2, "unread_group_application_chat_message_count_from_service"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -332,7 +332,7 @@
     move-exception v0
 
     .line 125
-    instance-of v1, v0, Lcom/wumii/a/a/JacksonMapper$ICg;
+    instance-of v1, v0, Lcom/wumii/jackson/databind/JacksonMapper$ICg;
 
     if-eqz v1, :cond_3
 
@@ -349,7 +349,7 @@
 
     .line 127
     :cond_3
-    instance-of v1, v0, Lcom/wumii/android/mimi/models/d/HttpHelper$ICr;
+    instance-of v1, v0, Lcom/wumii/android/mimi/models/helper/HttpHelper$ICr;
 
     if-nez v1, :cond_2
 
@@ -386,15 +386,15 @@
 
     .line 136
     :try_start_0
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->e()Lcom/wumii/android/mimi/a/ChatManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->e()Lcom/wumii/android/mimi/manager/ChatManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ChatManager;->e()Ljava/util/Map;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ChatManager;->e()Ljava/util/Map;
 
     move-result-object v0
 
@@ -405,7 +405,7 @@
 
     const-string/jumbo v2, ","
 
-    invoke-static {v0, v2}, Lorg/a/a/c/StringUtils;->a(Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v2}, Lorg/apache/commons/long/StringUtils;->a(Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

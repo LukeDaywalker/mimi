@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
+.field final synthetic a:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
 .field final synthetic b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;)V
+.method constructor <init>(Lcom/wumii/android/mimi/ui/activities/NavigationActivity;Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;)V
     .locals 0
 
     .prologue
     .line 394
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICag;->b:Lcom/wumii/android/mimi/ui/activities/NavigationActivity;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICag;->a:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICag;->a:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,13 +34,13 @@
 
     .prologue
     .line 397
-    invoke-static {}, Lcom/wumii/android/mimi/a/UploadContactManager;->a()Lcom/wumii/android/mimi/a/UploadContactManager;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/UploadContactManager;->a()Lcom/wumii/android/mimi/manager/UploadContactManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICag;->a:Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/NavigationActivity$ICag;->a:Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/UploadContactManager;->a(Lcom/wumii/android/mimi/a/UploadContactManager$ICbr;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/UploadContactManager;->a(Lcom/wumii/android/mimi/manager/UploadContactManager$ICbr;)V
 
     .line 398
     return-void

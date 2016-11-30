@@ -50,7 +50,7 @@
     .line 47
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseCreateGroupChatActivity;->o:Landroid/view/MenuItem;
 
-    invoke-static {v1, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
+    invoke-static {v1, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
 
     move-result-object v0
 

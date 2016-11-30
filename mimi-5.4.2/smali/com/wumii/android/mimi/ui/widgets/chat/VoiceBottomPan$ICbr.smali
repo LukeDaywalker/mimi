@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/ui/apdaters/b/VoiceAuditionOptionsAdapter;
+.field final synthetic a:Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;
 
 .field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
 
 # direct methods
-.method constructor <init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;Lcom/wumii/android/mimi/ui/apdaters/b/VoiceAuditionOptionsAdapter;)V
+.method constructor <init>(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;)V
     .locals 0
 
     .prologue
     .line 366
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->a:Lcom/wumii/android/mimi/ui/apdaters/b/VoiceAuditionOptionsAdapter;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->a:Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +45,7 @@
     .line 370
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->g(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;->g(Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
@@ -55,12 +55,12 @@
 
     const-string/jumbo v2, "selected_voice_audition_position"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 372
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->a:Lcom/wumii/android/mimi/ui/apdaters/b/VoiceAuditionOptionsAdapter;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->a:Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;
 
-    invoke-virtual {v0, p3}, Lcom/wumii/android/mimi/ui/apdaters/b/VoiceAuditionOptionsAdapter;->a(I)V
+    invoke-virtual {v0, p3}, Lcom/wumii/android/mimi/ui/apdaters/chat/VoiceAuditionOptionsAdapter;->a(I)V
 
     .line 374
     invoke-static {}, Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;->values()[Lcom/wumii/android/mimi/models/entities/chat/VoiceAudition;
@@ -132,7 +132,7 @@
     const/16 v0, 0x8
 
     :goto_1
-    invoke-static {v2, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 388
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbr;->b:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;

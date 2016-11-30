@@ -146,7 +146,7 @@
     invoke-direct {v0, p0, p0, p1, p2}, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICz;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;Landroid/content/Context;Ljava/lang/String;Z)V
 
     .line 152
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/b/HttpAsyncTask;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/task/HttpAsyncTask;->j()V
 
     .line 153
     return-void
@@ -540,7 +540,7 @@
     .line 99
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/h/a/ChatStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->w()Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;
 
     move-result-object v0
 
@@ -554,7 +554,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/h/a/ChatStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
+    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/storage/chat/ChatStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/chat/ChatBase;
 
     move-result-object v0
 
@@ -651,18 +651,18 @@
 
     move-result v1
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/Utils;->a(I)Lcom/e/a/b/DisplayImageOptions;
+    invoke-static {v1}, Lcom/wumii/android/mimi/util/Utils;->a(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v1
 
     .line 120
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;->o:Landroid/widget/ImageView;
 
-    invoke-virtual {v2, v0, v3, v1}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v2, v0, v3, v1}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 121
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J

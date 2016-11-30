@@ -3,7 +3,7 @@
 .source "FriendImpressionActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/b/LoadUserProfileTask$ICau;
+.implements Lcom/wumii/android/mimi/task/LoadUserProfileTask$ICau;
 
 
 # instance fields

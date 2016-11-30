@@ -215,12 +215,12 @@
 
     move-result v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(I)Lcom/e/a/b/DisplayImageOptions;
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v0
 
     .line 54
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v1
 
@@ -230,7 +230,7 @@
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->a:Landroid/widget/ImageView;
 
-    invoke-virtual {v1, v2, v3, v0}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v1, v2, v3, v0}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 56
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;->b:Lcom/wumii/android/mimi/ui/widgets/chat/ChatInfoItemSummaryView;

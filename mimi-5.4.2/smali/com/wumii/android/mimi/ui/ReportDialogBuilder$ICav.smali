@@ -55,7 +55,7 @@
     check-cast v0, Lcom/wumii/android/mimi/models/entities/Violation$ReportItem;
 
     .line 33
-    new-instance v2, Lcom/wumii/android/mimi/b/ReportTask;
+    new-instance v2, Lcom/wumii/android/mimi/task/ReportTask;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->e:Lcom/wumii/android/mimi/ui/ReportDialogBuilder;
 
@@ -65,7 +65,7 @@
 
     check-cast v1, Landroid/app/Activity;
 
-    invoke-direct {v2, v1}, Lcom/wumii/android/mimi/b/ReportTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v2, v1}, Lcom/wumii/android/mimi/task/ReportTask;-><init>(Landroid/app/Activity;)V
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/ReportDialogBuilder$ICav;->b:Ljava/lang/String;
 
@@ -77,7 +77,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v2, v1, v3, v4, v0}, Lcom/wumii/android/mimi/b/ReportTask;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v1, v3, v4, v0}, Lcom/wumii/android/mimi/task/ReportTask;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 34
     return-void

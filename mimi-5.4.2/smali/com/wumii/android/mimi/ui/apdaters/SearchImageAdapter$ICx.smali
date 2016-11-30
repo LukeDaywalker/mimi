@@ -3,7 +3,7 @@
 .source "SearchImageAdapter.java"
 
 # interfaces
-.implements Lcom/e/a/b/f/ImageLoadingListener;
+.implements Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
 
 
 # instance fields
@@ -55,7 +55,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 103
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICx;->a:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;
@@ -64,13 +64,13 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 104
     return-void
 .end method
 
-.method public a(Ljava/lang/String;Landroid/view/View;Lcom/e/a/b/a/FailReason;)V
+.method public a(Ljava/lang/String;Landroid/view/View;Lcom/nostra13/universalimageloader/core/assist/FailReason;)V
     .locals 2
 
     .prologue
@@ -83,7 +83,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 91
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICx;->a:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;
@@ -94,7 +94,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 92
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICx;->a:Lcom/wumii/android/mimi/ui/apdaters/SearchImageAdapter$ICaa;

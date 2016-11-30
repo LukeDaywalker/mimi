@@ -3,7 +3,7 @@
 .source "PushNotificationActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/b/EnablePushSettingsTask$ICae;
+.implements Lcom/wumii/android/mimi/task/EnablePushSettingsTask$ICae;
 
 
 # instance fields
@@ -89,7 +89,7 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICu;->d:Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->a(Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;->a(Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
@@ -101,7 +101,7 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICu;->a:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 158
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PushNotificationActivity$ICu;->c:Lcom/wumii/android/mimi/ui/widgets/SectionCheckBoxItemView;

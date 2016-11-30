@@ -30,11 +30,11 @@
 
     .prologue
     .line 848
-    invoke-static {}, Lcom/wumii/android/mimi/a/VoiceMessageManager;->a()Lcom/wumii/android/mimi/a/VoiceMessageManager;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->a()Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/VoiceMessageManager;->d()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->d()V
 
     .line 849
     return-void

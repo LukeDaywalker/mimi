@@ -678,7 +678,7 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->e:Landroid/widget/TextView;
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 240
     :cond_1
@@ -701,7 +701,7 @@
     .line 229
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->e:Landroid/widget/TextView;
 
-    invoke-static {v1, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v1, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 231
     sget-object v1, Lcom/wumii/android/mimi/models/entities/secret/FeedType;->ALL:Lcom/wumii/android/mimi/models/entities/secret/FeedType;
@@ -801,7 +801,7 @@
     .line 238
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->e:Landroid/widget/TextView;
 
-    invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 .end method

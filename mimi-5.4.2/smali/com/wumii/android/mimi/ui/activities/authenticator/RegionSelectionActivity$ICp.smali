@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;
-.super Lcom/wumii/android/mimi/b/LoadCountriesTask;
+.super Lcom/wumii/android/mimi/task/LoadCountriesTask;
 .source "RegionSelectionActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 125
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/LoadCountriesTask;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/LoadCountriesTask;-><init>(Landroid/content/Context;)V
 
     return-void
 .end method
@@ -81,7 +81,7 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/a/RegionListAdapter;
+    new-instance v1, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;
 
@@ -103,7 +103,7 @@
 
     move-result-object v5
 
-    invoke-direct {v1, v2, v3, v4, v5}, Lcom/wumii/android/mimi/ui/apdaters/a/RegionListAdapter;-><init>(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Landroid/util/SparseArray;)V
+    invoke-direct {v1, v2, v3, v4, v5}, Lcom/wumii/android/mimi/ui/apdaters/authenticator/RegionListAdapter;-><init>(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Landroid/util/SparseArray;)V
 
     invoke-virtual {v0, v1}, Lza/co/immedia/pinnedheaderlistview/PinnedHeaderListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -137,7 +137,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Landroid/content/Context;II)V
+    invoke-static {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 139
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/RegionSelectionActivity;

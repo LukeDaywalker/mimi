@@ -4,5 +4,5 @@
 
 
 # virtual methods
-.method public abstract a(Lcom/google/analytics/b/a/a/TypeSystem$ICb;)Lcom/google/tagmanager/ValueBuilder;
+.method public abstract a(Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;)Lcom/google/tagmanager/ValueBuilder;
 .end method

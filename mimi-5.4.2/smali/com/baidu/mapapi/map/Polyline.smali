@@ -56,9 +56,9 @@
 
     iput-boolean v0, p0, Lcom/baidu/mapapi/map/Polyline;->h:Z
 
-    sget-object v0, Lcom/baidu/platform/comapi/map/f;->i:Lcom/baidu/platform/comapi/map/f;
+    sget-object v0, Lcom/baidu/platform/comapi/map/ICf;->i:Lcom/baidu/platform/comapi/map/ICf;
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/Polyline;->q:Lcom/baidu/platform/comapi/map/f;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/Polyline;->q:Lcom/baidu/platform/comapi/map/ICf;
 
     return-void
 .end method
@@ -578,9 +578,9 @@
 
     iput p1, p0, Lcom/baidu/mapapi/map/Polyline;->a:I
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Polyline;->listener:Lcom/baidu/mapapi/map/Overlay$a;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Polyline;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$a;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     return-void
 .end method
@@ -590,9 +590,9 @@
 
     iput-boolean p1, p0, Lcom/baidu/mapapi/map/Polyline;->f:Z
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Polyline;->listener:Lcom/baidu/mapapi/map/Overlay$a;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Polyline;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$a;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     return-void
 .end method
@@ -602,9 +602,9 @@
 
     iput-boolean p1, p0, Lcom/baidu/mapapi/map/Polyline;->g:Z
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Polyline;->listener:Lcom/baidu/mapapi/map/Overlay$a;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Polyline;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$a;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     return-void
 .end method
@@ -668,9 +668,9 @@
     :cond_2
     iput-object p1, p0, Lcom/baidu/mapapi/map/Polyline;->b:Ljava/util/List;
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Polyline;->listener:Lcom/baidu/mapapi/map/Overlay$a;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Polyline;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$a;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     return-void
 .end method
@@ -682,9 +682,9 @@
 
     iput p1, p0, Lcom/baidu/mapapi/map/Polyline;->e:I
 
-    iget-object v0, p0, Lcom/baidu/mapapi/map/Polyline;->listener:Lcom/baidu/mapapi/map/Overlay$a;
+    iget-object v0, p0, Lcom/baidu/mapapi/map/Polyline;->listener:Lcom/baidu/mapapi/map/Overlay$ICa;
 
-    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$a;->b(Lcom/baidu/mapapi/map/Overlay;)V
+    invoke-interface {v0, p0}, Lcom/baidu/mapapi/map/Overlay$ICa;->b(Lcom/baidu/mapapi/map/Overlay;)V
 
     :cond_0
     return-void

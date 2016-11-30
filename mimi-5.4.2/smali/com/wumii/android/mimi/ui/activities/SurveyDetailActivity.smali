@@ -93,7 +93,7 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->setContentView(I)V
 
     .line 46
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->a(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->a(Ljava/lang/Object;)V
 
     .line 48
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->getIntent()Landroid/content/Intent;
@@ -135,7 +135,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {p0, v0, v1}, Lcom/wumii/android/mimi/c/ContextToast;->a(Landroid/content/Context;II)V
+    invoke-static {p0, v0, v1}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 53
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->finish()V
@@ -175,11 +175,11 @@
     invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/feed/SurveyCardView;->a(Lcom/wumii/android/mimi/models/entities/survey/Survey;Lcom/wumii/android/mimi/models/entities/secret/FeedType;)V
 
     .line 67
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->n()Lcom/wumii/android/mimi/a/SurveyManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->n()Lcom/wumii/android/mimi/manager/SurveyManager;
 
     move-result-object v0
 
@@ -189,7 +189,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, p0, v1}, Lcom/wumii/android/mimi/a/SurveyManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;)V
+    invoke-virtual {v0, p0, v1}, Lcom/wumii/android/mimi/manager/SurveyManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -202,27 +202,27 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onDestroy()V
 
     .line 96
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->b(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->b(Ljava/lang/Object;)V
 
     .line 97
     return-void
 .end method
 
-.method public onEvent(Lcom/wumii/android/mimi/models/c/a/RespEventLoadSurvey;)V
+.method public onEvent(Lcom/wumii/android/mimi/models/event/response/RespEventLoadSurvey;)V
     .locals 3
 
     .prologue
     const/4 v2, 0x1
 
     .line 72
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventLoadSurvey;->c()Z
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventLoadSurvey;->c()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
     .line 73
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventLoadSurvey;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventLoadSurvey;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -233,11 +233,11 @@
     if-eqz v0, :cond_0
 
     .line 74
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603c3
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 83
     :goto_0
@@ -245,19 +245,19 @@
 
     .line 76
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SurveyDetailActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventLoadSurvey;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventLoadSurvey;->a()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Ljava/lang/String;I)V
 
     goto :goto_0
 
     .line 81
     :cond_1
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventLoadSurvey;->d()Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventLoadSurvey;->d()Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     move-result-object v0
 
@@ -275,19 +275,19 @@
     goto :goto_0
 .end method
 
-.method public onEvent(Lcom/wumii/android/mimi/models/c/a/RespEventSurveyVote;)V
+.method public onEvent(Lcom/wumii/android/mimi/models/event/response/RespEventSurveyVote;)V
     .locals 3
 
     .prologue
     .line 87
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventSurveyVote;->c()Z
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventSurveyVote;->c()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 88
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventSurveyVote;->d()Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventSurveyVote;->d()Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     move-result-object v0
 

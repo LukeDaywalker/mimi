@@ -45,7 +45,7 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity$ICbm;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;->b(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;)Lcom/wumii/android/mimi/a/GroupChatManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;->b(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoBaseActivity;)Lcom/wumii/android/mimi/manager/GroupChatManager;
 
     move-result-object v0
 
@@ -55,7 +55,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/GroupChatManager;->b(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/GroupChatManager;->b(Ljava/lang/String;)V
 
     .line 46
     return-void

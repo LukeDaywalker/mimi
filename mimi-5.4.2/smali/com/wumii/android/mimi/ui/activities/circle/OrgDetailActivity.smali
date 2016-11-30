@@ -88,7 +88,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-static {v1, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v1, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 98
     return-void
@@ -179,7 +179,7 @@
     invoke-virtual {v0, v2, v1, v2, v2}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
     .line 90
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -187,7 +187,7 @@
 
     const-string/jumbo v2, "first_organization_need_validation_reddot"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 91
     return-void
@@ -230,7 +230,7 @@
     .line 104
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->r:Landroid/widget/TextView;
 
-    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 105
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->o:Landroid/widget/TextView;
@@ -256,7 +256,7 @@
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/wumii/android/mimi/c/CircleUtils;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/wumii/android/mimi/util/CircleUtils;->a(Lcom/wumii/android/mimi/models/entities/circle/Circle;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -338,7 +338,7 @@
     if-nez v3, :cond_3
 
     :goto_1
-    invoke-static {v4, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v4, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 131
     if-eqz v3, :cond_4
@@ -352,7 +352,7 @@
 
     const-string/jumbo v6, "yyyy\u5e74M\u6708d\u65e5"
 
-    invoke-static {v6, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;Ljava/util/Date;)Ljava/lang/String;
+    invoke-static {v6, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -440,7 +440,7 @@
 
     int-to-float v0, v0
 
-    invoke-static {v2, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -466,7 +466,7 @@
     .line 108
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->r:Landroid/widget/TextView;
 
-    invoke-static {v3, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v3, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 109
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->o:Landroid/widget/TextView;
@@ -519,13 +519,13 @@
 
     .prologue
     .line 169
-    new-instance v0, Lcom/wumii/android/mimi/b/GetValidationTypesTask;
+    new-instance v0, Lcom/wumii/android/mimi/task/GetValidationTypesTask;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/b/GetValidationTypesTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/task/GetValidationTypesTask;-><init>(Landroid/app/Activity;)V
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/b/GetValidationTypesTask;->a(Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/task/GetValidationTypesTask;->a(Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;)V
 
     .line 170
     return-void
@@ -834,13 +834,13 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->C:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
     .line 81
     return-void
@@ -858,13 +858,13 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/OrgDetailActivity;->C:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
     .line 151
     return-void

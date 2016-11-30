@@ -1,5 +1,5 @@
 .class abstract Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbp;
-.super Lcom/wumii/android/mimi/b/IdOperationTask$ICan;
+.super Lcom/wumii/android/mimi/task/IdOperationTask$ICan;
 .source "SecretActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 1002
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbp;->c:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    invoke-direct {p0}, Lcom/wumii/android/mimi/b/IdOperationTask$ICan;-><init>()V
+    invoke-direct {p0}, Lcom/wumii/android/mimi/task/IdOperationTask$ICan;-><init>()V
 
     return-void
 .end method
@@ -37,7 +37,7 @@
 
     .prologue
     .line 1006
-    invoke-super {p0, p1}, Lcom/wumii/android/mimi/b/IdOperationTask$ICan;->a(I)V
+    invoke-super {p0, p1}, Lcom/wumii/android/mimi/task/IdOperationTask$ICan;->a(I)V
 
     .line 1007
     sget-object v0, Lcom/wumii/mimi/model/domain/mobile/status/MobileErrorCode;->SECRET_DELETED:Lcom/wumii/mimi/model/domain/mobile/status/MobileErrorCode;

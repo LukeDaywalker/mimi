@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbs;
-.super Lcom/wumii/android/mimi/models/d/CountDownTimer;
+.super Lcom/wumii/android/mimi/models/helper/CountDownTimer;
 .source "VoiceBottomPan.java"
 
 
@@ -15,7 +15,7 @@
     .line 414
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan$ICbs;->a:Lcom/wumii/android/mimi/ui/widgets/chat/VoiceBottomPan;
 
-    invoke-direct {p0}, Lcom/wumii/android/mimi/models/d/CountDownTimer;-><init>()V
+    invoke-direct {p0}, Lcom/wumii/android/mimi/models/helper/CountDownTimer;-><init>()V
 
     return-void
 .end method

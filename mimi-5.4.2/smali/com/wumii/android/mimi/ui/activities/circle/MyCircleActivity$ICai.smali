@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICai;
-.super Lcom/wumii/android/mimi/b/LoadInvitationTask;
+.super Lcom/wumii/android/mimi/task/LoadInvitationTask;
 .source "MyCircleActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 250
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICai;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
 
-    invoke-direct {p0, p2, p3}, Lcom/wumii/android/mimi/b/LoadInvitationTask;-><init>(Landroid/content/Context;Z)V
+    invoke-direct {p0, p2, p3}, Lcom/wumii/android/mimi/task/LoadInvitationTask;-><init>(Landroid/content/Context;Z)V
 
     return-void
 .end method
@@ -27,7 +27,7 @@
 
     .prologue
     .line 259
-    invoke-super {p0}, Lcom/wumii/android/mimi/b/LoadInvitationTask;->b()V
+    invoke-super {p0}, Lcom/wumii/android/mimi/task/LoadInvitationTask;->b()V
 
     .line 260
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICai;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;
@@ -45,7 +45,7 @@
 
     .prologue
     .line 253
-    invoke-super {p0}, Lcom/wumii/android/mimi/b/LoadInvitationTask;->f_()V
+    invoke-super {p0}, Lcom/wumii/android/mimi/task/LoadInvitationTask;->f_()V
 
     .line 254
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICai;->a:Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity;

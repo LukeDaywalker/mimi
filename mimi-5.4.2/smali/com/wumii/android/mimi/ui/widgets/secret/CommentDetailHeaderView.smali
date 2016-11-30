@@ -14,7 +14,7 @@
 
 .field private e:Landroid/widget/ImageView;
 
-.field private f:Lcom/e/a/b/DisplayImageOptions;
+.field private f:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
 
 # direct methods
@@ -114,25 +114,25 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->e:Landroid/widget/ImageView;
 
     .line 56
-    new-instance v0, Lcom/e/a/b/DisplayImageOptions$ICf;
+    new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
-    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;-><init>()V
+    invoke-direct {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;-><init>()V
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->b(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->b(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->c(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->c(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
     sget-object v1, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Landroid/graphics/Bitmap$Config;)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Landroid/graphics/Bitmap$Config;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    new-instance v1, Lcom/e/a/b/c/RoundedBitmapDisplayer;
+    new-instance v1, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -144,17 +144,17 @@
 
     move-result v2
 
-    invoke-direct {v1, v2}, Lcom/e/a/b/c/RoundedBitmapDisplayer;-><init>(I)V
+    invoke-direct {v1, v2}, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;-><init>(I)V
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Lcom/e/a/b/c/BitmapDisplayer;)Lcom/e/a/b/DisplayImageOptions$ICf;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;->a()Lcom/e/a/b/DisplayImageOptions;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->f:Lcom/e/a/b/DisplayImageOptions;
+    invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a()Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->f:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 62
     return-void
@@ -187,7 +187,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/Utils;->c(Ljava/lang/String;)Z
+    invoke-static {v1}, Lcom/wumii/android/mimi/util/Utils;->c(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -199,7 +199,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 80
     :goto_0
@@ -207,7 +207,7 @@
 
     .line 77
     :cond_1
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v1
 
@@ -217,16 +217,16 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->a:Landroid/widget/ImageView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->f:Lcom/e/a/b/DisplayImageOptions;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->f:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-    invoke-virtual {v1, v0, v2, v3}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v1, v0, v2, v3}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 78
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->a:Landroid/widget/ImageView;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 .end method
@@ -247,7 +247,7 @@
     move v0, v1
 
     :goto_0
-    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 66
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->c:Landroid/widget/TextView;
@@ -257,7 +257,7 @@
     move v0, v1
 
     :goto_1
-    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 67
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->e:Landroid/widget/ImageView;
@@ -265,7 +265,7 @@
     if-eqz p3, :cond_2
 
     :goto_2
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 68
     return-void

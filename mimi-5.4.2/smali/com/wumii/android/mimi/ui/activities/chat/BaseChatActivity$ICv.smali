@@ -41,11 +41,11 @@
     invoke-virtual {v0, v3}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->b(Z)V
 
     .line 601
-    invoke-static {}, Lcom/wumii/android/mimi/a/VoiceMessageManager;->a()Lcom/wumii/android/mimi/a/VoiceMessageManager;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->a()Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/VoiceMessageManager;->c()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->c()Z
 
     move-result v0
 
@@ -66,11 +66,11 @@
 
     .line 605
     :cond_0
-    invoke-static {}, Lcom/wumii/android/mimi/models/d/AudioManagerHelper;->a()Lcom/wumii/android/mimi/models/d/AudioManagerHelper;
+    invoke-static {}, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->a()Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;
 
     move-result-object v0
 
-    invoke-virtual {v0, v3}, Lcom/wumii/android/mimi/models/d/AudioManagerHelper;->a(Z)V
+    invoke-virtual {v0, v3}, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->a(Z)V
 
     .line 606
     return-void
@@ -92,11 +92,11 @@
     invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceModeHintView;->b(Z)V
 
     .line 590
-    invoke-static {}, Lcom/wumii/android/mimi/a/VoiceMessageManager;->a()Lcom/wumii/android/mimi/a/VoiceMessageManager;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->a()Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/VoiceMessageManager;->c()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->c()Z
 
     move-result v0
 
@@ -113,18 +113,18 @@
 
     .line 593
     :cond_0
-    invoke-static {}, Lcom/wumii/android/mimi/a/VoiceMessageManager;->a()Lcom/wumii/android/mimi/a/VoiceMessageManager;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->a()Lcom/wumii/android/mimi/manager/VoiceMessageManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/VoiceMessageManager;->f()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/VoiceMessageManager;->f()V
 
     .line 595
-    invoke-static {}, Lcom/wumii/android/mimi/models/d/AudioManagerHelper;->a()Lcom/wumii/android/mimi/models/d/AudioManagerHelper;
+    invoke-static {}, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->a()Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/AudioManagerHelper;->a(Z)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/AudioManagerHelper;->a(Z)V
 
     .line 596
     return-void

@@ -34,7 +34,7 @@
 
 .field private s:Landroid/view/View;
 
-.field private t:Lcom/e/a/b/DisplayImageOptions;
+.field private t:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
 
 # direct methods
@@ -110,7 +110,7 @@
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 200
-    invoke-static {p1}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -171,7 +171,7 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->C:Ljava/lang/String;
 
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -202,7 +202,7 @@
     .line 133
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->E:Landroid/view/MenuItem;
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -317,18 +317,18 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 155
-    invoke-static {p1}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 156
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/c/AppConfigManager;
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/util/AppConfigManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/AppConfigManager;->a()Lcom/wumii/android/mimi/models/entities/AppConfigModule;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/AppConfigManager;->a()Lcom/wumii/android/mimi/models/entities/AppConfigModule;
 
     move-result-object v0
 
@@ -344,19 +344,19 @@
     .line 160
     :cond_0
     :goto_0
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->p:Landroid/widget/ImageView;
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->t:Lcom/e/a/b/DisplayImageOptions;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->t:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     new-instance v4, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICb;
 
     invoke-direct {v4, p0}, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity$ICb;-><init>(Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;)V
 
-    invoke-virtual {v1, v0, v2, v3, v4}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;Lcom/e/a/b/f/ImageLoadingListener;)V
+    invoke-virtual {v1, v0, v2, v3, v4}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;)V
 
     .line 191
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->q:Landroid/widget/EditText;
@@ -407,7 +407,7 @@
     :cond_0
     const v0, 0x7f06002d
 
-    invoke-static {p0, v0, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Landroid/content/Context;II)V
+    invoke-static {p0, v0, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 143
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->finish()V
@@ -451,29 +451,29 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->h()V
 
     .line 74
-    new-instance v0, Lcom/e/a/b/DisplayImageOptions$ICf;
+    new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
-    invoke-direct {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;-><init>()V
+    invoke-direct {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;-><init>()V
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->b(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->c(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->b(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->d(Z)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->c(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->d(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
     sget-object v1, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Landroid/graphics/Bitmap$Config;)Lcom/e/a/b/DisplayImageOptions$ICf;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Landroid/graphics/Bitmap$Config;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    new-instance v1, Lcom/e/a/b/c/RoundedBitmapDisplayer;
+    new-instance v1, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;
 
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->getResources()Landroid/content/res/Resources;
 
@@ -485,17 +485,17 @@
 
     move-result v2
 
-    invoke-direct {v1, v2}, Lcom/e/a/b/c/RoundedBitmapDisplayer;-><init>(I)V
+    invoke-direct {v1, v2}, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer;-><init>(I)V
 
-    invoke-virtual {v0, v1}, Lcom/e/a/b/DisplayImageOptions$ICf;->a(Lcom/e/a/b/c/BitmapDisplayer;)Lcom/e/a/b/DisplayImageOptions$ICf;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/e/a/b/DisplayImageOptions$ICf;->a()Lcom/e/a/b/DisplayImageOptions;
+    invoke-virtual {v0, v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a(Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->t:Lcom/e/a/b/DisplayImageOptions;
+    invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$ICf;->a()Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->t:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 78
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/AssociatedWithWeixinActivity;->q:Landroid/widget/EditText;

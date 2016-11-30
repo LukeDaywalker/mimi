@@ -9,7 +9,7 @@
 # instance fields
 .field private a:Landroid/view/LayoutInflater;
 
-.field private b:Lcom/e/a/b/DisplayImageOptions;
+.field private b:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
 
 # direct methods
@@ -39,11 +39,11 @@
     move-result v0
 
     .line 28
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(I)Lcom/e/a/b/DisplayImageOptions;
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;->b:Lcom/e/a/b/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;->b:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 29
     return-void
@@ -92,7 +92,7 @@
     check-cast v1, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder$ICbf;
 
     .line 40
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v2
 
@@ -104,9 +104,9 @@
 
     move-result-object v1
 
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;->b:Lcom/e/a/b/DisplayImageOptions;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/widgets/chat/SysRetractedMessageItemBuilder;->b:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-    invoke-virtual {v2, v0, v1, v3}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v2, v0, v1, v3}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 42
     return-object p2

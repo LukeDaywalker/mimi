@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICu;
-.super Lcom/wumii/android/mimi/models/e/OrgValidationObserver;
+.super Lcom/wumii/android/mimi/models/observer/OrgValidationObserver;
 .source "LocationValidationActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 105
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICu;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
-    invoke-direct {p0}, Lcom/wumii/android/mimi/models/e/OrgValidationObserver;-><init>()V
+    invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/OrgValidationObserver;-><init>()V
 
     return-void
 .end method
@@ -31,7 +31,7 @@
     const/4 v2, 0x0
 
     .line 108
-    invoke-super {p0, p1}, Lcom/wumii/android/mimi/models/e/OrgValidationObserver;->d(Lcom/wumii/android/mimi/models/entities/circle/OrgValidationResult;)V
+    invoke-super {p0, p1}, Lcom/wumii/android/mimi/models/observer/OrgValidationObserver;->d(Lcom/wumii/android/mimi/models/entities/circle/OrgValidationResult;)V
 
     .line 109
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICu;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
@@ -42,7 +42,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 110
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/circle/OrgValidationResult;->getStatusCode()I
@@ -54,18 +54,18 @@
     .line 111
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICu;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->b(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/c/ContextToast;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->b(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/util/ContextToast;
 
     move-result-object v0
 
     const v1, 0x7f0603cc
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 112
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICu;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->c(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->c(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
@@ -75,12 +75,12 @@
 
     const-string/jumbo v2, "organizationValidationNeeded"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 113
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICu;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->d(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->d(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
@@ -90,10 +90,10 @@
 
     const-string/jumbo v2, "first_organization_need_validation_reddot"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 114
-    invoke-static {}, Lcom/wumii/android/mimi/c/UserProfileManager;->a()Lcom/wumii/android/mimi/c/UserProfileManager;
+    invoke-static {}, Lcom/wumii/android/mimi/util/UserProfileManager;->a()Lcom/wumii/android/mimi/util/UserProfileManager;
 
     move-result-object v0
 
@@ -101,7 +101,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$ICau;Z)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$ICau;Z)V
 
     .line 115
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICu;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;
@@ -135,7 +135,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 119
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICu;->a:Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;

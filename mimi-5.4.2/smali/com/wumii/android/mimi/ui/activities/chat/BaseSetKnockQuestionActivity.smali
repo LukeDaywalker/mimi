@@ -79,7 +79,7 @@
     move-result v1
 
     .line 145
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -118,7 +118,7 @@
     move-result v1
 
     .line 152
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/lang/String;I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -198,7 +198,7 @@
 
     .prologue
     .line 75
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/c/AppConfigManager;
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/util/AppConfigManager;
 
     move-result-object v0
 
@@ -206,7 +206,7 @@
 
     invoke-direct {v1, p0, p1}, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity$ICx;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;Z)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/c/AppConfigManager;->a(Lcom/wumii/android/mimi/c/AppConfigManager$ICb;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/util/AppConfigManager;->a(Lcom/wumii/android/mimi/util/AppConfigManager$ICb;)V
 
     .line 86
     return-void
@@ -253,7 +253,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
 
     .line 126
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->finish()V
@@ -288,7 +288,7 @@
     .line 89
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->p:Ljava/util/List;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -319,7 +319,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lorg/a/a/c/a/RandomUtils;->a(I)I
+    invoke-static {v0}, Lorg/apache/commons/long/math/RandomUtils;->a(I)I
 
     move-result v0
 

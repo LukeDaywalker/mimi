@@ -23,11 +23,11 @@
     .end annotation
 .end field
 
-.field private b:Lcom/sina/weibo/sdk/a/WeiboException;
+.field private b:Lcom/sina/weibo/sdk/exception/WeiboException;
 
 
 # direct methods
-.method public constructor <init>(Lcom/sina/weibo/sdk/a/WeiboException;)V
+.method public constructor <init>(Lcom/sina/weibo/sdk/exception/WeiboException;)V
     .locals 0
 
     .prologue
@@ -35,7 +35,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 163
-    iput-object p1, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;->b:Lcom/sina/weibo/sdk/a/WeiboException;
+    iput-object p1, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;->b:Lcom/sina/weibo/sdk/exception/WeiboException;
 
     .line 164
     return-void
@@ -77,12 +77,12 @@
     return-object v0
 .end method
 
-.method public b()Lcom/sina/weibo/sdk/a/WeiboException;
+.method public b()Lcom/sina/weibo/sdk/exception/WeiboException;
     .locals 1
 
     .prologue
     .line 153
-    iget-object v0, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;->b:Lcom/sina/weibo/sdk/a/WeiboException;
+    iget-object v0, p0, Lcom/sina/weibo/sdk/net/AsyncWeiboRunner$ICb;->b:Lcom/sina/weibo/sdk/exception/WeiboException;
 
     return-object v0
 .end method

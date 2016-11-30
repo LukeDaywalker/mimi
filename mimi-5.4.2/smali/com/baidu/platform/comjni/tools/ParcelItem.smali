@@ -26,9 +26,9 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lcom/baidu/platform/comjni/tools/b;
+    new-instance v0, Lcom/baidu/platform/comjni/tools/ICb;
 
-    invoke-direct {v0}, Lcom/baidu/platform/comjni/tools/b;-><init>()V
+    invoke-direct {v0}, Lcom/baidu/platform/comjni/tools/ICb;-><init>()V
 
     sput-object v0, Lcom/baidu/platform/comjni/tools/ParcelItem;->a:Landroid/os/Parcelable$Creator;
 

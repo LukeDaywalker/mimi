@@ -3,7 +3,7 @@
 .source "BaseChatActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/c/UserProfileManager$ICau;
+.implements Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
 
 
 # instance fields
@@ -43,7 +43,7 @@
     .line 289
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICm;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->N:Lcom/wumii/android/mimi/a/ChatManager;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->N:Lcom/wumii/android/mimi/manager/ChatManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICm;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
@@ -53,18 +53,18 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICm;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/a/ChatManager;->a(Ljava/util/Map;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/manager/ChatManager;->a(Ljava/util/Map;Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
 
     .line 290
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICm;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->v()Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;->v()Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICm;->a:Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/b/ChatAdapter;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/apdaters/chat/ChatAdapter;->a(Lcom/wumii/android/mimi/models/entities/chat/ChatMessage;)V
 
     .line 291
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICm;->b:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;

@@ -34,7 +34,7 @@
 .method public static initialize(Ljava/lang/String;Landroid/content/Context;)V
     .locals 0
 
-    invoke-static {p0, p1}, Lcom/baidu/platform/comapi/c;->a(Ljava/lang/String;Landroid/content/Context;)V
+    invoke-static {p0, p1}, Lcom/baidu/platform/comapi/ICc;->a(Ljava/lang/String;Landroid/content/Context;)V
 
     return-void
 .end method

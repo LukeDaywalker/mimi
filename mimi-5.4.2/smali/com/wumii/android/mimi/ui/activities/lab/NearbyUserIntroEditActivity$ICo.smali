@@ -32,7 +32,7 @@
     .line 124
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity$ICo;->a:Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->m()Lcom/wumii/android/mimi/b/AppealLegalityTask;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserIntroEditActivity;->m()Lcom/wumii/android/mimi/task/AppealLegalityTask;
 
     move-result-object v0
 
@@ -46,7 +46,7 @@
 
     sget-object v2, Lcom/wumii/android/mimi/models/entities/circle/AppealType;->MODIFY_GENDER:Lcom/wumii/android/mimi/models/entities/circle/AppealType;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/b/AppealLegalityTask;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/circle/AppealType;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/task/AppealLegalityTask;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/circle/AppealType;)V
 
     .line 125
     return-void

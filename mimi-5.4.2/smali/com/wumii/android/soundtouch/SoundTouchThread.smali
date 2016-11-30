@@ -253,7 +253,7 @@
     .line 91
     :cond_0
     :try_start_1
-    invoke-static {v1}, Lorg/a/a/b/IOUtils;->a(Ljava/io/OutputStream;)V
+    invoke-static {v1}, Lorg/apache/commons/io/IOUtils;->a(Ljava/io/OutputStream;)V
 
     .line 93
     iget-object v0, p0, Lcom/wumii/android/soundtouch/SoundTouchThread;->g:Landroid/os/Handler;
@@ -292,7 +292,7 @@
     move-result-object v0
 
     .line 79
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a([S)[B
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a([S)[B
 
     move-result-object v1
 

@@ -73,7 +73,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/ICa;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     iput-object p1, p0, Lcom/tencent/mm/sdk/openapi/WXApiImplV10;->context:Landroid/content/Context;
 
@@ -114,7 +114,7 @@
 
     const-string/jumbo v2, "checkSumConsistent fail, invalid arguments"
 
-    invoke-static {v0, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_1
     :goto_0
@@ -131,7 +131,7 @@
 
     const-string/jumbo v2, "checkSumConsistent fail, length is different"
 
-    invoke-static {v0, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -176,26 +176,26 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Lcom/tencent/wxop/stat/v;->a(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lcom/tencent/wxop/stat/ICv;->a(Landroid/content/Context;Ljava/lang/String;)V
 
-    invoke-static {}, Lcom/tencent/wxop/stat/v;->n()V
+    invoke-static {}, Lcom/tencent/wxop/stat/ICv;->n()V
 
-    sget-object v1, Lcom/tencent/wxop/stat/w;->f:Lcom/tencent/wxop/stat/w;
+    sget-object v1, Lcom/tencent/wxop/stat/ICw;->f:Lcom/tencent/wxop/stat/ICw;
 
-    invoke-static {v1}, Lcom/tencent/wxop/stat/v;->a(Lcom/tencent/wxop/stat/w;)V
+    invoke-static {v1}, Lcom/tencent/wxop/stat/ICv;->a(Lcom/tencent/wxop/stat/ICw;)V
 
-    invoke-static {}, Lcom/tencent/wxop/stat/v;->k()V
+    invoke-static {}, Lcom/tencent/wxop/stat/ICv;->k()V
 
     const-string/jumbo v1, "Wechat_Sdk"
 
-    invoke-static {p1, v1}, Lcom/tencent/wxop/stat/v;->b(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lcom/tencent/wxop/stat/ICv;->b(Landroid/content/Context;Ljava/lang/String;)V
 
     :try_start_0
     const-string/jumbo v1, "2.0.3"
 
-    invoke-static {p1, v0, v1}, Lcom/tencent/wxop/stat/x;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lcom/tencent/wxop/stat/ICx;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
     :try_end_0
-    .catch Lcom/tencent/wxop/stat/a; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/tencent/wxop/stat/ICa; {:try_start_0 .. :try_end_0} :catch_0
 
     :goto_0
     return-void
@@ -203,7 +203,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Lcom/tencent/wxop/stat/a;->printStackTrace()V
+    invoke-virtual {v0}, Lcom/tencent/wxop/stat/ICa;->printStackTrace()V
 
     goto :goto_0
 .end method
@@ -496,7 +496,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/ICa;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     sget-object v0, Lcom/tencent/mm/sdk/openapi/WXApiImplV10;->wxappPayEntryClassname:Ljava/lang/String;
 
@@ -506,7 +506,7 @@
 
     const-string/jumbo v1, "pay fail, wxappPayEntryClassname is null"
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -514,21 +514,21 @@
     return v0
 
     :cond_0
-    new-instance v0, Lcom/tencent/mm/sdk/a/a$a;
+    new-instance v0, Lcom/tencent/mm/sdk/a/ICa$ICa;
 
-    invoke-direct {v0}, Lcom/tencent/mm/sdk/a/a$a;-><init>()V
+    invoke-direct {v0}, Lcom/tencent/mm/sdk/a/ICa$ICa;-><init>()V
 
-    iput-object p2, v0, Lcom/tencent/mm/sdk/a/a$a;->n:Landroid/os/Bundle;
+    iput-object p2, v0, Lcom/tencent/mm/sdk/a/ICa$ICa;->n:Landroid/os/Bundle;
 
     const-string/jumbo v1, "com.tencent.mm"
 
-    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a$a;->k:Ljava/lang/String;
+    iput-object v1, v0, Lcom/tencent/mm/sdk/a/ICa$ICa;->k:Ljava/lang/String;
 
     sget-object v1, Lcom/tencent/mm/sdk/openapi/WXApiImplV10;->wxappPayEntryClassname:Ljava/lang/String;
 
-    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a$a;->l:Ljava/lang/String;
+    iput-object v1, v0, Lcom/tencent/mm/sdk/a/ICa$ICa;->l:Ljava/lang/String;
 
-    invoke-static {p1, v0}, Lcom/tencent/mm/sdk/a/a;->a(Landroid/content/Context;Lcom/tencent/mm/sdk/a/a$a;)Z
+    invoke-static {p1, v0}, Lcom/tencent/mm/sdk/a/ICa;->a(Landroid/content/Context;Lcom/tencent/mm/sdk/a/ICa$ICa;)Z
 
     move-result v0
 
@@ -544,7 +544,7 @@
 
     const-string/jumbo v1, "detach"
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/ICa;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x1
 
@@ -641,7 +641,7 @@
 
     const-string/jumbo v2, "open wx app failed, not installed or signature check failed"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
     return v0
@@ -681,7 +681,7 @@
 
     const-string/jumbo v2, "handleIntent fail, intent not from weixin msg"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
     return v0
@@ -731,7 +731,7 @@
 
     const-string/jumbo v2, "invalid argument"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -742,7 +742,7 @@
 
     move-result-object v5
 
-    invoke-static {v2, v3, v4}, Lcom/tencent/mm/sdk/a/a/b;->a(Ljava/lang/String;ILjava/lang/String;)[B
+    invoke-static {v2, v3, v4}, Lcom/tencent/mm/sdk/a/a/ICb;->a(Ljava/lang/String;ILjava/lang/String;)[B
 
     move-result-object v2
 
@@ -756,7 +756,7 @@
 
     const-string/jumbo v2, "checksum fail"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -786,7 +786,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -1033,7 +1033,7 @@
 
     const-string/jumbo v2, "open wx app failed, not installed or signature check failed"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
     return v0
@@ -1085,7 +1085,7 @@
 
     move-result-object v1
 
-    invoke-static {v2, v1}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -1124,7 +1124,7 @@
 
     const-string/jumbo v1, "register app failed for wechat app signature check failed"
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -1190,7 +1190,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/ICa;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     if-eqz p1, :cond_3
 
@@ -1219,19 +1219,19 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/ICa;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    new-instance v0, Lcom/tencent/mm/sdk/a/a/a$a;
+    new-instance v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;
 
-    invoke-direct {v0}, Lcom/tencent/mm/sdk/a/a/a$a;-><init>()V
+    invoke-direct {v0}, Lcom/tencent/mm/sdk/a/a/ICa$ICa;-><init>()V
 
     const-string/jumbo v1, "com.tencent.mm"
 
-    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/a$a;->o:Ljava/lang/String;
+    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->o:Ljava/lang/String;
 
     const-string/jumbo v1, "com.tencent.mm.plugin.openapi.Intent.ACTION_HANDLE_APP_REGISTER"
 
-    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/a$a;->p:Ljava/lang/String;
+    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->p:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1249,11 +1249,11 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/a$a;->m:Ljava/lang/String;
+    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->m:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/tencent/mm/sdk/openapi/WXApiImplV10;->context:Landroid/content/Context;
 
-    invoke-static {v1, v0}, Lcom/tencent/mm/sdk/a/a/a;->a(Landroid/content/Context;Lcom/tencent/mm/sdk/a/a/a$a;)Z
+    invoke-static {v1, v0}, Lcom/tencent/mm/sdk/a/a/ICa;->a(Landroid/content/Context;Lcom/tencent/mm/sdk/a/a/ICa$ICa;)Z
 
     move-result v0
 
@@ -1297,7 +1297,7 @@
 
     const-string/jumbo v1, "context is not instanceof Activity or Service, disable WXStat"
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/a;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/ICa;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_1
 .end method
@@ -1336,7 +1336,7 @@
 
     const-string/jumbo v2, "sendReq failed for wechat app signature check failed"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
     return v0
@@ -1352,7 +1352,7 @@
 
     const-string/jumbo v2, "sendReq checkArgs fail"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -1377,7 +1377,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/ICa;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -1453,11 +1453,11 @@
     goto :goto_0
 
     :cond_6
-    new-instance v1, Lcom/tencent/mm/sdk/a/a$a;
+    new-instance v1, Lcom/tencent/mm/sdk/a/ICa$ICa;
 
-    invoke-direct {v1}, Lcom/tencent/mm/sdk/a/a$a;-><init>()V
+    invoke-direct {v1}, Lcom/tencent/mm/sdk/a/ICa$ICa;-><init>()V
 
-    iput-object v0, v1, Lcom/tencent/mm/sdk/a/a$a;->n:Landroid/os/Bundle;
+    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->n:Landroid/os/Bundle;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1475,19 +1475,19 @@
 
     move-result-object v0
 
-    iput-object v0, v1, Lcom/tencent/mm/sdk/a/a$a;->m:Ljava/lang/String;
+    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->m:Ljava/lang/String;
 
     const-string/jumbo v0, "com.tencent.mm"
 
-    iput-object v0, v1, Lcom/tencent/mm/sdk/a/a$a;->k:Ljava/lang/String;
+    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->k:Ljava/lang/String;
 
     const-string/jumbo v0, "com.tencent.mm.plugin.base.stub.WXEntryActivity"
 
-    iput-object v0, v1, Lcom/tencent/mm/sdk/a/a$a;->l:Ljava/lang/String;
+    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->l:Ljava/lang/String;
 
     iget-object v0, p0, Lcom/tencent/mm/sdk/openapi/WXApiImplV10;->context:Landroid/content/Context;
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/a/a;->a(Landroid/content/Context;Lcom/tencent/mm/sdk/a/a$a;)Z
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/a/ICa;->a(Landroid/content/Context;Lcom/tencent/mm/sdk/a/ICa$ICa;)Z
 
     move-result v0
 
@@ -1528,7 +1528,7 @@
 
     const-string/jumbo v2, "sendResp failed for wechat app signature check failed"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
     return v0
@@ -1544,7 +1544,7 @@
 
     const-string/jumbo v2, "sendResp checkArgs fail"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -1555,11 +1555,11 @@
 
     invoke-virtual {p1, v0}, Lcom/tencent/mm/sdk/modelbase/BaseResp;->toBundle(Landroid/os/Bundle;)V
 
-    new-instance v1, Lcom/tencent/mm/sdk/a/a$a;
+    new-instance v1, Lcom/tencent/mm/sdk/a/ICa$ICa;
 
-    invoke-direct {v1}, Lcom/tencent/mm/sdk/a/a$a;-><init>()V
+    invoke-direct {v1}, Lcom/tencent/mm/sdk/a/ICa$ICa;-><init>()V
 
-    iput-object v0, v1, Lcom/tencent/mm/sdk/a/a$a;->n:Landroid/os/Bundle;
+    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->n:Landroid/os/Bundle;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1577,19 +1577,19 @@
 
     move-result-object v0
 
-    iput-object v0, v1, Lcom/tencent/mm/sdk/a/a$a;->m:Ljava/lang/String;
+    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->m:Ljava/lang/String;
 
     const-string/jumbo v0, "com.tencent.mm"
 
-    iput-object v0, v1, Lcom/tencent/mm/sdk/a/a$a;->k:Ljava/lang/String;
+    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->k:Ljava/lang/String;
 
     const-string/jumbo v0, "com.tencent.mm.plugin.base.stub.WXEntryActivity"
 
-    iput-object v0, v1, Lcom/tencent/mm/sdk/a/a$a;->l:Ljava/lang/String;
+    iput-object v0, v1, Lcom/tencent/mm/sdk/a/ICa$ICa;->l:Ljava/lang/String;
 
     iget-object v0, p0, Lcom/tencent/mm/sdk/openapi/WXApiImplV10;->context:Landroid/content/Context;
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/a/a;->a(Landroid/content/Context;Lcom/tencent/mm/sdk/a/a$a;)Z
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/a/ICa;->a(Landroid/content/Context;Lcom/tencent/mm/sdk/a/ICa$ICa;)Z
 
     move-result v0
 
@@ -1628,7 +1628,7 @@
 
     const-string/jumbo v1, "unregister app failed for wechat app signature check failed"
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
     return-void
@@ -1652,7 +1652,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/ICa;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/tencent/mm/sdk/openapi/WXApiImplV10;->appId:Ljava/lang/String;
 
@@ -1671,7 +1671,7 @@
 
     const-string/jumbo v1, "unregisterApp fail, appId is empty"
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -1698,19 +1698,19 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/tencent/mm/sdk/b/ICa;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    new-instance v0, Lcom/tencent/mm/sdk/a/a/a$a;
+    new-instance v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;
 
-    invoke-direct {v0}, Lcom/tencent/mm/sdk/a/a/a$a;-><init>()V
+    invoke-direct {v0}, Lcom/tencent/mm/sdk/a/a/ICa$ICa;-><init>()V
 
     const-string/jumbo v1, "com.tencent.mm"
 
-    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/a$a;->o:Ljava/lang/String;
+    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->o:Ljava/lang/String;
 
     const-string/jumbo v1, "com.tencent.mm.plugin.openapi.Intent.ACTION_HANDLE_APP_UNREGISTER"
 
-    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/a$a;->p:Ljava/lang/String;
+    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->p:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1728,11 +1728,11 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/a$a;->m:Ljava/lang/String;
+    iput-object v1, v0, Lcom/tencent/mm/sdk/a/a/ICa$ICa;->m:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/tencent/mm/sdk/openapi/WXApiImplV10;->context:Landroid/content/Context;
 
-    invoke-static {v1, v0}, Lcom/tencent/mm/sdk/a/a/a;->a(Landroid/content/Context;Lcom/tencent/mm/sdk/a/a/a$a;)Z
+    invoke-static {v1, v0}, Lcom/tencent/mm/sdk/a/a/ICa;->a(Landroid/content/Context;Lcom/tencent/mm/sdk/a/a/ICa$ICa;)Z
 
     goto :goto_0
 .end method

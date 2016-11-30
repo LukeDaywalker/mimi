@@ -94,9 +94,9 @@
 
     .prologue
     .line 50
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->n:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->n:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 51
     const/4 v0, 0x1
@@ -112,9 +112,9 @@
 
     .prologue
     .line 55
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->m:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->m:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->onEvent(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->onEvent(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 56
     const/4 v0, 0x2
@@ -167,17 +167,17 @@
     .line 36
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->n:Landroid/support/v4/view/ViewPager;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;)V
 
     .line 38
-    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/a/GuidancePagerAdapter;
+    new-instance v0, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/a/GuidancePagerAdapter;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;-><init>(Landroid/content/Context;)V
 
     .line 39
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/AccountGuidanceActivity;->n:Landroid/support/v4/view/ViewPager;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/a/GuidancePagerAdapter;->b()I
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/authenticator/GuidancePagerAdapter;->b()I
 
     move-result v2
 

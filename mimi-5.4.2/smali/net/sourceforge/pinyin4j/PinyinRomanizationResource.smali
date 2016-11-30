@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private a:Lcom/c/a/a/Document;
+.field private a:Lcom/hp/hpl/sparta/Document;
 
 
 # direct methods
@@ -52,15 +52,15 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/c/a/a/Parser;->a(Ljava/lang/String;Ljava/io/InputStream;)Lcom/c/a/a/Document;
+    invoke-static {v0, v1}, Lcom/hp/hpl/sparta/Parser;->a(Ljava/lang/String;Ljava/io/InputStream;)Lcom/hp/hpl/sparta/Document;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lnet/sourceforge/pinyin4j/PinyinRomanizationResource;->a(Lcom/c/a/a/Document;)V
+    invoke-direct {p0, v0}, Lnet/sourceforge/pinyin4j/PinyinRomanizationResource;->a(Lcom/hp/hpl/sparta/Document;)V
     :try_end_0
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Lcom/c/a/a/ParseException; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Lcom/hp/hpl/sparta/ParseException; {:try_start_0 .. :try_end_0} :catch_2
 
     .line 79
     :goto_0
@@ -89,17 +89,17 @@
     move-exception v0
 
     .line 77
-    invoke-virtual {v0}, Lcom/c/a/a/ParseException;->printStackTrace()V
+    invoke-virtual {v0}, Lcom/hp/hpl/sparta/ParseException;->printStackTrace()V
 
     goto :goto_0
 .end method
 
-.method private a(Lcom/c/a/a/Document;)V
+.method private a(Lcom/hp/hpl/sparta/Document;)V
     .locals 0
 
     .prologue
     .line 43
-    iput-object p1, p0, Lnet/sourceforge/pinyin4j/PinyinRomanizationResource;->a:Lcom/c/a/a/Document;
+    iput-object p1, p0, Lnet/sourceforge/pinyin4j/PinyinRomanizationResource;->a:Lcom/hp/hpl/sparta/Document;
 
     .line 44
     return-void

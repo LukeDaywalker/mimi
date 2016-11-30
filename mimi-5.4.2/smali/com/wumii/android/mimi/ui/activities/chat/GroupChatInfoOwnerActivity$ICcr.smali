@@ -3,7 +3,7 @@
 .source "GroupChatInfoOwnerActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/b/GroupChatInfoImageUploadTask$ICaj;
+.implements Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask$ICaj;
 
 
 # instance fields

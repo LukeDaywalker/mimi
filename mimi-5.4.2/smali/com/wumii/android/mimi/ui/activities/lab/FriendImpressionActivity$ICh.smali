@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;
-.super Lcom/wumii/android/mimi/b/ProgressAsyncTask;
+.super Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 .source "FriendImpressionActivity.java"
 
 
@@ -18,7 +18,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->a:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
 
     .line 157
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
 
     .line 158
     iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->d:Ljava/lang/String;
@@ -34,11 +34,11 @@
 
     .prologue
     .line 188
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->f:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->f:Lcom/wumii/android/mimi/util/ContextToast;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, p3, v1}, Lcom/wumii/android/mimi/c/ContextToast;->a(Ljava/lang/String;I)V
+    invoke-virtual {v0, p3, v1}, Lcom/wumii/android/mimi/util/ContextToast;->a(Ljava/lang/String;I)V
 
     .line 189
     return-void
@@ -77,7 +77,7 @@
     move-result-object v4
 
     .line 172
-    new-instance v0, Lcom/wumii/android/mimi/models/g/FriendImpressionShareController;
+    new-instance v0, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->a:Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity;
 
@@ -131,12 +131,12 @@
 
     const v6, 0x7f0b0046
 
-    invoke-direct/range {v0 .. v6}, Lcom/wumii/android/mimi/models/g/FriendImpressionShareController;-><init>(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct/range {v0 .. v6}, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;-><init>(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 174
     sget-object v1, Lcom/wumii/android/mimi/models/entities/share/ShareAction;->WEIXIN_TIMELINE:Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/g/FriendImpressionShareController;->a(Lcom/wumii/android/mimi/models/entities/share/ShareAction;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/share/FriendImpressionShareController;->a(Lcom/wumii/android/mimi/models/entities/share/ShareAction;)V
 
     .line 178
     :goto_0
@@ -144,11 +144,11 @@
 
     .line 176
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->f:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->f:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06039e
 
-    invoke-virtual {v0, v1, v7}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v7}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     goto :goto_0
 .end method
@@ -158,16 +158,16 @@
 
     .prologue
     .line 182
-    invoke-super {p0, p1}, Lcom/wumii/android/mimi/b/ProgressAsyncTask;->c(Ljava/lang/Exception;)V
+    invoke-super {p0, p1}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;->c(Ljava/lang/Exception;)V
 
     .line 183
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->f:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->f:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06039e
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 184
     return-void
@@ -202,11 +202,11 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 165
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/lab/FriendImpressionActivity$ICh;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "friend/impression"
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 

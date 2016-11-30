@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICaf;
-.super Lcom/wumii/android/mimi/b/JoinCircleCategoryTask;
+.super Lcom/wumii/android/mimi/task/JoinCircleCategoryTask;
 .source "MyCircleActivity.java"
 
 
@@ -19,7 +19,7 @@
 
     iput-object p3, p0, Lcom/wumii/android/mimi/ui/activities/circle/MyCircleActivity$ICaf;->a:Lcom/wumii/android/mimi/models/entities/circle/Circle;
 
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/JoinCircleCategoryTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/JoinCircleCategoryTask;-><init>(Landroid/app/Activity;)V
 
     return-void
 .end method
@@ -40,11 +40,11 @@
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/apdaters/circle/MyCircleListAdapter;->notifyDataSetChanged()V
 
     .line 169
-    invoke-static {}, Lcom/wumii/android/mimi/c/UserProfileManager;->a()Lcom/wumii/android/mimi/c/UserProfileManager;
+    invoke-static {}, Lcom/wumii/android/mimi/util/UserProfileManager;->a()Lcom/wumii/android/mimi/util/UserProfileManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/UserProfileManager;->b()Lcom/wumii/android/mimi/models/entities/profile/UserProfile;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/UserProfileManager;->b()Lcom/wumii/android/mimi/models/entities/profile/UserProfile;
 
     move-result-object v0
 
@@ -53,7 +53,7 @@
     move-result-object v0
 
     .line 170
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v1
 

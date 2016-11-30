@@ -237,9 +237,9 @@
     .line 288
     :goto_2
     :try_start_4
-    new-instance v2, Lcom/sina/weibo/sdk/a/WeiboException;
+    new-instance v2, Lcom/sina/weibo/sdk/exception/WeiboException;
 
-    invoke-direct {v2, v0}, Lcom/sina/weibo/sdk/a/WeiboException;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct {v2, v0}, Lcom/sina/weibo/sdk/exception/WeiboException;-><init>(Ljava/lang/Throwable;)V
 
     throw v2
     :try_end_4
@@ -542,9 +542,9 @@
     move-exception v1
 
     .line 253
-    new-instance v2, Lcom/sina/weibo/sdk/a/WeiboException;
+    new-instance v2, Lcom/sina/weibo/sdk/exception/WeiboException;
 
-    invoke-direct {v2, v1}, Lcom/sina/weibo/sdk/a/WeiboException;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct {v2, v1}, Lcom/sina/weibo/sdk/exception/WeiboException;-><init>(Ljava/lang/Throwable;)V
 
     throw v2
 
@@ -932,9 +932,9 @@
     move-result-object v0
 
     .line 163
-    new-instance v2, Lcom/sina/weibo/sdk/a/WeiboHttpException;
+    new-instance v2, Lcom/sina/weibo/sdk/exception/WeiboHttpException;
 
-    invoke-direct {v2, v0, v1}, Lcom/sina/weibo/sdk/a/WeiboHttpException;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v2, v0, v1}, Lcom/sina/weibo/sdk/exception/WeiboHttpException;-><init>(Ljava/lang/String;I)V
 
     throw v2
     :try_end_0
@@ -945,9 +945,9 @@
     move-exception v0
 
     .line 166
-    new-instance v1, Lcom/sina/weibo/sdk/a/WeiboException;
+    new-instance v1, Lcom/sina/weibo/sdk/exception/WeiboException;
 
-    invoke-direct {v1, v0}, Lcom/sina/weibo/sdk/a/WeiboException;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct {v1, v0}, Lcom/sina/weibo/sdk/exception/WeiboException;-><init>(Ljava/lang/Throwable;)V
 
     throw v1
 

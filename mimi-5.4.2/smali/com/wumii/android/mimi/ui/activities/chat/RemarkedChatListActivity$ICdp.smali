@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$ICdp;
-.super Lcom/wumii/android/mimi/models/e/ChatObserver;
+.super Lcom/wumii/android/mimi/models/observer/ChatObserver;
 .source "RemarkedChatListActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 131
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity$ICdp;->a:Lcom/wumii/android/mimi/ui/activities/chat/RemarkedChatListActivity;
 
-    invoke-direct {p0}, Lcom/wumii/android/mimi/models/e/ChatObserver;-><init>()V
+    invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/ChatObserver;-><init>()V
 
     return-void
 .end method

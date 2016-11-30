@@ -117,13 +117,13 @@
     if-nez v1, :cond_2
 
     .line 30
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/SystemShareJumpActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/SystemShareJumpActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v2, 0x7f0603b4
 
     const/4 v3, 0x0
 
-    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
@@ -161,13 +161,13 @@
     .line 36
     :goto_2
     :try_start_3
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/SystemShareJumpActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/SystemShareJumpActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v2, 0x7f0603b4
 
     const/4 v3, 0x0
 
-    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v1, v2, v3}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 

@@ -66,7 +66,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcj;->b:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;
 
-    sget-object v1, Lcom/wumii/android/mimi/b/ChatInfoEditTask$ICt;->a:Lcom/wumii/android/mimi/b/ChatInfoEditTask$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->a:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICck;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcj;
 
@@ -82,7 +82,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/b/ChatInfoEditTask$ICt;Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;Ljava/lang/String;Ljava/lang/String;Z)V
 
     goto :goto_0
 
@@ -92,7 +92,7 @@
 
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcj;->b:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;
 
-    sget-object v1, Lcom/wumii/android/mimi/b/ChatInfoEditTask$ICt;->b:Lcom/wumii/android/mimi/b/ChatInfoEditTask$ICt;
+    sget-object v1, Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;->b:Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICck;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcj;
 
@@ -108,7 +108,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/b/ChatInfoEditTask$ICt;Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-static {v0, v1, v2, v3, v4}, Lcom/wumii/android/mimi/ui/activities/chat/ChatInfoTextEditActivity;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/task/ChatInfoEditTask$ICt;Ljava/lang/String;Ljava/lang/String;Z)V
 
     goto :goto_0
 
@@ -144,7 +144,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/models/d/HostHelper;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/wumii/android/mimi/models/helper/HostHelper;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 

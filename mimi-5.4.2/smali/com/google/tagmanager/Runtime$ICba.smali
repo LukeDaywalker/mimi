@@ -9,26 +9,26 @@
         value = {
             "Lcom/google/tagmanager/ak",
             "<",
-            "Lcom/google/analytics/b/a/a/TypeSystem$ICb;",
+            "Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private b:Lcom/google/analytics/b/a/a/TypeSystem$ICb;
+.field private b:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/tagmanager/ObjectAndStatic;Lcom/google/analytics/b/a/a/TypeSystem$ICb;)V
+.method public constructor <init>(Lcom/google/tagmanager/ObjectAndStatic;Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/google/tagmanager/ak",
             "<",
-            "Lcom/google/analytics/b/a/a/TypeSystem$ICb;",
+            "Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;",
             ">;",
-            "Lcom/google/analytics/b/a/a/TypeSystem$ICb;",
+            "Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;",
             ")V"
         }
     .end annotation
@@ -41,7 +41,7 @@
     iput-object p1, p0, Lcom/google/tagmanager/Runtime$ICba;->a:Lcom/google/tagmanager/ObjectAndStatic;
 
     .line 918
-    iput-object p2, p0, Lcom/google/tagmanager/Runtime$ICba;->b:Lcom/google/analytics/b/a/a/TypeSystem$ICb;
+    iput-object p2, p0, Lcom/google/tagmanager/Runtime$ICba;->b:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     .line 919
     return-void
@@ -56,7 +56,7 @@
             "()",
             "Lcom/google/tagmanager/ak",
             "<",
-            "Lcom/google/analytics/b/a/a/TypeSystem$ICb;",
+            "Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;",
             ">;"
         }
     .end annotation
@@ -68,12 +68,12 @@
     return-object v0
 .end method
 
-.method public b()Lcom/google/analytics/b/a/a/TypeSystem$ICb;
+.method public b()Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
     .locals 1
 
     .prologue
     .line 926
-    iget-object v0, p0, Lcom/google/tagmanager/Runtime$ICba;->b:Lcom/google/analytics/b/a/a/TypeSystem$ICb;
+    iget-object v0, p0, Lcom/google/tagmanager/Runtime$ICba;->b:Lcom/google/analytics/midtier/proto/containertag/TypeSystem$ICb;
 
     return-object v0
 .end method

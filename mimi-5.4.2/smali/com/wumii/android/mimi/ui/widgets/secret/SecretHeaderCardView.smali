@@ -89,7 +89,7 @@
 
     .prologue
     .line 78
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v0
 
@@ -107,7 +107,7 @@
 
     move-object v2, p2
 
-    invoke-virtual/range {v0 .. v5}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Lcom/e/a/b/e/ImageAware;Lcom/e/a/b/DisplayImageOptions;Lcom/e/a/b/f/ImageLoadingListener;Lcom/e/a/b/f/ImageLoadingProgressListener;)V
+    invoke-virtual/range {v0 .. v5}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;Lcom/nostra13/universalimageloader/core/listener/ImageLoadingProgressListener;)V
 
     .line 114
     return-void
@@ -212,7 +212,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 61
     :goto_0
@@ -222,7 +222,7 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->f:Landroid/view/ViewGroup;
 
-    invoke-static {v0, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 49
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->f:Landroid/view/ViewGroup;
@@ -241,7 +241,7 @@
 
     iget v5, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->r:I
 
-    invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/c/ImageUtils;->a(Landroid/view/View;IIIIII)V
+    invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/util/ImageUtils;->a(Landroid/view/View;IIIIII)V
 
     .line 50
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->g:Landroid/widget/ImageView;
@@ -260,7 +260,7 @@
 
     iget v5, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->r:I
 
-    invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/c/ImageUtils;->a(Landroid/view/View;IIIIII)V
+    invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/util/ImageUtils;->a(Landroid/view/View;IIIIII)V
 
     .line 53
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->l:Lcom/wumii/android/mimi/models/entities/secret/Secret;
@@ -272,7 +272,7 @@
     if-eqz v0, :cond_1
 
     .line 54
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v0
 
@@ -288,7 +288,7 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/secret/SecretHeaderCardView;->g:Landroid/widget/ImageView;
 
-    invoke-virtual {v0, v1, v2}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
+    invoke-virtual {v0, v1, v2}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
 
     .line 57
     :cond_1

@@ -104,7 +104,7 @@
 
     const/high16 v1, 0x40e00000    # 7.0f
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v0
 
@@ -372,7 +372,7 @@
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/MimiSearchView;->requestFocus()Z
 
     .line 141
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/Utils;->b(Landroid/view/View;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/Utils;->b(Landroid/view/View;)V
 
     goto :goto_0
 .end method

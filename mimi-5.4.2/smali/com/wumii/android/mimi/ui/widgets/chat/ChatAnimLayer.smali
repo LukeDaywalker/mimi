@@ -39,7 +39,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 52
-    invoke-static {}, Lcom/wumii/android/mimi/c/ThreadUtils;->a()Landroid/os/Handler;
+    invoke-static {}, Lcom/wumii/android/mimi/util/ThreadUtils;->a()Landroid/os/Handler;
 
     move-result-object v0
 
@@ -177,7 +177,7 @@
     .line 185
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/chat/ChatAnimLayer;->d:Ljava/util/List;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 

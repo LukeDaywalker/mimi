@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;
-.super Lcom/wumii/android/mimi/b/ProgressAsyncTask;
+.super Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 .source "PasswordLockActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 269
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->a:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;
 
-    invoke-direct {p0, p2, p3}, Lcom/wumii/android/mimi/b/ProgressAsyncTask;-><init>(Landroid/app/Activity;I)V
+    invoke-direct {p0, p2, p3}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;I)V
 
     return-void
 .end method
@@ -27,7 +27,7 @@
 
     .prologue
     .line 289
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->g:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const/4 v1, 0x1
 
@@ -37,10 +37,10 @@
 
     const-string/jumbo v2, "close_password_lock"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 291
-    invoke-static {}, Lcom/wumii/android/mimi/c/Utils;->d()V
+    invoke-static {}, Lcom/wumii/android/mimi/util/Utils;->d()V
 
     .line 292
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->a:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;
@@ -76,7 +76,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->a:Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->d(Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;)Lcom/wumii/android/mimi/models/d/FileHelper;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;->d(Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity;)Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     move-result-object v0
 
@@ -84,7 +84,7 @@
 
     const-class v3, Lcom/wumii/android/mimi/push/PushService$MqttConf;
 
-    invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/models/d/FileHelper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -113,11 +113,11 @@
     .line 284
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PasswordLockActivity$ICq;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "logout"
 
-    invoke-virtual {v0, v2, v1}, Lcom/wumii/android/mimi/models/d/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v0, v2, v1}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 

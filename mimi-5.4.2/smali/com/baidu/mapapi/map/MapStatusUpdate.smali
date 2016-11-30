@@ -65,7 +65,7 @@
 
 
 # virtual methods
-.method a(Lcom/baidu/platform/comapi/map/c;Lcom/baidu/mapapi/map/MapStatus;)Lcom/baidu/mapapi/map/MapStatus;
+.method a(Lcom/baidu/platform/comapi/map/ICc;Lcom/baidu/mapapi/map/MapStatus;)Lcom/baidu/mapapi/map/MapStatus;
     .locals 11
 
     iget v0, p0, Lcom/baidu/mapapi/map/MapStatusUpdate;->a:I
@@ -144,35 +144,35 @@
 
     iget-object v0, p2, Lcom/baidu/mapapi/map/MapStatus;->a:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$b;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/B$b;->b:I
+    iget v0, v0, Lcom/baidu/platform/comapi/map/B$ICb;->b:I
 
     iget-object v5, p2, Lcom/baidu/mapapi/map/MapStatus;->a:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v5, v5, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$b;
+    iget-object v5, v5, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v5, v5, Lcom/baidu/platform/comapi/map/B$b;->a:I
+    iget v5, v5, Lcom/baidu/platform/comapi/map/B$ICb;->a:I
 
     sub-int v5, v0, v5
 
     iget-object v0, p2, Lcom/baidu/mapapi/map/MapStatus;->a:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$b;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/B$b;->d:I
+    iget v0, v0, Lcom/baidu/platform/comapi/map/B$ICb;->d:I
 
     iget-object v6, p2, Lcom/baidu/mapapi/map/MapStatus;->a:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v6, v6, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$b;
+    iget-object v6, v6, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v6, v6, Lcom/baidu/platform/comapi/map/B$b;->c:I
+    iget v6, v6, Lcom/baidu/platform/comapi/map/B$ICb;->c:I
 
     sub-int v6, v0, v6
 
     move-object v0, p1
 
-    invoke-virtual/range {v0 .. v6}, Lcom/baidu/platform/comapi/map/c;->a(IIIIII)F
+    invoke-virtual/range {v0 .. v6}, Lcom/baidu/platform/comapi/map/ICc;->a(IIIIII)F
 
     move-result v4
 
@@ -216,9 +216,9 @@
     goto :goto_0
 
     :pswitch_4
-    invoke-virtual {p1}, Lcom/baidu/platform/comapi/map/c;->w()I
+    invoke-virtual {p1}, Lcom/baidu/platform/comapi/map/ICc;->w()I
 
-    invoke-virtual {p1}, Lcom/baidu/platform/comapi/map/c;->w()I
+    invoke-virtual {p1}, Lcom/baidu/platform/comapi/map/ICc;->w()I
 
     move-result v0
 
@@ -228,7 +228,7 @@
 
     add-int/2addr v0, v1
 
-    invoke-virtual {p1}, Lcom/baidu/platform/comapi/map/c;->x()I
+    invoke-virtual {p1}, Lcom/baidu/platform/comapi/map/ICc;->x()I
 
     move-result v1
 
@@ -238,7 +238,7 @@
 
     add-int/2addr v1, v2
 
-    invoke-virtual {p1, v0, v1}, Lcom/baidu/platform/comapi/map/c;->b(II)Lcom/baidu/mapapi/model/inner/GeoPoint;
+    invoke-virtual {p1, v0, v1}, Lcom/baidu/platform/comapi/map/ICc;->b(II)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
     move-result-object v8
 
@@ -310,7 +310,7 @@
 
     iget v1, v1, Landroid/graphics/Point;->y:I
 
-    invoke-virtual {p1, v0, v1}, Lcom/baidu/platform/comapi/map/c;->b(II)Lcom/baidu/mapapi/model/inner/GeoPoint;
+    invoke-virtual {p1, v0, v1}, Lcom/baidu/platform/comapi/map/ICc;->b(II)Lcom/baidu/mapapi/model/inner/GeoPoint;
 
     move-result-object v0
 
@@ -412,7 +412,7 @@
 
     move-object v0, p1
 
-    invoke-virtual/range {v0 .. v6}, Lcom/baidu/platform/comapi/map/c;->a(IIIIII)F
+    invoke-virtual/range {v0 .. v6}, Lcom/baidu/platform/comapi/map/ICc;->a(IIIIII)F
 
     move-result v4
 

@@ -4,5 +4,5 @@
 
 
 # virtual methods
-.method public abstract a(Lcom/wumii/android/mimi/ui/widgets/a/MimiMenuItem;)V
+.method public abstract a(Lcom/wumii/android/mimi/ui/widgets/menu/MimiMenuItem;)V
 .end method

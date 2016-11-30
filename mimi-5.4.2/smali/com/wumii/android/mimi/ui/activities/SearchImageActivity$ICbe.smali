@@ -1,12 +1,12 @@
 .class Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;
-.super Lcom/wumii/android/mimi/b/ProgressAsyncTask;
+.super Lcom/wumii/android/mimi/task/ProgressAsyncTask;
 .source "SearchImageActivity.java"
 
 
 # instance fields
 .field final synthetic a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
-.field private d:Lcom/wumii/android/mimi/models/d/FileHelper;
+.field private d:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
 .field private q:Ljava/lang/String;
 
@@ -22,29 +22,29 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->a:Lcom/wumii/android/mimi/ui/activities/SearchImageActivity;
 
     .line 329
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ProgressAsyncTask;-><init>(Landroid/app/Activity;)V
 
     .line 330
     invoke-static {}, Lcom/wumii/android/mimi/models/AppFacade;->a()Lcom/wumii/android/mimi/models/AppFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/d/FileHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->d:Lcom/wumii/android/mimi/models/d/FileHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->d:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 331
     return-void
 .end method
 
-.method static synthetic a(Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;)Lcom/wumii/android/mimi/c/ContextToast;
+.method static synthetic a(Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;)Lcom/wumii/android/mimi/util/ContextToast;
     .locals 1
 
     .prologue
     .line 321
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->f:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->f:Lcom/wumii/android/mimi/util/ContextToast;
 
     return-object v0
 .end method
@@ -85,13 +85,13 @@
 
     .prologue
     .line 335
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->q:Ljava/lang/String;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->r:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/HttpHelper;->b(Ljava/lang/String;Ljava/lang/String;)[B
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->b(Ljava/lang/String;Ljava/lang/String;)[B
 
     move-result-object v0
 
@@ -108,7 +108,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/models/d/FileHelper;->c(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/models/helper/FileHelper;->c(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v1
 
@@ -123,9 +123,9 @@
     if-eqz v3, :cond_0
 
     .line 340
-    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->d:Lcom/wumii/android/mimi/models/d/FileHelper;
+    iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/SearchImageActivity$ICbe;->d:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
-    invoke-virtual {v3, v0, v1}, Lcom/wumii/android/mimi/models/d/FileHelper;->a([BLjava/io/File;)Ljava/io/File;
+    invoke-virtual {v3, v0, v1}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a([BLjava/io/File;)Ljava/io/File;
 
     .line 343
     :cond_0

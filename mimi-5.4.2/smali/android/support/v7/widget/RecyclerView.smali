@@ -524,14 +524,14 @@
     if-eqz p2, :cond_1
 
     .line 434
-    sget-object v0, Landroid/support/v7/a/R$ICb;->RecyclerView:[I
+    sget-object v0, Landroid/support/v7/recyclerview/R$ICb;->RecyclerView:[I
 
     invoke-virtual {p1, p2, v0, p3, v5}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object v0
 
     .line 436
-    sget v1, Landroid/support/v7/a/R$ICb;->RecyclerView_layoutManager:I
+    sget v1, Landroid/support/v7/recyclerview/R$ICb;->RecyclerView_layoutManager:I
 
     invoke-virtual {v0, v1}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 

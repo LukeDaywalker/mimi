@@ -3,7 +3,7 @@
 .source "GenerateTagActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/ui/widgets/b/TagSection$ICk;
+.implements Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;
 
 
 # instance fields

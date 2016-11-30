@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/wumii/android/mimi/models/g/AbsBaseShareController;
+.field final synthetic a:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
 .field final synthetic b:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
 
 # direct methods
-.method constructor <init>(Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;Lcom/wumii/android/mimi/models/g/AbsBaseShareController;)V
+.method constructor <init>(Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;Lcom/wumii/android/mimi/models/share/AbsBaseShareController;)V
     .locals 0
 
     .prologue
     .line 134
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder$ICh;->b:Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder;
 
-    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder$ICh;->a:Lcom/wumii/android/mimi/models/g/AbsBaseShareController;
+    iput-object p2, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder$ICh;->a:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 137
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder$ICh;->a:Lcom/wumii/android/mimi/models/g/AbsBaseShareController;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/share/ShareDialogBuilder$ICh;->a:Lcom/wumii/android/mimi/models/share/AbsBaseShareController;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -42,7 +42,7 @@
 
     check-cast v0, Lcom/wumii/android/mimi/models/entities/share/ShareAction;
 
-    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/g/AbsBaseShareController;->a(Lcom/wumii/android/mimi/models/entities/share/ShareAction;)V
+    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/share/AbsBaseShareController;->a(Lcom/wumii/android/mimi/models/entities/share/ShareAction;)V
 
     .line 138
     return-void

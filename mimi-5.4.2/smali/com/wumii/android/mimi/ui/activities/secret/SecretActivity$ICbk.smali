@@ -104,11 +104,11 @@
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbk;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    invoke-static {v3}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->S(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/c/BottomPanFacade;
+    invoke-static {v3}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->S(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/wumii/android/mimi/c/BottomPanFacade;->b()Z
+    invoke-virtual {v3}, Lcom/wumii/android/mimi/util/BottomPanFacade;->b()Z
 
     move-result v3
 
@@ -123,11 +123,11 @@
     .line 697
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICbk;->a:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->S(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/c/BottomPanFacade;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->S(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/BottomPanFacade;->b()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->b()Z
 
     move-result v0
 

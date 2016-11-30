@@ -161,7 +161,7 @@
     .line 759
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICed;->a:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->N:Lcom/wumii/android/mimi/a/ChatManager;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;->N:Lcom/wumii/android/mimi/manager/ChatManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity$ICed;->a:Lcom/wumii/android/mimi/ui/activities/chat/SingleChatActivity;
 
@@ -173,7 +173,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/ChatManager;->g(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/ChatManager;->g(Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -232,7 +232,7 @@
 
     if-nez v0, :cond_3
 
-    invoke-static {}, Lcom/wumii/android/mimi/c/Utils;->c()Z
+    invoke-static {}, Lcom/wumii/android/mimi/util/Utils;->c()Z
 
     move-result v0
 

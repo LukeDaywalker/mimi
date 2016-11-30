@@ -34,7 +34,7 @@
 
 .field private k:Landroid/view/LayoutInflater;
 
-.field private l:Lcom/e/a/b/DisplayImageOptions;
+.field private l:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
 
 # direct methods
@@ -84,11 +84,11 @@
 
     move-result v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(I)Lcom/e/a/b/DisplayImageOptions;
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->l:Lcom/e/a/b/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->l:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 213
     return-void
@@ -202,13 +202,13 @@
     move-result-object v3
 
     .line 278
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->l:Lcom/e/a/b/DisplayImageOptions;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->l:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-    invoke-virtual {v4, v3, v0, v5}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v4, v3, v0, v5}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 280
     const-string/jumbo v0, ""
@@ -299,7 +299,7 @@
     const/4 v0, 0x4
 
     :goto_2
-    invoke-static {v2, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 301
     return-void
@@ -431,7 +431,7 @@
     move-result-object v9
 
     .line 225
-    invoke-static {v9}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v9}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -442,7 +442,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 270
     :goto_0
@@ -654,7 +654,7 @@
     :cond_8
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/NotificationAdapter$ICu;->h:Landroid/widget/LinearLayout;
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto/16 :goto_0
 .end method
@@ -779,7 +779,7 @@
     .line 352
     int-to-long v4, v3
 
-    invoke-static {v4, v5}, Lcom/wumii/android/mimi/c/Utils;->c(J)Ljava/lang/String;
+    invoke-static {v4, v5}, Lcom/wumii/android/mimi/util/Utils;->c(J)Ljava/lang/String;
 
     move-result-object v3
 
@@ -815,7 +815,7 @@
     .line 362
     int-to-long v4, v1
 
-    invoke-static {v4, v5}, Lcom/wumii/android/mimi/c/Utils;->c(J)Ljava/lang/String;
+    invoke-static {v4, v5}, Lcom/wumii/android/mimi/util/Utils;->c(J)Ljava/lang/String;
 
     move-result-object v1
 
@@ -851,7 +851,7 @@
     .line 372
     int-to-long v2, v2
 
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/Utils;->c(J)Ljava/lang/String;
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/util/Utils;->c(J)Ljava/lang/String;
 
     move-result-object v1
 

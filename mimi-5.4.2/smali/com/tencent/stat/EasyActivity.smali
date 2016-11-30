@@ -18,7 +18,7 @@
 
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
-    invoke-static {p0}, Lcom/tencent/stat/i;->e(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/tencent/stat/ICi;->e(Landroid/content/Context;)V
 
     return-void
 .end method
@@ -28,7 +28,7 @@
 
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
-    invoke-static {p0}, Lcom/tencent/stat/i;->d(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/tencent/stat/ICi;->d(Landroid/content/Context;)V
 
     return-void
 .end method

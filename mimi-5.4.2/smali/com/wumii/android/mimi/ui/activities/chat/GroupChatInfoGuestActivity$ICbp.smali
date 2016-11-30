@@ -32,11 +32,11 @@
     .line 130
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity$ICbp;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;)Lcom/wumii/android/mimi/a/GroupChatManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoGuestActivity;)Lcom/wumii/android/mimi/manager/GroupChatManager;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/GroupChatManager;->a()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/GroupChatManager;->a()V
 
     .line 131
     return-void

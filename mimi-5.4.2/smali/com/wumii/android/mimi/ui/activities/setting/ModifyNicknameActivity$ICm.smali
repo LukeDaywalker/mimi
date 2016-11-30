@@ -32,7 +32,7 @@
     .line 97
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity$ICm;->a:Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->d(Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;)Lcom/wumii/android/mimi/a/CircleManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;->d(Lcom/wumii/android/mimi/ui/activities/setting/ModifyNicknameActivity;)Lcom/wumii/android/mimi/manager/CircleManager;
 
     move-result-object v0
 
@@ -52,7 +52,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/a/CircleManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/manager/CircleManager;->a(Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;Ljava/lang/String;)V
 
     .line 98
     return-void

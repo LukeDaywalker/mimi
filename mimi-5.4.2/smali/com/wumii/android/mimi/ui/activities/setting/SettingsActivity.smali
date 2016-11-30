@@ -13,7 +13,7 @@
 # instance fields
 .field private C:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
 
-.field private D:Lcom/wumii/android/mimi/models/d/FileHelper;
+.field private D:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
 .field private E:Lcom/wumii/android/mimi/models/service/UserService;
 
@@ -96,12 +96,12 @@
     return-void
 .end method
 
-.method static synthetic b(Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;)Lcom/wumii/android/mimi/models/d/FileHelper;
+.method static synthetic b(Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;)Lcom/wumii/android/mimi/models/helper/FileHelper;
     .locals 1
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->D:Lcom/wumii/android/mimi/models/d/FileHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->D:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     return-object v0
 .end method
@@ -226,13 +226,13 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setGravity(I)V
 
     .line 163
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v1, Ljava/lang/String;
 
     const-string/jumbo v2, "latest_version_name"
 
-    invoke-virtual {v0, v1, v2, v5}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v5}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -273,13 +273,13 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->y:Landroid/util/DisplayMetrics;
 
-    invoke-static {v1, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v1, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v1
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->y:Landroid/util/DisplayMetrics;
 
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v2
 
@@ -294,7 +294,7 @@
 
     const v1, 0x7f02013d
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->b(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->b(Landroid/view/View;I)V
 
     .line 173
     :goto_0
@@ -436,13 +436,13 @@
 
     .line 149
     :pswitch_5
-    new-instance v0, Lcom/wumii/android/mimi/b/CheckUpdateTask;
+    new-instance v0, Lcom/wumii/android/mimi/task/CheckUpdateTask;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/b/CheckUpdateTask;-><init>(Landroid/app/Activity;Z)V
+    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/task/CheckUpdateTask;-><init>(Landroid/app/Activity;Z)V
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/b/CheckUpdateTask;->j()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/task/CheckUpdateTask;->j()V
 
     goto :goto_0
 
@@ -530,11 +530,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/d/FileHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->D:Lcom/wumii/android/mimi/models/d/FileHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->D:Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     .line 79
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->o:Lcom/wumii/android/mimi/ui/widgets/SectionTextItemView;
@@ -619,11 +619,11 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->G:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     .line 103
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->G:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
     .line 104
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->h()V
@@ -653,11 +653,11 @@
     if-eqz v0, :cond_0
 
     .line 125
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/setting/SettingsActivity;->G:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
     .line 127
     :cond_0

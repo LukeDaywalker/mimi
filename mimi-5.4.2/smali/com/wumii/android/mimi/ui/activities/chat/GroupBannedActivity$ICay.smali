@@ -32,7 +32,7 @@
     .line 130
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ICay;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;->c(Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;)Lcom/wumii/android/mimi/a/GroupBannedManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;->c(Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;)Lcom/wumii/android/mimi/manager/GroupBannedManager;
 
     move-result-object v0
 
@@ -44,11 +44,11 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity$ICay;->a:Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;
 
-    invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;->b(Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;)Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;
+    invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;->b(Lcom/wumii/android/mimi/ui/activities/chat/GroupBannedActivity;)Lcom/wumii/android/mimi/manager/GroupBannedManager$ICan;
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/a/GroupBannedManager;->b(Ljava/lang/String;Lcom/wumii/android/mimi/a/GroupBannedManager$ICan;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/manager/GroupBannedManager;->b(Ljava/lang/String;Lcom/wumii/android/mimi/manager/GroupBannedManager$ICan;)V
 
     .line 131
     return-void

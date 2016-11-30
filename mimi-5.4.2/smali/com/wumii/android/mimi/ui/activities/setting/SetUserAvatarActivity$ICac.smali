@@ -40,11 +40,11 @@
     :pswitch_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICac;->a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->i()Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->i()Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/CaptureImageHelper;->d()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->d()V
 
     goto :goto_0
 
@@ -52,11 +52,11 @@
     :pswitch_1
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity$ICac;->a:Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->i()Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/activities/setting/SetUserAvatarActivity;->i()Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/CaptureImageHelper;->e()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->e()V
 
     goto :goto_0
 

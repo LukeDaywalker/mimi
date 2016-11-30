@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected n:Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+.field protected n:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
 
 # direct methods
@@ -41,11 +41,11 @@
 
     .prologue
     .line 67
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->g()Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->g()Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/CaptureImageHelper;->e()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->e()V
 
     .line 68
     return-void
@@ -56,39 +56,39 @@
 
     .prologue
     .line 63
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->g()Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->g()Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/d/CaptureImageHelper;->d()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->d()V
 
     .line 64
     return-void
 .end method
 
-.method protected g()Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+.method protected g()Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
     .locals 2
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->n:Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->n:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     if-nez v0, :cond_0
 
     .line 26
-    new-instance v0, Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+    new-instance v0, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     new-instance v1, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity$ICi;
 
     invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity$ICi;-><init>(Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;)V
 
-    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/models/d/CaptureImageHelper;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/d/CaptureImageHelper$ICc;)V
+    invoke-direct {v0, p0, v1}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/helper/CaptureImageHelper$ICc;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->n:Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->n:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     .line 33
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->n:Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->n:Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     return-object v0
 .end method
@@ -112,11 +112,11 @@
 
     .line 43
     :cond_1
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->g()Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->g()Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2, p3}, Lcom/wumii/android/mimi/models/d/CaptureImageHelper;->a(IILandroid/content/Intent;)Z
+    invoke-virtual {v0, p1, p2, p3}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->a(IILandroid/content/Intent;)Z
 
     move-result v0
 
@@ -139,7 +139,7 @@
     if-eqz p1, :cond_0
 
     .line 20
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->g()Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->g()Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     move-result-object v0
 
@@ -149,7 +149,7 @@
 
     move-result-wide v2
 
-    invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/models/d/CaptureImageHelper;->a(J)V
+    invoke-virtual {v0, v2, v3}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->a(J)V
 
     .line 22
     :cond_0
@@ -166,11 +166,11 @@
     .line 51
     const-string/jumbo v0, "captureImageTime"
 
-    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->g()Lcom/wumii/android/mimi/models/d/CaptureImageHelper;
+    invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/BaseImageHandlerActivity;->g()Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/d/CaptureImageHelper;->c()J
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/helper/CaptureImageHelper;->c()J
 
     move-result-wide v2
 

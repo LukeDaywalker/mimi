@@ -323,7 +323,7 @@
     .line 85
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->c:Ljava/util/ArrayList;
 
-    sget-object v1, Lcom/wumii/android/mimi/c/Patterns;->a:Ljava/util/regex/Pattern;
+    sget-object v1, Lcom/wumii/android/mimi/util/Patterns;->a:Ljava/util/regex/Pattern;
 
     invoke-direct {p0, v0, v2, v1}, Lcom/wumii/android/mimi/ui/widgets/MimiTextView;->a(Ljava/util/ArrayList;Landroid/text/Spannable;Ljava/util/regex/Pattern;)V
 

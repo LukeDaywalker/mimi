@@ -26,7 +26,7 @@
 
 .field private k:Landroid/content/res/Resources;
 
-.field private l:Lcom/e/a/b/DisplayImageOptions;
+.field private l:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
 .field private m:Z
 
@@ -90,11 +90,11 @@
 
     move-result v0
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(I)Lcom/e/a/b/DisplayImageOptions;
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/GroupChatViewHolder;->l:Lcom/e/a/b/DisplayImageOptions;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/GroupChatViewHolder;->l:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     .line 51
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/GroupChatViewHolder;->j:Landroid/view/View;
@@ -250,7 +250,7 @@
     const/4 v1, 0x0
 
     .line 72
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v0
 
@@ -260,9 +260,9 @@
 
     iget-object v4, p0, Lcom/wumii/android/mimi/ui/GroupChatViewHolder;->a:Landroid/widget/ImageView;
 
-    iget-object v5, p0, Lcom/wumii/android/mimi/ui/GroupChatViewHolder;->l:Lcom/e/a/b/DisplayImageOptions;
+    iget-object v5, p0, Lcom/wumii/android/mimi/ui/GroupChatViewHolder;->l:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-    invoke-virtual {v0, v3, v4, v5}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v0, v3, v4, v5}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 73
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/GroupChatViewHolder;->b:Landroid/widget/TextView;
@@ -323,7 +323,7 @@
     move v0, v1
 
     :goto_1
-    invoke-static {v3, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v3, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 80
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/GroupChatViewHolder;->f:Landroid/widget/TextView;
@@ -438,7 +438,7 @@
     .line 89
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/GroupChatViewHolder;->e:Landroid/widget/TextView;
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 92
     iget-boolean v0, p0, Lcom/wumii/android/mimi/ui/GroupChatViewHolder;->m:Z
@@ -499,7 +499,7 @@
 
     move-result-object v1
 
-    invoke-static {v1, p1}, Lcom/wumii/android/mimi/c/ChatInfoUtils;->a(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/chat/GroupChat;)Ljava/lang/String;
+    invoke-static {v1, p1}, Lcom/wumii/android/mimi/util/ChatInfoUtils;->a(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/chat/GroupChat;)Ljava/lang/String;
 
     move-result-object v1
 

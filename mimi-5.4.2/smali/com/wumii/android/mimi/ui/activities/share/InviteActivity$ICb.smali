@@ -3,7 +3,7 @@
 .source "InviteActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/c/AppConfigManager$ICb;
+.implements Lcom/wumii/android/mimi/util/AppConfigManager$ICb;
 
 
 # instance fields

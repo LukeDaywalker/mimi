@@ -46,7 +46,7 @@
 
     iget-object v2, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->c:Lcom/wumii/android/mimi/services/AppDownloadService;
 
-    invoke-static {v2}, Lcom/wumii/android/mimi/services/AppDownloadService;->e(Lcom/wumii/android/mimi/services/AppDownloadService;)Lcom/wumii/android/mimi/models/d/HttpHelper;
+    invoke-static {v2}, Lcom/wumii/android/mimi/services/AppDownloadService;->e(Lcom/wumii/android/mimi/services/AppDownloadService;)Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     move-result-object v2
 
@@ -58,7 +58,7 @@
 
     invoke-direct {v5, v6}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v2, v5}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Ljava/net/URL;)Lcom/f/a/Request$ICap;
+    invoke-virtual {v2, v5}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Ljava/net/URL;)Lcom/squareup/okhttp/Request$ICap;
 
     move-result-object v2
 
@@ -67,20 +67,20 @@
 
     iget-object v5, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->c:Lcom/wumii/android/mimi/services/AppDownloadService;
 
-    invoke-static {v5}, Lcom/wumii/android/mimi/services/AppDownloadService;->e(Lcom/wumii/android/mimi/services/AppDownloadService;)Lcom/wumii/android/mimi/models/d/HttpHelper;
+    invoke-static {v5}, Lcom/wumii/android/mimi/services/AppDownloadService;->e(Lcom/wumii/android/mimi/services/AppDownloadService;)Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     move-result-object v5
 
-    invoke-virtual {v2}, Lcom/f/a/Request$ICap;->a()Lcom/f/a/Request;
+    invoke-virtual {v2}, Lcom/squareup/okhttp/Request$ICap;->a()Lcom/squareup/okhttp/Request;
 
     move-result-object v2
 
-    invoke-virtual {v5, v2}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Lcom/f/a/Request;)Lcom/f/a/Response;
+    invoke-virtual {v5, v2}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Lcom/squareup/okhttp/Request;)Lcom/squareup/okhttp/Response;
 
     move-result-object v2
 
     .line 152
-    invoke-virtual {v2}, Lcom/f/a/Response;->d()Z
+    invoke-virtual {v2}, Lcom/squareup/okhttp/Response;->d()Z
 
     move-result v5
 
@@ -145,10 +145,10 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 196
-    invoke-static {v4}, Lorg/a/a/b/IOUtils;->a(Ljava/io/InputStream;)V
+    invoke-static {v4}, Lorg/apache/commons/io/IOUtils;->a(Ljava/io/InputStream;)V
 
     .line 197
-    invoke-static {v3}, Lorg/a/a/b/IOUtils;->a(Ljava/io/OutputStream;)V
+    invoke-static {v3}, Lorg/apache/commons/io/IOUtils;->a(Ljava/io/OutputStream;)V
 
     .line 199
     :goto_0
@@ -157,11 +157,11 @@
     .line 156
     :cond_0
     :try_start_2
-    invoke-virtual {v2}, Lcom/f/a/Response;->h()Lcom/f/a/ResponseBody;
+    invoke-virtual {v2}, Lcom/squareup/okhttp/Response;->h()Lcom/squareup/okhttp/ResponseBody;
 
     move-result-object v5
 
-    invoke-virtual {v5}, Lcom/f/a/ResponseBody;->b()J
+    invoke-virtual {v5}, Lcom/squareup/okhttp/ResponseBody;->b()J
 
     move-result-wide v12
 
@@ -188,10 +188,10 @@
     :catchall_0
     move-exception v2
 
-    invoke-static {v4}, Lorg/a/a/b/IOUtils;->a(Ljava/io/InputStream;)V
+    invoke-static {v4}, Lorg/apache/commons/io/IOUtils;->a(Ljava/io/InputStream;)V
 
     .line 197
-    invoke-static {v3}, Lorg/a/a/b/IOUtils;->a(Ljava/io/OutputStream;)V
+    invoke-static {v3}, Lorg/apache/commons/io/IOUtils;->a(Ljava/io/OutputStream;)V
 
     throw v2
 
@@ -205,11 +205,11 @@
 
     iget-object v5, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->c:Lcom/wumii/android/mimi/services/AppDownloadService;
 
-    invoke-static {v5}, Lcom/wumii/android/mimi/services/AppDownloadService;->e(Lcom/wumii/android/mimi/services/AppDownloadService;)Lcom/wumii/android/mimi/models/d/HttpHelper;
+    invoke-static {v5}, Lcom/wumii/android/mimi/services/AppDownloadService;->e(Lcom/wumii/android/mimi/services/AppDownloadService;)Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     move-result-object v5
 
-    invoke-virtual {v5, v2}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Lcom/f/a/Response;)Ljava/io/InputStream;
+    invoke-virtual {v5, v2}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Lcom/squareup/okhttp/Response;)Ljava/io/InputStream;
 
     move-result-object v4
 
@@ -218,7 +218,7 @@
 
     iget-object v2, v0, Lcom/wumii/android/mimi/services/AppDownloadService$ICb;->b:Ljava/io/File;
 
-    invoke-static {v2}, Lorg/a/a/b/FileUtils;->b(Ljava/io/File;)Ljava/io/FileOutputStream;
+    invoke-static {v2}, Lorg/apache/commons/io/FileUtils;->b(Ljava/io/File;)Ljava/io/FileOutputStream;
 
     move-result-object v3
 
@@ -408,10 +408,10 @@
 
     .line 196
     :cond_4
-    invoke-static {v4}, Lorg/a/a/b/IOUtils;->a(Ljava/io/InputStream;)V
+    invoke-static {v4}, Lorg/apache/commons/io/IOUtils;->a(Ljava/io/InputStream;)V
 
     .line 197
-    invoke-static {v3}, Lorg/a/a/b/IOUtils;->a(Ljava/io/OutputStream;)V
+    invoke-static {v3}, Lorg/apache/commons/io/IOUtils;->a(Ljava/io/OutputStream;)V
 
     goto/16 :goto_0
 .end method

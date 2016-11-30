@@ -51,7 +51,7 @@
 
     const-string/jumbo v2, "\u88ab\u7981\u8a00\u6210\u5458"
 
-    const-class v3, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerBannedFragment;
+    const-class v3, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerBannedFragment;
 
     invoke-direct {v0, v1, v4, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Class;)V
 
@@ -64,7 +64,7 @@
 
     const-string/jumbo v2, "\u6c89\u9ed8\u6210\u5458"
 
-    const-class v3, Lcom/wumii/android/mimi/ui/a/b/GroupChatMemberManagerInactiveFragment;
+    const-class v3, Lcom/wumii/android/mimi/ui/fragments/chat/GroupChatMemberManagerInactiveFragment;
 
     invoke-direct {v0, v1, v5, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatMemeberManagerTab;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Class;)V
 

@@ -270,7 +270,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 128
     return-void
@@ -394,7 +394,7 @@
 
     add-float/2addr v6, v7
 
-    invoke-static {v5, v6}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/util/DisplayMetrics;F)I
+    invoke-static {v5, v6}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/util/DisplayMetrics;F)I
 
     move-result v5
 
@@ -408,7 +408,7 @@
 
     const-wide/16 v6, 0x32
 
-    invoke-static {v2, v6, v7}, Lcom/wumii/android/mimi/c/ThreadUtils;->a(Ljava/lang/Runnable;J)V
+    invoke-static {v2, v6, v7}, Lcom/wumii/android/mimi/util/ThreadUtils;->a(Ljava/lang/Runnable;J)V
 
     .line 110
     new-instance v1, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcd;
@@ -417,7 +417,7 @@
 
     const-wide/16 v2, 0x64
 
-    invoke-static {v1, v2, v3}, Lcom/wumii/android/mimi/c/ThreadUtils;->a(Ljava/lang/Runnable;J)V
+    invoke-static {v1, v2, v3}, Lcom/wumii/android/mimi/util/ThreadUtils;->a(Ljava/lang/Runnable;J)V
 
     goto :goto_0
 .end method
@@ -442,7 +442,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 46
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->c()Landroid/os/Handler;
@@ -522,7 +522,7 @@
     .line 61
     iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->c:Landroid/widget/ImageView;
 
-    invoke-static {v1, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v1, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 70
     :goto_0
@@ -533,7 +533,7 @@
     .line 72
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->d:Landroid/widget/LinearLayout;
 
-    invoke-static {v0, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 73
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->a()V
@@ -557,14 +557,14 @@
     .line 66
     iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->c:Landroid/widget/ImageView;
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/widget/ImageView;)V
+    invoke-static {v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/widget/ImageView;)V
 
     .line 68
     iget-object v1, v0, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;->c:Landroid/widget/ImageView;
 
     const/4 v2, 0x0
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 .end method
@@ -580,7 +580,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 132
     return-void
@@ -623,7 +623,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 84
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout;->f()Lcom/wumii/android/mimi/ui/widgets/chat/VoiceTipLayout$ICcf;
@@ -634,7 +634,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 85
     return-void

@@ -53,7 +53,7 @@
     .line 43
     const/4 v0, 0x2
 
-    invoke-static {p2, v0}, Lcom/wumii/android/mimi/c/Utils;->a(II)Z
+    invoke-static {p2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(II)Z
 
     move-result v0
 
@@ -66,7 +66,7 @@
     :cond_1
     const/4 v0, 0x1
 
-    invoke-static {p2, v0}, Lcom/wumii/android/mimi/c/Utils;->a(II)Z
+    invoke-static {p2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(II)Z
 
     move-result v0
 
@@ -87,7 +87,7 @@
 
     .line 41
     :cond_3
-    invoke-static {p2, v1}, Lcom/wumii/android/mimi/c/Utils;->a(II)Z
+    invoke-static {p2, v1}, Lcom/wumii/android/mimi/util/Utils;->a(II)Z
 
     move-result v0
 
@@ -123,7 +123,7 @@
 
     invoke-direct {v0, p0, p1}, Lcom/wumii/android/mimi/ui/widgets/WMText$ICby;-><init>(Lcom/wumii/android/mimi/ui/widgets/WMText;I)V
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/ThreadUtils;->b(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/ThreadUtils;->b(Ljava/lang/Runnable;)V
 
     .line 99
     return-void
@@ -200,7 +200,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(II)Z
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(II)Z
 
     move-result v0
 
@@ -227,7 +227,7 @@
 
     .prologue
     .line 122
-    sget-object v0, Lcom/wumii/android/mimi/c/Patterns;->a:Ljava/util/regex/Pattern;
+    sget-object v0, Lcom/wumii/android/mimi/util/Patterns;->a:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -304,7 +304,7 @@
     .line 61
     iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->a:I
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(II)Z
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(II)Z
 
     move-result v0
 
@@ -402,7 +402,7 @@
     :cond_3
     iget v0, p0, Lcom/wumii/android/mimi/ui/widgets/WMText;->a:I
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(II)Z
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(II)Z
 
     move-result v0
 

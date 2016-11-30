@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;
-.super Lcom/wumii/android/mimi/b/ChangePnoTask;
+.super Lcom/wumii/android/mimi/task/ChangePnoTask;
 .source "ChangePhoneNumberActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 189
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;
 
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/ChangePnoTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/ChangePnoTask;-><init>(Landroid/app/Activity;)V
 
     return-void
 .end method
@@ -91,11 +91,11 @@
     .line 195
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->i:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/d/FileHelper;
+    invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     move-result-object v2
 
-    invoke-virtual {v2, v4}, Lcom/wumii/android/mimi/models/d/FileHelper;->a(Z)Ljava/io/File;
+    invoke-virtual {v2, v4}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(Z)Ljava/io/File;
 
     move-result-object v2
 
@@ -105,11 +105,11 @@
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->i:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v3}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/d/FileHelper;
+    invoke-virtual {v3}, Lcom/wumii/android/mimi/models/AppFacade;->j()Lcom/wumii/android/mimi/models/helper/FileHelper;
 
     move-result-object v3
 
-    invoke-virtual {v3, v4, v1}, Lcom/wumii/android/mimi/models/d/FileHelper;->a(ZLjava/lang/String;)Ljava/io/File;
+    invoke-virtual {v3, v4, v1}, Lcom/wumii/android/mimi/models/helper/FileHelper;->a(ZLjava/lang/String;)Ljava/io/File;
 
     move-result-object v3
 
@@ -117,7 +117,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/models/d/FileHelper;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/models/helper/FileHelper;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 197
     const-string/jumbo v2, "Set-Cookie"
@@ -167,18 +167,18 @@
     invoke-virtual {v2}, Lcom/wumii/android/mimi/models/service/UserService;->b()V
 
     .line 208
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->g:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->g:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
-    invoke-virtual {v2, v0, v1}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v0, v1}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 210
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->f:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->f:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603b0
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 211
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity$ICi;->a:Lcom/wumii/android/mimi/ui/activities/authenticator/ChangePhoneNumberActivity;

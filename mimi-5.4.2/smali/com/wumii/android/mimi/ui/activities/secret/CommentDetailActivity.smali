@@ -38,21 +38,21 @@
 
 .field private O:Ljava/lang/String;
 
-.field private P:Lcom/wumii/android/mimi/models/b/SenderRole;
+.field private P:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
 .field private Q:I
 
 .field private R:Z
 
-.field private S:Lcom/wumii/android/mimi/a/FeedManager;
+.field private S:Lcom/wumii/android/mimi/manager/FeedManager;
 
-.field private T:Lcom/wumii/android/mimi/a/SecretManager;
+.field private T:Lcom/wumii/android/mimi/manager/SecretManager;
 
 .field private U:Landroid/app/AlertDialog;
 
 .field private V:Landroid/app/AlertDialog;
 
-.field private W:Lcom/wumii/android/mimi/c/BottomPanFacade;
+.field private W:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
 .field private X:Landroid/content/Intent;
 
@@ -148,12 +148,12 @@
     return-object v0
 .end method
 
-.method static synthetic E(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/a/FeedManager;
+.method static synthetic E(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/manager/FeedManager;
     .locals 1
 
     .prologue
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->S:Lcom/wumii/android/mimi/a/FeedManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->S:Lcom/wumii/android/mimi/manager/FeedManager;
 
     return-object v0
 .end method
@@ -318,35 +318,6 @@
     return-void
 .end method
 
-.method private a(Lcom/wumii/android/mimi/models/b/SenderRole;)V
-    .locals 2
-
-    .prologue
-    .line 870
-    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->P:Lcom/wumii/android/mimi/models/b/SenderRole;
-
-    .line 871
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/c/BottomPanFacade;
-
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/BottomPanFacade;->f()Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->P:Lcom/wumii/android/mimi/models/b/SenderRole;
-
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->a(Lcom/wumii/android/mimi/models/b/SenderRole;)V
-
-    .line 872
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
-
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->P:Lcom/wumii/android/mimi/models/b/SenderRole;
-
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/service/UserService;->a(Lcom/wumii/android/mimi/models/b/SenderRole;)V
-
-    .line 873
-    return-void
-.end method
-
 .method private a(Lcom/wumii/android/mimi/models/entities/profile/UserPrivilege;Ljava/lang/String;)V
     .locals 5
 
@@ -491,6 +462,35 @@
     return-void
 .end method
 
+.method private a(Lcom/wumii/android/mimi/models/enum/SenderRole;)V
+    .locals 2
+
+    .prologue
+    .line 870
+    iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->P:Lcom/wumii/android/mimi/models/enum/SenderRole;
+
+    .line 871
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/util/BottomPanFacade;
+
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->f()Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->P:Lcom/wumii/android/mimi/models/enum/SenderRole;
+
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->a(Lcom/wumii/android/mimi/models/enum/SenderRole;)V
+
+    .line 872
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
+
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->P:Lcom/wumii/android/mimi/models/enum/SenderRole;
+
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/service/UserService;->a(Lcom/wumii/android/mimi/models/enum/SenderRole;)V
+
+    .line 873
+    return-void
+.end method
+
 .method static synthetic a(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;Lcom/wumii/android/mimi/models/entities/profile/UserPrivilege;Ljava/lang/String;)V
     .locals 0
 
@@ -554,13 +554,13 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
 
     .line 612
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->g()Z
 
     .line 614
-    invoke-static {}, Lcom/wumii/android/mimi/c/UserProfileManager;->a()Lcom/wumii/android/mimi/c/UserProfileManager;
+    invoke-static {}, Lcom/wumii/android/mimi/util/UserProfileManager;->a()Lcom/wumii/android/mimi/util/UserProfileManager;
 
     move-result-object v0
 
@@ -570,7 +570,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$ICau;Z)V
+    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$ICau;Z)V
 
     .line 629
     return-void
@@ -601,7 +601,7 @@
 
     .prologue
     .line 840
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v0
 
@@ -617,11 +617,11 @@
 
     move-result v2
 
-    invoke-static {v2}, Lcom/wumii/android/mimi/c/Utils;->a(I)Lcom/e/a/b/DisplayImageOptions;
+    invoke-static {v2}, Lcom/wumii/android/mimi/util/Utils;->a(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object v2
 
-    invoke-virtual {v0, p1, v1, v2}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/e/a/b/DisplayImageOptions;)V
+    invoke-virtual {v0, p1, v1, v2}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
     .line 841
     return-void
@@ -738,12 +738,12 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 553
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->s:Landroid/widget/ImageView;
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 558
     :goto_0
@@ -753,22 +753,22 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->r:Landroid/widget/RelativeLayout;
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 556
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->s:Landroid/widget/ImageView;
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 .end method
 
-.method static synthetic d(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.method static synthetic d(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
     .locals 1
 
     .prologue
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     return-object v0
 .end method
@@ -833,18 +833,18 @@
 
     .line 529
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/c/BottomPanFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/BottomPanFacade;->b()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->b()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 530
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/c/BottomPanFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/BottomPanFacade;->c()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->c()V
 
     .line 531
     const/4 v0, 0x1
@@ -1073,12 +1073,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic j(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/c/BottomPanFacade;
+.method static synthetic j(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/util/BottomPanFacade;
     .locals 1
 
     .prologue
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/c/BottomPanFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     return-object v0
 .end method
@@ -1110,7 +1110,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v2, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -1120,7 +1120,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v0, v2, v3, v4}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v3, v4}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1177,7 +1177,7 @@
     .line 877
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->F:Landroid/view/View;
 
-    invoke-static {v0, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 911
     :goto_0
@@ -1187,7 +1187,7 @@
     :cond_0
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->F:Landroid/view/View;
 
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 883
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->I:Lcom/wumii/android/mimi/models/entities/secret/Secret;
@@ -1206,7 +1206,7 @@
 
     if-nez v0, :cond_3
 
-    invoke-static {}, Lcom/wumii/android/mimi/c/Constants;->a()Ljava/lang/String;
+    invoke-static {}, Lcom/wumii/android/mimi/util/Constants;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1235,7 +1235,7 @@
     move v2, v3
 
     :cond_1
-    invoke-static {v4, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v4, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 888
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->N:Lcom/wumii/android/mimi/models/entities/ScopedUser;
@@ -1264,17 +1264,17 @@
 
     if-eqz v2, :cond_6
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->P:Lcom/wumii/android/mimi/models/b/SenderRole;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->P:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
-    sget-object v2, Lcom/wumii/android/mimi/models/b/SenderRole;->a:Lcom/wumii/android/mimi/models/b/SenderRole;
+    sget-object v2, Lcom/wumii/android/mimi/models/enum/SenderRole;->a:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     :goto_3
-    iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->P:Lcom/wumii/android/mimi/models/b/SenderRole;
+    iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->P:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     .line 896
     :cond_2
     :goto_4
-    invoke-static {}, Lcom/wumii/android/mimi/c/UserProfileManager;->a()Lcom/wumii/android/mimi/c/UserProfileManager;
+    invoke-static {}, Lcom/wumii/android/mimi/util/UserProfileManager;->a()Lcom/wumii/android/mimi/util/UserProfileManager;
 
     move-result-object v2
 
@@ -1282,7 +1282,7 @@
 
     invoke-direct {v4, p0, v0, v1}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICs;-><init>(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v2, p0, v4, v3}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$ICau;Z)V
+    invoke-virtual {v2, p0, v4, v3}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$ICau;Z)V
 
     goto :goto_0
 
@@ -1313,7 +1313,7 @@
 
     .line 890
     :cond_6
-    sget-object v2, Lcom/wumii/android/mimi/models/b/SenderRole;->c:Lcom/wumii/android/mimi/models/b/SenderRole;
+    sget-object v2, Lcom/wumii/android/mimi/models/enum/SenderRole;->c:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     goto :goto_3
 
@@ -1327,17 +1327,17 @@
 
     if-eqz v2, :cond_8
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->P:Lcom/wumii/android/mimi/models/b/SenderRole;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->P:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
-    sget-object v2, Lcom/wumii/android/mimi/models/b/SenderRole;->b:Lcom/wumii/android/mimi/models/b/SenderRole;
+    sget-object v2, Lcom/wumii/android/mimi/models/enum/SenderRole;->b:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     :goto_5
-    iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->P:Lcom/wumii/android/mimi/models/b/SenderRole;
+    iput-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->P:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     goto :goto_4
 
     :cond_8
-    sget-object v2, Lcom/wumii/android/mimi/models/b/SenderRole;->c:Lcom/wumii/android/mimi/models/b/SenderRole;
+    sget-object v2, Lcom/wumii/android/mimi/models/enum/SenderRole;->c:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     goto :goto_5
 .end method
@@ -1424,12 +1424,12 @@
     return-object v0
 .end method
 
-.method static synthetic t(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/a/SecretManager;
+.method static synthetic t(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/manager/SecretManager;
     .locals 1
 
     .prologue
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->T:Lcom/wumii/android/mimi/a/SecretManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->T:Lcom/wumii/android/mimi/manager/SecretManager;
 
     return-object v0
 .end method
@@ -1474,12 +1474,12 @@
     return-object v0
 .end method
 
-.method static synthetic y(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/models/b/SenderRole;
+.method static synthetic y(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)Lcom/wumii/android/mimi/models/enum/SenderRole;
     .locals 1
 
     .prologue
     .line 80
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->P:Lcom/wumii/android/mimi/models/b/SenderRole;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->P:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     return-object v0
 .end method
@@ -1521,9 +1521,9 @@
 
     .line 863
     :cond_0
-    sget-object v0, Lcom/wumii/android/mimi/models/b/SenderRole;->c:Lcom/wumii/android/mimi/models/b/SenderRole;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/SenderRole;->c:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
-    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->a(Lcom/wumii/android/mimi/models/b/SenderRole;)V
+    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->a(Lcom/wumii/android/mimi/models/enum/SenderRole;)V
 
     .line 864
     invoke-virtual {p1}, Lcom/wumii/android/mimi/models/entities/profile/NamedUser;->getAvatar()Ljava/lang/String;
@@ -1556,9 +1556,9 @@
 
     .prologue
     .line 499
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/c/BottomPanFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/c/BottomPanFacade;->clickOnEmoticonBottomPan(Landroid/view/View;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/util/BottomPanFacade;->clickOnEmoticonBottomPan(Landroid/view/View;)V
 
     .line 500
     return-void
@@ -1591,9 +1591,9 @@
     if-nez v0, :cond_1
 
     .line 830
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/c/BottomPanFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
-    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/c/BottomPanFacade;->clickOnMorphPan(Landroid/view/View;)V
+    invoke-virtual {v0, p1}, Lcom/wumii/android/mimi/util/BottomPanFacade;->clickOnMorphPan(Landroid/view/View;)V
 
     .line 837
     :cond_0
@@ -1685,11 +1685,11 @@
     const/4 v2, 0x0
 
     .line 511
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->T:Lcom/wumii/android/mimi/a/SecretManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->T:Lcom/wumii/android/mimi/manager/SecretManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->K:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/SecretManager;->b(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/SecretManager;->b(Ljava/lang/String;)V
 
     .line 512
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->p:Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;
@@ -1731,9 +1731,9 @@
     invoke-direct {v0, v1, v2}, Landroid/graphics/Point;-><init>(II)V
 
     .line 294
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/c/BottomPanFacade;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
-    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/c/BottomPanFacade;->a(Landroid/graphics/Point;)Z
+    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->a(Landroid/graphics/Point;)Z
 
     move-result v1
 
@@ -1752,7 +1752,7 @@
     :cond_0
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->t:Landroid/widget/LinearLayout;
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/Utils;->c(Landroid/view/View;)Landroid/graphics/Point;
+    invoke-static {v1}, Lcom/wumii/android/mimi/util/Utils;->c(Landroid/view/View;)Landroid/graphics/Point;
 
     move-result-object v1
 
@@ -1809,9 +1809,9 @@
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/c/BottomPanFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/BottomPanFacade;->b()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->b()Z
 
     move-result v0
 
@@ -1827,7 +1827,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
 
     .line 306
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->g()Z
@@ -1851,9 +1851,9 @@
 
     .prologue
     .line 845
-    sget-object v0, Lcom/wumii/android/mimi/models/b/SenderRole;->a:Lcom/wumii/android/mimi/models/b/SenderRole;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/SenderRole;->a:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
-    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->a(Lcom/wumii/android/mimi/models/b/SenderRole;)V
+    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->a(Lcom/wumii/android/mimi/models/enum/SenderRole;)V
 
     .line 846
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->b(Ljava/lang/String;)V
@@ -1869,9 +1869,9 @@
 
     .prologue
     .line 852
-    sget-object v0, Lcom/wumii/android/mimi/models/b/SenderRole;->b:Lcom/wumii/android/mimi/models/b/SenderRole;
+    sget-object v0, Lcom/wumii/android/mimi/models/enum/SenderRole;->b:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
-    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->a(Lcom/wumii/android/mimi/models/b/SenderRole;)V
+    invoke-direct {p0, v0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->a(Lcom/wumii/android/mimi/models/enum/SenderRole;)V
 
     .line 853
     invoke-direct {p0, p1}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->b(Ljava/lang/String;)V
@@ -1887,18 +1887,18 @@
 
     .prologue
     .line 316
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/c/BottomPanFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/BottomPanFacade;->b()Z
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->b()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 317
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/c/BottomPanFacade;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/c/BottomPanFacade;->c()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/util/BottomPanFacade;->c()V
 
     .line 322
     :goto_0
@@ -2044,7 +2044,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/os/IBinder;)V
 
     .line 374
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->g()Z
@@ -2066,16 +2066,16 @@
     invoke-super {p0, p1}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 149
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->a(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->a(Ljava/lang/Object;)V
 
     .line 151
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->v:Lcom/wumii/android/mimi/models/service/UserService;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/UserService;->g()Lcom/wumii/android/mimi/models/b/SenderRole;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/service/UserService;->g()Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->P:Lcom/wumii/android/mimi/models/b/SenderRole;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->P:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     .line 153
     const v0, 0x7f03001c
@@ -2140,13 +2140,13 @@
     :cond_1
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->D()Lcom/wumii/android/mimi/models/h/c/SecretStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->D()Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;
 
     move-result-object v0
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->Y:Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICai;
 
-    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/h/c/SecretStorage;->a(Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;)V
+    invoke-virtual {v0, v2}, Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;->a(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
 
     .line 166
     const v0, 0x7f0b009e
@@ -2204,11 +2204,11 @@
     .line 180
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->D()Lcom/wumii/android/mimi/models/h/c/SecretStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->D()Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/c/SecretStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     move-result-object v0
 
@@ -2343,7 +2343,7 @@
     invoke-virtual {v0, v3, v8, v8}, Lcom/wumii/android/mimi/ui/widgets/secret/CommentDetailHeaderView;->a(ZZZ)V
 
     .line 207
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
@@ -2353,7 +2353,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -2372,12 +2372,12 @@
 
     invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICt;-><init>(Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;)V
 
-    invoke-static {p0, v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/OnKeyboardVisibilityListener;)V
+    invoke-static {p0, v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/app/Activity;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/OnKeyboardVisibilityListener;)V
 
     .line 219
-    new-instance v0, Lcom/wumii/android/mimi/c/BottomPanFacade;
+    new-instance v0, Lcom/wumii/android/mimi/util/BottomPanFacade;
 
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     iget-object v3, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->o:Landroid/widget/ScrollView;
 
@@ -2393,9 +2393,9 @@
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v7}, Lcom/wumii/android/mimi/c/BottomPanFacade;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/d/PreferencesHelper;Landroid/view/View;Landroid/widget/EditText;Lcom/wumii/android/mimi/ui/OnKeyboardVisibilityListener;Ljava/lang/Runnable;Lcom/wumii/android/soundtouch/RecordClient;)V
+    invoke-direct/range {v0 .. v7}, Lcom/wumii/android/mimi/util/BottomPanFacade;-><init>(Landroid/app/Activity;Lcom/wumii/android/mimi/models/helper/PreferencesHelper;Landroid/view/View;Landroid/widget/EditText;Lcom/wumii/android/mimi/ui/OnKeyboardVisibilityListener;Ljava/lang/Runnable;Lcom/wumii/android/soundtouch/RecordClient;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/c/BottomPanFacade;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
     .line 242
     const v0, 0x7f0b0054
@@ -2407,9 +2407,9 @@
     check-cast v0, Landroid/widget/LinearLayout;
 
     .line 243
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/c/BottomPanFacade;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->W:Lcom/wumii/android/mimi/util/BottomPanFacade;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/c/BottomPanFacade;->a()Landroid/widget/FrameLayout;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/util/BottomPanFacade;->a()Landroid/widget/FrameLayout;
 
     move-result-object v1
 
@@ -2443,33 +2443,33 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     .line 281
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->c()Lcom/wumii/android/mimi/a/FeedManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->c()Lcom/wumii/android/mimi/manager/FeedManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->S:Lcom/wumii/android/mimi/a/FeedManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->S:Lcom/wumii/android/mimi/manager/FeedManager;
 
     .line 283
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->o()Lcom/wumii/android/mimi/a/SecretManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->o()Lcom/wumii/android/mimi/manager/SecretManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->T:Lcom/wumii/android/mimi/a/SecretManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->T:Lcom/wumii/android/mimi/manager/SecretManager;
 
     .line 284
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->T:Lcom/wumii/android/mimi/a/SecretManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->T:Lcom/wumii/android/mimi/manager/SecretManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->K:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/SecretManager;->b(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/SecretManager;->b(Ljava/lang/String;)V
 
     .line 286
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->E:Landroid/widget/ImageButton;
@@ -2496,28 +2496,28 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onDestroy()V
 
     .line 327
-    invoke-static {p0}, Lcom/wumii/android/mimi/c/EventBusUtils;->b(Ljava/lang/Object;)V
+    invoke-static {p0}, Lcom/wumii/android/mimi/util/EventBusUtils;->b(Ljava/lang/Object;)V
 
     .line 328
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->D()Lcom/wumii/android/mimi/models/h/c/SecretStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->D()Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->Y:Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity$ICai;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/c/SecretStorage;->b(Lcom/wumii/android/mimi/models/h/BaseStorage$ICd;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;->b(Lcom/wumii/android/mimi/models/storage/BaseStorage$ICd;)V
 
     .line 329
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->T:Lcom/wumii/android/mimi/a/SecretManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->T:Lcom/wumii/android/mimi/manager/SecretManager;
 
     if-eqz v0, :cond_0
 
     .line 330
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->T:Lcom/wumii/android/mimi/a/SecretManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->T:Lcom/wumii/android/mimi/manager/SecretManager;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/SecretManager;->b()V
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/SecretManager;->b()V
 
     .line 333
     :cond_0
@@ -2586,7 +2586,7 @@
     .line 346
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->y()Lcom/wumii/android/mimi/models/h/c/CommentStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->y()Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;
 
     move-result-object v0
 
@@ -2598,12 +2598,12 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->J:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/h/c/CommentStorage;->c(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/storage/secret/CommentStorage;->c(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
     .line 347
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->z()Lcom/wumii/android/mimi/models/h/c/AuthorCommentStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->z()Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;
 
     move-result-object v0
 
@@ -2615,26 +2615,26 @@
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->J:Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/h/c/AuthorCommentStorage;->c(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/storage/secret/AuthorCommentStorage;->c(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/secret/Comment;)V
 
     goto :goto_0
 .end method
 
-.method public onEvent(Lcom/wumii/android/mimi/models/c/a/RespEventBlockComment;)V
+.method public onEvent(Lcom/wumii/android/mimi/models/event/response/RespEventBlockComment;)V
     .locals 4
 
     .prologue
     const/4 v0, 0x1
 
     .line 483
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventBlockComment;->c()Z
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventBlockComment;->c()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
     .line 484
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventBlockComment;->d()Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventBlockComment;->d()Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     move-result-object v1
 
@@ -2676,7 +2676,7 @@
 
     .line 491
     :cond_1
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventBlockComment;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventBlockComment;->a()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2687,28 +2687,28 @@
     if-eqz v1, :cond_2
 
     .line 492
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v2, 0x7f06039e
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     goto :goto_1
 
     .line 494
     :cond_2
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventBlockComment;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventBlockComment;->a()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/c/ContextToast;->a(Ljava/lang/String;I)V
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/util/ContextToast;->a(Ljava/lang/String;I)V
 
     goto :goto_1
 .end method
 
-.method public onEvent(Lcom/wumii/android/mimi/models/c/a/RespEventLoadCommentDetail;)V
+.method public onEvent(Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;)V
     .locals 6
 
     .prologue
@@ -2720,7 +2720,7 @@
     invoke-direct {p0, v4}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->c(Z)V
 
     .line 382
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventLoadCommentDetail;->c()Z
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->c()Z
 
     move-result v0
 
@@ -2729,10 +2729,10 @@
     .line 383
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->q:Lcom/wumii/android/mimi/ui/widgets/SecretCommentView;
 
-    invoke-static {v0, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 384
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventLoadCommentDetail;->d()Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->d()Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     move-result-object v0
 
@@ -2767,21 +2767,21 @@
     invoke-direct {p0, v5}, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->b(Z)V
 
     .line 392
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventLoadCommentDetail;->e()Z
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->e()Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->M:Z
 
     .line 393
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventLoadCommentDetail;->f()Lcom/wumii/android/mimi/models/entities/ScopedUser;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->f()Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->N:Lcom/wumii/android/mimi/models/entities/ScopedUser;
 
     .line 394
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventLoadCommentDetail;->g()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->g()Ljava/lang/String;
 
     move-result-object v0
 
@@ -2799,7 +2799,7 @@
 
     .line 402
     :cond_0
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventLoadCommentDetail;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -2812,11 +2812,11 @@
     .line 403
     const v0, 0x7f06039e
 
-    invoke-static {p0, v0, v5}, Lcom/wumii/android/mimi/c/ContextToast;->a(Landroid/content/Context;II)V
+    invoke-static {p0, v0, v5}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;II)V
 
     .line 408
     :goto_1
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventLoadCommentDetail;->b()I
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->b()I
 
     move-result v0
 
@@ -2838,11 +2838,11 @@
 
     .line 405
     :cond_1
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventLoadCommentDetail;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventLoadCommentDetail;->a()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {p0, v0, v5}, Lcom/wumii/android/mimi/c/ContextToast;->a(Landroid/content/Context;Ljava/lang/String;I)V
+    invoke-static {p0, v0, v5}, Lcom/wumii/android/mimi/util/ContextToast;->a(Landroid/content/Context;Ljava/lang/String;I)V
 
     goto :goto_1
 
@@ -2850,7 +2850,7 @@
     :cond_2
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->D()Lcom/wumii/android/mimi/models/h/c/SecretStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->D()Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;
 
     move-result-object v0
 
@@ -2860,7 +2860,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/c/SecretStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/Secret;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/secret/SecretStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/secret/Secret;
 
     move-result-object v0
 
@@ -2869,7 +2869,7 @@
     .line 415
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->s:Landroid/widget/ImageView;
 
-    invoke-static {v0, v4}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v4}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 416
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->s:Landroid/widget/ImageView;
@@ -2891,21 +2891,21 @@
     goto :goto_0
 .end method
 
-.method public onEvent(Lcom/wumii/android/mimi/models/c/a/RespEventRemoveComment;)V
+.method public onEvent(Lcom/wumii/android/mimi/models/event/response/RespEventRemoveComment;)V
     .locals 6
 
     .prologue
     const/4 v2, 0x1
 
     .line 459
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventRemoveComment;->c()Z
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventRemoveComment;->c()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
     .line 460
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventRemoveComment;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventRemoveComment;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -2916,11 +2916,11 @@
     if-eqz v0, :cond_0
 
     .line 461
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06039e
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 479
     :goto_0
@@ -2928,19 +2928,19 @@
 
     .line 463
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventRemoveComment;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventRemoveComment;->a()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(Ljava/lang/String;I)V
 
     goto :goto_0
 
     .line 468
     :cond_1
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventRemoveComment;->d()Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventRemoveComment;->d()Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     move-result-object v1
 
@@ -3021,7 +3021,7 @@
     goto :goto_0
 .end method
 
-.method public onEvent(Lcom/wumii/android/mimi/models/c/a/RespEventReplyComment;)V
+.method public onEvent(Lcom/wumii/android/mimi/models/event/response/RespEventReplyComment;)V
     .locals 6
 
     .prologue
@@ -3030,7 +3030,7 @@
     const/4 v4, -0x1
 
     .line 431
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventReplyComment;->d()Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventReplyComment;->d()Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     move-result-object v0
 
@@ -3046,7 +3046,7 @@
     move-result v1
 
     .line 433
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventReplyComment;->c()Z
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventReplyComment;->c()Z
 
     move-result v2
 
@@ -3067,7 +3067,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventReplyComment;->e()Lcom/wumii/android/mimi/models/entities/secret/Comment;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventReplyComment;->e()Lcom/wumii/android/mimi/models/entities/secret/Comment;
 
     move-result-object v2
 
@@ -3109,7 +3109,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 455
     :cond_1
@@ -3118,7 +3118,7 @@
 
     .line 445
     :cond_2
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventReplyComment;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventReplyComment;->a()Ljava/lang/String;
 
     move-result-object v2
 
@@ -3129,11 +3129,11 @@
     if-eqz v2, :cond_3
 
     .line 446
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v3, 0x7f06039e
 
-    invoke-virtual {v2, v3, v5}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v2, v3, v5}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 451
     :goto_1
@@ -3163,13 +3163,13 @@
 
     .line 448
     :cond_3
-    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/secret/CommentDetailActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
-    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/c/a/RespEventReplyComment;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/wumii/android/mimi/models/event/response/RespEventReplyComment;->a()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3, v5}, Lcom/wumii/android/mimi/c/ContextToast;->a(Ljava/lang/String;I)V
+    invoke-virtual {v2, v3, v5}, Lcom/wumii/android/mimi/util/ContextToast;->a(Ljava/lang/String;I)V
 
     goto :goto_1
 .end method

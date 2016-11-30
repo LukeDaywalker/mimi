@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdh;
-.super Lcom/wumii/android/mimi/models/e/ChatObserver;
+.super Lcom/wumii/android/mimi/models/observer/ChatObserver;
 .source "KnockChatListActivity.java"
 
 
@@ -15,7 +15,7 @@
     .line 213
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity$ICdh;->a:Lcom/wumii/android/mimi/ui/activities/chat/KnockChatListActivity;
 
-    invoke-direct {p0}, Lcom/wumii/android/mimi/models/e/ChatObserver;-><init>()V
+    invoke-direct {p0}, Lcom/wumii/android/mimi/models/observer/ChatObserver;-><init>()V
 
     return-void
 .end method

@@ -16,7 +16,7 @@
 
 .field private H:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICcf;
 
-.field private I:Lcom/wumii/android/mimi/b/BlockTask;
+.field private I:Lcom/wumii/android/mimi/task/BlockTask;
 
 .field private p:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;
 
@@ -119,7 +119,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 155
     :goto_0
@@ -131,7 +131,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 .end method
@@ -195,7 +195,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lorg/a/a/c/BooleanUtils;->a(Ljava/lang/Boolean;)Z
+    invoke-static {v1}, Lorg/apache/commons/long/BooleanUtils;->a(Ljava/lang/Boolean;)Z
 
     move-result v1
 
@@ -231,12 +231,12 @@
     return-void
 .end method
 
-.method static synthetic b(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;)Lcom/wumii/android/mimi/b/BlockTask;
+.method static synthetic b(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;)Lcom/wumii/android/mimi/task/BlockTask;
     .locals 1
 
     .prologue
     .line 48
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->s()Lcom/wumii/android/mimi/b/BlockTask;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->s()Lcom/wumii/android/mimi/task/BlockTask;
 
     move-result-object v0
 
@@ -379,7 +379,7 @@
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->o:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
-    invoke-static {p0, v1}, Lcom/wumii/android/mimi/c/ChatInfoUtils;->a(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/chat/GroupChat;)Ljava/lang/String;
+    invoke-static {p0, v1}, Lcom/wumii/android/mimi/util/ChatInfoUtils;->a(Landroid/content/Context;Lcom/wumii/android/mimi/models/entities/chat/GroupChat;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -488,7 +488,7 @@
 
     const/4 v3, 0x1
 
-    invoke-static {v1, v2, v3}, Lcom/wumii/android/mimi/c/ChatInfoUtils;->a(Landroid/content/res/Resources;Lcom/wumii/android/mimi/models/entities/chat/GroupChat;Z)Ljava/lang/String;
+    invoke-static {v1, v2, v3}, Lcom/wumii/android/mimi/util/ChatInfoUtils;->a(Landroid/content/res/Resources;Lcom/wumii/android/mimi/models/entities/chat/GroupChat;Z)Ljava/lang/String;
 
     move-result-object v1
 
@@ -498,12 +498,12 @@
     return-void
 .end method
 
-.method private s()Lcom/wumii/android/mimi/b/BlockTask;
+.method private s()Lcom/wumii/android/mimi/task/BlockTask;
     .locals 1
 
     .prologue
     .line 303
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->I:Lcom/wumii/android/mimi/b/BlockTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->I:Lcom/wumii/android/mimi/task/BlockTask;
 
     if-nez v0, :cond_0
 
@@ -512,11 +512,11 @@
 
     invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity$ICce;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->I:Lcom/wumii/android/mimi/b/BlockTask;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->I:Lcom/wumii/android/mimi/task/BlockTask;
 
     .line 320
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->I:Lcom/wumii/android/mimi/b/BlockTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->I:Lcom/wumii/android/mimi/task/BlockTask;
 
     return-object v0
 .end method
@@ -537,7 +537,7 @@
     if-nez v0, :cond_0
 
     .line 166
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->s()Lcom/wumii/android/mimi/b/BlockTask;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoMemberActivity;->s()Lcom/wumii/android/mimi/task/BlockTask;
 
     move-result-object v0
 
@@ -555,7 +555,7 @@
 
     move-result v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/b/BlockTask;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/chat/BlockType;Z)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/task/BlockTask;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/chat/BlockType;Z)V
 
     .line 179
     :goto_0

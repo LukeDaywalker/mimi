@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;
-.super Lcom/wumii/android/mimi/b/HttpAsyncTask;
+.super Lcom/wumii/android/mimi/task/HttpAsyncTask;
 .source "InviteActivity.java"
 
 
@@ -22,7 +22,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->a:Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;
 
     .line 201
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/HttpAsyncTask;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/HttpAsyncTask;-><init>(Landroid/content/Context;)V
 
     .line 202
     return-void
@@ -46,13 +46,13 @@
     if-eqz v0, :cond_0
 
     .line 217
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     sget-object v1, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     const-string/jumbo v2, "friendCount"
 
-    invoke-virtual {v0, p1, v1, v2}, Lcom/wumii/android/mimi/models/d/HttpHelper;->a(Lcom/fasterxml/jackson/databind/JsonNode;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v1, v2}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->a(Lcom/fasterxml/jackson/databind/JsonNode;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -65,11 +65,11 @@
     .line 218
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->i:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/h/CommonStorage;
+    invoke-virtual {v1}, Lcom/wumii/android/mimi/models/AppFacade;->H()Lcom/wumii/android/mimi/models/storage/CommonStorage;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/h/CommonStorage;->a(I)V
+    invoke-virtual {v1, v0}, Lcom/wumii/android/mimi/models/storage/CommonStorage;->a(I)V
 
     .line 221
     :cond_0
@@ -78,13 +78,13 @@
     invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;->a(Lcom/wumii/android/mimi/ui/activities/share/InviteActivity;)V
 
     .line 223
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->f:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->f:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f06001e
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 224
     return-void
@@ -115,13 +115,13 @@
 
     .prologue
     .line 228
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->f:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->f:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f060389
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 229
     return-void
@@ -170,11 +170,11 @@
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 211
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->e:Lcom/wumii/android/mimi/models/d/HttpHelper;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/share/InviteActivity$ICg;->e:Lcom/wumii/android/mimi/models/helper/HttpHelper;
 
     const-string/jumbo v2, "friend/add"
 
-    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/d/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
+    invoke-virtual {v1, v2, v0}, Lcom/wumii/android/mimi/models/helper/HttpHelper;->c(Ljava/lang/String;Ljava/util/Map;)Lcom/fasterxml/jackson/databind/JsonNode;
 
     move-result-object v0
 

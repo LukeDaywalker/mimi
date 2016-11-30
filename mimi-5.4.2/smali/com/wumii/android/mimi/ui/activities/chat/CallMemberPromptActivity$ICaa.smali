@@ -80,7 +80,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->e()Lcom/wumii/android/mimi/models/d/NotificationHelper;
+    invoke-virtual {v2}, Lcom/wumii/android/mimi/models/AppFacade;->e()Lcom/wumii/android/mimi/models/helper/NotificationHelper;
 
     move-result-object v2
 
@@ -100,7 +100,7 @@
 
     move-result v4
 
-    invoke-virtual {v2, v3, v0, v1, v4}, Lcom/wumii/android/mimi/models/d/NotificationHelper;->a(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/String;I)V
+    invoke-virtual {v2, v3, v0, v1, v4}, Lcom/wumii/android/mimi/models/helper/NotificationHelper;->a(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/String;I)V
 
     .line 220
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity$ICaa;->a:Lcom/wumii/android/mimi/ui/activities/chat/CallMemberPromptActivity;

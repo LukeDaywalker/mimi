@@ -143,7 +143,7 @@
 
     const-string/jumbo v2, "checkArgs fail, all arguments is null"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
     return v0
@@ -167,7 +167,7 @@
 
     const-string/jumbo v2, "checkArgs fail, extInfo is invalid"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -190,7 +190,7 @@
 
     const-string/jumbo v2, "checkArgs fail, filePath is invalid"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -211,7 +211,7 @@
 
     const-string/jumbo v2, "checkArgs fail, fileSize is too large"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -230,7 +230,7 @@
 
     const-string/jumbo v2, "checkArgs fail, fileData is too large"
 
-    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/a;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lcom/tencent/mm/sdk/b/ICa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 

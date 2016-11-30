@@ -30,13 +30,13 @@
     .end annotation
 .end field
 
-.field private E:Lcom/wumii/android/mimi/ui/widgets/b/TagSection;
+.field private E:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
 
-.field private F:Lcom/wumii/android/mimi/models/h/TagStorage;
+.field private F:Lcom/wumii/android/mimi/models/storage/TagStorage;
 
-.field private G:Lcom/wumii/android/mimi/a/TagManager;
+.field private G:Lcom/wumii/android/mimi/manager/TagManager;
 
-.field private H:Lcom/wumii/android/mimi/models/e/TagObserver;
+.field private H:Lcom/wumii/android/mimi/models/observer/TagObserver;
 
 .field private o:Landroid/widget/LinearLayout;
 
@@ -80,7 +80,7 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICa;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->H:Lcom/wumii/android/mimi/models/e/TagObserver;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->H:Lcom/wumii/android/mimi/models/observer/TagObserver;
 
     return-void
 .end method
@@ -157,7 +157,7 @@
     .line 177
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->C:Ljava/util/List;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -215,17 +215,17 @@
     invoke-interface {v0, v1, p1}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
     .line 188
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->F:Lcom/wumii/android/mimi/models/h/TagStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->F:Lcom/wumii/android/mimi/models/storage/TagStorage;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->C:Ljava/util/List;
 
     const/4 v2, 0x6
 
-    invoke-static {v1, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/List;I)Ljava/util/List;
+    invoke-static {v1, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/List;I)Ljava/util/List;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/TagStorage;->a(Ljava/util/List;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/TagStorage;->a(Ljava/util/List;)V
 
     .line 189
     return-void
@@ -241,22 +241,22 @@
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)Lcom/wumii/android/mimi/models/h/TagStorage;
+.method static synthetic d(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)Lcom/wumii/android/mimi/models/storage/TagStorage;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->F:Lcom/wumii/android/mimi/models/h/TagStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->F:Lcom/wumii/android/mimi/models/storage/TagStorage;
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)Lcom/wumii/android/mimi/ui/widgets/b/TagSection;
+.method static synthetic e(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
     .locals 1
 
     .prologue
     .line 33
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->k()Lcom/wumii/android/mimi/ui/widgets/b/TagSection;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->k()Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
 
     move-result-object v0
 
@@ -324,12 +324,12 @@
     return-void
 .end method
 
-.method static synthetic h(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)Lcom/wumii/android/mimi/c/ContextToast;
+.method static synthetic h(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)Lcom/wumii/android/mimi/util/ContextToast;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     return-object v0
 .end method
@@ -339,9 +339,9 @@
 
     .prologue
     .line 161
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->F:Lcom/wumii/android/mimi/models/h/TagStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->F:Lcom/wumii/android/mimi/models/storage/TagStorage;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/h/TagStorage;->a()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/storage/TagStorage;->a()Ljava/util/List;
 
     move-result-object v0
 
@@ -350,14 +350,14 @@
     .line 162
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->C:Ljava/util/List;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 163
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->k()Lcom/wumii/android/mimi/ui/widgets/b/TagSection;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->k()Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
 
     move-result-object v0
 
@@ -371,7 +371,7 @@
 
     const/4 v3, 0x1
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/b/TagSection;->a(Ljava/lang/String;Ljava/util/List;Z)Landroid/view/View;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->a(Ljava/lang/String;Ljava/util/List;Z)Landroid/view/View;
 
     move-result-object v0
 
@@ -389,12 +389,12 @@
     return-void
 .end method
 
-.method static synthetic i(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)Lcom/wumii/android/mimi/c/ContextToast;
+.method static synthetic i(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)Lcom/wumii/android/mimi/util/ContextToast;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     return-object v0
 .end method
@@ -404,11 +404,11 @@
 
     .prologue
     .line 169
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->F:Lcom/wumii/android/mimi/models/h/TagStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->F:Lcom/wumii/android/mimi/models/storage/TagStorage;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->t:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/TagStorage;->a(Ljava/lang/String;)Ljava/util/List;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/TagStorage;->a(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v0
 
@@ -417,14 +417,14 @@
     .line 170
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->D:Ljava/util/List;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 171
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->k()Lcom/wumii/android/mimi/ui/widgets/b/TagSection;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->k()Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
 
     move-result-object v0
 
@@ -438,7 +438,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/b/TagSection;->a(Ljava/lang/String;Ljava/util/List;Z)Landroid/view/View;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;->a(Ljava/lang/String;Ljava/util/List;Z)Landroid/view/View;
 
     move-result-object v0
 
@@ -467,7 +467,7 @@
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->C:Ljava/util/List;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -492,11 +492,11 @@
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 198
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->F:Lcom/wumii/android/mimi/models/h/TagStorage;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->F:Lcom/wumii/android/mimi/models/storage/TagStorage;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/TagStorage;->a(Ljava/util/List;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/TagStorage;->a(Ljava/util/List;)V
 
     .line 199
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->o:Landroid/widget/LinearLayout;
@@ -518,17 +518,17 @@
     return-void
 .end method
 
-.method private k()Lcom/wumii/android/mimi/ui/widgets/b/TagSection;
+.method private k()Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
     .locals 3
 
     .prologue
     .line 203
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->E:Lcom/wumii/android/mimi/ui/widgets/b/TagSection;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->E:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
 
     if-nez v0, :cond_0
 
     .line 204
-    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/b/TagSection;
+    new-instance v0, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->o:Landroid/widget/LinearLayout;
 
@@ -536,13 +536,13 @@
 
     invoke-direct {v2, p0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity$ICd;-><init>(Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;)V
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/b/TagSection;-><init>(Landroid/content/Context;Landroid/view/ViewGroup;Lcom/wumii/android/mimi/ui/widgets/b/TagSection$ICk;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;-><init>(Landroid/content/Context;Landroid/view/ViewGroup;Lcom/wumii/android/mimi/ui/widgets/publish/TagSection$ICk;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->E:Lcom/wumii/android/mimi/ui/widgets/b/TagSection;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->E:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
 
     .line 220
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->E:Lcom/wumii/android/mimi/ui/widgets/b/TagSection;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->E:Lcom/wumii/android/mimi/ui/widgets/publish/TagSection;
 
     return-object v0
 .end method
@@ -602,11 +602,11 @@
     .line 134
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->u:Lcom/wumii/android/mimi/models/AppFacade;
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->J()Lcom/wumii/android/mimi/models/h/TagStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->J()Lcom/wumii/android/mimi/models/storage/TagStorage;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->F:Lcom/wumii/android/mimi/models/h/TagStorage;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->F:Lcom/wumii/android/mimi/models/storage/TagStorage;
 
     .line 136
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->h()V
@@ -615,29 +615,29 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->i()V
 
     .line 139
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->m()Lcom/wumii/android/mimi/a/TagManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->m()Lcom/wumii/android/mimi/manager/TagManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->G:Lcom/wumii/android/mimi/a/TagManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->G:Lcom/wumii/android/mimi/manager/TagManager;
 
     .line 140
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->G:Lcom/wumii/android/mimi/a/TagManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->G:Lcom/wumii/android/mimi/manager/TagManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->H:Lcom/wumii/android/mimi/models/e/TagObserver;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->H:Lcom/wumii/android/mimi/models/observer/TagObserver;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/TagManager;->addObserver(Ljava/util/Observer;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/TagManager;->addObserver(Ljava/util/Observer;)V
 
     .line 142
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->G:Lcom/wumii/android/mimi/a/TagManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->G:Lcom/wumii/android/mimi/manager/TagManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->t:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/TagManager;->b(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/TagManager;->b(Ljava/lang/String;)V
 
     .line 143
     return-void
@@ -648,16 +648,16 @@
 
     .prologue
     .line 147
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->G:Lcom/wumii/android/mimi/a/TagManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->G:Lcom/wumii/android/mimi/manager/TagManager;
 
     if-eqz v0, :cond_0
 
     .line 148
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->G:Lcom/wumii/android/mimi/a/TagManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->G:Lcom/wumii/android/mimi/manager/TagManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->H:Lcom/wumii/android/mimi/models/e/TagObserver;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/publish/GenerateTagActivity;->H:Lcom/wumii/android/mimi/models/observer/TagObserver;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/TagManager;->deleteObserver(Ljava/util/Observer;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/TagManager;->deleteObserver(Ljava/util/Observer;)V
 
     .line 151
     :cond_0

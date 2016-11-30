@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final a:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.field private static final a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
 
 # direct methods
@@ -17,16 +17,41 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->p()Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     move-result-object v0
 
-    sput-object v0, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    sput-object v0, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
+.method public static a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
+    .locals 7
+
+    .prologue
+    .line 24
+    sget-object v3, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aJ:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+    sget-object v4, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aL:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+    sget-object v5, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aK:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v6, p3
+
+    invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
+
+    .line 25
+    return-void
+.end method
+
+.method public static a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
     .locals 2
 
     .prologue
@@ -78,7 +103,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p3, p4, p5}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->a(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/c/EventUtils$ICaf;)Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;
+    invoke-virtual {v0, p3, p4, p5}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/util/EventUtils$ICaf;)Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;
 
     move-result-object v0
 
@@ -91,7 +116,7 @@
     goto :goto_0
 .end method
 
-.method private static a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
+.method private static a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
     .locals 2
 
     .prologue
@@ -141,7 +166,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p3, p4, p5}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->a(Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/c/EventUtils$ICaf;)Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;
+    invoke-virtual {v0, p3, p4, p5}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/util/EventUtils$ICaf;)Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;
 
     move-result-object v0
 
@@ -152,31 +177,6 @@
     invoke-virtual {v0}, Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICar;->a()Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder;
 
     goto :goto_0
-.end method
-
-.method public static a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
-    .locals 7
-
-    .prologue
-    .line 24
-    sget-object v3, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->aJ:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
-
-    sget-object v4, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->aL:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
-
-    sget-object v5, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->aK:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move-object v6, p3
-
-    invoke-static/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
-
-    .line 25
-    return-void
 .end method
 
 .method private static a(ZLcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
@@ -215,7 +215,7 @@
 
     .prologue
     .line 88
-    sget-object v0, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    sget-object v0, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -225,7 +225,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, p0, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p0, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -238,7 +238,34 @@
     return v0
 .end method
 
-.method public static b(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
+.method public static b(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
+    .locals 8
+
+    .prologue
+    .line 82
+    sget-object v3, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aA:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+    sget-object v4, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aC:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+    sget-object v5, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->aB:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
+
+    const-string/jumbo v6, "pre_permission_contact"
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v7, p3
+
+    invoke-static/range {v0 .. v7}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
+
+    .line 85
+    return-void
+.end method
+
+.method public static b(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
     .locals 8
 
     .prologue
@@ -259,36 +286,9 @@
 
     move-object v7, p6
 
-    invoke-static/range {v0 .. v7}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
+    invoke-static/range {v0 .. v7}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Lcom/wumii/android/mimi/util/EventUtils$ICaf;Ljava/lang/String;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
 
     .line 78
-    return-void
-.end method
-
-.method public static b(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
-    .locals 8
-
-    .prologue
-    .line 82
-    sget-object v3, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->aA:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
-
-    sget-object v4, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->aC:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
-
-    sget-object v5, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->aB:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
-
-    const-string/jumbo v6, "pre_permission_contact"
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move-object v7, p3
-
-    invoke-static/range {v0 .. v7}, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Lcom/wumii/android/mimi/c/EventUtils$ICaf;Ljava/lang/String;Lcom/wumii/android/mimi/ui/PrePermissionDialogBuilder$ICaq;)V
-
-    .line 85
     return-void
 .end method
 
@@ -311,7 +311,7 @@
 
     .prologue
     .line 51
-    sget-object v0, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    sget-object v0, Lcom/wumii/android/mimi/ui/PrePermissionHelper;->a:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const/4 v1, 0x1
 
@@ -321,7 +321,7 @@
 
     const-string/jumbo v2, "pre_permission_contact"
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 52
     return-void

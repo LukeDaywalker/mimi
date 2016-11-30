@@ -1,5 +1,5 @@
 .class Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;
-.super Lcom/wumii/android/mimi/b/BaseAsyncTask;
+.super Lcom/wumii/android/mimi/task/BaseAsyncTask;
 .source "CropImageActivity.java"
 
 
@@ -27,7 +27,7 @@
     iput-object p1, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
     .line 143
-    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/b/BaseAsyncTask;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p2}, Lcom/wumii/android/mimi/task/BaseAsyncTask;-><init>(Landroid/content/Context;)V
 
     .line 144
     return-void
@@ -84,13 +84,13 @@
     .line 179
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603a1
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 180
     return-void
@@ -103,13 +103,13 @@
     .line 174
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity$ICo;->a:Lcom/wumii/android/mimi/ui/activities/CropImageActivity;
 
-    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, v0, Lcom/wumii/android/mimi/ui/activities/CropImageActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     const v1, 0x7f0603a1
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v1, v2}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     .line 175
     return-void
@@ -145,7 +145,7 @@
     .line 149
     new-instance v0, Ljava/io/File;
 
-    invoke-static {}, Lcom/wumii/android/mimi/models/d/FileHelper;->c()Ljava/io/File;
+    invoke-static {}, Lcom/wumii/android/mimi/models/helper/FileHelper;->c()Ljava/io/File;
 
     move-result-object v1
 
@@ -178,7 +178,7 @@
 
     .line 152
     :try_start_0
-    invoke-static {v0}, Lorg/a/a/b/FileUtils;->b(Ljava/io/File;)Ljava/io/FileOutputStream;
+    invoke-static {v0}, Lorg/apache/commons/io/FileUtils;->b(Ljava/io/File;)Ljava/io/FileOutputStream;
 
     move-result-object v1
 
@@ -208,7 +208,7 @@
     :catchall_0
     move-exception v0
 
-    invoke-static {v1}, Lorg/a/a/b/IOUtils;->a(Ljava/io/OutputStream;)V
+    invoke-static {v1}, Lorg/apache/commons/io/IOUtils;->a(Ljava/io/OutputStream;)V
 
     .line 158
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->recycle()V
@@ -217,7 +217,7 @@
 
     .line 157
     :cond_0
-    invoke-static {v1}, Lorg/a/a/b/IOUtils;->a(Ljava/io/OutputStream;)V
+    invoke-static {v1}, Lorg/apache/commons/io/IOUtils;->a(Ljava/io/OutputStream;)V
 
     .line 158
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->recycle()V

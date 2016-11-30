@@ -54,12 +54,12 @@
     .line 59
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->c:Landroid/widget/TextView;
 
-    invoke-static {v2, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 60
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b:Landroid/widget/ImageView;
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 61
     const/16 v0, 0x63
@@ -95,7 +95,7 @@
     :cond_1
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->c:Landroid/widget/TextView;
 
-    invoke-static {v2, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 68
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/widgets/NavigationTab;->b:Landroid/widget/ImageView;
@@ -103,7 +103,7 @@
     if-eqz p2, :cond_2
 
     :goto_1
-    invoke-static {v2, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 

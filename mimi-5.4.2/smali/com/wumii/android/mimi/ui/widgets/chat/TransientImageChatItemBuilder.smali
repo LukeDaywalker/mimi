@@ -56,7 +56,7 @@
     move v2, v3
 
     :goto_0
-    invoke-static {v5, v2}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v5, v2}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 25
     iget-object v0, v0, Lcom/wumii/android/mimi/ui/widgets/chat/BaseImageChatItemBuilder$ICi;->a:Landroid/widget/ImageView;
@@ -70,7 +70,7 @@
     const/4 v3, 0x4
 
     :cond_0
-    invoke-static {v0, v3}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v3}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 27
     invoke-virtual {v4, p1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V

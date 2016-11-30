@@ -70,11 +70,11 @@
 
     move-result-object v3
 
-    invoke-static {}, Lcom/wumii/android/mimi/c/UserProfileManager;->a()Lcom/wumii/android/mimi/c/UserProfileManager;
+    invoke-static {}, Lcom/wumii/android/mimi/util/UserProfileManager;->a()Lcom/wumii/android/mimi/util/UserProfileManager;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lcom/wumii/android/mimi/c/UserProfileManager;->b()Lcom/wumii/android/mimi/models/entities/profile/UserProfile;
+    invoke-virtual {v4}, Lcom/wumii/android/mimi/util/UserProfileManager;->b()Lcom/wumii/android/mimi/models/entities/profile/UserProfile;
 
     move-result-object v4
 
@@ -84,13 +84,13 @@
 
     iget-object v4, p0, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan$ICaw;->a:Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;
 
-    invoke-static {v4}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->d(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;)Lcom/wumii/android/mimi/models/b/SenderRole;
+    invoke-static {v4}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->d(Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;)Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     move-result-object v6
 
     move v4, v2
 
-    invoke-virtual/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->a(Ljava/lang/String;ILjava/lang/String;ILcom/wumii/android/mimi/models/entities/profile/NamedUser;Lcom/wumii/android/mimi/models/b/SenderRole;)V
+    invoke-virtual/range {v0 .. v6}, Lcom/wumii/android/mimi/ui/widgets/chat/MorphBottomPan;->a(Ljava/lang/String;ILjava/lang/String;ILcom/wumii/android/mimi/models/entities/profile/NamedUser;Lcom/wumii/android/mimi/models/enum/SenderRole;)V
 
     goto :goto_0
 .end method

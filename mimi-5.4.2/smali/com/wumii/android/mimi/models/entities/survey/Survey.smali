@@ -70,7 +70,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->E()Lcom/wumii/android/mimi/models/h/SurveyStorage;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->E()Lcom/wumii/android/mimi/models/storage/SurveyStorage;
 
     move-result-object v0
 
@@ -78,7 +78,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/h/SurveyStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/survey/Survey;
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/storage/SurveyStorage;->a(Ljava/lang/String;)Lcom/wumii/android/mimi/models/entities/survey/Survey;
 
     move-result-object v0
 

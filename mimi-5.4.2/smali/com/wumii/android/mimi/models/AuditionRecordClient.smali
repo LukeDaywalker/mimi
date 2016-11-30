@@ -131,12 +131,12 @@
 
     .line 52
     :try_start_0
-    invoke-static {v0}, Lorg/a/a/b/FileUtils;->f(Ljava/io/File;)[B
+    invoke-static {v0}, Lorg/apache/commons/io/FileUtils;->f(Ljava/io/File;)[B
 
     move-result-object v0
 
     .line 53
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/Utils;->a([B)[S
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/Utils;->a([B)[S
 
     move-result-object v0
 

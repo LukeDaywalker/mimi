@@ -32,7 +32,7 @@
     .line 89
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity$ICj;->a:Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->c(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;)Lcom/wumii/android/mimi/models/d/LocationHelper;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;->c(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity;)Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
     move-result-object v0
 
@@ -40,7 +40,7 @@
 
     invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity$ICk;-><init>(Lcom/wumii/android/mimi/ui/apdaters/circle/GuessOrgInfoActivity$ICj;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/LocationHelper;->b(Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/LocationHelper;->b(Lcom/wumii/android/mimi/models/helper/LocationHelper$ICu;)V
 
     .line 101
     return-void

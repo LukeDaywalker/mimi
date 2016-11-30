@@ -10,15 +10,15 @@
 
 .field private E:Landroid/app/AlertDialog;
 
-.field private F:Lcom/wumii/android/mimi/b/GroupChatInfoImageUploadTask;
+.field private F:Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask;
 
 .field private G:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcx;
 
 .field private H:Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcu;
 
-.field private I:Lcom/wumii/android/mimi/a/GroupChatManager;
+.field private I:Lcom/wumii/android/mimi/manager/GroupChatManager;
 
-.field private J:Lcom/wumii/android/mimi/b/BlockTask;
+.field private J:Lcom/wumii/android/mimi/task/BlockTask;
 
 .field private p:Lcom/wumii/android/mimi/ui/widgets/chat/GroupChatInfoHeader;
 
@@ -121,7 +121,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     .line 216
     :goto_0
@@ -133,7 +133,7 @@
 
     const/16 v1, 0x8
 
-    invoke-static {v0, v1}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 .end method
@@ -143,7 +143,7 @@
 
     .prologue
     .line 123
-    invoke-static {}, Lcom/wumii/android/mimi/c/UserProfileManager;->a()Lcom/wumii/android/mimi/c/UserProfileManager;
+    invoke-static {}, Lcom/wumii/android/mimi/util/UserProfileManager;->a()Lcom/wumii/android/mimi/util/UserProfileManager;
 
     move-result-object v0
 
@@ -153,7 +153,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/c/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/c/UserProfileManager$ICau;Z)V
+    invoke-virtual {v0, p0, v1, v2}, Lcom/wumii/android/mimi/util/UserProfileManager;->a(Landroid/app/Activity;Lcom/wumii/android/mimi/util/UserProfileManager$ICau;Z)V
 
     .line 192
     return-void
@@ -346,12 +346,12 @@
     return-void
 .end method
 
-.method static synthetic k(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;)Lcom/wumii/android/mimi/b/BlockTask;
+.method static synthetic k(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;)Lcom/wumii/android/mimi/task/BlockTask;
     .locals 1
 
     .prologue
     .line 66
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->s()Lcom/wumii/android/mimi/b/BlockTask;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->s()Lcom/wumii/android/mimi/task/BlockTask;
 
     move-result-object v0
 
@@ -373,7 +373,7 @@
 
     const/4 v3, 0x1
 
-    invoke-static {v1, v2, v3}, Lcom/wumii/android/mimi/c/ChatInfoUtils;->a(Landroid/content/res/Resources;Lcom/wumii/android/mimi/models/entities/chat/GroupChat;Z)Ljava/lang/String;
+    invoke-static {v1, v2, v3}, Lcom/wumii/android/mimi/util/ChatInfoUtils;->a(Landroid/content/res/Resources;Lcom/wumii/android/mimi/models/entities/chat/GroupChat;Z)Ljava/lang/String;
 
     move-result-object v1
 
@@ -547,22 +547,22 @@
     return-object v0
 .end method
 
-.method static synthetic m(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;)Lcom/wumii/android/mimi/a/GroupChatManager;
+.method static synthetic m(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;)Lcom/wumii/android/mimi/manager/GroupChatManager;
     .locals 1
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->I:Lcom/wumii/android/mimi/a/GroupChatManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->I:Lcom/wumii/android/mimi/manager/GroupChatManager;
 
     return-object v0
 .end method
 
-.method private s()Lcom/wumii/android/mimi/b/BlockTask;
+.method private s()Lcom/wumii/android/mimi/task/BlockTask;
     .locals 1
 
     .prologue
     .line 443
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->J:Lcom/wumii/android/mimi/b/BlockTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->J:Lcom/wumii/android/mimi/task/BlockTask;
 
     if-nez v0, :cond_0
 
@@ -571,11 +571,11 @@
 
     invoke-direct {v0, p0, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcs;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->J:Lcom/wumii/android/mimi/b/BlockTask;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->J:Lcom/wumii/android/mimi/task/BlockTask;
 
     .line 460
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->J:Lcom/wumii/android/mimi/b/BlockTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->J:Lcom/wumii/android/mimi/task/BlockTask;
 
     return-object v0
 .end method
@@ -600,16 +600,16 @@
 
     .line 311
     :cond_0
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->F:Lcom/wumii/android/mimi/b/GroupChatInfoImageUploadTask;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->F:Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask;
 
     if-nez v0, :cond_1
 
     .line 312
-    new-instance v0, Lcom/wumii/android/mimi/b/GroupChatInfoImageUploadTask;
+    new-instance v0, Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask;
 
-    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/b/GroupChatInfoImageUploadTask;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v0, p0}, Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask;-><init>(Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->F:Lcom/wumii/android/mimi/b/GroupChatInfoImageUploadTask;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->F:Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask;
 
     .line 314
     :cond_1
@@ -620,7 +620,7 @@
     move-result-object v0
 
     .line 315
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->F:Lcom/wumii/android/mimi/b/GroupChatInfoImageUploadTask;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->F:Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask;
 
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->o:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
@@ -632,7 +632,7 @@
 
     invoke-direct {v3, p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity$ICcr;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;)V
 
-    invoke-virtual {v1, v2, v0, v3}, Lcom/wumii/android/mimi/b/GroupChatInfoImageUploadTask;->a(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/b/GroupChatInfoImageUploadTask$ICaj;)V
+    invoke-virtual {v1, v2, v0, v3}, Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask;->a(Ljava/lang/String;Ljava/lang/String;Lcom/wumii/android/mimi/task/GroupChatInfoImageUploadTask$ICaj;)V
 
     .line 327
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->o:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
@@ -657,7 +657,7 @@
     if-ne p1, v0, :cond_2
 
     .line 329
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->I:Lcom/wumii/android/mimi/a/GroupChatManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->I:Lcom/wumii/android/mimi/manager/GroupChatManager;
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->o:Lcom/wumii/android/mimi/models/entities/chat/GroupChat;
 
@@ -665,7 +665,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/GroupChatManager;->b(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/GroupChatManager;->b(Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -695,7 +695,7 @@
     if-nez v0, :cond_0
 
     .line 227
-    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->s()Lcom/wumii/android/mimi/b/BlockTask;
+    invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->s()Lcom/wumii/android/mimi/task/BlockTask;
 
     move-result-object v0
 
@@ -713,7 +713,7 @@
 
     move-result v3
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/b/BlockTask;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/chat/BlockType;Z)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/task/BlockTask;->a(Ljava/lang/String;Lcom/wumii/android/mimi/models/entities/chat/BlockType;Z)V
 
     .line 240
     :goto_0
@@ -931,15 +931,15 @@
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->j()V
 
     .line 101
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->g()Lcom/wumii/android/mimi/a/GroupChatManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->g()Lcom/wumii/android/mimi/manager/GroupChatManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->I:Lcom/wumii/android/mimi/a/GroupChatManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/GroupChatInfoOwnerActivity;->I:Lcom/wumii/android/mimi/manager/GroupChatManager;
 
     .line 103
     const v0, 0x7f0b00ca

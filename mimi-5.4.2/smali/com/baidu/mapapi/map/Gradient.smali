@@ -273,7 +273,7 @@
             "Ljava/util/HashMap",
             "<",
             "Ljava/lang/Integer;",
-            "Lcom/baidu/mapapi/map/Gradient$a;",
+            "Lcom/baidu/mapapi/map/Gradient$ICa;",
             ">;"
         }
     .end annotation
@@ -330,7 +330,7 @@
 
     move-result-object v6
 
-    new-instance v0, Lcom/baidu/mapapi/map/Gradient$a;
+    new-instance v0, Lcom/baidu/mapapi/map/Gradient$ICa;
 
     iget-object v1, p0, Lcom/baidu/mapapi/map/Gradient;->b:[I
 
@@ -348,7 +348,7 @@
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/baidu/mapapi/map/Gradient$a;-><init>(Lcom/baidu/mapapi/map/Gradient;IIFLcom/baidu/mapapi/map/Gradient$1;)V
+    invoke-direct/range {v0 .. v5}, Lcom/baidu/mapapi/map/Gradient$ICa;-><init>(Lcom/baidu/mapapi/map/Gradient;IIFLcom/baidu/mapapi/map/Gradient$1;)V
 
     invoke-virtual {v7, v6, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -382,7 +382,7 @@
 
     move-result-object v8
 
-    new-instance v0, Lcom/baidu/mapapi/map/Gradient$a;
+    new-instance v0, Lcom/baidu/mapapi/map/Gradient$ICa;
 
     iget-object v1, p0, Lcom/baidu/mapapi/map/Gradient;->b:[I
 
@@ -414,7 +414,7 @@
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/baidu/mapapi/map/Gradient$a;-><init>(Lcom/baidu/mapapi/map/Gradient;IIFLcom/baidu/mapapi/map/Gradient$1;)V
+    invoke-direct/range {v0 .. v5}, Lcom/baidu/mapapi/map/Gradient$ICa;-><init>(Lcom/baidu/mapapi/map/Gradient;IIFLcom/baidu/mapapi/map/Gradient$1;)V
 
     invoke-virtual {v7, v8, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -461,7 +461,7 @@
 
     move-result-object v6
 
-    new-instance v0, Lcom/baidu/mapapi/map/Gradient$a;
+    new-instance v0, Lcom/baidu/mapapi/map/Gradient$ICa;
 
     iget-object v2, p0, Lcom/baidu/mapapi/map/Gradient;->b:[I
 
@@ -485,7 +485,7 @@
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/baidu/mapapi/map/Gradient$a;-><init>(Lcom/baidu/mapapi/map/Gradient;IIFLcom/baidu/mapapi/map/Gradient$1;)V
+    invoke-direct/range {v0 .. v5}, Lcom/baidu/mapapi/map/Gradient$ICa;-><init>(Lcom/baidu/mapapi/map/Gradient;IIFLcom/baidu/mapapi/map/Gradient$1;)V
 
     invoke-virtual {v7, v6, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -516,7 +516,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/mapapi/map/Gradient$a;
+    check-cast v0, Lcom/baidu/mapapi/map/Gradient$ICa;
 
     move v1, v2
 
@@ -547,7 +547,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/baidu/mapapi/map/Gradient$a;
+    check-cast v0, Lcom/baidu/mapapi/map/Gradient$ICa;
 
     move v3, v1
 
@@ -558,17 +558,17 @@
 
     int-to-float v0, v0
 
-    invoke-static {v4}, Lcom/baidu/mapapi/map/Gradient$a;->a(Lcom/baidu/mapapi/map/Gradient$a;)F
+    invoke-static {v4}, Lcom/baidu/mapapi/map/Gradient$ICa;->a(Lcom/baidu/mapapi/map/Gradient$ICa;)F
 
     move-result v7
 
     div-float/2addr v0, v7
 
-    invoke-static {v4}, Lcom/baidu/mapapi/map/Gradient$a;->b(Lcom/baidu/mapapi/map/Gradient$a;)I
+    invoke-static {v4}, Lcom/baidu/mapapi/map/Gradient$ICa;->b(Lcom/baidu/mapapi/map/Gradient$ICa;)I
 
     move-result v7
 
-    invoke-static {v4}, Lcom/baidu/mapapi/map/Gradient$a;->c(Lcom/baidu/mapapi/map/Gradient$a;)I
+    invoke-static {v4}, Lcom/baidu/mapapi/map/Gradient$ICa;->c(Lcom/baidu/mapapi/map/Gradient$ICa;)I
 
     move-result v8
 

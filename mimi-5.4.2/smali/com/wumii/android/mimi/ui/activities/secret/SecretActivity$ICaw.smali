@@ -3,7 +3,7 @@
 .source "SecretActivity.java"
 
 # interfaces
-.implements Lcom/wumii/android/mimi/c/UserProfileManager$ICau;
+.implements Lcom/wumii/android/mimi/util/UserProfileManager$ICau;
 
 
 # instance fields
@@ -62,7 +62,7 @@
     .line 1161
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaw;->b:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->af(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/a/SecretManager;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->af(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/manager/SecretManager;
 
     move-result-object v1
 
@@ -76,18 +76,18 @@
 
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity$ICaw;->b:Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->ae(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/models/b/SenderRole;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;->ae(Lcom/wumii/android/mimi/ui/activities/secret/SecretActivity;)Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     move-result-object v0
 
-    sget-object v4, Lcom/wumii/android/mimi/models/b/SenderRole;->c:Lcom/wumii/android/mimi/models/b/SenderRole;
+    sget-object v4, Lcom/wumii/android/mimi/models/enum/SenderRole;->c:Lcom/wumii/android/mimi/models/enum/SenderRole;
 
     if-eq v0, v4, :cond_0
 
     const/4 v0, 0x1
 
     :goto_0
-    invoke-virtual {v1, v2, v3, v0}, Lcom/wumii/android/mimi/a/SecretManager;->a(Lcom/wumii/android/mimi/models/entities/secret/Comment;Ljava/lang/String;Z)V
+    invoke-virtual {v1, v2, v3, v0}, Lcom/wumii/android/mimi/manager/SecretManager;->a(Lcom/wumii/android/mimi/models/entities/secret/Comment;Ljava/lang/String;Z)V
 
     .line 1165
     :goto_1

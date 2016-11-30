@@ -55,7 +55,7 @@
     .line 101
     const-string/jumbo v2, "loadOwnerGroupChat"
 
-    invoke-static {v2, v0}, Lorg/a/a/c/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v2, v0}, Lorg/apache/commons/long/StringUtils;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -107,11 +107,11 @@
     .line 111
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;->a:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
-    invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;)Lcom/wumii/android/mimi/ui/apdaters/b/OwnerGroupChatListAdapter;
+    invoke-static {v2}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->a(Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;)Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;
 
     move-result-object v2
 
-    invoke-virtual {v2, v0}, Lcom/wumii/android/mimi/ui/apdaters/b/OwnerGroupChatListAdapter;->a(Lcom/wumii/android/mimi/models/entities/SectionMap;)V
+    invoke-virtual {v2, v0}, Lcom/wumii/android/mimi/ui/apdaters/chat/OwnerGroupChatListAdapter;->a(Lcom/wumii/android/mimi/models/entities/SectionMap;)V
 
     .line 112
     iget-object v2, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;->a:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
@@ -129,7 +129,7 @@
     move v0, v1
 
     :goto_1
-    invoke-static {v2, v0}, Lcom/wumii/android/mimi/c/Utils;->a(Landroid/view/View;I)V
+    invoke-static {v2, v0}, Lcom/wumii/android/mimi/util/Utils;->a(Landroid/view/View;I)V
 
     goto :goto_0
 
@@ -147,13 +147,13 @@
     .line 115
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity$ICdk;->a:Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->c(Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;)Lcom/wumii/android/mimi/c/ContextToast;
+    invoke-static {v0}, Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;->c(Lcom/wumii/android/mimi/ui/activities/chat/OwnerGroupChatListActivity;)Lcom/wumii/android/mimi/util/ContextToast;
 
     move-result-object v0
 
     const v2, 0x7f06038e
 
-    invoke-virtual {v0, v2, v1}, Lcom/wumii/android/mimi/c/ContextToast;->a(II)V
+    invoke-virtual {v0, v2, v1}, Lcom/wumii/android/mimi/util/ContextToast;->a(II)V
 
     goto :goto_0
 .end method

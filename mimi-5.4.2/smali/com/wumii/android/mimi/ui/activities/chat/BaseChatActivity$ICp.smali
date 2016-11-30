@@ -34,7 +34,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -53,7 +53,7 @@
     .line 496
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;->a:Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity;
 
-    invoke-static {v1}, Lcom/wumii/android/mimi/c/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/c/AppConfigManager;
+    invoke-static {v1}, Lcom/wumii/android/mimi/util/AppConfigManager;->a(Landroid/content/Context;)Lcom/wumii/android/mimi/util/AppConfigManager;
 
     move-result-object v1
 
@@ -61,7 +61,7 @@
 
     invoke-direct {v2, p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICq;-><init>(Lcom/wumii/android/mimi/ui/activities/chat/BaseChatActivity$ICp;Z)V
 
-    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/c/AppConfigManager;->a(Lcom/wumii/android/mimi/c/AppConfigManager$ICb;)V
+    invoke-virtual {v1, v2}, Lcom/wumii/android/mimi/util/AppConfigManager;->a(Lcom/wumii/android/mimi/util/AppConfigManager$ICb;)V
 
     .line 513
     return-void

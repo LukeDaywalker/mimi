@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private C:Lcom/wumii/android/mimi/models/e/OrgValidationObserver;
+.field private C:Lcom/wumii/android/mimi/models/observer/OrgValidationObserver;
 
 .field private D:Lcom/baidu/mapapi/utils/CoordinateConverter;
 
@@ -20,7 +20,7 @@
 
 .field private s:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
-.field private t:Lcom/wumii/android/mimi/a/OrgValidationManager;
+.field private t:Lcom/wumii/android/mimi/manager/OrgValidationManager;
 
 
 # direct methods
@@ -130,7 +130,7 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 239
-    invoke-static {p1}, Lcom/wumii/android/mimi/c/Utils;->a(Ljava/util/Collection;)Z
+    invoke-static {p1}, Lcom/wumii/android/mimi/util/Utils;->a(Ljava/util/Collection;)Z
 
     move-result v0
 
@@ -199,32 +199,32 @@
     return-void
 .end method
 
-.method static synthetic b(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/c/ContextToast;
+.method static synthetic b(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/util/ContextToast;
     .locals 1
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->B:Lcom/wumii/android/mimi/c/ContextToast;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->B:Lcom/wumii/android/mimi/util/ContextToast;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.method static synthetic c(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
     .locals 1
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+.method static synthetic d(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
     .locals 1
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     return-object v0
 .end method
@@ -268,7 +268,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->m()Lcom/wumii/android/mimi/models/d/LocationHelper;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/models/AppFacade;->m()Lcom/wumii/android/mimi/models/helper/LocationHelper;
 
     move-result-object v0
 
@@ -276,7 +276,7 @@
 
     invoke-direct {v1, p0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICv;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)V
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/d/LocationHelper;->a(Lcom/wumii/android/mimi/models/d/LocationHelper$ICu;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/models/helper/LocationHelper;->a(Lcom/wumii/android/mimi/models/helper/LocationHelper$ICu;)V
 
     .line 198
     return-void
@@ -292,12 +292,12 @@
     return-object v0
 .end method
 
-.method static synthetic i(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/a/OrgValidationManager;
+.method static synthetic i(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)Lcom/wumii/android/mimi/manager/OrgValidationManager;
     .locals 1
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->t:Lcom/wumii/android/mimi/a/OrgValidationManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->t:Lcom/wumii/android/mimi/manager/OrgValidationManager;
 
     return-object v0
 .end method
@@ -377,15 +377,15 @@
     iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->s:Lcom/wumii/android/mimi/models/entities/circle/OrganizationV2;
 
     .line 79
-    invoke-static {}, Lcom/wumii/android/mimi/a/ManagerCenter;->a()Lcom/wumii/android/mimi/a/ManagerCenter;
+    invoke-static {}, Lcom/wumii/android/mimi/manager/ManagerCenter;->a()Lcom/wumii/android/mimi/manager/ManagerCenter;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/wumii/android/mimi/a/ManagerCenter;->l()Lcom/wumii/android/mimi/a/OrgValidationManager;
+    invoke-virtual {v0}, Lcom/wumii/android/mimi/manager/ManagerCenter;->l()Lcom/wumii/android/mimi/manager/OrgValidationManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->t:Lcom/wumii/android/mimi/a/OrgValidationManager;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->t:Lcom/wumii/android/mimi/manager/OrgValidationManager;
 
     .line 82
     invoke-virtual {p0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->getApplicationContext()Landroid/content/Context;
@@ -505,14 +505,14 @@
 
     invoke-direct {v0, p0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity$ICu;-><init>(Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;)V
 
-    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->C:Lcom/wumii/android/mimi/models/e/OrgValidationObserver;
+    iput-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->C:Lcom/wumii/android/mimi/models/observer/OrgValidationObserver;
 
     .line 143
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->t:Lcom/wumii/android/mimi/a/OrgValidationManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->t:Lcom/wumii/android/mimi/manager/OrgValidationManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->C:Lcom/wumii/android/mimi/models/e/OrgValidationObserver;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->C:Lcom/wumii/android/mimi/models/observer/OrgValidationObserver;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/OrgValidationManager;->addObserver(Ljava/util/Observer;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/OrgValidationManager;->addObserver(Ljava/util/Observer;)V
 
     .line 145
     invoke-direct {p0}, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->g()V
@@ -534,11 +534,11 @@
     invoke-virtual {v0}, Lcom/baidu/mapapi/map/MapView;->onDestroy()V
 
     .line 213
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->t:Lcom/wumii/android/mimi/a/OrgValidationManager;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->t:Lcom/wumii/android/mimi/manager/OrgValidationManager;
 
-    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->C:Lcom/wumii/android/mimi/models/e/OrgValidationObserver;
+    iget-object v1, p0, Lcom/wumii/android/mimi/ui/activities/circle/LocationValidationActivity;->C:Lcom/wumii/android/mimi/models/observer/OrgValidationObserver;
 
-    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/a/OrgValidationManager;->deleteObserver(Ljava/util/Observer;)V
+    invoke-virtual {v0, v1}, Lcom/wumii/android/mimi/manager/OrgValidationManager;->deleteObserver(Ljava/util/Observer;)V
 
     .line 214
     return-void

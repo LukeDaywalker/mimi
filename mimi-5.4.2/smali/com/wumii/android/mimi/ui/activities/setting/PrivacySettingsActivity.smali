@@ -96,7 +96,7 @@
     invoke-direct {v1, p0, v0, v2}, Lcom/wumii/android/mimi/ui/widgets/AlertDialogBuilder;-><init>(Landroid/content/Context;Landroid/util/DisplayMetrics;Lcom/wumii/android/mimi/ui/ActivityEventManager;)V
 
     .line 82
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     sget-object v2, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
@@ -108,7 +108,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v0, v2, v3, v4}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v3, v4}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -118,7 +118,7 @@
 
     move-result-wide v2
 
-    invoke-static {v2, v3}, Lcom/wumii/android/mimi/c/Utils;->a(J)Z
+    invoke-static {v2, v3}, Lcom/wumii/android/mimi/util/Utils;->a(J)Z
 
     move-result v0
 
@@ -249,7 +249,7 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/BaseMimiActivity;->onResume()V
 
     .line 56
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/setting/PrivacySettingsActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v1, Ljava/lang/String;
 
@@ -257,14 +257,14 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->a(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
     .line 57
-    invoke-static {v0}, Lorg/a/a/c/StringUtils;->c(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/apache/commons/long/StringUtils;->c(Ljava/lang/String;)Z
 
     move-result v0
 

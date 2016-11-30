@@ -460,13 +460,13 @@
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 66
-    invoke-static {}, Lcom/e/a/b/ImageLoader;->a()Lcom/e/a/b/ImageLoader;
+    invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->d:Landroid/widget/ImageView;
 
-    invoke-virtual {v0, p2, v1}, Lcom/e/a/b/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
+    invoke-virtual {v0, p2, v1}, Lcom/nostra13/universalimageloader/core/ImageLoader;->a(Ljava/lang/String;Landroid/widget/ImageView;)V
 
     .line 68
     iget-object v0, p0, Lcom/wumii/android/mimi/ui/widgets/secret/FeedHeader;->c:Landroid/widget/TextView;

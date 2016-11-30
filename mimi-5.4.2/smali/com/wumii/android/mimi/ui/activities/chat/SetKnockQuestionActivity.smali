@@ -139,9 +139,9 @@
     invoke-super {p0}, Lcom/wumii/android/mimi/ui/activities/chat/BaseSetKnockQuestionActivity;->j()V
 
     .line 66
-    sget-object v0, Lcom/wumii/android/mimi/c/EventUtils$ICaf;->h:Lcom/wumii/android/mimi/c/EventUtils$ICaf;
+    sget-object v0, Lcom/wumii/android/mimi/util/EventUtils$ICaf;->h:Lcom/wumii/android/mimi/util/EventUtils$ICaf;
 
-    invoke-static {v0}, Lcom/wumii/android/mimi/c/EventUtils;->a(Lcom/wumii/android/mimi/c/EventUtils$ICaf;)V
+    invoke-static {v0}, Lcom/wumii/android/mimi/util/EventUtils;->a(Lcom/wumii/android/mimi/util/EventUtils$ICaf;)V
 
     .line 67
     invoke-static {p0}, Lcom/wumii/android/mimi/ui/activities/lab/NearbyUserListActivity;->a(Landroid/app/Activity;)V
@@ -174,7 +174,7 @@
     invoke-virtual {p0, v0}, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->setContentView(I)V
 
     .line 27
-    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->w:Lcom/wumii/android/mimi/models/d/PreferencesHelper;
+    iget-object v0, p0, Lcom/wumii/android/mimi/ui/activities/chat/SetKnockQuestionActivity;->w:Lcom/wumii/android/mimi/models/helper/PreferencesHelper;
 
     const-class v1, Lcom/wumii/android/mimi/models/entities/NearbyUser;
 
@@ -182,7 +182,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/d/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/wumii/android/mimi/models/helper/PreferencesHelper;->b(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 

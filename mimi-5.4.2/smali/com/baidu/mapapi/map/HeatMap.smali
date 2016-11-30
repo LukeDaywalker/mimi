@@ -23,7 +23,7 @@
 # instance fields
 .field a:Lcom/baidu/mapapi/map/BaiduMap;
 
-.field private f:Lcom/baidu/mapapi/map/j;
+.field private f:Lcom/baidu/mapapi/map/ICj;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/baidu/mapapi/map/j",
@@ -51,7 +51,7 @@
 
 .field private j:D
 
-.field private k:Lcom/baidu/mapapi/map/e;
+.field private k:Lcom/baidu/mapapi/map/ICe;
 
 .field private l:[I
 
@@ -387,7 +387,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/baidu/mapapi/map/HeatMap$Builder;Lcom/baidu/mapapi/map/f;)V
+.method synthetic constructor <init>(Lcom/baidu/mapapi/map/HeatMap$Builder;Lcom/baidu/mapapi/map/ICf;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/baidu/mapapi/map/HeatMap;-><init>(Lcom/baidu/mapapi/map/HeatMap$Builder;)V
@@ -395,7 +395,7 @@
     return-void
 .end method
 
-.method private static a(Ljava/util/Collection;Lcom/baidu/mapapi/map/e;II)D
+.method private static a(Ljava/util/Collection;Lcom/baidu/mapapi/map/ICe;II)D
     .locals 20
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -404,26 +404,26 @@
             "<",
             "Lcom/baidu/mapapi/map/WeightedLatLng;",
             ">;",
-            "Lcom/baidu/mapapi/map/e;",
+            "Lcom/baidu/mapapi/map/ICe;",
             "II)D"
         }
     .end annotation
 
     move-object/from16 v0, p1
 
-    iget-wide v8, v0, Lcom/baidu/mapapi/map/e;->a:D
+    iget-wide v8, v0, Lcom/baidu/mapapi/map/ICe;->a:D
 
     move-object/from16 v0, p1
 
-    iget-wide v2, v0, Lcom/baidu/mapapi/map/e;->c:D
+    iget-wide v2, v0, Lcom/baidu/mapapi/map/ICe;->c:D
 
     move-object/from16 v0, p1
 
-    iget-wide v10, v0, Lcom/baidu/mapapi/map/e;->b:D
+    iget-wide v10, v0, Lcom/baidu/mapapi/map/ICe;->b:D
 
     move-object/from16 v0, p1
 
-    iget-wide v4, v0, Lcom/baidu/mapapi/map/e;->d:D
+    iget-wide v4, v0, Lcom/baidu/mapapi/map/ICe;->d:D
 
     sub-double v6, v2, v8
 
@@ -862,7 +862,7 @@
 
     iget-object v1, p0, Lcom/baidu/mapapi/map/HeatMap;->g:Ljava/util/Collection;
 
-    iget-object v5, p0, Lcom/baidu/mapapi/map/HeatMap;->k:Lcom/baidu/mapapi/map/e;
+    iget-object v5, p0, Lcom/baidu/mapapi/map/HeatMap;->k:Lcom/baidu/mapapi/map/ICe;
 
     const-wide/high16 v6, 0x4094000000000000L    # 1280.0
 
@@ -880,7 +880,7 @@
 
     double-to-int v6, v6
 
-    invoke-static {v1, v5, p1, v6}, Lcom/baidu/mapapi/map/HeatMap;->a(Ljava/util/Collection;Lcom/baidu/mapapi/map/e;II)D
+    invoke-static {v1, v5, p1, v6}, Lcom/baidu/mapapi/map/HeatMap;->a(Ljava/util/Collection;Lcom/baidu/mapapi/map/ICe;II)D
 
     move-result-wide v6
 
@@ -1290,47 +1290,47 @@
 
     add-double v10, v2, v20
 
-    new-instance v3, Lcom/baidu/mapapi/map/e;
+    new-instance v3, Lcom/baidu/mapapi/map/ICe;
 
-    invoke-direct/range {v3 .. v11}, Lcom/baidu/mapapi/map/e;-><init>(DDDD)V
+    invoke-direct/range {v3 .. v11}, Lcom/baidu/mapapi/map/ICe;-><init>(DDDD)V
 
-    new-instance v13, Lcom/baidu/mapapi/map/e;
+    new-instance v13, Lcom/baidu/mapapi/map/ICe;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/mapapi/map/HeatMap;->k:Lcom/baidu/mapapi/map/e;
+    iget-object v2, v0, Lcom/baidu/mapapi/map/HeatMap;->k:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v6, v2, Lcom/baidu/mapapi/map/e;->a:D
+    iget-wide v6, v2, Lcom/baidu/mapapi/map/ICe;->a:D
 
     sub-double v14, v6, v20
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/mapapi/map/HeatMap;->k:Lcom/baidu/mapapi/map/e;
+    iget-object v2, v0, Lcom/baidu/mapapi/map/HeatMap;->k:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v6, v2, Lcom/baidu/mapapi/map/e;->c:D
+    iget-wide v6, v2, Lcom/baidu/mapapi/map/ICe;->c:D
 
     add-double v16, v6, v20
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/mapapi/map/HeatMap;->k:Lcom/baidu/mapapi/map/e;
+    iget-object v2, v0, Lcom/baidu/mapapi/map/HeatMap;->k:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v6, v2, Lcom/baidu/mapapi/map/e;->b:D
+    iget-wide v6, v2, Lcom/baidu/mapapi/map/ICe;->b:D
 
     sub-double v18, v6, v20
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/mapapi/map/HeatMap;->k:Lcom/baidu/mapapi/map/e;
+    iget-object v2, v0, Lcom/baidu/mapapi/map/HeatMap;->k:Lcom/baidu/mapapi/map/ICe;
 
-    iget-wide v6, v2, Lcom/baidu/mapapi/map/e;->d:D
+    iget-wide v6, v2, Lcom/baidu/mapapi/map/ICe;->d:D
 
     add-double v20, v20, v6
 
-    invoke-direct/range {v13 .. v21}, Lcom/baidu/mapapi/map/e;-><init>(DDDD)V
+    invoke-direct/range {v13 .. v21}, Lcom/baidu/mapapi/map/ICe;-><init>(DDDD)V
 
-    invoke-virtual {v3, v13}, Lcom/baidu/mapapi/map/e;->a(Lcom/baidu/mapapi/map/e;)Z
+    invoke-virtual {v3, v13}, Lcom/baidu/mapapi/map/ICe;->a(Lcom/baidu/mapapi/map/ICe;)Z
 
     move-result v2
 
@@ -1338,9 +1338,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/baidu/mapapi/map/HeatMap;->f:Lcom/baidu/mapapi/map/j;
+    iget-object v2, v0, Lcom/baidu/mapapi/map/HeatMap;->f:Lcom/baidu/mapapi/map/ICj;
 
-    invoke-virtual {v2, v3}, Lcom/baidu/mapapi/map/j;->a(Lcom/baidu/mapapi/map/e;)Ljava/util/Collection;
+    invoke-virtual {v2, v3}, Lcom/baidu/mapapi/map/ICj;->a(Lcom/baidu/mapapi/map/ICe;)Ljava/util/Collection;
 
     move-result-object v3
 
@@ -1633,19 +1633,19 @@
     :cond_0
     iget-object v0, p0, Lcom/baidu/mapapi/map/HeatMap;->g:Ljava/util/Collection;
 
-    invoke-static {v0}, Lcom/baidu/mapapi/map/HeatMap;->d(Ljava/util/Collection;)Lcom/baidu/mapapi/map/e;
+    invoke-static {v0}, Lcom/baidu/mapapi/map/HeatMap;->d(Ljava/util/Collection;)Lcom/baidu/mapapi/map/ICe;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/HeatMap;->k:Lcom/baidu/mapapi/map/e;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/HeatMap;->k:Lcom/baidu/mapapi/map/ICe;
 
-    new-instance v0, Lcom/baidu/mapapi/map/j;
+    new-instance v0, Lcom/baidu/mapapi/map/ICj;
 
-    iget-object v1, p0, Lcom/baidu/mapapi/map/HeatMap;->k:Lcom/baidu/mapapi/map/e;
+    iget-object v1, p0, Lcom/baidu/mapapi/map/HeatMap;->k:Lcom/baidu/mapapi/map/ICe;
 
-    invoke-direct {v0, v1}, Lcom/baidu/mapapi/map/j;-><init>(Lcom/baidu/mapapi/map/e;)V
+    invoke-direct {v0, v1}, Lcom/baidu/mapapi/map/ICj;-><init>(Lcom/baidu/mapapi/map/ICe;)V
 
-    iput-object v0, p0, Lcom/baidu/mapapi/map/HeatMap;->f:Lcom/baidu/mapapi/map/j;
+    iput-object v0, p0, Lcom/baidu/mapapi/map/HeatMap;->f:Lcom/baidu/mapapi/map/ICj;
 
     iget-object v0, p0, Lcom/baidu/mapapi/map/HeatMap;->g:Ljava/util/Collection;
 
@@ -1666,9 +1666,9 @@
 
     check-cast v0, Lcom/baidu/mapapi/map/WeightedLatLng;
 
-    iget-object v2, p0, Lcom/baidu/mapapi/map/HeatMap;->f:Lcom/baidu/mapapi/map/j;
+    iget-object v2, p0, Lcom/baidu/mapapi/map/HeatMap;->f:Lcom/baidu/mapapi/map/ICj;
 
-    invoke-virtual {v2, v0}, Lcom/baidu/mapapi/map/j;->a(Lcom/baidu/mapapi/map/j$a;)V
+    invoke-virtual {v2, v0}, Lcom/baidu/mapapi/map/ICj;->a(Lcom/baidu/mapapi/map/ICj$ICa;)V
 
     goto :goto_0
 
@@ -1779,7 +1779,7 @@
     return-object v1
 .end method
 
-.method private static d(Ljava/util/Collection;)Lcom/baidu/mapapi/map/e;
+.method private static d(Ljava/util/Collection;)Lcom/baidu/mapapi/map/ICe;
     .locals 14
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1788,7 +1788,7 @@
             "<",
             "Lcom/baidu/mapapi/map/WeightedLatLng;",
             ">;)",
-            "Lcom/baidu/mapapi/map/e;"
+            "Lcom/baidu/mapapi/map/ICe;"
         }
     .end annotation
 
@@ -1894,9 +1894,9 @@
     goto :goto_0
 
     :cond_4
-    new-instance v1, Lcom/baidu/mapapi/map/e;
+    new-instance v1, Lcom/baidu/mapapi/map/ICe;
 
-    invoke-direct/range {v1 .. v9}, Lcom/baidu/mapapi/map/e;-><init>(DDDD)V
+    invoke-direct/range {v1 .. v9}, Lcom/baidu/mapapi/map/ICe;-><init>(DDDD)V
 
     return-object v1
 .end method
@@ -1994,15 +1994,15 @@
 
     iget-object v2, v0, Lcom/baidu/mapapi/map/MapStatus;->a:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v2, v2, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$b;
+    iget-object v2, v2, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v2, v2, Lcom/baidu/platform/comapi/map/B$b;->b:I
+    iget v2, v2, Lcom/baidu/platform/comapi/map/B$ICb;->b:I
 
     iget-object v3, v0, Lcom/baidu/mapapi/map/MapStatus;->a:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v3, v3, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$b;
+    iget-object v3, v3, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v3, v3, Lcom/baidu/platform/comapi/map/B$b;->a:I
+    iget v3, v3, Lcom/baidu/platform/comapi/map/B$ICb;->a:I
 
     sub-int/2addr v2, v3
 
@@ -2012,15 +2012,15 @@
 
     iget-object v3, v0, Lcom/baidu/mapapi/map/MapStatus;->a:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v3, v3, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$b;
+    iget-object v3, v3, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v3, v3, Lcom/baidu/platform/comapi/map/B$b;->d:I
+    iget v3, v3, Lcom/baidu/platform/comapi/map/B$ICb;->d:I
 
     iget-object v0, v0, Lcom/baidu/mapapi/map/MapStatus;->a:Lcom/baidu/platform/comapi/map/B;
 
-    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$b;
+    iget-object v0, v0, Lcom/baidu/platform/comapi/map/B;->j:Lcom/baidu/platform/comapi/map/B$ICb;
 
-    iget v0, v0, Lcom/baidu/platform/comapi/map/B$b;->c:I
+    iget v0, v0, Lcom/baidu/platform/comapi/map/B$ICb;->c:I
 
     sub-int v0, v3, v0
 
@@ -2059,9 +2059,9 @@
     :try_start_0
     iget-object v0, p0, Lcom/baidu/mapapi/map/HeatMap;->p:Ljava/util/concurrent/ExecutorService;
 
-    new-instance v2, Lcom/baidu/mapapi/map/f;
+    new-instance v2, Lcom/baidu/mapapi/map/ICf;
 
-    invoke-direct {v2, p0, p1, p2, p3}, Lcom/baidu/mapapi/map/f;-><init>(Lcom/baidu/mapapi/map/HeatMap;III)V
+    invoke-direct {v2, p0, p1, p2, p3}, Lcom/baidu/mapapi/map/ICf;-><init>(Lcom/baidu/mapapi/map/HeatMap;III)V
 
     invoke-interface {v0, v2}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
 
